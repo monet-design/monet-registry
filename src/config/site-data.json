@@ -1,0 +1,29 @@
+{
+  "name": "Your App Name",
+  "url": "https://example.com",
+  "getStartedUrl": "https://example.com/docs/getting-started",
+  "ogImage": "https://example.com/og.jpg",
+  "shortDescription": "Your app short description",
+  "description": "Your app detailed description goes here.",
+  "links": {
+    "twitter": "https://twitter.com/yourhandle",
+    "github": "https://github.com/yourusername/yourrepo",
+    "email": "contact@example.com"
+  },
+  "pricing": {
+    "pro": "https://example.com/pricing/pro",
+    "team": "https://example.com/pricing/team"
+  },
+  "stats": {
+    "figma": 0,
+    "github": 0,
+    "cli": 0,
+    "total": "0",
+    "updated": "23 Nov 2025",
+    "sections": 0,
+    "illustrations": 0,
+    "animations": 0,
+    "appTemplates": 0,
+    "websiteTemplates": 0
+  }
+}

@@ -1,6 +1,7 @@
 ---
 name: img-to-component
 description: base64 이미지를 전달받아 컴포넌트로 구현한다.
+model: inherit
 ---
 
 주어진 이미지를 컴포넌트로 구현한뒤, /examples 페이지에 적절히 배치해서 미리보기 할 수 있게 하세요.
@@ -39,6 +40,20 @@ description: base64 이미지를 전달받아 컴포넌트로 구현한다.
 - index.tsx 파일은 추후 search engine에 의해 검색될 것입니다. search engine이 이 컴포넌트를 필요 시 잘 탐색하기위한 검색용 키워드들을 지정해야합니다. const.ts의 keywords 속성에 문자열 배열로 정의하세요.
 - 필요한 icon은 `lucide-react`를 우선적으로 사용하세요.
 - 적절한 reveal 등 애니메이션을 `motion/react`, `tw-animate-css`로부터 사용하세요.
+- 절대 playwright-mcp를 사용하지 마세요.
+- 절대 `npm run build`를 테스트하지 마세요. index.tsx에 typescript 에러가 없는지만 확인하세요.
+
+## nanobanana mcp 호출 가이드
+
+- tool에 제공될 description은 반드시 다음 규칙을 따르도록 작성하세요.
+  - xml 문법으로 작성합니다.
+  - 다음 property를 가집니다.
+    - is_transparent_background: true/false
+    - summary: 해당 이미지에 대한 짧은 설명
+    - mood: 전반적인 디자인 컨셉 및 분위기
+    - background_summary: 생성할 이미지에 배경에 대한 짧은 설명
+    - primary_element: 생성할 이미지에서 가장 눈에 띄는 요소에 대한 설명. 위치, 방향, 자세한 묘사를 포함.
+    - etc_element: 생성할 이미지에서 primary를 제외한 다른 요소가 존재하는 경우에만 설명, 위치, 방향, 묘사를 기입.
 
 ## Available Fonts
 
@@ -48,6 +63,8 @@ description: base64 이미지를 전달받아 컴포넌트로 구현한다.
 
 _가장 안전하고 표준적인 선택. SaaS 대시보드, 앱 UI, 긴 본문에 사용._
 
+- **Satoshi** 깔끔하고 가독성이 뛰어난 가장 트렌디한 폰트.
+  - `@import url(https://db.onlinewebfonts.com/c/82346df2075cf90ed44a8e36099a87a8?family=Satoshi+Variable);`
 - **Inter:** 업계 표준. 가장 중립적이고 가독성이 완벽한 UI 폰트.
 - **Plus Jakarta Sans:** 핀테크, 모던 스타트업 선호 1위. 트렌디하고 기하학적인 느낌.
 - **DM Sans:** 낮은 x-height. 친근하고 둥근 느낌의 스타트업 폰트.
@@ -72,10 +89,10 @@ _단순 정보 전달을 넘어 브랜드의 성격(힙함, 미래지향, 예술
 
 _차가운 디지털 화면에 인간적인 감성이나 고급스러움을 더할 때 포인트로 사용._
 
+- **Instrument Serif:** 날렵하고 모던한 클래식. 최근 가장 트렌디한 세리프.
 - **Playfair Display:** 패션, 럭셔리, 클래식한 느낌의 제목.
 - **Fraunces:** 70년대 레트로 무드. 부드럽고 따뜻한 인상의 소프트 세리프.
 - **DM Serif Display:** 굵고 힘 있는 제목. 가독성이 좋으면서 권위가 있음.
-- **Instrument Serif:** 날렵하고 모던한 클래식. 최근 가장 트렌디한 세리프.
 
 #### 4\. Monospace (코드, 데이터, 테크 캡션)
 

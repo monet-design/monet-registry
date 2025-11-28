@@ -1,0 +1,23 @@
+export const metadata = {
+  imagePath: "agent-input/feature-carousel/telmd.jpg",
+  name: "telmd-feature-carousel",
+  keywords: [
+    "feature",
+    "carousel",
+    "slider",
+    "health",
+    "wellness",
+    "dashboard",
+    "goal",
+    "purple",
+    "violet",
+    "app",
+    "showcase",
+    "product",
+    "landing",
+    "saas",
+    "pagination",
+    "navigation",
+  ],
+  fontFamily: ["Playfair Display", "Inter"],
+};

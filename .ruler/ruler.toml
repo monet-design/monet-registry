@@ -30,11 +30,10 @@ default_agents = ["cursor", "claude", "codex"]
 # 1. A stdio server (local executable)
 # 2. A remote server (HTTP-based)
 
-# [mcp_servers.example_stdio]
-# command = "node"
-# args = ["scripts/your-mcp-server.js"]
-# env = { API_KEY = "replace_me" }
+[mcp_servers.sharp]
+command = "npx"
+args = ["-y", "sharp-mcp"]
 
-# [mcp_servers.example_remote]
-# url = "https://api.example.com/mcp"
-# headers = { Authorization = "Bearer REPLACE_ME" }
+[mcp_servers.nanobanana]
+command = "npx"
+args = ["-y", "nanobanana-api-mcp", "--apiKey", "AIzaSyAFIGeWVcPzYkzL0SVm8pj6m_dOLXVVHiI", "--model", "normal"]

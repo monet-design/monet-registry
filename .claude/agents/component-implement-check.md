@@ -1,12 +1,13 @@
 ---
 name: component-implement-check
 description: metadata(const.ts) 파일을 전달받아, 컴포넌트 구현이 입력된 이미지와 일치하는지 점검 후 개선한다.
+model: inherit
 ---
 
 주어진 const.ts 파일을 읽고 다음과 같이 작업하세요.
 
 1. 현재 컴포넌트가 구현된 상태를 확인하세요.
-   - playwright mcp를 headless 모드로 사용해서 `/example/registry?name={NAME}` 경로로 접근한 뒤, 1초 기다리고 스크린샷을 캡쳐하세요.
+   - 브라우저의 `/example/registry?name={NAME}` 경로로 접근한 뒤, 1초 기다리고 스크린샷을 캡쳐하세요.
 2. 스크린샷에 포함된 element, layer들의 크기/위치/색상/border/shadow/italic여부/font-weight 를 자세하게 파악하세요.
 3. 스크린샷에 포함된 absolute element들의 위치/z-index/각도를 자세하게 파악하세요.
 4. metadata의 imagePath에 저장된 원본 이미지를 읽으세요.

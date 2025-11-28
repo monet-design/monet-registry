@@ -1,23 +1,19 @@
-import Cta from "@/components/sections/cta";
-import Faq from "@/components/sections/faq";
-import Features from "@/components/sections/features";
-import FeaturesV2 from "@/components/sections/features-v2";
-import Hero from "@/components/sections/hero";
-import HowItWorks from "@/components/sections/how-it-works";
-import Pricing from "@/components/sections/pricing";
-import Testimonials from "@/components/sections/testimonials";
+import VoosterHero from "@/components/sections/vooster-hero";
+import WhyVooster from "@/components/sections/why-vooster";
+import PRDAutomation from "@/components/sections/prd-automation";
+import CursorIntegration from "@/components/sections/cursor-integration";
+import Workflow from "@/components/sections/workflow";
+import VoosterCTA from "@/components/sections/vooster-cta";
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <HowItWorks />
-      <Features />
-      <FeaturesV2 />
-      <Pricing />
-      <Testimonials />
-      <Faq />
-      <Cta />
+      <VoosterHero />
+      <WhyVooster />
+      <PRDAutomation />
+      <CursorIntegration />
+      <Workflow />
+      <VoosterCTA />
     </>
   );
 }

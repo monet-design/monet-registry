@@ -17,10 +17,10 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { href: '/features', label: 'Features' },
+    { href: '#how-it-works', label: 'How It Works' },
     { href: '/pricing', label: 'Pricing' },
     { href: '/docs', label: 'Docs' },
-    { href: '/about', label: 'About' },
+    { href: 'https://discord.gg/vooster', label: 'Community' },
   ];
 
   return (
@@ -29,8 +29,11 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo - Left */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-xl font-bold">
-              {SERVICE_NAME}
+            <Link href="/" className="flex items-center gap-2">
+              <div className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+                <span className="text-lg font-bold">V</span>
+              </div>
+              <span className="text-xl font-bold">{SERVICE_NAME}</span>
             </Link>
           </div>
 

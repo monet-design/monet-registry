@@ -63,6 +63,8 @@
   --animate-appear: appear 0.6s forwards ease-out;
   --animate-appear-zoom: appear-zoom 0.6s forwards ease-out;
   --animate-gradient: gradient 3s ease infinite;
+  --animate-marquee-up: marquee-up 20s linear infinite;
+  --animate-marquee-down: marquee-down 20s linear infinite;
 
   @keyframes accordion-down {
     from {
@@ -114,6 +116,22 @@
     }
     100% {
       background-position: 0% 50%;
+    }
+  }
+  @keyframes marquee-up {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
+  @keyframes marquee-down {
+    0% {
+      transform: translateY(-50%);
+    }
+    100% {
+      transform: translateY(0);
     }
   }
 }

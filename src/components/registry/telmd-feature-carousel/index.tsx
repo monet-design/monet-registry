@@ -86,7 +86,7 @@ function NavigationButton({
     <button
       onClick={onClick}
       disabled={disabled}
-      className="flex h-9 w-9 items-center justify-center rounded-full border border-white/40 bg-transparent text-white transition-all duration-300 hover:border-white/70 hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-40"
+      className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-600/50 bg-[#1A1D35] text-slate-300 transition-all duration-300 hover:border-[#E86C4F]/50 hover:bg-[#1A1D35]/80 hover:text-white disabled:cursor-not-allowed disabled:opacity-40"
       aria-label={direction === "prev" ? "Previous slide" : "Next slide"}
     >
       <Icon className="h-4 w-4" strokeWidth={1.5} />
@@ -105,9 +105,9 @@ function PageIndicator({
   const formattedTotal = String(total).padStart(2, "0");
 
   return (
-    <div className="flex items-baseline gap-1.5 text-white">
-      <span className="text-xl font-semibold tracking-tight">{formattedCurrent}</span>
-      <span className="text-sm text-white/50">/ {formattedTotal}</span>
+    <div className="flex items-baseline gap-1.5">
+      <span className="text-xl font-semibold tracking-tight text-[#E86C4F]">{formattedCurrent}</span>
+      <span className="text-sm text-slate-500">/ {formattedTotal}</span>
     </div>
   );
 }
@@ -131,13 +131,8 @@ export default function TelmdFeatureCarousel({
 
   return (
     <section className="relative w-full overflow-visible">
-      {/* Purple Background Section */}
-      <div
-        className="relative px-4 pb-24 pt-10 sm:px-6 lg:px-8"
-        style={{
-          background: "linear-gradient(180deg, #9173F9 0%, #805DFF 100%)",
-        }}
-      >
+      {/* Dark Navy Background Section */}
+      <div className="relative bg-[#0D1025] px-4 pb-24 pt-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-5xl">
           {/* Header */}
           <motion.div
@@ -147,10 +142,10 @@ export default function TelmdFeatureCarousel({
             transition={{ duration: 0.6 }}
             className="mb-6 text-center"
           >
-            <h2 className="font-playfair text-3xl font-normal italic text-white sm:text-4xl">
+            <h2 className="font-instrument-serif text-4xl font-normal italic tracking-tight text-white sm:text-5xl lg:text-6xl">
               {sectionTitle}
             </h2>
-            <p className="mx-auto mt-2 max-w-md text-[11px] tracking-wide text-white/60 sm:text-xs">
+            <p className="mx-auto mt-3 max-w-lg text-sm tracking-wide text-slate-400 sm:text-base">
               {sectionSubtitle}
             </p>
           </motion.div>
@@ -177,7 +172,7 @@ export default function TelmdFeatureCarousel({
                   <h3 className="text-base font-semibold text-white sm:text-lg">
                     {currentSlide.title}
                   </h3>
-                  <p className="text-[11px] leading-relaxed text-white/60 sm:text-xs">
+                  <p className="text-[11px] leading-relaxed text-slate-400 sm:text-xs">
                     {currentSlide.description}
                   </p>
                 </motion.div>
@@ -213,7 +208,7 @@ export default function TelmdFeatureCarousel({
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.4 }}
-                  className="relative overflow-hidden rounded-lg bg-white shadow-[0_20px_50px_-12px_rgba(0,0,0,0.25)]"
+                  className="relative overflow-hidden rounded-lg border border-slate-700/30 bg-white shadow-[0_20px_50px_-12px_rgba(0,0,0,0.5)]"
                 >
                   <div className="relative aspect-[16/10] w-full">
                     <Image
@@ -228,6 +223,16 @@ export default function TelmdFeatureCarousel({
               </AnimatePresence>
             </motion.div>
           </div>
+        </div>
+
+        {/* Background Glow Effects */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 -z-0 overflow-hidden"
+        >
+          <div className="absolute -right-20 top-1/4 h-64 w-64 rounded-full bg-[#C9A962]/5 blur-3xl" />
+          <div className="absolute -left-20 bottom-1/4 h-48 w-48 rounded-full bg-[#1A1D35]/50 blur-3xl" />
+          <div className="absolute right-1/3 top-0 h-40 w-40 rounded-full bg-[#E86C4F]/5 blur-3xl" />
         </div>
       </div>
     </section>

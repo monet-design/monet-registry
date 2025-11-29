@@ -127,10 +127,18 @@ function Badge({ text }: { text: string }) {
 function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="flex h-full min-w-[280px] max-w-[320px] flex-col rounded-2xl bg-[#141416] p-5"
+      initial={{ opacity: 0, y: 30, scale: 0.95 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      transition={{
+        duration: 0.5,
+        ease: [0.25, 0.46, 0.45, 0.94],
+      }}
+      whileHover={{
+        y: -8,
+        scale: 1.02,
+        transition: { duration: 0.25, ease: "easeOut" },
+      }}
+      className="flex h-full min-w-[280px] max-w-[320px] cursor-pointer flex-col rounded-2xl bg-[#141416] p-5 transition-shadow hover:shadow-xl hover:shadow-black/30"
     >
       {/* Author Info - Top */}
       <div className="flex items-center gap-3">
@@ -195,15 +203,13 @@ export default function NvgtTestimonialSlider({
   const containerRef = useRef<HTMLDivElement>(null);
 
   const handlePrev = () => {
-    if (scrollIndex > 0) {
-      setScrollIndex(scrollIndex - 1);
-    }
+    setScrollIndex((prev) =>
+      prev === 0 ? testimonials.length - 1 : prev - 1
+    );
   };
 
   const handleNext = () => {
-    if (scrollIndex < testimonials.length - 1) {
-      setScrollIndex(scrollIndex + 1);
-    }
+    setScrollIndex((prev) => (prev + 1) % testimonials.length);
   };
 
   return (
@@ -238,12 +244,10 @@ export default function NvgtTestimonialSlider({
             <NavButton
               direction="left"
               onClick={handlePrev}
-              disabled={scrollIndex === 0}
             />
             <NavButton
               direction="right"
               onClick={handleNext}
-              disabled={scrollIndex >= testimonials.length - 1}
             />
           </motion.div>
         </div>
@@ -256,7 +260,12 @@ export default function NvgtTestimonialSlider({
             animate={{
               x: -scrollIndex * 320,
             }}
-            transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            transition={{
+              type: "spring",
+              stiffness: 180,
+              damping: 25,
+              mass: 0.8,
+            }}
           >
             {testimonials.map((testimonial) => (
               <TestimonialCard key={testimonial.id} testimonial={testimonial} />

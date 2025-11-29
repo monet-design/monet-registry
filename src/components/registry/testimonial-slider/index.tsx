@@ -8,7 +8,15 @@ import Image from "next/image";
 interface Testimonial {
   id: number;
   quote: string;
-  variant: "brown" | "pink" | "orange";
+  variant:
+    | "brown"
+    | "pink"
+    | "orange"
+    | "cream"
+    | "sage"
+    | "terracotta"
+    | "peach"
+    | "mustard";
 }
 
 interface TestimonialSliderProps {
@@ -39,6 +47,36 @@ const defaultTestimonials: Testimonial[] = [
       '"I gave up on protein drinks because they all tasted fake. This one is smooth, clean - and doesn\'t mess with my stomach."',
     variant: "orange",
   },
+  {
+    id: 4,
+    quote:
+      '"Finally, a protein shake that actually tastes good and keeps me full until lunch. Game changer for my morning routine."',
+    variant: "cream",
+  },
+  {
+    id: 5,
+    quote:
+      '"I was skeptical at first, but after a month of daily use, my energy levels are more consistent than ever."',
+    variant: "sage",
+  },
+  {
+    id: 6,
+    quote:
+      '"As someone with a sensitive stomach, finding a protein drink I can actually enjoy was a revelation."',
+    variant: "terracotta",
+  },
+  {
+    id: 7,
+    quote:
+      '"The prebiotics make such a difference. No more bloating, just clean energy and great taste."',
+    variant: "peach",
+  },
+  {
+    id: 8,
+    quote:
+      '"I recommend this to all my clients. Clean ingredients, no artificial junk, and it actually works."',
+    variant: "mustard",
+  },
 ];
 
 function TestimonialCard({
@@ -52,26 +90,33 @@ function TestimonialCard({
     brown: "bg-[#803B2C] text-white",
     pink: "bg-[#FBDBE0] text-[#803B2C]",
     orange: "bg-[#FCAA2D] text-[#803B2C]",
+    cream: "bg-[#F5E6D3] text-[#5C4033]",
+    sage: "bg-[#9CAF88] text-white",
+    terracotta: "bg-[#C4704B] text-white",
+    peach: "bg-[#FFCBA4] text-[#803B2C]",
+    mustard: "bg-[#D4A537] text-white",
   };
 
-  const positionStyles = {
-    left: "opacity-60 scale-90 -translate-x-4",
-    center: "opacity-100 scale-100 z-10",
-    right: "opacity-60 scale-90 translate-x-4",
+  const positionAnimations = {
+    left: { x: -40, scale: 0.9, opacity: 0.6 },
+    center: { x: 0, scale: 1, opacity: 1 },
+    right: { x: 40, scale: 0.9, opacity: 0.6 },
   };
 
   return (
     <motion.div
       layout
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.8 }}
-      transition={{ duration: 0.3 }}
+      animate={positionAnimations[position]}
+      transition={{
+        type: "spring",
+        stiffness: 300,
+        damping: 30,
+        mass: 1,
+      }}
       className={`
         flex-shrink-0 w-[280px] md:w-[320px] rounded-2xl p-6 md:p-8
-        transition-all duration-300 ease-out
         ${variantStyles[testimonial.variant]}
-        ${positionStyles[position]}
+        ${position === "center" ? "z-10" : ""}
       `}
     >
       <p className="text-sm md:text-base leading-relaxed font-medium">
@@ -219,10 +264,10 @@ export default function TestimonialSlider({
 
         {/* Testimonials slider */}
         <div className="relative flex justify-center items-center gap-2 md:gap-4 mb-10 md:mb-14 overflow-hidden px-4">
-          <AnimatePresence mode="popLayout">
+          <AnimatePresence mode="sync">
             {getVisibleTestimonials().map(({ testimonial, position }) => (
               <TestimonialCard
-                key={`${testimonial.id}-${position}`}
+                key={testimonial.id}
                 testimonial={testimonial}
                 position={position}
               />

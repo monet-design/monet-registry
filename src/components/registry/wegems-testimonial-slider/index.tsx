@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "motion/react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import "./font.css";
@@ -127,38 +127,19 @@ export default function WegemsTestimonialSlider({
   subheadline = "Hear directly from the people who trust us with their digital presence. Our clients' success stories speak volumes.",
   testimonials = defaultTestimonials,
 }: WegemsTestimonialSliderProps) {
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const checkScrollPosition = () => {
-    const container = scrollContainerRef.current;
-    if (container) {
-      setCanScrollLeft(container.scrollLeft > 0);
-      setCanScrollRight(
-        container.scrollLeft < container.scrollWidth - container.clientWidth - 10
-      );
-    }
+  const cardWidth = 340;
+  const gap = 24;
+
+  const handlePrev = () => {
+    setCurrentIndex((prev) =>
+      prev === 0 ? testimonials.length - 1 : prev - 1
+    );
   };
 
-  useEffect(() => {
-    const container = scrollContainerRef.current;
-    if (container) {
-      container.addEventListener("scroll", checkScrollPosition);
-      checkScrollPosition();
-      return () => container.removeEventListener("scroll", checkScrollPosition);
-    }
-  }, []);
-
-  const scroll = (direction: "left" | "right") => {
-    const container = scrollContainerRef.current;
-    if (container) {
-      const scrollAmount = 360;
-      container.scrollBy({
-        left: direction === "left" ? -scrollAmount : scrollAmount,
-        behavior: "smooth",
-      });
-    }
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
   };
 
   return (
@@ -186,41 +167,36 @@ export default function WegemsTestimonialSlider({
         </div>
 
         {/* Testimonials Slider */}
-        <div
-          ref={scrollContainerRef}
-          className="flex gap-6 overflow-x-auto pb-4 scrollbar-hide"
-          style={{
-            scrollbarWidth: "none",
-            msOverflowStyle: "none",
-          }}
-        >
-          {testimonials.map((testimonial) => (
-            <TestimonialCard key={testimonial.id} testimonial={testimonial} />
-          ))}
+        <div className="relative overflow-hidden">
+          <motion.div
+            className="flex gap-6"
+            animate={{
+              x: `calc(50% - ${cardWidth / 2}px - ${currentIndex * (cardWidth + gap)}px)`,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 200,
+              damping: 28,
+            }}
+          >
+            {testimonials.map((testimonial) => (
+              <TestimonialCard key={testimonial.id} testimonial={testimonial} />
+            ))}
+          </motion.div>
         </div>
 
         {/* Navigation Arrows */}
         <div className="mt-8 flex items-center justify-center gap-4">
           <button
-            onClick={() => scroll("left")}
-            disabled={!canScrollLeft}
-            className={`flex h-10 w-10 items-center justify-center rounded-full border border-white/20 transition-all ${
-              canScrollLeft
-                ? "text-white hover:bg-white/10"
-                : "cursor-not-allowed text-white/30"
-            }`}
+            onClick={handlePrev}
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white transition-all hover:bg-white/10"
             aria-label="Previous testimonials"
           >
             <ChevronLeft className="h-5 w-5" />
           </button>
           <button
-            onClick={() => scroll("right")}
-            disabled={!canScrollRight}
-            className={`flex h-10 w-10 items-center justify-center rounded-full border border-white/20 transition-all ${
-              canScrollRight
-                ? "text-white hover:bg-white/10"
-                : "cursor-not-allowed text-white/30"
-            }`}
+            onClick={handleNext}
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white transition-all hover:bg-white/10"
             aria-label="Next testimonials"
           >
             <ChevronRight className="h-5 w-5" />

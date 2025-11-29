@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import "./font.css";
 
@@ -203,6 +203,17 @@ export default function JordsAndCoTestimonialSlider({
   testimonials = defaultTestimonials,
 }: JordsAndCoTestimonialSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
+  useEffect(() => {
+    if (isPaused) return;
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [isPaused, testimonials.length]);
 
   const handleSelect = (index: number) => {
     setCurrentIndex(index);
@@ -247,7 +258,11 @@ export default function JordsAndCoTestimonialSlider({
         </div>
 
         {/* Testimonial Card */}
-        <div className="mb-10 flex justify-center px-4">
+        <div
+          className="mb-10 flex justify-center px-4"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
           <AnimatePresence mode="wait">
             <TestimonialCard
               key={testimonials[currentIndex].id}

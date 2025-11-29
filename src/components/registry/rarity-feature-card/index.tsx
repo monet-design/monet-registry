@@ -84,11 +84,11 @@ export default function RarityFeatureCard({
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="relative mb-10"
+        className="relative mb-10 isolate"
       >
-        {/* Background blur effect - larger and more dramatic */}
+        {/* Background blur effect */}
         <div
-          className="absolute -inset-16 -z-10"
+          className="absolute -inset-16 z-0"
           style={{
             background:
               "radial-gradient(ellipse 120% 100% at center, rgba(30, 30, 30, 0.5) 0%, rgba(80, 80, 80, 0.25) 40%, transparent 70%)",
@@ -98,7 +98,7 @@ export default function RarityFeatureCard({
 
         {/* Main Card */}
         <div
-          className="relative overflow-hidden rounded-lg border border-gray-600/30"
+          className="relative z-10 overflow-hidden rounded-lg border border-gray-600/30"
           style={{
             backgroundColor: "rgba(45, 45, 45, 0.95)",
             width: "280px",

@@ -171,16 +171,22 @@ function MarqueeColumn({
   const isDown = direction === "down";
 
   return (
-    <div className="relative h-[500px] overflow-hidden">
+    <div
+      className="relative h-[500px]"
+      style={{
+        maskImage:
+          "linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%)",
+        WebkitMaskImage:
+          "linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%)",
+      }}
+    >
       <div
         className={`flex flex-col gap-2.5 ${isDown ? "animate-marquee-down" : "animate-marquee-up"}`}
       >
         {[...images, ...images].map((image, index) => (
           <div
             key={index}
-            className={`relative w-full overflow-hidden ${image.aspectRatio} ${
-              index === 0 ? (isDown ? "rounded-tl-[20px]" : "rounded-tr-[20px]") : ""
-            }`}
+            className={`relative w-full overflow-hidden rounded-xl ${image.aspectRatio}`}
           >
             <Image
               src={image.src}
@@ -203,7 +209,7 @@ function ImageGrid() {
       initial={{ opacity: 0, x: 40 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.7, delay: 0.3 }}
-      className="grid grid-cols-2 gap-2.5 overflow-hidden rounded-[20px]"
+      className="grid grid-cols-2 gap-2.5"
     >
       {/* Left column - scrolls down */}
       <MarqueeColumn images={leftColumnImages} direction="down" />

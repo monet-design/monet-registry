@@ -17,7 +17,7 @@ model: inherit
 
 ## 주의사항:
 
-- /src/components/registry/{NAME}/\* 하위 경로에 다음 파일들로 생성하세요.
+- /src/components/registry/{NAME}/\* 하위 경로에 다음 파일들로 생성하세요. 경로를 반드시 지켜야합니다.
   - const.ts: 해당 컴포넌트와 관련된 메타데이터를 저장하는 ts 파일. 다음과 같이 정의된다.
     ```
     export const metadata = {
@@ -31,7 +31,7 @@ model: inherit
   - index.tsx: 해당 컴포넌트를 구현한 단일 tsx 파일.
   - styles.css: tailwindcss 외의, 고차원적인 css 구현 필요시 추가되는 css module
   - font.css: 기본 폰트는 inter다. 이외에 font가 있다면 이 파일을 css module로 추가해 적용한다.
-- index.tsx외의 tsx 파일을 절대 수정하지 마세요.
+- index.tsx외의 다른 tsx 파일은 절대로 생성/수정하지 마세요.
 - 모든 props에 적절한 default value를 제공해서 아무 props를 전달하지 않아도 작동하도록 만드세요.
 - 컴포넌트는 반드시 default export 하세요.
 - index.tsx를 구현하기위해 디자인시스템 컴포넌트(button, heading, input등)가 필요하다면 shadcn 컴포넌트를 /src/components/ui 경로로 부터 import해서 사용하세요. shadcn에서 제공하지않는 컴포넌트라면 같은 tsx 파일 내에 별도 컴포넌트로 생성하여 사용하세요.

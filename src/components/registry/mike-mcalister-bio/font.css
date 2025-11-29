@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+.mike-mcalister-bio {
+  font-family: 'Inter', sans-serif;
+}
+
+.mike-mcalister-bio .font-dm-serif {
+  font-family: 'DM Serif Display', serif;
+}

@@ -5,6 +5,8 @@ model: inherit
 ---
 
 주어진 const.ts 파일을 읽고 다음과 같이 작업하세요.
+puppeteer-swarm mcp를 사용하세요. (이미 launch된 상태입니다.)
+반드시 localhost:3000만 사용하세요. (이미 dev 서버가 실행되어있습니다.)
 
 1. 현재 컴포넌트가 구현된 상태를 확인하세요.
    - 브라우저의 `/example/registry?name={NAME}` 경로로 접근한 뒤, 1초 기다리고 스크린샷을 캡쳐하세요.

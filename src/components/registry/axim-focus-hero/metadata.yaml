@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: axim-focus-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/axim-our-focus-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - education
+  - student success
+  - nonprofit
+  - light theme
+  - serif
+  - image hero
+  - postsecondary
+  - edtech
+  - learning
+
+fontFamily:
+  - Inter
+  - Instrument Serif
+
+createdAt: "2025-11-30"
+status: stable

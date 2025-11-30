@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: gravity-climate-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/gravity-climate-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - landing page
+  - carbon management
+  - climate
+  - industrial
+  - trust logos
+  - minimal
+  - clean
+  - light blue
+  - muted
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

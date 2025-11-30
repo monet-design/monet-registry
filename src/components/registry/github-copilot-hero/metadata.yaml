@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: github-copilot-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/github-copilot-hero-section.webp
+
+freeformKeywords:
+  - hero
+  - github
+  - copilot
+  - ai
+  - code editor
+  - dark theme
+  - gradient
+  - agent mode
+  - saas
+  - developer tools
+  - ide
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

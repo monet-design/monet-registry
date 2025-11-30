@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: antimetal-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/antimetal-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - landing
+  - saas
+  - aws
+  - cloud
+  - savings
+  - dashboard
+  - fintech
+  - enterprise
+  - automation
+  - demo
+  - cta
+  - light theme
+  - minimal
+  - dotted grid
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

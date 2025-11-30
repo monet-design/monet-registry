@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: fin-ai-zendesk-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/fin-ai-zendesk-hero-design.jpg
+
+freeformKeywords:
+  - hero
+  - AI
+  - customer service
+  - chatbot
+  - Zendesk
+  - Intercom
+  - Fin
+  - SaaS
+  - dark theme
+  - support
+  - integration
+  - dashboard
+  - conversation
+
+fontFamily:
+  - Inter
+  - Instrument Serif
+
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: better-stack-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/better-stack-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - landing page
+  - dark theme
+  - observability
+  - monitoring
+  - saas
+  - tech startup
+  - gradient button
+  - 3d illustration
+  - announcement banner
+  - cta
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: gp-integrations-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/globalization-partners-integrations-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - integrations
+  - workforce
+  - HR
+  - SaaS
+  - blue gradient
+  - bold heading
+  - italic
+  - CTA buttons
+  - enterprise
+  - G-P
+  - globalization
+  - payroll
+  - onboarding
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

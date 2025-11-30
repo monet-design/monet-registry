@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: flecto-about-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/flecto-about-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - about
+  - mission
+  - vision
+  - sustainable
+  - green
+  - nature
+  - leaf
+  - eco
+  - environmental
+  - startup
+  - landing page
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

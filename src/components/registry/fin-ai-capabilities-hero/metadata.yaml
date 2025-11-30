@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: fin-ai-capabilities-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/fin-ai-capabilities-hero-design.jpg
+
+freeformKeywords:
+  - hero
+  - ai
+  - agent
+  - saas
+  - dark theme
+  - cycle diagram
+  - tech
+  - configurable
+  - enterprise
+  - landing page
+  - fin ai
+  - intercom
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

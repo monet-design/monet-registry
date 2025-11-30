@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: cut-the-code-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/cut-the-code-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - landing page
+  - dark theme
+  - agency
+  - no-code
+  - webflow
+  - digital agency
+  - device mockup
+  - laptop
+  - tablet
+  - client logos
+  - professional partner
+  - lavender
+  - purple accent
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

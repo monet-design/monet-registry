@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: gp-startups-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/globalization-partners-startup-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - startup
+  - talent
+  - HR
+  - global
+  - hiring
+  - blue
+  - professional
+  - saas
+  - b2b
+  - enterprise
+  - contract
+  - demo
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

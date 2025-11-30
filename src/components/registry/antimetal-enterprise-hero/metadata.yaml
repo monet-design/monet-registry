@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: antimetal-enterprise-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/antimetal-enterprise-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - enterprise
+  - infrastructure
+  - tech
+  - SaaS
+  - cloud
+  - minimal
+  - light theme
+  - CTA
+  - demo
+  - Antimetal
+  - AWS
+  - cost savings
+  - dot pattern
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

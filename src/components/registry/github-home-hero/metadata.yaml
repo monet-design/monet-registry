@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: github-home-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/github-home-page-section-hero.jpg
+
+freeformKeywords:
+  - github
+  - developer
+  - platform
+  - coding
+  - hero
+  - dark theme
+  - saas
+  - tech
+  - sign up
+  - email input
+  - code editor
+  - copilot
+  - AI
+  - collaboration
+  - tabs
+  - CTA
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

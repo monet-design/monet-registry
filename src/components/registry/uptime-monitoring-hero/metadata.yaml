@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: uptime-monitoring-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/better-stack-uptime-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - uptime
+  - monitoring
+  - saas
+  - dashboard
+  - email signup
+  - dark theme
+  - infrastructure
+  - apdex
+  - analytics
+  - better stack
+  - logo cloud
+  - social proof
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

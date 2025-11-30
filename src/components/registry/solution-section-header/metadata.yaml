@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: solution-section-header
+category: header
+
+images:
+  preview: agent-input/unsection-hero/antimetal-home-page-section-solution-header.jpg
+
+freeformKeywords:
+  - solution
+  - section
+  - header
+  - AWS
+  - command
+  - control
+  - minimal
+  - clean
+  - chevron
+  - pattern
+  - badge
+  - announcement
+  - hero
+  - landing
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

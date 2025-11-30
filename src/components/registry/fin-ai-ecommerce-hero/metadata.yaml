@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: fin-ai-ecommerce-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/fin-ai-ecommerce-hero-design.jpg
+
+freeformKeywords:
+  - hero
+  - AI agent
+  - ecommerce
+  - customer support
+  - chatbot
+  - dark theme
+  - SaaS
+  - fintech
+  - dashboard
+  - intercom
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

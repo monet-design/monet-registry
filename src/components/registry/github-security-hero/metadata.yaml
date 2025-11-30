@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: github-security-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/github-security-hero-section.webp
+
+freeformKeywords:
+  - github
+  - security
+  - hero
+  - dark theme
+  - enterprise
+  - developer
+  - code security
+  - vulnerability
+  - secret protection
+  - saas
+  - landing page
+  - call to action
+  - feature cards
+  - logo cloud
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: clay-careers-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/clay-careers-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - careers
+  - signatures
+  - dark theme
+  - handwriting
+  - sign our name
+  - minimal
+  - black background
+  - creative agency
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

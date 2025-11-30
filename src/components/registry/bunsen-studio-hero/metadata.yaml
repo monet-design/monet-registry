@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: bunsen-studio-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/bunsen-studio-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - dark theme
+  - science
+  - design agency
+  - creative studio
+  - minimal
+  - landing page
+  - technology
+  - startup
+  - black background
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

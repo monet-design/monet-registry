@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: creative-sandboxes-showcase
+category: showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/codesandbox-sandboxes-page-section-discover-creative-sandboxes.jpg
+
+freeformKeywords:
+  - sandbox
+  - creative
+  - discover
+  - inspiration
+  - code editor
+  - IDE
+  - fork
+  - projects
+  - codesandbox
+  - developer tools
+  - showcase
+  - gallery
+  - dark theme
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

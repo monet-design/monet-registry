@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: contra-pro-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/contra-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - contra
+  - portfolio
+  - freelance
+  - gradient
+  - dark theme
+  - showcase
+  - cards
+  - creative
+  - designer
+  - purple
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

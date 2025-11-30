@@ -1,5 +1,9 @@
 /* Import main project styles */
 @import "tailwindcss";
+
+/* Tailwind v4: 상위 src 폴더의 컴포넌트 클래스를 스캔 */
+@source "../../../src";
+
 @import "../../../src/styles/utils.css";
 
 @import "tw-animate-css";

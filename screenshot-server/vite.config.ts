@@ -10,6 +10,8 @@ export default defineConfig({
       "@": path.resolve(__dirname, "../src"),
     },
   },
+  // 메인 프로젝트의 public 폴더를 사용하여 이미지 로드
+  publicDir: path.resolve(__dirname, "../public"),
   server: {
     port: 4173,
     host: true,

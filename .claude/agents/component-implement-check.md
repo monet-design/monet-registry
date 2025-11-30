@@ -5,11 +5,28 @@ model: inherit
 ---
 
 주어진 const.ts 파일을 읽고 다음과 같이 작업하세요.
-puppeteer-swarm mcp를 사용하세요. (이미 launch된 상태입니다.)
-반드시 localhost:3000만 사용하세요. (이미 dev 서버가 실행되어있습니다.)
+
+## Screenshot Server 사용
+
+`/screenshot-server`는 Vite 기반 스크린샷 전용 서버입니다.
+컴포넌트만 독립적으로 렌더링하여 정확한 비교가 가능합니다.
+
+### 서버 실행 (이미 실행 중이면 생략)
+```bash
+cd screenshot-server && pnpm dev
+```
+
+### 스크린샷 캡처 (CLI 스크립트)
+```bash
+cd screenshot-server
+pnpm capture -c {NAME}                    # 단일 컴포넌트 (desktop + mobile)
+pnpm capture -c {NAME} -v desktop         # desktop만
+pnpm capture -c {NAME} -v mobile          # mobile만
+```
+- 결과물: `screenshots/{NAME}/desktop.png`, `screenshots/{NAME}/mobile.png`
 
 1. 현재 컴포넌트가 구현된 상태를 확인하세요.
-   - 브라우저의 `/example/registry?name={NAME}` 경로로 접근한 뒤, 1초 기다리고 스크린샷을 캡쳐하세요.
+   - CLI 스크립트로 스크린샷을 캡처하고, 결과 이미지 파일을 읽으세요.
 2. 스크린샷에 포함된 element, layer들의 크기/위치/색상/border/shadow/italic여부/font-weight 를 자세하게 파악하세요.
 3. 스크린샷에 포함된 absolute element들의 위치/z-index/각도를 자세하게 파악하세요.
 4. metadata의 imagePath에 저장된 원본 이미지를 읽으세요.

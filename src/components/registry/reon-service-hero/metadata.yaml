@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: reon-service-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/reon-service-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - consultancy
+  - service page
+  - coral
+  - pink
+  - red background
+  - italic headline
+  - serif
+  - meeting
+  - team
+  - corporate
+  - business
+  - professional
+  - enterprise
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

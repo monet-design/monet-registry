@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: reveni-hero
+category: hero
+
+images:
+  preview: /agent-input/unsection-hero/reveni-business-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - ecommerce
+  - refunds
+  - exchanges
+  - returns
+  - business
+  - saas
+  - photo background
+  - italic headline
+  - trust logos
+  - cta button
+  - landing
+
+fontFamily:
+  - Playfair Display
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

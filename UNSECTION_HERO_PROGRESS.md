@@ -1,8 +1,8 @@
 # Unsection Hero Components Progress
 
 **Total Images:** 285
-**Completed:** 203 (71%)
-**Pending:** 82 (29%)
+**Completed:** 213 (75%)
+**Pending:** 72 (25%)
 
 ---
 
@@ -213,6 +213,16 @@
 | 201 | `ramp-home-page-section-hero.jpg` | `ramp-home-page-section-hero` |
 | 202 | `ramp-pricing-page-section-hero.jpg` | `ramp-pricing-hero` |
 | 203 | `ramp-startup-page-section-hero.jpg` | `ramp-startup-hero` |
+| 204 | `rbbecon-about-page-section-hero.jpg` | `rbb-about-hero` |
+| 205 | `rbbecon-home-page-section-hero.jpg` | `rbb-economics-hero` |
+| 206 | `reon-home-page-section-hero.jpg` | `reon-hero` |
+| 207 | `reon-insights-page-section-hero.jpg` | `reon-insights-hero` |
+| 208 | `reon-service-page-section-hero.jpg` | `reon-service-hero` |
+| 209 | `resend-home-page-section-hero.jpg` | `resend-hero` |
+| 210 | `reveni-business-page-section-hero.jpg` | `reveni-hero` |
+| 211 | `reveni-home-page-section-hero.jpg` | `reveni-hero` |
+| 212 | `riotters-about-page-section-hero.jpg` | `riotters-about-hero` |
+| 213 | `riotters-home-page-section-hero.jpg` | `riotters-hero` |
 
 ---
 
@@ -220,16 +230,6 @@
 
 | # | Source Image |
 |---|--------------|
-| 147 | `rbbecon-about-page-section-hero.jpg` |
-| 148 | `rbbecon-home-page-section-hero.jpg` |
-| 149 | `reon-home-page-section-hero.jpg` |
-| 150 | `reon-insights-page-section-hero.jpg` |
-| 151 | `reon-service-page-section-hero.jpg` |
-| 152 | `resend-home-page-section-hero.jpg` |
-| 153 | `reveni-business-page-section-hero.jpg` |
-| 154 | `reveni-home-page-section-hero.jpg` |
-| 155 | `riotters-about-page-section-hero.jpg` |
-| 156 | `riotters-home-page-section-hero.jpg` |
 | 157 | `rivian-home-page-section-hero.jpg` |
 | 158 | `rivian-r1t-page-section-hero.jpg` |
 | 159 | `rivian-r2-page-section-hero.jpg` |

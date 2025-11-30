@@ -31,7 +31,7 @@ export default function CoherenceHero({
 }: CoherenceHeroProps) {
   const renderDescription = () => {
     let result = description;
-    const parts: (string | JSX.Element)[] = [];
+    const parts: (string | React.ReactElement)[] = [];
     let lastIndex = 0;
 
     highlightedWords.forEach((word, idx) => {

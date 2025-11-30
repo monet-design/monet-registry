@@ -10,11 +10,7 @@ import type {
 /**
  * Orama 검색 엔진 인스턴스
  */
-let db: Orama<{
-  Schema: ComponentSearchDocument;
-  Index: Record<string, unknown>;
-  Document: ComponentSearchDocument;
-}> | null = null;
+let db: Orama<any> | null = null;
 
 /**
  * 검색 엔진 초기화
@@ -109,7 +105,7 @@ export async function searchComponents(
   const elapsed = performance.now() - startTime;
 
   const results: SearchResult[] = searchResult.hits.map((hit) => ({
-    id: hit.document.id,
+    id: String(hit.document.id),
     name: hit.document.name,
     category: hit.document.category,
     previewImage: hit.document.previewImage,

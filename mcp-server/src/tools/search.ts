@@ -135,7 +135,6 @@ export async function handleSearchComponents(
         id: r.id,
         name: r.name,
         category: r.category,
-        score: Math.round(r.score * 1000) / 1000,
         preview_image: r.previewImage,
         tags: r.tags,
         keywords: r.keywords,

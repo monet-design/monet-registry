@@ -19,7 +19,6 @@ export interface ComponentSearchResult {
   id: string;
   name: string;
   category: string;
-  score: number;
   preview_image: string;
   tags: {
     functional: string[];

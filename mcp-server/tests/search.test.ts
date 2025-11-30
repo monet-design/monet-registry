@@ -36,7 +36,6 @@ describe("GET /api/v1/components/search", () => {
         id: expect.any(String),
         name: expect.any(String),
         category: expect.any(String),
-        score: expect.any(Number),
       });
     });
 

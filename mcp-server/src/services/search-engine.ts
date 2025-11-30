@@ -39,7 +39,6 @@ export interface SearchResult {
   name: string;
   category: string;
   previewImage: string;
-  score: number;
   tags: {
     functional: string[];
     style: string[];
@@ -161,7 +160,6 @@ class SearchEngine {
         name: doc.name,
         category: doc.category,
         previewImage: doc.previewImage,
-        score: hit.score,
         tags: {
           functional: doc.functionalTags,
           style: doc.styleTags,

@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: iphone-creator-course
+category: pricing
+images:
+  preview: agent-input/before-after/iphone-creator-course.jpg
+tags:
+  functional:
+    - slider
+  style:
+    - light-theme
+    - minimal
+  layout:
+    - two-column
+  industry:
+    - e-commerce
+    - education
+    - creative
+freeformKeywords:
+  - image slider
+  - before and after slider
+  - photo comparison
+  - lightroom preset
+  - preset pack
+  - photo editing
+  - photography
+  - iphone photography
+  - mobile photography
+  - included resource
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

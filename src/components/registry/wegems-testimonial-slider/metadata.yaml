@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: wegems-testimonial-slider
+category: testimonial
+images:
+  preview: agent-input/testimonial-slider/wegems.jpg
+tags:
+  functional:
+    - carousel
+    - slider
+  layout:
+    - three-column
+    - card-grid
+    - inline
+  industry:
+    - saas
+    - creative
+    - startup
+freeformKeywords:
+  - customer reviews
+  - user feedback
+  - quote card
+  - green theme
+  - dark green background
+  - teal
+  - star rating
+  - 5 star
+  - avatar
+  - author info
+fontFamily:
+  - DM Serif Display
+  - Inter
+createdAt: "2025-11-30"
+status: stable

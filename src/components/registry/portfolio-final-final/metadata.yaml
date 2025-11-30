@@ -1,0 +1,36 @@
+schemaVersion: "2.0"
+name: portfolio-final-final
+category: pricing
+images:
+  preview: agent-input/biography/portfolio-final-final.jpg
+tags:
+  functional:
+    - carousel
+    - newsletter
+  style:
+    - minimal
+  layout:
+    - two-column
+    - three-column
+    - card-grid
+  industry:
+    - fintech
+    - e-commerce
+    - creative
+    - portfolio
+freeformKeywords:
+  - author
+  - landing page
+  - personal brand
+  - product designer
+  - ebook
+  - book
+  - letter
+  - introduction
+  - profile
+  - resume
+fontFamily:
+  - Inter
+  - Caveat
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: kyoso-before-after
+category: how-it-works
+images:
+  preview: agent-input/before-after/kyoso.jpg
+tags:
+  functional:
+    - animation
+    - video
+  style:
+    - light-theme
+    - minimal
+  layout:
+    - two-column
+  industry:
+    - saas
+    - creative
+    - ai
+freeformKeywords:
+  - before and after
+  - platform comparison
+  - workflow comparison
+  - tool comparison
+  - hub and spoke
+  - centralized
+  - unified platform
+  - all in one
+  - workflow simplification
+  - tool consolidation
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

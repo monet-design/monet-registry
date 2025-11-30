@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: vidflow-before-after
+category: before-after
+images:
+  preview: agent-input/before-after/vidflow.jpg
+tags:
+  functional:
+    - video
+  style:
+    - light-theme
+    - minimal
+  industry:
+    - saas
+    - e-commerce
+    - creative
+    - ai
+freeformKeywords:
+  - before and after
+  - video player
+  - video editor
+  - video platform
+  - youtube style
+  - video ui
+  - media player
+  - video thumbnail
+  - warm palette
+  - olive green
+fontFamily:
+  - DM Serif Display
+  - Inter
+createdAt: "2025-11-30"
+status: stable

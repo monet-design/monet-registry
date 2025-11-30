@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: beauty-with-intuition
+category: contact
+images:
+  preview: agent-input/contact-form/beauty-with-intuition.jpg
+tags:
+  functional:
+    - lead-capture
+    - contact-form
+  style:
+    - light-theme
+    - elegant
+    - serif
+  layout:
+    - two-column
+  industry:
+    - saas
+    - healthcare
+freeformKeywords:
+  - appointment booking
+  - lash salon
+  - beauty salon
+  - spa
+  - booking form
+  - schedule appointment
+  - two column layout
+  - location info
+  - business hours
+  - radio buttons
+fontFamily:
+  - Cormorant Garamond
+  - Inter
+createdAt: "2025-11-30"
+status: stable

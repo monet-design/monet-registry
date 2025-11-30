@@ -1,0 +1,37 @@
+schemaVersion: "2.0"
+name: feel-good-productivity
+category: biography
+images:
+  preview: agent-input/biography/feel-good-productivity.jpg
+tags:
+  functional:
+    - video
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - elegant
+    - serif
+  layout:
+    - centered
+  industry:
+    - e-commerce
+    - creative
+    - portfolio
+    - ai
+freeformKeywords:
+  - about the author
+  - author bio
+  - author biography
+  - book author
+  - writer
+  - author section
+  - about section
+  - white card
+  - serif font
+  - lora font
+fontFamily:
+  - Lora
+  - Source Sans 3
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: logo-tips-author
+category: testimonial
+images:
+  preview: agent-input/beautiful-sections/60-logo-tips-author.png
+tags:
+  style:
+    - minimal
+    - serif
+  layout:
+    - centered
+  industry:
+    - fintech
+    - creative
+freeformKeywords:
+  - author
+  - author section
+  - about author
+  - book author
+  - ebook
+  - logo design
+  - brand design
+  - specialist
+  - profile
+  - profile section
+fontFamily:
+  - DM Serif Display
+  - Inter
+createdAt: "2025-11-30"
+status: stable

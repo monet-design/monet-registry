@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: stephanie-bruce
+category: biography
+images:
+  preview: agent-input/biography/stephanie-bruce.jpg
+tags:
+  style:
+    - dark-theme
+    - minimal
+  layout:
+    - two-column
+  industry:
+    - saas
+    - creative
+    - portfolio
+freeformKeywords:
+  - personal website
+  - web designer
+  - tilted photos
+  - overlapping images
+  - italic headline
+  - professional
+  - developer
+  - webflow
+  - framer
+  - personal branding
+fontFamily:
+  - DM Sans
+createdAt: "2025-11-30"
+status: stable

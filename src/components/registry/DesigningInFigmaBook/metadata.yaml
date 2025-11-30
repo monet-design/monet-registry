@@ -1,0 +1,40 @@
+schemaVersion: "2.0"
+name: designing-in-figma-book
+category: pricing
+images:
+  preview: agent-input/biography/designing-in-figma-book.jpg
+tags:
+  functional:
+    - carousel
+    - tabs
+    - newsletter
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - playful
+  layout:
+    - three-column
+    - card-grid
+  industry:
+    - fintech
+    - e-commerce
+    - education
+    - creative
+    - portfolio
+    - ai
+freeformKeywords:
+  - profile
+  - about
+  - author
+  - book
+  - ebook
+  - figma
+  - introduction
+  - friendly
+  - card
+  - abstract shapes
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

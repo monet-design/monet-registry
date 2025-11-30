@@ -64,3 +64,4 @@ next-env.d.ts
 .playwright-mcp/*
 
 logs/*
+dist/*

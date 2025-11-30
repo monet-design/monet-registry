@@ -1,0 +1,35 @@
+schemaVersion: "2.0"
+name: blockjoy-contact-form
+category: testimonial
+images:
+  preview: agent-input/contact-form/blockjoy.jpg
+tags:
+  functional:
+    - email-capture
+    - contact-form
+  style:
+    - minimal
+    - modern
+    - neon
+  layout:
+    - inline
+  industry:
+    - saas
+    - fintech
+    - startup
+    - ai
+freeformKeywords:
+  - form
+  - lets chat
+  - message form
+  - inquiry form
+  - feedback form
+  - support form
+  - lime green
+  - bright green
+  - neon green
+  - green background
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

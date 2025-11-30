@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: milliners-yard
+category: pricing
+images:
+  preview: agent-input/contact-form/milliners-yard.jpg
+tags:
+  functional:
+    - email-capture
+    - lead-capture
+    - newsletter
+    - contact-form
+  style:
+    - elegant
+    - serif
+  industry:
+    - ai
+freeformKeywords:
+  - register interest
+  - real estate
+  - property
+  - apartment
+  - rental
+  - lease
+  - brochure download
+  - inquiry form
+  - burgundy
+  - wine color
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

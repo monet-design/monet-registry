@@ -1,0 +1,35 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-36
+category: pricing
+images:
+  preview: agent-input/landingfolio-hero/hero-36.jpg
+tags:
+  functional:
+    - newsletter
+  style:
+    - modern
+    - gradient
+    - serif
+  layout:
+    - two-column
+  industry:
+    - saas
+    - creative
+    - startup
+    - ai
+freeformKeywords:
+  - landing page
+  - email signup
+  - email subscription
+  - marketing
+  - weekly newsletter
+  - purple background
+  - violet theme
+  - blue gradient
+  - email form
+  - input fields
+fontFamily:
+  - DM Serif Display
+  - Inter
+createdAt: "2025-11-30"
+status: stable

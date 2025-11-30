@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: virtu-digital
+category: contact
+images:
+  preview: agent-input/contact-form/virtu-digital.jpg
+tags:
+  functional:
+    - contact-form
+  style:
+    - dark-theme
+    - minimal
+  industry:
+    - saas
+    - creative
+    - ai
+freeformKeywords:
+  - contact section
+  - collaboration
+  - footer contact
+  - agency contact
+  - digital agency
+  - virtu digital
+  - form
+  - email form
+  - phone input
+  - name input
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

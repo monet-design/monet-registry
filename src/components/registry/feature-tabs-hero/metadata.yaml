@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: feature-tabs-hero
+category: how-it-works
+images:
+  preview: agent-input/feature-carousel/straple.jpg
+tags:
+  functional:
+    - carousel
+    - tabs
+    - toggle
+  style:
+    - dark-theme
+  industry:
+    - e-commerce
+    - creative
+    - startup
+freeformKeywords:
+  - headline
+  - work
+  - productivity
+  - dark
+  - landing
+  - section
+  - tabbed
+  - content
+  - switcher
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

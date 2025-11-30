@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: show-them-course
+category: testimonial
+images:
+  preview: agent-input/biography/show-them-course.jpg
+tags:
+  style:
+    - dark-theme
+    - serif
+  layout:
+    - two-column
+    - card-grid
+  industry:
+    - e-commerce
+    - education
+    - portfolio
+    - ai
+freeformKeywords:
+  - instructor
+  - course instructor
+  - about
+  - credentials
+  - landing page
+  - consultant
+  - speaker
+  - conference speaker
+  - author
+  - book author
+fontFamily:
+  - Inter
+  - Playfair Display
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,38 @@
+schemaVersion: "2.0"
+name: hunter-hastings
+category: contact
+images:
+  preview: agent-input/contact-form/hunter-hastings.jpg
+tags:
+  functional:
+    - email-capture
+    - contact-form
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - elegant
+    - gradient
+    - glow
+    - serif
+  industry:
+    - saas
+    - creative
+    - portfolio
+    - ai
+freeformKeywords:
+  - contact page
+  - form
+  - email
+  - linkedin
+  - twitter
+  - dribbble
+  - social links
+  - social media
+  - reach out
+  - message form
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

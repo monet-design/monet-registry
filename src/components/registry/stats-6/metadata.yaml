@@ -1,0 +1,22 @@
+schemaVersion: "2.0"
+name: stats-6
+category: stats
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/landingfolio-stats/stats-6.jpg
+tags:
+  style:
+    - dark-theme
+  layout:
+    - three-column
+freeformKeywords:
+  - navy background
+  - diagonal lines
+  - decorative
+  - three columns
+  - users
+  - downloads
+  - rating
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: ilo-testimonial
+category: testimonial
+images:
+  preview: agent-input/testimonial-tweets/ilo.jpg
+tags:
+  style:
+    - light-theme
+  layout:
+    - two-column
+    - card-grid
+  industry:
+    - saas
+    - e-commerce
+    - creative
+freeformKeywords:
+  - tweets
+  - twitter
+  - customer reviews
+  - user feedback
+  - cream cards
+  - peach cards
+  - masonry layout
+  - tweet cards
+  - social media
+  - ilo
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

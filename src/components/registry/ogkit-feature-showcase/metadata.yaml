@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: ogkit-feature-showcase
+category: testimonial
+images:
+  preview: agent-input/feature-carousel/ogkit.jpg
+tags:
+  layout:
+    - three-column
+    - card-grid
+    - stack
+freeformKeywords:
+  - open graph
+  - og image
+  - html
+  - developer
+  - code editor
+  - meta tags
+  - social media
+  - og:image
+  - feature cards
+  - three columns
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: juho
+category: pricing
+images:
+  preview: agent-input/biography/juho.jpg
+tags:
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - elegant
+    - serif
+  layout:
+    - two-column
+  industry:
+    - creative
+    - portfolio
+    - ai
+freeformKeywords:
+  - profile
+  - about section
+  - finnish designer
+  - nordic
+  - scandinavia
+  - norway
+  - side by side
+  - profile image
+  - portrait
+  - personal website
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

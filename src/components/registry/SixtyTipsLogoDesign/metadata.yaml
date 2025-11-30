@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: sixty-tips-logo-design
+category: testimonial
+images:
+  preview: agent-input/biography/60-tips-logo-design.jpg
+tags:
+  style:
+    - light-theme
+    - minimal
+  layout:
+    - centered
+  industry:
+    - education
+    - creative
+    - portfolio
+freeformKeywords:
+  - author bio
+  - about section
+  - profile
+  - designer profile
+  - logo designer
+  - brand design
+  - specialist
+  - book introduction
+  - author introduction
+  - avatar
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

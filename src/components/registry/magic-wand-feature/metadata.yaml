@@ -1,0 +1,35 @@
+schemaVersion: "2.0"
+name: magic-wand-feature
+category: biography
+images:
+  preview: agent-input/feature-carousel/magician-for-figma.jpg
+tags:
+  functional:
+    - carousel
+    - slider
+    - tabs
+    - email-capture
+  style:
+    - dark-theme
+    - minimal
+    - serif
+  industry:
+    - saas
+    - creative
+    - ai
+    - crypto
+freeformKeywords:
+  - magic
+  - wand
+  - laptop
+  - mockup
+  - device
+  - phone
+  - mobile
+  - icon
+  - generator
+  - text-to-icon
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: derek-orr
+category: biography
+images:
+  preview: agent-input/biography/derek-orr.jpg
+tags:
+  style:
+    - light-theme
+    - minimal
+    - serif
+  layout:
+    - three-column
+  industry:
+    - e-commerce
+    - creative
+    - portfolio
+    - ai
+freeformKeywords:
+  - about
+  - personal website
+  - UX designer
+  - product designer
+  - profile
+  - introduction
+  - personal branding
+  - career
+  - resume
+  - CV
+fontFamily:
+  - Playfair Display
+  - Inter
+createdAt: "2025-11-30"
+status: stable

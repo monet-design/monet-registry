@@ -1,0 +1,36 @@
+schemaVersion: "2.0"
+name: graffio-contact-form
+category: contact
+images:
+  preview: agent-input/contact-form/graffio.jpg
+tags:
+  functional:
+    - email-capture
+    - contact-form
+  style:
+    - dark-theme
+    - minimal
+    - modern
+  layout:
+    - two-column
+  industry:
+    - saas
+    - creative
+    - portfolio
+    - ai
+freeformKeywords:
+  - form
+  - lets talk
+  - email
+  - phone
+  - message
+  - textarea
+  - input fields
+  - send button
+  - studio
+  - instagram
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

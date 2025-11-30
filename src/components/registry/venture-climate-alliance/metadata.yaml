@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: venture-climate-alliance
+category: contact
+images:
+  preview: agent-input/contact-form/venture-climate-alliance.jpg
+tags:
+  functional:
+    - lead-capture
+    - contact-form
+  style:
+    - light-theme
+    - minimal
+  layout:
+    - two-column
+  industry:
+    - saas
+    - creative
+    - ai
+freeformKeywords:
+  - membership form
+  - sign up
+  - join us
+  - alliance
+  - venture capital
+  - investor
+  - climate
+  - sustainability
+  - VCA
+  - two column layout
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

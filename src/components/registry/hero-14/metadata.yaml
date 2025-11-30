@@ -1,0 +1,36 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-14
+category: cta
+images:
+  preview: agent-input/landingfolio-hero/hero-14.jpg
+tags:
+  functional:
+    - animation
+  style:
+    - light-theme
+    - minimal
+    - elegant
+    - serif
+  layout:
+    - card-grid
+  industry:
+    - fintech
+    - e-commerce
+    - healthcare
+    - creative
+    - ai
+freeformKeywords:
+  - landing page
+  - fitness
+  - fitness equipment
+  - sports
+  - activewear
+  - athletic
+  - workout
+  - gym
+  - product cards
+  - floating cards
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

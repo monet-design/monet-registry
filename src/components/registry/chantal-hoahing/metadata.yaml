@@ -1,0 +1,35 @@
+schemaVersion: "2.0"
+name: chantal-hoahing
+category: contact
+images:
+  preview: agent-input/contact-form/chantal-hoahing.jpg
+tags:
+  functional:
+    - email-capture
+    - newsletter
+    - contact-form
+  style:
+    - light-theme
+    - minimal
+    - elegant
+  layout:
+    - two-column
+  industry:
+    - creative
+    - portfolio
+    - ai
+freeformKeywords:
+  - postcard
+  - postcard style
+  - postal card
+  - letter
+  - mail
+  - email form
+  - message form
+  - clean
+  - white
+  - stamp
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

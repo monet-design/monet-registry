@@ -1,0 +1,31 @@
+schemaVersion: "2.0"
+name: lovro-podobnik
+category: pricing
+images:
+  preview: agent-input/biography/lovro-podobnik.jpg
+tags:
+  style:
+    - dark-theme
+    - glassmorphism
+    - glow
+  layout:
+    - two-column
+  industry:
+    - creative
+    - portfolio
+    - ai
+freeformKeywords:
+  - profile
+  - about
+  - introduction
+  - cyan glow
+  - teal
+  - profile card
+  - profile image
+  - portrait
+  - quote
+  - highlighted quote
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

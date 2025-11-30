@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: melbourne-web-studio-testimonial
+category: testimonial
+images:
+  preview: agent-input/testimonial-slider/melbourne-web-studio.jpg
+tags:
+  functional:
+    - carousel
+    - slider
+  style:
+    - dark-theme
+  layout:
+    - two-column
+  industry:
+    - saas
+    - e-commerce
+    - creative
+    - startup
+freeformKeywords:
+  - customer reviews
+  - user feedback
+  - quote card
+  - google rating
+  - google reviews
+  - 5 star rating
+  - star rating
+  - slate background
+  - italic headline
+  - cursive font
+fontFamily:
+  - Pacifico
+  - Inter
+createdAt: "2025-11-30"
+status: stable

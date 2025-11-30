@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: canvas-view-showcase
+category: testimonial
+images:
+  preview: agent-input/feature-carousel/order.jpg
+tags:
+  functional:
+    - tabs
+    - toggle
+  style:
+    - dark-theme
+  industry:
+    - saas
+    - e-commerce
+    - creative
+freeformKeywords:
+  - canvas view
+  - customize view
+  - note-taking
+  - thought organization
+  - visual workspace
+  - freeform canvas
+  - list view
+  - gallery view
+  - view switcher
+  - productivity
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

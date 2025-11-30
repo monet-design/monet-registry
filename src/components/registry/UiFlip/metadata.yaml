@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: ui-flip
+category: pricing
+images:
+  preview: agent-input/biography/ui-flip.jpg
+tags:
+  style:
+    - light-theme
+    - minimal
+  layout:
+    - two-column
+  industry:
+    - saas
+    - e-commerce
+    - creative
+    - portfolio
+    - startup
+freeformKeywords:
+  - profile
+  - founder
+  - principal designer
+  - ui designer
+  - ux designer
+  - product designer
+  - design services
+  - web apps
+  - mobile apps
+  - landing pages
+fontFamily:
+  - DM Sans
+createdAt: "2025-11-30"
+status: stable

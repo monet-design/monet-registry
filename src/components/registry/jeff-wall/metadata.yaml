@@ -1,0 +1,37 @@
+schemaVersion: "2.0"
+name: jeff-wall
+category: testimonial
+images:
+  preview: agent-input/contact-form/jeff-wall.jpg
+tags:
+  functional:
+    - email-capture
+    - contact-form
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - elegant
+    - gradient
+    - serif
+  industry:
+    - saas
+    - creative
+    - portfolio
+    - ai
+freeformKeywords:
+  - form
+  - purple
+  - violet
+  - gold
+  - yellow
+  - italic
+  - send message
+  - name
+  - email
+  - message
+fontFamily:
+  - Playfair Display
+  - Inter
+createdAt: "2025-11-30"
+status: stable

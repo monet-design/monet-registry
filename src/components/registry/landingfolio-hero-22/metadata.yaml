@@ -1,0 +1,36 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-22
+category: biography
+images:
+  preview: agent-input/landingfolio-hero/hero-22.jpg
+tags:
+  functional:
+    - email-capture
+  style:
+    - minimal
+    - modern
+    - serif
+  industry:
+    - saas
+    - fintech
+    - e-commerce
+    - creative
+    - portfolio
+    - startup
+    - ai
+    - crypto
+freeformKeywords:
+  - landing page
+  - finance app
+  - expense tracker
+  - expense management
+  - mobile app
+  - budget
+  - money management
+  - personal finance
+  - app store
+  - google play
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

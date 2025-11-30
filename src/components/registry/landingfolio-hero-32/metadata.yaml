@@ -1,0 +1,36 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-32
+category: contact
+images:
+  preview: agent-input/landingfolio-hero/hero-32.jpg
+tags:
+  functional:
+    - animation
+    - email-capture
+    - lead-capture
+    - newsletter
+    - contact-form
+  style:
+    - serif
+  layout:
+    - two-column
+  industry:
+    - saas
+    - fintech
+    - e-commerce
+    - ai
+freeformKeywords:
+  - landing page
+  - book
+  - ebook
+  - yellow background
+  - bright theme
+  - vibrant
+  - psychology of money
+  - financial literacy
+  - money management
+  - book promotion
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

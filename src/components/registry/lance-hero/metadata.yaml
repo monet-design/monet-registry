@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: lance-hero
+category: testimonial
+images:
+  preview: agent-input/lead-capture-hero/lance.jpg
+tags:
+  functional:
+    - email-capture
+    - lead-capture
+  style:
+    - dark-theme
+    - serif
+  layout:
+    - centered
+  industry:
+    - fintech
+    - portfolio
+    - ai
+freeformKeywords:
+  - landing page
+  - signup form
+  - dashboard preview
+  - flow diagram
+  - money flow
+  - account management
+  - savings
+  - paycheck
+  - taxes
+  - italic headline
+fontFamily:
+  - Playfair Display
+  - Inter
+createdAt: "2025-11-30"
+status: stable

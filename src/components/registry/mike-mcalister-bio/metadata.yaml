@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: mike-mcalister-bio
+category: biography
+images:
+  preview: agent-input/biography/mike-mcalister.jpg
+tags:
+  style:
+    - minimal
+    - modern
+    - gradient
+    - serif
+  layout:
+    - centered
+    - two-column
+  industry:
+    - e-commerce
+    - creative
+    - portfolio
+freeformKeywords:
+  - profile
+  - introduction
+  - gradient background
+  - purple gradient
+  - blue gradient
+  - white section
+  - profile photo
+  - headshot
+  - signature
+  - handwritten
+fontFamily:
+  - DM Serif Display
+  - Inter
+createdAt: "2025-11-30"
+status: stable

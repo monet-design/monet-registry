@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: stats-19
+category: stats
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/landingfolio-stats/stats-19.jpg
+tags:
+  style:
+    - dark-theme
+    - serif
+  layout:
+    - four-column
+  industry:
+    - education
+    - ai
+freeformKeywords:
+  - card container
+  - border
+  - four columns
+  - countries
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

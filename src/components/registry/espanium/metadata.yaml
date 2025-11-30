@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: espanium
+category: stats
+images:
+  preview: agent-input/contact-form/espanium.jpg
+tags:
+  functional:
+    - lead-capture
+    - contact-form
+  style:
+    - light-theme
+    - minimal
+  layout:
+    - two-column
+  industry:
+    - saas
+    - creative
+    - ai
+freeformKeywords:
+  - form
+  - consultation
+  - request form
+  - lead form
+  - immigration
+  - residence permit
+  - visa
+  - spain
+  - spanish
+  - legal services
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

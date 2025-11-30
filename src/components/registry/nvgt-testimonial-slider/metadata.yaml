@@ -1,0 +1,35 @@
+schemaVersion: "2.0"
+name: nvgt-testimonial-slider
+category: testimonial
+images:
+  preview: agent-input/testimonial-slider/nvgt.jpg
+tags:
+  functional:
+    - carousel
+    - slider
+  style:
+    - dark-theme
+    - serif
+  layout:
+    - three-column
+    - card-grid
+  industry:
+    - saas
+    - creative
+    - startup
+freeformKeywords:
+  - customer reviews
+  - user feedback
+  - quote card
+  - black theme
+  - grid layout
+  - italic headline
+  - serif font
+  - nvgt
+  - brands
+  - company logos
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

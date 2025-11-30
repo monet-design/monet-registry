@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-18
+category: pricing
+images:
+  preview: agent-input/landingfolio-hero/hero-18.jpg
+tags:
+  functional:
+    - video
+  style:
+    - dark-theme
+    - elegant
+    - serif
+  industry:
+    - saas
+    - education
+    - food
+    - ai
+freeformKeywords:
+  - landing page
+  - bakery
+  - baking
+  - bread
+  - sourdough
+  - artisan
+  - online course
+  - cooking class
+  - culinary
+  - monthly pricing
+fontFamily:
+  - Inter
+  - Instrument Serif
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: anesh-kangutkar-testimonial
+category: testimonial
+images:
+  preview: agent-input/testimonial-slider/anesh-kangutkar.jpg
+tags:
+  functional:
+    - carousel
+    - slider
+  style:
+    - dark-theme
+    - minimal
+  layout:
+    - two-column
+  industry:
+    - creative
+    - portfolio
+freeformKeywords:
+  - customer reviews
+  - user feedback
+  - burnt orange
+  - terracotta
+  - italic headline
+  - company list
+  - navigation arrows
+  - profile card
+  - author info
+  - landing page
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

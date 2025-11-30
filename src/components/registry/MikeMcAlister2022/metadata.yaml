@@ -1,0 +1,37 @@
+schemaVersion: "2.0"
+name: mike-mcalister-2022
+category: biography
+images:
+  preview: agent-input/biography/mike-mcalister-2022.jpg
+tags:
+  style:
+    - dark-theme
+    - modern
+    - elegant
+    - gradient
+    - glassmorphism
+    - serif
+  layout:
+    - two-column
+  industry:
+    - saas
+    - fintech
+    - e-commerce
+    - creative
+    - portfolio
+freeformKeywords:
+  - profile
+  - about section
+  - meet me
+  - introduction
+  - developer
+  - engineer
+  - software engineer
+  - principal engineer
+  - purple background
+  - navy background
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

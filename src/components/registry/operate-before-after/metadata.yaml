@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: operate-before-after
+category: stats
+images:
+  preview: agent-input/before-after/operate.jpg
+tags:
+  functional:
+    - animation
+    - email-capture
+  style:
+    - minimal
+    - modern
+  industry:
+    - saas
+    - e-commerce
+    - creative
+    - startup
+    - ai
+freeformKeywords:
+  - chaos to clarity
+  - transformation
+  - scatter plot
+  - data visualization
+  - crm
+  - sales
+  - founders
+  - landing page
+  - green theme
+  - sage green
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

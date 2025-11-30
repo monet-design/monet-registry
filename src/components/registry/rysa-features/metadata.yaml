@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: rysa-features
+category: pricing
+images:
+  preview: agent-input/beautiful-sections/rysa-features.png
+tags:
+  style:
+    - light-theme
+    - minimal
+    - modern
+  layout:
+    - three-column
+    - card-grid
+    - bento
+  industry:
+    - saas
+    - e-commerce
+    - fashion
+    - ai
+freeformKeywords:
+  - feature-grid
+  - bento-grid
+  - ai-stylist
+  - dashboard
+  - product-features
+  - grid-layout
+  - clean
+  - white
+  - light-theme
+  - call-to-action
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

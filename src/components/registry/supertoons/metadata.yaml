@@ -1,0 +1,31 @@
+schemaVersion: "2.0"
+name: supertoons-before-after
+category: testimonial
+images:
+  preview: agent-input/before-after/supertoons.jpg
+tags:
+  functional:
+    - carousel
+    - slider
+    - counter
+  style:
+    - light-theme
+  industry:
+    - e-commerce
+    - creative
+    - ai
+freeformKeywords:
+  - image transformation
+  - AI art
+  - Ghibli style
+  - anime style
+  - photo to cartoon
+  - photo to anime
+  - image converter
+  - style transfer
+  - AI image generation
+  - supertoons
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

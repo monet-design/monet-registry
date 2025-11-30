@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: move-to-be-more
+category: testimonial
+images:
+  preview: agent-input/testimonial-slider/move-to-be-more.jpg
+tags:
+  functional:
+    - carousel
+    - slider
+  style:
+    - light-theme
+    - serif
+  layout:
+    - three-column
+    - card-grid
+  industry:
+    - portfolio
+    - ai
+freeformKeywords:
+  - customer reviews
+  - user feedback
+  - coaching
+  - life coach
+  - personal development
+  - self improvement
+  - potential
+  - beige theme
+  - warm colors
+  - grid layout
+fontFamily:
+  - Playfair Display
+  - Inter
+createdAt: "2025-11-30"
+status: stable

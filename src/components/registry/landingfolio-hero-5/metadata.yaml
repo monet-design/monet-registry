@@ -1,0 +1,36 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-5
+category: stats
+images:
+  preview: agent-input/landingfolio-hero/hero-5.jpg
+tags:
+  functional:
+    - email-capture
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - gradient
+  layout:
+    - two-column
+  industry:
+    - saas
+    - fintech
+    - creative
+    - startup
+    - ai
+freeformKeywords:
+  - landing page
+  - credit card
+  - developer
+  - email signup
+  - rareblocks
+  - landingfolio
+  - clean
+  - image hero
+  - person photo
+  - woman
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

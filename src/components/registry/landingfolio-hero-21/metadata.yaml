@@ -1,0 +1,37 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-21
+category: pricing
+images:
+  preview: agent-input/landingfolio-hero/hero-21.jpg
+tags:
+  functional:
+    - lead-capture
+    - newsletter
+  style:
+    - light-theme
+    - minimal
+    - modern
+  layout:
+    - centered
+    - card-grid
+  industry:
+    - saas
+    - fintech
+    - creative
+    - startup
+    - ai
+freeformKeywords:
+  - landing page
+  - developer
+  - job board
+  - career
+  - email signup
+  - blog
+  - articles
+  - content cards
+  - purple accent
+  - violet
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

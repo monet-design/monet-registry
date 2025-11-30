@@ -1,0 +1,31 @@
+schemaVersion: "2.0"
+name: geneva-testimonial-tweets
+category: pricing
+images:
+  preview: agent-input/testimonial-tweets/geneva.jpg
+tags:
+  functional:
+    - accordion
+  style:
+    - light-theme
+    - elegant
+  layout:
+    - three-column
+    - card-grid
+    - bento
+freeformKeywords:
+  - twitter
+  - tweets
+  - geneva
+  - groups
+  - community
+  - masonry
+  - user quotes
+  - x
+  - social media
+  - mission statement
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: adith-narein-testimonial
+category: testimonial
+images:
+  preview: agent-input/testimonial-slider/adith-narein.jpg
+tags:
+  functional:
+    - carousel
+    - slider
+  style:
+    - light-theme
+    - minimal
+  layout:
+    - card-grid
+    - inline
+  industry:
+    - creative
+    - portfolio
+freeformKeywords:
+  - customer reviews
+  - user feedback
+  - gray cards
+  - horizontal layout
+  - multi-card
+  - avatar icon
+  - script font
+  - cursive names
+  - hear from people
+  - worked with
+fontFamily:
+  - Inter
+  - Dancing Script
+createdAt: "2025-11-30"
+status: stable

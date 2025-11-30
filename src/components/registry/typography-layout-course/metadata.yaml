@@ -1,0 +1,31 @@
+schemaVersion: "2.0"
+name: typography-layout-course
+category: biography
+images:
+  preview: agent-input/biography/typography-layout-course.jpg
+tags:
+  style:
+    - dark-theme
+    - minimal
+  layout:
+    - two-column
+  industry:
+    - e-commerce
+    - education
+    - creative
+    - ai
+freeformKeywords:
+  - bio section
+  - introduction
+  - meet the designer
+  - designer bio
+  - creator bio
+  - course creator
+  - masterclass
+  - typography course
+  - layout course
+  - design course
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

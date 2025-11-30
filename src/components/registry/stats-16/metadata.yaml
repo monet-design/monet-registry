@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: stats-16
+category: stats
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/landingfolio-stats/stats-16.jpg
+tags:
+  style:
+    - light-theme
+  layout:
+    - four-column
+  industry:
+    - saas
+freeformKeywords:
+  - blue numbers
+  - underline accent
+  - four columns
+  - happy users
+  - return rate
+  - downloads
+  - awards
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

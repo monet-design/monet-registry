@@ -1,0 +1,22 @@
+schemaVersion: "2.0"
+name: stats-13
+category: stats
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/landingfolio-stats/stats-13.jpg
+tags:
+  style:
+    - light-theme
+  layout:
+    - two-column
+freeformKeywords:
+  - slash divider
+  - diagonal lines
+  - two column layout
+  - customers
+  - trustpilot
+  - rating
+  - ui kits
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

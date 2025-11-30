@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
 """
-Registry 컴포넌트 기본 파일 생성 스크립트
+Registry 컴포넌트 기본 파일 생성 스크립트 (v2 - YAML 기반 메타데이터)
 
 사용 예시:
   python scripts/create-registry-component.py \
     --name "my-awesome-hero" \
+    --category "hero" \
     --image-path "agent-input/hero/my-awesome.jpg" \
     --keywords "hero, landing, dark, minimal"
 
   python scripts/create-registry-component.py \
     -n "feature-showcase" \
+    -c "feature" \
     -i "agent-input/features/showcase.png" \
     -k "feature, showcase, tabs, dark theme" \
     -f "Playfair Display, Inter"
@@ -19,6 +21,7 @@ import argparse
 import sys
 import re
 from pathlib import Path
+from datetime import date
 
 
 def kebab_to_pascal(kebab_string: str) -> str:
@@ -66,25 +69,42 @@ def parse_font_family(font_string: str) -> list[str]:
     return [f for f in fonts if f]
 
 
-def generate_const_ts(
-    name: str, image_path: str, keywords: list[str], font_family: list[str]
+VALID_CATEGORIES = [
+    "hero", "stats", "testimonial", "feature", "pricing", "cta",
+    "contact", "faq", "how-it-works", "biography", "before-after",
+    "showcase", "header", "footer", "gallery", "team", "logo-cloud",
+    "newsletter", "other"
+]
+
+
+def generate_metadata_yaml(
+    name: str, category: str, image_path: str, keywords: list[str], font_family: list[str]
 ) -> str:
-    """const.ts 파일 내용 생성"""
+    """metadata.yaml 파일 내용 생성"""
 
-    # keywords를 TypeScript 배열 문자열로 변환
-    keywords_str = ",\n    ".join(f'"{kw}"' for kw in keywords)
+    # keywords를 YAML 배열 문자열로 변환
+    keywords_lines = "\n".join(f"  - {kw}" for kw in keywords)
 
-    # font_family를 TypeScript 배열 문자열로 변환
-    fonts_str = ", ".join(f'"{f}"' for f in font_family)
+    # font_family를 YAML 배열 문자열로 변환
+    fonts_lines = "\n".join(f"  - {f}" for f in font_family)
 
-    return f'''export const metadata = {{
-  imagePath: "{image_path}",
-  name: "{name}",
-  keywords: [
-    {keywords_str},
-  ],
-  fontFamily: [{fonts_str}],
-}};
+    today = date.today().isoformat()
+
+    return f'''schemaVersion: "2.0"
+name: {name}
+category: {category}
+
+images:
+  preview: {image_path}
+
+freeformKeywords:
+{keywords_lines}
+
+fontFamily:
+{fonts_lines}
+
+createdAt: "{today}"
+status: stable
 '''
 
 
@@ -122,14 +142,18 @@ def get_project_root() -> Path:
 
 def parse_arguments():
     parser = argparse.ArgumentParser(
-        description="Registry 컴포넌트 기본 파일 생성",
+        description="Registry 컴포넌트 기본 파일 생성 (v2 - YAML 기반)",
         formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
+        epilog=f"""
 예시:
   python scripts/create-registry-component.py \\
     --name "my-hero-section" \\
+    --category "hero" \\
     --image-path "agent-input/hero/my-hero.jpg" \\
-    --keywords "hero, landing page, dark theme, minimal"
+    --keywords "landing page, dark theme, minimal"
+
+유효한 카테고리:
+  {', '.join(VALID_CATEGORIES)}
         """,
     )
 
@@ -138,6 +162,14 @@ def parse_arguments():
         "--name",
         required=True,
         help="컴포넌트 이름 (kebab-case, 예: my-awesome-hero)",
+    )
+
+    parser.add_argument(
+        "-c",
+        "--category",
+        required=True,
+        choices=VALID_CATEGORIES,
+        help="컴포넌트 카테고리 (예: hero, stats, testimonial)",
     )
 
     parser.add_argument(
@@ -151,7 +183,7 @@ def parse_arguments():
         "-k",
         "--keywords",
         required=True,
-        help="검색 키워드들 (comma-separated, 예: 'hero, landing, dark')",
+        help="검색 키워드들 (comma-separated, 예: 'landing page, dark theme')",
     )
 
     parser.add_argument(
@@ -211,14 +243,16 @@ def main():
     component_dir.mkdir(parents=True, exist_ok=True)
     public_dir.mkdir(parents=True, exist_ok=True)
 
-    # 7. 파일 생성
-    const_content = generate_const_ts(args.name, args.image_path, keywords, font_family)
+    # 7. 파일 생성 (metadata.yaml + index.tsx)
+    metadata_content = generate_metadata_yaml(
+        args.name, args.category, args.image_path, keywords, font_family
+    )
     index_content = generate_index_tsx(args.name)
 
-    const_path = component_dir / "const.ts"
+    metadata_path = component_dir / "metadata.yaml"
     index_path = component_dir / "index.tsx"
 
-    const_path.write_text(const_content, encoding="utf-8")
+    metadata_path.write_text(metadata_content, encoding="utf-8")
     index_path.write_text(index_content, encoding="utf-8")
 
     # 8. 성공 메시지
@@ -226,14 +260,16 @@ def main():
 
     print(f"\n[SUCCESS] Registry 컴포넌트 '{args.name}' 생성 완료!\n")
     print("생성된 파일:")
-    print(f"  - {const_path.relative_to(project_root)}")
+    print(f"  - {metadata_path.relative_to(project_root)}")
     print(f"  - {index_path.relative_to(project_root)}")
     print(f"  - {public_dir.relative_to(project_root)}/ (빈 폴더)")
     print(f"\n컴포넌트 이름: {pascal_name}")
+    print(f"카테고리: {args.category}")
     print(f"키워드 수: {len(keywords)}")
     print(f"\n다음 단계:")
     print(f"  1. {index_path.relative_to(project_root)} 파일에서 컴포넌트 구현")
     print(f"  2. 필요한 이미지를 {public_dir.relative_to(project_root)}/ 에 추가")
+    print(f"  3. 'pnpm metadata:build' 실행하여 registry.json 업데이트")
 
 
 if __name__ == "__main__":

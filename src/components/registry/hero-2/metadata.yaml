@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-2
+category: stats
+images:
+  preview: agent-input/landingfolio-hero/hero-2.jpg
+tags:
+  style:
+    - light-theme
+    - modern
+    - playful
+    - serif
+  layout:
+    - card-grid
+  industry:
+    - saas
+    - education
+    - creative
+    - startup
+freeformKeywords:
+  - landing page
+  - learning platform
+  - social media
+  - mentorship
+  - online courses
+  - professionals
+  - career growth
+  - collage layout
+  - statistics cards
+  - photo grid
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,36 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-26
+category: pricing
+images:
+  preview: agent-input/landingfolio-hero/hero-26.jpg
+tags:
+  functional:
+    - newsletter
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - gradient
+    - glow
+    - neon
+  layout:
+    - two-column
+  industry:
+    - saas
+    - creative
+    - ai
+freeformKeywords:
+  - landing page
+  - email subscription
+  - design inspiration
+  - UI inspiration
+  - weekly articles
+  - gradient background
+  - portrait
+  - artistic
+  - subscription form
+  - email list
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

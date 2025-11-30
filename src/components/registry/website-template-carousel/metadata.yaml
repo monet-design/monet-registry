@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: website-template-carousel
+category: testimonial
+images:
+  preview: agent-input/feature-carousel/modulify.jpg
+tags:
+  functional:
+    - carousel
+    - slider
+  industry:
+    - saas
+    - creative
+    - portfolio
+    - food
+    - ai
+freeformKeywords:
+  - website templates
+  - template carousel
+  - website designs
+  - multipurpose
+  - saas website
+  - creative agency
+  - architecture
+  - consulting
+  - construction
+  - ai website builder
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

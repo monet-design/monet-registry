@@ -1,0 +1,36 @@
+schemaVersion: "2.0"
+name: oovra-contact-form
+category: contact
+images:
+  preview: agent-input/contact-form/oovra.jpg
+tags:
+  functional:
+    - lead-capture
+    - contact-form
+  style:
+    - light-theme
+    - minimal
+    - elegant
+    - serif
+  layout:
+    - two-column
+  industry:
+    - saas
+    - creative
+    - ai
+freeformKeywords:
+  - schedule meeting
+  - meeting form
+  - appointment form
+  - business inquiry
+  - beige theme
+  - warm colors
+  - two column layout
+  - minimal design
+  - clean form
+  - elegant form
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: how-it-works-steps
+category: pricing
+images:
+  preview: agent-input/how-it-works/2.png
+tags:
+  functional:
+    - newsletter
+  style:
+    - minimal
+  layout:
+    - three-column
+    - card-grid
+freeformKeywords:
+  - onboarding
+  - request
+  - receive
+  - 1 2 3
+  - simple steps
+  - getting started
+  - three steps
+  - service flow
+  - customer journey
+  - signup flow
+fontFamily:
+  - Playfair Display
+  - Inter
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: stats-2
+category: stats
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/landingfolio-stats/stats-2.jpg
+tags:
+  functional:
+    - counter
+  style:
+    - gradient
+  industry:
+    - ai
+freeformKeywords:
+  - blocks
+  - templates
+  - customers
+  - support
+  - rainbow border
+  - gradient border
+  - italic title
+  - tailwindcss
+  - ui kits
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

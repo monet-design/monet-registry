@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-7
+category: stats
+images:
+  preview: agent-input/landingfolio-hero/hero-7.jpg
+tags:
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - serif
+  industry:
+    - saas
+    - creative
+    - startup
+freeformKeywords:
+  - landing page
+  - design inspiration
+  - designers
+  - developers
+  - marketers
+  - 3D graphics
+  - abstract shapes
+  - torus
+  - button
+  - UI kit
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

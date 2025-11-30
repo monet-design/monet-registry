@@ -1,0 +1,36 @@
+schemaVersion: "2.0"
+name: innovation-initiative
+category: contact
+images:
+  preview: agent-input/contact-form/innovation-initiative.jpg
+tags:
+  functional:
+    - lead-capture
+    - newsletter
+    - contact-form
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - gradient
+  layout:
+    - two-column
+  industry:
+    - saas
+    - fintech
+    - creative
+freeformKeywords:
+  - form
+  - signup
+  - registration
+  - innovation
+  - initiative
+  - enterprise
+  - gradient background
+  - purple gradient
+  - abstract background
+  - wave pattern
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

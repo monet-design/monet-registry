@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: hedera-dx
+category: contact
+images:
+  preview: agent-input/contact-form/hedera-dx.jpg
+tags:
+  functional:
+    - lead-capture
+    - contact-form
+  style:
+    - light-theme
+    - minimal
+  layout:
+    - two-column
+  industry:
+    - saas
+    - healthcare
+    - creative
+freeformKeywords:
+  - form
+  - biotech
+  - pharmaceutical
+  - liquid biopsy
+  - diagnostics
+  - enterprise
+  - B2B
+  - business inquiry
+  - company info
+  - address
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

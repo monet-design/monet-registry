@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: ensage
+category: biography
+images:
+  preview: agent-input/biography/ensage.jpg
+tags:
+  style:
+    - dark-theme
+    - elegant
+    - serif
+  layout:
+    - two-column
+  industry:
+    - e-commerce
+    - creative
+    - portfolio
+freeformKeywords:
+  - about
+  - about section
+  - profile
+  - developer
+  - boutique
+  - solo founder
+  - founder story
+  - experience
+  - expertise
+  - years of experience
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

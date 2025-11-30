@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: brewitty
+category: contact
+images:
+  preview: agent-input/contact-form/brewitty.jpg
+tags:
+  functional:
+    - lead-capture
+    - contact-form
+  style:
+    - playful
+  layout:
+    - centered
+  industry:
+    - creative
+    - ai
+freeformKeywords:
+  - contact-form
+  - lets chat
+  - inquiry form
+  - message form
+  - lead form
+  - coffee
+  - brewing
+  - vintage phone
+  - retro phone
+  - rotary phone
+fontFamily:
+  - DM Serif Display
+  - Inter
+createdAt: "2025-11-30"
+status: stable

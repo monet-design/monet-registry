@@ -1,0 +1,23 @@
+schemaVersion: "2.0"
+name: stats-10
+category: stats
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/landingfolio-stats/stats-10.jpg
+tags:
+  style:
+    - dark-theme
+    - gradient
+    - glow
+    - serif
+freeformKeywords:
+  - blue glow
+  - gradient card
+  - border glow
+  - landingfolio
+  - facts
+  - serif font
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

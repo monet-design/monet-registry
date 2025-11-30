@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: superfriendly-contact
+category: contact
+images:
+  preview: agent-input/contact-form/superfriendly.jpg
+tags:
+  functional:
+    - contact-form
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - playful
+    - gradient
+  industry:
+    - creative
+    - ai
+freeformKeywords:
+  - contact section
+  - inquiry form
+  - booking form
+  - project booking
+  - charcoal background
+  - gradient text
+  - colorful logo
+  - holographic
+  - agency contact
+  - design agency
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

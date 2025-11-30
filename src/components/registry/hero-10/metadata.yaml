@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-10
+category: cta
+images:
+  preview: agent-input/landingfolio-hero/hero-10.jpg
+tags:
+  functional:
+    - video
+  style:
+    - light-theme
+  layout:
+    - two-column
+    - card-grid
+  industry:
+    - saas
+    - creative
+    - startup
+freeformKeywords:
+  - landing page
+  - collaboration
+  - remote work
+  - team collaboration
+  - mint green
+  - orange accent
+  - CTA button
+  - watch video
+  - navigation bar
+  - illustration
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

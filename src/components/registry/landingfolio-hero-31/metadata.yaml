@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-31
+category: stats
+images:
+  preview: agent-input/landingfolio-hero/hero-31.jpg
+tags:
+  style:
+    - light-theme
+    - minimal
+    - modern
+  layout:
+    - two-column
+  industry:
+    - saas
+    - creative
+    - startup
+    - ai
+freeformKeywords:
+  - landing page
+  - email marketing
+  - security
+  - secure email
+  - email tool
+  - marketing tool
+  - ClarityUI
+  - image left
+  - text right
+  - statistics card
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

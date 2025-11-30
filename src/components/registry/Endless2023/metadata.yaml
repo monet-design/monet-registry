@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: endless-2023
+category: biography
+images:
+  preview: agent-input/biography/endless-2023.jpg
+tags:
+  style:
+    - light-theme
+    - minimal
+    - serif
+  industry:
+    - creative
+    - portfolio
+    - startup
+    - ai
+freeformKeywords:
+  - about
+  - about us
+  - who we are
+  - founder
+  - design agency
+  - studio
+  - introduction
+  - profile
+  - landing page
+  - simple layout
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

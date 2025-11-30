@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: features-x
+category: showcase
+images:
+  preview: agent-input/beautiful-sections/features-x.png
+tags:
+  style:
+    - dark-theme
+  layout:
+    - four-column
+    - card-grid
+  industry:
+    - saas
+    - e-commerce
+freeformKeywords:
+  - feature grid
+  - feature cards
+  - saas features
+  - growth tools
+  - verified badges
+  - analytics
+  - job board
+  - handle acquisition
+  - korean
+  - 4 column grid
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

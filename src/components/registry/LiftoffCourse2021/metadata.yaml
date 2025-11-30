@@ -1,0 +1,31 @@
+schemaVersion: "2.0"
+name: liftoff-course-2021
+category: biography
+images:
+  preview: agent-input/biography/liftoff-course-2021.jpg
+tags:
+  style:
+    - light-theme
+  layout:
+    - two-column
+  industry:
+    - saas
+    - e-commerce
+    - education
+    - creative
+    - portfolio
+freeformKeywords:
+  - author
+  - course author
+  - about
+  - about the author
+  - profile
+  - instructor
+  - duotone
+  - pink duotone
+  - magenta
+  - photo with text
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

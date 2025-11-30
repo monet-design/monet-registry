@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-12
+category: biography
+images:
+  preview: agent-input/landingfolio-hero/hero-12.jpg
+tags:
+  functional:
+    - newsletter
+  style:
+    - light-theme
+    - minimal
+    - modern
+  industry:
+    - creative
+    - portfolio
+    - ai
+    - crypto
+freeformKeywords:
+  - landing page
+  - personal brand
+  - personal website
+  - writer
+  - blogger
+  - NFT
+  - content creator
+  - author
+  - blog
+  - latest picks
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

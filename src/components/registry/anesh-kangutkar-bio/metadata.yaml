@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: anesh-kangutkar-bio
+category: stats
+images:
+  preview: agent-input/biography/anesh-kangutkar.jpg
+tags:
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - serif
+  layout:
+    - two-column
+  industry:
+    - creative
+    - portfolio
+freeformKeywords:
+  - about section
+  - developer
+  - bold typography
+  - italic
+  - orange accent
+  - terracotta
+  - rust color
+  - circular button
+  - rotating text
+  - download resume
+fontFamily:
+  - Satoshi Variable
+  - Inter
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-11
+category: testimonial
+images:
+  preview: agent-input/landingfolio-hero/hero-11.jpg
+tags:
+  functional:
+    - carousel
+    - slider
+    - tabs
+    - video
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - serif
+  industry:
+    - saas
+    - startup
+freeformKeywords:
+  - landing page
+  - code review
+  - code feedback
+  - developers
+  - programmers
+  - coding
+  - code editor
+  - IDE
+  - browser mockup
+  - chat
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

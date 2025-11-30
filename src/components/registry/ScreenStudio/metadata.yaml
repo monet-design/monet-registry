@@ -1,0 +1,31 @@
+schemaVersion: "2.0"
+name: screen-studio-testimonial
+category: testimonial
+images:
+  preview: agent-input/testimonial-tweets/screen-studio.jpg
+tags:
+  functional:
+    - video
+  style:
+    - dark-theme
+  layout:
+    - two-column
+    - card-grid
+  industry:
+    - saas
+    - e-commerce
+freeformKeywords:
+  - tweets
+  - twitter
+  - customer reviews
+  - user feedback
+  - masonry layout
+  - tweet cards
+  - social media
+  - screen studio
+  - screen recording
+  - video production
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

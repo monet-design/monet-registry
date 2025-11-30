@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: viewport-before-after
+category: how-it-works
+images:
+  preview: agent-input/before-after/viewport-v2.jpg
+tags:
+  functional:
+    - email-capture
+    - lead-capture
+  style:
+    - light-theme
+    - minimal
+  layout:
+    - stack
+  industry:
+    - saas
+    - e-commerce
+    - creative
+    - startup
+freeformKeywords:
+  - before and after
+  - file organization
+  - chaotic files
+  - organized files
+  - figma
+  - design files
+  - content library
+  - brand assets
+  - archive
+  - inspiration
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

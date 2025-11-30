@@ -1,0 +1,21 @@
+schemaVersion: "2.0"
+name: stats-1
+category: stats
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/landingfolio-stats/stats-1.jpg
+tags:
+  functional:
+    - counter
+  style:
+    - gradient
+freeformKeywords:
+  - business stats
+  - years in business
+  - projects delivered
+  - gradient text
+  - company metrics
+  - achievements
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

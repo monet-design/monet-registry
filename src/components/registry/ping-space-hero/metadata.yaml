@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: ping-space-hero
+category: how-it-works
+images:
+  preview: agent-input/dribble-hero/ping-space.png
+tags:
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - gradient
+  industry:
+    - saas
+    - e-commerce
+    - creative
+    - startup
+    - ai
+freeformKeywords:
+  - landing page
+  - team collaboration
+  - workspace
+  - productivity
+  - chat
+  - messaging
+  - project management
+  - team communication
+  - all-in-one
+  - collaboration tool
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: i-am-superjuice
+category: contact
+images:
+  preview: agent-input/contact-form/i-am-superjuice.jpg
+tags:
+  functional:
+    - contact-form
+  style:
+    - light-theme
+    - gradient
+  layout:
+    - two-column
+  industry:
+    - saas
+    - food
+    - ai
+freeformKeywords:
+  - form
+  - distributor
+  - business orders
+  - juice
+  - food and drink
+  - organic
+  - natural
+  - gradient background
+  - sky blue
+  - cream
+fontFamily:
+  - Inter
+  - Allura
+createdAt: "2025-11-30"
+status: stable

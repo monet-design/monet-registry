@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-30
+category: cta
+images:
+  preview: agent-input/landingfolio-hero/hero-30.jpg
+tags:
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - gradient
+  layout:
+    - two-column
+    - card-grid
+  industry:
+    - saas
+    - creative
+    - startup
+freeformKeywords:
+  - landing page
+  - growth
+  - blog
+  - articles
+  - featured articles
+  - content
+  - writing
+  - grid pattern
+  - gradient button
+  - article cards
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

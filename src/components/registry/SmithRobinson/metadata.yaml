@@ -1,0 +1,31 @@
+schemaVersion: "2.0"
+name: smith-robinson
+category: biography
+images:
+  preview: agent-input/biography/smith-robinson.jpg
+tags:
+  style:
+    - dark-theme
+    - playful
+    - serif
+  layout:
+    - two-column
+  industry:
+    - creative
+freeformKeywords:
+  - origin story
+  - about us
+  - company story
+  - founding story
+  - team history
+  - client logos
+  - client showcase
+  - navy background
+  - gold accent
+  - yellow accent
+fontFamily:
+  - Playfair Display
+  - Inter
+  - Handlee
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,36 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-16
+category: pricing
+images:
+  preview: agent-input/landingfolio-hero/hero-16.jpg
+tags:
+  functional:
+    - carousel
+    - slider
+    - newsletter
+  style:
+    - light-theme
+    - minimal
+    - modern
+  layout:
+    - card-grid
+  industry:
+    - saas
+    - creative
+    - startup
+    - ai
+freeformKeywords:
+  - landing page
+  - designer community
+  - designers
+  - email subscription
+  - email signup
+  - blog cards
+  - article cards
+  - card carousel
+  - ClarityUI
+  - clean
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

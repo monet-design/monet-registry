@@ -1,0 +1,36 @@
+schemaVersion: "2.0"
+name: ai-profile-picture-generator
+category: testimonial
+images:
+  preview: agent-input/testimonial-tweets/ai-profile-picture-generator.jpg
+tags:
+  functional:
+    - counter
+    - email-capture
+  style:
+    - light-theme
+    - gradient
+    - serif
+  layout:
+    - card-grid
+    - bento
+  industry:
+    - saas
+    - e-commerce
+    - ai
+    - crypto
+freeformKeywords:
+  - twitter
+  - tweets
+  - masonry layout
+  - profile picture
+  - avatar generator
+  - customer reviews
+  - social media
+  - gradient text
+  - happy customers
+  - profilepicture.ai
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

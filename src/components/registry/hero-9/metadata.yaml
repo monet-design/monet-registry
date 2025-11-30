@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-9
+category: cta
+images:
+  preview: agent-input/landingfolio-hero/hero-9.jpg
+tags:
+  style:
+    - dark-theme
+    - modern
+    - gradient
+  layout:
+    - card-grid
+  industry:
+    - saas
+    - fintech
+    - education
+    - creative
+freeformKeywords:
+  - landing page
+  - credit card
+  - student
+  - student credit card
+  - payments
+  - teal
+  - mint green
+  - gradient cards
+  - floating cards
+  - credit card landing
+fontFamily:
+  - DM Serif Display
+  - Inter
+createdAt: "2025-11-30"
+status: stable

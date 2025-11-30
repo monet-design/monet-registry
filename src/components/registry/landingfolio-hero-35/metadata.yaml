@@ -1,0 +1,36 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-35
+category: pricing
+images:
+  preview: agent-input/landingfolio-hero/hero-35.jpg
+tags:
+  functional:
+    - video
+  style:
+    - dark-theme
+    - minimal
+    - elegant
+    - serif
+  layout:
+    - two-column
+  industry:
+    - e-commerce
+    - education
+    - food
+    - ai
+freeformKeywords:
+  - landing page
+  - bakery
+  - bread
+  - artisan
+  - sourdough
+  - baking course
+  - cafe
+  - cooking
+  - baking
+  - culinary
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

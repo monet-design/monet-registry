@@ -1,8 +1,8 @@
 # Unsection Hero Components Progress
 
-**Total Images:** 285
-**Completed:** 233 (82%)
-**Pending:** 52 (18%)
+**Total Images:** 249
+**Completed:** 197 (79%)
+**Pending:** 52 (20%)
 
 ---
 

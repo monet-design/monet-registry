@@ -1,0 +1,22 @@
+export const metadata = {
+  imagePath: "agent-input/landingfolio-stats/stats-8.jpg",
+  name: "stats-8",
+  keywords: [
+    "stats",
+    "statistics",
+    "achievements",
+    "metrics",
+    "numbers",
+    "counter",
+    "blue",
+    "curved decoration",
+    "SaaS",
+    "landing page",
+    "clients",
+    "projects",
+    "awards",
+    "download",
+    "card layout",
+  ],
+  fontFamily: ["DM Serif Display", "Inter"],
+};

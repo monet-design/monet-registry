@@ -1,0 +1,27 @@
+export const metadata = {
+  imagePath:
+    "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/landingfolio-stats/stats-16.jpg",
+  name: "stats-16",
+  keywords: [
+    "stats",
+    "statistics",
+    "numbers",
+    "metrics",
+    "counter",
+    "clients",
+    "global",
+    "downloads",
+    "projects",
+    "awards",
+    "achievements",
+    "minimal",
+    "clean",
+    "underline",
+    "blue accent",
+    "business metrics",
+    "company stats",
+    "horizontal layout",
+    "grid stats",
+  ],
+  fontFamily: ["Inter"],
+};

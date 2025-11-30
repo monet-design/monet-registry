@@ -13,7 +13,8 @@ model: inherit
    - font weight, italic 여부를 정확히 파악하세요.
    - 포함된 문구들의 line break 위치를 정확히 파악하세요.
 2. 해당 컴포넌트의 NAME을 정하세요. 반드시 lower-kebab-case여야합니다.
-3. 다음 스크립트를 실행하여 기본 파일 구조를 생성하세요:
+3. 반드시 다음 스크립트를 실행하여 기본 파일 구조를 생성하세요:
+
    ```bash
    python3 scripts/create-registry-component.py \
      --name "{NAME}" \
@@ -31,18 +32,19 @@ model: inherit
    | `--force` | | X | 기존 폴더 덮어쓰기 |
 
    **생성되는 파일:**
+
    - `/src/components/registry/{NAME}/const.ts` - 메타데이터
    - `/src/components/registry/{NAME}/index.tsx` - 기본 템플릿
    - `/public/registry/{NAME}/` - 이미지 저장용 폴더
 
-4. 아래 주의사항에 따라 index.tsx를 구현하세요.
+4. 아래 주의사항에 따라 index.tsx 내용을 구현하세요.
 
 ## 주의사항:
 
 - 스크립트가 생성한 기본 파일 외에, 필요시 다음 파일을 추가할 수 있습니다:
   - styles.css: tailwindcss 외의, 고차원적인 css 구현 필요시 추가되는 css module
   - font.css: 기본 폰트는 inter다. 이외에 font가 있다면 이 파일을 css module로 추가해 적용한다.
-- index.tsx외의 다른 tsx 파일은 절대로 생성/수정하지 마세요.
+- 스크립트가 생성한 tsx 파일 외의 다른 tsx 파일은 절대로 생성/수정하지 마세요.
 - 모든 props에 적절한 default value를 제공해서 아무 props를 전달하지 않아도 작동하도록 만드세요.
 - 컴포넌트는 반드시 default export 하세요.
 - index.tsx를 구현하기위해 디자인시스템 컴포넌트(button, heading, input등)가 필요하다면 shadcn 컴포넌트를 /src/components/ui 경로로 부터 import해서 사용하세요. shadcn에서 제공하지않는 컴포넌트라면 같은 tsx 파일 내에 별도 컴포넌트로 생성하여 사용하세요.

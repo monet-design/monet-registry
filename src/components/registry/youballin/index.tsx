@@ -112,7 +112,7 @@ export default function YouBallin({
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.4, delay: 0.3 }}
             >
-              <label className="block text-[#1a1a2e] text-sm font-medium mb-2">
+              <label className="block text-[#1a1a2e] text-sm font-semibold mb-2">
                 First name <span className="text-[#1a1a2e]">*</span>
               </label>
               <input
@@ -120,7 +120,7 @@ export default function YouBallin({
                 placeholder="Your name here"
                 value={formData.firstName}
                 onChange={(e) => handleInputChange("firstName", e.target.value)}
-                className="w-full px-5 py-3 rounded-full bg-transparent border-2 border-[#8572BC] text-[#1a1a2e] placeholder:text-[#8572BC] focus:outline-none focus:border-[#1a1a2e] transition-colors text-sm"
+                className="w-full px-5 py-3 rounded-full bg-transparent border-2 border-[#8572BC] text-[#1a1a2e] placeholder:text-[#5a4a8a] focus:outline-none focus:border-[#1a1a2e] transition-colors text-sm"
               />
             </motion.div>
 
@@ -129,7 +129,7 @@ export default function YouBallin({
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.4, delay: 0.35 }}
             >
-              <label className="block text-[#1a1a2e] text-sm font-medium mb-2">
+              <label className="block text-[#1a1a2e] text-sm font-semibold mb-2">
                 Last name <span className="text-[#1a1a2e]">*</span>
               </label>
               <input
@@ -137,7 +137,7 @@ export default function YouBallin({
                 placeholder="Your last name here"
                 value={formData.lastName}
                 onChange={(e) => handleInputChange("lastName", e.target.value)}
-                className="w-full px-5 py-3 rounded-full bg-transparent border-2 border-[#8572BC] text-[#1a1a2e] placeholder:text-[#8572BC] focus:outline-none focus:border-[#1a1a2e] transition-colors text-sm"
+                className="w-full px-5 py-3 rounded-full bg-transparent border-2 border-[#8572BC] text-[#1a1a2e] placeholder:text-[#5a4a8a] focus:outline-none focus:border-[#1a1a2e] transition-colors text-sm"
               />
             </motion.div>
 
@@ -146,7 +146,7 @@ export default function YouBallin({
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.4, delay: 0.4 }}
             >
-              <label className="block text-[#1a1a2e] text-sm font-medium mb-2">
+              <label className="block text-[#1a1a2e] text-sm font-semibold mb-2">
                 Social media handle
               </label>
               <input
@@ -154,7 +154,7 @@ export default function YouBallin({
                 placeholder="Social media handle here"
                 value={formData.socialMediaHandle}
                 onChange={(e) => handleInputChange("socialMediaHandle", e.target.value)}
-                className="w-full px-5 py-3 rounded-full bg-transparent border-2 border-[#8572BC] text-[#1a1a2e] placeholder:text-[#8572BC] focus:outline-none focus:border-[#1a1a2e] transition-colors text-sm"
+                className="w-full px-5 py-3 rounded-full bg-transparent border-2 border-[#8572BC] text-[#1a1a2e] placeholder:text-[#5a4a8a] focus:outline-none focus:border-[#1a1a2e] transition-colors text-sm"
               />
             </motion.div>
           </div>
@@ -166,7 +166,7 @@ export default function YouBallin({
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.4, delay: 0.45 }}
             >
-              <label className="block text-[#1a1a2e] text-sm font-medium mb-2">
+              <label className="block text-[#1a1a2e] text-sm font-semibold mb-2">
                 Email <span className="text-[#1a1a2e]">*</span>
               </label>
               <input
@@ -174,7 +174,7 @@ export default function YouBallin({
                 placeholder="Your email here"
                 value={formData.email}
                 onChange={(e) => handleInputChange("email", e.target.value)}
-                className="w-full px-5 py-3 rounded-full bg-transparent border-2 border-[#8572BC] text-[#1a1a2e] placeholder:text-[#8572BC] focus:outline-none focus:border-[#1a1a2e] transition-colors text-sm"
+                className="w-full px-5 py-3 rounded-full bg-transparent border-2 border-[#8572BC] text-[#1a1a2e] placeholder:text-[#5a4a8a] focus:outline-none focus:border-[#1a1a2e] transition-colors text-sm"
               />
             </motion.div>
 
@@ -184,7 +184,7 @@ export default function YouBallin({
               transition={{ duration: 0.4, delay: 0.5 }}
               className="relative"
             >
-              <label className="block text-[#1a1a2e] text-sm font-medium mb-2">
+              <label className="block text-[#1a1a2e] text-sm font-semibold mb-2">
                 Country <span className="text-[#1a1a2e]">*</span>
               </label>
               <div className="relative">
@@ -193,7 +193,7 @@ export default function YouBallin({
                   onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                   className="w-full px-5 py-3 rounded-full bg-transparent border-2 border-[#8572BC] text-left focus:outline-none focus:border-[#1a1a2e] transition-colors text-sm flex items-center justify-between"
                 >
-                  <span className={formData.country ? "text-[#1a1a2e]" : "text-[#8572BC]"}>
+                  <span className={formData.country ? "text-[#1a1a2e]" : "text-[#5a4a8a]"}>
                     {formData.country || "Select country"}
                   </span>
                   <ChevronDown

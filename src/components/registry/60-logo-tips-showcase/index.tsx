@@ -127,7 +127,7 @@ export default function LogoTipsShowcase({
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex gap-5 md:gap-6 px-4 md:px-8 overflow-x-auto scrollbar-hide"
+          className="flex gap-5 md:gap-6 px-4 md:px-8 overflow-x-auto overflow-y-hidden scrollbar-hide"
           style={{
             scrollbarWidth: "none",
             msOverflowStyle: "none",

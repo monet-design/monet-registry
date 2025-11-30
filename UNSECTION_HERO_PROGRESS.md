@@ -1,8 +1,8 @@
 # Unsection Hero Components Progress
 
 **Total Images:** 285
-**Completed:** 106 (37%)
-**Pending:** 179 (63%)
+**Completed:** 116 (41%)
+**Pending:** 169 (59%)
 
 ---
 
@@ -116,6 +116,16 @@
 | 104 | `grove-home-page-section-hero.jpg` | `global-growth-platform-hero` |
 | 105 | `grove-prm-page-section-hero.jpg` | `agency-hero-with-showcase` |
 | 106 | `hasko-home-page-section-hero.jpg` | `nocode-hero-section` |
+| 107 | `eventbeds-home-page-section-hero.jpg` | `eventbeds-hero` |
+| 108 | `hawthorne-skin-home-page-section-hero.jpg` | `hawthorne-skin-hero` |
+| 109 | `hello-network-section-home-page.jpg` | `hello-network-hero` |
+| 110 | `help-scout-home-page-section-hero-2.jpg` | `help-scout-hero` |
+| 111 | `help-scout-home-page-section-hero.jpg` | `help-scout-ai-hero` |
+| 112 | `help-scout-inbox-page-section-hero.jpg` | `help-scout-inbox-hero` |
+| 113 | `help-scout-platform-page-section-hero.jpg` | `help-scout-platform-hero` |
+| 114 | `holocene-hero-section-design.webp` | `holocene-hero` |
+| 115 | `hubspot-home-page-section-hero.jpg` | `hubspot-hero` |
+| 116 | `hyperliquid-home-page-section-hero.jpg` | `hyperliquid-hero` |
 
 ---
 
@@ -123,18 +133,8 @@
 
 | # | Source Image |
 |---|--------------|
-| 1 | `eventbeds-home-page-section-hero.jpg` |
-| 2 | `hawthorne-skin-home-page-section-hero.jpg` |
-| 52 | `hello-network-section-home-page.jpg` |
-| 53 | `help-scout-home-page-section-hero-2.jpg` |
-| 54 | `help-scout-home-page-section-hero.jpg` |
-| 55 | `help-scout-inbox-page-section-hero.jpg` |
-| 56 | `help-scout-platform-page-section-hero.jpg` |
-| 57 | `holocene-hero-section-design.webp` |
-| 58 | `hubspot-home-page-section-hero.jpg` |
-| 59 | `hyperliquid-home-page-section-hero.jpg` |
-| 60 | `in-tandem-home-page-section-hero.jpg` |
-| 61 | `initiate-home-section-hero.jpg` |
+| 1 | `in-tandem-home-page-section-hero.jpg` |
+| 2 | `initiate-home-section-hero.jpg` |
 | 62 | `insurely-home-page-section-hero.jpg` |
 | 63 | `intercom-blog-page-section-hero.jpg` |
 | 64 | `intercom-customers-hero-design.jpg` |

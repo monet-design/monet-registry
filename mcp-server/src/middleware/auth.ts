@@ -13,6 +13,7 @@ export function authMiddleware(
   next();
   return;
 
+  /*
   // 헬스체크 엔드포인트는 인증 제외
   if (req.path === "/health") {
     next();
@@ -65,4 +66,5 @@ export function authMiddleware(
   }
 
   next();
+  */
 }

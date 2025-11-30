@@ -49,8 +49,7 @@
 | 37 | `focal-home-page-section-cta.jpg` | `focal-creative-hero` |
 | 38 | `foundation-alloy-home-page-section-hero.jpg` | `foundation-alloy-hero` |
 | 39 | `gaelle-perrin-home-page-section-hero.jpg` | `gaelle-perrin-hero` |
-| 40 | `github-copilot-hero-section.webp` | `github-copilot-hero` |
-| 41 | `github-home-page-section-hero.jpg` | `github-home-hero` |
+| 40 | `github-home-page-section-hero.jpg` | `github-home-hero` |
 | 42 | `github-security-hero-section.webp` | `github-security-hero` |
 | 43 | `github-startups-page-section-hero.jpg` | `github-startups-hero` |
 | 44 | `github-team-page-section-hero.jpg` | `github-team-hero` |
@@ -154,8 +153,7 @@
 | 142 | `liveblocks-infrastructure-page-section-hero.jpg` | `liveblocks-infrastructure-hero` |
 | 143 | `liveblocks-notifications-page-section-hero-2.jpg` | `liveblocks-notifications-hero` |
 | 144 | `liveblocks-notifications-page-section-hero.jpg` | `liveblocks-realtime-hero` |
-| 145 | `liveblocks-realtime-apis-page-section-hero.jpg` | `hero-realtime-collab-tabs` |
-| 146 | `lowe-s-innovation-labs-home-page-section-hero.jpg` | `lowes-innovation-hero` |
+| 145 | `lowe-s-innovation-labs-home-page-section-hero.jpg` | `lowes-innovation-hero` |
 | 147 | `memory-customer-page-section-hero.jpg` | `hero-customer-ambassadors` |
 | 148 | `memory-home-page-section-hero.jpg` | `memory-hero` |
 | 149 | `mercury-home-page-section-hero.jpg` | `mercury-hero` |
@@ -170,7 +168,6 @@
 | 158 | `moxion-industries-page-section-hero.jpg` | `moxion-industries-hero` |
 | 159 | `moxion-technology-page-section-hero.jpg` | `moxion-technology-hero` |
 | 160 | `neycher-home-page-section-hero.jpg` | `neycher-hero` |
-| 161 | `nutsdev-home-page-section-hero.jpg` | `hero-design-agency-bento` |
 | 162 | `ocho-home-page-section-hero.jpg` | `ocho-home-page-section-hero` |
 | 163 | `ocho-solo-page-section-hero.jpg` | `ocho-solo-page-section-hero` |
 | 164 | `oddit-home-page-section-hero.jpg` | `hero-oddit-fresh-perspective` |

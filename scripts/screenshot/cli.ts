@@ -111,10 +111,8 @@ Options:
   -h, --help                 Show this help message
 
 Examples:
-  pnpm capture -c midday-hero
-  pnpm capture --components midday-hero,stats-1,feature-tabs
+  pnpm capture --components stats-1,feature-tabs
   pnpm capture --all
-  pnpm capture -c midday-hero -v desktop
 `);
 }
 

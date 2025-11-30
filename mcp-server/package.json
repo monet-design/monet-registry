@@ -17,9 +17,10 @@
     "@modelcontextprotocol/sdk": "^1.0.0",
     "@orama/orama": "^3.1.0",
     "express": "^4.21.0",
-    "zod": "^3.23.0",
     "js-yaml": "^4.1.0",
-    "lru-cache": "^11.0.0"
+    "lru-cache": "^11.0.0",
+    "react-hook-form": "^7.67.0",
+    "zod": "^3.23.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",

@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: ping-space-hero
-category: how-it-works
+category: hero
 images:
   preview: agent-input/dribble-hero/ping-space.png
 tags:

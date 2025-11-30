@@ -264,16 +264,21 @@ export default function AhrefsHeroSection({
               Webmaster Tools <span>account</span> <ArrowRight className="w-3 h-3" />
             </a>
           </div>
+        </motion.div>
 
-          {/* Stats */}
-          <div className="flex items-center gap-2 text-white/90 text-sm">
-            <HeartEmoji />
-            <div>
-              <span className="text-[#FFDC00] font-semibold">{stats.count}</span>
-              <span className="ml-1">{stats.description?.split(" ").slice(0, 2).join(" ")}</span>
-              <br />
-              <span>{stats.description?.split(" ").slice(2).join(" ")}</span>
-            </div>
+        {/* Stats - Centered below CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="flex items-center justify-center gap-2 text-white/90 text-sm mt-8"
+        >
+          <HeartEmoji />
+          <div className="text-center">
+            <span className="text-[#FFDC00] font-semibold">{stats.count}</span>
+            <span className="ml-1">{stats.description?.split(" ").slice(0, 2).join(" ")}</span>
+            <br />
+            <span>{stats.description?.split(" ").slice(2).join(" ")}</span>
           </div>
         </motion.div>
       </div>

@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: hero-payment-dashboard
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/mollie-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - payment
+  - fintech
+  - dashboard
+  - saas
+  - money management
+  - business
+  - checkout
+  - analytics
+  - chart
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

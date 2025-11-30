@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: hero-realtime-collab-tabs
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/liveblocks-realtime-apis-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - realtime
+  - collaborative
+  - tabs
+  - sync
+  - api
+  - storage
+  - multiplayer
+  - creative tools
+  - liveblocks
+  - two-tone
+  - dark light
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

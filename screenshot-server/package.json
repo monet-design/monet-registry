@@ -1,0 +1,32 @@
+{
+  "name": "screenshot-server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "capture": "tsx ../scripts/screenshot/cli.ts",
+    "capture:all": "tsx ../scripts/screenshot/cli.ts --all"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "motion": "^12.23.24",
+    "lucide-react": "^0.511.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.0",
+    "class-variance-authority": "^0.7.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.5.2",
+    "@tailwindcss/vite": "^4.1.17",
+    "tailwindcss": "^4.1.17",
+    "puppeteer": "^24.10.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  }
+}

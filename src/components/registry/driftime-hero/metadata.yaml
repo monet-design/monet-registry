@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: driftime-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/driftime-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - agency
+  - media
+  - digital
+  - progressive
+  - branding
+  - design
+  - dark
+  - beige
+  - pills
+  - badge
+  - iphone mockup
+  - mobile
+  - app showcase
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

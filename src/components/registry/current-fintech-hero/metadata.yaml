@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: current-fintech-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/current-home-page-section-hero.jpg
+
+freeformKeywords:
+  - fintech
+  - banking
+  - hero
+  - mobile app
+  - credit card
+  - savings
+  - spending
+  - invest
+  - money
+  - future
+  - startup
+  - neobank
+  - get started
+  - cta
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

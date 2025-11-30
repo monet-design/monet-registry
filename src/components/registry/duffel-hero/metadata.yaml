@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: duffel-hero
+category: hero
+
+images:
+  preview: /registry/duffel-hero/preview.jpg
+
+freeformKeywords:
+  - hero
+  - travel
+  - booking
+  - SaaS
+  - API
+  - flights
+  - accommodation
+  - startup
+  - fintech
+  - dark button
+  - CTA
+  - announcement banner
+  - Duffel
+  - travel API
+  - white background
+  - serif italic
+  - code editor
+  - flight search
+  - hotel booking
+
+fontFamily:
+  - Inter
+  - Instrument Serif
+
+createdAt: "2025-11-30"
+status: stable

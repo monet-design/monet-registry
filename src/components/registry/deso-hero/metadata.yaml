@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: deso-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/deso-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - blockchain
+  - crypto
+  - social
+  - web3
+  - decentralized
+  - landing
+  - dark theme
+  - 3D
+  - gradient
+  - serif
+  - italic
+  - wallet
+  - DeSo
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: conway-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/conway-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - digital commerce
+  - consulting
+  - agency
+  - strategy
+  - technology
+  - data
+  - dots pattern
+  - concentric circles
+  - experts
+  - growth
+  - navigation
+  - header
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

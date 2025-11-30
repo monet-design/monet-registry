@@ -298,15 +298,15 @@ export default function DriftimeHero({
         </div>
 
         {/* iPhone Mockups */}
-        <div className="relative mx-auto mt-8 flex max-w-4xl items-end justify-center gap-4 px-6 sm:mt-12 sm:gap-8">
+        <div className="relative mx-auto mt-8 flex max-w-4xl items-end justify-center gap-8 px-6 sm:mt-12 sm:gap-16 lg:gap-24">
           <IPhoneMockup
             screenSrc={appScreens.left}
-            className="translate-y-8 -rotate-3 sm:translate-y-12"
+            className="translate-y-12 -rotate-6 sm:translate-y-16"
             delay={0.6}
           />
           <IPhoneMockup
             screenSrc={appScreens.right}
-            className="-translate-y-4 rotate-2 sm:-translate-y-8"
+            className="-translate-y-4 rotate-6 sm:-translate-y-8"
             delay={0.8}
           />
         </div>

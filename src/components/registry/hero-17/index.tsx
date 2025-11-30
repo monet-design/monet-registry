@@ -201,28 +201,28 @@ export default function LandingfolioHero17({
             initial={{ opacity: 0, x: 60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="relative flex justify-center lg:justify-end items-center min-h-[400px] lg:min-h-[500px]"
+            className="relative flex justify-center lg:justify-end items-center min-h-[450px] lg:min-h-[550px]"
           >
             {/* White Card - Back */}
             <motion.div
               initial={{ rotate: -5, y: 20 }}
-              animate={{ rotate: -8, y: 0 }}
+              animate={{ rotate: -12, y: 0 }}
               transition={{
                 delay: 0.5,
                 duration: 0.6,
                 type: "spring",
                 stiffness: 100,
               }}
-              className="absolute z-10 w-[280px] md:w-[340px] lg:w-[380px]"
+              className="absolute z-10 w-[320px] md:w-[380px] lg:w-[440px]"
               style={{
-                transform: "rotate(-8deg) translateX(-40px) translateY(-60px)",
+                transform: "rotate(-12deg) translateX(-80px) translateY(-100px)",
               }}
             >
               <Image
                 src={whiteCardImage}
                 alt="White credit card"
-                width={380}
-                height={240}
+                width={440}
+                height={280}
                 className="w-full h-auto drop-shadow-2xl"
               />
             </motion.div>
@@ -230,23 +230,23 @@ export default function LandingfolioHero17({
             {/* Black Card - Front */}
             <motion.div
               initial={{ rotate: 5, y: -20 }}
-              animate={{ rotate: 12, y: 0 }}
+              animate={{ rotate: 15, y: 0 }}
               transition={{
                 delay: 0.6,
                 duration: 0.6,
                 type: "spring",
                 stiffness: 100,
               }}
-              className="absolute z-20 w-[280px] md:w-[340px] lg:w-[380px]"
+              className="absolute z-20 w-[320px] md:w-[380px] lg:w-[440px]"
               style={{
-                transform: "rotate(12deg) translateX(60px) translateY(60px)",
+                transform: "rotate(15deg) translateX(80px) translateY(100px)",
               }}
             >
               <Image
                 src={blackCardImage}
                 alt="Black credit card"
-                width={380}
-                height={240}
+                width={440}
+                height={280}
                 className="w-full h-auto drop-shadow-2xl"
               />
             </motion.div>

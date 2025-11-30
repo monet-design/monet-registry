@@ -46,8 +46,8 @@ function LargeLogoText({ text = "AKER" }: { text?: string }) {
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.4, duration: 0.7 }}
-      className="absolute bottom-8 left-6 z-20 font-inter text-[120px] font-bold leading-none tracking-[-0.02em] text-white md:text-[160px] lg:text-[200px]"
-      style={{ letterSpacing: "0.1em" }}
+      className="absolute bottom-12 left-8 z-20 font-inter text-[100px] font-bold leading-none tracking-[-0.02em] text-white md:text-[140px] lg:text-[180px]"
+      style={{ letterSpacing: "0.08em" }}
     >
       {text}
     </motion.h1>
@@ -65,7 +65,7 @@ function Tagline({
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.5, duration: 0.6 }}
-      className="absolute left-6 top-[45%] z-20 max-w-[260px] whitespace-pre-line text-sm leading-relaxed text-white/90"
+      className="absolute left-8 top-[35%] z-20 max-w-[280px] whitespace-pre-line text-sm leading-relaxed text-white/90 md:text-base"
     >
       {text}
     </motion.p>
@@ -89,11 +89,11 @@ function CollectiveCard({
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 0.6, duration: 0.6 }}
-      className="flex cursor-pointer gap-3 rounded-lg bg-white/10 p-3 backdrop-blur-md transition-all duration-300 hover:bg-white/15"
+      className="flex cursor-pointer gap-4 rounded-xl bg-white/10 p-4 backdrop-blur-md transition-all duration-300 hover:bg-white/15"
       onClick={onClick}
     >
       {/* Device mockup image */}
-      <div className="h-[100px] w-[140px] flex-shrink-0 overflow-hidden rounded-md bg-[#a8c4c0]">
+      <div className="h-[90px] w-[120px] flex-shrink-0 overflow-hidden rounded-lg bg-[#a8c4c0]">
         {image ? (
           <img
             src={image}
@@ -108,7 +108,7 @@ function CollectiveCard({
       </div>
 
       {/* Text content */}
-      <div className="flex flex-col justify-center">
+      <div className="flex flex-col justify-center flex-1">
         <div className="mb-2 flex items-center justify-between">
           <span className="text-sm font-medium text-white">{title}</span>
           <ArrowRight className="h-4 w-4 text-white" />
@@ -158,7 +158,7 @@ function LocationsCard({
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.8, duration: 0.6 }}
       onClick={onClick}
-      className="group flex h-[120px] cursor-pointer flex-col justify-end overflow-hidden rounded-lg bg-[#2a2c29] p-4 transition-all duration-300 hover:bg-[#363835]"
+      className="group flex h-[110px] cursor-pointer flex-col justify-end overflow-hidden rounded-xl bg-[#2a2c29] p-4 transition-all duration-300 hover:bg-[#363835]"
     >
       {/* US Map SVG */}
       <div className="mb-2 flex flex-1 items-center justify-center">
@@ -196,7 +196,7 @@ function CareersCard({
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.9, duration: 0.6 }}
       onClick={onClick}
-      className="group relative flex h-[120px] cursor-pointer flex-col justify-end overflow-hidden rounded-lg transition-all duration-300"
+      className="group relative flex h-[110px] cursor-pointer flex-col justify-end overflow-hidden rounded-xl transition-all duration-300"
     >
       {/* Background Image */}
       <div className="absolute inset-0">
@@ -261,7 +261,7 @@ export default function AkerHero({
       <Tagline text={tagline} />
 
       {/* Right Side Cards Grid */}
-      <div className="absolute right-6 top-[40%] z-20 flex w-[340px] flex-col gap-3">
+      <div className="absolute right-8 top-[30%] z-20 flex w-[320px] flex-col gap-4 lg:right-12 lg:w-[360px]">
         {/* The Collective Card */}
         <CollectiveCard
           title={collectiveTitle}
@@ -271,13 +271,13 @@ export default function AkerHero({
         />
 
         {/* Navigation Buttons */}
-        <div className="flex gap-2">
+        <div className="flex gap-3">
           <NavButton label={teamLabel} onClick={onTeamClick} delay={0.7} />
           <NavButton label={contactLabel} onClick={onContactClick} delay={0.75} />
         </div>
 
         {/* Bottom Cards Grid */}
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-2 gap-4">
           <LocationsCard label={locationsLabel} onClick={onLocationsClick} />
           <CareersCard
             label={careersLabel}

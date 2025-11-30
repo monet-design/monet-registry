@@ -50,6 +50,7 @@ model: inherit
 - index.tsx를 구현하기위해 디자인시스템 컴포넌트(button, heading, input등)가 필요하다면 shadcn 컴포넌트를 /src/components/ui 경로로 부터 import해서 사용하세요. shadcn에서 제공하지않는 컴포넌트라면 같은 tsx 파일 내에 별도 컴포넌트로 생성하여 사용하세요.
 - 필요한 폰트가 있다면 index.tsx 내에서만 적절히 처리하세요.
 - 필요한 이미지 asset이 있다면, 해당 이미지를 ai로 생성하기위한 구체적인 프롬프트를 고안하고, 이를 nanobanana mcp로 호출해 `/public/registry/{NAME}` 폴더를 만들어 그 안에 저장하고 불러와 사용해주세요. 배경이 투명한가?를 프롬프트에 확실히 명시하세요. 일러스트인 경우, 그림체를 확실히 명시하세요.
+  - 이미지를 생성한 후에, 배경이 투명한 이미지라면 sharp mcp의 remove_background로 한번 더 배경을 제거하세요.
 - 스크립트 실행 시 지정한 keywords는 search engine이 컴포넌트를 탐색하는 데 사용됩니다. 충분히 다양한 키워드를 지정하세요.
 - 필요한 icon은 `lucide-react`를 우선적으로 사용하세요.
 - 적절한 reveal 등 애니메이션을 `motion/react`, `tw-animate-css`로부터 사용하세요.

@@ -144,7 +144,7 @@ function FlightSearchCard() {
       initial={{ opacity: 0, y: 30, rotate: -2 }}
       animate={{ opacity: 1, y: 0, rotate: -2 }}
       transition={{ duration: 0.7, delay: 0.3 }}
-      className="absolute left-[5%] top-[10%] w-[280px] bg-white rounded-xl shadow-xl border border-gray-100 p-4 z-10"
+      className="absolute left-[2%] top-[5%] w-[260px] bg-white rounded-xl shadow-xl border border-gray-100 p-4 z-10"
     >
       <div className="flex gap-4 mb-4">
         <label className="flex items-center gap-2">
@@ -202,7 +202,7 @@ function CodeEditorCard() {
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, delay: 0.5 }}
-      className="absolute left-[2%] bottom-[5%] w-[300px] bg-[#1E1E2E] rounded-xl shadow-xl overflow-hidden z-5"
+      className="absolute left-[0%] bottom-[0%] w-[280px] bg-[#1E1E2E] rounded-xl shadow-xl overflow-hidden z-5"
     >
       <div className="flex items-center gap-2 px-4 py-2 bg-[#2D2D3A] border-b border-gray-700">
         <div className="flex gap-1.5">
@@ -278,7 +278,7 @@ function TripsCard() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, delay: 0.4 }}
-      className="absolute left-[35%] top-[5%] w-[200px] bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden z-20"
+      className="absolute left-[38%] top-[0%] w-[180px] bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden z-20"
     >
       <div className="p-3 border-b border-gray-100">
         <div className="flex items-center justify-between mb-1">
@@ -315,7 +315,7 @@ function HotelCard() {
       initial={{ opacity: 0, x: 30, rotate: 3 }}
       animate={{ opacity: 1, x: 0, rotate: 3 }}
       transition={{ duration: 0.7, delay: 0.5 }}
-      className="absolute right-[5%] top-[10%] w-[220px] bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden z-15"
+      className="absolute right-[2%] top-[0%] w-[200px] bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden z-15"
     >
       <div className="h-28 bg-gradient-to-br from-gray-200 to-gray-300 relative">
         <div className="absolute top-2 left-2 flex gap-0.5">
@@ -348,7 +348,7 @@ function BookingStatusCard() {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, delay: 0.6 }}
-      className="absolute right-[8%] bottom-[10%] w-[260px] bg-white rounded-xl shadow-xl border border-gray-100 p-3 z-20"
+      className="absolute right-[0%] bottom-[0%] w-[240px] bg-white rounded-xl shadow-xl border border-gray-100 p-3 z-20"
     >
       {[
         { status: "Confirmed", route: "LHR -> JFK", date: "14 Mar 2022, 22:00", price: "234.12", passenger: "Pepper Potts", color: "text-green-600" },
@@ -467,13 +467,13 @@ export default function DuffelHero({
       </div>
 
       {/* UI Cards Showcase */}
-      <div className="relative h-[400px] max-w-6xl mx-auto">
+      <div className="relative h-[450px] max-w-6xl mx-auto">
         {/* Feature Badges - Left side */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="absolute left-[2%] top-[5%] flex flex-col gap-2 z-30"
+          className="absolute left-[28%] top-[35%] flex flex-col gap-2 z-30"
         >
           {featureBadges.map((badge, index) => (
             <motion.div

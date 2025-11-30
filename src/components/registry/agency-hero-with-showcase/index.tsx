@@ -265,70 +265,73 @@ export default function AgencyHeroWithShowcase({
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="relative flex-1 flex items-center justify-center"
+            className="relative flex-1 flex items-center justify-center min-h-[320px]"
           >
             {/* Connection Lines SVG */}
             <svg
               className="absolute inset-0 w-full h-full pointer-events-none"
-              viewBox="0 0 600 400"
+              viewBox="0 0 600 320"
               fill="none"
               preserveAspectRatio="xMidYMid meet"
             >
-              {/* Left connection lines */}
+              {/* Left connection lines - curved bezier paths converging to center */}
               <path
-                d="M50 50 Q150 50 200 200"
-                stroke="#E5E7EB"
-                strokeWidth="1"
-                strokeDasharray="4 4"
+                d="M0 30 C80 30, 180 80, 260 160"
+                stroke="#2C9271"
+                strokeWidth="1.5"
+                strokeOpacity="0.3"
                 fill="none"
               />
               <path
-                d="M50 100 Q150 100 200 200"
-                stroke="#E5E7EB"
-                strokeWidth="1"
-                strokeDasharray="4 4"
+                d="M0 80 C100 80, 160 110, 260 160"
+                stroke="#2C9271"
+                strokeWidth="1.5"
+                strokeOpacity="0.35"
                 fill="none"
               />
               <path
-                d="M50 150 Q150 150 200 200"
-                stroke="#E5E7EB"
-                strokeWidth="1"
-                strokeDasharray="4 4"
+                d="M0 130 C120 130, 180 145, 260 160"
+                stroke="#2C9271"
+                strokeWidth="1.5"
+                strokeOpacity="0.4"
                 fill="none"
               />
               <path
-                d="M50 250 Q150 250 200 200"
-                stroke="#E5E7EB"
-                strokeWidth="1"
-                strokeDasharray="4 4"
+                d="M0 190 C120 190, 180 175, 260 160"
+                stroke="#2C9271"
+                strokeWidth="1.5"
+                strokeOpacity="0.4"
                 fill="none"
               />
               <path
-                d="M50 300 Q150 300 200 200"
-                stroke="#E5E7EB"
-                strokeWidth="1"
-                strokeDasharray="4 4"
+                d="M0 240 C100 240, 160 210, 260 160"
+                stroke="#2C9271"
+                strokeWidth="1.5"
+                strokeOpacity="0.35"
                 fill="none"
               />
               <path
-                d="M50 350 Q150 350 200 200"
-                stroke="#E5E7EB"
-                strokeWidth="1"
-                strokeDasharray="4 4"
+                d="M0 290 C80 290, 180 240, 260 160"
+                stroke="#2C9271"
+                strokeWidth="1.5"
+                strokeOpacity="0.3"
                 fill="none"
               />
               {/* Right connection line */}
               <path
-                d="M400 200 Q500 200 550 150"
-                stroke="#E5E7EB"
-                strokeWidth="1"
-                strokeDasharray="4 4"
+                d="M340 160 C420 160, 500 130, 600 100"
+                stroke="#2C9271"
+                strokeWidth="1.5"
+                strokeOpacity="0.35"
                 fill="none"
               />
+              {/* Connection dots at endpoints */}
+              <circle cx="260" cy="160" r="4" fill="#2C9271" opacity="0.5" />
+              <circle cx="340" cy="160" r="4" fill="#2C9271" opacity="0.5" />
             </svg>
 
             {/* Central Product Box */}
-            <div className="relative z-10 bg-[#D0EFE5] rounded-2xl px-8 py-6 border border-[#B8E0D4]">
+            <div className="relative z-10 bg-[#D0EFE5] rounded-2xl px-8 py-6 border border-[#B8E0D4] shadow-sm">
               <div className="flex items-center gap-2">
                 {/* Dots grid */}
                 <div className="grid grid-cols-2 gap-1">

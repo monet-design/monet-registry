@@ -94,7 +94,7 @@ export default function AnettWeber({
   };
 
   const inputBaseClasses =
-    "w-full bg-transparent border border-[#4a3d8a] rounded-sm px-4 py-3 text-white text-sm placeholder:text-white/70 focus:outline-none focus:border-white/50 transition-colors";
+    "w-full bg-transparent border border-[#5a4d9a] rounded-sm px-4 py-3 text-white text-sm placeholder:text-white/60 focus:outline-none focus:border-white/70 focus:ring-1 focus:ring-white/30 transition-colors";
 
   return (
     <section className="w-full bg-[#342778] py-16 md:py-24 px-4 md:px-8">
@@ -104,7 +104,7 @@ export default function AnettWeber({
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center text-5xl md:text-6xl lg:text-7xl italic text-[#4a3d8a] mb-12 md:mb-16"
+          className="text-center text-5xl md:text-6xl lg:text-7xl italic text-white/30 mb-12 md:mb-16"
           style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           {title}
@@ -155,11 +155,11 @@ export default function AnettWeber({
                   checked={acceptedPrivacy}
                   onChange={setAcceptedPrivacy}
                 />
-                <span className="text-white/80 text-sm">
+                <span className="text-white/90 text-sm">
                   {privacyText}{" "}
                   <a
                     href={privacyLinkHref}
-                    className="text-white underline hover:no-underline transition-all"
+                    className="text-white underline underline-offset-2 hover:no-underline transition-all"
                   >
                     {privacyLinkText}
                   </a>
@@ -169,7 +169,7 @@ export default function AnettWeber({
               {/* Send Button */}
               <button
                 type="submit"
-                className="bg-[#302769] text-white px-8 py-2.5 rounded text-sm font-medium hover:bg-[#3a3570] transition-colors"
+                className="bg-[#5a4d9a] text-white px-8 py-2.5 rounded text-sm font-medium hover:bg-[#6a5daa] transition-colors shadow-sm"
               >
                 {sendButtonText}
               </button>
@@ -181,26 +181,26 @@ export default function AnettWeber({
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex flex-col gap-4 md:mt-[60px]"
+            className="flex flex-col gap-5 md:mt-[60px]"
           >
             {/* Instagram */}
             <a
               href={instagramHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 text-white/80 hover:text-white transition-colors group"
+              className="flex items-center gap-3 text-white/90 hover:text-white transition-colors group"
             >
               <Instagram className="w-5 h-5" strokeWidth={1.5} />
-              <span className="text-sm">{instagramHandle}</span>
+              <span className="text-sm font-medium">{instagramHandle}</span>
             </a>
 
             {/* Email */}
             <a
               href={emailHref}
-              className="flex items-center gap-3 text-white/80 hover:text-white transition-colors group"
+              className="flex items-center gap-3 text-white/90 hover:text-white transition-colors group"
             >
               <Mail className="w-5 h-5" strokeWidth={1.5} />
-              <span className="text-sm">{emailText}</span>
+              <span className="text-sm font-medium">{emailText}</span>
             </a>
           </motion.div>
         </div>

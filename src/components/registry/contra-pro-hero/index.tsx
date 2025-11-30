@@ -228,26 +228,26 @@ export default function ContraProHero({
       {/* Portfolio Cards Showcase */}
       <div className="relative w-full h-[400px] sm:h-[450px] mt-8">
         <div className="absolute inset-0 flex items-center justify-center">
-          {/* Left Card 1 */}
+          {/* Left Card 1 (far left) */}
           <PortfolioCard
             image={portfolioImages[0]}
-            rotation={-15}
-            translateX={-380}
-            translateY={20}
+            rotation={-20}
+            translateX={-480}
+            translateY={40}
             zIndex={1}
             delay={0.6}
-            scale={0.85}
+            scale={0.75}
           />
 
           {/* Left Card 2 */}
           <PortfolioCard
             image={portfolioImages[2]}
-            rotation={-8}
-            translateX={-200}
-            translateY={-10}
+            rotation={-10}
+            translateX={-260}
+            translateY={10}
             zIndex={2}
             delay={0.7}
-            scale={0.9}
+            scale={0.85}
           />
 
           {/* Center Card (Main) */}
@@ -255,7 +255,7 @@ export default function ContraProHero({
             image={portfolioImages[1]}
             rotation={0}
             translateX={0}
-            translateY={0}
+            translateY={-20}
             zIndex={5}
             delay={0.5}
             scale={1}
@@ -264,23 +264,23 @@ export default function ContraProHero({
           {/* Right Card 1 */}
           <PortfolioCard
             image={portfolioImages[4]}
-            rotation={8}
-            translateX={200}
-            translateY={-10}
+            rotation={10}
+            translateX={260}
+            translateY={10}
             zIndex={2}
             delay={0.7}
-            scale={0.9}
+            scale={0.85}
           />
 
-          {/* Right Card 2 */}
+          {/* Right Card 2 (far right) */}
           <PortfolioCard
             image={portfolioImages[3]}
-            rotation={15}
-            translateX={380}
-            translateY={20}
+            rotation={20}
+            translateX={480}
+            translateY={40}
             zIndex={1}
             delay={0.6}
-            scale={0.85}
+            scale={0.75}
           />
         </div>
 

@@ -118,7 +118,7 @@ export default function EquipHero({
           initial={{ opacity: 0, x: 50, rotate: 5 }}
           animate={{ opacity: 1, x: 0, rotate: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="absolute top-0 right-0 md:right-[-40px] lg:right-[-60px] w-56 bg-[#FBE182] rounded-3xl p-5 shadow-lg transform translate-x-1/4"
+          className="absolute top-[20vh] right-0 md:right-[-40px] lg:right-[-60px] w-56 bg-[#FBE182] rounded-3xl p-5 shadow-lg transform translate-x-1/4"
         >
           <h3
             className="text-black text-lg font-semibold leading-snug"
@@ -147,7 +147,7 @@ export default function EquipHero({
           initial={{ opacity: 0, x: -50, y: 50 }}
           animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5 }}
-          className="absolute bottom-16 left-0 md:left-[-20px] lg:left-[-40px] w-64 bg-[#FC7155] rounded-3xl p-5 shadow-lg"
+          className="absolute bottom-[-4vh] left-0 md:left-[-20px] lg:left-[-40px] w-64 bg-[#FC7155] rounded-3xl p-5 shadow-lg"
         >
           {/* Header */}
           <div className="flex items-center gap-3 mb-3">
@@ -215,7 +215,7 @@ export default function EquipHero({
           initial={{ opacity: 0, x: 50, y: 50 }}
           animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{ duration: 0.7, delay: 0.6 }}
-          className="absolute bottom-8 right-8 md:right-16 lg:right-24 w-64 bg-[#FEACFF] rounded-3xl p-5 shadow-lg"
+          className="absolute bottom-[-12vh] right-8 md:right-16 lg:right-24 w-64 bg-[#FEACFF] rounded-3xl p-5 shadow-lg"
         >
           {/* Coach Header */}
           <div className="flex items-center gap-3 mb-4">

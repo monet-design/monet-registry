@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: isla-porter-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/isla-porter-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - cabinetry
+  - interior
+  - design
+  - luxury
+  - elegant
+  - serif
+  - full-screen
+  - background image
+  - navigation
+  - branding
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

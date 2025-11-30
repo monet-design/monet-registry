@@ -1,8 +1,8 @@
 # Unsection Hero Components Progress
 
 **Total Images:** 285
-**Completed:** 193 (68%)
-**Pending:** 92 (32%)
+**Completed:** 203 (71%)
+**Pending:** 82 (29%)
 
 ---
 
@@ -203,6 +203,16 @@
 | 191 | `plain-product-page-section-hero.webp` | `plain-product-page-section-hero` |
 | 192 | `planned-home-page-section-hero.jpg` | `planned-event-hero` |
 | 193 | `popcorn-home-page-section-hero.jpg` | `popcorn-home-page-section-hero` |
+| 194 | `popcorn-manifesto-page-section-hero.jpg` | `popcorn-manifesto-hero` |
+| 195 | `popcorn-research-page-section-hero.jpg` | `popcorn-research-hero` |
+| 196 | `popless-home-page-section-hero.jpg` | `popless-hero` |
+| 197 | `prismic-home-page-section-hero.jpg` | `prismic-hero` |
+| 198 | `prismic-slice-machine-page-section-hero.jpg` | `slice-machine-hero` |
+| 199 | `public-invest-page-section-hero.jpg` | `public-invest-hero` |
+| 200 | `ramp-corporate-page-section-hero.jpg` | `hero-corporate-card` |
+| 201 | `ramp-home-page-section-hero.jpg` | `ramp-home-page-section-hero` |
+| 202 | `ramp-pricing-page-section-hero.jpg` | `ramp-pricing-hero` |
+| 203 | `ramp-startup-page-section-hero.jpg` | `ramp-startup-hero` |
 
 ---
 
@@ -210,16 +220,6 @@
 
 | # | Source Image |
 |---|--------------|
-| 137 | `popcorn-manifesto-page-section-hero.jpg` |
-| 138 | `popcorn-research-page-section-hero.jpg` |
-| 139 | `popless-home-page-section-hero.jpg` |
-| 140 | `prismic-home-page-section-hero.jpg` |
-| 141 | `prismic-slice-machine-page-section-hero.jpg` |
-| 142 | `public-invest-page-section-hero.jpg` |
-| 143 | `ramp-corporate-page-section-hero.jpg` |
-| 144 | `ramp-home-page-section-hero.jpg` |
-| 145 | `ramp-pricing-page-section-hero.jpg` |
-| 146 | `ramp-startup-page-section-hero.jpg` |
 | 147 | `rbbecon-about-page-section-hero.jpg` |
 | 148 | `rbbecon-home-page-section-hero.jpg` |
 | 149 | `reon-home-page-section-hero.jpg` |

@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: popcorn-research-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/popcorn-research-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - telecom
+  - dark theme
+  - technology
+  - globe
+  - 3D
+  - research
+  - network
+  - global
+  - connectivity
+  - satellite
+  - AI
+  - intelligent
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

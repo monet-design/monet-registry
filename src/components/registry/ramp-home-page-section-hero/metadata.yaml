@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: ramp-home-page-section-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/ramp-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - fintech
+  - finance
+  - spending
+  - corporate cards
+  - olive
+  - lime green
+  - email signup
+  - SaaS
+  - business
+  - enterprise
+  - cards
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: solarpunk-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/solarpunk-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - solar
+  - energy
+  - renewable
+  - green
+  - eco
+  - sustainable
+  - agriculture
+  - farm
+  - search
+  - input
+  - nature
+  - lime
+  - banner
+
+fontFamily:
+  - DM Serif Display
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

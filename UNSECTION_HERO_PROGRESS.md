@@ -1,8 +1,8 @@
 # Unsection Hero Components Progress
 
 **Total Images:** 285
-**Completed:** 223 (78%)
-**Pending:** 62 (22%)
+**Completed:** 233 (82%)
+**Pending:** 52 (18%)
 
 ---
 
@@ -233,6 +233,16 @@
 | 221 | `sevalla-home-page-section-hero.jpg` | `sevalla-hero` |
 | 222 | `sketch-collaborate-page-section-hero.jpg` | `sketch-collaborate-hero` |
 | 223 | `sketch-color-variables-page-section-hero.jpg` | `sketch-color-variables-hero` |
+| 224 | `sketch-extensions-page-section-hero.jpg` | `sketch-extensions-hero` |
+| 225 | `sketch-handoff-page-section-hero.jpg` | `sketch-handoff-hero` |
+| 226 | `sketch-home-page-section-hero.jpg` | `sketch-home-hero` |
+| 227 | `sketch-prototype-page-section-hero.jpg` | `sketch-prototype-hero` |
+| 228 | `slite-home-page-section-hero.jpg` | `slite-hero` |
+| 229 | `solarpunk-home-page-section-hero.jpg` | `solarpunk-hero` |
+| 230 | `sophia-amoruso-home-page-section-hero.jpg` | `sophia-amoruso-hero` |
+| 231 | `sophia-amoruso-my-story-page-section-hero.jpg` | `sophia-amoruso-story-hero` |
+| 232 | `sound-ethics-about-page-section-hero.jpg` | `sound-ethics-about-hero` |
+| 233 | `sound-ethics-home-page-section-hero.jpg` | `sound-ethics-hero` |
 
 ---
 
@@ -240,16 +250,6 @@
 
 | # | Source Image |
 |---|--------------|
-| 167 | `sketch-extensions-page-section-hero.jpg` |
-| 168 | `sketch-handoff-page-section-hero.jpg` |
-| 169 | `sketch-home-page-section-hero.jpg` |
-| 170 | `sketch-prototype-page-section-hero.jpg` |
-| 171 | `slite-home-page-section-hero.jpg` |
-| 172 | `solarpunk-home-page-section-hero.jpg` |
-| 173 | `sophia-amoruso-home-page-section-hero.jpg` |
-| 174 | `sophia-amoruso-my-story-page-section-hero.jpg` |
-| 175 | `sound-ethics-about-page-section-hero.jpg` |
-| 176 | `sound-ethics-home-page-section-hero.jpg` |
 | 177 | `spellbook-career-page-section-hero.jpg` |
 | 178 | `spellbook-home-page-section-hero.jpg` |
 | 179 | `spellbook-review-page-section-hero.jpg` |

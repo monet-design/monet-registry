@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: slite-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/slite-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - saas
+  - knowledge base
+  - ai
+  - documents
+  - team collaboration
+  - email signup
+  - floating cards
+  - warm
+  - beige
+  - startup
+  - landing page
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

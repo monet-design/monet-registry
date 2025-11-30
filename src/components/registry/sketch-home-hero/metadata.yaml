@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: sketch-home-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/sketch-home-page-section-hero.jpg
+
+freeformKeywords:
+  - sketch
+  - design tool
+  - designer
+  - home
+  - landing
+  - hero
+  - gradient
+  - purple
+  - pink
+  - minimal
+  - elegant
+  - software
+  - creative
+  - app screenshot
+  - dashboard
+
+fontFamily:
+  - Georgia
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

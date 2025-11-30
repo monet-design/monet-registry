@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: sketch-prototype-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/sketch-prototype-page-section-hero.jpg
+
+freeformKeywords:
+  - sketch
+  - prototype
+  - design tool
+  - hero
+  - landing page
+  - gradient
+  - wave
+  - teal
+  - modern
+  - saas
+  - product
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

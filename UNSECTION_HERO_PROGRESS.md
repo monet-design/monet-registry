@@ -1,8 +1,8 @@
 # Unsection Hero Components Progress
 
 **Total Images:** 285
-**Completed:** 173 (61%)
-**Pending:** 112 (39%)
+**Completed:** 183 (64%)
+**Pending:** 102 (36%)
 
 ---
 
@@ -183,6 +183,16 @@
 | 171 | `outseta-payment-page-section-hero.jpg` | `outseta-payment-hero` |
 | 172 | `oyster-embedded-page-section-hero.jpg` | `oyster-embedded-hero` |
 | 173 | `oyster-global-employment-page-section-hero.jpg` | `oyster-global-employment-hero` |
+| 174 | `ortto-home-page-section-hero.jpg` | `ortto-hero` |
+| 175 | `oyster-home-page-section-hero.jpg` | `oyster-hero` |
+| 176 | `oyster-homepage-hero-section.jpg` | `oyster-homepage-hero` |
+| 177 | `oyster-people-page-section-hero.jpg` | `oyster-people-hero` |
+| 178 | `paradigm-home-page-section-hero.jpg` | `paradigm-hero` |
+| 179 | `parker-home-page-section-hero.jpg` | `parker-hero` |
+| 180 | `pash-about-page-section-hero.jpg` | `pash-about-page-section-hero` |
+| 181 | `pash-home-page-section-hero.jpg` | `pash-hero` |
+| 182 | `passionfroot-creator-page-section-hero.jpg` | `passionfroot-creator-hero` |
+| 183 | `passionfroot-home-page-section-hero.jpg` | `hero-influencer-platform` |
 
 ---
 
@@ -190,16 +200,6 @@
 
 | # | Source Image |
 |---|--------------|
-| 112 | `ortto-home-page-section-hero.jpg` |
-| 118 | `oyster-home-page-section-hero.jpg` |
-| 119 | `oyster-homepage-hero-section.jpg` |
-| 120 | `oyster-people-page-section-hero.jpg` |
-| 121 | `paradigm-home-page-section-hero.jpg` |
-| 122 | `parker-home-page-section-hero.jpg` |
-| 123 | `pash-about-page-section-hero.jpg` |
-| 124 | `pash-home-page-section-hero.jpg` |
-| 125 | `passionfroot-creator-page-section-hero.jpg` |
-| 126 | `passionfroot-home-page-section-hero.jpg` |
 | 127 | `patch-home-page-section-hero.jpg` |
 | 128 | `patch-security-page-section-hero.jpg` |
 | 129 | `pera-home-page-section-hero.jpg` |

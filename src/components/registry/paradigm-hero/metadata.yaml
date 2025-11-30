@@ -1,0 +1,31 @@
+schemaVersion: "2.0"
+name: paradigm-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/paradigm-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - landing page
+  - design agency
+  - unlimited design
+  - subscription
+  - SaaS
+  - serif
+  - italic
+  - elegant
+  - modern
+  - floating cards
+  - UI showcase
+  - product designer
+  - beige background
+  - warm
+  - professional
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

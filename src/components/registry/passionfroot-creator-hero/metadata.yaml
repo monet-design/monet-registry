@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: passionfroot-creator-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/passionfroot-creator-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - creator
+  - brand deals
+  - sponsorship
+  - saas
+  - dashboard
+  - italic title
+  - serif
+  - startup
+  - creator economy
+  - all-in-one
+  - cta buttons
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

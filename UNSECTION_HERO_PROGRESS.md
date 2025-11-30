@@ -1,8 +1,8 @@
 # Unsection Hero Components Progress
 
 **Total Images:** 285
-**Completed:** 134 (47%)
-**Pending:** 151 (53%)
+**Completed:** 144 (51%)
+**Pending:** 141 (49%)
 
 ---
 
@@ -144,6 +144,16 @@
 | 132 | `kota-blog-page-section-hero.jpg` | `kota-blog-hero` |
 | 133 | `kota-countries-page-section-hero-details.jpg` | `kota-countries-hero` |
 | 134 | `kota-countries-page-section-hero.jpg` | `kota-global-hero` |
+| 135 | `kota-home-page-section-hero.jpg` | `kota-home-hero` |
+| 136 | `kota-pricing-page-section-hero.jpg` | `kota-pricing-hero` |
+| 137 | `lawtrades-home-page-section-hero.jpg` | `lawtrades-hero` |
+| 138 | `linear-home-page-section-hero.jpg` | `linear-home-hero` |
+| 139 | `linear-integrations-page-section-hero.jpg` | `linear-integrations-hero` |
+| 140 | `liveblocks-comments-page-section-hero.jpg` | `liveblocks-comments-hero` |
+| 141 | `liveblocks-home-page-section-hero.jpg` | `liveblocks-home-hero` |
+| 142 | `liveblocks-infrastructure-page-section-hero.jpg` | `liveblocks-infrastructure-hero` |
+| 143 | `liveblocks-notifications-page-section-hero-2.jpg` | `liveblocks-notifications-hero` |
+| 144 | `liveblocks-notifications-page-section-hero.jpg` | `liveblocks-realtime-hero` |
 
 ---
 
@@ -151,20 +161,10 @@
 
 | # | Source Image |
 |---|--------------|
-| 1 | `kota-home-page-section-hero.jpg` |
-| 2 | `kota-pricing-page-section-hero.jpg` |
-| 3 | `lawtrades-home-page-section-hero.jpg` |
-| 4 | `linear-home-page-section-hero.jpg` |
-| 82 | `linear-integrations-page-section-hero.jpg` |
-| 83 | `liveblocks-comments-page-section-hero.jpg` |
-| 84 | `liveblocks-home-page-section-hero.jpg` |
-| 85 | `liveblocks-infrastructure-page-section-hero.jpg` |
-| 86 | `liveblocks-notifications-page-section-hero-2.jpg` |
-| 87 | `liveblocks-notifications-page-section-hero.jpg` |
-| 88 | `liveblocks-realtime-apis-page-section-hero.jpg` |
-| 89 | `lowe-s-innovation-labs-home-page-section-hero.jpg` |
-| 90 | `memory-customer-page-section-hero.jpg` |
-| 91 | `memory-home-page-section-hero.jpg` |
+| 1 | `liveblocks-realtime-apis-page-section-hero.jpg` |
+| 2 | `lowe-s-innovation-labs-home-page-section-hero.jpg` |
+| 3 | `memory-customer-page-section-hero.jpg` |
+| 4 | `memory-home-page-section-hero.jpg` |
 | 92 | `mercury-home-page-section-hero.jpg` |
 | 93 | `mission-lab-home-page-section-hero.jpg` |
 | 94 | `modal-lm-page-section-hero.jpg` |

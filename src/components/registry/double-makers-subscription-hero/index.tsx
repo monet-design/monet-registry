@@ -152,10 +152,11 @@ function DecorativeShapes({
   scrollYProgress: MotionValue<number>;
 }) {
   // Shape positions: initial (gathered) -> target (spread out)
+  // Initial X positions are 3.375x spread (1.5^3), Y positions are 2.25x spread (1.5^2)
   const shapes = [
     {
       // Green oval with pink star - top left
-      position: { initialX: -180, initialY: -80, targetX: -500, targetY: -180 },
+      position: { initialX: -608, initialY: -180, targetX: -500, targetY: -180 },
       delay: 0.4,
       rotate: -12,
       content: (
@@ -167,28 +168,28 @@ function DecorativeShapes({
     },
     {
       // Yellow circle - bottom left area
-      position: { initialX: -120, initialY: 100, targetX: -400, targetY: 280 },
+      position: { initialX: -405, initialY: 225, targetX: -400, targetY: 280 },
       delay: 0.5,
       rotate: 0,
       content: <div className="w-8 h-8 bg-[#E8D44D] rounded-full" />,
     },
     {
       // Teal vertical oval - bottom left
-      position: { initialX: -60, initialY: 140, targetX: -280, targetY: 350 },
+      position: { initialX: -203, initialY: 315, targetX: -280, targetY: 350 },
       delay: 0.55,
       rotate: 5,
       content: <div className="w-12 h-28 bg-[#5BC4B0] rounded-full" />,
     },
     {
       // Blue vertical oval - bottom center-left
-      position: { initialX: 20, initialY: 160, targetX: -120, targetY: 400 },
+      position: { initialX: 68, initialY: 360, targetX: -120, targetY: 400 },
       delay: 0.6,
       rotate: -8,
       content: <div className="w-14 h-36 bg-[#6B8EC9] rounded-full" />,
     },
     {
       // Coral circle with square pattern - top right
-      position: { initialX: 180, initialY: -60, targetX: 480, targetY: -150 },
+      position: { initialX: 608, initialY: -135, targetX: 480, targetY: -150 },
       delay: 0.45,
       rotate: 10,
       content: (
@@ -200,7 +201,7 @@ function DecorativeShapes({
     },
     {
       // Green vertical oval with white asterisk - right side
-      position: { initialX: 160, initialY: 60, targetX: 450, targetY: 180 },
+      position: { initialX: 540, initialY: 135, targetX: 450, targetY: 180 },
       delay: 0.5,
       rotate: -5,
       content: (
@@ -212,7 +213,7 @@ function DecorativeShapes({
     },
     {
       // Coral circle with teal asterisk - bottom right
-      position: { initialX: 100, initialY: 140, targetX: 380, targetY: 360 },
+      position: { initialX: 338, initialY: 315, targetX: 380, targetY: 360 },
       delay: 0.55,
       rotate: 15,
       content: (
@@ -224,14 +225,14 @@ function DecorativeShapes({
     },
     {
       // Extra small pink circle - top area
-      position: { initialX: -40, initialY: -120, targetX: -150, targetY: -300 },
+      position: { initialX: -135, initialY: -270, targetX: -150, targetY: -300 },
       delay: 0.65,
       rotate: 0,
       content: <div className="w-6 h-6 bg-[#F5A0D0] rounded-full" />,
     },
     {
       // Extra teal small oval - right top
-      position: { initialX: 80, initialY: -100, targetX: 300, targetY: -280 },
+      position: { initialX: 270, initialY: -225, targetX: 300, targetY: -280 },
       delay: 0.7,
       rotate: 20,
       content: <div className="w-10 h-16 bg-[#5BC4B0] rounded-full" />,

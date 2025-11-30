@@ -191,7 +191,7 @@ export default function LogoTipsShowcase({
           initial={{ opacity: 0 }}
           animate={{ opacity: canScrollLeft ? 1 : 0 }}
           onClick={() => scroll("left")}
-          className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-all duration-300 disabled:opacity-0"
+          className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center transition-all duration-300 disabled:opacity-0"
           disabled={!canScrollLeft}
           style={{ pointerEvents: canScrollLeft ? "auto" : "none" }}
         >
@@ -203,7 +203,7 @@ export default function LogoTipsShowcase({
           initial={{ opacity: 0 }}
           animate={{ opacity: canScrollRight ? 1 : 0 }}
           onClick={() => scroll("right")}
-          className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-all duration-300 disabled:opacity-0"
+          className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center transition-all duration-300 disabled:opacity-0"
           disabled={!canScrollRight}
           style={{ pointerEvents: canScrollRight ? "auto" : "none" }}
         >

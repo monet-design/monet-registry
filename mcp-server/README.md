@@ -1,10 +1,12 @@
-# Landing Components MCP Server
+# Landing Components Server
 
-AI 코딩 에이전트(Claude Code, Cursor 등)를 위한 컴포넌트 Registry 검색 및 코드 조회 MCP Server
+AI 코딩 에이전트 및 일반 클라이언트를 위한 컴포넌트 Registry 검색/코드 조회 서버
 
 ## 기능
 
-5개의 MCP 도구 제공:
+**MCP Protocol** (AI 에이전트용) + **HTTP REST API** (일반 클라이언트용)
+
+### MCP 도구 (5개)
 
 - **search_components**: 자연어/구조화 쿼리로 컴포넌트 검색
 - **get_component_code**: 컴포넌트 TSX 소스 코드 조회
@@ -49,9 +51,22 @@ cp .env.example .env
 | REGISTRY_PATH | registry.json 경로 | ../dist/registry.json |
 | COMPONENTS_PATH | 컴포넌트 소스 경로 | ../src/components/registry |
 
-## API 엔드포인트
+## 엔드포인트
 
+### MCP Protocol
 - `POST /mcp` - MCP 프로토콜 엔드포인트
+
+### HTTP REST API
+
+| Method | Endpoint | 설명 |
+|--------|----------|------|
+| GET | `/api/v1/components/search` | 컴포넌트 검색 |
+| GET | `/api/v1/components/:id` | 상세 정보 |
+| GET | `/api/v1/components/:id/code` | 소스 코드 |
+| GET | `/api/v1/categories` | 카테고리 목록 |
+| GET | `/api/v1/stats` | 통계 정보 |
+
+### 기타
 - `GET /health` - 헬스 체크
 
 ## 테스트
@@ -105,20 +120,49 @@ docker run -p 3001:3001 \
 
 ## 사용 예시
 
-### 컴포넌트 검색
+### MCP 도구 (AI 에이전트용)
 
-```
+```typescript
+// 컴포넌트 검색
 search_components({ query: "dark theme hero for SaaS" })
-```
 
-### 코드 조회
-
-```
+// 코드 조회
 get_component_code({ component_id: "hero-1" })
-```
 
-### 상세 정보
-
-```
+// 상세 정보
 get_component_details({ component_id: "stats-10", include_similar: true })
 ```
+
+### HTTP REST API
+
+```bash
+# 컴포넌트 검색
+curl "http://localhost:3001/api/v1/components/search?query=hero%20dark%20theme&limit=5"
+
+# 카테고리 필터 + 스타일 태그
+curl "http://localhost:3001/api/v1/components/search?query=pricing&category=pricing&style=dark-theme,minimal"
+
+# 컴포넌트 상세 정보
+curl "http://localhost:3001/api/v1/components/hero-1"
+
+# 컴포넌트 소스 코드
+curl "http://localhost:3001/api/v1/components/hero-1/code"
+
+# 카테고리 목록
+curl "http://localhost:3001/api/v1/categories"
+
+# 통계 정보
+curl "http://localhost:3001/api/v1/stats"
+```
+
+### 검색 쿼리 파라미터
+
+| 파라미터 | 설명 | 예시 |
+|----------|------|------|
+| query | 검색어 (필수) | `hero dark theme` |
+| category | 카테고리 필터 | `hero`, `pricing`, `stats` |
+| style | 스타일 태그 (쉼표 구분) | `dark-theme,minimal` |
+| layout | 레이아웃 태그 | `two-column,centered` |
+| functional | 기능 태그 | `carousel,tabs` |
+| industry | 산업 태그 | `saas,fintech` |
+| limit | 결과 수 | `10` (기본값) |

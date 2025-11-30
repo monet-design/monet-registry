@@ -9,6 +9,7 @@ import { createMcpServer } from "./server.js";
 import { authMiddleware } from "./middleware/auth.js";
 import { registryService } from "./services/registry.js";
 import { searchEngine } from "./services/search-engine.js";
+import apiRouter from "./routes/index.js";
 
 const PORT = parseInt(process.env.PORT || "3001", 10);
 
@@ -113,6 +114,9 @@ async function main() {
     }
   });
 
+  // HTTP REST API 엔드포인트
+  app.use("/api/v1", apiRouter);
+
   // 헬스체크 엔드포인트
   app.get("/health", (req, res) => {
     res.json({
@@ -128,22 +132,30 @@ async function main() {
   app.listen(PORT, () => {
     console.log(`
 ╔════════════════════════════════════════════════════════════╗
-║       Landing Components MCP Server                         ║
+║       Landing Components Server                             ║
 ╠════════════════════════════════════════════════════════════╣
 ║  Status:     Running                                        ║
 ║  Port:       ${PORT}                                            ║
 ║  Components: ${String(registryService.getTotalCount()).padEnd(4)}                                        ║
-║  Endpoint:   http://localhost:${PORT}/mcp                       ║
+╠════════════════════════════════════════════════════════════╣
+║  MCP Endpoint:  http://localhost:${PORT}/mcp                    ║
+║  REST API:      http://localhost:${PORT}/api/v1                 ║
+║  Health:        http://localhost:${PORT}/health                 ║
 ╚════════════════════════════════════════════════════════════╝
 
-Available tools:
+MCP Tools:
   - search_components
   - get_component_code
   - get_component_details
   - list_categories
   - get_registry_stats
 
-Health check: http://localhost:${PORT}/health
+REST API Endpoints:
+  - GET /api/v1/components/search?query=...
+  - GET /api/v1/components/:id
+  - GET /api/v1/components/:id/code
+  - GET /api/v1/categories
+  - GET /api/v1/stats
     `);
   });
 }

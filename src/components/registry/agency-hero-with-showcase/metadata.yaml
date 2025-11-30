@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: agency-hero-with-showcase
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/grove-prm-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - platform
+  - integration
+  - unified
+  - AI
+  - PRM
+  - CRM
+  - participant
+  - showcase
+  - cards
+  - demo
+  - saas
+  - connections
+  - network
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

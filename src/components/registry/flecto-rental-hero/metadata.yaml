@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: flecto-rental-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/flecto-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - rental
+  - platform
+  - saas
+  - green
+  - cards
+  - dashboard
+  - flecto
+  - booking
+  - services
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

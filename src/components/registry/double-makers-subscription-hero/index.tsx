@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "motion/react";
+import { useRef } from "react";
+import { motion, useScroll, useTransform, MotionValue } from "motion/react";
 import "./font.css";
 import styles from "./styles.module.css";
 
@@ -20,6 +21,13 @@ interface DoubleMakersSubscriptionHeroProps {
   navItems?: NavItem[];
   onPrimaryClick?: () => void;
   onSecondaryClick?: () => void;
+}
+
+interface ShapePosition {
+  initialX: number;
+  initialY: number;
+  targetX: number;
+  targetY: number;
 }
 
 // Marquee Badge Component
@@ -96,93 +104,153 @@ function SquarePattern({ className }: { className?: string }) {
   );
 }
 
-// Decorative Shapes Container
-function DecorativeShapes() {
+// Individual Floating Shape with scroll-based animation
+function FloatingShape({
+  children,
+  scrollYProgress,
+  position,
+  delay = 0,
+  rotate = 0,
+}: {
+  children: React.ReactNode;
+  scrollYProgress: MotionValue<number>;
+  position: ShapePosition;
+  delay?: number;
+  rotate?: number;
+}) {
+  const x = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [position.initialX, position.targetX]
+  );
+  const y = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [position.initialY, position.targetY]
+  );
+  const opacity = useTransform(scrollYProgress, [0, 0.8, 1], [1, 0.8, 0]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
+  const rotateZ = useTransform(scrollYProgress, [0, 1], [rotate, rotate + 15]);
+
   return (
-    <>
-      {/* Left side shapes */}
-      <motion.div
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.4, duration: 0.8 }}
-        className="absolute left-0 top-1/2 -translate-y-1/4"
-      >
-        {/* Green oval with pink star */}
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ delay, duration: 0.8, ease: "easeOut" }}
+      style={{ x, y, opacity, scale, rotate: rotateZ }}
+      className="absolute left-1/2 top-1/2"
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+// Decorative Shapes Container
+function DecorativeShapes({
+  scrollYProgress,
+}: {
+  scrollYProgress: MotionValue<number>;
+}) {
+  // Shape positions: initial (gathered) -> target (spread out)
+  const shapes = [
+    {
+      // Green oval with pink star - top left
+      position: { initialX: -180, initialY: -80, targetX: -500, targetY: -180 },
+      delay: 0.4,
+      rotate: -12,
+      content: (
         <div className="relative">
-          <div className="w-24 h-40 bg-[#3D8B6E] rounded-full transform -rotate-12" />
+          <div className="w-24 h-40 bg-[#3D8B6E] rounded-full" />
           <StarShape className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 text-[#F5A0D0]" />
         </div>
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 0.8 }}
-        className="absolute left-20 bottom-24"
-      >
-        {/* Yellow circle */}
-        <div className="w-8 h-8 bg-[#E8D44D] rounded-full" />
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.55, duration: 0.8 }}
-        className="absolute left-32 bottom-8"
-      >
-        {/* Teal vertical oval */}
-        <div className="w-12 h-28 bg-[#5BC4B0] rounded-full" />
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.6, duration: 0.8 }}
-        className="absolute left-48 bottom-0"
-      >
-        {/* Blue vertical oval */}
-        <div className="w-14 h-36 bg-[#6B8EC9] rounded-full transform translate-y-16" />
-      </motion.div>
-
-      {/* Right side shapes */}
-      <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.45, duration: 0.8 }}
-        className="absolute right-0 top-1/3"
-      >
-        {/* Coral circle with square pattern */}
+      ),
+    },
+    {
+      // Yellow circle - bottom left area
+      position: { initialX: -120, initialY: 100, targetX: -400, targetY: 280 },
+      delay: 0.5,
+      rotate: 0,
+      content: <div className="w-8 h-8 bg-[#E8D44D] rounded-full" />,
+    },
+    {
+      // Teal vertical oval - bottom left
+      position: { initialX: -60, initialY: 140, targetX: -280, targetY: 350 },
+      delay: 0.55,
+      rotate: 5,
+      content: <div className="w-12 h-28 bg-[#5BC4B0] rounded-full" />,
+    },
+    {
+      // Blue vertical oval - bottom center-left
+      position: { initialX: 20, initialY: 160, targetX: -120, targetY: 400 },
+      delay: 0.6,
+      rotate: -8,
+      content: <div className="w-14 h-36 bg-[#6B8EC9] rounded-full" />,
+    },
+    {
+      // Coral circle with square pattern - top right
+      position: { initialX: 180, initialY: -60, targetX: 480, targetY: -150 },
+      delay: 0.45,
+      rotate: 10,
+      content: (
         <div className="relative">
-          <div className="w-32 h-32 bg-[#E8B4A0] rounded-full transform translate-x-12" />
-          <SquarePattern className="absolute top-1/2 left-0 -translate-y-1/2 w-16 h-16 rounded-lg overflow-hidden" />
+          <div className="w-32 h-32 bg-[#E8B4A0] rounded-full" />
+          <SquarePattern className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-lg overflow-hidden" />
         </div>
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.5, duration: 0.8 }}
-        className="absolute right-8 bottom-32"
-      >
-        {/* Green vertical oval with white asterisk */}
+      ),
+    },
+    {
+      // Green vertical oval with white asterisk - right side
+      position: { initialX: 160, initialY: 60, targetX: 450, targetY: 180 },
+      delay: 0.5,
+      rotate: -5,
+      content: (
         <div className="relative">
           <div className="w-16 h-40 bg-[#3D8B6E] rounded-full" />
           <AsteriskShape className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 text-white" />
         </div>
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.55, duration: 0.8 }}
-        className="absolute right-4 bottom-4"
-      >
-        {/* Coral circle with teal asterisk */}
+      ),
+    },
+    {
+      // Coral circle with teal asterisk - bottom right
+      position: { initialX: 100, initialY: 140, targetX: 380, targetY: 360 },
+      delay: 0.55,
+      rotate: 15,
+      content: (
         <div className="relative">
-          <div className="w-24 h-24 bg-[#E8B4A0] rounded-full transform translate-y-8 translate-x-8" />
+          <div className="w-24 h-24 bg-[#E8B4A0] rounded-full" />
           <AsteriskShape className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 text-[#3D9B8B]" />
         </div>
-      </motion.div>
+      ),
+    },
+    {
+      // Extra small pink circle - top area
+      position: { initialX: -40, initialY: -120, targetX: -150, targetY: -300 },
+      delay: 0.65,
+      rotate: 0,
+      content: <div className="w-6 h-6 bg-[#F5A0D0] rounded-full" />,
+    },
+    {
+      // Extra teal small oval - right top
+      position: { initialX: 80, initialY: -100, targetX: 300, targetY: -280 },
+      delay: 0.7,
+      rotate: 20,
+      content: <div className="w-10 h-16 bg-[#5BC4B0] rounded-full" />,
+    },
+  ];
+
+  return (
+    <>
+      {shapes.map((shape, index) => (
+        <FloatingShape
+          key={index}
+          scrollYProgress={scrollYProgress}
+          position={shape.position}
+          delay={shape.delay}
+          rotate={shape.rotate}
+        >
+          {shape.content}
+        </FloatingShape>
+      ))}
     </>
   );
 }
@@ -208,8 +276,22 @@ export default function DoubleMakersSubscriptionHero({
   onPrimaryClick,
   onSecondaryClick,
 }: DoubleMakersSubscriptionHeroProps) {
+  const sectionRef = useRef<HTMLElement>(null);
+
+  // Track scroll progress within the hero section
+  // offset: ["start start", "end start"] means:
+  // - start tracking when section top reaches viewport top
+  // - finish tracking when section bottom reaches viewport top
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end start"],
+  });
+
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-gradient-to-b from-[#0A0A0A] via-[#141414] to-[#1A1A1A]">
+    <section
+      ref={sectionRef}
+      className="relative min-h-screen w-full overflow-hidden bg-gradient-to-b from-[#0A0A0A] via-[#141414] to-[#1A1A1A]"
+    >
       {/* Navigation */}
       <motion.nav
         initial={{ opacity: 0, y: -10 }}
@@ -236,9 +318,9 @@ export default function DoubleMakersSubscriptionHero({
         </div>
       </motion.nav>
 
-      {/* Decorative Shapes */}
-      <div className="absolute inset-0 pointer-events-none hidden lg:block">
-        <DecorativeShapes />
+      {/* Decorative Shapes - positioned at center, spread out on scroll */}
+      <div className="absolute inset-0 pointer-events-none hidden lg:block overflow-visible">
+        <DecorativeShapes scrollYProgress={scrollYProgress} />
       </div>
 
       {/* Main Content */}

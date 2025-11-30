@@ -1,8 +1,8 @@
 # Unsection Hero Components Progress
 
 **Total Images:** 285
-**Completed:** 213 (75%)
-**Pending:** 72 (25%)
+**Completed:** 223 (78%)
+**Pending:** 62 (22%)
 
 ---
 
@@ -223,6 +223,16 @@
 | 211 | `reveni-home-page-section-hero.jpg` | `reveni-hero` |
 | 212 | `riotters-about-page-section-hero.jpg` | `riotters-about-hero` |
 | 213 | `riotters-home-page-section-hero.jpg` | `riotters-hero` |
+| 214 | `rivian-home-page-section-hero.jpg` | `rivian-hero` |
+| 215 | `rivian-r1t-page-section-hero.jpg` | `rivian-r1t-hero` |
+| 216 | `rivian-r2-page-section-hero.jpg` | `rivian-r2-hero` |
+| 217 | `routable-automation-page-section-hero.jpg` | `routable-automation-hero` |
+| 218 | `routable-home-page-section-hero.jpg` | `routable-hero` |
+| 219 | `routable-payment-page-section-hero.jpg` | `routable-payment-hero` |
+| 220 | `send-home-page-section-hero.jpg` | `send-money-hero` |
+| 221 | `sevalla-home-page-section-hero.jpg` | `sevalla-hero` |
+| 222 | `sketch-collaborate-page-section-hero.jpg` | `sketch-collaborate-hero` |
+| 223 | `sketch-color-variables-page-section-hero.jpg` | `sketch-color-variables-hero` |
 
 ---
 
@@ -230,16 +240,6 @@
 
 | # | Source Image |
 |---|--------------|
-| 157 | `rivian-home-page-section-hero.jpg` |
-| 158 | `rivian-r1t-page-section-hero.jpg` |
-| 159 | `rivian-r2-page-section-hero.jpg` |
-| 160 | `routable-automation-page-section-hero.jpg` |
-| 161 | `routable-home-page-section-hero.jpg` |
-| 162 | `routable-payment-page-section-hero.jpg` |
-| 163 | `send-home-page-section-hero.jpg` |
-| 164 | `sevalla-home-page-section-hero.jpg` |
-| 165 | `sketch-collaborate-page-section-hero.jpg` |
-| 166 | `sketch-color-variables-page-section-hero.jpg` |
 | 167 | `sketch-extensions-page-section-hero.jpg` |
 | 168 | `sketch-handoff-page-section-hero.jpg` |
 | 169 | `sketch-home-page-section-hero.jpg` |

@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: send-money-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/send-home-page-section-hero.jpg
+
+freeformKeywords:
+  - money transfer
+  - fintech
+  - banking
+  - international transfer
+  - mobile wallet
+  - send money
+  - payment
+  - qr code
+  - colorful
+  - playful
+  - cream background
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

@@ -1,0 +1,31 @@
+schemaVersion: "2.0"
+name: rivian-r1t-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/rivian-r1t-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - automotive
+  - electric vehicle
+  - EV
+  - truck
+  - pickup
+  - rivian
+  - car
+  - vehicle
+  - beach
+  - nature
+  - outdoor
+  - lease
+  - configure
+  - shop
+  - fullscreen
+  - background image
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

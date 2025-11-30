@@ -1,8 +1,8 @@
 # Unsection Hero Components Progress
 
 **Total Images:** 285
-**Completed:** 154 (54%)
-**Pending:** 131 (46%)
+**Completed:** 164 (58%)
+**Pending:** 121 (42%)
 
 ---
 
@@ -164,6 +164,16 @@
 | 152 | `mollie-home-page-section-hero.jpg` | `hero-payment-dashboard` |
 | 153 | `move-agency-home-page-section-hero.jpg` | `move-agency-hero` |
 | 154 | `move-home-page-section-hero-beer-drive-cta.jpg` | `hero-beer-drive-cta` |
+| 155 | `move-home-page-section-hero.jpg` | `hero-brewery-cards` |
+| 156 | `move-restaurant-page-section-hero.jpg` | `hero-restaurant-beer-space` |
+| 157 | `moxion-home-page-section-hero.jpg` | `moxion-hero` |
+| 158 | `moxion-industries-page-section-hero.jpg` | `moxion-industries-hero` |
+| 159 | `moxion-technology-page-section-hero.jpg` | `moxion-technology-hero` |
+| 160 | `neycher-home-page-section-hero.jpg` | `neycher-hero` |
+| 161 | `nutsdev-home-page-section-hero.jpg` | `hero-design-agency-bento` |
+| 162 | `ocho-home-page-section-hero.jpg` | `ocho-home-page-section-hero` |
+| 163 | `ocho-solo-page-section-hero.jpg` | `ocho-solo-page-section-hero` |
+| 164 | `oddit-home-page-section-hero.jpg` | `hero-oddit-fresh-perspective` |
 
 ---
 
@@ -171,16 +181,6 @@
 
 | # | Source Image |
 |---|--------------|
-| 98 | `move-home-page-section-hero.jpg` |
-| 99 | `move-restaurant-page-section-hero.jpg` |
-| 100 | `moxion-home-page-section-hero.jpg` |
-| 101 | `moxion-industries-page-section-hero.jpg` |
-| 102 | `moxion-technology-page-section-hero.jpg` |
-| 103 | `neycher-home-page-section-hero.jpg` |
-| 104 | `nutsdev-home-page-section-hero.jpg` |
-| 105 | `ocho-home-page-section-hero.jpg` |
-| 106 | `ocho-solo-page-section-hero.jpg` |
-| 107 | `oddit-home-page-section-hero.jpg` |
 | 108 | `online-payment-platform-auctions-page-section-hero.jpg` |
 | 109 | `online-payment-platform-home-page-section-hero.jpg` |
 | 110 | `ortto-analytics-page-hero-section.jpg` |

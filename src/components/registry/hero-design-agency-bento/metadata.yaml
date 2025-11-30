@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: hero-design-agency-bento
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/nutsdev-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - bento
+  - design agency
+  - real estate
+  - cards
+  - grid layout
+  - orange accent
+  - blue card
+  - modern
+  - creative agency
+  - portfolio
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

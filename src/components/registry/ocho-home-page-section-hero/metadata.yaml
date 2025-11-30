@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: ocho-home-page-section-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/ocho-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - fintech
+  - wealth
+  - business
+  - dashboard
+  - mockup
+  - email capture
+  - saas
+  - investment
+  - solo401k
+  - entrepreneur
+  - beta badge
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

@@ -1,7 +1,7 @@
 아래 이미지 url들에 대해서 다음 작업 수행하라.
 
 1. 각 이미지 url를 모두 다운로드해 `/agent-input/contact-form/{name}.jpg` 경로에 이미지 파일로 생성한다.
-2. img-to-component agent를 병렬로 호출해 1번 단계에서 다운로드한 이미지들만을 대상으로 컴포넌트로 구현한다.
+2. img-to-component agent를 병렬로 호출해 1번 단계의 이미지들만을 대상으로 컴포넌트로 구현한다.
 3. puppeteer-swarm mcp로 브라우저/탭을 launch해둔다. 이를 이후 agent들에서 공용으로 사용할 것이다.
 4. next.js dev server를 실행한다. 이미 3000번 포트에 실행중인지 체크하고, 이미 실행중이라면 하지않는다.
 5. 구현된 컴포넌트들에 대해서, component-implement-check agent를 병렬로 호출해 디자인 점검하고 개선한다.

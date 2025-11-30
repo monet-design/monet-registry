@@ -1,0 +1,22 @@
+export const metadata = {
+  imagePath: "agent-input/beautiful-sections/rysa-cta.png",
+  name: "rysa-cta",
+  keywords: [
+    "cta",
+    "call-to-action",
+    "banner",
+    "ai",
+    "launch",
+    "announcement",
+    "pixel",
+    "retro",
+    "dark",
+    "blue",
+    "modern",
+    "tech",
+    "startup",
+    "product-launch",
+    "hero-banner",
+  ],
+  fontFamily: ["DM Sans"],
+};

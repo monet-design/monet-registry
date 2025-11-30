@@ -1,8 +1,8 @@
 # Unsection Hero Components Progress
 
 **Total Images:** 285
-**Completed:** 124 (44%)
-**Pending:** 161 (57%)
+**Completed:** 134 (47%)
+**Pending:** 151 (53%)
 
 ---
 
@@ -134,6 +134,16 @@
 | 122 | `intercom-suite-hero-design.jpg` | `intercom-suite-hero` |
 | 123 | `isla-porter-home-page-section-hero.jpg` | `isla-porter-hero` |
 | 124 | `isla-porter-why-page-section-hero.jpg` | `isla-porter-why-hero` |
+| 125 | `in-tandem-home-page-section-hero.jpg` | `in-tandem-hero` |
+| 126 | `jimo-home-page-hero-section.webp` | `jimo-hero` |
+| 127 | `kajabi-creator-hub-page-section-hero.jpg` | `kajabi-creator-hero` |
+| 128 | `kajabi-home-page-section-hero.jpg` | `kajabi-home-hero` |
+| 129 | `kajabi-payment-page-section-hero.jpg` | `kajabi-payment-hero` |
+| 130 | `kickbase-home-page-section-hero.jpg` | `kickbase-hero` |
+| 131 | `kinetic-home-page-section-hero.jpg` | `kinetic-hero` |
+| 132 | `kota-blog-page-section-hero.jpg` | `kota-blog-hero` |
+| 133 | `kota-countries-page-section-hero-details.jpg` | `kota-countries-hero` |
+| 134 | `kota-countries-page-section-hero.jpg` | `kota-global-hero` |
 
 ---
 
@@ -141,20 +151,10 @@
 
 | # | Source Image |
 |---|--------------|
-| 1 | `in-tandem-home-page-section-hero.jpg` |
-| 2 | `jimo-home-page-hero-section.webp` |
-| 3 | `kajabi-creator-hub-page-section-hero.jpg` |
-| 4 | `kajabi-home-page-section-hero.jpg` |
-| 72 | `kajabi-payment-page-section-hero.jpg` |
-| 73 | `kickbase-home-page-section-hero.jpg` |
-| 74 | `kinetic-home-page-section-hero.jpg` |
-| 75 | `kota-blog-page-section-hero.jpg` |
-| 76 | `kota-countries-page-section-hero-details.jpg` |
-| 77 | `kota-countries-page-section-hero.jpg` |
-| 78 | `kota-home-page-section-hero.jpg` |
-| 79 | `kota-pricing-page-section-hero.jpg` |
-| 80 | `lawtrades-home-page-section-hero.jpg` |
-| 81 | `linear-home-page-section-hero.jpg` |
+| 1 | `kota-home-page-section-hero.jpg` |
+| 2 | `kota-pricing-page-section-hero.jpg` |
+| 3 | `lawtrades-home-page-section-hero.jpg` |
+| 4 | `linear-home-page-section-hero.jpg` |
 | 82 | `linear-integrations-page-section-hero.jpg` |
 | 83 | `liveblocks-comments-page-section-hero.jpg` |
 | 84 | `liveblocks-home-page-section-hero.jpg` |

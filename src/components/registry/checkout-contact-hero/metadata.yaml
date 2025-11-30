@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: checkout-contact-hero
+category: contact
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/checkout-contact-page-section-header.jpg
+
+freeformKeywords:
+  - contact
+  - hero
+  - cards
+  - sales
+  - support
+  - partnership
+  - dark theme
+  - contact us
+  - let's talk
+  - get in touch
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

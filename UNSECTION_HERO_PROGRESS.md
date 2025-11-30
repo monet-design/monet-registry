@@ -1,8 +1,8 @@
 # Unsection Hero Components Progress
 
 **Total Images:** 285
-**Completed:** 67 (24%)
-**Pending:** 218 (76%)
+**Completed:** 106 (37%)
+**Pending:** 179 (63%)
 
 ---
 
@@ -77,6 +77,45 @@
 | 65 | `atrium-home-page-section-hero.jpg` | `atrium-hero` |
 | 66 | `authkit-home-page-section-hero.jpg` | `authkit-hero` |
 | 67 | `avo-customers-page-section-hero.jpg` | `avo-customers-hero` |
+| 68 | `axim-home-page-section-hero.jpg` | `axim-hero` |
+| 69 | `be-on-hand-home-section-hero.jpg` | `onhand-volunteering-hero` |
+| 70 | `ben-home-page-section-hero.jpg` | `ben-benefits-hero` |
+| 71 | `canopy-home-page-section-hero.jpg` | `canopy-hero-contact` |
+| 72 | `canopy-safe-guard-page-section-hero.jpg` | `canopy-safeguard-hero` |
+| 73 | `canopy-start-page-section-hero.jpg` | `canopy-start-hero` |
+| 74 | `cape-home-page-section-hero.jpg` | `cape-hero-section` |
+| 75 | `checkout-contact-page-section-header.jpg` | `checkout-contact-hero` |
+| 76 | `checkout-home-page-section-hero.jpg` | `checkout-payments-hero` |
+| 77 | `checkout-product-page-section-hero.jpg` | `checkout-product-hero` |
+| 78 | `chronicle-home-page-section-hero.jpg` | `chronicle-hero` |
+| 79 | `clarisights-home-page-section-hero.jpg` | `clarisights-marketing-hero` |
+| 80 | `clay-home-page-section-hero.jpg` | `clay-crm-hero` |
+| 81 | `clay-stories-page-section-hero.jpg` | `clay-story-hero` |
+| 82 | `codesandbox-home-page-section-hero.jpg` | `codesandbox-hero` |
+| 83 | `codesandbox-sandboxes-page-section-discover-creative-sandboxes.jpg` | `creative-sandboxes-showcase` |
+| 84 | `coherence-home-section-hero.jpg` | `coherence-hero` |
+| 85 | `colabs-home-page-section-hero.jpg` | `colabs-hero` |
+| 86 | `contra-home-page-section-hero.jpg` | `contra-pro-hero` |
+| 87 | `contra-portfolios-page-section-hero.jpg` | `contra-portfolio-hero` |
+| 88 | `conway-home-page-section-hero.jpg` | `conway-hero` |
+| 89 | `current-home-page-section-hero.jpg` | `current-fintech-hero` |
+| 90 | `current-spend-page-section-hero.jpg` | `credit-building-hero` |
+| 91 | `den-home-page-section-hero.jpg` | `den-office-hero` |
+| 92 | `deso-home-page-section-hero.jpg` | `deso-hero` |
+| 93 | `dimensional-home-page-section-hero.jpg` | `dimensional-hero` |
+| 94 | `doconomy-home-page-section-hero.jpg` | `doconomy-hero` |
+| 95 | `driftime-home-page-section-hero.jpg` | `driftime-hero` |
+| 96 | `duffel-home-page-section-hero.jpg` | `duffel-hero` |
+| 97 | `equip-home-page-section-hero.jpg` | `equip-hero` |
+| 98 | `flaghsip-home-page-section-hero.jpg` | `flagship-hero` |
+| 99 | `flecto-home-page-section-hero.jpg` | `flecto-rental-hero` |
+| 100 | `focal-home-page-section-hero.jpg` | `focal-creativity-hero` |
+| 101 | `frame-home-page-section-hero.jpg` | `frame-hero` |
+| 102 | `furey-home-page-section-hero.jpg` | `furey-hero` |
+| 103 | `greenly-home-page-hero-section.jpg` | `sustainable-future-hero` |
+| 104 | `grove-home-page-section-hero.jpg` | `global-growth-platform-hero` |
+| 105 | `grove-prm-page-section-hero.jpg` | `agency-hero-with-showcase` |
+| 106 | `hasko-home-page-section-hero.jpg` | `nocode-hero-section` |
 
 ---
 
@@ -84,47 +123,8 @@
 
 | # | Source Image |
 |---|--------------|
-| 1 | `axim-home-page-section-hero.jpg` |
-| 12 | `be-on-hand-home-section-hero.jpg` |
-| 13 | `ben-home-page-section-hero.jpg` |
-| 14 | `canopy-home-page-section-hero.jpg` |
-| 15 | `canopy-safe-guard-page-section-hero.jpg` |
-| 16 | `canopy-start-page-section-hero.jpg` |
-| 17 | `cape-home-page-section-hero.jpg` |
-| 18 | `checkout-contact-page-section-header.jpg` |
-| 19 | `checkout-home-page-section-hero.jpg` |
-| 20 | `checkout-product-page-section-hero.jpg` |
-| 21 | `chronicle-home-page-section-hero.jpg` |
-| 22 | `clarisights-home-page-section-hero.jpg` |
-| 23 | `clay-home-page-section-hero.jpg` |
-| 24 | `clay-stories-page-section-hero.jpg` |
-| 25 | `codesandbox-home-page-section-hero.jpg` |
-| 26 | `codesandbox-sandboxes-page-section-discover-creative-sandboxes.jpg` |
-| 27 | `coherence-home-section-hero.jpg` |
-| 28 | `colabs-home-page-section-hero.jpg` |
-| 29 | `contra-home-page-section-hero.jpg` |
-| 30 | `contra-portfolios-page-section-hero.jpg` |
-| 31 | `conway-home-page-section-hero.jpg` |
-| 32 | `current-home-page-section-hero.jpg` |
-| 33 | `current-spend-page-section-hero.jpg` |
-| 34 | `den-home-page-section-hero.jpg` |
-| 35 | `deso-home-page-section-hero.jpg` |
-| 36 | `dimensional-home-page-section-hero.jpg` |
-| 37 | `doconomy-home-page-section-hero.jpg` |
-| 38 | `driftime-home-page-section-hero.jpg` |
-| 39 | `duffel-home-page-section-hero.jpg` |
-| 40 | `equip-home-page-section-hero.jpg` |
-| 41 | `eventbeds-home-page-section-hero.jpg` |
-| 42 | `flaghsip-home-page-section-hero.jpg` |
-| 43 | `flecto-home-page-section-hero.jpg` |
-| 44 | `focal-home-page-section-hero.jpg` |
-| 45 | `frame-home-page-section-hero.jpg` |
-| 46 | `furey-home-page-section-hero.jpg` |
-| 47 | `greenly-home-page-hero-section.jpg` |
-| 48 | `grove-home-page-section-hero.jpg` |
-| 49 | `grove-prm-page-section-hero.jpg` |
-| 50 | `hasko-home-page-section-hero.jpg` |
-| 51 | `hawthorne-skin-home-page-section-hero.jpg` |
+| 1 | `eventbeds-home-page-section-hero.jpg` |
+| 2 | `hawthorne-skin-home-page-section-hero.jpg` |
 | 52 | `hello-network-section-home-page.jpg` |
 | 53 | `help-scout-home-page-section-hero-2.jpg` |
 | 54 | `help-scout-home-page-section-hero.jpg` |

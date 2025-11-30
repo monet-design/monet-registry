@@ -1,8 +1,8 @@
 # Unsection Hero Components Progress
 
 **Total Images:** 285
-**Completed:** 116 (41%)
-**Pending:** 169 (59%)
+**Completed:** 124 (44%)
+**Pending:** 161 (57%)
 
 ---
 
@@ -126,6 +126,14 @@
 | 114 | `holocene-hero-section-design.webp` | `holocene-hero` |
 | 115 | `hubspot-home-page-section-hero.jpg` | `hubspot-hero` |
 | 116 | `hyperliquid-home-page-section-hero.jpg` | `hyperliquid-hero` |
+| 117 | `initiate-home-section-hero.jpg` | `initiate-hero` |
+| 118 | `insurely-home-page-section-hero.jpg` | `insurely-hero` |
+| 119 | `intercom-blog-page-section-hero.jpg` | `intercom-blog-hero` |
+| 120 | `intercom-customers-hero-design.jpg` | `intercom-customers-hero` |
+| 121 | `intercom-home-page-section-hero.jpg` | `intercom-home-hero` |
+| 122 | `intercom-suite-hero-design.jpg` | `intercom-suite-hero` |
+| 123 | `isla-porter-home-page-section-hero.jpg` | `isla-porter-hero` |
+| 124 | `isla-porter-why-page-section-hero.jpg` | `isla-porter-why-hero` |
 
 ---
 
@@ -134,17 +142,9 @@
 | # | Source Image |
 |---|--------------|
 | 1 | `in-tandem-home-page-section-hero.jpg` |
-| 2 | `initiate-home-section-hero.jpg` |
-| 62 | `insurely-home-page-section-hero.jpg` |
-| 63 | `intercom-blog-page-section-hero.jpg` |
-| 64 | `intercom-customers-hero-design.jpg` |
-| 65 | `intercom-home-page-section-hero.jpg` |
-| 66 | `intercom-suite-hero-design.jpg` |
-| 67 | `isla-porter-home-page-section-hero.jpg` |
-| 68 | `isla-porter-why-page-section-hero.jpg` |
-| 69 | `jimo-home-page-hero-section.webp` |
-| 70 | `kajabi-creator-hub-page-section-hero.jpg` |
-| 71 | `kajabi-home-page-section-hero.jpg` |
+| 2 | `jimo-home-page-hero-section.webp` |
+| 3 | `kajabi-creator-hub-page-section-hero.jpg` |
+| 4 | `kajabi-home-page-section-hero.jpg` |
 | 72 | `kajabi-payment-page-section-hero.jpg` |
 | 73 | `kickbase-home-page-section-hero.jpg` |
 | 74 | `kinetic-home-page-section-hero.jpg` |

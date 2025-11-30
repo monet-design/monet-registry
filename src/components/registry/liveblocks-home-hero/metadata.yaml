@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: liveblocks-home-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/liveblocks-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - collaboration
+  - realtime
+  - api
+  - saas
+  - dark
+  - 3d
+  - blocks
+  - comments
+  - notifications
+  - text editor
+  - product
+  - startup
+  - liveblocks
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

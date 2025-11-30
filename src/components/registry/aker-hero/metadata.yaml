@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: aker-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/aker-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - landing
+  - nature
+  - forest
+  - real estate
+  - investment
+  - community
+  - residential
+  - cards
+  - grid
+  - modern
+  - dark
+  - nature background
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

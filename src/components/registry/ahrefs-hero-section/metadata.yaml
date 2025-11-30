@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: ahrefs-hero-section
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/ahref-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - ahrefs
+  - SEO
+  - marketing
+  - SaaS
+  - blue
+  - CTA
+  - signup
+  - traffic
+  - rank
+  - analytics
+  - tools
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: ascon-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/ascon-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - landing
+  - terracotta
+  - coral
+  - orange
+  - 3d
+  - abstract
+  - german
+  - industrial
+  - systems
+  - automation
+  - minimal
+  - clean
+  - fullscreen
+  - cta
+  - navigation
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

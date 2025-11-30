@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: avo-customers-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/avo-customers-page-section-hero.jpg
+
+freeformKeywords:
+  - customers
+  - hero
+  - logo grid
+  - social proof
+  - client logos
+  - testimonial
+  - trust badges
+  - company logos
+  - partners
+  - SaaS
+  - CTA button
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

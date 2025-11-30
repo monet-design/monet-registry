@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: atrium-hero
+category: hero
+
+images:
+  preview: /registry/atrium-hero/preview.jpg
+
+freeformKeywords:
+  - hero
+  - healthcare
+  - clinic
+  - medical
+  - swedish
+  - gradient
+  - yellow
+  - warm
+  - modern
+  - booking
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

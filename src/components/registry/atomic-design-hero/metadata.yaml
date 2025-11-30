@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: atomic-design-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/atomic-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - design
+  - agency
+  - dark
+  - lime
+  - collaboration
+  - email signup
+  - device mockups
+  - startup
+  - saas
+  - creative
+
+fontFamily:
+  - Instrument Serif
+
+createdAt: "2025-11-30"
+status: stable

@@ -1,8 +1,8 @@
 # Unsection Hero Components Progress
 
 **Total Images:** 285
-**Completed:** 183 (64%)
-**Pending:** 102 (36%)
+**Completed:** 193 (68%)
+**Pending:** 92 (32%)
 
 ---
 
@@ -193,6 +193,16 @@
 | 181 | `pash-home-page-section-hero.jpg` | `pash-hero` |
 | 182 | `passionfroot-creator-page-section-hero.jpg` | `passionfroot-creator-hero` |
 | 183 | `passionfroot-home-page-section-hero.jpg` | `hero-influencer-platform` |
+| 184 | `patch-home-page-section-hero.jpg` | `hero-data-warehouse-diagram` |
+| 185 | `patch-security-page-section-hero.jpg` | `patch-security-hero` |
+| 186 | `pera-home-page-section-hero.jpg` | `pera-hero` |
+| 187 | `pipe-enterpreneurs-page-section-hero.jpg` | `pipe-entrepreneurs-hero` |
+| 188 | `pipe-home-page-section-hero.jpg` | `pipe-capital-hero` |
+| 189 | `pipe-partners-page-section-hero.jpg` | `hero-capital-platform` |
+| 190 | `plain-home-page-section-hero.webp` | `plain-home-hero` |
+| 191 | `plain-product-page-section-hero.webp` | `plain-product-page-section-hero` |
+| 192 | `planned-home-page-section-hero.jpg` | `planned-event-hero` |
+| 193 | `popcorn-home-page-section-hero.jpg` | `popcorn-home-page-section-hero` |
 
 ---
 
@@ -200,16 +210,6 @@
 
 | # | Source Image |
 |---|--------------|
-| 127 | `patch-home-page-section-hero.jpg` |
-| 128 | `patch-security-page-section-hero.jpg` |
-| 129 | `pera-home-page-section-hero.jpg` |
-| 130 | `pipe-enterpreneurs-page-section-hero.jpg` |
-| 131 | `pipe-home-page-section-hero.jpg` |
-| 132 | `pipe-partners-page-section-hero.jpg` |
-| 133 | `plain-home-page-section-hero.webp` |
-| 134 | `plain-product-page-section-hero.webp` |
-| 135 | `planned-home-page-section-hero.jpg` |
-| 136 | `popcorn-home-page-section-hero.jpg` |
 | 137 | `popcorn-manifesto-page-section-hero.jpg` |
 | 138 | `popcorn-research-page-section-hero.jpg` |
 | 139 | `popless-home-page-section-hero.jpg` |

@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: plain-home-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/plain-home-page-section-hero.webp
+
+freeformKeywords:
+  - hero
+  - saas
+  - b2b
+  - customer support
+  - dark theme
+  - dashboard preview
+  - email signup
+  - integrations
+  - slack
+  - discord
+  - teams
+  - collaboration
+  - enterprise
+  - startup
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: hero-capital-platform
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/pipe-partners-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - capital
+  - platform
+  - fintech
+  - finance
+  - dark
+  - gradient
+  - code editor
+  - payment
+  - partners
+  - logo banner
+  - CTA
+  - startup
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

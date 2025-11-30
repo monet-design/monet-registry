@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: pipe-entrepreneurs-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/pipe-enterpreneurs-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - fintech
+  - business
+  - capital
+  - funding
+  - dashboard
+  - cards
+  - blue gradient
+  - saas
+  - startup
+  - entrepreneurs
+  - working capital
+  - finance
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

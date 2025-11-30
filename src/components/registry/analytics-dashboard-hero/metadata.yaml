@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: analytics-dashboard-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/ortto-analytics-page-hero-section.jpg
+
+freeformKeywords:
+  - analytics
+  - dashboard
+  - hero
+  - metrics
+  - charts
+  - saas
+  - data
+  - reports
+  - gauges
+  - statistics
+  - kpi
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

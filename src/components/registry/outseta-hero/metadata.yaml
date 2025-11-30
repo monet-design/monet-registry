@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: outseta-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/outseta-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - membership
+  - operating system
+  - SaaS
+  - dashboard
+  - gradient
+  - yellow
+  - peach
+  - integration
+  - CTA
+  - buttons
+  - showcase
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

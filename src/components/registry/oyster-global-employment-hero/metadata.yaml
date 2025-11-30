@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: oyster-global-employment-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/oyster-global-employment-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - global employment
+  - HR
+  - team
+  - payroll
+  - benefits
+  - collage
+  - cream
+  - beige
+  - serif
+  - italic
+  - CTA
+  - SaaS
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

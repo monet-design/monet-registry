@@ -1,8 +1,8 @@
 # Unsection Hero Components Progress
 
 **Total Images:** 285
-**Completed:** 164 (58%)
-**Pending:** 121 (42%)
+**Completed:** 173 (61%)
+**Pending:** 112 (39%)
 
 ---
 
@@ -174,6 +174,15 @@
 | 162 | `ocho-home-page-section-hero.jpg` | `ocho-home-page-section-hero` |
 | 163 | `ocho-solo-page-section-hero.jpg` | `ocho-solo-page-section-hero` |
 | 164 | `oddit-home-page-section-hero.jpg` | `hero-oddit-fresh-perspective` |
+| 165 | `online-payment-platform-auctions-page-section-hero.jpg` | `auction-hero-skyline` |
+| 166 | `online-payment-platform-home-page-section-hero.jpg` | `hero-payment-platform` |
+| 167 | `ortto-analytics-page-hero-section.jpg` | `analytics-dashboard-hero` |
+| 168 | `ortto-data-platform-page-section-hero.jpg` | `hero-data-platform-activity` |
+| 169 | `osome-accounting-page-section-hero.jpg` | `osome-accounting-hero` |
+| 170 | `outseta-home-page-section-hero.jpg` | `outseta-hero` |
+| 171 | `outseta-payment-page-section-hero.jpg` | `outseta-payment-hero` |
+| 172 | `oyster-embedded-page-section-hero.jpg` | `oyster-embedded-hero` |
+| 173 | `oyster-global-employment-page-section-hero.jpg` | `oyster-global-employment-hero` |
 
 ---
 
@@ -181,16 +190,7 @@
 
 | # | Source Image |
 |---|--------------|
-| 108 | `online-payment-platform-auctions-page-section-hero.jpg` |
-| 109 | `online-payment-platform-home-page-section-hero.jpg` |
-| 110 | `ortto-analytics-page-hero-section.jpg` |
-| 111 | `ortto-data-platform-page-section-hero.jpg` |
 | 112 | `ortto-home-page-section-hero.jpg` |
-| 113 | `osome-accounting-page-section-hero.jpg` |
-| 114 | `outseta-home-page-section-hero.jpg` |
-| 115 | `outseta-payment-page-section-hero.jpg` |
-| 116 | `oyster-embedded-page-section-hero.jpg` |
-| 117 | `oyster-global-employment-page-section-hero.jpg` |
 | 118 | `oyster-home-page-section-hero.jpg` |
 | 119 | `oyster-homepage-hero-section.jpg` |
 | 120 | `oyster-people-page-section-hero.jpg` |

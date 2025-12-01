@@ -3,6 +3,33 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+} as const;
+
+const IMAGES = {
+  background: {
+    path: "/registry/intercom-watch-demo-cta/poppy-field.png",
+    alt: "Poppy field illustration",
+    prompt: `Whimsical poppy field illustration background.
+Style: Artistic illustration, painterly, organic
+Layout: Horizontal landscape, full coverage
+Composition: Field of poppies, soft botanical elements
+Elements: Flowers, stems, leaves, organic shapes
+Color palette: Warm reds, oranges, soft greens, cream background
+Mood: Welcoming, natural, gentle, optimistic
+Technical: High resolution, seamless pattern capability, soft edges`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface IntercomWatchDemoCtaProps {
   /** Main headline - first line */
   headlineLine1?: string;
@@ -30,15 +57,16 @@ export default function IntercomWatchDemoCta({
   secondaryButtonText = "Start free trial",
   onPrimaryClick = () => {},
   onSecondaryClick = () => {},
-  backgroundImage = "/registry/intercom-watch-demo-cta/poppy-field.png",
+  backgroundImage = IMAGES.background.path,
 }: IntercomWatchDemoCtaProps) {
+  const colors = COLORS.light;
   return (
     <section className="relative w-full overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
           src={backgroundImage}
-          alt="Poppy field illustration"
+          alt={IMAGES.background.alt}
           fill
           className="object-cover object-center"
           priority

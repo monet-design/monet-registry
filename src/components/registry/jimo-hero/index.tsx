@@ -13,6 +13,36 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#1E3A5F",          // Dark blue accent
+    accentHover: "#2D4A6F",     // Button hover
+  },
+} as const;
+
+const IMAGES = {
+  decoration: {
+    path: "/registry/jimo-hero/j-decoration.png",
+    alt: "3D letter J decoration",
+    prompt: `3D rendered letter J with modern design.
+Style: Clean 3D render, modern geometric
+Layout: Single letter, centered
+Composition: Bold sans-serif J, subtle shading and depth
+Elements: 3D letter form, smooth surfaces, professional rendering
+Color palette: Navy blue, subtle gradients, professional
+Mood: Modern, tech-forward, professional
+Technical: High resolution, transparent background, smooth edges`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface FeatureTab {
   id: string;
   icon: React.ReactNode;
@@ -204,9 +234,10 @@ export default function JimoHero({
   ctaButtonText = "Try for Free",
   navItems = defaultNavItems,
   featureTabs = defaultFeatureTabs,
-  decorationImageSrc = "/registry/jimo-hero/j-decoration.png",
+  decorationImageSrc = IMAGES.decoration.path,
   onCtaClick,
 }: JimoHeroProps) {
+  const colors = COLORS.light;
   const [email, setEmail] = useState("");
   const [activeTab, setActiveTab] = useState(featureTabs[0]?.id || "product-tours");
 
@@ -241,7 +272,12 @@ export default function JimoHero({
           <button className="hidden text-sm text-gray-600 transition-colors hover:text-gray-900 md:block">
             Login
           </button>
-          <button className="rounded-full bg-[#1E3A5F] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#2D4A6F]">
+          <button
+            style={{ backgroundColor: colors.accent }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.accentHover}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = colors.accent}
+            className="rounded-full px-4 py-2 text-sm font-medium text-white transition-colors"
+          >
             Book a demo
           </button>
         </div>
@@ -267,7 +303,7 @@ export default function JimoHero({
         >
           <Image
             src={decorationImageSrc}
-            alt=""
+            alt={IMAGES.decoration.alt}
             width={300}
             height={300}
             className="h-48 w-48 object-contain md:h-72 md:w-72 lg:h-80 lg:w-80"
@@ -315,7 +351,10 @@ export default function JimoHero({
             />
             <button
               type="submit"
-              className="rounded-full bg-[#1E3A5F] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#2D4A6F]"
+              style={{ backgroundColor: colors.accent }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.accentHover}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = colors.accent}
+              className="rounded-full px-5 py-2.5 text-sm font-medium text-white transition-colors"
             >
               {ctaButtonText}
             </button>

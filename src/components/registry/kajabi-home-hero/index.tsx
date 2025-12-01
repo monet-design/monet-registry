@@ -1,5 +1,56 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ * - grayscale 텍스트는 Tailwind semantic color 사용 (text-gray-900 등)
+ * - 여기에는 브랜드 고유 컬러만 정의
+ */
+const COLORS = {
+  light: {
+    // Primary accent
+    accent: "#2751E2",          // Kajabi 블루
+    accentHover: "#1e41b8",     // 호버 상태
+  },
+  dark: {
+    accent: "#4B6FEE",
+    accentHover: "#3B5FDE",
+  },
+} as const;
+
+/**
+ * 이미지 에셋
+ * - path: 이미지 경로
+ * - alt: 접근성용 대체 텍스트
+ * - prompt: AI 이미지 재생성용 상세 프롬프트
+ */
+const IMAGES = {
+  dashboard: {
+    path: "/registry/kajabi-home-hero/dashboard-preview.png",
+    alt: "Kajabi Dashboard Preview",
+    prompt: `Kajabi creator platform dashboard interface screenshot.
+Style: Clean, modern SaaS interface with professional business aesthetic
+Layout: Creator dashboard showing content management, analytics, and navigation
+Composition:
+- Main area: Dashboard overview with course/product listings
+- Left sidebar: Navigation menu (Dashboard, Products, Marketing, Sales, etc)
+- Top bar: Search, notifications, user profile
+- Center: Content cards showing courses, memberships, coaching products
+- Stats widgets: Revenue, students, engagement metrics
+Color palette: White background, blue (#2751E2) accents, gray text, clean cards
+Elements: Product thumbnails, progress bars, analytics graphs, navigation icons
+Mood: Professional, organized, empowering for creators
+Technical: Modern web dashboard, clear typography, card-based layout`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
@@ -12,6 +63,7 @@ interface NavItem {
 }
 
 interface KajabiHomeHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   headline?: string;
   highlightedText?: string;
@@ -25,13 +77,20 @@ interface KajabiHomeHeroProps {
 }
 
 // Kajabi Logo Icon
-function KajabiLogo({ className = "w-5 h-5" }: { className?: string }) {
+function KajabiLogo({
+  className = "w-5 h-5",
+  style,
+}: {
+  className?: string;
+  style?: React.CSSProperties;
+}) {
   return (
     <svg
       className={className}
       viewBox="0 0 24 24"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
+      style={style}
     >
       <path d="M12 2L4 6v12l8 4 8-4V6l-8-4zm0 2.18l5.5 2.75v7.14L12 16.82l-5.5-2.75V7.93L12 4.18z" />
       <path d="M12 8.5L8.5 10.25v3.5L12 15.5l3.5-1.75v-3.5L12 8.5z" />
@@ -50,6 +109,7 @@ const defaultNavItems: NavItem[] = [
 
 // Main Component
 export default function KajabiHomeHero({
+  mode = "light",
   logoText = "KAJABI",
   headline = "All the tools you need to build a successful",
   highlightedText = "knowledge business",
@@ -57,12 +117,13 @@ export default function KajabiHomeHero({
   ctaText = "GET STARTED",
   loginText = "Login",
   navItems = defaultNavItems,
-  dashboardImageSrc = "/registry/kajabi-home-hero/dashboard-preview.png",
+  dashboardImageSrc = IMAGES.dashboard.path,
   onCtaClick,
   onLoginClick,
 }: KajabiHomeHeroProps) {
+  const colors = COLORS[mode];
   return (
-    <section className="relative min-h-screen w-full bg-white overflow-hidden">
+    <section className="relative min-h-screen w-full bg-white dark:bg-gray-950 overflow-hidden">
       {/* Navigation */}
       <motion.nav
         initial={{ opacity: 0, y: -10 }}
@@ -72,8 +133,8 @@ export default function KajabiHomeHero({
       >
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <KajabiLogo className="w-6 h-6 text-[#2751E2]" />
-          <span className="text-sm font-bold tracking-wider text-[#1A1A1A]">
+          <KajabiLogo className="w-6 h-6" style={{ color: colors.accent }} />
+          <span className="text-sm font-bold tracking-wider text-gray-900 dark:text-gray-100">
             {logoText}
           </span>
         </div>
@@ -84,11 +145,16 @@ export default function KajabiHomeHero({
             <a
               key={item.label}
               href={item.href}
-              className="flex items-center gap-1 text-sm text-[#1A1A1A] hover:text-[#2751E2] transition-colors"
+              className="flex items-center gap-1 text-sm text-gray-900 dark:text-gray-100 transition-colors"
+              style={{
+                ["--hover-color" as string]: colors.accent,
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = colors.accent)}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "")}
             >
               {item.label}
               {item.hasDropdown && (
-                <ChevronDown className="w-4 h-4 text-[#6B6B6B]" />
+                <ChevronDown className="w-4 h-4 text-gray-600 dark:text-gray-400" />
               )}
             </a>
           ))}
@@ -98,13 +164,20 @@ export default function KajabiHomeHero({
         <div className="flex items-center gap-4">
           <button
             onClick={onLoginClick}
-            className="hidden sm:block text-sm text-[#1A1A1A] hover:text-[#2751E2] transition-colors"
+            className="hidden sm:block text-sm text-gray-900 dark:text-gray-100 transition-colors"
+            onMouseEnter={(e) => (e.currentTarget.style.color = colors.accent)}
+            onMouseLeave={(e) => (e.currentTarget.style.color = "")}
           >
             {loginText}
           </button>
           <button
             onClick={onCtaClick}
-            className="rounded-full bg-[#2751E2] px-5 py-2.5 text-xs font-semibold tracking-wider text-white transition-colors hover:bg-[#1e41b8]"
+            className="rounded-full px-5 py-2.5 text-xs font-semibold tracking-wider text-white transition-colors"
+            style={{
+              backgroundColor: colors.accent,
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = colors.accentHover)}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = colors.accent)}
           >
             {ctaText}
           </button>
@@ -120,10 +193,10 @@ export default function KajabiHomeHero({
           transition={{ delay: 0.1, duration: 0.6 }}
           className="text-center"
         >
-          <h1 className="text-3xl font-bold tracking-tight text-[#1A1A1A] sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
+          <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
             {headline}
             <br />
-            <span className="text-[#2751E2]">{highlightedText}</span>
+            <span style={{ color: colors.accent }}>{highlightedText}</span>
           </h1>
         </motion.div>
 
@@ -132,7 +205,7 @@ export default function KajabiHomeHero({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="mx-auto mt-6 max-w-2xl text-center text-base leading-relaxed text-[#6B6B6B] sm:text-lg"
+          className="mx-auto mt-6 max-w-2xl text-center text-base leading-relaxed text-gray-600 dark:text-gray-400 sm:text-lg"
         >
           {subheadline}
         </motion.p>
@@ -146,7 +219,19 @@ export default function KajabiHomeHero({
         >
           <button
             onClick={onCtaClick}
-            className="rounded-full bg-[#2751E2] px-8 py-4 text-sm font-semibold tracking-wider text-white transition-all hover:bg-[#1e41b8] hover:shadow-lg hover:shadow-[#2751E2]/25"
+            className="rounded-full px-8 py-4 text-sm font-semibold tracking-wider text-white transition-all hover:shadow-lg"
+            style={{
+              backgroundColor: colors.accent,
+              ["--shadow-color" as string]: `${colors.accent}40`,
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = colors.accentHover;
+              e.currentTarget.style.boxShadow = `0 10px 15px -3px ${colors.accent}40`;
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = colors.accent;
+              e.currentTarget.style.boxShadow = "";
+            }}
           >
             {ctaText}
           </button>
@@ -160,10 +245,20 @@ export default function KajabiHomeHero({
           className="relative mt-12 sm:mt-16"
         >
           {/* Decorative background gradient */}
-          <div className="absolute -inset-4 rounded-3xl bg-gradient-to-b from-[#2751E2]/5 to-transparent" />
+          <div
+            className="absolute -inset-4 rounded-3xl"
+            style={{
+              background: `linear-gradient(to bottom, ${colors.accent}0D, transparent)`,
+            }}
+          />
 
           {/* Dashboard Image Container */}
-          <div className="relative overflow-hidden rounded-2xl border border-[#E5E5E5] bg-white shadow-2xl shadow-[#2751E2]/10">
+          <div
+            className="relative overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-2xl"
+            style={{
+              boxShadow: `0 25px 50px -12px ${colors.accent}1A`,
+            }}
+          >
             {/* Browser Chrome */}
             <div className="flex items-center gap-2 border-b border-[#E5E5E5] bg-[#FAFAFA] px-4 py-3">
               <div className="flex gap-1.5">

@@ -5,6 +5,37 @@ import Image from "next/image";
 import { ChevronDown, Search, Plus, MoreHorizontal } from "lucide-react";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#061256",       // Dark blue background
+    accent: "#416CAB",           // Blue button
+    accentHover: "#4A7AC0",      // Button hover
+  },
+} as const;
+
+const IMAGES = {
+  background: {
+    path: "/registry/intercom-suite-hero/background.png",
+    alt: "Night sky cityscape background",
+    prompt: `Night cityscape with starry sky background.
+Style: Photographic, atmospheric, cinematic
+Layout: Horizontal panoramic view
+Composition: City skyline silhouette, starry night sky above
+Elements: Buildings, stars, deep blue gradient sky
+Color palette: Deep blues, purples, subtle city lights
+Mood: Professional, expansive, innovative
+Technical: High resolution, wide aspect ratio, gradient sky`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface IntercomSuiteHeroProps {
   headingLine1?: string;
   headingLine2?: string;
@@ -296,19 +327,22 @@ export default function IntercomSuiteHero({
   onPrimaryCtaClick,
   onSecondaryCtaClick,
 }: IntercomSuiteHeroProps) {
+  const colors = COLORS.light;
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/registry/intercom-suite-hero/background.png"
-          alt="Night sky cityscape background"
+          src={IMAGES.background.path}
+          alt={IMAGES.background.alt}
           fill
           className="object-cover object-top"
           priority
         />
         {/* Gradient overlay for top section */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#061256]/90 via-[#061256]/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b" style={{
+          background: `linear-gradient(to bottom, ${colors.background}e6 0%, ${colors.background}b3 50%, transparent 100%)`
+        }} />
       </div>
 
       {/* Content */}
@@ -351,7 +385,10 @@ export default function IntercomSuiteHero({
               <div className="flex flex-wrap items-center gap-3">
                 <button
                   onClick={onPrimaryCtaClick}
-                  className="px-5 py-2.5 text-sm font-medium text-white bg-[#416CAB] hover:bg-[#4A7AC0] rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20"
+                  style={{ backgroundColor: colors.accent }}
+                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.accentHover}
+                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = colors.accent}
+                  className="px-5 py-2.5 text-sm font-medium text-white rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20"
                 >
                   {primaryCtaText}
                 </button>

@@ -3,6 +3,36 @@
 import { motion } from "motion/react";
 import { Clock } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#E4E3DC",      // Warm beige background
+    titleGold: "#BFA040",       // Gold title color (Playfair Display)
+  },
+} as const;
+
+const IMAGES = {
+  thumbnail: {
+    path: "/registry/intercom-blog-hero/thumbnail.jpg",
+    alt: "Featured article thumbnail",
+    prompt: `Blog article featured image with modern content design theme.
+Style: Professional blog illustration, clean and modern
+Layout: 16:10 aspect ratio, horizontal composition
+Composition: Content design elements, abstract shapes, modern UI elements
+Elements: Typography elements, design tools, content structure visualization
+Color palette: Warm tones, amber/orange accents, neutral backgrounds
+Mood: Professional, creative, educational
+Technical: High resolution, web-optimized, sharp details`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Navigation item type
 interface NavItem {
   label: string;
@@ -53,7 +83,7 @@ const defaultFeaturedArticle: FeaturedArticle = {
   author: {
     name: "Russell Norris",
   },
-  thumbnailUrl: "/registry/intercom-blog-hero/thumbnail.jpg",
+  thumbnailUrl: IMAGES.thumbnail.path,
   href: "#",
 };
 
@@ -79,8 +109,9 @@ export default function IntercomBlogHero({
   navItems = defaultNavItems,
   featuredArticle = defaultFeaturedArticle,
 }: IntercomBlogHeroProps) {
+  const colors = COLORS.light;
   return (
-    <section className="relative w-full bg-[#E4E3DC]">
+    <section className="relative w-full" style={{ backgroundColor: colors.background }}>
       {/* Font Import */}
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');

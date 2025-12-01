@@ -1,5 +1,16 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Mail, Linkedin, Twitter, Dribbble } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -11,6 +22,7 @@ interface SocialLink {
 }
 
 interface HunterHastingsProps {
+  mode?: "light" | "dark";
   title?: string;
   questionPrefix?: string;
   questionHighlight?: string;
@@ -67,6 +79,7 @@ function SocialLinkCard({
 }
 
 export default function HunterHastings({
+  mode = "light",
   title = "Contact",
   questionPrefix = "What",
   questionHighlight = "are",

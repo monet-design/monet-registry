@@ -1,5 +1,58 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#F7F7F7",
+    primaryButton: "#021E62",
+    primaryButtonHover: "#031b52",
+    secondaryButton: "#1657E7",
+    secondaryButtonHover: "#1450d4",
+    lowesBrand: "#004990",
+  },
+  dark: {
+    background: "#1a1a1a",
+    primaryButton: "#1e3a8a",
+    primaryButtonHover: "#1e40af",
+    secondaryButton: "#2563eb",
+    secondaryButtonHover: "#3b82f6",
+    lowesBrand: "#0066cc",
+  },
+} as const;
+
+const IMAGES = {
+  wireframeMesh: {
+    path: "/registry/lowes-innovation-hero/wireframe-mesh.png",
+    alt: "3D wireframe mesh architectural visualization",
+    prompt: `Abstract 3D wireframe mesh structure in isometric perspective.
+Style: Technical, architectural, minimalist line art
+Layout: Curved geometric mesh spanning diagonally across canvas
+Composition: Interconnected nodes forming a flowing 3D surface with depth
+Elements: Fine black/gray lines creating mesh grid, transparent/translucent effect
+Color palette: Light gray/black lines on transparent or light background
+Mood: Futuristic, innovative, technical, architectural
+Technical: PNG with transparency, clean vector-style lines, subtle depth`,
+  },
+  projectImage: {
+    path: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=800&auto=format&fit=crop",
+    alt: "Apple Vision Pro Style Studio project",
+    prompt: `Modern VR/AR headset product showcase in bright environment.
+Style: Clean product photography, professional retail
+Layout: Centered device on neutral background
+Composition: Premium VR headset with sleek design
+Color palette: White/silver device, clean bright setting
+Mood: Cutting-edge, innovative, premium technology
+Technical: High resolution product shot`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowRight, Plus, ChevronRight, ChevronLeft } from "lucide-react";
 import Image from "next/image";
@@ -19,6 +72,7 @@ interface Project {
 }
 
 interface LowesInnovationHeroProps {
+  mode?: "light" | "dark";
   logo?: {
     text?: string;
   };
@@ -60,9 +114,9 @@ function DiamondLogo({ className = "w-7 h-7" }: { className?: string }) {
 }
 
 // Lowe's Small Logo
-function LowesLogo({ className = "h-5" }: { className?: string }) {
+function LowesLogo({ className = "h-5", bgColor }: { className?: string; bgColor: string }) {
   return (
-    <div className={`bg-[#004990] text-white text-xs font-bold px-1.5 py-0.5 ${className}`}>
+    <div className={`text-white text-xs font-bold px-1.5 py-0.5 ${className}`} style={{ backgroundColor: bgColor }}>
       Lowe&apos;s
     </div>
   );
@@ -70,6 +124,7 @@ function LowesLogo({ className = "h-5" }: { className?: string }) {
 
 // Main Component
 export default function LowesInnovationHero({
+  mode = "light",
   logo = {
     text: "Lowe's\nInnovation\nLabs",
   },
@@ -100,8 +155,12 @@ export default function LowesInnovationHero({
   onNavPrev,
   onNavNext,
 }: LowesInnovationHeroProps) {
+  const colors = COLORS[mode];
+  const meshImage = wireframeMeshImage || IMAGES.wireframeMesh.path;
+  const projectImg = project.image || IMAGES.projectImage.path;
+
   return (
-    <section className="relative w-full min-h-screen bg-[#F7F7F7] overflow-hidden">
+    <section className="relative w-full min-h-screen overflow-hidden" style={{ backgroundColor: colors.background }}>
       {/* Header */}
       <header className="relative z-20 w-full px-6 md:px-8 pt-4">
         <div className="flex items-start justify-between">
@@ -158,7 +217,7 @@ export default function LowesInnovationHero({
           >
             <div className="flex items-center gap-4">
               <span className="text-black text-sm hidden sm:block">{exploreLabel}</span>
-              <LowesLogo />
+              <LowesLogo bgColor={colors.lowesBrand} />
             </div>
             <a
               href="#menu"
@@ -179,8 +238,8 @@ export default function LowesInnovationHero({
         className="absolute top-[5%] left-[15%] w-[60%] h-[80%] pointer-events-none z-0"
       >
         <Image
-          src={wireframeMeshImage}
-          alt="Wireframe mesh"
+          src={meshImage}
+          alt={IMAGES.wireframeMesh.alt}
           fill
           className="object-contain opacity-60"
         />
@@ -224,7 +283,10 @@ export default function LowesInnovationHero({
                     onCtaPrimaryClick();
                   }
                 }}
-                className="flex items-start justify-between bg-[#021E62] text-white px-5 py-4 min-w-[180px] hover:bg-[#031b52] transition-colors group"
+                className="flex items-start justify-between text-white px-5 py-4 min-w-[180px] transition-colors group"
+                style={{ backgroundColor: colors.primaryButton }}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.primaryButtonHover}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = colors.primaryButton}
               >
                 <span className="text-sm font-medium">{ctaButtons.primary.label}</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -241,7 +303,10 @@ export default function LowesInnovationHero({
                     onCtaSecondaryClick();
                   }
                 }}
-                className="flex items-start justify-between bg-[#1657E7] text-white px-5 py-4 min-w-[180px] hover:bg-[#1450d4] transition-colors group"
+                className="flex items-start justify-between text-white px-5 py-4 min-w-[180px] transition-colors group"
+                style={{ backgroundColor: colors.secondaryButton }}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.secondaryButtonHover}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = colors.secondaryButton}
               >
                 <span className="text-sm font-medium">{ctaButtons.secondary.label}</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -265,7 +330,7 @@ export default function LowesInnovationHero({
               {/* Project Image */}
               <div className="relative w-28 h-20 flex-shrink-0 overflow-hidden">
                 <Image
-                  src={project.image}
+                  src={projectImg}
                   alt={project.title}
                   fill
                   className="object-cover"

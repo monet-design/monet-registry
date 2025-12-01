@@ -2,6 +2,61 @@
 
 import { motion } from "motion/react";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#19100F",      // Dark brown/black background
+    badge: "#F5F5F3",           // Light badge background
+    badgeText: "#1A1A1A",       // Badge text
+  },
+} as const;
+
+const IMAGES = {
+  person1: {
+    path: "/registry/intercom-customers-hero/person-1.jpg",
+    alt: "Customer testimonial portrait 1",
+    prompt: `Professional headshot portrait for customer testimonial.
+Style: Natural, professional photography
+Layout: Centered portrait, head and shoulders
+Composition: Warm, friendly expression, professional attire
+Background: Neutral, slightly blurred
+Color palette: Warm skin tones, natural lighting
+Mood: Approachable, trustworthy, confident
+Technical: High resolution, portrait orientation`,
+  },
+  person2: {
+    path: "/registry/intercom-customers-hero/person-2.jpg",
+    alt: "Customer testimonial portrait 2",
+    prompt: `Professional headshot portrait for customer testimonial.
+Style: Natural, professional photography
+Layout: Centered portrait, head and shoulders
+Composition: Warm, friendly expression, professional attire
+Background: Neutral, slightly blurred
+Color palette: Warm skin tones, natural lighting
+Mood: Approachable, trustworthy, confident
+Technical: High resolution, portrait orientation`,
+  },
+  person3: {
+    path: "/registry/intercom-customers-hero/person-3.jpg",
+    alt: "Customer testimonial portrait 3",
+    prompt: `Professional headshot portrait for customer testimonial.
+Style: Natural, professional photography
+Layout: Centered portrait, head and shoulders
+Composition: Warm, friendly expression, professional attire
+Background: Neutral, slightly blurred
+Color palette: Warm skin tones, natural lighting
+Mood: Approachable, trustworthy, confident
+Technical: High resolution, portrait orientation`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface CompanyCard {
   type: "logo" | "image";
@@ -168,17 +223,17 @@ function VantaLogo() {
 // Default companies
 const defaultCompanies: CompanyCard[] = [
   { type: "logo", name: "Lightspeed", logo: <LightspeedLogo /> },
-  { type: "image", name: "Person 1", imageUrl: "/registry/intercom-customers-hero/person-1.jpg" },
+  { type: "image", name: "Person 1", imageUrl: IMAGES.person1.path },
   { type: "logo", name: "Clay", logo: <ClayLogo /> },
   { type: "logo", name: "Checkout.com", logo: <CheckoutLogo /> },
   { type: "logo", name: "Amazon", logo: <AmazonLogo /> },
-  { type: "image", name: "Person 2", imageUrl: "/registry/intercom-customers-hero/person-2.jpg" },
+  { type: "image", name: "Person 2", imageUrl: IMAGES.person2.path },
   { type: "logo", name: "Tines", logo: <TinesLogo /> },
   { type: "logo", name: "Toast", logo: <ToastLogo /> },
   { type: "logo", name: "Polymarket", logo: <PolymarketLogo /> },
   { type: "logo", name: "Perplexity", logo: <PerplexityLogo /> },
   { type: "logo", name: "Vanta", logo: <VantaLogo /> },
-  { type: "image", name: "Person 3", imageUrl: "/registry/intercom-customers-hero/person-3.jpg" },
+  { type: "image", name: "Person 3", imageUrl: IMAGES.person3.path },
 ];
 
 // Grid positions for masonry-like layout
@@ -210,8 +265,9 @@ export default function IntercomCustomersHero({
   onSecondaryClick,
   companies = defaultCompanies,
 }: IntercomCustomersHeroProps) {
+  const colors = COLORS.light;
   return (
-    <section className="relative w-full min-h-screen bg-[#19100F] overflow-hidden">
+    <section className="relative w-full min-h-screen overflow-hidden" style={{ backgroundColor: colors.background }}>
       {/* Background Grid of Company Cards */}
       <div className="absolute inset-0 w-full h-full">
         {/* Desktop Grid */}
@@ -284,7 +340,7 @@ export default function IntercomCustomersHero({
           transition={{ duration: 0.5 }}
           className="mb-6"
         >
-          <span className="inline-block px-4 py-1.5 text-sm font-medium text-[#1A1A1A] bg-[#F5F5F3] rounded-full">
+          <span className="inline-block px-4 py-1.5 text-sm font-medium rounded-full" style={{ color: colors.badgeText, backgroundColor: colors.badge }}>
             {badge}
           </span>
         </motion.div>

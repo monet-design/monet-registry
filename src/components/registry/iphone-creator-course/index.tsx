@@ -5,6 +5,39 @@ import { useState, useRef, useCallback } from "react";
 import { MoveHorizontal } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    badge: "#E8F4FC",           // Light blue badge
+    badgeText: "#4A90D9",       // Blue badge text
+    priceRed: "#E85A71",        // Red/pink price color
+    beforeLabel: "#544334",     // Brown before label
+    afterLabel: "#64ACB3",      // Teal after label
+  },
+} as const;
+
+const IMAGES = {
+  building: {
+    path: "/registry/iphone-creator-course/building.jpg",
+    alt: "Architecture photography before/after comparison",
+    prompt: `Modern architecture building photograph for before/after preset comparison.
+Style: Professional architectural photography
+Layout: Horizontal, centered composition
+Composition: Modern building facade, clean lines, geometric shapes
+Elements: Building exterior, windows, architectural details
+Color palette: Before - muted tones, After - enhanced warm tones
+Mood: Professional, clean, architectural
+Technical: High resolution, sharp details, suitable for color grading comparison`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface IphoneCreatorCourseProps {
   badge?: string;
   heading?: string;
@@ -26,10 +59,11 @@ export default function IphoneCreatorCourse({
   description = "Included with the course is a pack of Lightroom presets that make it quick and easy to apply professional looks to your images. Specifically designed for photos shot on iPhone.",
   beforeLabel = "Before",
   afterLabel = "After",
-  beforeImage = "/registry/iphone-creator-course/building.jpg",
-  afterImage = "/registry/iphone-creator-course/building.jpg",
+  beforeImage = IMAGES.building.path,
+  afterImage = IMAGES.building.path,
   initialSliderPosition = 50,
 }: IphoneCreatorCourseProps) {
+  const colors = COLORS.light;
   const [sliderPosition, setSliderPosition] = useState(initialSliderPosition);
   const [isDragging, setIsDragging] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -68,7 +102,8 @@ export default function IphoneCreatorCourse({
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.1 }}
-              className="mb-4 inline-flex w-fit items-center rounded-full bg-[#E8F4FC] px-3 py-1.5 text-xs font-medium text-[#4A90D9]"
+              style={{ backgroundColor: colors.badge, color: colors.badgeText }}
+              className="mb-4 inline-flex w-fit items-center rounded-full px-3 py-1.5 text-xs font-medium"
             >
               {badge}
             </motion.span>
@@ -88,7 +123,8 @@ export default function IphoneCreatorCourse({
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="mt-3 text-sm font-medium italic text-[#E85A71]"
+              style={{ color: colors.priceRed }}
+              className="mt-3 text-sm font-medium italic"
             >
               {priceLabel} {priceValue}
             </motion.p>

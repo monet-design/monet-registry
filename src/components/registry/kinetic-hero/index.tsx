@@ -1,5 +1,63 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ * - grayscale 텍스트는 Tailwind semantic color 사용 (text-gray-900 등)
+ * - 여기에는 브랜드 고유 컬러만 정의
+ */
+const COLORS = {
+  light: {
+    // Background
+    background: "#333333",      // 다크 그레이 배경
+    statsBackground: "#262626",  // Stats 섹션 배경
+    // Primary accent
+    accent: "#B9A6EE",          // 라벤더 퍼플
+    accentHover: "#A896DE",     // 호버 상태
+    // Target center
+    targetBg: "#0F091E",        // 다크 퍼플 배경
+  },
+  dark: {
+    background: "#1a1a1a",
+    statsBackground: "#0f0f0f",
+    accent: "#C9B6FE",
+    accentHover: "#B9A6EE",
+    targetBg: "#1a0f2e",
+  },
+} as const;
+
+/**
+ * 이미지 에셋
+ * - path: 이미지 경로
+ * - alt: 접근성용 대체 텍스트
+ * - prompt: AI 이미지 재생성용 상세 프롬프트
+ */
+const IMAGES = {
+  hero: {
+    path: "/registry/kinetic-hero/hero-image.png",
+    alt: "Kinetic Hub - Automotive repair facility",
+    prompt: `Modern automotive repair facility interior with advanced robotics and AI systems.
+Style: Industrial, high-tech, professional automotive service environment
+Layout: Wide-angle view of repair bay with vehicles, robotic equipment, and calibration systems
+Composition:
+- Center: Modern vehicle on lift/platform with robotic calibration equipment
+- Left/Right: Additional service bays with diagnostic stations
+- Overhead: Clean, well-lit professional workspace with organized tools
+- Foreground: Precision calibration robotics and ADAS systems
+Color palette: Clean grays, white walls, industrial blues, professional lighting
+Elements: Vehicles, robotic arms, calibration targets, diagnostic screens, tool stations
+Mood: Professional, cutting-edge, efficient, modern automotive technology
+Technical: 16:9 aspect ratio, professional photography, high detail`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
@@ -13,6 +71,7 @@ interface StatItem {
 }
 
 interface KineticHeroProps {
+  mode?: "light" | "dark";
   headline?: string;
   description?: string;
   secondaryDescription?: string;
@@ -25,12 +84,13 @@ interface KineticHeroProps {
 }
 
 export default function KineticHero({
+  mode = "light",
   headline = "Repair modern vehicles\nat scale with effortless\nspeed and precision",
   description = "Kinetic Hubs leverage robotics, proprietary AI, and specialized expertise to automate digital collision repair across all makes and models.",
   secondaryDescription = "We help businesses adapt to the evolving automotive landscape by repairing digital collision damage in minutes rather than hours, increasing capacity, and growing revenue with unparalleled speed and precision.",
   ctaText = "Explore Kinetic Hubs",
   ctaHref = "#",
-  heroImage = "/registry/kinetic-hero/hero-image.png",
+  heroImage = IMAGES.hero.path,
   kineticLabel = "KINETIC PERFORMANCE",
   otherLabel = "OTHER PROVIDERS",
   stats = [
@@ -55,8 +115,10 @@ export default function KineticHero({
     },
   ],
 }: KineticHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative w-full bg-[#333333]">
+    <section className="relative w-full" style={{ backgroundColor: colors.background }}>
       {/* Top Section - Header */}
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
@@ -91,10 +153,15 @@ export default function KineticHero({
             </p>
             <a
               href={ctaHref}
-              className="group inline-flex items-center gap-2 text-white transition-colors hover:text-[#B9A6EE]"
+              className="group inline-flex items-center gap-2 text-white transition-colors"
+              onMouseEnter={(e) => (e.currentTarget.style.color = colors.accent)}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "")}
             >
-              <span className="flex h-8 w-8 items-center justify-center rounded bg-[#B9A6EE]/20">
-                <ChevronRight className="h-4 w-4 text-[#B9A6EE]" />
+              <span
+                className="flex h-8 w-8 items-center justify-center rounded"
+                style={{ backgroundColor: `${colors.accent}33` }}
+              >
+                <ChevronRight className="h-4 w-4" style={{ color: colors.accent }} />
               </span>
               <span className="text-base font-medium">{ctaText}</span>
             </a>
@@ -121,7 +188,7 @@ export default function KineticHero({
       </motion.div>
 
       {/* Stats Section */}
-      <div className="bg-[#262626] px-6 py-12 lg:px-8 lg:py-16">
+      <div className="px-6 py-12 lg:px-8 lg:py-16" style={{ backgroundColor: colors.statsBackground }}>
         <div className="mx-auto max-w-7xl">
           {/* Legend */}
           <motion.div
@@ -131,7 +198,7 @@ export default function KineticHero({
             className="mb-8 flex items-center gap-6"
           >
             <div className="flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-[#B9A6EE]" />
+              <span className="h-2 w-2 rounded-full" style={{ backgroundColor: colors.accent }} />
               <span className="text-xs font-medium uppercase tracking-wider text-white">
                 {kineticLabel}
               </span>
@@ -169,7 +236,7 @@ export default function KineticHero({
                     <span className="font-serif text-[120px] font-extralight leading-none tracking-tight text-white">
                       {stat.kineticValue}
                     </span>
-                    <span className="ml-1 text-4xl font-light text-[#B9A6EE]">
+                    <span className="ml-1 text-4xl font-light" style={{ color: colors.accent }}>
                       +
                     </span>
                     <span className="ml-2 text-4xl text-gray-500">
@@ -181,7 +248,7 @@ export default function KineticHero({
                 {stat.type === "bars" && (
                   <div className="space-y-4">
                     <div>
-                      <p className="mb-2 text-sm text-[#B9A6EE]">
+                      <p className="mb-2 text-sm" style={{ color: colors.accent }}>
                         {stat.kineticValue}
                       </p>
                       <div className="flex gap-[2px]">
@@ -191,7 +258,8 @@ export default function KineticHero({
                             initial={{ scaleY: 0 }}
                             animate={{ scaleY: 1 }}
                             transition={{ duration: 0.3, delay: 0.7 + i * 0.02 }}
-                            className="h-4 w-1 origin-bottom bg-[#B9A6EE]"
+                            className="h-4 w-1 origin-bottom"
+                            style={{ backgroundColor: colors.accent }}
                           />
                         ))}
                       </div>
@@ -238,14 +306,16 @@ export default function KineticHero({
                         initial={{ scale: 0 }}
                         animate={{ scale: 1 }}
                         transition={{ duration: 0.5, delay: 0.8 }}
-                        className="absolute left-1/2 top-1/2 h-28 w-28 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#0F091E]"
+                        className="absolute left-1/2 top-1/2 h-28 w-28 -translate-x-1/2 -translate-y-1/2 rounded-full"
+                        style={{ backgroundColor: colors.targetBg }}
                       />
                       {/* Center dot - purple */}
                       <motion.div
                         initial={{ scale: 0 }}
                         animate={{ scale: 1 }}
                         transition={{ duration: 0.3, delay: 1.1 }}
-                        className="absolute left-1/2 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#B9A6EE]"
+                        className="absolute left-1/2 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full"
+                        style={{ backgroundColor: colors.accent }}
                       />
                     </div>
                   </div>

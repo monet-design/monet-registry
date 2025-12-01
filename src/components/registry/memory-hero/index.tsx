@@ -1,9 +1,41 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#F0F4F4",
+    accent: "#E35123",
+    accentYellow: "#FDF5CC",
+    accentPink: "#F9C4D5",
+    accentTeal: "#7DD3D8",
+    accentBlue: "#D8F0F7",
+    button: "#1a1a1a",
+    buttonHover: "#333",
+  },
+  dark: {
+    background: "#1a1a1a",
+    accent: "#ff6b3d",
+    accentYellow: "#fff7d6",
+    accentPink: "#ffcce0",
+    accentTeal: "#90e5ea",
+    accentBlue: "#e6f7fc",
+    button: "#ffffff",
+    buttonHover: "#e5e5e5",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { CheckCircle2, ArrowRight, Lightbulb } from "lucide-react";
 
 interface MemoryHeroProps {
+  mode?: "light" | "dark";
   title?: string;
   features?: string[];
   ctaText?: string;
@@ -11,13 +43,14 @@ interface MemoryHeroProps {
 }
 
 // Abstract graphic elements for the left illustration
-function OrangePill() {
+function OrangePill({ color }: { color: string }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.1 }}
-      className="absolute left-0 top-[60px] w-[70px] h-[200px] bg-[#E35123] rounded-full flex items-start justify-center pt-6"
+      className="absolute left-0 top-[60px] w-[70px] h-[200px] rounded-full flex items-start justify-center pt-6"
+      style={{ backgroundColor: color }}
     >
       <div className="flex gap-1.5">
         <div className="w-2 h-2 bg-black rounded-full" />
@@ -28,13 +61,14 @@ function OrangePill() {
   );
 }
 
-function YellowCircle() {
+function YellowCircle({ color }: { color: string }) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5, delay: 0.2 }}
-      className="absolute left-[150px] top-[40px] w-[50px] h-[50px] bg-[#FDF5CC] rounded-full flex items-center justify-center"
+      className="absolute left-[150px] top-[40px] w-[50px] h-[50px] rounded-full flex items-center justify-center"
+      style={{ backgroundColor: color }}
     >
       <span className="text-lg">
         <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
@@ -101,26 +135,28 @@ function ShopperText() {
   );
 }
 
-function LightBlueBulbCircle() {
+function LightBlueBulbCircle({ color }: { color: string }) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5, delay: 0.6 }}
-      className="absolute left-[0px] top-[280px] w-[50px] h-[50px] bg-[#D8F0F7] rounded-full flex items-center justify-center"
+      className="absolute left-[0px] top-[280px] w-[50px] h-[50px] rounded-full flex items-center justify-center"
+      style={{ backgroundColor: color }}
     >
       <Lightbulb className="w-5 h-5 text-[#1a1a1a]" strokeWidth={1.5} />
     </motion.div>
   );
 }
 
-function PinkPill() {
+function PinkPill({ color }: { color: string }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.7 }}
-      className="absolute left-[0px] top-[340px] w-[70px] h-[160px] bg-[#F9C4D5] rounded-full flex items-center justify-center"
+      className="absolute left-[0px] top-[340px] w-[70px] h-[160px] rounded-full flex items-center justify-center"
+      style={{ backgroundColor: color }}
     >
       <span
         className="text-[#1a1a1a] text-xs font-semibold tracking-wide leading-tight text-center"
@@ -148,14 +184,14 @@ function WhiteFingerPill() {
   );
 }
 
-function TealCube() {
+function TealCube({ color }: { color: string }) {
   return (
     <motion.div
       initial={{ opacity: 0, rotate: -10 }}
       animate={{ opacity: 1, rotate: 15 }}
       transition={{ duration: 0.6, delay: 0.9 }}
-      className="absolute left-[245px] top-[290px] w-[40px] h-[40px] bg-[#7DD3D8] rounded-lg flex items-center justify-center"
-      style={{ transform: "rotate(15deg)" }}
+      className="absolute left-[245px] top-[290px] w-[40px] h-[40px] rounded-lg flex items-center justify-center"
+      style={{ transform: "rotate(15deg)", backgroundColor: color }}
     >
       <svg viewBox="0 0 24 24" className="w-5 h-5">
         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="none" stroke="#1a1a1a" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -164,7 +200,7 @@ function TealCube() {
   );
 }
 
-function PinkUShape() {
+function PinkUShape({ color }: { color: string }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -173,7 +209,7 @@ function PinkUShape() {
       className="absolute left-[230px] top-[340px] flex flex-col items-center"
     >
       <svg viewBox="0 0 40 50" className="w-10 h-12">
-        <path d="M5 5 v25 a15 15 0 0 0 30 0 v-25" fill="none" stroke="#F9C4D5" strokeWidth="8" strokeLinecap="round" />
+        <path d="M5 5 v25 a15 15 0 0 0 30 0 v-25" fill="none" stroke={color} strokeWidth="8" strokeLinecap="round" />
       </svg>
     </motion.div>
   );
@@ -209,6 +245,7 @@ function WhiteAnalyticsPill() {
 }
 
 export default function MemoryHero({
+  mode = "light",
   title = "Drive smarter\nbusiness decisions\nthrough AI",
   features = [
     "Harness transactional and shopper data",
@@ -218,8 +255,10 @@ export default function MemoryHero({
   ctaText = "Request a demo",
   onCtaClick,
 }: MemoryHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative min-h-screen w-full bg-[#F0F4F4] overflow-hidden">
+    <section className="relative min-h-screen w-full overflow-hidden" style={{ backgroundColor: colors.background }}>
       <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           {/* Left side - Abstract illustration */}
@@ -229,16 +268,16 @@ export default function MemoryHero({
             transition={{ duration: 0.8 }}
             className="relative w-full lg:w-1/2 h-[500px] lg:h-[550px]"
           >
-            <OrangePill />
-            <YellowCircle />
+            <OrangePill color={colors.accent} />
+            <YellowCircle color={colors.accentYellow} />
             <WhiteArrowPill />
             <ShopperText />
             <DarkWithAIPill />
-            <LightBlueBulbCircle />
-            <PinkPill />
+            <LightBlueBulbCircle color={colors.accentBlue} />
+            <PinkPill color={colors.accentPink} />
             <WhiteFingerPill />
-            <TealCube />
-            <PinkUShape />
+            <TealCube color={colors.accentTeal} />
+            <PinkUShape color={colors.accentPink} />
             <WhiteAnalyticsPill />
           </motion.div>
 
@@ -280,7 +319,10 @@ export default function MemoryHero({
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               onClick={onCtaClick}
-              className="inline-flex items-center gap-2 bg-[#1a1a1a] text-white px-6 py-3 rounded-full text-sm font-medium w-fit hover:bg-[#333] transition-colors"
+              className="inline-flex items-center gap-2 text-white px-6 py-3 rounded-full text-sm font-medium w-fit transition-colors"
+              style={{ backgroundColor: colors.button }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.buttonHover}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = colors.button}
             >
               {ctaText}
               <ArrowRight className="w-4 h-4" />

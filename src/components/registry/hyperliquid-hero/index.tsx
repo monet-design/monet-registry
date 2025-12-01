@@ -1,9 +1,21 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 
 interface HyperliquidHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navLinks?: { label: string; href: string }[];
   ctaButtonText?: string;
@@ -34,6 +46,7 @@ function BlobIcon({ className }: { className?: string }) {
 }
 
 export default function HyperliquidHero({
+  mode = "light",
   logoText = "Hyperliquid",
   navLinks = [
     { label: "Vaults", href: "#" },

@@ -1,5 +1,16 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
@@ -10,6 +21,7 @@ interface NavItem {
 }
 
 interface InitiateHeroProps {
+  mode?: "light" | "dark";
   title?: string;
   taglinePre?: string;
   taglineButton?: string;
@@ -24,6 +36,7 @@ interface InitiateHeroProps {
 }
 
 export default function InitiateHero({
+  mode = "light",
   title = "INITIATE",
   taglinePre = "We bring",
   taglineButton = "New Life",

@@ -5,6 +5,44 @@ import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    // Brand Primary
+    accent: "#92D163",          // Primary green
+    accentHover: "#82C153",     // Hover state
+    secondaryButton: "#3E4C3F", // Secondary dark button
+    secondaryButtonHover: "#4E5C4F",
+
+    // Gradient for blob
+    gradientStart: "#2D5A3D",
+    gradientMid: "#1E4A2D",
+    gradientEnd: "#1A3A25",
+  },
+} as const;
+
+const IMAGES = {
+  illustration: {
+    path: "/registry/insurely-hero/illustration.png",
+    alt: "Insurance data integration illustration",
+    prompt: `3D illustration of insurance data integration concept.
+Style: Clean, modern, professional 3D render
+Layout: Central smartphone/device with floating UI elements
+Composition: Light green and dark background, floating insurance cards/documents
+Elements: Mobile device, UI cards, data visualization elements
+Color palette: Green accent (#92D163), white, dark backgrounds
+Mood: Professional, trustworthy, innovative
+Technical: High resolution, smooth 3D render, transparent background compatible`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -127,7 +165,7 @@ function NavItemComponent({ item }: { item: NavItem }) {
 }
 
 // Blob Background SVG
-function BlobBackground() {
+function BlobBackground({ colors }: { colors: typeof COLORS.light }) {
   return (
     <svg
       viewBox="0 0 500 500"
@@ -136,9 +174,9 @@ function BlobBackground() {
     >
       <defs>
         <linearGradient id="blobGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#2D5A3D" />
-          <stop offset="50%" stopColor="#1E4A2D" />
-          <stop offset="100%" stopColor="#1A3A25" />
+          <stop offset="0%" stopColor={colors.gradientStart} />
+          <stop offset="50%" stopColor={colors.gradientMid} />
+          <stop offset="100%" stopColor={colors.gradientEnd} />
         </linearGradient>
       </defs>
       <path
@@ -161,8 +199,9 @@ export default function InsurelyHero({
   onSecondaryClick,
   partnersTitle = "Trusted by leading insurance providers and banks.",
   partners = defaultPartners,
-  illustrationSrc = "/registry/insurely-hero/illustration.png",
+  illustrationSrc = IMAGES.illustration.path,
 }: InsurelyHeroProps) {
+  const colors = COLORS.light;
   return (
     <section className="relative w-full bg-white overflow-hidden">
       {/* Navigation */}
@@ -189,7 +228,12 @@ export default function InsurelyHero({
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           onClick={onPrimaryClick}
-          className="rounded-full bg-[#92D163] px-5 py-2.5 text-sm font-medium text-[#1A1A1A] transition-colors hover:bg-[#82C153]"
+          style={{
+            backgroundColor: colors.accent,
+          }}
+          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.accentHover}
+          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = colors.accent}
+          className="rounded-full px-5 py-2.5 text-sm font-medium text-gray-900 transition-colors"
         >
           {primaryButtonText}
         </motion.button>
@@ -230,13 +274,19 @@ export default function InsurelyHero({
             >
               <button
                 onClick={onPrimaryClick}
-                className="rounded-full bg-[#92D163] px-6 py-3 text-sm font-medium text-[#1A1A1A] transition-all hover:bg-[#82C153] hover:shadow-md"
+                style={{ backgroundColor: colors.accent }}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.accentHover}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = colors.accent}
+                className="rounded-full px-6 py-3 text-sm font-medium text-gray-900 transition-all hover:shadow-md"
               >
                 {primaryButtonText}
               </button>
               <button
                 onClick={onSecondaryClick}
-                className="rounded-full bg-[#3E4C3F] px-6 py-3 text-sm font-medium text-white transition-all hover:bg-[#4E5C4F] hover:shadow-md"
+                style={{ backgroundColor: colors.secondaryButton }}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.secondaryButtonHover}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = colors.secondaryButton}
+                className="rounded-full px-6 py-3 text-sm font-medium text-white transition-all hover:shadow-md"
               >
                 {secondaryButtonText}
               </button>
@@ -252,13 +302,13 @@ export default function InsurelyHero({
           >
             <div className="relative w-full max-w-md lg:max-w-lg aspect-square">
               {/* Blob Background */}
-              <BlobBackground />
+              <BlobBackground colors={colors} />
 
               {/* Illustration */}
               <div className="absolute inset-0 flex items-center justify-center p-8">
                 <Image
                   src={illustrationSrc}
-                  alt="Insurance data integration illustration"
+                  alt={IMAGES.illustration.alt}
                   width={400}
                   height={400}
                   className="w-full h-full object-contain drop-shadow-2xl"

@@ -1,5 +1,16 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import React, { useState } from "react";
 import { motion } from "motion/react";
 import { Phone, Mail, MapPin } from "lucide-react";
@@ -23,6 +34,7 @@ interface FormField {
 }
 
 interface IAmSuperjuiceProps {
+  mode?: "light" | "dark";
   headline?: string;
   description?: string;
   formTitle?: string;
@@ -33,6 +45,7 @@ interface IAmSuperjuiceProps {
 }
 
 export default function IAmSuperjuice({
+  mode = "light",
   headline = "Go with the flow",
   description = "Working closely with our trusted partners, we expertly manage logistics, ensuring our Superjuice flows smoothly from production to consumers' doorstep. Our commitment to global reliability and customer satisfaction are key to us.",
   formTitle = "Join us to bring your unique flavour to our business",

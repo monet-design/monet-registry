@@ -4,6 +4,25 @@ import { motion } from "motion/react";
 import { ArrowRight, ChevronDown, Play } from "lucide-react";
 import { useEffect } from "react";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    navBackground: "#051428",    // Dark navy navigation
+    accent: "#4385E9",           // Blue CTA button
+    accentHover: "#3a77d6",      // Button hover
+    videoCard: "#0154F0",        // Video card blue
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface IntercomHomeHeroProps {
   logo?: React.ReactNode;
   navItems?: Array<{
@@ -109,6 +128,7 @@ export default function IntercomHomeHero({
     logos: defaultLogos,
   },
 }: IntercomHomeHeroProps) {
+  const colors = COLORS.light;
   // Load Instrument Serif font
   useEffect(() => {
     const link = document.createElement("link");
@@ -124,7 +144,7 @@ export default function IntercomHomeHero({
   return (
     <section className="relative w-full overflow-hidden">
       {/* Navigation */}
-      <nav className="relative z-20 w-full bg-[#051428]">
+      <nav className="relative z-20 w-full" style={{ backgroundColor: colors.navBackground }}>
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           {/* Logo */}
           <div className="flex items-center gap-10">
@@ -161,7 +181,10 @@ export default function IntercomHomeHero({
             </a>
             <a
               href={primaryCta.href}
-              className="flex items-center gap-2 rounded-full bg-[#4385E9] px-5 py-2.5 text-sm font-medium text-white transition-all hover:bg-[#3a77d6]"
+              style={{ backgroundColor: colors.accent }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.accentHover}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = colors.accent}
+              className="flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium text-white transition-all"
             >
               {primaryCta.label}
               <ArrowRight className="h-4 w-4" />

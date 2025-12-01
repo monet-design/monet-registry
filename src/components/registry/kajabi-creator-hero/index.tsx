@@ -1,5 +1,38 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ * - grayscale 텍스트는 Tailwind semantic color 사용 (text-gray-900 등)
+ * - 여기에는 브랜드 고유 컬러만 정의
+ */
+const COLORS = {
+  light: {
+    // Grayscale uses Tailwind - no custom colors needed for this component
+    border: "#E2E1E2",  // Light border
+  },
+  dark: {
+    border: "#3a3a3e",
+  },
+} as const;
+
+/**
+ * 이미지 에셋
+ * - path: 이미지 경로
+ * - alt: 접근성용 대체 텍스트
+ * - prompt: AI 이미지 재생성용 상세 프롬프트
+ */
+const IMAGES = {
+  // No images in this component
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ChevronUp, ChevronDown } from "lucide-react";
@@ -10,6 +43,7 @@ interface FAQItem {
 }
 
 interface KajabiCreatorHeroProps {
+  mode?: "light" | "dark";
   title?: string;
   faqItems?: FAQItem[];
   defaultOpenIndex?: number;
@@ -107,13 +141,15 @@ function FAQAccordionItem({
   item,
   isOpen,
   onToggle,
+  colors,
 }: {
   item: FAQItem;
   isOpen: boolean;
   onToggle: () => void;
+  colors: typeof COLORS.light | typeof COLORS.dark;
 }) {
   return (
-    <div className="border-b border-[#E2E1E2]">
+    <div className="border-b" style={{ borderColor: colors.border }}>
       <button
         onClick={onToggle}
         className="flex w-full items-center justify-between py-6 text-left transition-colors hover:opacity-80"
@@ -158,25 +194,27 @@ function FAQAccordionItem({
 }
 
 export default function KajabiCreatorHero({
+  mode = "light",
   title = "FAQ",
   faqItems = defaultFAQItems,
   defaultOpenIndex = 0,
 }: KajabiCreatorHeroProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(defaultOpenIndex);
+  const colors = COLORS[mode];
 
   const handleToggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <section className="w-full bg-white px-6 py-16 md:px-12 lg:px-20">
+    <section className="w-full bg-white dark:bg-gray-950 px-6 py-16 md:px-12 lg:px-20">
       <div className="mx-auto max-w-4xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mb-12 text-[48px] font-bold tracking-tight text-black"
+          className="mb-12 text-[48px] font-bold tracking-tight text-black dark:text-white"
         >
           {title}
         </motion.h2>
@@ -186,7 +224,8 @@ export default function KajabiCreatorHero({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="border-t border-[#E2E1E2]"
+          className="border-t"
+          style={{ borderColor: colors.border }}
         >
           {faqItems.map((item, index) => (
             <FAQAccordionItem
@@ -194,6 +233,7 @@ export default function KajabiCreatorHero({
               item={item}
               isOpen={openIndex === index}
               onToggle={() => handleToggle(index)}
+              colors={colors}
             />
           ))}
         </motion.div>

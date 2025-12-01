@@ -1,5 +1,56 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ * - grayscale 텍스트는 Tailwind semantic color 사용 (text-gray-900 등)
+ * - 여기에는 브랜드 고유 컬러만 정의
+ */
+const COLORS = {
+  light: {
+    // Primary accent
+    accent: "#5046E5",          // 퍼플 액센트
+    accentHover: "#4039C8",     // 호버 상태
+    // Neutral grays (브랜드 특정 그레이)
+    textPrimary: "#3D3D4D",     // 다크 그레이 텍스트
+    textSecondary: "#9B9BA4",   // 미디움 그레이
+    textTertiary: "#C8C8D0",    // 라이트 그레이
+    // Borders and backgrounds
+    background: "#EFEEF4",      // 섹션 배경
+    cardBackground: "#F5F5F8",  // 카드 데코 배경
+    border: "#E2E1E8",          // 보더
+    borderLight: "#EFEEF4",     // 라이트 보더
+  },
+  dark: {
+    accent: "#6B5FED",
+    accentHover: "#5B4FDD",
+    textPrimary: "#E5E5E5",
+    textSecondary: "#A0A0A8",
+    textTertiary: "#6B6B75",
+    background: "#1a1a1e",
+    cardBackground: "#2a2a2e",
+    border: "#3a3a3e",
+    borderLight: "#2a2a2e",
+  },
+} as const;
+
+/**
+ * 이미지 에셋
+ * - path: 이미지 경로
+ * - alt: 접근성용 대체 텍스트
+ * - prompt: AI 이미지 재생성용 상세 프롬프트
+ */
+const IMAGES = {
+  // No images - uses dynamic avatar/thumbnail URLs from data
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import "./font.css";
@@ -13,10 +64,11 @@ interface Testimonial {
   authorCompany: string;
   authorAvatar: string;
   productThumbnail: string;
-  companyLogo?: React.ReactNode;
+  companyLogo?: React.ReactNode | ((props: { colors: typeof COLORS.light | typeof COLORS.dark }) => React.ReactNode);
 }
 
 interface JordsAndCoTestimonialSliderProps {
+  mode?: "light" | "dark";
   tagline?: string;
   headlineLine1?: string;
   headlineLine2?: string;
@@ -24,13 +76,18 @@ interface JordsAndCoTestimonialSliderProps {
 }
 
 // Default company logo component (Marco style)
-function MarcoLogo() {
+function MarcoLogo({ colors }: { colors: typeof COLORS.light | typeof COLORS.dark }) {
   return (
     <div className="flex items-center gap-1.5">
-      <div className="flex h-6 w-6 items-center justify-center rounded bg-[#5046E5]">
+      <div
+        className="flex h-6 w-6 items-center justify-center rounded"
+        style={{ backgroundColor: colors.accent }}
+      >
         <span className="text-xs font-bold text-white">M</span>
       </div>
-      <span className="text-sm font-semibold text-[#5046E5]">Marco</span>
+      <span className="text-sm font-semibold" style={{ color: colors.accent }}>
+        Marco
+      </span>
     </div>
   );
 }
@@ -46,7 +103,7 @@ const defaultTestimonials: Testimonial[] = [
     authorCompany: "MARCO",
     authorAvatar: "https://picsum.photos/seed/isaac-hinman/100/100",
     productThumbnail: "https://picsum.photos/seed/marco-app/200/200",
-    companyLogo: <MarcoLogo />,
+    // companyLogo will be rendered dynamically in component
   },
   {
     id: 2,
@@ -71,7 +128,13 @@ const defaultTestimonials: Testimonial[] = [
 ];
 
 // Interlocking rings icon component
-function InterlockingIcon({ className = "" }: { className?: string }) {
+function InterlockingIcon({
+  className = "",
+  style,
+}: {
+  className?: string;
+  style?: React.CSSProperties;
+}) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -81,6 +144,7 @@ function InterlockingIcon({ className = "" }: { className?: string }) {
       strokeLinecap="round"
       strokeLinejoin="round"
       className={className}
+      style={style}
     >
       <circle cx="9" cy="12" r="5" />
       <circle cx="15" cy="12" r="5" />
@@ -93,10 +157,12 @@ function PaginationDots({
   total,
   current,
   onSelect,
+  colors,
 }: {
   total: number;
   current: number;
   onSelect: (index: number) => void;
+  colors: typeof COLORS.light | typeof COLORS.dark;
 }) {
   return (
     <div className="flex items-center justify-center gap-2">
@@ -104,11 +170,11 @@ function PaginationDots({
         <button
           key={index}
           onClick={() => onSelect(index)}
-          className={`h-1.5 rounded-full transition-all duration-300 ${
-            index === current
-              ? "w-6 bg-[#5046E5]"
-              : "w-1.5 bg-[#C8C8D0] hover:bg-[#9B9BA4]"
-          }`}
+          className="h-1.5 rounded-full transition-all duration-300"
+          style={{
+            width: index === current ? "1.5rem" : "0.375rem",
+            backgroundColor: index === current ? colors.accent : colors.textTertiary,
+          }}
           aria-label={`Go to testimonial ${index + 1}`}
         />
       ))}
@@ -117,7 +183,13 @@ function PaginationDots({
 }
 
 // Testimonial Card Component
-function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
+function TestimonialCard({
+  testimonial,
+  colors,
+}: {
+  testimonial: Testimonial;
+  colors: typeof COLORS.light | typeof COLORS.dark;
+}) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -127,12 +199,15 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
       className="relative w-full max-w-2xl"
     >
       {/* Main card */}
-      <div className="overflow-hidden rounded-2xl border border-[#E2E1E8] bg-white shadow-lg shadow-black/5">
+      <div
+        className="overflow-hidden rounded-2xl border bg-white shadow-lg shadow-black/5"
+        style={{ borderColor: colors.border }}
+      >
         {/* Top section with thumbnail and quote */}
         <div className="flex">
           {/* Product Thumbnail */}
           <div className="flex-shrink-0 p-4">
-            <div className="h-28 w-28 overflow-hidden rounded-xl bg-[#1a1a2e]">
+            <div className="h-28 w-28 overflow-hidden rounded-xl bg-gray-900">
               <img
                 src={testimonial.productThumbnail}
                 alt="Product"
@@ -143,14 +218,17 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
 
           {/* Quote */}
           <div className="flex flex-1 items-center px-4 py-6 pr-8">
-            <p className="text-lg font-medium leading-relaxed text-[#3D3D4D]">
+            <p className="text-lg font-medium leading-relaxed" style={{ color: colors.textPrimary }}>
               {testimonial.quote}
             </p>
           </div>
         </div>
 
         {/* Bottom section with author info and company logo */}
-        <div className="flex items-center justify-between border-t border-[#EFEEF4] px-4 py-3">
+        <div
+          className="flex items-center justify-between border-t px-4 py-3"
+          style={{ borderColor: colors.borderLight }}
+        >
           {/* Author Info */}
           <div className="flex items-center gap-3">
             <img
@@ -159,10 +237,10 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
               className="h-10 w-10 rounded-full object-cover"
             />
             <div>
-              <p className="text-sm font-medium text-[#3D3D4D]">
+              <p className="text-sm font-medium" style={{ color: colors.textPrimary }}>
                 {testimonial.authorName}
               </p>
-              <p className="text-xs tracking-wide text-[#9B9BA4]">
+              <p className="text-xs tracking-wide" style={{ color: colors.textSecondary }}>
                 {testimonial.authorRole} - {testimonial.authorCompany}
               </p>
             </div>
@@ -170,15 +248,23 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
 
           {/* Company Logo */}
           {testimonial.companyLogo ? (
-            testimonial.companyLogo
+            // If a custom logo is provided (as React element), render it
+            // Note: When using custom logos, they should also accept colors prop
+            typeof testimonial.companyLogo === "function"
+              ? testimonial.companyLogo({ colors })
+              : testimonial.companyLogo
           ) : (
+            // Default logo rendering with first letter
             <div className="flex items-center gap-1.5">
-              <div className="flex h-6 w-6 items-center justify-center rounded bg-[#5046E5]">
+              <div
+                className="flex h-6 w-6 items-center justify-center rounded"
+                style={{ backgroundColor: colors.accent }}
+              >
                 <span className="text-xs font-bold text-white">
                   {testimonial.authorCompany.charAt(0)}
                 </span>
               </div>
-              <span className="text-sm font-semibold text-[#5046E5]">
+              <span className="text-sm font-semibold" style={{ color: colors.accent }}>
                 {testimonial.authorCompany}
               </span>
             </div>
@@ -188,7 +274,8 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
 
       {/* Decorative shadow card behind */}
       <div
-        className="absolute -right-4 top-4 -z-10 h-full w-full rounded-2xl border border-[#E2E1E8] bg-[#F5F5F8]"
+        className="absolute -right-4 top-4 -z-10 h-full w-full rounded-2xl border"
+        style={{ borderColor: colors.border, backgroundColor: colors.cardBackground }}
         aria-hidden="true"
       />
     </motion.div>
@@ -197,6 +284,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
 
 // Main Component
 export default function JordsAndCoTestimonialSlider({
+  mode = "light",
   tagline = "REAL WORDS. REAL RESULTS.",
   headlineLine1 = "Proof from the people",
   headlineLine2 = "building real things",
@@ -204,6 +292,7 @@ export default function JordsAndCoTestimonialSlider({
 }: JordsAndCoTestimonialSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const colors = COLORS[mode];
 
   useEffect(() => {
     if (isPaused) return;
@@ -220,7 +309,10 @@ export default function JordsAndCoTestimonialSlider({
   };
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#EFEEF4] py-16 sm:py-20 lg:py-24">
+    <section
+      className="relative w-full overflow-hidden py-16 sm:py-20 lg:py-24"
+      style={{ backgroundColor: colors.background }}
+    >
       <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="mb-12 flex flex-col items-center text-center">
@@ -231,7 +323,7 @@ export default function JordsAndCoTestimonialSlider({
             transition={{ duration: 0.5 }}
             className="mb-4"
           >
-            <InterlockingIcon className="h-8 w-8 text-[#9B9BA4]" />
+            <InterlockingIcon className="h-8 w-8" style={{ color: colors.textSecondary }} />
           </motion.div>
 
           {/* Tagline */}
@@ -239,7 +331,8 @@ export default function JordsAndCoTestimonialSlider({
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="mb-4 text-xs font-medium tracking-[0.2em] text-[#9B9BA4]"
+            className="mb-4 text-xs font-medium tracking-[0.2em]"
+            style={{ color: colors.textSecondary }}
           >
             {tagline}
           </motion.p>
@@ -249,8 +342,8 @@ export default function JordsAndCoTestimonialSlider({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-3xl font-normal tracking-tight text-[#3D3D4D] sm:text-4xl lg:text-5xl"
-            style={{ fontFamily: "'Instrument Serif', serif" }}
+            className="text-3xl font-normal tracking-tight sm:text-4xl lg:text-5xl"
+            style={{ fontFamily: "'Instrument Serif', serif", color: colors.textPrimary }}
           >
             <span className="block italic">{headlineLine1}</span>
             <span className="block italic">{headlineLine2}</span>
@@ -267,6 +360,7 @@ export default function JordsAndCoTestimonialSlider({
             <TestimonialCard
               key={testimonials[currentIndex].id}
               testimonial={testimonials[currentIndex]}
+              colors={colors}
             />
           </AnimatePresence>
         </div>
@@ -281,6 +375,7 @@ export default function JordsAndCoTestimonialSlider({
             total={testimonials.length}
             current={currentIndex}
             onSelect={handleSelect}
+            colors={colors}
           />
         </motion.div>
       </div>

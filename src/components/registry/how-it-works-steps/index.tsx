@@ -1,5 +1,16 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Atom } from "lucide-react";
 import Image from "next/image";
@@ -225,6 +236,7 @@ function AdobeLogo() {
 }
 
 interface HowItWorksStepsProps {
+  mode?: "light" | "dark";
   title?: React.ReactNode;
   subtitle?: string;
   steps?: {
@@ -237,6 +249,7 @@ interface HowItWorksStepsProps {
 }
 
 export default function HowItWorksSteps({
+  mode = "light",
   title = (
     <>
       <span className="font-instrument italic font-normal">Simple</span>{" "}

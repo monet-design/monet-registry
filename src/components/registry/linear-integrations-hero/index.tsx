@@ -1,9 +1,54 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ * - grayscale 텍스트는 Tailwind semantic color 사용 (text-gray-900 등)
+ * - 여기에는 브랜드 고유 컬러만 정의
+ */
+const COLORS = {
+  light: {
+    background: "#ffffff",
+    cardBackground: "#f9fafb",
+    border: "#e5e7eb",
+    accent: "#8b5cf6",          // Purple-500
+    accentSecondary: "#ec4899", // Pink-500
+    button: "rgba(255, 255, 255, 0.1)",
+    buttonHover: "rgba(255, 255, 255, 0.15)",
+  },
+  dark: {
+    background: "#000000",
+    cardBackground: "#111111",
+    border: "#222222",
+    accent: "#8b5cf6",
+    accentSecondary: "#ec4899",
+    button: "rgba(255, 255, 255, 0.1)",
+    buttonHover: "rgba(255, 255, 255, 0.15)",
+  },
+} as const;
+
+/**
+ * 이미지 에셋
+ * - path: 이미지 경로
+ * - alt: 접근성용 대체 텍스트
+ * - prompt: AI 이미지 재생성용 상세 프롬프트
+ */
+const IMAGES = {
+  // No external images - component uses inline code/UI examples
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowRight, Smile, Check } from "lucide-react";
 
 interface LinearIntegrationsHeroProps {
+  mode?: "light" | "dark";
   label?: string;
   title?: string;
   description?: string;
@@ -275,6 +320,7 @@ function ShapeIcons() {
 }
 
 export default function LinearIntegrationsHero({
+  mode = "dark",
   label = "CUSTOMIZABLE",
   title = "Integrate flawlessly\ninto your design",
   description = "Rely on versatile ready-made components, or use primitives to\nbuild a completely custom interface using React.",
@@ -289,8 +335,10 @@ export default function LinearIntegrationsHero({
   card2ButtonText = "Learn more",
   card2ButtonHref = "#",
 }: LinearIntegrationsHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative w-full bg-black py-24 px-4">
+    <section className="relative w-full py-24 px-4" style={{ backgroundColor: colors.background }}>
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <motion.div
@@ -315,7 +363,8 @@ export default function LinearIntegrationsHero({
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="bg-[#111] rounded-2xl border border-[#222] overflow-hidden mb-4"
+          className="rounded-2xl overflow-hidden mb-4"
+          style={{ backgroundColor: colors.cardBackground, borderColor: colors.border, borderWidth: '1px' }}
         >
           {/* Chat Thread */}
           <div className="p-6">
@@ -409,7 +458,10 @@ export default function LinearIntegrationsHero({
             </p>
             <a
               href={card1ButtonHref}
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium hover:bg-white/15 transition-colors"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-white/20 text-white text-sm font-medium transition-colors"
+              style={{ backgroundColor: colors.button }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.buttonHover}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = colors.button}
             >
               {card1ButtonText}
               <ArrowRight className="w-4 h-4" />
@@ -422,7 +474,8 @@ export default function LinearIntegrationsHero({
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="bg-[#111] rounded-2xl border border-[#222] overflow-hidden"
+          className="rounded-2xl overflow-hidden"
+          style={{ backgroundColor: colors.cardBackground, borderColor: colors.border, borderWidth: '1px' }}
         >
           <div className="grid md:grid-cols-2 gap-0">
             {/* Left - Text */}
@@ -438,7 +491,10 @@ export default function LinearIntegrationsHero({
               </p>
               <a
                 href={card2ButtonHref}
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium hover:bg-white/15 transition-colors self-start"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-white/20 text-white text-sm font-medium transition-colors self-start"
+                style={{ backgroundColor: colors.button }}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.buttonHover}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = colors.button}
               >
                 {card2ButtonText}
                 <ArrowRight className="w-4 h-4" />

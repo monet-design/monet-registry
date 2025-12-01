@@ -1,5 +1,16 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState } from "react";
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
@@ -14,6 +25,7 @@ interface FormData {
 }
 
 interface HyveSystemsProps {
+  mode?: "light" | "dark";
   subtitle?: string;
   headline?: string;
   namePlaceholder?: string;
@@ -100,6 +112,7 @@ function FormTextarea({
 
 // Main Component
 export default function HyveSystems({
+  mode = "light",
   subtitle = "Get in touch",
   headline = "Book a discovery call to discuss what AI can bring to your business",
   namePlaceholder = "Your name*",

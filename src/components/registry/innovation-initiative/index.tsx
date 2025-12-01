@@ -1,11 +1,23 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState } from "react";
 import { motion } from "motion/react";
 import { Link2 } from "lucide-react";
 
 // Types
 interface InnovationInitiativeProps {
+  mode?: "light" | "dark";
   logoText?: string;
   headingText?: string;
   descriptionText?: string;
@@ -74,6 +86,7 @@ function ConcentricLogo() {
 
 // Main Component
 export default function InnovationInitiative({
+  mode = "light",
   logoText = "Innovation\nInitiative",
   headingText = "Want to to learn more about Innovation Initiative? Fill\nout the form below and we'll be in touch.",
   descriptionText,

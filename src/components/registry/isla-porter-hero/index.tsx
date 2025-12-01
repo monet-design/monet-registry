@@ -3,6 +3,37 @@
 import { motion } from "motion/react";
 import { Search } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    navText: "#e8e4dc",         // Light cream nav text
+    tagline: "#d4cc9d",         // Gold tagline
+    brandName: "#d4cc9d",       // Gold brand name
+  },
+} as const;
+
+const IMAGES = {
+  background: {
+    path: "/registry/isla-porter-hero/background.jpg",
+    alt: "Luxury kitchen interior",
+    prompt: `Luxury kitchen interior with custom cabinetry.
+Style: Professional interior photography, editorial quality
+Layout: Wide angle, horizontal composition
+Composition: Modern luxury kitchen, custom cabinets, elegant details
+Elements: High-end cabinetry, kitchen island, professional appliances
+Color palette: Warm wood tones, neutral colors, natural lighting
+Mood: Sophisticated, luxurious, timeless elegance
+Technical: High resolution, professional lighting, architectural photography`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface NavItem {
   label: string;
   href: string;
@@ -21,7 +52,7 @@ interface IslaPorterHeroProps {
 export default function IslaPorterHero({
   brandName = "ISLA PORTER",
   tagline = "A CREATIVE APPROACH\nTO CABINETRY",
-  backgroundImage = "/registry/isla-porter-hero/background.jpg",
+  backgroundImage = IMAGES.background.path,
   leftNavItems = [
     { label: "CATALOG +", href: "#" },
     { label: "PORTFOLIO", href: "#" },
@@ -36,13 +67,14 @@ export default function IslaPorterHero({
   ],
   cartCount = 0,
 }: IslaPorterHeroProps) {
+  const colors = COLORS.light;
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
           src={backgroundImage}
-          alt="Luxury kitchen interior"
+          alt={IMAGES.background.alt}
           className="h-full w-full object-cover"
         />
         {/* Subtle dark overlay for text readability */}
@@ -62,7 +94,8 @@ export default function IslaPorterHero({
             <li key={index}>
               <a
                 href={item.href}
-                className="text-[10px] md:text-xs font-medium tracking-[0.15em] text-[#e8e4dc] hover:text-white transition-colors duration-300"
+                style={{ color: colors.navText }}
+                className="text-[10px] md:text-xs font-medium tracking-[0.15em] hover:text-white transition-colors duration-300"
               >
                 {item.label}
               </a>
@@ -102,7 +135,7 @@ export default function IslaPorterHero({
         transition={{ duration: 1, delay: 0.3 }}
         className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none"
       >
-        <p className="text-center text-[11px] md:text-sm font-light tracking-[0.25em] text-[#d4cc9d] whitespace-pre-line leading-relaxed">
+        <p className="text-center text-[11px] md:text-sm font-light tracking-[0.25em] whitespace-pre-line leading-relaxed" style={{ color: colors.tagline }}>
           {tagline}
         </p>
       </motion.div>
@@ -115,9 +148,10 @@ export default function IslaPorterHero({
         className="absolute bottom-0 left-0 right-0 z-10 px-4 md:px-8 pb-4 md:pb-8"
       >
         <h1
-          className="text-[#d4cc9d] font-serif font-light tracking-[0.02em] leading-[0.85]"
+          className="font-serif font-light tracking-[0.02em] leading-[0.85]"
           style={{
             fontSize: "clamp(3.5rem, 18vw, 16rem)",
+            color: colors.brandName,
           }}
         >
           {brandName}

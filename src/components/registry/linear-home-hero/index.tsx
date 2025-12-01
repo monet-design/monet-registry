@@ -1,5 +1,34 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#f9fafb",
+    text: "#1a1a1a",
+    textMuted: "#6b7280",
+    accent: "#7C5FC4",
+    accentDark: "#5B4B9E",
+    button: "#2A2A3A",
+    buttonHover: "#3A3A4A",
+  },
+  dark: {
+    background: "#010317",
+    text: "#ffffff",
+    textMuted: "#9ca3af",
+    accent: "#7C5FC4",
+    accentDark: "#5B4B9E",
+    button: "#2A2A3A",
+    buttonHover: "#3A3A4A",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Plus, ChevronRight, Github, Figma, MessageCircle } from "lucide-react";
 
@@ -18,6 +47,7 @@ interface IntegrationPair {
 }
 
 interface LinearHomeHeroProps {
+  mode?: "light" | "dark";
   title?: string;
   titleLine2?: string;
   description?: string;
@@ -238,6 +268,7 @@ function BackgroundGlow() {
 
 // Main Component
 export default function LinearHomeHero({
+  mode = "dark",
   title = "Linear workflows.",
   titleLine2 = "Exponential results.",
   description = "From customer support integrations to\npowerful Git automations, Linear streamlines\nthe entire product development process.",
@@ -245,8 +276,10 @@ export default function LinearHomeHero({
   integrationPairs = defaultIntegrationPairs,
   onCtaClick,
 }: LinearHomeHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative min-h-screen w-full bg-[#010317] overflow-hidden">
+    <section className="relative min-h-screen w-full overflow-hidden" style={{ backgroundColor: colors.background }}>
       {/* Background Effects */}
       <BackgroundGlow />
 
@@ -297,7 +330,10 @@ export default function LinearHomeHero({
         >
           <button
             onClick={onCtaClick}
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#2A2A3A] hover:bg-[#3A3A4A] text-white/90 text-sm font-medium rounded-full transition-colors"
+            className="inline-flex items-center gap-2 px-5 py-2.5 text-white/90 text-sm font-medium rounded-full transition-colors"
+            style={{ backgroundColor: colors.button }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.buttonHover}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = colors.button}
           >
             {ctaText}
             <ChevronRight className="w-4 h-4" />

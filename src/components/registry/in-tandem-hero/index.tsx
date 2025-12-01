@@ -1,10 +1,22 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
 interface InTandemHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: { label: string; href: string }[];
   ctaButtonText?: string;
@@ -23,6 +35,7 @@ interface InTandemHeroProps {
 }
 
 export default function InTandemHero({
+  mode = "light",
   logoText = "In Tandem",
   navItems = [
     { label: "About", href: "#about" },

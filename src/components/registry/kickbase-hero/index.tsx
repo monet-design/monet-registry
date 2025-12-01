@@ -1,5 +1,100 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ * - grayscale 텍스트는 Tailwind semantic color 사용 (text-gray-900 등)
+ * - 여기에는 브랜드 고유 컬러만 정의
+ */
+const COLORS = {
+  light: {
+    // Background and cards
+    background: "#121416",      // 다크 배경
+    playerCardOrange: "#E1693B", // 오렌지 플레이어 카드
+    playerCardDark: "#353A3D",   // 다크 플레이어 카드
+    testimonialBg: "#1a1c1e",    // 추천사 배경
+    testimonialHeader: "#f5f5f5", // 추천사 헤더
+  },
+  dark: {
+    background: "#0a0a0c",
+    playerCardOrange: "#FF7B4B",
+    playerCardDark: "#2a2c2f",
+    testimonialBg: "#12141 6",
+    testimonialHeader: "#e5e5e5",
+  },
+} as const;
+
+/**
+ * 이미지 에셋
+ * - path: 이미지 경로
+ * - alt: 접근성용 대체 텍스트
+ * - prompt: AI 이미지 재생성용 상세 프롬프트
+ */
+const IMAGES = {
+  player1: {
+    path: "/registry/kickbase-hero/player-1.png",
+    alt: "Professional football player 1",
+    prompt: "Professional football/soccer player portrait in athletic pose, studio photography, orange background",
+  },
+  player2: {
+    path: "/registry/kickbase-hero/player-2.png",
+    alt: "Professional football player 2",
+    prompt: "Professional football/soccer player portrait in athletic pose, studio photography, orange background",
+  },
+  player3: {
+    path: "/registry/kickbase-hero/player-3.png",
+    alt: "Professional football player 3",
+    prompt: "Professional football/soccer player portrait in athletic pose, studio photography, dark background",
+  },
+  player4: {
+    path: "/registry/kickbase-hero/player-4.png",
+    alt: "Professional football player 4",
+    prompt: "Professional football/soccer player portrait in athletic pose, studio photography, dark background",
+  },
+  player5: {
+    path: "/registry/kickbase-hero/player-5.png",
+    alt: "Professional football player 5",
+    prompt: "Professional football/soccer player portrait in athletic pose, studio photography, orange background",
+  },
+  testimonial1: {
+    path: "/registry/kickbase-hero/testimonial-1.png",
+    alt: "Thomas Muller testimonial portrait",
+    prompt: "Professional football player Thomas Muller portrait for testimonial, FC Bayern Munich, professional sports photography",
+  },
+  testimonial2: {
+    path: "/registry/kickbase-hero/testimonial-2.png",
+    alt: "Jule Brand testimonial portrait",
+    prompt: "Professional football player Jule Brand portrait for testimonial, VFL Wolfsburg, professional sports photography",
+  },
+  logoFrauen: {
+    path: "/registry/kickbase-hero/logo-frauen.png",
+    alt: "Frauen Bundesliga logo",
+    prompt: "Frauen Bundesliga official league logo",
+  },
+  logoBundesliga: {
+    path: "/registry/kickbase-hero/logo-bundesliga.png",
+    alt: "Bundesliga logo",
+    prompt: "Bundesliga official league logo",
+  },
+  logoSegunda: {
+    path: "/registry/kickbase-hero/logo-segunda.png",
+    alt: "2. Bundesliga logo",
+    prompt: "2. Bundesliga official league logo",
+  },
+  logoLaliga: {
+    path: "/registry/kickbase-hero/logo-laliga.png",
+    alt: "La Liga logo",
+    prompt: "La Liga official league logo",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Plus, ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -35,6 +130,7 @@ interface TestimonialCard {
 }
 
 interface KickbaseHeroProps {
+  mode?: "light" | "dark";
   title?: string;
   stats?: StatItem[];
   leagueTags?: LeagueTag[];
@@ -57,24 +153,24 @@ const defaultLeagueTags: LeagueTag[] = [
 ];
 
 const defaultPlayerCards: PlayerCard[] = [
-  { imageSrc: "/registry/kickbase-hero/player-1.png", imageAlt: "Player 1" },
-  { imageSrc: "/registry/kickbase-hero/player-2.png", imageAlt: "Player 2" },
-  { imageSrc: "/registry/kickbase-hero/player-3.png", imageAlt: "Player 3" },
-  { imageSrc: "/registry/kickbase-hero/player-4.png", imageAlt: "Player 4" },
-  { imageSrc: "/registry/kickbase-hero/player-5.png", imageAlt: "Player 5" },
+  { imageSrc: IMAGES.player1.path, imageAlt: IMAGES.player1.alt },
+  { imageSrc: IMAGES.player2.path, imageAlt: IMAGES.player2.alt },
+  { imageSrc: IMAGES.player3.path, imageAlt: IMAGES.player3.alt },
+  { imageSrc: IMAGES.player4.path, imageAlt: IMAGES.player4.alt },
+  { imageSrc: IMAGES.player5.path, imageAlt: IMAGES.player5.alt },
 ];
 
 const defaultLeagueCards: LeagueCard[] = [
-  { logoSrc: "/registry/kickbase-hero/logo-frauen.png", logoAlt: "Frauen Bundesliga", bgColor: "#f5f5f5" },
-  { logoSrc: "/registry/kickbase-hero/logo-bundesliga.png", logoAlt: "Bundesliga", bgColor: "#ffffff" },
-  { logoSrc: "/registry/kickbase-hero/logo-segunda.png", logoAlt: "2. Bundesliga", bgColor: "#ffffff" },
-  { logoSrc: "/registry/kickbase-hero/logo-laliga.png", logoAlt: "La Liga", bgColor: "#ffffff" },
+  { logoSrc: IMAGES.logoFrauen.path, logoAlt: IMAGES.logoFrauen.alt, bgColor: "#f5f5f5" },
+  { logoSrc: IMAGES.logoBundesliga.path, logoAlt: IMAGES.logoBundesliga.alt, bgColor: "#ffffff" },
+  { logoSrc: IMAGES.logoSegunda.path, logoAlt: IMAGES.logoSegunda.alt, bgColor: "#ffffff" },
+  { logoSrc: IMAGES.logoLaliga.path, logoAlt: IMAGES.logoLaliga.alt, bgColor: "#ffffff" },
 ];
 
 const defaultTestimonials: TestimonialCard[] = [
   {
-    playerImageSrc: "/registry/kickbase-hero/testimonial-1.png",
-    playerImageAlt: "Thomas Muller",
+    playerImageSrc: IMAGES.testimonial1.path,
+    playerImageAlt: IMAGES.testimonial1.alt,
     jerseyNumber: "25",
     playerName: "THOMAS MULLER",
     position: "FORWARD",
@@ -83,8 +179,8 @@ const defaultTestimonials: TestimonialCard[] = [
     quote: "It's always my goal to win the league title. That's what I do everything for. On Kickbase and at FC Bayern.",
   },
   {
-    playerImageSrc: "/registry/kickbase-hero/testimonial-2.png",
-    playerImageAlt: "Jule Brand",
+    playerImageSrc: IMAGES.testimonial2.path,
+    playerImageAlt: IMAGES.testimonial2.alt,
     jerseyNumber: "29",
     playerName: "JULE BRAND",
     position: "MIDFIELDER",
@@ -95,6 +191,7 @@ const defaultTestimonials: TestimonialCard[] = [
 ];
 
 export default function KickbaseHero({
+  mode = "light",
   title = "LICENSED PLAYERS\nAND CLUBS",
   stats = defaultStats,
   leagueTags = defaultLeagueTags,
@@ -102,8 +199,10 @@ export default function KickbaseHero({
   leagueCards = defaultLeagueCards,
   testimonials = defaultTestimonials,
 }: KickbaseHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative w-full overflow-hidden bg-[#121416] py-16 md:py-24">
+    <section className="relative w-full overflow-hidden py-16 md:py-24" style={{ backgroundColor: colors.background }}>
       {/* Dot pattern background */}
       <div
         className="absolute inset-0 opacity-30"
@@ -193,7 +292,8 @@ export default function KickbaseHero({
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                className="relative aspect-[3/4] overflow-hidden rounded-lg bg-[#E1693B]"
+                className="relative aspect-[3/4] overflow-hidden rounded-lg"
+                style={{ backgroundColor: colors.playerCardOrange }}
               >
                 <img
                   src={player.imageSrc}
@@ -224,7 +324,8 @@ export default function KickbaseHero({
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.7 + index * 0.1 }}
-                className="relative aspect-[3/4] overflow-hidden rounded-lg bg-[#353A3D]"
+                className="relative aspect-[3/4] overflow-hidden rounded-lg"
+                style={{ backgroundColor: colors.playerCardDark }}
               >
                 <img
                   src={player.imageSrc}
@@ -273,7 +374,8 @@ export default function KickbaseHero({
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 1.1 }}
-                className="relative aspect-[3/4] overflow-hidden rounded-lg bg-[#E1693B]"
+                className="relative aspect-[3/4] overflow-hidden rounded-lg"
+                style={{ backgroundColor: colors.playerCardOrange }}
               >
                 <img
                   src={playerCards[4].imageSrc}
@@ -307,10 +409,14 @@ export default function KickbaseHero({
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.3 + index * 0.2 }}
-              className="relative overflow-hidden rounded-lg bg-[#1a1c1e]"
+              className="relative overflow-hidden rounded-lg"
+              style={{ backgroundColor: colors.testimonialBg }}
             >
               {/* Player Info Header */}
-              <div className="flex items-center justify-between border-b border-gray-700/50 bg-[#f5f5f5] px-4 py-3">
+              <div
+                className="flex items-center justify-between border-b border-gray-700/50 px-4 py-3"
+                style={{ backgroundColor: colors.testimonialHeader }}
+              >
                 <div className="flex items-center gap-4">
                   <span
                     className="text-2xl font-bold text-gray-800"

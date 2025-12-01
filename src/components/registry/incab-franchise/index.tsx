@@ -1,5 +1,16 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState } from "react";
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
@@ -18,6 +29,7 @@ interface FooterLink {
 }
 
 interface IncabFranchiseProps {
+  mode?: "light" | "dark";
   headline?: {
     line1: string;
     line2: string;
@@ -45,6 +57,7 @@ const defaultFooterLinks: FooterLink[] = [
 
 // Main Component
 export default function IncabFranchise({
+  mode = "light",
   headline = {
     line1: "Take the next step toward",
     line2: "franchise ownership today",

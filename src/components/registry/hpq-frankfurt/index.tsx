@@ -1,5 +1,16 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState } from "react";
 import { motion } from "motion/react";
 import { Linkedin, Instagram } from "lucide-react";
@@ -29,6 +40,7 @@ interface PressContact {
 }
 
 interface HpqFrankfurtProps {
+  mode?: "light" | "dark";
   title?: string;
   labels?: {
     firstName?: string;
@@ -51,6 +63,7 @@ interface HpqFrankfurtProps {
 }
 
 export default function HpqFrankfurt({
+  mode = "light",
   title = "Contact",
   labels = {
     firstName: "First name",

@@ -1,10 +1,87 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#F6F5EC", // Warm off-white
+    buttonBg: "#464645", // Dark gray
+  },
+  dark: {
+    background: "#2a2926",
+    buttonBg: "#333332",
+  },
+} as const;
+
+const IMAGES = {
+  smiley: {
+    path: "/registry/oyster-people-hero/smiley.png",
+    alt: "Smiley decoration",
+    prompt: `Simple hand-drawn style smiley face illustration.
+Style: Playful, sketch-like, minimal line art
+Color: Black lines on transparent background
+Mood: Friendly, welcoming, approachable
+Technical: PNG with transparency`,
+  },
+  hammer: {
+    path: "/registry/oyster-people-hero/hammer.png",
+    alt: "Hammer tool decoration",
+    prompt: `Simple hand-drawn hammer tool illustration.
+Style: Playful, sketch-like, minimal line art
+Color: Black lines on transparent background
+Mood: Creative, building, constructive
+Technical: PNG with transparency`,
+  },
+  globe: {
+    path: "/registry/oyster-people-hero/globe.png",
+    alt: "Globe decoration",
+    prompt: `Simple hand-drawn globe illustration.
+Style: Playful, sketch-like, minimal line art
+Color: Black lines on transparent background
+Mood: Global, connected, worldwide
+Technical: PNG with transparency`,
+  },
+  ladder: {
+    path: "/registry/oyster-people-hero/ladder.png",
+    alt: "Ladder decoration",
+    prompt: `Simple hand-drawn ladder illustration.
+Style: Playful, sketch-like, minimal line art
+Color: Black lines on transparent background
+Mood: Growth, climbing, progression
+Technical: PNG with transparency`,
+  },
+  pencil: {
+    path: "/registry/oyster-people-hero/pencil.png",
+    alt: "Pencil decoration",
+    prompt: `Simple hand-drawn pencil illustration.
+Style: Playful, sketch-like, minimal line art
+Color: Black lines on transparent background
+Mood: Creative, design, writing
+Technical: PNG with transparency`,
+  },
+  flag: {
+    path: "/registry/oyster-people-hero/flag.png",
+    alt: "Flag decoration",
+    prompt: `Simple hand-drawn flag illustration.
+Style: Playful, sketch-like, minimal line art
+Color: Black lines on transparent background
+Mood: Achievement, goal, milestone
+Technical: PNG with transparency`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 import { Sparkles } from "lucide-react";
 
 interface OysterPeopleHeroProps {
+  mode?: "light" | "dark";
   badge?: string;
   titleLine1?: string;
   titleLine2?: string;
@@ -15,6 +92,7 @@ interface OysterPeopleHeroProps {
 }
 
 export default function OysterPeopleHero({
+  mode = "light",
   badge = "Confidently hire and manage global talent | Get started for free",
   titleLine1 = "Oyster's",
   titleLine2 = "People Builders",
@@ -23,8 +101,9 @@ export default function OysterPeopleHero({
   buttonText = "Join now",
   onButtonClick,
 }: OysterPeopleHeroProps) {
+  const colors = COLORS[mode];
   return (
-    <section className="relative min-h-screen w-full bg-[#F6F5EC] overflow-hidden">
+    <section className="relative min-h-screen w-full overflow-hidden" style={{ backgroundColor: colors.background }}>
       {/* Top Banner */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -50,8 +129,8 @@ export default function OysterPeopleHero({
           className="absolute left-0 top-8 w-20 h-20 md:w-24 md:h-24"
         >
           <Image
-            src="/registry/oyster-people-hero/smiley.png"
-            alt="Smiley"
+            src={IMAGES.smiley.path}
+            alt={IMAGES.smiley.alt}
             width={96}
             height={96}
             className="object-contain"
@@ -66,8 +145,8 @@ export default function OysterPeopleHero({
           className="absolute left-20 top-32 w-16 h-16 md:w-20 md:h-20"
         >
           <Image
-            src="/registry/oyster-people-hero/hammer.png"
-            alt="Hammer"
+            src={IMAGES.hammer.path}
+            alt={IMAGES.hammer.alt}
             width={80}
             height={80}
             className="object-contain"
@@ -92,8 +171,8 @@ export default function OysterPeopleHero({
           className="absolute left-0 bottom-24 w-20 h-20 md:w-24 md:h-24"
         >
           <Image
-            src="/registry/oyster-people-hero/globe.png"
-            alt="Globe"
+            src={IMAGES.globe.path}
+            alt={IMAGES.globe.alt}
             width={96}
             height={96}
             className="object-contain"
@@ -108,8 +187,8 @@ export default function OysterPeopleHero({
           className="absolute right-0 top-24 w-24 h-32 md:w-32 md:h-44"
         >
           <Image
-            src="/registry/oyster-people-hero/ladder.png"
-            alt="Ladder"
+            src={IMAGES.ladder.path}
+            alt={IMAGES.ladder.alt}
             width={128}
             height={176}
             className="object-contain"
@@ -124,8 +203,8 @@ export default function OysterPeopleHero({
           className="absolute right-8 top-64 w-16 h-16 md:w-20 md:h-20"
         >
           <Image
-            src="/registry/oyster-people-hero/pencil.png"
-            alt="Pencil"
+            src={IMAGES.pencil.path}
+            alt={IMAGES.pencil.alt}
             width={80}
             height={80}
             className="object-contain"
@@ -140,8 +219,8 @@ export default function OysterPeopleHero({
           className="absolute left-1/2 bottom-12 transform -translate-x-1/2 translate-x-16 w-12 h-12 md:w-16 md:h-16"
         >
           <Image
-            src="/registry/oyster-people-hero/flag.png"
-            alt="Flag"
+            src={IMAGES.flag.path}
+            alt={IMAGES.flag.alt}
             width={64}
             height={64}
             className="object-contain"
@@ -183,7 +262,8 @@ export default function OysterPeopleHero({
           >
             <button
               onClick={onButtonClick}
-              className="px-12 py-4 bg-[#464645] text-white text-base font-medium rounded-full hover:bg-[#333332] transition-colors duration-300"
+              className="px-12 py-4 text-white text-base font-medium rounded-full transition-colors duration-300"
+              style={{ backgroundColor: colors.buttonBg }}
             >
               {buttonText}
             </button>

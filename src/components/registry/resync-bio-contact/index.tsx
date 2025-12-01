@@ -1,5 +1,22 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#F2F2F2",          // 라이트 그레이 배경
+    badge: "#D4EDCF",               // 라이트 그린 배경
+    badgeText: "#3D6B35",           // 다크 그린 텍스트
+    focusRing: "#D4EDCF",           // 포커스 상태 그린
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState } from "react";
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
@@ -18,6 +35,7 @@ interface UserTypeOption {
 }
 
 interface ResyncBioContactProps {
+  mode?: "light";
   badgeText?: string;
   title?: string;
   subtitle?: string;
@@ -43,6 +61,7 @@ const defaultUserTypeOptions: UserTypeOption[] = [
 ];
 
 export default function ResyncBioContact({
+  mode = "light",
   badgeText = "CONTACT",
   title = "Sync up with ReSync",
   subtitle = "Fill out the form or message us at",
@@ -58,6 +77,7 @@ export default function ResyncBioContact({
   userTypeOptions = defaultUserTypeOptions,
   onSubmit,
 }: ResyncBioContactProps) {
+  const colors = COLORS[mode];
   const [formData, setFormData] = useState<FormData>({
     firstName: "",
     lastName: "",
@@ -89,7 +109,7 @@ export default function ResyncBioContact({
     userTypePlaceholder;
 
   return (
-    <section className="w-full min-h-screen bg-[#F2F2F2] px-4 py-16 sm:px-6 lg:px-8">
+    <section className="w-full min-h-screen px-4 py-16 sm:px-6 lg:px-8" style={{ backgroundColor: colors.background }}>
       <div className="mx-auto max-w-sm">
         {/* Badge */}
         <motion.div
@@ -99,8 +119,8 @@ export default function ResyncBioContact({
           className="flex justify-center mb-6"
         >
           <span
-            className="inline-block rounded-full px-3 py-1 text-[9px] font-semibold uppercase tracking-wider text-[#3D6B35]"
-            style={{ backgroundColor: "#D4EDCF" }}
+            className="inline-block rounded-full px-3 py-1 text-[9px] font-semibold uppercase tracking-wider"
+            style={{ backgroundColor: colors.badge, color: colors.badgeText }}
           >
             {badgeText}
           </span>

@@ -1,5 +1,35 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#35C22F", // Bright green accent
+  },
+  dark: {
+    accent: "#2da325",
+  },
+} as const;
+
+const IMAGES = {
+  tubes: {
+    path: "/registry/pano-cs-vip-roundtable/green-tubes.png",
+    alt: "3D green tube decorations",
+    prompt: `Abstract 3D rendered green tubular shapes and pipes.
+Style: Modern 3D render, glossy finish, neon-like glow
+Composition: Multiple curved tubes in organic arrangement
+Color palette: Bright lime green (#35C22F), glowing effects
+Mood: Tech, modern, futuristic, dynamic
+Technical: PNG with transparency, soft glow effects`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState } from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
@@ -13,6 +43,7 @@ interface FormField {
 }
 
 interface PanoCsVipRoundtableProps {
+  mode?: "light" | "dark";
   headline?: {
     line1: string;
     line2: string;
@@ -70,6 +101,7 @@ const defaultFormFields = {
 
 // Main Component
 export default function PanoCsVipRoundtable({
+  mode = "light",
   headline = {
     line1: "Unlock Customer",
     line2: "Success",
@@ -81,6 +113,7 @@ export default function PanoCsVipRoundtable({
   onSubmit,
   showDecorations = true,
 }: PanoCsVipRoundtableProps) {
+  const colors = COLORS[mode];
   const [formData, setFormData] = useState<FormData>({
     firstName: "",
     lastName: "",
@@ -144,8 +177,8 @@ export default function PanoCsVipRoundtable({
             className="pointer-events-none absolute bottom-0 left-0 z-10 h-[400px] w-[500px]"
           >
             <Image
-              src="/registry/pano-cs-vip-roundtable/green-tubes.png"
-              alt=""
+              src={IMAGES.tubes.path}
+              alt={IMAGES.tubes.alt}
               fill
               className="object-contain object-left-bottom"
               style={{ transform: "scaleX(-1)" }}
@@ -158,8 +191,8 @@ export default function PanoCsVipRoundtable({
             className="pointer-events-none absolute bottom-0 right-0 z-10 h-[350px] w-[450px]"
           >
             <Image
-              src="/registry/pano-cs-vip-roundtable/green-tubes.png"
-              alt=""
+              src={IMAGES.tubes.path}
+              alt={IMAGES.tubes.alt}
               fill
               className="object-contain object-right-bottom"
             />
@@ -182,7 +215,7 @@ export default function PanoCsVipRoundtable({
             <span className="font-bold italic">{headline.line2}</span>{" "}
             <span
               className="font-bold italic"
-              style={{ color: "#35C22F" }}
+              style={{ color: colors.accent }}
             >
               {headline.accentWord}
             </span>

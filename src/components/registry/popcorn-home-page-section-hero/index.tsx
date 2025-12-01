@@ -1,10 +1,42 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#F7F7F7",
+    buttonPrimary: "#494949",
+    buttonPrimaryHover: "#333",
+    badgeBg: "#3a3a3a",
+  },
+} as const;
+
+const IMAGES = {
+  phoneMockups: {
+    path: "/registry/popcorn-home-page-section-hero/phone-mockups.png",
+    alt: "App mockups",
+    prompt: `Mobile app mockups on smartphones.
+Style: Clean product mockup, multiple phones
+Layout: Multiple phone screens showing app interface
+Elements: App UI, modern design, feature showcase
+Color palette: Modern, clean, tech-focused
+Mood: Professional, modern, innovative
+Technical: PNG with transparency, high resolution`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Phone, MapPin, X } from "lucide-react";
 import Image from "next/image";
 
 interface PopcornHomePageSectionHeroProps {
+  mode?: "light";
   badge?: string;
   heading?: string;
   subheading?: string;
@@ -20,6 +52,7 @@ interface PopcornHomePageSectionHeroProps {
 }
 
 export default function PopcornHomePageSectionHero({
+  mode = "light",
   badge = "Heyo! We launched our Alpha!",
   heading = "One global plan.\nNo hassle.",
   subheading = "Enjoy unlimited global service for $69/mo.",
@@ -51,6 +84,8 @@ export default function PopcornHomePageSectionHero({
   phoneImageSrc = "/registry/popcorn-home-page-section-hero/phone-mockups.png",
   onSignUp,
 }: PopcornHomePageSectionHeroProps) {
+  const colors = COLORS[mode];
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
@@ -59,7 +94,10 @@ export default function PopcornHomePageSectionHero({
   };
 
   return (
-    <section className="relative w-full bg-[#F7F7F7] overflow-hidden">
+    <section
+      className="relative w-full overflow-hidden"
+      style={{ backgroundColor: colors.background }}
+    >
       {/* Font import for Instrument Serif */}
       <style jsx global>{`
         @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
@@ -96,7 +134,16 @@ export default function PopcornHomePageSectionHero({
         </div>
 
         {/* Sign Up Button */}
-        <button className="bg-[#494949] text-white text-sm px-5 py-2.5 rounded-full hover:bg-neutral-700 transition-colors">
+        <button
+          className="text-white text-sm px-5 py-2.5 rounded-full transition-colors"
+          style={{ backgroundColor: colors.buttonPrimary }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = colors.buttonPrimaryHover;
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = colors.buttonPrimary;
+          }}
+        >
           {ctaText}
         </button>
       </motion.nav>
@@ -108,7 +155,8 @@ export default function PopcornHomePageSectionHero({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="bg-[#3a3a3a] text-white text-sm px-5 py-2 rounded-full mb-6"
+          className="text-white text-sm px-5 py-2 rounded-full mb-6"
+          style={{ backgroundColor: colors.badgeBg }}
         >
           {badge}
         </motion.div>
@@ -163,7 +211,14 @@ export default function PopcornHomePageSectionHero({
           />
           <button
             type="submit"
-            className="bg-[#494949] text-white text-sm px-6 py-2.5 rounded-full hover:bg-neutral-700 transition-colors"
+            className="text-white text-sm px-6 py-2.5 rounded-full transition-colors"
+            style={{ backgroundColor: colors.buttonPrimary }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = colors.buttonPrimaryHover;
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = colors.buttonPrimary;
+            }}
           >
             {ctaText}
           </button>
@@ -177,8 +232,8 @@ export default function PopcornHomePageSectionHero({
           className="relative mt-12 mb-8 w-full max-w-2xl"
         >
           <Image
-            src={phoneImageSrc}
-            alt="App mockups"
+            src={IMAGES.phoneMockups.path}
+            alt={IMAGES.phoneMockups.alt}
             width={600}
             height={600}
             className="w-full h-auto object-contain"

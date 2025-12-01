@@ -1,11 +1,57 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    cardBackground: "#FAFAFA",
+  },
+  dark: {
+    cardBackground: "#1A1A1A",
+  },
+} as const;
+
+const IMAGES = {
+  profile: {
+    path: "/registry/portfolio-final-final/profile.png",
+    alt: "Profile photo of product designer",
+    prompt: `Professional headshot portrait of a male product designer.
+Style: Natural, approachable, modern professional photography
+Layout: Square format, head and shoulders composition
+Composition: Centered subject with slight off-center gaze, casual smile
+Background: Soft gray or blurred neutral background
+Color palette: Warm skin tones, neutral clothing, soft lighting
+Mood: Friendly, confident, approachable, professional
+Technical: High resolution, natural lighting, sharp focus on face`,
+  },
+  book: {
+    path: "/registry/portfolio-final-final/book.png",
+    alt: "Product Design Portfolio book cover",
+    prompt: `Book cover design for product design portfolio guide.
+Style: Modern, professional, design-focused aesthetic
+Layout: 3D perspective book mockup, slight angle view
+Composition: Book standing upright showing front cover and spine
+Cover design: Clean typography, bold title, minimalist design elements
+Color palette: Professional colors (blue, gray, white tones)
+Elements: Title "Product Design Portfolio Final Final", author name, simple geometric accents
+Mood: Educational, professional, design-industry standard
+Technical: PNG with transparency, realistic book rendering`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 import { Twitter } from "lucide-react";
 import "./font.css";
 
 interface PortfolioFinalFinalProps {
+  mode?: "light" | "dark";
   profileImage?: string;
   bookImage?: string;
   authorName?: string;
@@ -137,8 +183,9 @@ function FastCompanyLogo() {
 }
 
 export default function PortfolioFinalFinal({
-  profileImage = "/registry/portfolio-final-final/profile.png",
-  bookImage = "/registry/portfolio-final-final/book.png",
+  mode = "light",
+  profileImage = IMAGES.profile.path,
+  bookImage = IMAGES.book.path,
   authorName = "Fedor Shkliarau",
   bookTitle = "Product Design Portfolio Final Final",
   authorBio = (
@@ -204,6 +251,8 @@ export default function PortfolioFinalFinal({
   ],
   pressLogo = <FastCompanyLogo />,
 }: PortfolioFinalFinalProps) {
+  const colors = COLORS[mode];
+
   return (
     <section className="font-inter flex min-h-screen w-full items-center justify-center bg-white p-4 sm:p-8">
       <div className="flex w-full max-w-5xl flex-col gap-8 lg:flex-row lg:gap-12">
@@ -218,7 +267,7 @@ export default function PortfolioFinalFinal({
           <div className="relative aspect-square w-32 overflow-hidden rounded-lg bg-gray-100 sm:w-40">
             <Image
               src={profileImage}
-              alt={authorName}
+              alt={IMAGES.profile.alt}
               fill
               className="object-cover"
               priority
@@ -229,7 +278,7 @@ export default function PortfolioFinalFinal({
           <div className="relative aspect-[4/3] w-40 sm:w-48">
             <Image
               src={bookImage}
-              alt={bookTitle}
+              alt={IMAGES.book.alt}
               fill
               className="object-contain"
             />

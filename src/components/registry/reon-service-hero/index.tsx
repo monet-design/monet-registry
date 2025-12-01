@@ -1,5 +1,34 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#F83957",          // 레드 핑크 배경
+  },
+} as const;
+
+const IMAGES = {
+  hero: {
+    path: "/registry/reon-service-hero/meeting.jpg",
+    alt: "Professional team meeting in modern office",
+    prompt: `Professional team meeting in modern office environment.
+Style: Clean, modern corporate photography, natural lighting
+Layout: Meeting table with diverse team members collaborating
+Composition: Wide shot showing multiple people engaged in discussion
+Color palette: Warm professional tones, modern office interior
+Elements: Conference table, laptops, documents, collaborative workspace
+Mood: Professional, collaborative, engaged, productive
+Technical: High-quality business photography, natural lighting, realistic`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 import { Search } from "lucide-react";
@@ -13,6 +42,7 @@ interface NavItem {
 }
 
 interface ReonServiceHeroProps {
+  mode?: "light";
   logoText?: string;
   navItems?: NavItem[];
   tagline?: string;
@@ -47,15 +77,18 @@ const defaultNavItems: NavItem[] = [
 
 // Main Component
 export default function ReonServiceHero({
+  mode = "light",
   logoText = "R",
   navItems = defaultNavItems,
   tagline = "Reon Services for End-to-End\nConsultancy",
   headline = "Guiding market leaders\nhands-on to innovate\nand build upon their\nexcellence",
-  heroImage = "/registry/reon-service-hero/meeting.jpg",
+  heroImage = IMAGES.hero.path,
   onNavClick,
 }: ReonServiceHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative w-full min-h-screen bg-[#F83957] overflow-hidden">
+    <section className="relative w-full min-h-screen overflow-hidden" style={{ backgroundColor: colors.background }}>
       {/* Navigation */}
       <motion.nav
         initial={{ opacity: 0, y: -20 }}

@@ -1,9 +1,33 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#FAFAFA",
+    starFill: "#F8EE76",
+    quoteAccent: "#8B5CF6",
+    buttonBackground: "#2F2D45",
+  },
+  dark: {
+    background: "#1A1A1A",
+    starFill: "#FCD34D",
+    quoteAccent: "#A78BFA",
+    buttonBackground: "#4B5563",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { Star } from "lucide-react";
 import { motion } from "motion/react";
 
 interface PrintForFigmaTestimonialProps {
+  mode?: "light" | "dark";
   rating?: number;
   quote?: string;
   highlightedText?: string;
@@ -13,6 +37,7 @@ interface PrintForFigmaTestimonialProps {
 }
 
 export default function PrintForFigmaTestimonial({
+  mode = "light",
   rating = 5,
   quote = "An absolute {highlight} if you want to design for print in Figma.",
   highlightedText = "must-have",
@@ -20,6 +45,7 @@ export default function PrintForFigmaTestimonial({
   buttonText = "View All Reviews",
   onButtonClick,
 }: PrintForFigmaTestimonialProps) {
+  const colors = COLORS[mode];
   const renderQuote = () => {
     const parts = quote.split("{highlight}");
     if (parts.length === 1) {
@@ -53,8 +79,8 @@ export default function PrintForFigmaTestimonial({
           <Star
             key={index}
             className="h-4 w-4"
-            fill="#F8EE76"
-            stroke="#F8EE76"
+            fill={colors.starFill}
+            stroke={colors.starFill}
             strokeWidth={1}
           />
         ))}
@@ -70,15 +96,14 @@ export default function PrintForFigmaTestimonial({
         {/* Left Quote Mark */}
         <span
           className="mr-4 select-none text-2xl font-bold leading-none"
-          style={{ color: "#8B5CF6" }}
+          style={{ color: colors.quoteAccent }}
         >
           &ldquo;
         </span>
 
         {/* Quote Text */}
         <p
-          className="text-center text-lg font-normal leading-relaxed"
-          style={{ color: "#374151" }}
+          className="text-center text-lg font-normal leading-relaxed text-gray-700 dark:text-gray-300"
         >
           {renderQuote()}
         </p>
@@ -86,7 +111,7 @@ export default function PrintForFigmaTestimonial({
         {/* Right Quote Mark */}
         <span
           className="ml-4 select-none text-2xl font-bold leading-none"
-          style={{ color: "#8B5CF6" }}
+          style={{ color: colors.quoteAccent }}
         >
           &rdquo;
         </span>
@@ -112,7 +137,7 @@ export default function PrintForFigmaTestimonial({
         whileTap={{ scale: 0.98 }}
         onClick={onButtonClick}
         className="rounded-full px-6 py-2.5 text-sm font-medium text-white transition-colors hover:opacity-90"
-        style={{ backgroundColor: "#2F2D45" }}
+        style={{ backgroundColor: colors.buttonBackground }}
       >
         {buttonText}
       </motion.button>

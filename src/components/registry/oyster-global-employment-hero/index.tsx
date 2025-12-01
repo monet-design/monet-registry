@@ -1,10 +1,63 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#EEE4B8", // Warm beige background
+    buttonBg: "#5E5E5E", // Dark gray button
+  },
+  dark: {
+    background: "#2a2418",
+    buttonBg: "#4a4a4a",
+  },
+} as const;
+
+const IMAGES = {
+  collage1: {
+    path: "/registry/oyster-global-employment-hero/collage-1.png",
+    alt: "Remote worker at beach",
+    prompt: `Professional photo of person working on laptop outdoors by the ocean.
+Style: Natural, bright, lifestyle photography
+Composition: Person with laptop, ocean/beach in background
+Color palette: Natural daylight, blues from ocean, warm skin tones
+Mood: Freedom, remote work lifestyle, work-life balance
+Technical: High resolution, portrait orientation`,
+  },
+  collage2: {
+    path: "/registry/oyster-global-employment-hero/collage-2.png",
+    alt: "Professional in colorful office",
+    prompt: `Portrait of professional in vibrant yellow office setting.
+Style: Editorial, modern workplace photography
+Composition: Head and shoulders portrait, confident pose
+Color palette: Bright yellow background, professional attire
+Mood: Confident, contemporary, global professional
+Technical: High resolution, portrait orientation`,
+  },
+  collage3: {
+    path: "/registry/oyster-global-employment-hero/collage-3.png",
+    alt: "Creative workspace",
+    prompt: `Creative workspace with desk, laptop, and modern office setup.
+Style: Clean, organized, lifestyle photography
+Composition: Top-down or angled view of desk workspace
+Color palette: Neutral tones, organized aesthetic
+Mood: Productive, creative, professional environment
+Technical: High resolution, landscape orientation`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ChevronDown, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 interface OysterGlobalEmploymentHeroProps {
+  mode?: "light" | "dark";
   topBannerText?: string;
   topBannerLinkText?: string;
   logoText?: string;
@@ -19,6 +72,7 @@ interface OysterGlobalEmploymentHeroProps {
 }
 
 export default function OysterGlobalEmploymentHero({
+  mode = "light",
   topBannerText = "Confidently hire and manage global talent",
   topBannerLinkText = "Get started for free",
   logoText = "Oyster",
@@ -33,13 +87,14 @@ export default function OysterGlobalEmploymentHero({
   primaryButtonText = "Explore Platform for Free",
   secondaryButtonText = "Get a Demo",
   images = [
-    { src: "/registry/oyster-global-employment-hero/collage-1.png", alt: "Remote worker at beach" },
-    { src: "/registry/oyster-global-employment-hero/collage-2.png", alt: "Professional in colorful office" },
-    { src: "/registry/oyster-global-employment-hero/collage-3.png", alt: "Creative workspace" },
+    { src: IMAGES.collage1.path, alt: IMAGES.collage1.alt },
+    { src: IMAGES.collage2.path, alt: IMAGES.collage2.alt },
+    { src: IMAGES.collage3.path, alt: IMAGES.collage3.alt },
   ],
   onPrimaryClick,
   onSecondaryClick,
 }: OysterGlobalEmploymentHeroProps) {
+  const colors = COLORS[mode];
   return (
     <section className="relative w-full min-h-screen overflow-hidden font-sans">
       {/* Google Font Import for Instrument Serif */}
@@ -53,7 +108,7 @@ export default function OysterGlobalEmploymentHero({
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         className="w-full py-3 text-center text-sm"
-        style={{ backgroundColor: "#EEE4B8" }}
+        style={{ backgroundColor: colors.background }}
       >
         <span className="text-gray-700">{topBannerText}</span>
         <span className="mx-1 text-gray-700">|</span>
@@ -105,7 +160,7 @@ export default function OysterGlobalEmploymentHero({
           <a
             href="#"
             className="text-sm text-white px-5 py-2 rounded-full transition-colors"
-            style={{ backgroundColor: "#5E5E5E" }}
+            style={{ backgroundColor: colors.buttonBg }}
           >
             Sign Up
           </a>
@@ -113,7 +168,7 @@ export default function OysterGlobalEmploymentHero({
       </motion.nav>
 
       {/* Hero Section */}
-      <div className="w-full flex flex-col lg:flex-row" style={{ backgroundColor: "#EEE4B8" }}>
+      <div className="w-full flex flex-col lg:flex-row" style={{ backgroundColor: colors.background }}>
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}

@@ -1,10 +1,65 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#FFFFFF",          // 화이트 배경
+    accent: "#28D7CE",              // 터쿼이즈 하이라이트
+  },
+} as const;
+
+const IMAGES = {
+  main: {
+    path: "/registry/riotters-hero/purple-chair.png",
+    alt: "3D rendered purple chair design",
+    prompt: `Modern 3D rendered purple chair design showcase.
+Style: Clean 3D rendering, product design visualization
+Layout: Centered chair with clear view of design details
+Composition: Solo product shot, modern furniture design
+Color palette: Purple/pink tones, clean background
+Elements: Chair, modern design, 3D render quality
+Mood: Creative, design-focused, modern aesthetics
+Technical: High-quality 3D render, professional product visualization`,
+  },
+  lamp: {
+    path: "/registry/riotters-hero/purple-lamp.png",
+    alt: "3D rendered purple lamp design",
+    prompt: `Modern 3D rendered purple desk lamp design.
+Style: Clean 3D rendering, minimalist product design
+Layout: Centered lamp with clear design details
+Composition: Product shot showing lamp structure and form
+Color palette: Purple/violet tones, clean background
+Elements: Desk lamp, modern minimalist design
+Mood: Creative, contemporary, design showcase
+Technical: High-quality 3D render, professional lighting`,
+  },
+  sketches: {
+    path: "/registry/riotters-hero/design-sketches.png",
+    alt: "Design process sketches and wireframes",
+    prompt: `Design process sketches, wireframes, and ideation drawings.
+Style: Hand-drawn or digital sketches, design process documentation
+Layout: Multiple sketches arranged showing design evolution
+Composition: Various design ideas, annotations, iterations
+Color palette: Black and white or minimal color, sketch aesthetic
+Elements: Wireframes, concept sketches, annotations, design notes
+Mood: Creative process, brainstorming, professional design work
+Technical: Clean scan or digital sketches, clear and readable`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 
 interface RiottersHeroProps {
+  mode?: "light";
   /** Logo text */
   logoText?: string;
   /** Navigation items */
@@ -49,7 +104,7 @@ function HandDrawnUnderline({ className = "" }: { className?: string }) {
     >
       <motion.path
         d="M2 8C40 4 80 6 100 5C120 4 160 8 198 4"
-        stroke="#28D7CE"
+        stroke={COLORS.light.accent}
         strokeWidth="3"
         strokeLinecap="round"
         initial={{ pathLength: 0 }}
@@ -58,7 +113,7 @@ function HandDrawnUnderline({ className = "" }: { className?: string }) {
       />
       <motion.path
         d="M5 10C45 6 85 9 105 8C125 7 165 10 195 7"
-        stroke="#28D7CE"
+        stroke={COLORS.light.accent}
         strokeWidth="2"
         strokeLinecap="round"
         initial={{ pathLength: 0 }}
@@ -87,6 +142,7 @@ function AvatarIcon({ className = "" }: { className?: string }) {
 }
 
 export default function RiottersHero({
+  mode = "light",
   logoText = "riotters",
   navItems = [
     { label: "Services", href: "#", hasDropdown: true },
@@ -105,15 +161,17 @@ export default function RiottersHero({
   ctaText = "Explore Case Studies",
   ctaUrl = "#",
   collageImages = {
-    main: "/registry/riotters-hero/purple-chair.png",
-    lamp: "/registry/riotters-hero/purple-lamp.png",
-    sketches: "/registry/riotters-hero/design-sketches.png",
+    main: IMAGES.main.path,
+    lamp: IMAGES.lamp.path,
+    sketches: IMAGES.sketches.path,
   },
   onContactClick,
   onCtaClick,
 }: RiottersHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative w-full min-h-screen bg-white overflow-hidden">
+    <section className="relative w-full min-h-screen overflow-hidden" style={{ backgroundColor: colors.background }}>
       {/* Navigation */}
       <motion.nav
         initial={{ opacity: 0, y: -20 }}
@@ -147,7 +205,7 @@ export default function RiottersHero({
           onClick={onContactClick}
           className="flex items-center gap-2 bg-[#303030] text-white text-sm px-5 py-2.5 rounded-full hover:bg-[#1a1a1a] transition-colors"
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-[#28D7CE]" />
+          <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: colors.accent }} />
           {contactText}
         </motion.button>
       </motion.nav>
@@ -216,7 +274,7 @@ export default function RiottersHero({
                 <br />
                 {headlineLine2}{" "}
                 <span className="relative inline-block">
-                  <span className="relative z-10 bg-[#28D7CE]/20 px-2 -mx-2">
+                  <span className="relative z-10 px-2 -mx-2" style={{ backgroundColor: `${colors.accent}20` }}>
                     {highlightedWord}
                   </span>
                   <HandDrawnUnderline className="absolute -bottom-2 left-0 w-full" />

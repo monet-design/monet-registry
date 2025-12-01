@@ -1,5 +1,79 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    progressActive: "#333333",
+    progressInactive: "#CCCCCC",
+  },
+  dark: {
+    progressActive: "#FFFFFF",
+    progressInactive: "#555555",
+  },
+} as const;
+
+const IMAGES = {
+  nosepads: {
+    path: "/registry/product-feature-showcase/nosepads.png",
+    alt: "Close-up of adaptive soft nose pads on eyewear",
+    prompt: `Product close-up photo of eyeglass nose pads.
+Style: Professional product photography, soft lighting, minimal aesthetic
+Layout: Close-up macro shot showing nose pad detail
+Composition: Focus on adjustable soft-touch nose pads on eyeglass frame
+Background: Soft gradient from light to medium gray
+Color palette: Metallic silver/titanium frame, soft silicone nose pads, neutral background
+Elements: Bridge area, nose pad arms, soft silicone pads
+Mood: Premium, comfortable, detail-oriented, high quality
+Technical: High resolution, shallow depth of field, professional lighting`,
+  },
+  bridge: {
+    path: "/registry/product-feature-showcase/bridge.png",
+    alt: "Detailed view of titanium bridge structure",
+    prompt: `Product close-up of eyeglass bridge structure.
+Style: Premium product photography, studio lighting
+Layout: Centered view of bridge component
+Composition: Focus on curved titanium bridge with unique geometry
+Background: Clean gradient, minimal distraction
+Color palette: Brushed titanium, metallic accents, neutral gray background
+Elements: Bridge curve, connection points, material texture
+Mood: Durable, engineered, precision, premium quality
+Technical: High resolution, macro detail, reflective surfaces`,
+  },
+  hinges: {
+    path: "/registry/product-feature-showcase/hinges.png",
+    alt: "Precision hinges on eyeglass frame",
+    prompt: `Product detail shot of eyeglass hinges.
+Style: Technical product photography, clean aesthetic
+Layout: Side angle showing hinge mechanism
+Composition: Focus on hinge joint connecting temple to frame
+Background: Soft neutral gradient
+Color palette: Metal finish, precise engineering, neutral tones
+Elements: Hinge mechanism, screws, connection points
+Mood: Quality, durability, precision engineering
+Technical: High resolution, sharp focus, product detail`,
+  },
+  temples: {
+    path: "/registry/product-feature-showcase/temples.png",
+    alt: "Flexible temples with soft-touch finish",
+    prompt: `Product shot of eyeglass temple arms.
+Style: Clean product photography, professional lighting
+Layout: Side view showing temple curve and texture
+Composition: Focus on curved temple arm with soft-touch coating
+Background: Minimal gradient background
+Color palette: Matte finish, neutral tones, soft texture
+Elements: Temple curve, soft-touch material, end tips
+Mood: Comfortable, flexible, quality craftsmanship
+Technical: High resolution, detailed texture, professional studio shot`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { motion, useInView } from "motion/react";
@@ -15,6 +89,7 @@ interface Feature {
 }
 
 interface ProductFeatureShowcaseProps {
+  mode?: "light" | "dark";
   mainTitle?: string;
   features?: Feature[];
 }
@@ -28,7 +103,7 @@ const defaultFeatures: Feature[] = [
     headline: "Nose pad that raises the pleasance of touch and stability.",
     description:
       "The Other Glasses — features soft-touch no-slip nose pads, for an extremely lightweight feel. Crafted with highly adjustable nose pad arms, guaranteeing a flawless fit for every face. Designed for easy, screwless replacement.",
-    image: "/registry/product-feature-showcase/nosepads.png",
+    image: IMAGES.nosepads.path,
   },
   {
     id: "bridge",
@@ -38,7 +113,7 @@ const defaultFeatures: Feature[] = [
     headline: "It's built for high durability, ensuring overall flexibility.",
     description:
       "Designed with unique geometry, it is exclusively made from high-grade beta-titanium, always adhering to rigorous quality standards. The distinct curvature is enhancing its three-dimensional appearance.",
-    image: "/registry/product-feature-showcase/bridge.png",
+    image: IMAGES.bridge.path,
   },
   {
     id: "hinges",
@@ -48,7 +123,7 @@ const defaultFeatures: Feature[] = [
     headline: "Our hinges are durable, flexible and strong.",
     description:
       "Our top-quality hinges are engineered for stability and comfort, utilizing the full body of the frame to effectively distribute stress.",
-    image: "/registry/product-feature-showcase/hinges.png",
+    image: IMAGES.hinges.path,
   },
   {
     id: "temples",
@@ -58,7 +133,7 @@ const defaultFeatures: Feature[] = [
     headline: "Embracing comfort, exuding elegance.",
     description:
       "Our eyewear features adjustable, soft-touch anti-slip temples for a perfect fit. The well-calculated unique curvature ensures a comfortable environment, gently wrapping around your head.",
-    image: "/registry/product-feature-showcase/temples.png",
+    image: IMAGES.temples.path,
   },
 ];
 
@@ -161,9 +236,11 @@ function FeatureSection({
 }
 
 export default function ProductFeatureShowcase({
+  mode = "light",
   mainTitle = "Designed for your\neveryday life.",
   features = defaultFeatures,
 }: ProductFeatureShowcaseProps) {
+  const colors = COLORS[mode];
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleInView = (index: number) => {
@@ -209,10 +286,11 @@ export default function ProductFeatureShowcase({
           {features.map((_, index) => (
             <div
               key={index}
+              style={{
+                backgroundColor: index === activeIndex ? colors.progressActive : colors.progressInactive,
+              }}
               className={`h-1.5 w-1.5 rounded-full transition-all duration-300 ${
-                index === activeIndex
-                  ? "w-6 bg-[#333333]"
-                  : "bg-[#CCCCCC]"
+                index === activeIndex ? "w-6" : ""
               }`}
             />
           ))}

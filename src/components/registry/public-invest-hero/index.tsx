@@ -1,5 +1,39 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#2141B6",
+    accentHover: "#1a3491",
+  },
+  dark: {
+    accent: "#5B7FE8",
+    accentHover: "#4A6ED7",
+  },
+} as const;
+
+const IMAGES = {
+  holographicBg: {
+    path: "/registry/public-invest-hero/holographic-bg.png",
+    alt: "Holographic gradient background",
+    prompt: `Abstract holographic gradient background with iridescent colors.
+Style: Modern, futuristic, holographic aesthetic with smooth color transitions
+Layout: Full-frame gradient with flowing color shifts
+Composition: Soft blended gradients creating depth and dimension
+Color palette: Iridescent blues, purples, pinks, teals with smooth transitions
+Elements: Smooth gradient flows, subtle texture, holographic shimmer effect
+Mood: Modern, innovative, tech-forward, premium
+Technical: High resolution, smooth gradients, RGB color space, portrait orientation`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
@@ -18,6 +52,7 @@ interface MediaLogo {
 }
 
 interface PublicInvestHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   headline?: string;
   description?: string;
@@ -178,6 +213,7 @@ const defaultMediaLogos: MediaLogo[] = [
 
 // Main Component
 export default function PublicInvestHero({
+  mode = "light",
   logoText = "public",
   headline = "Invest in\nstocks",
   description = "Build your portfolio with access to over 9,000 equities, and get the market insights you need to execute your investing strategies.",
@@ -196,6 +232,7 @@ export default function PublicInvestHero({
   onPrimaryCtaClick,
   onSecondaryCtaClick,
 }: PublicInvestHeroProps) {
+  const colors = COLORS[mode];
   return (
     <section className="relative min-h-screen w-full bg-white overflow-hidden">
       {/* Navigation */}
@@ -320,8 +357,8 @@ export default function PublicInvestHero({
             className="absolute inset-0"
           >
             <Image
-              src="/registry/public-invest-hero/holographic-bg.png"
-              alt="Holographic background"
+              src={IMAGES.holographicBg.path}
+              alt={IMAGES.holographicBg.alt}
               fill
               className="object-cover"
               priority

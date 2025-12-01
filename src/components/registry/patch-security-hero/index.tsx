@@ -1,9 +1,29 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#F8FCF2",
+    accent: "#C1D162",
+    accentHover: "#b3c356",
+    codeString: "#C1D162",
+    codeNumber: "#7FB3D5",
+    terminalAccent: "#0C7677",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Copy } from "lucide-react";
 
 interface PatchSecurityHeroProps {
+  mode?: "light";
   logo?: string;
   navItems?: { label: string; href: string }[];
   ctaButtonText?: string;
@@ -16,6 +36,7 @@ interface PatchSecurityHeroProps {
 }
 
 export default function PatchSecurityHero({
+  mode = "light",
   logo = "patch",
   navItems = [
     { label: "Product", href: "#" },
@@ -30,6 +51,7 @@ export default function PatchSecurityHero({
   onPrimaryClick,
   onCtaClick,
 }: PatchSecurityHeroProps) {
+  const colors = COLORS[mode];
   const tokenValue = "eyJhGciOiJIUzI1NiIsI9ey0I6b2ubl";
 
   const codeLines = [
@@ -76,7 +98,7 @@ export default function PatchSecurityHero({
     return parts.map((part, i) => {
       if (part.match(/["'][^"']*["']/)) {
         return (
-          <span key={i} className="text-[#C1D162]">
+          <span key={i} style={{ color: colors.codeString }}>
             {part}
           </span>
         );
@@ -86,7 +108,7 @@ export default function PatchSecurityHero({
         return (
           <span key={i}>
             <span className="text-gray-400">{colon}</span>
-            <span className="text-[#7FB3D5]">{num}</span>
+            <span style={{ color: colors.codeNumber }}>{num}</span>
           </span>
         );
       }
@@ -99,7 +121,10 @@ export default function PatchSecurityHero({
   };
 
   return (
-    <section className="relative min-h-screen w-full bg-[#F8FCF2] overflow-hidden">
+    <section
+      className="relative min-h-screen w-full overflow-hidden"
+      style={{ backgroundColor: colors.background }}
+    >
       {/* Navigation */}
       <nav className="flex items-center justify-between px-8 py-4 lg:px-16">
         <div className="flex items-center gap-10">
@@ -120,7 +145,14 @@ export default function PatchSecurityHero({
         </div>
         <motion.button
           onClick={onCtaClick}
-          className="bg-[#C1D162] text-[#0F1A19] px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-[#b3c356] transition-colors"
+          className="text-[#0F1A19] px-5 py-2.5 rounded-lg text-sm font-medium transition-colors"
+          style={{ backgroundColor: colors.accent }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = colors.accentHover;
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = colors.accent;
+          }}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
@@ -164,7 +196,14 @@ export default function PatchSecurityHero({
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             onClick={onPrimaryClick}
-            className="w-fit bg-[#C1D162] text-[#0F1A19] px-6 py-3 rounded-lg text-sm font-medium hover:bg-[#b3c356] transition-colors"
+            className="w-fit text-[#0F1A19] px-6 py-3 rounded-lg text-sm font-medium transition-colors"
+            style={{ backgroundColor: colors.accent }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = colors.accentHover;
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = colors.accent;
+            }}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
@@ -204,9 +243,9 @@ export default function PatchSecurityHero({
             {/* Tab Bar */}
             <div className="flex items-center bg-[#0F1A19] px-3 py-2 border-b border-[#1a2625]">
               <div className="flex items-center gap-2 bg-[#070E0C] px-3 py-1.5 rounded-t text-xs">
-                <span className="text-[#0C7677]">TS</span>
+                <span style={{ color: colors.terminalAccent }}>TS</span>
                 <span className="text-gray-300">first_query.ts</span>
-                <span className="text-[#C1D162] ml-1">9</span>
+                <span className="ml-1" style={{ color: colors.codeString }}>9</span>
                 <span className="text-gray-500 ml-1">x</span>
               </div>
               <div className="ml-auto flex items-center gap-2 text-gray-500">
@@ -219,10 +258,10 @@ export default function PatchSecurityHero({
             <div className="flex items-center gap-2 px-4 py-2 text-xs text-gray-500 border-b border-[#1a2625]">
               <span>demo-project</span>
               <span>&gt;</span>
-              <span className="text-[#0C7677]">TS</span>
+              <span style={{ color: colors.terminalAccent }}>TS</span>
               <span className="text-gray-400">first_query.ts</span>
               <span>&gt;</span>
-              <span className="text-[#C1D162]">main</span>
+              <span style={{ color: colors.codeString }}>main</span>
             </div>
 
             {/* Code Content */}
@@ -241,7 +280,8 @@ export default function PatchSecurityHero({
             initial={{ opacity: 0, y: 30, x: -20 }}
             animate={{ opacity: 1, y: 0, x: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="absolute right-4 lg:right-0 bottom-0 lg:bottom-8 w-[300px] bg-[#0C7677] rounded-lg p-4 shadow-2xl z-30"
+            className="absolute right-4 lg:right-0 bottom-0 lg:bottom-8 w-[300px] rounded-lg p-4 shadow-2xl z-30"
+            style={{ backgroundColor: colors.terminalAccent }}
           >
             <div className="flex items-center gap-1.5 mb-3">
               <div className="w-2.5 h-2.5 rounded-full bg-[#FF5F57]"></div>
@@ -249,7 +289,7 @@ export default function PatchSecurityHero({
               <div className="w-2.5 h-2.5 rounded-full bg-[#28C840]"></div>
             </div>
             <code className="text-xs text-white font-mono">
-              <span className="text-[#C1D162]">$</span> pat dataset key get{" "}
+              <span style={{ color: colors.codeString }}>$</span> pat dataset key get{" "}
               <span className="text-gray-300">&lt;data_access_key_id&gt;</span>
             </code>
           </motion.div>

@@ -1,5 +1,38 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    announcementBg: "#656565", // Dark gray announcement banner
+    buttonBg: "#575757", // Dark gray button
+  },
+  dark: {
+    announcementBg: "#4a4a4a",
+    buttonBg: "#3a3a3a",
+  },
+} as const;
+
+const IMAGES = {
+  hero: {
+    path: "/registry/oyster-hero/hero-image.png",
+    alt: "Professional using Oyster platform",
+    prompt: `Professional portrait of person using laptop in modern setting.
+Style: Natural, professional photography with warm lighting
+Composition: Medium shot, person engaged with laptop
+Background: Modern, clean environment with soft focus
+Color palette: Warm natural tones, professional attire
+Mood: Productive, professional, modern workplace
+Technical: High resolution, portrait orientation`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Check, ChevronDown, ArrowRight } from "lucide-react";
 import Image from "next/image";
@@ -17,6 +50,7 @@ interface PartnerLogo {
 }
 
 interface OysterHeroProps {
+  mode?: "light" | "dark";
   tagline?: string;
   headlineBold1?: string;
   headlineItalic1?: string;
@@ -103,6 +137,7 @@ function HandDrawnSquiggle({ className }: { className?: string }) {
 }
 
 export default function OysterHero({
+  mode = "light",
   tagline = "AUTOMATED GLOBAL EMPLOYMENT PLATFORM",
   headlineBold1 = "Hire",
   headlineItalic1 = "talent in",
@@ -128,13 +163,14 @@ export default function OysterHero({
     { name: "Payhawk" },
     { name: "metadata.io" },
   ],
-  heroImageSrc = "/registry/oyster-hero/hero-image.png",
+  heroImageSrc = IMAGES.hero.path,
   announcementText = "Confidently hire and manage global talent | Get started for free",
 }: OysterHeroProps) {
+  const colors = COLORS[mode];
   return (
     <section className="relative w-full bg-white overflow-hidden">
       {/* Top Announcement Banner */}
-      <div className="w-full bg-[#656565] py-2.5 px-4">
+      <div className="w-full py-2.5 px-4" style={{ backgroundColor: colors.announcementBg }}>
         <div className="flex items-center justify-center gap-2 text-white text-sm">
           <span>{announcementText}</span>
           <ArrowRight className="w-4 h-4" />
@@ -171,7 +207,7 @@ export default function OysterHero({
           <button className="px-4 py-2 border border-[#1a1a1a] rounded-full text-sm font-medium text-[#1a1a1a] hover:bg-gray-50 transition-colors">
             Speak to an Expert
           </button>
-          <button className="px-4 py-2 bg-[#575757] rounded-full text-sm font-medium text-white hover:bg-[#4a4a4a] transition-colors">
+          <button className="px-4 py-2 rounded-full text-sm font-medium text-white transition-colors" style={{ backgroundColor: colors.buttonBg }}>
             Sign Up
           </button>
         </div>

@@ -1,5 +1,35 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#FFFFFF",          // 화이트 배경
+    accent: "#00F5D4",              // 시안 하이라이트
+  },
+} as const;
+
+const IMAGES = {
+  background: {
+    path: "/registry/riotters-about-hero/hero-bg.jpg",
+    alt: "Team collaboration workspace",
+    prompt: `Modern creative team collaboration in open workspace.
+Style: Professional lifestyle photography, natural lighting
+Layout: Wide shot of collaborative workspace with team members
+Composition: Dynamic team working together, creative environment
+Color palette: Bright, professional, modern office aesthetic
+Elements: Team members, workspace, computers, collaborative tools
+Mood: Creative, collaborative, energetic, modern workplace
+Technical: High-quality photography, natural lighting, candid moments`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
@@ -11,6 +41,7 @@ interface NavItem {
 }
 
 interface RiottersAboutHeroProps {
+  mode?: "light";
   logoText?: string;
   navItems?: NavItem[];
   ctaButtonText?: string;
@@ -24,6 +55,7 @@ interface RiottersAboutHeroProps {
 }
 
 export default function RiottersAboutHero({
+  mode = "light",
   logoText = "riotters",
   navItems = [
     { label: "Services", href: "#services", hasDropdown: true },
@@ -37,12 +69,14 @@ export default function RiottersAboutHero({
   highlightedText = "space for creativity and clear\nstructure",
   description = "We've created a playground where we combine\nthese two ingredients, and now we invite you to join the\ngame.",
   actionButtonText = "Sure, let's start!",
-  backgroundImage = "/registry/riotters-about-hero/hero-bg.jpg",
+  backgroundImage = IMAGES.background.path,
   onCtaClick,
   onActionClick,
 }: RiottersAboutHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative min-h-[600px] w-full bg-white">
+    <section className="relative min-h-[600px] w-full" style={{ backgroundColor: colors.background }}>
       {/* Navigation */}
       <motion.nav
         initial={{ opacity: 0, y: -10 }}
@@ -115,8 +149,8 @@ export default function RiottersAboutHero({
                   <span key={index}>
                     <span className="relative">
                       <span
-                        className="absolute bottom-0 left-0 right-0 h-[40%] bg-[#00F5D4]"
-                        style={{ zIndex: -1 }}
+                        className="absolute bottom-0 left-0 right-0 h-[40%]"
+                        style={{ backgroundColor: colors.accent, zIndex: -1 }}
                       />
                       {line}
                     </span>

@@ -1,5 +1,38 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#FAFAFA",          // 오프화이트 배경
+    cardGradientFrom: "#F5F1F7",    // 라이트 퍼플
+    cardGradientMid: "#E8D4F0",     // 미드 퍼플
+    cardGradientTo: "#E1B8EE",      // 딥 퍼플
+    statusGreen: "#4ADE80",         // 그린 액센트
+  },
+} as const;
+
+const IMAGES = {
+  molecule: {
+    path: "/registry/resync-bio/molecule.png",
+    alt: "Molecular structure diagram",
+    prompt: `Scientific molecular structure diagram with chemical bonds.
+Style: Clean, technical, scientific illustration
+Layout: Centered molecular structure with visible atoms and bonds
+Composition: 2D chemical structure showing atoms connected by lines
+Color palette: Black and white or grayscale, technical drawing style
+Elements: Atoms (circles/nodes), bonds (lines), chemical structure
+Mood: Scientific, precise, technical, professional
+Technical: Clean vector or high-res illustration, suitable for scientific context`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { MousePointer2 } from "lucide-react";
 import Image from "next/image";
@@ -10,6 +43,7 @@ interface ComparisonItem {
 }
 
 interface ResyncBioProps {
+  mode?: "light";
   title?: string;
   comparisonItems?: ComparisonItem[];
   compoundId?: string;
@@ -74,7 +108,7 @@ function ProductCard({
       transition={{ duration: 0.6, delay: 0.2 }}
       className="relative h-full w-full overflow-hidden rounded-2xl p-4"
       style={{
-        background: "linear-gradient(135deg, #F5F1F7 0%, #E8D4F0 50%, #E1B8EE 100%)",
+        background: `linear-gradient(135deg, ${COLORS.light.cardGradientFrom} 0%, ${COLORS.light.cardGradientMid} 50%, ${COLORS.light.cardGradientTo} 100%)`,
       }}
     >
       {/* Top Status Badge */}
@@ -97,7 +131,7 @@ function ProductCard({
 
         {/* Status Badge */}
         <div className="mb-3 flex justify-center">
-          <span className="rounded-md bg-[#4ADE80] px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-white">
+          <span className="rounded-md px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-white" style={{ backgroundColor: COLORS.light.statusGreen }}>
             {compoundStatus}
           </span>
         </div>
@@ -128,6 +162,7 @@ function ProductCard({
 }
 
 export default function ResyncBio({
+  mode = "light",
   title = "Acceleration",
   comparisonItems = [
     {
@@ -147,10 +182,12 @@ export default function ResyncBio({
   compoundStatus = "ASSAYED",
   statusLabel = "IC50 Readout",
   ctaText = "REQUEST TIER 2 ASSAY",
-  moleculeImage = "/registry/resync-bio/molecule.png",
+  moleculeImage = IMAGES.molecule.path,
 }: ResyncBioProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="w-full bg-[#FAFAFA] px-6 py-10 sm:px-8 lg:px-12">
+    <section className="w-full px-6 py-10 sm:px-8 lg:px-12" style={{ backgroundColor: colors.background }}>
       <div className="mx-auto max-w-4xl">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-10">
           {/* Left Side - Title and Comparison */}

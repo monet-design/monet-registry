@@ -1,9 +1,41 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#F7F7F7",
+    buttonPrimary: "#4d4d4d",
+    buttonPrimaryHover: "#333",
+    tagBg: "#ECECEA",
+  },
+} as const;
+
+const IMAGES = {
+  phoneClouds: {
+    path: "/registry/popcorn-manifesto-hero/phone-clouds.png",
+    alt: "Smartphone floating in clouds",
+    prompt: `Smartphone floating in ethereal clouds.
+Style: Dreamlike, conceptual product photography
+Layout: Phone centered, surrounded by soft clouds
+Composition: Surreal, floating aesthetic
+Color palette: Soft pastels, dreamy atmosphere
+Mood: Innovative, aspirational, cloud-based
+Technical: High quality, artistic composition`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 
 interface PopcornManifestoHeroProps {
+  mode?: "light";
   logoText?: string;
   navItems?: { label: string; isActive?: boolean }[];
   signUpText?: string;
@@ -42,12 +74,14 @@ function Navigation({
   signUpText,
   onSignUpClick,
   onNavItemClick,
+  colors,
 }: {
   logoText: string;
   navItems: { label: string; isActive?: boolean }[];
   signUpText: string;
   onSignUpClick?: () => void;
   onNavItemClick?: (label: string) => void;
+  colors: typeof COLORS.light;
 }) {
   return (
     <motion.header
@@ -82,7 +116,14 @@ function Navigation({
       {/* Sign Up Button */}
       <button
         onClick={onSignUpClick}
-        className="rounded-full bg-[#4d4d4d] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#333]"
+        className="rounded-full px-5 py-2.5 text-sm font-medium text-white transition-colors"
+        style={{ backgroundColor: colors.buttonPrimary }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.backgroundColor = colors.buttonPrimaryHover;
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.backgroundColor = colors.buttonPrimary;
+        }}
       >
         {signUpText}
       </button>
@@ -92,6 +133,7 @@ function Navigation({
 
 // Main Component
 export default function PopcornManifestoHero({
+  mode = "light",
   logoText = "Popcorn",
   navItems = [
     { label: "Home" },
@@ -110,8 +152,13 @@ export default function PopcornManifestoHero({
   onSignUpClick,
   onNavItemClick,
 }: PopcornManifestoHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-[#F7F7F7]">
+    <section
+      className="relative min-h-screen w-full overflow-hidden"
+      style={{ backgroundColor: colors.background }}
+    >
       {/* Container */}
       <div className="relative z-10 mx-auto max-w-6xl px-6 lg:px-8">
         {/* Navigation */}
@@ -121,6 +168,7 @@ export default function PopcornManifestoHero({
           signUpText={signUpText}
           onSignUpClick={onSignUpClick}
           onNavItemClick={onNavItemClick}
+          colors={colors}
         />
 
         {/* Hero Content */}
@@ -132,7 +180,10 @@ export default function PopcornManifestoHero({
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mb-6"
           >
-            <span className="inline-block rounded-full bg-[#ECECEA] px-4 py-2 text-xs font-medium tracking-wide text-[#6b6b6b]">
+            <span
+              className="inline-block rounded-full px-4 py-2 text-xs font-medium tracking-wide text-[#6b6b6b]"
+              style={{ backgroundColor: colors.tagBg }}
+            >
               {tagText}
             </span>
           </motion.div>
@@ -172,8 +223,8 @@ export default function PopcornManifestoHero({
           >
             <div className="relative aspect-[4/3] w-full">
               <Image
-                src={heroImageSrc}
-                alt={heroImageAlt}
+                src={IMAGES.phoneClouds.path}
+                alt={IMAGES.phoneClouds.alt}
                 fill
                 sizes="(max-width: 768px) 100vw, 672px"
                 className="object-contain"

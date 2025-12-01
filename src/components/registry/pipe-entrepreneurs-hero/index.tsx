@@ -1,5 +1,37 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    gradientFrom: "#5B8DEF",
+    gradientVia: "#3B6FE8",
+    gradientTo: "#1A4FD8",
+    highlight: "#A8D8FF",
+    progressBar: "#3B6FE8",
+  },
+} as const;
+
+const IMAGES = {
+  heroImage: {
+    path: "/registry/pipe-entrepreneurs-hero/entrepreneur.jpg",
+    alt: "Entrepreneur packing orders",
+    prompt: `Entrepreneur working in small business warehouse.
+Style: Natural, authentic business photography
+Layout: Person packing orders, fulfillment setting
+Composition: Active work scene, small business vibe
+Color palette: Natural lighting, warm tones
+Mood: Hardworking, entrepreneurial, growth-focused
+Technical: High resolution, candid photography`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 
@@ -15,6 +47,7 @@ interface LogoItem {
 }
 
 interface PipeEntrepreneursHeroProps {
+  mode?: "light";
   logoText?: string;
   headline?: string;
   description?: string;
@@ -138,6 +171,7 @@ function RevenueRow({
 
 // Main Component
 export default function PipeEntrepreneursHero({
+  mode = "light",
   logoText = "pipe",
   headline = "Helping businesses\nbuild something\nbigger",
   description = "Whether you're planning for tomorrow or budgeting for today, Pipe connects you with the working capital you need to run your business on your terms.",
@@ -157,10 +191,16 @@ export default function PipeEntrepreneursHero({
   heroImage = "/registry/pipe-entrepreneurs-hero/entrepreneur.jpg",
   onCtaClick,
 }: PipeEntrepreneursHeroProps) {
+  const colors = COLORS[mode];
   const headlineLines = headline.split("\n");
 
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-[#5B8DEF] via-[#3B6FE8] to-[#1A4FD8]">
+    <section
+      className="relative min-h-screen w-full overflow-hidden"
+      style={{
+        background: `linear-gradient(to bottom right, ${colors.gradientFrom}, ${colors.gradientVia}, ${colors.gradientTo})`,
+      }}
+    >
       {/* Navigation */}
       <motion.nav
         initial={{ opacity: 0, y: -10 }}
@@ -240,7 +280,7 @@ export default function PipeEntrepreneursHero({
                   <span key={index}>
                     {part}
                     {index === 0 && (
-                      <span className="text-[#A8D8FF]">working capital</span>
+                      <span style={{ color: colors.highlight }}>working capital</span>
                     )}
                   </span>
                 ))}
@@ -301,12 +341,12 @@ export default function PipeEntrepreneursHero({
                   <div className="mt-3">
                     <div className="h-1.5 bg-[#E8EDF5] rounded-full overflow-hidden">
                       <div
-                        className="h-full bg-[#3B6FE8] rounded-full"
-                        style={{ width: "70%" }}
+                        className="h-full rounded-full"
+                        style={{ width: "70%", backgroundColor: colors.progressBar }}
                       />
                     </div>
                     <div className="flex items-center justify-between mt-2">
-                      <span className="h-3 w-3 rounded-full border-2 border-[#3B6FE8] bg-white" />
+                      <span className="h-3 w-3 rounded-full border-2 bg-white" style={{ borderColor: colors.progressBar }} />
                     </div>
                   </div>
                   <div className="flex items-center justify-between mt-2 text-xs text-gray-500">
@@ -318,8 +358,8 @@ export default function PipeEntrepreneursHero({
                 {/* Hero Image */}
                 <div className="relative rounded-2xl overflow-hidden ml-8 lg:ml-16">
                   <Image
-                    src={heroImage}
-                    alt="Entrepreneur packing orders"
+                    src={IMAGES.heroImage.path}
+                    alt={IMAGES.heroImage.alt}
                     width={500}
                     height={600}
                     className="w-full h-auto object-cover rounded-2xl"

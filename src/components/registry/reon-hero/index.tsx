@@ -1,5 +1,24 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#FDF6ED",
+    accent: "#E67491",
+  },
+  dark: {
+    background: "#1A1A1A",
+    accent: "#F08AA8",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Globe } from "lucide-react";
 
@@ -9,6 +28,7 @@ interface NavItem {
 }
 
 interface ReonHeroProps {
+  mode?: "light" | "dark";
   logo?: React.ReactNode;
   navItems?: NavItem[];
   tagline?: string;
@@ -66,19 +86,23 @@ const defaultNavItems: NavItem[] = [
 ];
 
 export default function ReonHero({
+  mode = "light",
   logo,
   navItems = defaultNavItems,
   tagline = "Reon is an international\ntechnology consultancy",
   headline = "Innovating, designing,\nand building digital\nsolutions for established\nindustry players",
   highlightedLabel = "HIGHLIGHTED",
-  backgroundColor = "#FDF6ED",
-  accentColor = "#E67491",
+  backgroundColor,
+  accentColor,
   onNavClick,
 }: ReonHeroProps) {
+  const colors = COLORS[mode];
+  const finalBackgroundColor = backgroundColor || colors.background;
+  const finalAccentColor = accentColor || colors.accent;
   return (
     <section
       className="relative min-h-[700px] w-full overflow-hidden"
-      style={{ backgroundColor }}
+      style={{ backgroundColor: finalBackgroundColor }}
     >
       {/* Navigation */}
       <motion.nav
@@ -90,7 +114,7 @@ export default function ReonHero({
         <div className="mx-auto flex max-w-7xl items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            {logo || <ReonLogo color={accentColor} />}
+            {logo || <ReonLogo color={finalAccentColor} />}
           </div>
 
           {/* Nav Items */}
@@ -103,7 +127,7 @@ export default function ReonHero({
                 transition={{ duration: 0.4, delay: 0.1 + index * 0.05 }}
                 onClick={() => onNavClick?.(item.label)}
                 className="text-sm font-normal transition-opacity hover:opacity-70"
-                style={{ color: accentColor }}
+                style={{ color: finalAccentColor }}
               >
                 {item.label}
               </motion.button>
@@ -116,7 +140,7 @@ export default function ReonHero({
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.4 }}
             className="transition-opacity hover:opacity-70"
-            style={{ color: accentColor }}
+            style={{ color: finalAccentColor }}
           >
             <Globe className="h-5 w-5" />
           </motion.button>
@@ -133,7 +157,7 @@ export default function ReonHero({
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex items-start gap-2 lg:mt-8 lg:w-48 lg:flex-shrink-0"
           >
-            <DownArrow color={accentColor} />
+            <DownArrow color={finalAccentColor} />
             <p className="whitespace-pre-line text-xs leading-relaxed text-neutral-700">
               {tagline}
             </p>
@@ -145,7 +169,7 @@ export default function ReonHero({
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
             className="font-instrument-serif max-w-4xl whitespace-pre-line text-4xl font-normal italic leading-[1.1] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
-            style={{ color: accentColor }}
+            style={{ color: finalAccentColor }}
           >
             {headline}
           </motion.h1>
@@ -160,10 +184,10 @@ export default function ReonHero({
         className="absolute bottom-32 left-6 sm:bottom-40 sm:left-10 lg:left-16"
       >
         <div className="flex items-center gap-2">
-          <DownArrow color={accentColor} />
+          <DownArrow color={finalAccentColor} />
           <span
             className="text-[10px] font-medium uppercase tracking-[0.15em]"
-            style={{ color: accentColor }}
+            style={{ color: finalAccentColor }}
           >
             {highlightedLabel}
           </span>

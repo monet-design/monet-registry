@@ -1,9 +1,58 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#F6F5EC",
+    divider: "#D4D2CE",
+  },
+  dark: {
+    background: "#1A1A1A",
+    divider: "#3A3A3A",
+  },
+} as const;
+
+const IMAGES = {
+  team1: {
+    path: "/registry/rbb-about-hero/team-1.jpg",
+    alt: "Team member smiling in office",
+    prompt: `Professional team photo in modern office environment.
+Style: Natural, candid corporate photography with warm lighting
+Layout: Close-up portrait, environmental context
+Composition: Team member smiling in professional office setting
+Background: Modern office interior, soft focus
+Color palette: Warm natural lighting, professional attire, neutral office tones
+Elements: Professional dress, confident posture, genuine smile
+Mood: Approachable, professional, collaborative
+Technical: High resolution, natural lighting, environmental portrait`,
+  },
+  team2: {
+    path: "/registry/rbb-about-hero/team-2.jpg",
+    alt: "Team member in meeting",
+    prompt: `Professional team member in business meeting or working.
+Style: Documentary-style corporate photography
+Layout: Portrait or working shot, natural pose
+Composition: Team member engaged in work or discussion
+Background: Office environment, meeting room, or workspace
+Color palette: Professional, natural office lighting
+Elements: Business casual attire, focused expression, professional setting
+Mood: Engaged, competent, collaborative
+Technical: High resolution, natural lighting, candid moment`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 
 interface RbbAboutHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   title?: string;
   subtitle?: string;
@@ -15,15 +64,17 @@ interface RbbAboutHeroProps {
 }
 
 export default function RbbAboutHero({
+  mode = "light",
   logoText = "RBB",
   title = "About",
   subtitle = "Expert, user-friendly advice",
   description = "We provide our clients with the best prospect of success before competition authorities and courts by understanding the competitive reality of their industries. We combine this with rigorous economic analysis, supported by facts and data, cutting edge techniques, presented in clear and compelling expert reports. Our approach is practical and user-friendly; we prioritise what matters.",
-  image1Src = "/registry/rbb-about-hero/team-1.jpg",
-  image1Alt = "Team member smiling in office",
-  image2Src = "/registry/rbb-about-hero/team-2.jpg",
-  image2Alt = "Team member in meeting",
+  image1Src = IMAGES.team1.path,
+  image1Alt = IMAGES.team1.alt,
+  image2Src = IMAGES.team2.path,
+  image2Alt = IMAGES.team2.alt,
 }: RbbAboutHeroProps) {
+  const colors = COLORS[mode];
   return (
     <section className="relative min-h-screen w-full bg-[#F6F5EC] overflow-hidden">
       {/* Logo */}

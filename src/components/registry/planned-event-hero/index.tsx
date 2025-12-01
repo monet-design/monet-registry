@@ -1,5 +1,46 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#F2F4F5",
+    accent: "#46A5F0",
+    accentHover: "#3590d8",
+  },
+} as const;
+
+const IMAGES = {
+  eventCatering: {
+    path: "/registry/planned-event-hero/event-catering.jpg",
+    alt: "Event catering",
+    prompt: `Professional event catering service.
+Style: High-quality event photography
+Layout: Elegant food presentation, catering setup
+Composition: Professional event service
+Color palette: Warm, appetizing tones
+Mood: Premium, elegant, professional
+Technical: High resolution, appealing presentation`,
+  },
+  eventVenue: {
+    path: "/registry/planned-event-hero/event-venue.jpg",
+    alt: "Event venue",
+    prompt: `Modern event venue interior.
+Style: Architectural event photography
+Layout: Spacious venue, elegant setting
+Composition: Professional event space
+Color palette: Neutral, sophisticated tones
+Mood: Elegant, spacious, professional
+Technical: High resolution, well-lit`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import {
   ChevronDown,
@@ -33,6 +74,7 @@ interface PaymentDetail {
 }
 
 interface PlannedEventHeroProps {
+  mode?: "light";
   brandName?: string;
   navItems?: NavItem[];
   headline?: string;
@@ -84,6 +126,7 @@ const defaultPaymentDetails: PaymentDetail[] = [
 ];
 
 export default function PlannedEventHero({
+  mode = "light",
   brandName = "Planned",
   navItems = defaultNavItems,
   headline = "Where your\nevents come\ntogether",
@@ -107,8 +150,13 @@ export default function PlannedEventHero({
   eventImage1 = "/registry/planned-event-hero/event-catering.jpg",
   eventImage2 = "/registry/planned-event-hero/event-venue.jpg",
 }: PlannedEventHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative w-full min-h-screen bg-[#F2F4F5] overflow-hidden">
+    <section
+      className="relative w-full min-h-screen overflow-hidden"
+      style={{ backgroundColor: colors.background }}
+    >
       {/* Navigation */}
       <motion.nav
         initial={{ opacity: 0, y: -20 }}
@@ -139,7 +187,16 @@ export default function PlannedEventHero({
           <button className="hidden sm:block text-sm text-[#4A4A4A] hover:text-[#1A1A1A] transition-colors">
             Log in
           </button>
-          <button className="px-4 py-2 text-sm text-white bg-[#46A5F0] rounded-full hover:bg-[#3590d8] transition-colors">
+          <button
+            className="px-4 py-2 text-sm text-white rounded-full transition-colors"
+            style={{ backgroundColor: colors.accent }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = colors.accentHover;
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = colors.accent;
+            }}
+          >
             {primaryCta}
           </button>
         </div>
@@ -260,8 +317,8 @@ export default function PlannedEventHero({
               }}
             >
               <Image
-                src={eventImage1}
-                alt="Event catering"
+                src={IMAGES.eventCatering.path}
+                alt={IMAGES.eventCatering.alt}
                 fill
                 className="object-cover"
               />
@@ -275,8 +332,8 @@ export default function PlannedEventHero({
               }}
             >
               <Image
-                src={eventImage2}
-                alt="Event venue"
+                src={IMAGES.eventVenue.path}
+                alt={IMAGES.eventVenue.alt}
                 fill
                 className="object-cover"
               />

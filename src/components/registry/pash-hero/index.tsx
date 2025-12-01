@@ -1,10 +1,48 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#D7D6CD", // Warm gray-beige background
+    accent: "#DD5409", // Vibrant orange accent
+    accentHover: "#F5762A", // Lighter orange hover
+    headerBg: "#212120", // Dark header background
+  },
+  dark: {
+    background: "#2a2926",
+    accent: "#c24708",
+    accentHover: "#dd5409",
+    headerBg: "#0d0d0d",
+  },
+} as const;
+
+const IMAGES = {
+  person: {
+    path: "/registry/pash-hero/person.png",
+    alt: "Designer portrait",
+    prompt: `Professional portrait photo of designer in creative setting.
+Style: Editorial, contemporary portrait photography
+Composition: Full body or three-quarter length portrait
+Background: Clean, neutral backdrop or creative space
+Color palette: Natural skin tones, casual creative attire
+Mood: Creative, confident, professional designer
+Technical: High resolution, portrait orientation, PNG with transparency`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Menu } from "lucide-react";
 import Image from "next/image";
 
 interface PashHeroProps {
+  mode?: "light" | "dark";
   logo?: string;
   ctaText?: string;
   onCtaClick?: () => void;
@@ -17,6 +55,7 @@ interface PashHeroProps {
 }
 
 export default function PashHero({
+  mode = "light",
   logo = "PT®",
   ctaText = "GET STARTED",
   onCtaClick,
@@ -25,10 +64,11 @@ export default function PashHero({
   introText = "I'M",
   name = "PAVLO",
   description = "Experienced Web Designer and pixel perfect Webflow Developer. The websites that I create motivate people to explore them and buy your products. I am good with discipline, analytics, product testing and time management, of course. My range of design services includes creating Websites (or improving existing ones) and developing them on Webflow and applications. I help your customers to get exactly what they want.",
-  personImage = "/registry/pash-hero/person.png",
+  personImage = IMAGES.person.path,
 }: PashHeroProps) {
+  const colors = COLORS[mode];
   return (
-    <section className="relative w-full overflow-hidden bg-[#D7D6CD] font-sans">
+    <section className="relative w-full overflow-hidden font-sans" style={{ backgroundColor: colors.background }}>
       {/* Header */}
       <header className="relative z-10 flex items-center justify-between px-6 py-4 md:px-12 md:py-6">
         <motion.div
@@ -47,18 +87,19 @@ export default function PashHero({
         >
           <button
             onClick={onCtaClick}
-            className="rounded-full bg-[#DD5409] px-6 py-2.5 text-sm font-semibold uppercase tracking-wide text-white transition-all hover:bg-[#F5762A] hover:scale-105"
+            className="rounded-full px-6 py-2.5 text-sm font-semibold uppercase tracking-wide text-white transition-all hover:scale-105"
+            style={{ backgroundColor: colors.accent }}
           >
             {ctaText}
           </button>
-          <button className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#DD5409] text-[#DD5409] transition-all hover:bg-[#DD5409] hover:text-white">
+          <button className="flex h-10 w-10 items-center justify-center rounded-full border-2 transition-all hover:text-white" style={{ borderColor: colors.accent, color: colors.accent }}>
             <Menu className="h-5 w-5" />
           </button>
         </motion.div>
       </header>
 
       {/* Marquee Banner */}
-      <div className="relative w-full overflow-hidden bg-[#212120] py-2.5">
+      <div className="relative w-full overflow-hidden py-2.5" style={{ backgroundColor: colors.headerBg }}>
         <motion.div
           className="flex whitespace-nowrap"
           animate={{ x: ["0%", "-50%"] }}
@@ -91,7 +132,8 @@ export default function PashHero({
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-[15vw] font-extrabold uppercase leading-[0.85] tracking-tight text-[#F5762A] md:text-[12vw]"
+            className="text-[15vw] font-extrabold uppercase leading-[0.85] tracking-tight md:text-[12vw]"
+            style={{ color: colors.accentHover }}
           >
             {greeting}
           </motion.h1>
@@ -124,7 +166,7 @@ export default function PashHero({
                 />
               </div>
               {/* Orange accent bar */}
-              <div className="absolute bottom-0 left-0 right-0 h-3 bg-[#F5762A] md:h-4" />
+              <div className="absolute bottom-0 left-0 right-0 h-3 md:h-4" style={{ backgroundColor: colors.accentHover }} />
             </motion.div>
 
             {/* PAVLO */}
@@ -132,7 +174,8 @@ export default function PashHero({
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.4 }}
-              className="text-[15vw] font-extrabold uppercase leading-[0.85] tracking-tight text-[#F5762A] md:text-[12vw]"
+              className="text-[15vw] font-extrabold uppercase leading-[0.85] tracking-tight md:text-[12vw]"
+            style={{ color: colors.accentHover }}
             >
               {name}
             </motion.span>

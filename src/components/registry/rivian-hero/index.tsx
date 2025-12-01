@@ -1,5 +1,35 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    announcementBar: "#F5F5F0",     // 크림 베이지 공지 배경
+    ctaButton: "#F5F5F0",           // 크림 베이지 버튼
+  },
+} as const;
+
+const IMAGES = {
+  background: {
+    path: "/registry/rivian-hero/hero-bg.jpg",
+    alt: "Rivian electric vehicle in natural landscape",
+    prompt: `Rivian electric vehicle in stunning natural landscape setting.
+Style: Professional automotive photography, cinematic quality
+Layout: Wide landscape shot with vehicle as focal point
+Composition: Vehicle positioned in dramatic natural environment
+Color palette: Natural earth tones, dramatic lighting, cinematic mood
+Elements: Electric vehicle (truck or SUV), mountains/forest/desert landscape
+Mood: Adventure, sustainability, premium automotive, exploration
+Technical: High-quality automotive photography, dramatic natural lighting`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Menu } from "lucide-react";
 import Image from "next/image";
@@ -16,6 +46,7 @@ interface CtaButton {
 }
 
 interface RivianHeroProps {
+  mode?: "light";
   announcementText?: string;
   announcementLinkText?: string;
   onAnnouncementClick?: () => void;
@@ -43,6 +74,7 @@ function RivianLogo({ text = "RIVIAN" }: { text?: string }) {
 }
 
 export default function RivianHero({
+  mode = "light",
   announcementText = "Want to see what we're up to?",
   announcementLinkText = "Get updates from Rivian.",
   onAnnouncementClick,
@@ -58,9 +90,10 @@ export default function RivianHero({
   superscript = "3",
   subheadline = "Includes a $7,500 EV lease credit at\ntime of lease.",
   ctaButtons = [{ label: "Shop R1T" }, { label: "Shop R1S" }],
-  backgroundImage = "/registry/rivian-hero/hero-bg.jpg",
+  backgroundImage = IMAGES.background.path,
   onMenuClick,
 }: RivianHeroProps) {
+  const colors = COLORS[mode];
   // Parse headline to extract price and add superscript
   const renderHeadline = () => {
     const parts = headline.split("$559/mo");
@@ -95,7 +128,8 @@ export default function RivianHero({
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="relative z-10 w-full bg-[#F5F5F0] py-2.5 text-center"
+        className="relative z-10 w-full py-2.5 text-center"
+        style={{ backgroundColor: colors.announcementBar }}
       >
         <p className="text-xs text-[#1a1a1a]">
           {announcementText}{" "}
@@ -191,7 +225,8 @@ export default function RivianHero({
               <button
                 key={button.label}
                 onClick={button.onClick}
-                className="px-6 py-3 bg-[#F5F5F0] text-[#1a1a1a] text-sm font-medium rounded-full hover:bg-white transition-colors"
+                className="px-6 py-3 text-gray-900 text-sm font-medium rounded-full hover:bg-white transition-colors"
+                style={{ backgroundColor: colors.ctaButton }}
               >
                 {button.label}
               </button>

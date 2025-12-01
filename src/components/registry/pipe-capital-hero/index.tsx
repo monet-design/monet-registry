@@ -1,5 +1,66 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  dark: {
+    background: "#09090B",
+  },
+} as const;
+
+const IMAGES = {
+  dashboard: {
+    path: "/registry/pipe-capital-hero/dashboard.png",
+    alt: "Dashboard interface",
+    prompt: `Business dashboard interface screenshot.
+Style: Modern SaaS dashboard, clean UI
+Layout: Dashboard with charts and metrics
+Elements: Data visualization, KPI cards, graphs
+Color palette: Professional blue/purple tones
+Mood: Data-driven, business intelligence
+Technical: PNG, 16:9 aspect ratio`,
+  },
+  businessPeople: {
+    path: "/registry/pipe-capital-hero/business-people.png",
+    alt: "Business professionals",
+    prompt: `Professional business people collaborating.
+Style: Natural, candid business photography
+Layout: Group of professionals in modern office
+Composition: Diverse team, professional attire
+Color palette: Natural tones, professional setting
+Mood: Collaborative, successful, professional
+Technical: High resolution, good lighting`,
+  },
+  arrows: {
+    path: "/registry/pipe-capital-hero/arrows.png",
+    alt: "Growth arrows",
+    prompt: `Upward trending arrows graphic.
+Style: Abstract, modern data visualization
+Layout: Arrows pointing upward
+Elements: Growth indicators, trend lines
+Color palette: Blues, purples, success colors
+Mood: Growth, progress, success
+Technical: Clean graphic, transparent background`,
+  },
+  workspace: {
+    path: "/registry/pipe-capital-hero/workspace.png",
+    alt: "Workspace",
+    prompt: `Modern workspace setup.
+Style: Clean, minimal workspace photography
+Layout: Desk with laptop, minimal accessories
+Composition: Top-down or angled view
+Color palette: Neutral, professional tones
+Mood: Productive, organized, professional
+Technical: High quality, sharp focus`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Wallet, CreditCard, RefreshCw, Zap } from "lucide-react";
 import Image from "next/image";
@@ -16,6 +77,7 @@ interface ImageCard {
 }
 
 interface PipeCapitalHeroProps {
+  mode?: "dark";
   tagline?: string;
   title?: string;
   subtitle?: string;
@@ -69,6 +131,7 @@ const defaultImages: ImageCard[] = [
 ];
 
 export default function PipeCapitalHero({
+  mode = "dark",
   tagline = "GROW ON YOUR TERMS",
   title = "The modern capital platform",
   subtitle = "For growth on your terms",
@@ -78,8 +141,13 @@ export default function PipeCapitalHero({
   features = defaultFeatures,
   images = defaultImages,
 }: PipeCapitalHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative min-h-screen w-full bg-[#09090B] overflow-hidden">
+    <section
+      className="relative min-h-screen w-full overflow-hidden"
+      style={{ backgroundColor: colors.background }}
+    >
       {/* Background gradient glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-b from-blue-600/20 via-purple-500/10 to-transparent blur-3xl pointer-events-none" />
 

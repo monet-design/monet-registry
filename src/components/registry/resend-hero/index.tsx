@@ -1,5 +1,36 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#000000",          // 블랙 배경
+    badge: "#18191B",               // 다크 그레이 배경
+    badgeBorder: "#3E4044",         // 미드 그레이 보더
+  },
+} as const;
+
+const IMAGES = {
+  cube: {
+    path: "/registry/resend-hero/cube.png",
+    alt: "3D wireframe cube illustration",
+    prompt: `3D wireframe cube with geometric grid pattern.
+Style: Minimalist 3D rendering, technical illustration, sci-fi aesthetic
+Layout: Centered isometric cube with visible wireframe structure
+Composition: Semi-transparent cube showing internal grid lines and structure
+Color palette: Black background with white/light gray wireframe lines
+Elements: Geometric grid, wireframe edges, isometric perspective
+Mood: Technical, modern, developer-focused, clean
+Technical: Transparent PNG, high contrast, minimalist 3D wireframe`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
@@ -11,6 +42,7 @@ interface NavItem {
 }
 
 interface ResendHeroProps {
+  mode?: "light";
   logoText?: string;
   navItems?: NavItem[];
   badgeText?: string;
@@ -136,6 +168,7 @@ function Header({
 
 // Main Component
 export default function ResendHero({
+  mode = "light",
   logoText = "Resend",
   navItems = defaultNavItems,
   badgeText = "Resend raises $3M seed round",
@@ -151,8 +184,10 @@ export default function ResendHero({
   onPrimaryCtaClick = () => {},
   onSecondaryCtaClick = () => {},
 }: ResendHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-black">
+    <section className="relative min-h-screen w-full overflow-hidden" style={{ backgroundColor: colors.background }}>
       {/* Header */}
       <Header
         logoText={logoText}
@@ -174,7 +209,8 @@ export default function ResendHero({
             >
               <a
                 href="#"
-                className="inline-flex items-center gap-2 rounded-full border border-[#3E4044] bg-[#18191B] px-4 py-1.5 transition-colors hover:border-[#505358]"
+                className="inline-flex items-center gap-2 rounded-full border px-4 py-1.5 transition-colors hover:border-[#505358]"
+                style={{ borderColor: colors.badgeBorder, backgroundColor: colors.badge }}
               >
                 <span className="text-[13px] text-[#C4C4C4]">{badgeText}</span>
                 <ChevronRight className="h-3.5 w-3.5 text-[#737373]" />
@@ -236,8 +272,8 @@ export default function ResendHero({
           >
             <div className="relative mx-auto aspect-square w-full max-w-md lg:max-w-lg">
               <Image
-                src="/registry/resend-hero/cube.png"
-                alt="3D Cube"
+                src={IMAGES.cube.path}
+                alt={IMAGES.cube.alt}
                 fill
                 className="object-contain"
                 priority

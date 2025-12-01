@@ -1,5 +1,21 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  dark: {
+    background: "#111111",
+    accent: "#3FC887",
+    accentHover: "#35b577",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState } from "react";
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
@@ -18,6 +34,7 @@ interface LogoItem {
 }
 
 interface PlainProductPageSectionHeroProps {
+  mode?: "dark";
   logoText?: string;
   headline?: string;
   subheadline?: string;
@@ -139,6 +156,7 @@ function LogoCloudItem({ logo, index }: { logo: LogoItem; index: number }) {
 
 // Main Component
 export default function PlainProductPageSectionHero({
+  mode = "dark",
   logoText = "Plain",
   headline = "Meet the fastest, most powerful B2B\nsupport platform ever built",
   subheadline = "Plain enables you to deliver better, more collaborative support, faster.",
@@ -151,6 +169,7 @@ export default function PlainProductPageSectionHero({
   onSubmit,
   onBookDemo,
 }: PlainProductPageSectionHeroProps) {
+  const colors = COLORS[mode];
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -159,7 +178,10 @@ export default function PlainProductPageSectionHero({
   };
 
   return (
-    <section className="relative min-h-screen w-full bg-[#111111] overflow-hidden">
+    <section
+      className="relative min-h-screen w-full overflow-hidden"
+      style={{ backgroundColor: colors.background }}
+    >
       {/* Background grid pattern */}
       <div className="absolute inset-0 opacity-[0.15]">
         <div
@@ -213,7 +235,17 @@ export default function PlainProductPageSectionHero({
           </a>
           <button
             onClick={onBookDemo}
-            className="rounded-md bg-[#3FC887] px-4 py-2 text-sm font-medium text-[#111111] transition-colors hover:bg-[#35b577]"
+            className="rounded-md px-4 py-2 text-sm font-medium transition-colors"
+            style={{
+              backgroundColor: colors.accent,
+              color: colors.background,
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = colors.accentHover;
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = colors.accent;
+            }}
           >
             Book a demo
           </button>
@@ -260,11 +292,29 @@ export default function PlainProductPageSectionHero({
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder={inputPlaceholder}
-            className="w-full rounded-md border border-[#333333] bg-[#1A1A1A] px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:border-[#3FC887] focus:outline-none focus:ring-1 focus:ring-[#3FC887] sm:flex-1"
+            className="w-full rounded-md border border-[#333333] bg-[#1A1A1A] px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:ring-1 sm:flex-1"
+            onFocus={(e) => {
+              e.currentTarget.style.borderColor = colors.accent;
+              e.currentTarget.style.boxShadow = `0 0 0 1px ${colors.accent}`;
+            }}
+            onBlur={(e) => {
+              e.currentTarget.style.borderColor = "#333333";
+              e.currentTarget.style.boxShadow = "none";
+            }}
           />
           <button
             type="submit"
-            className="w-full rounded-md bg-[#3FC887] px-6 py-3 text-sm font-medium text-[#111111] transition-colors hover:bg-[#35b577] sm:w-auto"
+            className="w-full rounded-md px-6 py-3 text-sm font-medium transition-colors sm:w-auto"
+            style={{
+              backgroundColor: colors.accent,
+              color: colors.background,
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = colors.accentHover;
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = colors.accent;
+            }}
           >
             {ctaText}
           </button>

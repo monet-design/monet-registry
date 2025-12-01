@@ -1,11 +1,77 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#F8F8F7",
+    buttonPrimary: "#3D3D3D",
+    buttonPrimaryHover: "#2D2D2D",
+    buttonSecondaryBorder: "#D0D0CC",
+    buttonSecondaryBorderHover: "#A0A0A0",
+  },
+} as const;
+
+const IMAGES = {
+  creatorCard: {
+    path: "/registry/passionfroot-creator-hero/creator-card.png",
+    alt: "Creator profile card",
+    prompt: `UI card mockup showing creator profile.
+Style: Clean, modern, minimal product UI
+Layout: Vertical card with profile information
+Elements: Profile photo, creator name, stats
+Color palette: White card, neutral tones
+Mood: Professional, social media aesthetic
+Technical: PNG with transparency, 200x280px`,
+  },
+  paymentCard: {
+    path: "/registry/passionfroot-creator-hero/payment-card.png",
+    alt: "Payment received card",
+    prompt: `UI card mockup showing payment notification.
+Style: Clean, modern payment receipt UI
+Layout: Compact horizontal card
+Elements: Payment amount, status badge, timestamp
+Color palette: White card, green success indicator
+Mood: Trustworthy, financial success
+Technical: PNG with transparency, 200x160px`,
+  },
+  analyticsCard: {
+    path: "/registry/passionfroot-creator-hero/analytics-card.png",
+    alt: "Analytics dashboard card",
+    prompt: `UI card mockup showing analytics dashboard.
+Style: Modern dashboard UI with charts
+Layout: Landscape card with data visualization
+Elements: Line/bar charts, metrics, KPIs
+Color palette: White card, blue/purple data viz
+Mood: Data-driven, professional insights
+Technical: PNG with transparency, 320x240px`,
+  },
+  calendarCard: {
+    path: "/registry/passionfroot-creator-hero/calendar-card.png",
+    alt: "Calendar scheduling card",
+    prompt: `UI card mockup showing calendar/scheduling interface.
+Style: Modern calendar UI
+Layout: Landscape card with calendar grid
+Elements: Calendar dates, scheduled items, time slots
+Color palette: White card, accent colors for events
+Mood: Organized, productivity-focused
+Technical: PNG with transparency, 320x240px`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import "./font.css";
 
 interface PassionfrootCreatorHeroProps {
+  mode?: "light";
   title?: string;
   highlightText?: string;
   description?: string;
@@ -18,6 +84,7 @@ interface PassionfrootCreatorHeroProps {
 }
 
 export default function PassionfrootCreatorHero({
+  mode = "light",
   title = "Where creators do",
   highlightText = "brand deals",
   description = "The all-in-one tool to help creators do more sponsorship - easier, and faster.",
@@ -28,8 +95,13 @@ export default function PassionfrootCreatorHero({
   onPrimaryClick,
   onSecondaryClick,
 }: PassionfrootCreatorHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-[#F8F8F7]">
+    <section
+      className="relative min-h-screen w-full overflow-hidden"
+      style={{ backgroundColor: colors.background }}
+    >
       {/* Decorative UI Cards */}
       <DecorativeCards />
 
@@ -73,7 +145,16 @@ export default function PassionfrootCreatorHero({
                   onPrimaryClick();
                 }
               }}
-              className="group flex items-center gap-2 rounded-full bg-[#3D3D3D] px-8 py-4 text-base font-medium text-white transition-all duration-300 hover:bg-[#2D2D2D] hover:shadow-lg"
+              className="group flex items-center gap-2 rounded-full px-8 py-4 text-base font-medium text-white transition-all duration-300 hover:shadow-lg"
+              style={{
+                backgroundColor: colors.buttonPrimary,
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = colors.buttonPrimaryHover;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = colors.buttonPrimary;
+              }}
             >
               {primaryButtonText}
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -87,7 +168,17 @@ export default function PassionfrootCreatorHero({
                   onSecondaryClick();
                 }
               }}
-              className="rounded-full border border-[#D0D0CC] bg-transparent px-8 py-4 text-base font-medium text-[#3D3D3D] transition-all duration-300 hover:border-[#A0A0A0] hover:bg-white/50"
+              className="rounded-full border bg-transparent px-8 py-4 text-base font-medium transition-all duration-300 hover:bg-white/50"
+              style={{
+                borderColor: colors.buttonSecondaryBorder,
+                color: colors.buttonPrimary,
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = colors.buttonSecondaryBorderHover;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = colors.buttonSecondaryBorder;
+              }}
             >
               {secondaryButtonText}
             </a>
@@ -109,8 +200,8 @@ function DecorativeCards() {
         className="absolute left-[-2%] top-[5%] z-0 hidden w-[180px] lg:block xl:left-[2%] xl:w-[200px]"
       >
         <Image
-          src="/registry/passionfroot-creator-hero/creator-card.png"
-          alt="Creator profile card"
+          src={IMAGES.creatorCard.path}
+          alt={IMAGES.creatorCard.alt}
           width={200}
           height={280}
           className="drop-shadow-xl"
@@ -125,8 +216,8 @@ function DecorativeCards() {
         className="absolute right-[-2%] top-[10%] z-0 hidden w-[180px] lg:block xl:right-[2%] xl:w-[200px]"
       >
         <Image
-          src="/registry/passionfroot-creator-hero/payment-card.png"
-          alt="Payment received card"
+          src={IMAGES.paymentCard.path}
+          alt={IMAGES.paymentCard.alt}
           width={200}
           height={160}
           className="drop-shadow-xl"
@@ -141,8 +232,8 @@ function DecorativeCards() {
         className="absolute bottom-[5%] left-[-5%] z-0 hidden w-[280px] lg:block xl:left-[0%] xl:w-[320px]"
       >
         <Image
-          src="/registry/passionfroot-creator-hero/analytics-card.png"
-          alt="Analytics dashboard card"
+          src={IMAGES.analyticsCard.path}
+          alt={IMAGES.analyticsCard.alt}
           width={320}
           height={240}
           className="drop-shadow-xl"
@@ -157,8 +248,8 @@ function DecorativeCards() {
         className="absolute bottom-[5%] right-[-5%] z-0 hidden w-[280px] lg:block xl:right-[0%] xl:w-[320px]"
       >
         <Image
-          src="/registry/passionfroot-creator-hero/calendar-card.png"
-          alt="Calendar scheduling card"
+          src={IMAGES.calendarCard.path}
+          alt={IMAGES.calendarCard.alt}
           width={320}
           height={240}
           className="drop-shadow-xl"

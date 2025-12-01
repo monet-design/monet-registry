@@ -1,5 +1,26 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#F5F6FA",
+    iconBad: "#DC2626",
+    iconGood: "#16A34A",
+  },
+  dark: {
+    background: "#1A1A1A",
+    iconBad: "#EF4444",
+    iconGood: "#22C55E",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { X, Check, MapPin, Link2, Car } from "lucide-react";
 import { ReactNode } from "react";
@@ -12,6 +33,7 @@ interface FeatureItem {
 }
 
 interface PracticalUIBeforeAfterProps {
+  mode?: "light" | "dark";
   beforeTitle?: string;
   beforeContent?: string;
   afterTitle?: string;
@@ -142,11 +164,14 @@ function AfterCard({
 
 // Main Component
 export default function PracticalUIBeforeAfter({
+  mode = "light",
   beforeTitle = "Property features",
   beforeContent = defaultBeforeContent,
   afterTitle = "Property features",
   afterFeatures = defaultAfterFeatures,
 }: PracticalUIBeforeAfterProps) {
+  const colors = COLORS[mode];
+
   return (
     <section className="w-full bg-[#F5F6FA] py-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">

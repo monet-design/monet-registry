@@ -1,8 +1,26 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#E91E8C", // Pink accent for arrows and headline
+  },
+  dark: {
+    accent: "#FF3DA1",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 
 interface OysterEmbeddedHeroProps {
+  mode?: "light" | "dark";
   label?: string;
   headlinePart1?: string;
   headlineAccent?: string;
@@ -16,9 +34,11 @@ interface OysterEmbeddedHeroProps {
 function ArrowDecoration({
   direction,
   className,
+  color,
 }: {
   direction: "down-left" | "up-right";
   className?: string;
+  color: string;
 }) {
   const isDownLeft = direction === "down-left";
 
@@ -35,7 +55,7 @@ function ArrowDecoration({
     >
       <path
         d="M5 12L12 5L19 12M12 5V19"
-        stroke="#E91E8C"
+        stroke={color}
         strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -45,6 +65,7 @@ function ArrowDecoration({
 }
 
 export default function OysterEmbeddedHero({
+  mode = "light",
   label = "OYSTER EMBEDDED",
   headlinePart1 = "Open the doors to",
   headlineAccent = "global\ntalent",
@@ -53,6 +74,7 @@ export default function OysterEmbeddedHero({
   ctaText = "Contact Us",
   onCtaClick,
 }: OysterEmbeddedHeroProps) {
+  const colors = COLORS[mode];
   return (
     <section className="relative min-h-screen w-full bg-white overflow-hidden flex flex-col items-center justify-center py-20">
       {/* Left arrow decoration */}
@@ -62,7 +84,7 @@ export default function OysterEmbeddedHero({
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, delay: 0.4 }}
       >
-        <ArrowDecoration direction="down-left" className="w-6 h-6" />
+        <ArrowDecoration direction="down-left" className="w-6 h-6" color={colors.accent} />
       </motion.div>
 
       {/* Right arrow decoration */}
@@ -72,7 +94,7 @@ export default function OysterEmbeddedHero({
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, delay: 0.5 }}
       >
-        <ArrowDecoration direction="up-right" className="w-6 h-6" />
+        <ArrowDecoration direction="up-right" className="w-6 h-6" color={colors.accent} />
       </motion.div>
 
       {/* Content container */}
@@ -107,7 +129,7 @@ export default function OysterEmbeddedHero({
             style={{
               fontFamily: "'Instrument Serif', serif",
               fontStyle: "italic",
-              color: "#E91E8C",
+              color: colors.accent,
             }}
           >
             {headlineAccent.split("\n").map((line, i) => (

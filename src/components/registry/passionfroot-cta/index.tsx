@@ -1,5 +1,19 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    badgeBorder: "#86efac", // emerald-400
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -68,6 +82,7 @@ function IconCard({ children, className, bgColor = "bg-white" }: IconCardProps) 
 }
 
 interface PassionfrootCtaProps {
+  mode?: "light";
   badge?: string;
   badgeIcon?: React.ReactNode;
   title?: string;
@@ -89,6 +104,7 @@ interface PassionfrootCtaProps {
 }
 
 export default function PassionfrootCta({
+  mode = "light",
   badge = "Live on Passionfroot",
   badgeIcon = <Sparkles className="h-3 w-3" />,
   title = "Thousands of campaigns\nlaunched to date",
@@ -102,6 +118,7 @@ export default function PassionfrootCta({
   showFloatingIcons = true,
   floatingIcons,
 }: PassionfrootCtaProps) {
+  const colors = COLORS[mode];
   const defaultIcons = [
     {
       icon: (
@@ -228,7 +245,8 @@ export default function PassionfrootCta({
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-400 bg-white px-4 py-1.5 text-sm font-medium text-gray-800 shadow-sm"
+          className="mb-6 inline-flex items-center gap-2 rounded-full border bg-white px-4 py-1.5 text-sm font-medium text-gray-800 shadow-sm"
+          style={{ borderColor: colors.badgeBorder }}
         >
           <span>{badge}</span>
           {badgeIcon}

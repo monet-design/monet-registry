@@ -1,9 +1,69 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#012D33",
+  },
+  dark: {
+    background: "#001A1F",
+  },
+} as const;
+
+const IMAGES = {
+  cityReflection: {
+    path: "/registry/rbb-economics-hero/city-reflection.jpg",
+    alt: "City skyline reflected in glass windows",
+    prompt: `Modern city skyline reflected in glass building facade.
+Style: Architectural photography, urban, corporate aesthetic
+Layout: Abstract reflection creating geometric patterns
+Composition: Building reflections with distorted cityscape
+Background: Glass windows with reflected urban architecture
+Color palette: Cool blues, grays, urban tones, glass reflections
+Elements: Building facades, window reflections, urban skyline
+Mood: Modern, corporate, sophisticated, metropolitan
+Technical: High resolution, architectural detail, reflection effects`,
+  },
+  businessShadows: {
+    path: "/registry/rbb-economics-hero/business-shadows.jpg",
+    alt: "Business professionals silhouettes and shadows",
+    prompt: `Silhouettes and shadows of business professionals.
+Style: Artistic corporate photography, high contrast
+Layout: Horizontal composition with shadow play
+Composition: Business people silhouettes, long shadows, architectural elements
+Background: Modern office or urban setting
+Color palette: High contrast blacks, grays, dramatic lighting
+Elements: Professional silhouettes, geometric shadows, architectural lines
+Mood: Professional, dynamic, corporate power, modern business
+Technical: High contrast, dramatic lighting, silhouette photography`,
+  },
+  teamCollaboration: {
+    path: "/registry/rbb-economics-hero/team-collaboration.jpg",
+    alt: "Team collaboration in professional setting",
+    prompt: `Business team collaborating in modern office.
+Style: Corporate photography, professional environment
+Layout: Group interaction, collaborative setting
+Composition: Team members in discussion or working together
+Background: Modern office, meeting space
+Color palette: Professional lighting, corporate environment tones
+Elements: Team interaction, professional attire, collaborative work
+Mood: Productive, professional, teamwork, expertise
+Technical: High resolution, natural lighting, professional setting`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 
 interface RbbEconomicsHeroProps {
+  mode?: "light" | "dark";
   logo?: string;
   headline?: string;
   stats?: {
@@ -19,6 +79,7 @@ interface RbbEconomicsHeroProps {
 }
 
 export default function RbbEconomicsHero({
+  mode = "light",
   logo = "RBB",
   headline = "Global leaders in\ncompetition economics",
   stats = {
@@ -27,11 +88,12 @@ export default function RbbEconomicsHero({
     line3: "Landmark cases for the world's largest firms.",
   },
   images = {
-    cityReflection: "/registry/rbb-economics-hero/city-reflection.jpg",
-    businessShadows: "/registry/rbb-economics-hero/business-shadows.jpg",
-    teamCollaboration: "/registry/rbb-economics-hero/team-collaboration.jpg",
+    cityReflection: IMAGES.cityReflection.path,
+    businessShadows: IMAGES.businessShadows.path,
+    teamCollaboration: IMAGES.teamCollaboration.path,
   },
 }: RbbEconomicsHeroProps) {
+  const colors = COLORS[mode];
   return (
     <section className="relative w-full min-h-screen bg-[#012D33] overflow-hidden">
       {/* Logo */}
@@ -56,7 +118,7 @@ export default function RbbEconomicsHero({
       >
         <Image
           src={images.cityReflection || ""}
-          alt="City reflection in glass windows"
+          alt={IMAGES.cityReflection.alt}
           fill
           className="object-cover"
         />
@@ -71,7 +133,7 @@ export default function RbbEconomicsHero({
       >
         <Image
           src={images.businessShadows || ""}
-          alt="Business professionals shadows"
+          alt={IMAGES.businessShadows.alt}
           fill
           className="object-cover"
         />
@@ -117,7 +179,7 @@ export default function RbbEconomicsHero({
       >
         <Image
           src={images.teamCollaboration || ""}
-          alt="Team collaboration"
+          alt={IMAGES.teamCollaboration.alt}
           fill
           className="object-cover"
         />

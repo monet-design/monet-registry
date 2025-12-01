@@ -1,5 +1,41 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    logoBackground: "#5163BA",
+    accent: "#1A1A1A",
+    accentHover: "#333333",
+  },
+  dark: {
+    logoBackground: "#6B7BC8",
+    accent: "#FFFFFF",
+    accentHover: "#E5E5E5",
+  },
+} as const;
+
+const IMAGES = {
+  illustration: {
+    path: "/registry/prismic-hero/illustration.png",
+    alt: "Website builder interface illustration",
+    prompt: `Modern website builder interface with abstract 3D elements.
+Style: Colorful, playful, modern SaaS illustration with geometric shapes
+Layout: Centered composition with floating UI elements and 3D objects
+Composition: Abstract representation of website building - screens, blocks, connecting lines, geometric shapes
+Color palette: Vibrant purples, blues, oranges, pinks with gradients
+Elements: Browser windows, content blocks, cursor icons, connecting lines, 3D spheres and shapes
+Mood: Creative, innovative, accessible, user-friendly
+Technical: PNG with transparency, floating elements with shadows, 1:1 or 4:3 aspect ratio`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
@@ -11,6 +47,7 @@ interface NavItem {
 }
 
 interface PrismicHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   announcementBadge?: string;
   announcementText?: string;
@@ -59,6 +96,7 @@ const defaultNavItems: NavItem[] = [
 ];
 
 export default function PrismicHero({
+  mode = "light",
   logoText = "prismic",
   announcementBadge = "New Website",
   announcementText = "We spent 9 months refreshing our website, learn from our experience",
@@ -72,8 +110,9 @@ export default function PrismicHero({
   loginText = "Login",
   onPrimaryClick,
   onSecondaryClick,
-  illustrationSrc = "/registry/prismic-hero/illustration.png",
+  illustrationSrc = IMAGES.illustration.path,
 }: PrismicHeroProps) {
+  const colors = COLORS[mode];
   return (
     <section className="relative min-h-screen w-full bg-white overflow-hidden">
       {/* Announcement Bar */}
@@ -202,7 +241,7 @@ export default function PrismicHero({
           <div className="relative h-[300px] w-[300px] sm:h-[400px] sm:w-[400px] lg:h-[500px] lg:w-[500px]">
             <Image
               src={illustrationSrc}
-              alt="Website builder illustration"
+              alt={IMAGES.illustration.alt}
               fill
               className="object-contain"
               priority

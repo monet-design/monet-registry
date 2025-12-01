@@ -1,5 +1,45 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#111111",
+    text: "#FFFFFF",
+    textSecondary: "#555555",
+    accent: "#FFFFFF",
+    accentHover: "#E5E5E5",
+  },
+  dark: {
+    background: "#111111",
+    text: "#FFFFFF",
+    textSecondary: "#555555",
+    accent: "#FFFFFF",
+    accentHover: "#E5E5E5",
+  },
+} as const;
+
+const IMAGES = {
+  globe: {
+    path: "/registry/popcorn-research-hero/globe.png",
+    alt: "3D rendered globe with network connections",
+    prompt: `3D rendered globe with glowing network connections and satellite orbits.
+Style: High-tech, futuristic, space technology aesthetic
+Layout: Centered spherical globe with orbital rings and connection lines
+Composition: Dark globe with illuminated continents, glowing network lines connecting points, satellite orbit paths
+Color palette: Dark blue/black globe, bright blue/cyan connection lines, purple/magenta glow effects
+Elements: Continents outlines, network nodes, orbital rings, atmospheric glow
+Mood: Advanced technology, global connectivity, space-age telecommunications
+Technical: PNG with transparency, glowing effects, 1:1 aspect ratio`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 
@@ -16,6 +56,7 @@ interface FeatureItem {
 }
 
 interface PopcornResearchHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   signUpLabel?: string;
@@ -27,6 +68,7 @@ interface PopcornResearchHeroProps {
 }
 
 export default function PopcornResearchHero({
+  mode = "dark",
   logoText = "Popcorn",
   navItems = [
     { label: "Home", href: "#" },
@@ -55,8 +97,9 @@ export default function PopcornResearchHero({
       description: "Uninterrupted coverage from joint cellular and satellite network.",
     },
   ],
-  globeImage = "/registry/popcorn-research-hero/globe.png",
+  globeImage = IMAGES.globe.path,
 }: PopcornResearchHeroProps) {
+  const colors = COLORS[mode];
   return (
     <section className="relative min-h-screen w-full bg-[#111111] overflow-hidden font-sans">
       {/* Navigation */}
@@ -154,7 +197,7 @@ export default function PopcornResearchHero({
         >
           <Image
             src={globeImage}
-            alt="3D Globe"
+            alt={IMAGES.globe.alt}
             fill
             className="object-contain"
             priority

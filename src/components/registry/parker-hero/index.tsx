@@ -1,5 +1,39 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#7DC3A8", // Mint green accent
+    buttonBg: "#1D1E22", // Dark charcoal button
+  },
+  dark: {
+    accent: "#6ab297",
+    buttonBg: "#0d0e11",
+  },
+} as const;
+
+const IMAGES = {
+  dashboard: {
+    path: "/registry/parker-hero/dashboard.png",
+    alt: "Parker Dashboard",
+    prompt: `E-commerce financial dashboard UI mockup.
+Style: Clean, modern SaaS interface, minimalist design
+Layout: Dashboard view with metrics, charts, and analytics
+Composition: Multiple data cards, graphs, financial metrics
+Color palette: White/light gray background, colorful data visualization
+Elements: Revenue charts, KPI cards, transaction data, analytics
+Mood: Professional, trustworthy, data-driven, e-commerce focus
+Technical: High resolution, web dashboard screenshot`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 import "./font.css";
@@ -10,6 +44,7 @@ interface NavItem {
 }
 
 interface ParkerHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   ctaButtonText?: string;
@@ -31,6 +66,7 @@ const defaultNavItems: NavItem[] = [
 ];
 
 export default function ParkerHero({
+  mode = "light",
   logoText = "Parker",
   navItems = defaultNavItems,
   ctaButtonText = "Apply now",
@@ -41,8 +77,9 @@ export default function ParkerHero({
   badgeText = "Grow faster with Parker",
   description = "Credit, banking, and analytics designed to let you grow revenue and profitability as fast as you know you can.",
   primaryButtonText = "Get Started",
-  dashboardImage = "/registry/parker-hero/dashboard.png",
+  dashboardImage = IMAGES.dashboard.path,
 }: ParkerHeroProps) {
+  const colors = COLORS[mode];
   return (
     <section className="relative min-h-screen w-full bg-white overflow-hidden">
       {/* Navigation */}
@@ -73,7 +110,7 @@ export default function ParkerHero({
         </div>
 
         {/* CTA Button */}
-        <button className="flex items-center gap-1.5 rounded-full bg-[#1D1E22] px-5 py-2.5 text-sm font-medium text-white transition-all hover:bg-[#2d2e32]">
+        <button className="flex items-center gap-1.5 rounded-full px-5 py-2.5 text-sm font-medium text-white transition-all" style={{ backgroundColor: colors.buttonBg }}>
           <ArrowUpRight size={14} strokeWidth={2} />
           {ctaButtonText}
         </button>
@@ -86,7 +123,7 @@ export default function ParkerHero({
         transition={{ delay: 0.1, duration: 0.5 }}
         className="mx-6 sm:mx-10 lg:mx-16 mt-2"
       >
-        <div className="flex items-center justify-center gap-2 rounded-full bg-[#7DC3A8] px-6 py-3 text-center">
+        <div className="flex items-center justify-center gap-2 rounded-full px-6 py-3 text-center" style={{ backgroundColor: colors.accent }}>
           <span className="text-sm text-[#1D1E22]">
             <span className="mr-1">&#127881;</span>
             {announcementText}
@@ -111,7 +148,7 @@ export default function ParkerHero({
             transition={{ delay: 0.2, duration: 0.6 }}
             className="order-2 lg:order-1"
           >
-            <div className="relative rounded-3xl bg-[#1D1E22] p-3 sm:p-4 overflow-hidden">
+            <div className="relative rounded-3xl p-3 sm:p-4 overflow-hidden" style={{ backgroundColor: colors.buttonBg }}>
               {/* Dashboard Screenshot */}
               <div className="rounded-2xl overflow-hidden bg-white">
                 <img

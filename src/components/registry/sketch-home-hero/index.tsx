@@ -27,7 +27,10 @@ interface SketchHomeHeroProps {
   onCtaClick?: () => void;
   onSignInClick?: () => void;
   onGetStartedClick?: () => void;
+  mode?: "light" | "dark";
 }
+
+const CUSTOMIZATION = {};
 
 // Diamond Logo SVG
 function DiamondLogo({ className }: { className?: string }) {
@@ -79,6 +82,7 @@ export default function SketchHomeHero({
   onCtaClick,
   onSignInClick,
   onGetStartedClick,
+  mode = "light",
 }: SketchHomeHeroProps) {
   return (
     <section className="relative min-h-screen w-full overflow-hidden bg-gradient-to-b from-[#F5E8F0] via-[#F8F0F5] to-white">

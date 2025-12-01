@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import Image from "next/image";
 
 interface SophiaAmorusoStoryHeroProps {
+  mode?: "light" | "dark";
   titleWords?: {
     prefix: string;
     main: string;
@@ -15,7 +16,10 @@ interface SophiaAmorusoStoryHeroProps {
   quote?: string;
 }
 
+const CUSTOMIZATION = {}
+
 export default function SophiaAmorusoStoryHero({
+  mode = "light",
   titleWords = [
     { prefix: "THIS", main: "S" },
     { prefix: "IS", main: "TO" },

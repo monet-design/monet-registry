@@ -4,7 +4,11 @@ import React from "react";
 import { Plus } from "lucide-react";
 import { motion } from "motion/react";
 
+// CUSTOMIZATION
+export const CUSTOMIZATION = {};
+
 interface RysaCtaProps {
+  mode?: "light" | "dark";
   title?: string;
   titleHighlight?: string;
   subtitle?: string;
@@ -89,6 +93,7 @@ const PixelPattern = ({
 };
 
 export default function RysaCta({
+  mode = "light",
   title = "RYSA AI is Live!",
   subtitle = "Two AI assistants working together for your style success",
   buttonText = "Start Using RYSA AI",

@@ -12,10 +12,13 @@ interface StatItem {
 }
 
 interface Stats1Props {
+  mode?: "light" | "dark";
   title?: string;
   subtitle?: string;
   stats?: StatItem[];
 }
+
+const CUSTOMIZATION = {}
 
 const defaultStats: StatItem[] = [
   {
@@ -79,6 +82,7 @@ function StatCard({
 }
 
 export default function Stats1({
+  mode = "light",
   title = "Numbers tell our story",
   subtitle = "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.",
   stats = defaultStats,

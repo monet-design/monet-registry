@@ -5,6 +5,7 @@ import "./font.css";
 
 // Types
 interface SoundEthicsAboutHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   menuText?: string;
   headline?: string;
@@ -12,6 +13,8 @@ interface SoundEthicsAboutHeroProps {
   backgroundImage?: string;
   onMenuClick?: () => void;
 }
+
+const CUSTOMIZATION = {}
 
 // Sound Ethics Logo Icon - horizontal lines
 function SoundEthicsLogo({ className = "w-6 h-6" }: { className?: string }) {
@@ -33,6 +36,7 @@ function SoundEthicsLogo({ className = "w-6 h-6" }: { className?: string }) {
 
 // Main Component
 export default function SoundEthicsAboutHero({
+  mode = "dark",
   logoText = "SOUND\nETHICS",
   menuText = "MENU",
   headline = "OUR STORY",

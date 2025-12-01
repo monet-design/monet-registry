@@ -5,6 +5,9 @@ import { motion, AnimatePresence } from "motion/react";
 import { ArrowDown } from "lucide-react";
 import Image from "next/image";
 
+// CUSTOMIZATION
+export const CUSTOMIZATION = {};
+
 interface BiographySection {
   id: number;
   content: string;
@@ -17,6 +20,7 @@ interface PhotoSlide {
 }
 
 interface SergeTiutykBiographyProps {
+  mode?: "light" | "dark";
   sectionTitle?: string;
   introText?: string;
   sections?: BiographySection[];
@@ -126,6 +130,7 @@ function PaginationDots({
 }
 
 export default function SergeTiutykBiography({
+  mode = "light",
   sectionTitle = "About",
   introText = "I'm a high-class digital designer, a loving husband, and a father of two wonderful daughters.",
   sections = defaultSections,

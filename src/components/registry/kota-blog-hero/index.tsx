@@ -76,7 +76,16 @@ function KotaLogo({ className }: { className?: string }) {
   );
 }
 
-const CUSTOMIZATION = {};
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
 
 export default function KotaBlogHero({
   mode = "default",

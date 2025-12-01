@@ -3,6 +3,9 @@
 import { motion } from "motion/react";
 import "./font.css";
 
+// CUSTOMIZATION
+export const CUSTOMIZATION = {};
+
 // Types
 interface NavItem {
   label: string;
@@ -15,6 +18,7 @@ interface SidebarItem {
 }
 
 interface SevallaHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   ctaText?: string;
@@ -342,6 +346,7 @@ function DashboardPreview({
 
 // Main Component
 export default function SevallaHero({
+  mode = "light",
   logoText = "Sevalla",
   navItems = defaultNavItems,
   ctaText = "Get started",

@@ -14,6 +14,9 @@ import {
   Plus,
 } from "lucide-react";
 
+// CUSTOMIZATION
+export const CUSTOMIZATION = {};
+
 interface Feature {
   icon: React.ReactNode;
   title: string;
@@ -21,6 +24,7 @@ interface Feature {
 }
 
 interface RysaFeaturesProps {
+  mode?: "light" | "dark";
   headline?: string;
   highlightedWord?: string;
   features?: Feature[];
@@ -73,6 +77,7 @@ const defaultFeatures: Feature[] = [
 ];
 
 export default function RysaFeatures({
+  mode = "light",
   headline = "Cut wardrobe decisions by 80% with Rysa",
   highlightedWord = "Rysa",
   features = defaultFeatures,

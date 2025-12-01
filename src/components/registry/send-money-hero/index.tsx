@@ -3,6 +3,9 @@
 import { motion } from "motion/react";
 import { ChevronDown, Building2, Apple, Play } from "lucide-react";
 
+// CUSTOMIZATION
+export const CUSTOMIZATION = {};
+
 // Types
 interface NavItem {
   label: string;
@@ -10,6 +13,7 @@ interface NavItem {
 }
 
 interface SendMoneyHeroProps {
+  mode?: "light" | "dark";
   logo?: {
     icon?: React.ReactNode;
     text?: string;
@@ -326,6 +330,7 @@ function DecorativeBlob({
 
 // Main Component
 export default function SendMoneyHero({
+  mode = "light",
   logo,
   navItems = [
     { label: "Contact us", href: "#" },

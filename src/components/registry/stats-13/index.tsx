@@ -9,9 +9,12 @@ interface StatItem {
 }
 
 interface Stats13Props {
+  mode?: "light" | "dark";
   title?: string;
   stats?: StatItem[];
 }
+
+const CUSTOMIZATION = {}
 
 function SlashDivider() {
   return (
@@ -31,6 +34,7 @@ function SlashDivider() {
 }
 
 export default function Stats13({
+  mode = "light",
   title = "The only platform that\ncreates rare UI Kits.",
   stats = [
     {

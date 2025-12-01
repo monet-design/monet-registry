@@ -19,7 +19,10 @@ interface SolarpunkHeroProps {
   onSearch?: (query: string) => void;
   onContactClick?: () => void;
   onLoginClick?: () => void;
+  mode?: "light" | "dark";
 }
+
+const CUSTOMIZATION = {};
 
 // Sun Logo Icon
 function SunLogo({ className = "" }: { className?: string }) {
@@ -45,6 +48,7 @@ export default function SolarpunkHero({
   onSearch,
   onContactClick,
   onLoginClick,
+  mode = "light",
 }: SolarpunkHeroProps) {
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

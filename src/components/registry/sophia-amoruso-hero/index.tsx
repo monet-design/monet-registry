@@ -20,6 +20,7 @@ interface CredentialLabel {
 }
 
 interface SophiaAmorusoHeroProps {
+  mode?: "light" | "dark";
   name?: string;
   tagline?: string;
   navItems?: NavItem[];
@@ -33,6 +34,8 @@ interface SophiaAmorusoHeroProps {
   backgroundImage?: string;
   onFormSubmit?: (data: { name: string; email: string }) => void;
 }
+
+const CUSTOMIZATION = {}
 
 // Star Icon for logo
 function StarIcon({ className = "w-4 h-4" }: { className?: string }) {
@@ -69,6 +72,7 @@ const defaultCredentials: CredentialLabel[] = [
 ];
 
 export default function SophiaAmorusoHero({
+  mode = "light",
   name = "sophia amoruso",
   tagline = "TRIED TO SMASH CAPITALISM AND\nWOUND UP WITH IT IN MY JOB TITLE",
   navItems = defaultNavItems,

@@ -26,6 +26,7 @@ interface BlogPost {
 }
 
 interface ReonInsightsHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   title?: string;
@@ -35,6 +36,8 @@ interface ReonInsightsHeroProps {
   onCategoryChange?: (categoryId: string) => void;
   onPostClick?: (postId: string) => void;
 }
+
+const CUSTOMIZATION = {}
 
 // Logo Component
 function ReonLogo({ className = "" }: { className?: string }) {
@@ -240,6 +243,7 @@ const defaultPosts: BlogPost[] = [
 
 // Main Component
 export default function ReonInsightsHero({
+  mode = "light",
   logoText = "R",
   navItems = defaultNavItems,
   title = "Insights",

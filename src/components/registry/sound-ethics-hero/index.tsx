@@ -12,6 +12,7 @@ interface NewsItem {
 }
 
 interface SoundEthicsHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   menuText?: string;
   headlineLine1?: string;
@@ -28,6 +29,8 @@ interface SoundEthicsHeroProps {
   onCtaClick?: () => void;
   onMenuClick?: () => void;
 }
+
+const CUSTOMIZATION = {}
 
 // Logo Icon Component (horizontal lines icon)
 function SoundEthicsLogo({ className = "" }: { className?: string }) {
@@ -175,6 +178,7 @@ function CtaButton({
 
 // Main Component
 export default function SoundEthicsHero({
+  mode = "dark",
   logoText = "SOUND\nETHICS",
   menuText = "MENU",
   headlineLine1 = "SOUND",

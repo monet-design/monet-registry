@@ -25,7 +25,10 @@ interface SliceMachineHeroProps {
   loginText?: string;
   demoText?: string;
   startBuildingText?: string;
+  mode?: "light" | "dark";
 }
+
+const CUSTOMIZATION = {};
 
 // Default nav items
 const defaultNavItems: NavItem[] = [
@@ -287,6 +290,7 @@ export default function SliceMachineHero({
   loginText = "Login",
   demoText = "Get a demo",
   startBuildingText = "Start Building",
+  mode = "light",
 }: SliceMachineHeroProps) {
   return (
     <section className="relative min-h-screen w-full bg-white">

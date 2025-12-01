@@ -26,7 +26,10 @@ interface SketchPrototypeHeroProps {
   onGetStarted?: () => void;
   onPrimaryClick?: () => void;
   onSecondaryClick?: () => void;
+  mode?: "light" | "dark";
 }
+
+const CUSTOMIZATION = {};
 
 // Sketch Diamond Logo
 function SketchLogo({ className = "" }: { className?: string }) {
@@ -142,6 +145,7 @@ export default function SketchPrototypeHero({
   onGetStarted,
   onPrimaryClick,
   onSecondaryClick,
+  mode = "light",
 }: SketchPrototypeHeroProps) {
   return (
     <section className="relative min-h-screen w-full bg-[#FAFAFA] overflow-hidden">

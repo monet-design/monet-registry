@@ -11,6 +11,7 @@ interface NavItem {
 }
 
 interface RivianR2HeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   modelTabs?: NavItem[];
   activeModel?: string;
@@ -27,6 +28,8 @@ interface RivianR2HeroProps {
   onPlayClick?: () => void;
   onReserveClick?: () => void;
 }
+
+const CUSTOMIZATION = {}
 
 // Rivian Logo SVG
 function RivianLogo({ className = "h-4" }: { className?: string }) {
@@ -92,6 +95,7 @@ const defaultRightNavItems: NavItem[] = [
 
 // Main Component
 export default function RivianR2Hero({
+  mode = "light",
   logoText = "RIVIAN",
   modelTabs = defaultModelTabs,
   rightNavItems = defaultRightNavItems,

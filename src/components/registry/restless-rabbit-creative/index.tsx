@@ -11,10 +11,13 @@ interface ContactInfo {
 }
 
 interface RestlessRabbitCreativeProps {
+  mode?: "light" | "dark";
   title?: string;
   contactInfo?: ContactInfo;
   onSubmit?: (data: { name: string; email: string; message: string }) => void;
 }
+
+const CUSTOMIZATION = {}
 
 const defaultContactInfo: ContactInfo = {
   locations: [
@@ -109,6 +112,7 @@ function ScatteredRabbits() {
 }
 
 export default function RestlessRabbitCreative({
+  mode = "light",
   title = "Get in touch",
   contactInfo = defaultContactInfo,
   onSubmit,

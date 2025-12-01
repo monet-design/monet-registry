@@ -3,6 +3,9 @@
 import { motion } from "motion/react";
 import { ArrowRight, Check, Upload } from "lucide-react";
 
+// CUSTOMIZATION
+export const CUSTOMIZATION = {};
+
 // Types
 interface NavItem {
   label: string;
@@ -29,6 +32,7 @@ interface FeatureCard {
 }
 
 interface RoutablePaymentHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   headline?: {
@@ -473,6 +477,7 @@ const defaultFeatureCards: FeatureCard[] = [
 
 // Main Component
 export default function RoutablePaymentHero({
+  mode = "light",
   logoText = "Routable",
   navItems = defaultNavItems,
   headline = {

@@ -10,12 +10,16 @@ interface StatItem {
 }
 
 interface Stats14Props {
+  mode?: "light" | "dark";
   title?: string;
   description?: string;
   stats?: StatItem[];
 }
 
+const CUSTOMIZATION = {}
+
 export default function Stats14({
+  mode = "dark",
   title = "We have great\nachievement to show",
   description = "Clarity gives you the blocks & components you need to create a truly professional website, landing page or admin for your SaaS and gives the blocks.",
   stats = [

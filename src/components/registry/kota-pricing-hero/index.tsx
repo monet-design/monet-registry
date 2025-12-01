@@ -12,7 +12,16 @@ interface KotaPricingHeroProps {
   rightImage?: string;
 }
 
-const CUSTOMIZATION = {};
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
 
 export default function KotaPricingHero({
   mode = "default",

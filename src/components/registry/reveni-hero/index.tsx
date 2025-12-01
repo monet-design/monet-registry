@@ -15,6 +15,7 @@ interface LogoItem {
 }
 
 interface ReveniHeroProps {
+  mode?: "light" | "dark";
   brandName?: string;
   navItems?: NavItem[];
   headline?: {
@@ -30,6 +31,8 @@ interface ReveniHeroProps {
   logos?: LogoItem[];
   onCtaClick?: () => void;
 }
+
+const CUSTOMIZATION = {}
 
 // Logo Components
 function ReveniLogo({ className = "" }: { className?: string }) {
@@ -166,6 +169,7 @@ const defaultLogos: LogoItem[] = [
 ];
 
 export default function ReveniHero({
+  mode = "light",
   brandName = "reveni",
   navItems = defaultNavItems,
   headline = {

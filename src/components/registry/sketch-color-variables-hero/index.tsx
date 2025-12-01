@@ -23,7 +23,10 @@ interface SketchColorVariablesHeroProps {
   rgbValue?: string;
   onPrimaryClick?: () => void;
   onSecondaryClick?: () => void;
+  mode?: "light" | "dark";
 }
+
+const CUSTOMIZATION = {};
 
 function SketchLogo({ className }: { className?: string }) {
   return (
@@ -100,6 +103,7 @@ export default function SketchColorVariablesHero({
   rgbValue = "RGB (254, 165, 171)",
   onPrimaryClick,
   onSecondaryClick,
+  mode = "light",
 }: SketchColorVariablesHeroProps) {
   return (
     <section className="relative w-full bg-[#FAFAFA] overflow-hidden">

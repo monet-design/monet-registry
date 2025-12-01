@@ -31,7 +31,10 @@ interface SketchCollaborateHeroProps {
   screenshotSrc?: string;
   onCtaClick?: () => void;
   onSignInClick?: () => void;
+  mode?: "light" | "dark";
 }
+
+const CUSTOMIZATION = {};
 
 // Diamond Logo Icon
 function DiamondLogo({ className }: { className?: string }) {
@@ -150,6 +153,7 @@ export default function SketchCollaborateHero({
   screenshotSrc = "/registry/sketch-collaborate-hero/design-tool-screenshot.png",
   onCtaClick,
   onSignInClick,
+  mode = "light",
 }: SketchCollaborateHeroProps) {
   return (
     <section className="relative w-full overflow-hidden bg-[#FAFAFA]">

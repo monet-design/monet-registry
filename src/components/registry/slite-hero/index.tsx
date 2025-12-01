@@ -33,7 +33,10 @@ interface SliteHeroProps {
   navItems?: NavItem[];
   documentCards?: DocumentCard[];
   onSubmit?: (email: string) => void;
+  mode?: "light" | "dark";
 }
+
+const CUSTOMIZATION = {};
 
 // Default navigation items
 const defaultNavItems: NavItem[] = [
@@ -168,6 +171,7 @@ export default function SliteHero({
   navItems = defaultNavItems,
   documentCards = defaultDocumentCards,
   onSubmit,
+  mode = "light",
 }: SliteHeroProps) {
   const [email, setEmail] = useState("");
 

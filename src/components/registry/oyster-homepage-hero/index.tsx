@@ -12,6 +12,7 @@ interface Employee {
 }
 
 interface OysterHomepageHeroProps {
+  mode?: "light" | "dark";
   badge?: string;
   title?: string;
   titleAccent?: string;
@@ -22,6 +23,8 @@ interface OysterHomepageHeroProps {
   logoSectionTitle?: string;
   logos?: { name: string; logo: React.ReactNode }[];
 }
+
+const CUSTOMIZATION = {}
 
 // Default logos as simple text representations
 const defaultLogos = [
@@ -152,6 +155,7 @@ function CalculatorCard() {
 }
 
 export default function OysterHomepageHero({
+  mode = "dark",
   badge = "FOR HR LEADERS & FOUNDERS BUILDING GLOBAL TEAMS",
   title = "All your\nglobal employment\nneeds in",
   titleAccent = "one place",

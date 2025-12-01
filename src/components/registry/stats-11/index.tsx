@@ -10,11 +10,15 @@ interface StatItem {
 }
 
 interface Stats11Props {
+  mode?: "light" | "dark";
   title?: string;
   stats?: StatItem[];
 }
 
+const CUSTOMIZATION = {}
+
 export default function Stats11({
+  mode = "light",
   title = "Numbers tell all the hard works\nwe've done in last 6 years",
   stats = [
     {

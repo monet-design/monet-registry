@@ -39,7 +39,10 @@ interface SketchHandoffHeroProps {
   // Footer note
   footerNote?: string;
   toolLogos?: { name: string; icon: React.ReactNode }[];
+  mode?: "light" | "dark";
 }
+
+const CUSTOMIZATION = {};
 
 // Diamond Logo Icon (Sketch-like)
 function DiamondLogo({ className = "w-6 h-6" }: { className?: string }) {
@@ -126,6 +129,7 @@ export default function SketchHandoffHero({
 
   // Footer note
   footerNote = "No need for tools like",
+  mode = "light",
 }: SketchHandoffHeroProps) {
   return (
     <section className="relative min-h-screen w-full bg-[#FAFAFA] overflow-hidden">

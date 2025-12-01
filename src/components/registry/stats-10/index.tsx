@@ -9,12 +9,16 @@ interface StatItem {
 }
 
 interface Stats10Props {
+  mode?: "light" | "dark";
   title?: string;
   description?: string;
   stats?: StatItem[];
 }
 
+const CUSTOMIZATION = {}
+
 export default function Stats10({
+  mode = "dark",
   title = "The Landingfolio Facts",
   description = "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
   stats = [

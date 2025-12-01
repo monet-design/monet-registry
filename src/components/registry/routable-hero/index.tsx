@@ -16,6 +16,7 @@ interface FeatureCard {
 }
 
 interface RoutableHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   headline?: string;
@@ -29,6 +30,8 @@ interface RoutableHeroProps {
   onCtaClick?: () => void;
   onLoginClick?: () => void;
 }
+
+const CUSTOMIZATION = {}
 
 // Partner logo text components
 const PartnerLogos = [
@@ -294,6 +297,7 @@ function FeatureIcon({ icon, color }: { icon: React.ReactNode; color: string }) 
 
 // Main Component
 export default function RoutableHero({
+  mode = "dark",
   logoText = "Routable",
   navItems = [
     { label: "Product" },

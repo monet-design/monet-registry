@@ -5,6 +5,9 @@ import { motion } from "motion/react";
 import { Check, Plus } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+// CUSTOMIZATION
+export const CUSTOMIZATION = {};
+
 interface PricingFeature {
   text: string;
 }
@@ -22,6 +25,7 @@ interface PricingPlan {
 }
 
 interface RysaPricingProps {
+  mode?: "light" | "dark";
   title?: string;
   subtitle?: string;
   plans?: PricingPlan[];
@@ -179,6 +183,7 @@ function PricingCard({
 }
 
 export default function RysaPricing({
+  mode = "light",
   title = "Join the Early Member list and save 25%",
   subtitle = "By pre-signing, you secure transparent, discounted pricing before public launch. This limited offer gives you full access to Rysa's personalized styling system at a rate designed to reward early adopters.",
   plans = defaultPlans,

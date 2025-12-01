@@ -8,7 +8,10 @@ interface SolutionSectionHeaderProps {
   badgeIcon?: React.ReactNode;
   title?: string;
   subtitle?: string;
+  mode?: "light" | "dark";
 }
+
+const CUSTOMIZATION = {};
 
 // Chevron decoration pattern component
 function ChevronPattern({
@@ -85,6 +88,7 @@ export default function SolutionSectionHeader({
   badgeIcon = <Cloud size={14} strokeWidth={1.5} />,
   title = "Antimetal is a complete command\nand control system for AWS",
   subtitle = "Take a look at how Antimetal can save you time and money",
+  mode = "light",
 }: SolutionSectionHeaderProps) {
   // Split title by newline for proper line breaks
   const titleLines = title.split("\n");

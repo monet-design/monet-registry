@@ -80,7 +80,16 @@ function CursorIcon({ className = "w-6 h-6" }: { className?: string }) {
 }
 
 // Main Component
-const CUSTOMIZATION = {};
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
 
 export default function LandingfolioHero2({
   mode = "default",

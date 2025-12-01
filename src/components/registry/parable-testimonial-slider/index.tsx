@@ -12,8 +12,11 @@ interface Testimonial {
 }
 
 interface ParableTestimonialSliderProps {
+  mode?: "light" | "dark";
   testimonials?: Testimonial[];
 }
+
+const CUSTOMIZATION = {}
 
 const defaultTestimonials: Testimonial[] = [
   {
@@ -66,6 +69,7 @@ function QuoteIcon({ className = "" }: { className?: string }) {
 }
 
 export default function ParableTestimonialSlider({
+  mode = "light",
   testimonials = defaultTestimonials,
 }: ParableTestimonialSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);

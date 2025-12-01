@@ -5,6 +5,7 @@ import { Menu } from "lucide-react";
 import Image from "next/image";
 
 interface PashAboutPageSectionHeroProps {
+  mode?: "light" | "dark";
   logo?: string;
   headline?: string[];
   headlineAccent?: string;
@@ -15,7 +16,10 @@ interface PashAboutPageSectionHeroProps {
   onCtaClick?: () => void;
 }
 
+const CUSTOMIZATION = {}
+
 export default function PashAboutPageSectionHero({
+  mode = "light",
   logo = "PT",
   headline = ["BORN", "TO"],
   headlineAccent = "DESIGN",

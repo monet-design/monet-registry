@@ -9,6 +9,7 @@ interface StatItem {
 }
 
 interface Stats12Props {
+  mode?: "light" | "dark";
   title?: string;
   titleHighlight?: string;
   description?: string;
@@ -17,7 +18,10 @@ interface Stats12Props {
   stats?: StatItem[];
 }
 
+const CUSTOMIZATION = {}
+
 export default function Stats12({
+  mode = "dark",
   title = "Some",
   titleHighlight = "statistics.",
   description = "Nunc aenean risus nam risus neque lacus quis aliquam. Pulvinar dignissim id sem habitant. Mi, sed proin non venenatis nam.",

@@ -6,6 +6,9 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import "./font.css";
 
+// CUSTOMIZATION
+export const CUSTOMIZATION = {};
+
 interface Step {
   stepLabel: string;
   title: string;
@@ -14,6 +17,7 @@ interface Step {
 }
 
 interface RysaHowItWorksProps {
+  mode?: "light" | "dark";
   heading?: string;
   steps?: Step[];
   buttonText?: string;
@@ -103,6 +107,7 @@ const StepCard = ({
 };
 
 export default function RysaHowItWorks({
+  mode = "light",
   heading = "Your path to wardrobe liberation",
   steps = defaultSteps,
   buttonText = "Claim Your Invitation",

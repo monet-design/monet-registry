@@ -28,7 +28,10 @@ interface SketchExtensionsHeroProps {
   onSignInClick?: () => void;
   onTabClick?: (index: number) => void;
   onDeveloperCommunityClick?: () => void;
+  mode?: "light" | "dark";
 }
+
+const CUSTOMIZATION = {};
 
 // Diamond Logo SVG Component
 function SketchLogo({ className = "" }: { className?: string }) {
@@ -177,6 +180,7 @@ export default function SketchExtensionsHero({
   onSignInClick,
   onTabClick,
   onDeveloperCommunityClick,
+  mode = "light",
 }: SketchExtensionsHeroProps) {
   return (
     <section className="relative w-full overflow-hidden bg-[#FAFAFA]">

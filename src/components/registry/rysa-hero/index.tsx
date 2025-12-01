@@ -5,8 +5,12 @@ import { Plus } from "lucide-react";
 import Image from "next/image";
 import "./font.css";
 
+// CUSTOMIZATION
+export const CUSTOMIZATION = {};
+
 // Types
 interface RysaHeroProps {
+  mode?: "light" | "dark";
   logo?: string;
   tagline?: string;
   headline?: string;
@@ -18,6 +22,7 @@ interface RysaHeroProps {
 }
 
 export default function RysaHero({
+  mode = "light",
   logo = "RYSA",
   tagline = "Effortless style. Zero decision fatigue. All in one app.",
   headline = "Turn Your Wardrobe Into\na High-Performing\nSystem",

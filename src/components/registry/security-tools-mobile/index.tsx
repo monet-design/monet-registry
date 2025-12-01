@@ -6,6 +6,9 @@ import { Shield, Mail, BarChart3, Smartphone, ChevronRight, Plus } from "lucide-
 import Image from "next/image";
 import "./font.css";
 
+// CUSTOMIZATION
+export const CUSTOMIZATION = {};
+
 interface Account {
   id: string;
   email: string;
@@ -14,6 +17,7 @@ interface Account {
 }
 
 interface SecurityToolsMobileProps {
+  mode?: "light" | "dark";
   badge?: string;
   headline?: string;
   tabs?: Array<{
@@ -195,6 +199,7 @@ function PhoneMockup({
 }
 
 export default function SecurityToolsMobile({
+  mode = "light",
   badge = "SECURITY TOOLS",
   headline = "Our tools to power up\nyour mobile security.",
   tabs = defaultTabs,

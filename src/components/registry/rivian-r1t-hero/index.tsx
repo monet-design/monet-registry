@@ -12,6 +12,7 @@ interface NavItem {
 }
 
 interface RivianR1tHeroProps {
+  mode?: "light" | "dark";
   // Top banner
   bannerText?: string;
   bannerLinkText?: string;
@@ -36,6 +37,8 @@ interface RivianR1tHeroProps {
   backgroundImage?: string;
 }
 
+const CUSTOMIZATION = {}
+
 // Default navigation items
 const defaultNavItems: NavItem[] = [
   { label: "R1T", href: "#", isActive: true },
@@ -50,6 +53,7 @@ const defaultRightNavItems = [
 ];
 
 export default function RivianR1tHero({
+  mode = "dark",
   bannerText = "Want to see what we're up to?",
   bannerLinkText = "Get updates from Rivian",
   onBannerLinkClick,

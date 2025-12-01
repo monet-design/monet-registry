@@ -28,7 +28,16 @@ interface SliceMachineHeroProps {
   mode?: "light" | "dark";
 }
 
-const CUSTOMIZATION = {};
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
 
 // Default nav items
 const defaultNavItems: NavItem[] = [

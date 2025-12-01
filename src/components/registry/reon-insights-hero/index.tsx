@@ -37,7 +37,16 @@ interface ReonInsightsHeroProps {
   onPostClick?: (postId: string) => void;
 }
 
-const CUSTOMIZATION = {}
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
 
 // Logo Component
 function ReonLogo({ className = "" }: { className?: string }) {

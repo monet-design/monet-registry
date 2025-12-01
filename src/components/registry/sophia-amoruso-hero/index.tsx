@@ -35,7 +35,16 @@ interface SophiaAmorusoHeroProps {
   onFormSubmit?: (data: { name: string; email: string }) => void;
 }
 
-const CUSTOMIZATION = {}
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
 
 // Star Icon for logo
 function StarIcon({ className = "w-4 h-4" }: { className?: string }) {

@@ -16,7 +16,16 @@ interface ParableTestimonialSliderProps {
   testimonials?: Testimonial[];
 }
 
-const CUSTOMIZATION = {}
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
 
 const defaultTestimonials: Testimonial[] = [
   {

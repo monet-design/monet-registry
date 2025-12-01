@@ -42,7 +42,16 @@ interface SketchHandoffHeroProps {
   mode?: "light" | "dark";
 }
 
-const CUSTOMIZATION = {};
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
 
 // Diamond Logo Icon (Sketch-like)
 function DiamondLogo({ className = "w-6 h-6" }: { className?: string }) {

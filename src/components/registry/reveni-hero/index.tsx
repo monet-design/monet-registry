@@ -32,7 +32,16 @@ interface ReveniHeroProps {
   onCtaClick?: () => void;
 }
 
-const CUSTOMIZATION = {}
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
 
 // Logo Components
 function ReveniLogo({ className = "" }: { className?: string }) {

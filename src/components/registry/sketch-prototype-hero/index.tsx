@@ -29,7 +29,16 @@ interface SketchPrototypeHeroProps {
   mode?: "light" | "dark";
 }
 
-const CUSTOMIZATION = {};
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
 
 // Sketch Diamond Logo
 function SketchLogo({ className = "" }: { className?: string }) {

@@ -29,7 +29,16 @@ interface RivianR2HeroProps {
   onReserveClick?: () => void;
 }
 
-const CUSTOMIZATION = {}
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
 
 // Rivian Logo SVG
 function RivianLogo({ className = "h-4" }: { className?: string }) {

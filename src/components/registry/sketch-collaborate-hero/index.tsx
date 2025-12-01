@@ -34,7 +34,16 @@ interface SketchCollaborateHeroProps {
   mode?: "light" | "dark";
 }
 
-const CUSTOMIZATION = {};
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
 
 // Diamond Logo Icon
 function DiamondLogo({ className }: { className?: string }) {

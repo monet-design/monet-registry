@@ -30,7 +30,16 @@ interface SoundEthicsHeroProps {
   onMenuClick?: () => void;
 }
 
-const CUSTOMIZATION = {}
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
 
 // Logo Icon Component (horizontal lines icon)
 function SoundEthicsLogo({ className = "" }: { className?: string }) {

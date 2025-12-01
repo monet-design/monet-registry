@@ -24,7 +24,16 @@ interface OysterHomepageHeroProps {
   logos?: { name: string; logo: React.ReactNode }[];
 }
 
-const CUSTOMIZATION = {}
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
 
 // Default logos as simple text representations
 const defaultLogos = [

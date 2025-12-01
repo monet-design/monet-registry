@@ -31,7 +31,16 @@ interface RoutableHeroProps {
   onLoginClick?: () => void;
 }
 
-const CUSTOMIZATION = {}
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
 
 // Partner logo text components
 const PartnerLogos = [

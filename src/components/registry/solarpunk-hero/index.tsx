@@ -22,7 +22,16 @@ interface SolarpunkHeroProps {
   mode?: "light" | "dark";
 }
 
-const CUSTOMIZATION = {};
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
 
 // Sun Logo Icon
 function SunLogo({ className = "" }: { className?: string }) {

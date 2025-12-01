@@ -1,5 +1,56 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#F3F2F0",
+    nameText: "#906440",
+    sectionText: "#8B8B8B",
+    primaryText: "#5A5A5A",
+    secondaryText: "#7A7A7A",
+    link: "#508A3D",
+    accent: "#508A3D",
+  },
+  dark: {
+    background: "#1a1a1a",
+    nameText: "#C08860",
+    sectionText: "#9B9B9B",
+    primaryText: "#B0B0B0",
+    secondaryText: "#A0A0A0",
+    link: "#60AA4D",
+    accent: "#60AA4D",
+  },
+} as const;
+
+const IMAGES = {
+  profile: {
+    path: "https://picsum.photos/seed/developer42/200/200",
+    alt: "Profile photo",
+    prompt: `Professional developer portrait photo, circular crop.
+Style: Friendly, approachable tech professional
+Composition: Headshot, facing camera, neutral background
+Mood: Confident, welcoming, professional
+Technical: Square aspect ratio, high quality, good lighting`,
+  },
+  brushStroke: {
+    path: "/registry/nodejs-cli/brush-stroke.png",
+    alt: "Decorative brush stroke background",
+    prompt: `Hand-painted brush stroke decoration, circular shape.
+Style: Organic, artistic accent element
+Color: Earthy green tone (#508A3D)
+Composition: Loose, expressive brush stroke forming a circular shape
+Mood: Creative, artistic touch
+Technical: PNG with transparency, loose organic edges`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 import { Award, Star, Mic, Pencil } from "lucide-react";
@@ -14,6 +65,7 @@ interface TextItem {
 }
 
 interface NodejsCliProps {
+  mode?: "light" | "dark";
   sectionTitle?: string;
   name?: string;
   profileImage?: string;
@@ -22,7 +74,7 @@ interface NodejsCliProps {
   credentialsItems?: TextItem[];
 }
 
-function DecorativeDots() {
+function DecorativeDots({ accentColor }: { accentColor: string }) {
   const dots = [
     { top: 20, right: 10 },
     { top: 36, right: 26 },
@@ -48,8 +100,8 @@ function DecorativeDots() {
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 0.5, scale: 1 }}
           transition={{ duration: 0.3, delay: 0.5 + index * 0.05 }}
-          className="absolute w-1.5 h-1.5 rounded-full bg-[#508A3D]"
-          style={{ top: dot.top, right: dot.right }}
+          className="absolute w-1.5 h-1.5 rounded-full"
+          style={{ top: dot.top, right: dot.right, backgroundColor: accentColor }}
         />
       ))}
     </div>
@@ -96,9 +148,11 @@ function renderIcon(icon: string) {
 
 function TextWithItems({
   items,
+  linkColor,
   className = "",
 }: {
   items: TextItem[];
+  linkColor: string;
   className?: string;
 }) {
   return (
@@ -117,11 +171,12 @@ function TextWithItems({
               href={item.href || "#"}
               target="_blank"
               rel="noopener noreferrer"
-              className={`text-[#508A3D] hover:opacity-70 transition-opacity ${
+              className={`hover:opacity-70 transition-opacity ${
                 item.underline !== false
                   ? "underline decoration-1 underline-offset-2"
                   : ""
               }`}
+              style={{ color: linkColor }}
             >
               {item.content}
             </a>
@@ -134,9 +189,10 @@ function TextWithItems({
 }
 
 export default function NodejsCli({
+  mode = "light",
   sectionTitle = "Who's behind this?",
   name = "Ahmad Awais",
-  profileImage = "https://picsum.photos/seed/developer42/200/200",
+  profileImage = IMAGES.profile.path,
   taglineItems = [
     { type: "icon", icon: "award" },
     { type: "text", content: "Award-winning " },
@@ -189,14 +245,16 @@ export default function NodejsCli({
     { type: "text", content: "." },
   ],
 }: NodejsCliProps) {
+  const colors = COLORS[mode];
+
   return (
     <section
       className="relative w-full min-h-screen py-16 px-6 sm:px-8 lg:px-12 overflow-hidden"
-      style={{ backgroundColor: "#F3F2F0", fontFamily: "'Inter', sans-serif" }}
+      style={{ backgroundColor: colors.background, fontFamily: "'Inter', sans-serif" }}
     >
       <div className="mx-auto max-w-2xl relative">
         {/* Decorative Dots */}
-        <DecorativeDots />
+        <DecorativeDots accentColor={colors.accent} />
 
         {/* Profile Section */}
         <motion.div
@@ -208,8 +266,8 @@ export default function NodejsCli({
           {/* Profile Image with Brush Stroke Background */}
           <div className="relative w-28 h-28 mb-4">
             <Image
-              src="/registry/nodejs-cli/brush-stroke.png"
-              alt="Decorative brush stroke"
+              src={IMAGES.brushStroke.path}
+              alt={IMAGES.brushStroke.alt}
               width={140}
               height={140}
               className="absolute -top-3 -left-3 w-[140px] h-[140px] object-contain"
@@ -230,7 +288,8 @@ export default function NodejsCli({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-sm text-[#8B8B8B] italic mb-1"
+            className="text-sm italic mb-1"
+            style={{ color: colors.sectionText }}
           >
             {sectionTitle}
           </motion.p>
@@ -240,8 +299,8 @@ export default function NodejsCli({
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="text-3xl font-bold text-[#906440] tracking-tight"
-            style={{ fontFamily: "'Playfair Display', serif" }}
+            className="text-3xl font-bold tracking-tight"
+            style={{ fontFamily: "'Playfair Display', serif", color: colors.nameText }}
           >
             {name}
           </motion.h2>
@@ -252,9 +311,10 @@ export default function NodejsCli({
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-center text-sm leading-relaxed text-[#5A5A5A] mb-8 whitespace-pre-line"
+          className="text-center text-sm leading-relaxed mb-8 whitespace-pre-line"
+          style={{ color: colors.primaryText }}
         >
-          <TextWithItems items={taglineItems} />
+          <TextWithItems items={taglineItems} linkColor={colors.link} />
         </motion.p>
 
         {/* Highlight Section */}
@@ -262,9 +322,10 @@ export default function NodejsCli({
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="text-center text-sm leading-relaxed text-[#7A7A7A] italic mb-8 whitespace-pre-line"
+          className="text-center text-sm leading-relaxed italic mb-8 whitespace-pre-line"
+          style={{ color: colors.secondaryText }}
         >
-          <TextWithItems items={highlightItems} />
+          <TextWithItems items={highlightItems} linkColor={colors.link} />
         </motion.p>
 
         {/* Credentials Section */}
@@ -272,9 +333,10 @@ export default function NodejsCli({
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="text-center text-sm leading-relaxed text-[#5A5A5A] whitespace-pre-line"
+          className="text-center text-sm leading-relaxed whitespace-pre-line"
+          style={{ color: colors.primaryText }}
         >
-          <TextWithItems items={credentialsItems} />
+          <TextWithItems items={credentialsItems} linkColor={colors.link} />
         </motion.p>
       </div>
     </section>

@@ -1,5 +1,35 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ */
+const COLORS = {
+  light: {
+    background: "#F5E6D3",     // 크림 배경
+    primary: "#2F5233",        // 다크 그린
+    accent: "#BFFF00",         // 네온 그린
+    accentHover: "#a8e600",
+    cta: "#1a1a1a",            // 다크 버튼
+    ctaHover: "#0a0a0a",
+  },
+  dark: {
+    background: "#2a2a2a",
+    primary: "#4a7c4e",
+    accent: "#d4ff33",
+    accentHover: "#c2e631",
+    cta: "#f5f5f5",
+    ctaHover: "#e5e5e5",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Menu } from "lucide-react";
 import "./font.css";
@@ -31,6 +61,7 @@ interface TrustLogo {
 }
 
 interface ArtboardTeamHeroProps {
+  mode?: "light" | "dark";
   logo?: {
     icon?: React.ReactNode;
     text?: string;
@@ -179,6 +210,7 @@ function TrustLogoItem({ name }: { name: string }) {
 }
 
 export default function ArtboardTeamHero({
+  mode = "light",
   logo = {
     icon: <ArtboardLogo />,
     text: "Artboard",
@@ -209,8 +241,10 @@ export default function ArtboardTeamHero({
   onCtaClick,
   onPrimaryClick,
 }: ArtboardTeamHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative w-full bg-[#F5E6D3] overflow-hidden artboard-font">
+    <section className="relative w-full overflow-hidden artboard-font" style={{ backgroundColor: colors.background }}>
       {/* Navigation */}
       <nav className="w-full px-6 lg:px-12 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -254,7 +288,10 @@ export default function ArtboardTeamHero({
           >
             <button
               onClick={onCtaClick}
-              className="hidden sm:block px-5 py-2.5 bg-[#BFFF00] hover:bg-[#a8e600] text-gray-900 text-sm font-semibold rounded-full transition-colors"
+              className="hidden sm:block px-5 py-2.5 text-gray-900 text-sm font-semibold rounded-full transition-colors"
+              style={{ backgroundColor: colors.accent }}
+              onMouseOver={(e) => (e.currentTarget.style.backgroundColor = colors.accentHover)}
+              onMouseOut={(e) => (e.currentTarget.style.backgroundColor = colors.accent)}
             >
               {ctaButtonText}
             </button>
@@ -296,7 +333,10 @@ export default function ArtboardTeamHero({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
               onClick={onPrimaryClick}
-              className="px-8 py-4 bg-gray-900 hover:bg-gray-800 text-white text-base font-semibold rounded-full transition-colors"
+              className="px-8 py-4 text-white text-base font-semibold rounded-full transition-colors"
+              style={{ backgroundColor: colors.cta }}
+              onMouseOver={(e) => (e.currentTarget.style.backgroundColor = colors.ctaHover)}
+              onMouseOut={(e) => (e.currentTarget.style.backgroundColor = colors.cta)}
             >
               {primaryButtonText}
             </motion.button>

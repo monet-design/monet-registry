@@ -1,5 +1,51 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#E1DFE4",
+    cardBackground: "#FFFFFF",
+    heading: "#1a1a1a",
+    text: "#374151",
+    accent: "#7C3AED",
+    // Decorative shapes
+    shape1: "#DD7685",
+    shape2: "#EE665A",
+    shape3: "#AB90DF",
+    shape4: "#88D3FD",
+    shape5: "#A1DCFC",
+    shape6: "#FBDD83",
+    shape7: "#439E90",
+    shape8: "#69B4A6",
+    shape9: "#661EC8",
+  },
+  dark: {
+    background: "#1a1a1a",
+    cardBackground: "#2a2a2a",
+    heading: "#ffffff",
+    text: "#b4b4b4",
+    accent: "#9F7AEA",
+    shape1: "#CC6675",
+    shape2: "#DD5549",
+    shape3: "#9A7FCF",
+    shape4: "#77C2EC",
+    shape5: "#90CBEB",
+    shape6: "#EACC72",
+    shape7: "#328D7F",
+    shape8: "#58A395",
+    shape9: "#5509B7",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import React from "react";
 import { motion } from "motion/react";
 
@@ -8,6 +54,7 @@ interface BulletItem {
 }
 
 interface DesigningInFigmaBookProps {
+  mode?: "light" | "dark";
   greeting?: string;
   authorName?: string;
   paragraphs?: Array<{
@@ -48,6 +95,7 @@ const defaultBulletItems: BulletItem[] = [
 ];
 
 export default function DesigningInFigmaBook({
+  mode = "light",
   greeting = "Hi, I'm Eugene",
   authorName,
   paragraphs = defaultParagraphs,
@@ -55,6 +103,7 @@ export default function DesigningInFigmaBook({
   bulletItems = defaultBulletItems,
   closingText = "Get the most out of Figma, and enjoy the book!",
 }: DesigningInFigmaBookProps) {
+  const colors = COLORS[mode];
   const renderTextWithBold = (text: string, boldPhrases: string[] = []) => {
     if (boldPhrases.length === 0) {
       return text;
@@ -77,7 +126,8 @@ export default function DesigningInFigmaBook({
           segments.push(
             <strong
               key={`${partIndex}-${phrase}-${searchIndex}`}
-              className="font-bold text-[#7C3AED] underline decoration-[#7C3AED]"
+              className="font-bold underline"
+              style={{ color: colors.accent, textDecorationColor: colors.accent }}
             >
               {phrase}
             </strong>
@@ -98,7 +148,7 @@ export default function DesigningInFigmaBook({
   };
 
   return (
-    <section className="relative w-full min-h-screen overflow-hidden bg-[#E1DFE4]">
+    <section className="relative w-full min-h-screen overflow-hidden" style={{ backgroundColor: colors.background }}>
       {/* Decorative Abstract Shapes */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         {/* Top left - Pink/coral shape */}
@@ -111,7 +161,7 @@ export default function DesigningInFigmaBook({
           <svg viewBox="0 0 160 160" className="w-full h-full">
             <path
               d="M80 10 C120 10, 150 50, 140 90 C130 130, 80 150, 50 130 C20 110, 10 60, 40 30 C60 10, 80 10, 80 10"
-              fill="#DD7685"
+              fill={colors.shape1}
             />
           </svg>
         </motion.div>
@@ -243,14 +293,16 @@ export default function DesigningInFigmaBook({
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="w-full max-w-2xl bg-white rounded-lg shadow-xl p-8 sm:p-10 lg:p-12"
+          className="w-full max-w-2xl rounded-lg shadow-xl p-8 sm:p-10 lg:p-12"
+          style={{ backgroundColor: colors.cardBackground }}
         >
           {/* Greeting */}
           <motion.h1
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.4 }}
-            className="text-lg font-semibold text-[#1a1a1a] mb-6"
+            className="text-lg font-semibold mb-6"
+            style={{ color: colors.heading }}
           >
             {greeting} <span className="inline-block animate-wave">&#128075;</span>
           </motion.h1>
@@ -263,7 +315,8 @@ export default function DesigningInFigmaBook({
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
-                className="text-sm leading-relaxed text-[#374151]"
+                className="text-sm leading-relaxed"
+                style={{ color: colors.text }}
               >
                 {renderTextWithBold(paragraph.text, paragraph.boldPhrases)}
               </motion.p>
@@ -281,7 +334,8 @@ export default function DesigningInFigmaBook({
               {bulletItems.map((item, index) => (
                 <li
                   key={index}
-                  className="text-sm leading-relaxed text-[#374151] pl-1"
+                  className="text-sm leading-relaxed pl-1"
+                  style={{ color: colors.text }}
                 >
                   {item.text}
                 </li>
@@ -295,7 +349,8 @@ export default function DesigningInFigmaBook({
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.9 }}
-              className="mt-6 text-sm leading-relaxed text-[#374151]"
+              className="mt-6 text-sm leading-relaxed"
+              style={{ color: colors.text }}
             >
               {closingText}
             </motion.p>

@@ -1,5 +1,40 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#000000",
+    cardBackground: "#14151A",
+    cardBorder: "#27282D",
+    title: "#ffffff",
+    subtitle: "#9CA3AF",
+    authorName: "#ffffff",
+    handle: "#8B8C90",
+    content: "#E7E9EA",
+    mention: "#8B5CF6",
+    footer: "#6B7280",
+  },
+  dark: {
+    background: "#000000",
+    cardBackground: "#14151A",
+    cardBorder: "#27282D",
+    title: "#ffffff",
+    subtitle: "#9CA3AF",
+    authorName: "#ffffff",
+    handle: "#8B8C90",
+    content: "#E7E9EA",
+    mention: "#8B5CF6",
+    footer: "#6B7280",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 
@@ -13,6 +48,7 @@ interface Tweet {
 }
 
 interface ScreenStudioTestimonialProps {
+  mode?: "light" | "dark";
   title?: string;
   subtitle?: string;
   tweets?: Tweet[];
@@ -178,7 +214,7 @@ const defaultTweets: Tweet[] = [
 ];
 
 // Helper function to parse tweet content and highlight mentions and links
-function parseTweetContent(content: string) {
+function parseTweetContent(content: string, mentionColor: string) {
   const parts: Array<{ type: "text" | "mention" | "link"; value: string }> = [];
   const regex = /(@\w+|https?:\/\/[^\s]+)/g;
   let lastIndex = 0;
@@ -200,23 +236,32 @@ function parseTweetContent(content: string) {
     parts.push({ type: "text", value: content.slice(lastIndex) });
   }
 
-  return parts;
+  return parts.map((part, i) => {
+    if (part.type === "mention" || part.type === "link") {
+      return (
+        <span key={i} style={{ color: mentionColor }}>
+          {part.value}
+        </span>
+      );
+    }
+    return <span key={i}>{part.value}</span>;
+  });
 }
 
 // Tweet Card Component
-function TweetCard({ tweet, index }: { tweet: Tweet; index: number }) {
-  const contentParts = parseTweetContent(tweet.content);
+function TweetCard({ tweet, index, colors }: { tweet: Tweet; index: number; colors: typeof COLORS.light }) {
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: index * 0.05 }}
-      className="rounded-xl border border-[#27282D] bg-[#14151A] p-4"
+      className="rounded-xl border p-4"
+      style={{ borderColor: colors.cardBorder, backgroundColor: colors.cardBackground }}
     >
       {/* Author Info */}
       <div className="flex items-start gap-3">
-        <div className="relative h-10 w-10 flex-shrink-0 overflow-hidden rounded-full bg-[#27282D]">
+        <div className="relative h-10 w-10 flex-shrink-0 overflow-hidden rounded-full" style={{ backgroundColor: colors.cardBorder }}>
           <Image
             src={tweet.avatar}
             alt={tweet.name}
@@ -226,30 +271,14 @@ function TweetCard({ tweet, index }: { tweet: Tweet; index: number }) {
           />
         </div>
         <div className="min-w-0 flex-1">
-          <p className="truncate text-sm font-medium text-white">{tweet.name}</p>
-          <p className="truncate text-sm text-[#8B8C90]">{tweet.handle}</p>
+          <p className="truncate text-sm font-medium" style={{ color: colors.authorName }}>{tweet.name}</p>
+          <p className="truncate text-sm" style={{ color: colors.handle }}>{tweet.handle}</p>
         </div>
       </div>
 
       {/* Tweet Content */}
-      <div className="mt-3 text-sm leading-relaxed text-[#E7E9EA]">
-        {contentParts.map((part, i) => {
-          if (part.type === "mention") {
-            return (
-              <span key={i} className="text-[#8B5CF6]">
-                {part.value}
-              </span>
-            );
-          }
-          if (part.type === "link") {
-            return (
-              <span key={i} className="text-[#8B5CF6]">
-                {part.value}
-              </span>
-            );
-          }
-          return <span key={i}>{part.value}</span>;
-        })}
+      <div className="mt-3 text-sm leading-relaxed" style={{ color: colors.content }}>
+        {parseTweetContent(tweet.content, colors.mention)}
       </div>
     </motion.div>
   );
@@ -257,16 +286,18 @@ function TweetCard({ tweet, index }: { tweet: Tweet; index: number }) {
 
 // Main Component
 export default function ScreenStudioTestimonial({
+  mode = "light",
   title = "Meet Screen Studio users",
   subtitle = "Screen Studio empowers people to quickly create beautiful videos of their products and services.",
   tweets = defaultTweets,
 }: ScreenStudioTestimonialProps) {
+  const colors = COLORS[mode];
   // Split tweets into two columns for masonry effect
   const leftColumn = tweets.filter((_, i) => i % 2 === 0);
   const rightColumn = tweets.filter((_, i) => i % 2 === 1);
 
   return (
-    <section className="w-full bg-black py-16 sm:py-20 lg:py-24">
+    <section className="w-full py-16 sm:py-20 lg:py-24" style={{ backgroundColor: colors.background }}>
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -275,10 +306,10 @@ export default function ScreenStudioTestimonial({
           transition={{ duration: 0.5 }}
           className="mb-12 text-center"
         >
-          <h2 className="text-2xl font-semibold text-white sm:text-3xl lg:text-4xl">
+          <h2 className="text-2xl font-semibold sm:text-3xl lg:text-4xl" style={{ color: colors.title }}>
             {title}
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-sm text-[#9CA3AF] sm:text-base">
+          <p className="mx-auto mt-4 max-w-2xl text-sm sm:text-base" style={{ color: colors.subtitle }}>
             {subtitle}
           </p>
         </motion.div>
@@ -288,14 +319,14 @@ export default function ScreenStudioTestimonial({
           {/* Left Column */}
           <div className="flex flex-col gap-4">
             {leftColumn.map((tweet, index) => (
-              <TweetCard key={tweet.id} tweet={tweet} index={index * 2} />
+              <TweetCard key={tweet.id} tweet={tweet} index={index * 2} colors={colors} />
             ))}
           </div>
 
           {/* Right Column */}
           <div className="flex flex-col gap-4">
             {rightColumn.map((tweet, index) => (
-              <TweetCard key={tweet.id} tweet={tweet} index={index * 2 + 1} />
+              <TweetCard key={tweet.id} tweet={tweet} index={index * 2 + 1} colors={colors} />
             ))}
           </div>
         </div>
@@ -305,10 +336,11 @@ export default function ScreenStudioTestimonial({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="mt-12 text-center text-xs text-[#6B7280]"
+          className="mt-12 text-center text-xs"
+          style={{ color: colors.footer }}
         >
           If you are one of the people quoted above and would like to have your testimonial removed, please{" "}
-          <span className="text-[#8B5CF6] underline">get in touch</span> and I will remove it instantly.
+          <span className="underline" style={{ color: colors.mention }}>get in touch</span> and I will remove it instantly.
         </motion.p>
       </div>
     </section>

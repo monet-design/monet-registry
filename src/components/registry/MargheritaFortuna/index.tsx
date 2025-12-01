@@ -1,5 +1,20 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 import "./font.css";
@@ -11,6 +26,7 @@ interface Award {
 }
 
 interface MargheritaFortunaProps {
+  mode?: "light" | "dark";
   introText?: string;
   introHighlight1?: string;
   introHighlight2?: string;
@@ -32,6 +48,7 @@ interface MargheritaFortunaProps {
 }
 
 export default function MargheritaFortuna({
+  mode = "light",
   introText = "Despite my last name, nothing is entirely left to chance in my approach. From concept to final execution, I design each project with the same",
   introHighlight1 = "exquisite attention",
   introHighlight2 = "detail",

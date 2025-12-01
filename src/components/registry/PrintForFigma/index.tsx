@@ -1,9 +1,39 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#FAFAFA",
+    starFill: "#F8EE76",
+    quoteAccent: "#8B5CF6",
+    text: "#374151",
+    username: "#9CA3AF",
+    button: "#2F2D45",
+    buttonText: "#ffffff",
+  },
+  dark: {
+    background: "#1a1a1a",
+    starFill: "#F8EE76",
+    quoteAccent: "#A78BFA",
+    text: "#e0e0e0",
+    username: "#9CA3AF",
+    button: "#4F4D65",
+    buttonText: "#ffffff",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { Star } from "lucide-react";
 import { motion } from "motion/react";
 
 interface PrintForFigmaTestimonialProps {
+  mode?: "light" | "dark";
   rating?: number;
   quote?: string;
   highlightedText?: string;
@@ -13,6 +43,7 @@ interface PrintForFigmaTestimonialProps {
 }
 
 export default function PrintForFigmaTestimonial({
+  mode = "light",
   rating = 5,
   quote = "An absolute {highlight} if you want to design for print in Figma.",
   highlightedText = "must-have",
@@ -20,6 +51,8 @@ export default function PrintForFigmaTestimonial({
   buttonText = "View All Reviews",
   onButtonClick,
 }: PrintForFigmaTestimonialProps) {
+  const colors = COLORS[mode];
+
   const renderQuote = () => {
     const parts = quote.split("{highlight}");
     if (parts.length === 1) {
@@ -40,7 +73,7 @@ export default function PrintForFigmaTestimonial({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
       className="flex w-full max-w-2xl flex-col items-center px-6 py-12"
-      style={{ backgroundColor: "#FAFAFA" }}
+      style={{ backgroundColor: colors.background }}
     >
       {/* Star Rating */}
       <motion.div
@@ -53,8 +86,8 @@ export default function PrintForFigmaTestimonial({
           <Star
             key={index}
             className="h-4 w-4"
-            fill="#F8EE76"
-            stroke="#F8EE76"
+            fill={colors.starFill}
+            stroke={colors.starFill}
             strokeWidth={1}
           />
         ))}
@@ -70,7 +103,7 @@ export default function PrintForFigmaTestimonial({
         {/* Left Quote Mark */}
         <span
           className="mr-4 select-none text-2xl font-bold leading-none"
-          style={{ color: "#8B5CF6" }}
+          style={{ color: colors.quoteAccent }}
         >
           &ldquo;
         </span>
@@ -78,7 +111,7 @@ export default function PrintForFigmaTestimonial({
         {/* Quote Text */}
         <p
           className="text-center text-lg font-normal leading-relaxed"
-          style={{ color: "#374151" }}
+          style={{ color: colors.text }}
         >
           {renderQuote()}
         </p>
@@ -86,7 +119,7 @@ export default function PrintForFigmaTestimonial({
         {/* Right Quote Mark */}
         <span
           className="ml-4 select-none text-2xl font-bold leading-none"
-          style={{ color: "#8B5CF6" }}
+          style={{ color: colors.quoteAccent }}
         >
           &rdquo;
         </span>
@@ -98,7 +131,7 @@ export default function PrintForFigmaTestimonial({
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.4 }}
         className="mb-6 text-sm"
-        style={{ color: "#9CA3AF" }}
+        style={{ color: colors.username }}
       >
         {username}
       </motion.p>
@@ -111,8 +144,8 @@ export default function PrintForFigmaTestimonial({
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
         onClick={onButtonClick}
-        className="rounded-full px-6 py-2.5 text-sm font-medium text-white transition-colors hover:opacity-90"
-        style={{ backgroundColor: "#2F2D45" }}
+        className="rounded-full px-6 py-2.5 text-sm font-medium transition-colors hover:opacity-90"
+        style={{ backgroundColor: colors.button, color: colors.buttonText }}
       >
         {buttonText}
       </motion.button>

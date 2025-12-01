@@ -1,5 +1,42 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#000000",
+    text: "#ffffff",
+    textMuted: "rgba(255, 255, 255, 0.6)",
+    border: "rgba(255, 255, 255, 0.1)",
+    borderHover: "rgba(255, 255, 255, 0.6)",
+  },
+  dark: {
+    background: "#000000",
+    text: "#ffffff",
+    textMuted: "rgba(255, 255, 255, 0.6)",
+    border: "rgba(255, 255, 255, 0.1)",
+    borderHover: "rgba(255, 255, 255, 0.6)",
+  },
+} as const;
+
+const IMAGES = {
+  profile: {
+    path: "https://picsum.photos/seed/metodateczowki/280/280",
+    alt: "Author profile photo",
+    prompt: `Professional author profile photo, square format, neutral background.
+Style: Clean, approachable, friendly
+Composition: Portrait headshot with natural lighting
+Mood: Professional yet personable
+Technical: High quality, square crop (1:1 aspect ratio)`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 import { Facebook, Youtube } from "lucide-react";
@@ -14,6 +51,7 @@ interface Paragraph {
 }
 
 interface MetodaTeczowkiProps {
+  mode?: "light" | "dark";
   sidebarTitle?: string;
   heading?: string;
   paragraphs?: Paragraph[];
@@ -63,6 +101,7 @@ function SocialIcon({
 }
 
 export default function MetodaTeczowki({
+  mode = "light",
   sidebarTitle = "O autorze",
   heading = "Czesc, nazywam sie Jacek Klosinski\ni pokazuje jak stawiac na swoim bez\nstawania na glowie.",
   paragraphs = [
@@ -79,7 +118,7 @@ export default function MetodaTeczowki({
       text: "Z drugiej strony, kompletny luz i ucieczka w Bieszczady tez nie sa rozwiazaniem. W zyciu musi przeciez chodzic",
     },
   ],
-  profileImage = "https://picsum.photos/seed/metodateczowki/280/280",
+  profileImage = IMAGES.profile.path,
   authorName = "KLOSINSKI",
   socialLinks = [
     { icon: "facebook", href: "#" },
@@ -87,8 +126,13 @@ export default function MetodaTeczowki({
     { icon: "spotify", href: "#" },
   ],
 }: MetodaTeczowkiProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="w-full min-h-screen bg-black text-white">
+    <section
+      className="w-full min-h-screen text-white"
+      style={{ backgroundColor: colors.background }}
+    >
       <div className="flex min-h-screen">
         {/* Left Sidebar with Rotated Text */}
         <motion.div

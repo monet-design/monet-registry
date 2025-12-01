@@ -1,5 +1,20 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 import { Twitter, Instagram, Dribbble } from "lucide-react";
@@ -12,6 +27,7 @@ interface SocialLink {
 }
 
 interface LiftoffCourse2021Props {
+  mode?: "light" | "dark";
   heading?: string;
   paragraphs?: string[];
   authorName?: string;
@@ -48,6 +64,7 @@ function SocialIcon({ type }: { type: "twitter" | "instagram" | "dribbble" }) {
 
 // Main Component
 export default function LiftoffCourse2021({
+  mode = "light",
   heading = "A quick note about the course author, Mike McAlister.",
   paragraphs = defaultParagraphs,
   authorPhoto = "/registry/liftoff-course-2021/author-photo.jpg",

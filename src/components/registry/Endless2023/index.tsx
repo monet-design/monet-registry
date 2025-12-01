@@ -1,5 +1,35 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#FFFFFF",
+    heading: "#000000",
+    headingSecondary: "#9b9b9b",
+    text: "#737373",
+  },
+  dark: {
+    background: "#1a1a1a",
+    heading: "#ffffff",
+    headingSecondary: "#6b6b6b",
+    text: "#b4b4b4",
+  },
+} as const;
+
+const IMAGES = {
+  profile: {
+    path: "/registry/endless-2023/profile.jpg",
+    alt: "Daryl - Designer at Endless",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 
@@ -8,6 +38,7 @@ interface Paragraph {
 }
 
 interface Endless2023Props {
+  mode?: "light" | "dark";
   title?: string;
   titleHighlight?: string;
   subtitle?: string;
@@ -17,11 +48,12 @@ interface Endless2023Props {
 }
 
 export default function Endless2023({
+  mode = "light",
   title = "Who's behind Endless?",
   titleHighlight = "Who's behind Endless?",
   subtitle = "What makes us different to the other design agencies kicking about?",
-  profileImage = "/registry/endless-2023/profile.jpg",
-  profileImageAlt = "Daryl - Designer at Endless",
+  profileImage = IMAGES.profile.path,
+  profileImageAlt = IMAGES.profile.alt,
   paragraphs = [
     {
       text: "Hey, I'm Daryl, a designer living in Western Australia. I've been designing fun and creative experiences for startups and companies for the past 20 years or more.",
@@ -43,11 +75,12 @@ export default function Endless2023({
     },
   ],
 }: Endless2023Props) {
+  const colors = COLORS[mode];
   const titleParts = title.split(titleHighlight);
   const hasTitleHighlight = titleParts.length > 1 || title === titleHighlight;
 
   return (
-    <section className="w-full bg-white px-6 py-16 sm:px-8 lg:px-12 font-sans">
+    <section className="w-full px-6 py-16 sm:px-8 lg:px-12 font-sans" style={{ backgroundColor: colors.background }}>
       <div className="mx-auto max-w-[440px]">
         {/* Header Section with Title and Profile Image */}
         <motion.div
@@ -71,9 +104,9 @@ export default function Endless2023({
           <h1 className="text-[15px] leading-[1.5]">
             {hasTitleHighlight ? (
               <>
-                <span className="font-semibold text-black">{titleHighlight}</span>
+                <span className="font-semibold" style={{ color: colors.heading }}>{titleHighlight}</span>
                 {titleParts[1] && (
-                  <span className="font-normal text-[#9b9b9b]">
+                  <span className="font-normal" style={{ color: colors.headingSecondary }}>
                     {titleParts[1]}
                   </span>
                 )}
@@ -81,11 +114,11 @@ export default function Endless2023({
             ) : (
               <>
                 {titleParts[0]}
-                <span className="font-semibold text-black">{titleHighlight}</span>
+                <span className="font-semibold" style={{ color: colors.heading }}>{titleHighlight}</span>
               </>
             )}
             {" "}
-            <span className="font-normal text-[#9b9b9b]">{subtitle}</span>
+            <span className="font-normal" style={{ color: colors.headingSecondary }}>{subtitle}</span>
           </h1>
         </motion.div>
 
@@ -97,7 +130,8 @@ export default function Endless2023({
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.2 + index * 0.08 }}
-              className="text-[13px] leading-[1.7] text-[#737373]"
+              className="text-[13px] leading-[1.7]"
+              style={{ color: colors.text }}
             >
               {paragraph.text}
             </motion.p>

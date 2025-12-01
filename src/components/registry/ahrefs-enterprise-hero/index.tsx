@@ -1,9 +1,36 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ */
+const COLORS = {
+  light: {
+    primary: "#044BD9",        // Ahrefs 블루
+    primaryHover: "#0340B8",
+    accent: "#F7941D",         // 오렌지 버튼
+    accentHover: "#e8850f",
+  },
+  dark: {
+    primary: "#1a5adb",
+    primaryHover: "#1e4ebd",
+    accent: "#ff9d2e",
+    accentHover: "#f89520",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 
 interface AhrefsEnterpriseHeroProps {
+  mode?: "light" | "dark";
   title?: string;
   description?: string;
   ctaText?: string;
@@ -65,6 +92,7 @@ const defaultLogos = [
 ];
 
 export default function AhrefsEnterpriseHero({
+  mode = "light",
   title = "With Ahrefs Enterprise,\nyour team comes together\nto grow your web\npresence.",
   description = "From junior content marketer to technical SEO advisor, each team member gets the data and tools they need to transform insights into action.",
   ctaText = "Book a call",
@@ -73,8 +101,10 @@ export default function AhrefsEnterpriseHero({
   logos = defaultLogos,
   teamIllustrationSrc = "/registry/ahrefs-enterprise-hero/team-illustration.png",
 }: AhrefsEnterpriseHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative w-full bg-[#044BD9] overflow-hidden">
+    <section className="relative w-full overflow-hidden" style={{ backgroundColor: colors.primary }}>
       {/* Main content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 pt-16 pb-8">
         {/* Hero text */}
@@ -108,7 +138,10 @@ export default function AhrefsEnterpriseHero({
         >
           <a
             href={ctaHref}
-            className="inline-block bg-[#F7941D] hover:bg-[#e8850f] text-white font-semibold text-base px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            className="inline-block text-white font-semibold text-base px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            style={{ backgroundColor: colors.accent }}
+            onMouseOver={(e) => (e.currentTarget.style.backgroundColor = colors.accentHover)}
+            onMouseOut={(e) => (e.currentTarget.style.backgroundColor = colors.accent)}
           >
             {ctaText}
           </a>

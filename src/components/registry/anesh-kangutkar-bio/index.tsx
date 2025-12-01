@@ -1,5 +1,27 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ */
+const COLORS = {
+  light: {
+    background: "#0D0D0D",     // 다크 배경
+    accent: "#B3462E",         // 오렌지-레드 강조색
+  },
+  dark: {
+    background: "#000000",
+    accent: "#d4563a",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 import "./font.css";
@@ -10,6 +32,7 @@ interface StatItem {
 }
 
 interface AneshKangutkarBioProps {
+  mode?: "light" | "dark";
   label?: string;
   dateRange?: string;
   title?: string;
@@ -75,6 +98,7 @@ function CircularResumeButton({
 }
 
 export default function AneshKangutkarBio({
+  mode = "light",
   label = "MANDATORY",
   dateRange = "2022 - NOW",
   title = "ABOUT ME\nSECTION",
@@ -86,10 +110,11 @@ export default function AneshKangutkarBio({
     { value: "50", label: "PROJECTS" },
   ],
 }: AneshKangutkarBioProps) {
+  const colors = COLORS[mode];
   const titleLines = title.split("\n");
 
   return (
-    <section className="w-full bg-[#0D0D0D] px-6 py-16 font-satoshi sm:px-10 lg:px-16">
+    <section className="w-full px-6 py-16 font-satoshi sm:px-10 lg:px-16" style={{ backgroundColor: colors.background }}>
       <div className="mx-auto max-w-5xl">
         {/* Top Row: Label and Date */}
         <motion.div
@@ -111,7 +136,8 @@ export default function AneshKangutkarBio({
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="mb-10 text-5xl font-bold italic leading-[1.0] tracking-tight text-[#B3462E] sm:text-6xl lg:text-7xl"
+          className="mb-10 text-5xl font-bold italic leading-[1.0] tracking-tight sm:text-6xl lg:text-7xl"
+          style={{ color: colors.accent }}
         >
           {titleLines.map((line, index) => (
             <span key={index} className="block">
@@ -156,7 +182,7 @@ export default function AneshKangutkarBio({
         >
           {stats.map((stat, index) => (
             <div key={index} className="flex items-end gap-3">
-              <span className="text-7xl font-bold leading-none tracking-tight text-[#B3462E] sm:text-8xl lg:text-9xl">
+              <span className="text-7xl font-bold leading-none tracking-tight sm:text-8xl lg:text-9xl" style={{ color: colors.accent }}>
                 {stat.value}
               </span>
               <span className="mb-3 text-[10px] uppercase tracking-[0.15em] text-[#5a5a5a] sm:text-xs">

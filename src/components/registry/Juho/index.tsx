@@ -1,9 +1,25 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 
 interface JuhoProps {
+  mode?: "light" | "dark";
   sectionLabel?: string;
   name?: string;
   headline?: string;
@@ -13,6 +29,7 @@ interface JuhoProps {
 }
 
 export default function Juho({
+  mode = "light",
   sectionLabel = "ABOUT JUHO",
   name = "Juho-Taneli Henell",
   headline = "I'm Juho-Taneli Henell. I hope\nI pronounced that correctly.",

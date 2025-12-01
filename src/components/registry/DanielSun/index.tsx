@@ -1,5 +1,26 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#FFFFFF",
+    text: "#737373",
+  },
+  dark: {
+    background: "#1a1a1a",
+    text: "#b4b4b4",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 import { Heart } from "lucide-react";
@@ -13,6 +34,7 @@ interface PolaroidPhoto {
 }
 
 interface DanielSunProps {
+  mode?: "light" | "dark";
   photos?: PolaroidPhoto[];
   paragraphs?: string[];
 }
@@ -66,6 +88,7 @@ function PolaroidCard({
 }
 
 export default function DanielSun({
+  mode = "light",
   photos = [
     {
       src: "https://picsum.photos/seed/rome-obelisk/280/280",
@@ -85,10 +108,11 @@ export default function DanielSun({
     "I join forces with founders to create compelling stories and digital experiences. Ones that make their products shine, resonate with users, and attract more investors.",
   ],
 }: DanielSunProps) {
+  const colors = COLORS[mode];
   return (
     <section
-      className="w-full bg-white px-6 py-12 sm:px-8 lg:px-16 font-body"
-      style={{ fontFamily: "'Inter', sans-serif" }}
+      className="w-full px-6 py-12 sm:px-8 lg:px-16 font-body"
+      style={{ fontFamily: "'Inter', sans-serif", backgroundColor: colors.background }}
     >
       <div className="mx-auto max-w-3xl">
         <div className="flex flex-col md:flex-row gap-12 md:gap-16 items-start">
@@ -112,7 +136,8 @@ export default function DanielSun({
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 + index * 0.15 }}
-                className="text-[15px] leading-[1.7] text-gray-800 tracking-[-0.01em]"
+                className="text-[15px] leading-[1.7] tracking-[-0.01em]"
+                style={{ color: colors.text }}
               >
                 {paragraph}
               </motion.p>

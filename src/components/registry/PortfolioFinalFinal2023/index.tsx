@@ -1,10 +1,47 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#ffffff",
+    sectionTitle: "#9A9A9A",
+    text: "#333333",
+    link: "#E85A24",
+  },
+  dark: {
+    background: "#1a1a1a",
+    sectionTitle: "#B0B0B0",
+    text: "#e0e0e0",
+    link: "#FF7A4A",
+  },
+} as const;
+
+const IMAGES = {
+  profile: {
+    path: "https://picsum.photos/seed/fedorshkliarau/400/400",
+    alt: "Author profile photo",
+    prompt: `Professional portfolio author portrait photo, square format.
+Style: Clean, minimal, artistic professional aesthetic
+Composition: Portrait headshot or upper body shot, neutral background
+Treatment: Applied grayscale filter for artistic effect
+Mood: Professional, thoughtful, creative
+Technical: High quality, square 1:1 aspect ratio, will be displayed with grayscale filter`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 import "./font.css";
 
 interface PortfolioFinalFinal2023Props {
+  mode?: "light" | "dark";
   sectionTitle?: string;
   authorName?: string;
   profileImage?: string;
@@ -19,9 +56,10 @@ interface PortfolioFinalFinal2023Props {
 }
 
 export default function PortfolioFinalFinal2023({
+  mode = "light",
   sectionTitle = "About the author",
   authorName = "Fedor Shkliarau",
-  profileImage = "https://picsum.photos/seed/fedorshkliarau/400/400",
+  profileImage = IMAGES.profile.path,
   yearsOfExperience = 11,
   profession = "product designer",
   portfolioLinkText = "portfolio",
@@ -40,10 +78,12 @@ export default function PortfolioFinalFinal2023({
 
   const defaultParagraph3 = `He has worked with companies like ${companies.join(", ")}.`;
 
+  const colors = COLORS[mode];
+
   return (
     <section
-      className="w-full bg-white px-6 py-16 sm:px-8 lg:px-12"
-      style={{ fontFamily: "'Inter', sans-serif" }}
+      className="w-full px-6 py-16 sm:px-8 lg:px-12"
+      style={{ fontFamily: "'Inter', sans-serif", backgroundColor: colors.background }}
     >
       <div className="mx-auto max-w-3xl">
         <div className="flex flex-col gap-8 md:flex-row md:gap-12">
@@ -56,8 +96,12 @@ export default function PortfolioFinalFinal2023({
           >
             {/* Section Title */}
             <h2
-              className="text-[#9A9A9A] text-2xl md:text-[26px] tracking-[-0.01em]"
-              style={{ fontFamily: "'Instrument Serif', serif", fontStyle: "italic" }}
+              className="text-2xl md:text-[26px] tracking-[-0.01em]"
+              style={{
+                fontFamily: "'Instrument Serif', serif",
+                fontStyle: "italic",
+                color: colors.sectionTitle,
+              }}
             >
               {sectionTitle}
             </h2>
@@ -86,7 +130,8 @@ export default function PortfolioFinalFinal2023({
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.2 }}
-              className="text-[#333333] text-[15px] leading-[1.6] tracking-[-0.01em]"
+              className="text-[15px] leading-[1.6] tracking-[-0.01em]"
+              style={{ color: colors.text }}
             >
               {paragraph1 || defaultParagraph1}
             </motion.p>
@@ -96,14 +141,16 @@ export default function PortfolioFinalFinal2023({
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.3 }}
-              className="text-[#333333] text-[15px] leading-[1.6] tracking-[-0.01em]"
+              className="text-[15px] leading-[1.6] tracking-[-0.01em]"
+              style={{ color: colors.text }}
             >
               {paragraph2 || (
                 <>
                   {defaultParagraph2Parts.before}
                   <a
                     href={portfolioLinkHref}
-                    className="text-[#E85A24] hover:opacity-80 transition-opacity"
+                    className="hover:opacity-80 transition-opacity"
+                    style={{ color: colors.link }}
                   >
                     {portfolioLinkText}
                   </a>
@@ -117,7 +164,8 @@ export default function PortfolioFinalFinal2023({
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.4 }}
-              className="text-[#333333] text-[15px] leading-[1.6] tracking-[-0.01em]"
+              className="text-[15px] leading-[1.6] tracking-[-0.01em]"
+              style={{ color: colors.text }}
             >
               {paragraph3 || defaultParagraph3}
             </motion.p>

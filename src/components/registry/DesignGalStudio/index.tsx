@@ -1,10 +1,47 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#F5F1EB",
+    mainCard: "#FFDF2C",
+    limeCard: "#D7D93A",
+    yellowCard: "#FFDF2C",
+    decorativeGradient: "linear-gradient(180deg, #FFDF2C 0%, #FFDF2C 50%, #EFA4C9 50%, #EFA4C9 100%)",
+    text: "#1F2937",
+    textLight: "#4B5563",
+  },
+  dark: {
+    background: "#1a1a1a",
+    mainCard: "#FFD700",
+    limeCard: "#C8CA2D",
+    yellowCard: "#FFD700",
+    decorativeGradient: "linear-gradient(180deg, #FFD700 0%, #FFD700 50%, #D17FA9 50%, #D17FA9 100%)",
+    text: "#ffffff",
+    textLight: "#b4b4b4",
+  },
+} as const;
+
+const IMAGES = {
+  profile: {
+    path: "/features/biography/design-gal-studio/profile.png",
+    alt: "Christine Maggi - Design Gal",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 import "./font.css";
 
 interface DesignGalStudioProps {
+  mode?: "light" | "dark";
   name?: string;
   alias?: string;
   greeting?: string;
@@ -52,6 +89,7 @@ function DecorativeScribble({ className = "" }: { className?: string }) {
 }
 
 export default function DesignGalStudio({
+  mode = "light",
   name = "Christine Maggi",
   alias = "Design Gal",
   greeting = "Nice to meet you!",
@@ -59,13 +97,14 @@ export default function DesignGalStudio({
   featureCard1 = defaultFeatureCard1,
   featureCard2 = defaultFeatureCard2,
   yearsOfExperience = 15,
-  profileImage = "/features/biography/design-gal-studio/profile.png",
+  profileImage = IMAGES.profile.path,
 }: DesignGalStudioProps) {
+  const colors = COLORS[mode];
   return (
     <section
       className="w-full px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16"
       style={{
-        backgroundColor: "#F5F1EB",
+        backgroundColor: colors.background,
         fontFamily: "'DM Sans', sans-serif",
       }}
     >
@@ -100,7 +139,7 @@ export default function DesignGalStudio({
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="flex-1 rounded-2xl px-6 py-6 sm:px-7 sm:py-7 lg:rounded-3xl lg:px-8 lg:py-8"
-                style={{ backgroundColor: "#FFDF2C" }}
+                style={{ backgroundColor: colors.mainCard }}
               >
                 <h2
                   className="mb-2 text-2xl tracking-tight text-gray-900 sm:text-3xl lg:text-4xl"
@@ -137,10 +176,7 @@ export default function DesignGalStudio({
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4, delay: 0.2 }}
                 className="hidden h-auto w-20 shrink-0 overflow-hidden rounded-2xl sm:block lg:w-24 lg:rounded-3xl"
-                style={{
-                  background:
-                    "linear-gradient(180deg, #FFDF2C 0%, #FFDF2C 50%, #EFA4C9 50%, #EFA4C9 100%)",
-                }}
+                style={{ background: colors.decorativeGradient }}
               />
             </div>
 
@@ -152,7 +188,7 @@ export default function DesignGalStudio({
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="rounded-2xl px-5 py-5 sm:px-6 sm:py-6 lg:rounded-3xl"
-                style={{ backgroundColor: "#D7D93A" }}
+                style={{ backgroundColor: colors.limeCard }}
               >
                 <h3
                   className="mb-3 whitespace-pre-line text-lg leading-tight tracking-tight text-gray-900 sm:text-xl lg:text-2xl"
@@ -176,7 +212,7 @@ export default function DesignGalStudio({
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
                 className="rounded-2xl px-5 py-5 sm:px-6 sm:py-6 lg:rounded-3xl"
-                style={{ backgroundColor: "#FFDF2C" }}
+                style={{ backgroundColor: colors.yellowCard }}
               >
                 <h3
                   className="mb-3 whitespace-pre-line text-lg leading-tight tracking-tight text-gray-900 sm:text-xl lg:text-2xl"

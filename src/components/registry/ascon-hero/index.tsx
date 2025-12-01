@@ -1,5 +1,27 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ */
+const COLORS = {
+  light: {
+    primary: "#C2523A",        // 테라코타/오렌지-레드
+    primaryHover: "#a8442f",
+  },
+  dark: {
+    primary: "#d4634b",
+    primaryHover: "#c05540",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Link from "next/link";
 import Image from "next/image";
@@ -11,6 +33,7 @@ interface NavItem {
 }
 
 interface AsconHeroProps {
+  mode?: "light" | "dark";
   logo?: string;
   navItems?: NavItem[];
   languageOptions?: string[];
@@ -27,6 +50,7 @@ interface AsconHeroProps {
 }
 
 export default function AsconHero({
+  mode = "light",
   logo = "asconsystems",
   navItems = [
     { label: "Produkt", href: "/produkt" },
@@ -46,8 +70,10 @@ export default function AsconHero({
   onCtaClick,
   onLanguageChange,
 }: AsconHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative w-full min-h-screen overflow-hidden bg-[#C2523A]">
+    <section className="relative w-full min-h-screen overflow-hidden" style={{ backgroundColor: colors.primary }}>
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image

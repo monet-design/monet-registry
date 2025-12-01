@@ -1,5 +1,29 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ */
+const COLORS = {
+  light: {
+    background: "#0D0D0D",     // 다크 배경
+    accent: "#B0C81C",         // 라임 그린
+    accentHover: "#c4dc20",
+  },
+  dark: {
+    background: "#000000",
+    accent: "#d4ff33",
+    accentHover: "#e0ff5c",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState } from "react";
 import { motion } from "motion/react";
 
@@ -15,6 +39,7 @@ interface CursorUser {
 }
 
 interface AtomicDesignHeroProps {
+  mode?: "light" | "dark";
   logoIcon?: React.ReactNode;
   navItems?: NavItem[];
   notifyButtonText?: string;
@@ -265,6 +290,7 @@ const defaultCursorUsers: CursorUser[] = [
 ];
 
 export default function AtomicDesignHero({
+  mode = "light",
   logoIcon,
   navItems = defaultNavItems,
   notifyButtonText = "Notify me",
@@ -276,6 +302,7 @@ export default function AtomicDesignHero({
   onNotifyClick,
   onCtaSubmit,
 }: AtomicDesignHeroProps) {
+  const colors = COLORS[mode];
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -284,7 +311,7 @@ export default function AtomicDesignHero({
   };
 
   return (
-    <section className="relative min-h-[800px] w-full overflow-hidden bg-[#0D0D0D]">
+    <section className="relative min-h-[800px] w-full overflow-hidden" style={{ backgroundColor: colors.background }}>
       {/* Gradient glows */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute bottom-[20%] left-[10%] h-[400px] w-[400px] rounded-full bg-[#1a3a20]/30 blur-[120px]" />
@@ -376,7 +403,16 @@ export default function AtomicDesignHero({
           </div>
           <button
             type="submit"
-            className="rounded-full bg-[#B0C81C] px-6 py-2.5 text-sm font-medium text-black transition-all hover:bg-[#c4dc20] hover:shadow-lg hover:shadow-[#B0C81C]/20"
+            className="rounded-full px-6 py-2.5 text-sm font-medium text-black transition-all hover:shadow-lg"
+            style={{ backgroundColor: colors.accent, boxShadow: `0 0 20px ${colors.accent}20` }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.backgroundColor = colors.accentHover;
+              e.currentTarget.style.boxShadow = `0 0 20px ${colors.accentHover}40`;
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.backgroundColor = colors.accent;
+              e.currentTarget.style.boxShadow = `0 0 20px ${colors.accent}20`;
+            }}
           >
             {ctaButtonText}
           </button>
@@ -399,8 +435,8 @@ export default function AtomicDesignHero({
             >
               <CursorIcon color={user.color} />
               <span
-                className="ml-2 inline-block rounded-full px-3 py-1 text-xs font-medium text-black"
-                style={{ backgroundColor: user.color }}
+                className="ml-2 inline-block rounded-full px-3 py-1 text-xs font-medium"
+                style={{ backgroundColor: user.color, color: '#000' }}
               >
                 {user.name}
               </span>

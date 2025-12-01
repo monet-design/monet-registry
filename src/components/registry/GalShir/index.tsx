@@ -1,10 +1,26 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 import { MapPin } from "lucide-react";
 
 interface GalShirProps {
+  mode?: "light" | "dark";
   contactLabel?: string;
   email?: string;
   emailDescription?: string;
@@ -19,6 +35,7 @@ interface GalShirProps {
 }
 
 export default function GalShir({
+  mode = "light",
   contactLabel = "LET'S CHAT",
   email = "hi@gal.sh",
   emailDescription = "Drop me an email and I'll get back to you as soon as I can",

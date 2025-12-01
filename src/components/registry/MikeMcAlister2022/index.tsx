@@ -1,5 +1,52 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#131224",
+    cardBackground: "linear-gradient(to bottom right, rgba(26, 24, 48, 0.8), rgba(30, 26, 56, 0.7), rgba(34, 30, 58, 0.6))",
+    cardBorder: "rgba(42, 38, 64, 0.5)",
+    title: "#E8C4C4",
+    text: "#B8B6C0",
+    link: "#E8A4B8",
+    linkHover: "#F0B8C8",
+    glowPrimary: "rgba(147, 51, 234, 0.2)",
+    glowSecondary: "rgba(99, 102, 241, 0.15)",
+  },
+  dark: {
+    background: "#0a0a10",
+    cardBackground: "linear-gradient(to bottom right, rgba(16, 14, 32, 0.8), rgba(20, 16, 40, 0.7), rgba(24, 20, 42, 0.6))",
+    cardBorder: "rgba(32, 28, 54, 0.5)",
+    title: "#E8C4C4",
+    text: "#A8A6B0",
+    link: "#E8A4B8",
+    linkHover: "#F0B8C8",
+    glowPrimary: "rgba(147, 51, 234, 0.3)",
+    glowSecondary: "rgba(99, 102, 241, 0.2)",
+  },
+} as const;
+
+const IMAGES = {
+  profile: {
+    path: "https://picsum.photos/seed/mikemcalister2022/400/500",
+    alt: "Mike McAlister portrait photo",
+    prompt: `Professional portrait photo of a creative entrepreneur in their 30s-40s.
+Style: Warm, approachable, creative professional aesthetic
+Composition: Vertical portrait, slightly casual pose, natural lighting
+Background: Simple, slightly blurred, neutral tones
+Expression: Confident, friendly, approachable
+Mood: Professional yet personable, creative industry
+Technical: High quality, 4:5 aspect ratio, soft natural lighting`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 import React from "react";
@@ -11,6 +58,7 @@ interface LinkItem {
 }
 
 interface MikeMcAlister2022Props {
+  mode?: "light" | "dark";
   title?: string;
   name?: string;
   profileImage?: string;
@@ -23,16 +71,23 @@ interface MikeMcAlister2022Props {
 function AccentLink({
   href,
   children,
+  linkColor,
+  linkHoverColor,
 }: {
   href: string;
   children: React.ReactNode;
+  linkColor: string;
+  linkHoverColor: string;
 }) {
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-[#E8A4B8] hover:text-[#F0B8C8] transition-colors"
+      className="transition-colors"
+      style={{ color: linkColor }}
+      onMouseEnter={(e) => (e.currentTarget.style.color = linkHoverColor)}
+      onMouseLeave={(e) => (e.currentTarget.style.color = linkColor)}
     >
       {children}
     </a>
@@ -41,7 +96,9 @@ function AccentLink({
 
 function renderParagraphWithLinks(
   text: string,
-  links?: { placeholder: string; link: LinkItem }[]
+  links?: { placeholder: string; link: LinkItem }[],
+  linkColor?: string,
+  linkHoverColor?: string
 ): React.ReactNode {
   if (!links || links.length === 0) {
     return text;
@@ -61,7 +118,12 @@ function renderParagraphWithLinks(
         if (p) elements.push(p);
         if (idx < parts.length - 1) {
           elements.push(
-            <AccentLink key={`${link.text}-${idx}`} href={link.href}>
+            <AccentLink
+              key={`${link.text}-${idx}`}
+              href={link.href}
+              linkColor={linkColor || "#E8A4B8"}
+              linkHoverColor={linkHoverColor || "#F0B8C8"}
+            >
               {link.text}
             </AccentLink>
           );
@@ -75,9 +137,10 @@ function renderParagraphWithLinks(
 }
 
 export default function MikeMcAlister2022({
+  mode = "light",
   title = "Meet Mike",
   name = "Mike",
-  profileImage = "https://picsum.photos/seed/mikemcalister2022/400/500",
+  profileImage = IMAGES.profile.path,
   paragraphs = [
     {
       text: "For 15 years, I've been hard at work founding, growing, and selling delightful digital products that are used and loved by hundreds of thousands of creators across the web.",
@@ -116,16 +179,27 @@ export default function MikeMcAlister2022({
     },
   ],
 }: MikeMcAlister2022Props) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="w-full min-h-screen bg-[#131224] flex items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
+    <section
+      className="w-full min-h-screen flex items-center justify-center px-4 py-12 sm:px-6 lg:px-8"
+      style={{ backgroundColor: colors.background }}
+    >
       <div className="relative w-full max-w-4xl">
         {/* Background glow effect */}
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 -z-10"
         >
-          <div className="absolute top-1/4 left-1/4 h-96 w-96 rounded-full bg-purple-900/20 blur-[100px]" />
-          <div className="absolute bottom-1/4 right-1/4 h-80 w-80 rounded-full bg-indigo-900/15 blur-[80px]" />
+          <div
+            className="absolute top-1/4 left-1/4 h-96 w-96 rounded-full blur-[100px]"
+            style={{ backgroundColor: colors.glowPrimary }}
+          />
+          <div
+            className="absolute bottom-1/4 right-1/4 h-80 w-80 rounded-full blur-[80px]"
+            style={{ backgroundColor: colors.glowSecondary }}
+          />
         </div>
 
         {/* Main content card */}
@@ -133,7 +207,12 @@ export default function MikeMcAlister2022({
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="relative rounded-2xl border border-[#2A2640]/50 bg-gradient-to-br from-[#1A1830]/80 via-[#1E1A38]/70 to-[#221E3A]/60 p-8 sm:p-10 lg:p-12 backdrop-blur-sm"
+          className="relative rounded-2xl p-8 sm:p-10 lg:p-12 backdrop-blur-sm"
+          style={{
+            borderWidth: "1px",
+            borderColor: colors.cardBorder,
+            background: colors.cardBackground,
+          }}
         >
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
             {/* Left content - Text */}
@@ -143,8 +222,11 @@ export default function MikeMcAlister2022({
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="text-3xl sm:text-4xl text-[#E8C4C4] italic"
-                style={{ fontFamily: "'Instrument Serif', serif" }}
+                className="text-3xl sm:text-4xl italic"
+                style={{
+                  fontFamily: "'Instrument Serif', serif",
+                  color: colors.title,
+                }}
               >
                 {title}
               </motion.h1>
@@ -157,10 +239,13 @@ export default function MikeMcAlister2022({
                     initial={{ opacity: 0, y: 15 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.2 + index * 0.08 }}
-                    className="text-sm leading-relaxed text-[#B8B6C0]"
-                    style={{ fontFamily: "'Inter', sans-serif" }}
+                    className="text-sm leading-relaxed"
+                    style={{
+                      fontFamily: "'Inter', sans-serif",
+                      color: colors.text,
+                    }}
                   >
-                    {renderParagraphWithLinks(paragraph.text, paragraph.links)}
+                    {renderParagraphWithLinks(paragraph.text, paragraph.links, colors.link, colors.linkHover)}
                   </motion.p>
                 ))}
               </div>

@@ -1,5 +1,20 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import "./font.css";
 
@@ -15,6 +30,7 @@ interface Tweet {
 }
 
 interface GenevaTestimonialTweetsProps {
+  mode?: "light" | "dark";
   title?: React.ReactNode;
   subtitle?: string;
   tweets?: Tweet[];
@@ -346,6 +362,7 @@ function TweetCard({
 }
 
 export default function GenevaTestimonialTweets({
+  mode = "light",
   title,
   subtitle = "We know that's no small feat and we can't do it without you! Come join us on our journey.",
   tweets = defaultTweets,

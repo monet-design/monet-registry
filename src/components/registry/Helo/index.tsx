@@ -1,5 +1,20 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 
@@ -14,6 +29,7 @@ interface Tweet {
 }
 
 interface HeloTestimonialTweetsProps {
+  mode?: "light" | "dark";
   brandName?: string;
   tweets?: Tweet[];
 }
@@ -146,6 +162,7 @@ function TweetCard({
 }
 
 export default function HeloTestimonialTweets({
+  mode = "light",
   brandName = "HELO",
   tweets = defaultTweets,
 }: HeloTestimonialTweetsProps) {

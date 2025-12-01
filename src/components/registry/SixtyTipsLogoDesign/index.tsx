@@ -1,9 +1,36 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ */
+const COLORS = {
+  light: {
+    background: "#ECECEC",
+    titleText: "#5F5548",
+    bodyText: "#888888",
+    heartDots: "#C1C1C1",
+  },
+  dark: {
+    background: "#1a1a1a",
+    titleText: "#c4b5a3",
+    bodyText: "#a8a8a8",
+    heartDots: "#6a6a6a",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 
 interface SixtyTipsLogoDesignProps {
+  mode?: "light" | "dark";
   avatarSrc?: string;
   authorName?: string;
   tagline?: string;
@@ -11,7 +38,7 @@ interface SixtyTipsLogoDesignProps {
   additionalText?: string;
 }
 
-function DottedHeart({ className }: { className?: string }) {
+function DottedHeart({ className, color }: { className?: string; color: string }) {
   return (
     <svg
       viewBox="0 0 64 56"
@@ -20,7 +47,7 @@ function DottedHeart({ className }: { className?: string }) {
       aria-hidden="true"
     >
       {/* Create dotted heart pattern */}
-      <g fill="#C1C1C1">
+      <g fill={color}>
         {/* Top left curve dots */}
         <circle cx="16" cy="12" r="1.5" />
         <circle cx="12" cy="16" r="1.5" />
@@ -58,14 +85,17 @@ function DottedHeart({ className }: { className?: string }) {
 }
 
 export default function SixtyTipsLogoDesign({
+  mode = "light",
   avatarSrc = "https://picsum.photos/seed/galshir/200/200",
   authorName = "Gal Shir",
   tagline = "is a brand design specialist creating logos since 2010",
   description = "Slow-cooked over a year, this book is a culmination of everything I've learned about logo design through my 15-year career. It's a hands-on guide created to help you become a successful logo designer and make a living doing a fulfilling and meaningful work. In it, you'll find step-by-step instructions, clear explanations, and plenty of examples. Whether you're just starting out or looking to sharpen your craft, this book will inspire, motivate, and provide you with everything you need to take your logo design skills to the next level.",
   additionalText = "In this book, you'll find step-by-step instructions, clear explanations, and plenty of examples. Whether you're just starting out or looking to sharpen your craft, this book will inspire, motivate, and provide you with everything you need to take your logo design skills to the next level.",
 }: SixtyTipsLogoDesignProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="w-full bg-[#ECECEC] px-6 py-16 sm:px-8 lg:px-12">
+    <section className="w-full px-6 py-16 sm:px-8 lg:px-12" style={{ backgroundColor: colors.background }}>
       <div className="mx-auto max-w-2xl">
         <div className="flex flex-col items-center text-center">
           {/* Avatar */}
@@ -89,7 +119,8 @@ export default function SixtyTipsLogoDesign({
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="mb-6 text-lg font-medium tracking-tight text-[#5F5548] sm:text-xl"
+            className="mb-6 text-lg font-medium tracking-tight sm:text-xl"
+            style={{ color: colors.titleText }}
           >
             <span className="font-semibold">{authorName}</span> {tagline}
           </motion.h2>
@@ -99,7 +130,8 @@ export default function SixtyTipsLogoDesign({
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mb-4 text-xs leading-relaxed text-[#888888] sm:text-sm"
+            className="mb-4 text-xs leading-relaxed sm:text-sm"
+            style={{ color: colors.bodyText }}
           >
             {description}
           </motion.p>
@@ -109,7 +141,8 @@ export default function SixtyTipsLogoDesign({
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="mb-10 text-xs leading-relaxed text-[#888888] sm:text-sm"
+            className="mb-10 text-xs leading-relaxed sm:text-sm"
+            style={{ color: colors.bodyText }}
           >
             {additionalText}
           </motion.p>
@@ -120,7 +153,7 @@ export default function SixtyTipsLogoDesign({
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <DottedHeart className="h-12 w-14" />
+            <DottedHeart className="h-12 w-14" color={colors.heartDots} />
           </motion.div>
         </div>
       </div>

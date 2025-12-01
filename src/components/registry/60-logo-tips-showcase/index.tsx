@@ -1,5 +1,34 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#EBEBEB",
+    heading: "#000000",
+    description: "#4B5563",
+    arrowIcon: "#1F2937",
+    dotActive: "#1F2937",
+    dotInactive: "#9CA3AF",
+  },
+  dark: {
+    background: "#1a1a1a",
+    heading: "#ffffff",
+    description: "#a0a0a0",
+    arrowIcon: "#d1d5db",
+    dotActive: "#ffffff",
+    dotInactive: "#6b7280",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
@@ -14,10 +43,10 @@ interface ShowcaseItem {
 }
 
 interface LogoTipsShowcaseProps {
+  mode?: "light" | "dark";
   title?: string;
   description?: string;
   items?: ShowcaseItem[];
-  backgroundColor?: string;
 }
 
 // Simple icon components for the showcase items
@@ -87,11 +116,12 @@ const defaultItems: ShowcaseItem[] = [
 const iconComponents = [MinusIcon, TriangleIcon, ArrowKIcon, TriangleOutlineIcon, PentagonIcon];
 
 export default function LogoTipsShowcase({
+  mode = "light",
   title = "Make an impact",
   description = "Design logos that not only look great, but also hold real value for\nthe companies behind them.",
   items = defaultItems,
-  backgroundColor = "#EBEBEB",
 }: LogoTipsShowcaseProps) {
+  const colors = COLORS[mode];
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
@@ -158,7 +188,7 @@ export default function LogoTipsShowcase({
   return (
     <section
       className="w-full py-16 md:py-24 overflow-hidden"
-      style={{ backgroundColor }}
+      style={{ backgroundColor: colors.background }}
     >
       {/* Header */}
       <div className="max-w-4xl mx-auto px-6 text-center mb-12 md:mb-16">
@@ -167,8 +197,8 @@ export default function LogoTipsShowcase({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6"
-          style={{ fontFamily: "'Inter', sans-serif" }}
+          className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
+          style={{ fontFamily: "'Inter', sans-serif", color: colors.heading }}
         >
           {title}
         </motion.h2>
@@ -177,8 +207,8 @@ export default function LogoTipsShowcase({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-          className="text-lg md:text-xl text-gray-600 whitespace-pre-line"
-          style={{ fontFamily: "'Inter', sans-serif" }}
+          className="text-lg md:text-xl whitespace-pre-line"
+          style={{ fontFamily: "'Inter', sans-serif", color: colors.description }}
         >
           {description}
         </motion.p>
@@ -195,7 +225,7 @@ export default function LogoTipsShowcase({
           disabled={!canScrollLeft}
           style={{ pointerEvents: canScrollLeft ? "auto" : "none" }}
         >
-          <ChevronLeft className="w-6 h-6 text-gray-800" />
+          <ChevronLeft className="w-6 h-6" style={{ color: colors.arrowIcon }} />
         </motion.button>
 
         {/* Right Arrow Button */}
@@ -207,7 +237,7 @@ export default function LogoTipsShowcase({
           disabled={!canScrollRight}
           style={{ pointerEvents: canScrollRight ? "auto" : "none" }}
         >
-          <ChevronRight className="w-6 h-6 text-gray-800" />
+          <ChevronRight className="w-6 h-6" style={{ color: colors.arrowIcon }} />
         </motion.button>
 
         <motion.div
@@ -287,10 +317,12 @@ export default function LogoTipsShowcase({
               key={index}
               onClick={() => scrollToIndex(index)}
               className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                activeIndex === index
-                  ? "bg-gray-800 w-6"
-                  : "bg-gray-400 hover:bg-gray-600"
+                activeIndex === index ? "w-6" : ""
               }`}
+              style={{
+                backgroundColor:
+                  activeIndex === index ? colors.dotActive : colors.dotInactive,
+              }}
             />
           ))}
         </div>

@@ -1,5 +1,37 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#FFFFFF",
+    heading: "#1a1a1a",
+    text: "#666666",
+  },
+  dark: {
+    background: "#1a1a1a",
+    heading: "#ffffff",
+    text: "#b4b4b4",
+  },
+} as const;
+
+const IMAGES = {
+  signature: {
+    path: "/registry/derek-orr/signature.png",
+    alt: "Derek Orr Signature",
+  },
+  profile: {
+    path: "https://picsum.photos/seed/derek-orr/400/400",
+    alt: "Derek Orr Profile",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 import "./font.css";
@@ -15,6 +47,7 @@ interface ProfileLink {
 }
 
 interface DerekOrrProps {
+  mode?: "light" | "dark";
   headlineLines?: string[];
   bodyColumns?: BodyParagraph[][];
   signatureImage?: string;
@@ -73,9 +106,11 @@ const defaultProfileLinks: ProfileLink[] = [
 function BodyColumn({
   paragraphs,
   columnIndex,
+  textColor,
 }: {
   paragraphs: BodyParagraph[];
   columnIndex: number;
+  textColor: string;
 }) {
   return (
     <motion.div
@@ -87,7 +122,8 @@ function BodyColumn({
       {paragraphs.map((paragraph) => (
         <p
           key={paragraph.id}
-          className="text-[11px] leading-[1.6] text-[#666666] sm:text-xs"
+          className="text-[11px] leading-[1.6] sm:text-xs"
+          style={{ color: textColor }}
         >
           {paragraph.text}
         </p>
@@ -101,11 +137,13 @@ function ProfileSection({
   profileName,
   profileDescription,
   profileLinks,
+  headingColor,
 }: {
   profileImage: string;
   profileName: string;
   profileDescription: string;
   profileLinks: ProfileLink[];
+  headingColor: string;
 }) {
   return (
     <motion.div
@@ -128,26 +166,27 @@ function ProfileSection({
       {/* Profile Info */}
       <div className="flex flex-col gap-3">
         <div>
-          <h3 className="text-sm font-bold text-[#1a1a1a] sm:text-base">
+          <h3 className="text-sm font-bold sm:text-base" style={{ color: headingColor }}>
             {profileName}
           </h3>
-          <p className="mt-1 text-xs font-bold leading-relaxed text-[#1a1a1a] sm:text-sm">
+          <p className="mt-1 text-xs font-bold leading-relaxed sm:text-sm" style={{ color: headingColor }}>
             {profileDescription}
           </p>
         </div>
 
         {/* Links */}
-        <div className="flex items-center gap-1 text-xs text-[#1a1a1a]">
+        <div className="flex items-center gap-1 text-xs" style={{ color: headingColor }}>
           {profileLinks.map((link, index) => (
             <span key={link.label} className="flex items-center gap-1">
               <a
                 href={link.href}
-                className="underline decoration-[#1a1a1a] underline-offset-2 transition-colors hover:text-[#666666]"
+                className="underline underline-offset-2 transition-colors"
+                style={{ textDecorationColor: headingColor, color: headingColor }}
               >
                 {link.label}
               </a>
               {index < profileLinks.length - 1 && (
-                <span className="text-[#1a1a1a]">|</span>
+                <span style={{ color: headingColor }}>|</span>
               )}
             </span>
           ))}
@@ -158,23 +197,26 @@ function ProfileSection({
 }
 
 export default function DerekOrr({
+  mode = "light",
   headlineLines = defaultHeadlineLines,
   bodyColumns = defaultBodyColumns,
-  signatureImage = "/registry/derek-orr/signature.png",
-  profileImage = "https://picsum.photos/seed/derek-orr/400/400",
+  signatureImage = IMAGES.signature.path,
+  profileImage = IMAGES.profile.path,
   profileName = "Derek Orr",
   profileDescription = "Full-Time Dad (for now) / Career Break.\nDesigner, Builder, Painter, Coffee Snob,\nOverlander, Photographer, Musician...\nProudly Neurodivergent.",
   profileLinks = defaultProfileLinks,
 }: DerekOrrProps) {
+  const colors = COLORS[mode];
   return (
-    <section className="w-full bg-white px-6 py-12 sm:px-10 sm:py-16 lg:px-16 lg:py-20">
+    <section className="w-full px-6 py-12 sm:px-10 sm:py-16 lg:px-16 lg:py-20" style={{ backgroundColor: colors.background }}>
       <div className="mx-auto max-w-4xl">
         {/* Headline */}
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="headline-font text-2xl font-bold italic leading-[1.15] tracking-tight text-[#1a1a1a] sm:text-3xl md:text-4xl lg:text-[42px]"
+          className="headline-font text-2xl font-bold italic leading-[1.15] tracking-tight sm:text-3xl md:text-4xl lg:text-[42px]"
+          style={{ color: colors.heading }}
         >
           {headlineLines.map((line, index) => (
             <span key={index}>
@@ -191,6 +233,7 @@ export default function DerekOrr({
               key={index}
               paragraphs={column}
               columnIndex={index}
+              textColor={colors.text}
             />
           ))}
         </div>
@@ -219,6 +262,7 @@ export default function DerekOrr({
           profileName={profileName}
           profileDescription={profileDescription}
           profileLinks={profileLinks}
+          headingColor={colors.heading}
         />
       </div>
     </section>

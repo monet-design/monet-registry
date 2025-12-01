@@ -1,9 +1,38 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ */
+const COLORS = {
+  light: {
+    primary: "#034BDB",        // Ahrefs 블루
+    primaryHover: "#0340B8",
+    accent: "#F6A43A",         // 오렌지 버튼
+    accentHover: "#e89a30",
+    highlight: "#FFDC00",      // 노란색 강조
+  },
+  dark: {
+    primary: "#1a5adb",
+    primaryHover: "#1e4ebd",
+    accent: "#ff9d2e",
+    accentHover: "#f89520",
+    highlight: "#ffeb3b",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ChevronDown, ArrowRight } from "lucide-react";
 
 interface AhrefsHeroSectionProps {
+  mode?: "light" | "dark";
   headline?: {
     line1?: string;
     line2?: string;
@@ -133,6 +162,7 @@ const defaultNavItems = [
 ];
 
 export default function AhrefsHeroSection({
+  mode = "light",
   headline = {
     line1: "Everything you need",
     line2: "to rank higher",
@@ -155,8 +185,10 @@ export default function AhrefsHeroSection({
   logos = defaultLogos,
   navItems = defaultNavItems,
 }: AhrefsHeroSectionProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative w-full bg-[#034BDB] overflow-hidden">
+    <section className="relative w-full overflow-hidden" style={{ backgroundColor: colors.primary }}>
       {/* Google Font for Instrument Serif */}
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
@@ -234,7 +266,10 @@ export default function AhrefsHeroSection({
           {/* Primary CTA Button */}
           <a
             href={ctaButton.href}
-            className="bg-[#F6A43A] hover:bg-[#e89a30] text-white font-semibold text-lg px-8 py-4 rounded-full transition-all hover:scale-105 shadow-lg"
+            className="text-white font-semibold text-lg px-8 py-4 rounded-full transition-all hover:scale-105 shadow-lg"
+            style={{ backgroundColor: colors.accent }}
+            onMouseOver={(e) => (e.currentTarget.style.backgroundColor = colors.accentHover)}
+            onMouseOut={(e) => (e.currentTarget.style.backgroundColor = colors.accent)}
           >
             {ctaButton.text}
           </a>
@@ -251,7 +286,8 @@ export default function AhrefsHeroSection({
               </svg>
               <a
                 href={secondaryCta.href}
-                className="text-[#FFDC00] hover:underline font-medium"
+                className="hover:underline font-medium"
+                style={{ color: colors.highlight }}
               >
                 Ahrefs
               </a>
@@ -259,7 +295,8 @@ export default function AhrefsHeroSection({
             <br />
             <a
               href={secondaryCta.href}
-              className="text-[#FFDC00] hover:underline font-medium inline-flex items-center gap-1"
+              className="hover:underline font-medium inline-flex items-center gap-1"
+              style={{ color: colors.highlight }}
             >
               Webmaster Tools <span>account</span> <ArrowRight className="w-3 h-3" />
             </a>
@@ -275,7 +312,7 @@ export default function AhrefsHeroSection({
         >
           <HeartEmoji />
           <div className="text-center">
-            <span className="text-[#FFDC00] font-semibold">{stats.count}</span>
+            <span className="font-semibold" style={{ color: colors.highlight }}>{stats.count}</span>
             <span className="ml-1">{stats.description?.split(" ").slice(0, 2).join(" ")}</span>
             <br />
             <span>{stats.description?.split(" ").slice(2).join(" ")}</span>

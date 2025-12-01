@@ -1,9 +1,36 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ */
+const COLORS = {
+  light: {
+    background: "#f7f7f7",     // 라이트 그레이 배경
+    cta: "#1a1a1a",            // 다크 버튼
+    ctaHover: "#2a2a2a",
+    ctaIcon: "#d4f94e",        // 네온 그린
+  },
+  dark: {
+    background: "#0a0a0a",
+    cta: "#f5f5f5",
+    ctaHover: "#e5e5e5",
+    ctaIcon: "#b8e625",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Terminal } from "lucide-react";
 
 interface AntimetalEnterpriseHeroProps {
+  mode?: "light" | "dark";
   headline?: string;
   subheadline?: string;
   ctaText?: string;
@@ -61,13 +88,16 @@ function CircleDecoration({
 }
 
 export default function AntimetalEnterpriseHero({
+  mode = "light",
   headline = "Simplifying even the\nmost complex infrastructure",
   subheadline = "Why the largest and fastest growing companies choose Antimetal.",
   ctaText = "Book a demo",
   onCtaClick,
 }: AntimetalEnterpriseHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative w-full min-h-[500px] bg-[#f7f7f7] overflow-hidden">
+    <section className="relative w-full min-h-[500px] overflow-hidden" style={{ backgroundColor: colors.background }}>
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Dot pattern blocks */}
@@ -230,10 +260,13 @@ export default function AntimetalEnterpriseHero({
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           onClick={onCtaClick}
-          className="flex items-center gap-2 px-5 py-3 bg-[#1a1a1a] text-white rounded-lg shadow-lg hover:bg-[#2a2a2a] transition-colors"
+          className="flex items-center gap-2 px-5 py-3 text-white rounded-lg shadow-lg transition-colors"
+          style={{ backgroundColor: colors.cta }}
+          onMouseOver={(e) => (e.currentTarget.style.backgroundColor = colors.ctaHover)}
+          onMouseOut={(e) => (e.currentTarget.style.backgroundColor = colors.cta)}
         >
-          <span className="flex items-center justify-center w-6 h-6 bg-[#d4f94e] rounded">
-            <Terminal className="w-4 h-4 text-[#1a1a1a]" />
+          <span className="flex items-center justify-center w-6 h-6 rounded" style={{ backgroundColor: colors.ctaIcon }}>
+            <Terminal className="w-4 h-4" style={{ color: colors.cta }} />
           </span>
           <span className="text-sm font-medium">{ctaText}</span>
         </motion.button>

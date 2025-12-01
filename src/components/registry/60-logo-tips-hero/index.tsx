@@ -1,5 +1,39 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#EBEBEB",
+    accent: "#EF6C35",
+    heading: "#1a1a1a",
+    description: "#4a4a4a",
+    iconText: "#2f2f2f",
+    featureDescription: "#5a5a5a",
+  },
+  dark: {
+    background: "#1a1a1a",
+    accent: "#FF7A45",
+    heading: "#ffffff",
+    description: "#b4b4b4",
+    iconText: "#e0e0e0",
+    featureDescription: "#a0a0a0",
+  },
+} as const;
+
+const IMAGES = {
+  bookCover: {
+    path: "/beautiful-sections/60-logo-tips-hero/book-cover.png",
+    alt: "60 Tips for Logo Design Book Cover",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import React from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
@@ -22,6 +56,7 @@ interface FeatureItem {
 }
 
 interface LogoTipsHeroProps {
+  mode?: "light" | "dark";
   authorName?: string;
   bookNumber?: string;
   bookSubtitle?: string;
@@ -30,8 +65,6 @@ interface LogoTipsHeroProps {
   highlightedTitle?: string;
   description?: React.ReactNode;
   features?: FeatureItem[];
-  accentColor?: string;
-  backgroundColor?: string;
 }
 
 const defaultFeatures: FeatureItem[] = [
@@ -87,17 +120,17 @@ const defaultFeatures: FeatureItem[] = [
 ];
 
 export default function LogoTipsHero({
+  mode = "light",
   authorName = "GAL SHIR",
   bookNumber = "60",
   bookSubtitle = "Tips for Logo Design",
-  bookImageSrc = "/beautiful-sections/60-logo-tips-hero/book-cover.png",
+  bookImageSrc = IMAGES.bookCover.path,
   mainTitle = "Start creating logos that sell",
   highlightedTitle = "60 Tips for Logo Design",
   description,
   features = defaultFeatures,
-  accentColor = "#EF6C35",
-  backgroundColor = "#EBEBEB",
 }: LogoTipsHeroProps) {
+  const colors = COLORS[mode];
   const defaultDescription = (
     <>
       <strong>{highlightedTitle}</strong> is a practical guide to creating logos
@@ -112,7 +145,7 @@ export default function LogoTipsHero({
   return (
     <section
       className="w-full py-16 md:py-24 px-4"
-      style={{ backgroundColor, fontFamily: "'Inter', sans-serif" }}
+      style={{ backgroundColor: colors.background, fontFamily: "'Inter', sans-serif" }}
     >
       <div className="max-w-6xl mx-auto">
         {/* Book Image Section */}
@@ -138,7 +171,7 @@ export default function LogoTipsHero({
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.5, type: "spring" }}
               className="absolute -top-2 -right-4 md:-right-6 w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-white text-xs md:text-sm font-semibold shadow-lg"
-              style={{ backgroundColor: accentColor }}
+              style={{ backgroundColor: colors.accent }}
             >
               NEW
             </motion.div>
@@ -153,10 +186,10 @@ export default function LogoTipsHero({
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-center mb-12 md:mb-16"
         >
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1a1a1a] mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ color: colors.heading }}>
             {mainTitle}
           </h1>
-          <p className="text-base md:text-lg text-[#4a4a4a] leading-relaxed max-w-2xl mx-auto">
+          <p className="text-base md:text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: colors.description }}>
             {description || defaultDescription}
           </p>
         </motion.div>
@@ -173,17 +206,17 @@ export default function LogoTipsHero({
               className="flex flex-col items-center text-center"
             >
               {/* Icon */}
-              <div className="text-[#2f2f2f] mb-3">{feature.icon}</div>
+              <div className="mb-3" style={{ color: colors.iconText }}>{feature.icon}</div>
 
               {/* Title with optional bonus badge */}
               <div className="flex items-center gap-2 mb-2">
-                <h3 className="text-xs md:text-sm font-bold tracking-wider text-[#2f2f2f]">
+                <h3 className="text-xs md:text-sm font-bold tracking-wider" style={{ color: colors.iconText }}>
                   {feature.title}
                 </h3>
                 {feature.hasBonus && (
                   <span
                     className="text-[10px] font-bold text-white px-2 py-0.5 rounded"
-                    style={{ backgroundColor: accentColor }}
+                    style={{ backgroundColor: colors.accent }}
                   >
                     BONUS
                   </span>
@@ -191,7 +224,7 @@ export default function LogoTipsHero({
               </div>
 
               {/* Description */}
-              <p className="text-xs md:text-sm text-[#5a5a5a] leading-relaxed max-w-[200px]">
+              <p className="text-xs md:text-sm leading-relaxed max-w-[200px]" style={{ color: colors.featureDescription }}>
                 {feature.description}
               </p>
             </motion.div>

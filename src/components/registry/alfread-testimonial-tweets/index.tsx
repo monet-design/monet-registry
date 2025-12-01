@@ -1,5 +1,29 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ */
+const COLORS = {
+  light: {
+    background: "#F9F8F3",     // 크림색 배경
+    logoBackground: "#EBE5BA", // 로고 배경
+    accent: "#1DA1F2",         // 트위터 블루
+  },
+  dark: {
+    background: "#1a1a1a",
+    logoBackground: "#2a2a2a",
+    accent: "#1DA1F2",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 
 interface Tweet {
@@ -16,6 +40,7 @@ interface Tweet {
 }
 
 interface AlfreadTestimonialTweetsProps {
+  mode?: "light" | "dark";
   title?: string;
   subtitle?: string;
   tweets?: Tweet[];
@@ -142,9 +167,9 @@ function VerifiedBadge() {
   );
 }
 
-function AlfreadLogo() {
+function AlfreadLogo({ bgColor }: { bgColor: string }) {
   return (
-    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#EBE5BA]">
+    <div className="flex h-14 w-14 items-center justify-center rounded-2xl" style={{ backgroundColor: bgColor }}>
       <div className="relative flex items-center justify-center">
         <div className="flex gap-1.5">
           <div className="h-3.5 w-3.5 rounded-full bg-slate-900" />
@@ -258,13 +283,16 @@ function TweetCard({
 }
 
 export default function AlfreadTestimonialTweets({
+  mode = "light",
   title = "Here's what people",
   subtitle = "are saying",
   tweets = defaultTweets,
   logoIcon,
 }: AlfreadTestimonialTweetsProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative w-full overflow-hidden bg-[#F9F8F3] px-4 py-16 md:px-8 md:py-24">
+    <section className="relative w-full overflow-hidden px-4 py-16 md:px-8 md:py-24" style={{ backgroundColor: colors.background }}>
       {/* Logo in top left */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
@@ -272,7 +300,7 @@ export default function AlfreadTestimonialTweets({
         transition={{ duration: 0.5 }}
         className="absolute left-6 top-6 z-10 md:left-8 md:top-8"
       >
-        {logoIcon || <AlfreadLogo />}
+        {logoIcon || <AlfreadLogo bgColor={colors.logoBackground} />}
       </motion.div>
 
       {/* Central title */}

@@ -3,6 +3,17 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface TabContent {
   id: string;
   label: string;
@@ -11,6 +22,7 @@ interface TabContent {
 }
 
 interface FeatureTabsHeroProps {
+  mode?: "light" | "dark";
   tabs?: TabContent[];
   defaultActiveTab?: string;
 }
@@ -40,6 +52,7 @@ const defaultTabs: TabContent[] = [
 ];
 
 export default function FeatureTabsHero({
+  mode = "light",
   tabs = defaultTabs,
   defaultActiveTab,
 }: FeatureTabsHeroProps) {

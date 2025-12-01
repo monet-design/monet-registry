@@ -3,6 +3,17 @@
 import { motion } from "motion/react";
 import { ArrowRight, ChevronDown, Menu } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface NavItem {
   label: string;
   href: string;
@@ -10,6 +21,7 @@ interface NavItem {
 }
 
 interface DoconomyHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   ctaButtonText?: string;
@@ -22,6 +34,7 @@ interface DoconomyHeroProps {
 }
 
 export default function DoconomyHero({
+  mode = "light",
   logoText = "Doconomy",
   navItems = [
     { label: "SOLUTIONS", href: "#", hasDropdown: true },

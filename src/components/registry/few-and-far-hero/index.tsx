@@ -1,5 +1,20 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowRight, Menu } from "lucide-react";
 import "./font.css";
@@ -11,6 +26,7 @@ interface NavItem {
 }
 
 interface FewAndFarHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   headline?: {
     line1?: string;
@@ -180,6 +196,7 @@ const defaultJournalCard = {
 
 // Main Component
 export default function FewAndFarHero({
+  mode = "light",
   logoText = "Few and    Far",
   headline = defaultHeadline,
   description = defaultDescription,

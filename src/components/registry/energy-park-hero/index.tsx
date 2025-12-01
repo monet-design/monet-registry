@@ -4,6 +4,17 @@ import { motion } from "motion/react";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -11,6 +22,7 @@ interface NavItem {
 }
 
 interface EnergyParkHeroProps {
+  mode?: "light" | "dark";
   logo?: {
     icon?: React.ReactNode;
     text?: string;
@@ -44,6 +56,7 @@ function LogoIcon({ className = "w-6 h-6" }: { className?: string }) {
 
 // Main Component
 export default function EnergyParkHero({
+  mode = "light",
   logo = {
     icon: <LogoIcon className="w-7 h-7 text-white" />,
     text: "Energy\nPark.",

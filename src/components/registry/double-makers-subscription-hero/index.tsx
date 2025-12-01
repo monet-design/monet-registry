@@ -5,6 +5,17 @@ import { motion, useScroll, useTransform, MotionValue } from "motion/react";
 import "./font.css";
 import styles from "./styles.module.css";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -12,6 +23,7 @@ interface NavItem {
 }
 
 interface DoubleMakersSubscriptionHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   badgeText?: string;
   headline?: string;
@@ -267,6 +279,7 @@ const defaultNavItems: NavItem[] = [
 
 // Main Component
 export default function DoubleMakersSubscriptionHero({
+  mode = "light",
   logoText = "double makers",
   badgeText = "3-DAY FREE TRIAL",
   headline = "Your go-to design\npartner to help scale\nyour brand.",

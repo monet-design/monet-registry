@@ -4,6 +4,17 @@ import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { ArrowUp } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -11,6 +22,7 @@ interface NavItem {
 }
 
 interface DriftimeHeroProps {
+  mode?: "light" | "dark";
   brandName?: string;
   brandSuffix?: string;
   headline?: {
@@ -195,6 +207,7 @@ const defaultNavItems: NavItem[] = [
 
 // Main Component
 export default function DriftimeHero({
+  mode = "light",
   brandName = "Driftime",
   brandSuffix = "media",
   headline = {

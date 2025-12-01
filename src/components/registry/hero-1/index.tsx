@@ -1,5 +1,20 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Play } from "lucide-react";
 
@@ -10,6 +25,7 @@ interface NavItem {
 }
 
 interface LandingfolioHero1Props {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   customerLoginText?: string;
@@ -351,6 +367,7 @@ function DashboardPreview() {
 
 // Main Component
 export default function LandingfolioHero1({
+  mode = "light",
   logoText = "RAREBLOCKS",
   navItems = defaultNavItems,
   customerLoginText = "Customer Login",

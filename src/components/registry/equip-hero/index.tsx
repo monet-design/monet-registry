@@ -4,7 +4,19 @@ import { motion } from "motion/react";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface EquipHeroProps {
+  mode?: "light" | "dark";
   logo?: string;
   navLinks?: { label: string; href: string }[];
   loginButtonText?: string;
@@ -27,6 +39,7 @@ interface EquipHeroProps {
 }
 
 export default function EquipHero({
+  mode = "light",
   logo = "equip",
   navLinks = [
     { label: "Publications", href: "#" },

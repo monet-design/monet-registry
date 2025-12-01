@@ -1,5 +1,26 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ */
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+/**
+ * 이미지 에셋
+ */
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ChevronRight, Search, Star } from "lucide-react";
 
@@ -27,6 +48,7 @@ interface AvatarPosition {
 }
 
 interface GithubStartupsHeroProps {
+  mode?: "light" | "dark";
   eyebrow?: string;
   headline?: string;
   description?: string;
@@ -219,6 +241,7 @@ const avatarPositions: AvatarPosition[] = [
 
 // Main Component
 export default function GithubStartupsHero({
+  mode = "light",
   eyebrow = "GitHub for Startups",
   headline = "Build your startup\non GitHub",
   description = "GitHub for Startups helps your startup go from idea to IPO on the world's largest and most advanced developer platform. Eligible startups receive 20 seats of GitHub Enterprise free for 12 months.",

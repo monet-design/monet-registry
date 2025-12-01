@@ -5,8 +5,20 @@ import { motion } from "motion/react";
 import { ArrowDownRight } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface EightPixelProps {
+  mode?: "light" | "dark";
   headline?: string;
   subheadline?: string;
   ctaButtonText?: string;
@@ -36,6 +48,7 @@ function ArrowIcon({ className = "" }: { className?: string }) {
 
 // Main Component
 export default function EightPixel({
+  mode = "light",
   headline = "Ready to partner\nfor growth?",
   subheadline = "Get in touch to explore how we can build\na partnership that delivers lasting growth.",
   ctaButtonText = "BOOK A CALL",

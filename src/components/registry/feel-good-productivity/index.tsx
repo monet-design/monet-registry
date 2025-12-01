@@ -1,10 +1,26 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 import "./font.css";
 
 interface FeelGoodProductivityProps {
+  mode?: "light" | "dark";
   sectionLabel?: string;
   authorName?: string;
   authorTagline?: string;
@@ -48,6 +64,7 @@ function BookIcon({ color = "#A07257" }: { color?: string }) {
 }
 
 export default function FeelGoodProductivity({
+  mode = "light",
   sectionLabel = "About the Author",
   authorName = "Ali Abdaal",
   authorTagline = "Ali Abdaal is a doctor, entrepreneur, amateur magician, and\nthe world's most-followed productivity expert.",

@@ -4,6 +4,17 @@ import React from "react";
 import { motion } from "motion/react";
 import { BadgeCheck, Search, ChartLine, Users, X } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface ProfilePill {
   name: string;
@@ -309,11 +320,13 @@ const FeatureCard = ({ feature, index }: { feature: Feature; index: number }) =>
 
 // Main Component
 interface FeaturesX2Props {
+  mode?: "light" | "dark";
   sections?: FeatureSection[];
   className?: string;
 }
 
 export default function FeaturesX2({
+  mode = "light",
   sections = defaultSections,
   className = "",
 }: FeaturesX2Props) {

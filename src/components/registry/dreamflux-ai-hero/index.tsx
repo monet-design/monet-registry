@@ -4,8 +4,20 @@ import { motion } from "motion/react";
 import { Sparkles } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface DreamfluxAiHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: string[];
   headlineLine1?: string;
@@ -222,6 +234,7 @@ function ImageGrid() {
 
 // Main Component
 export default function DreamfluxAiHero({
+  mode = "light",
   logoText = "Dreamflux.ai",
   navItems = ["Home", "Features", "Pricing", "Gallery", "Community"],
   headlineLine1 = "Turn Your Ideas",

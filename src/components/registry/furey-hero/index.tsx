@@ -1,10 +1,32 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ */
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+/**
+ * 이미지 에셋
+ */
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 import { ArrowRight, Users, TrendingUp, Cpu } from "lucide-react";
 
 interface FureyHeroProps {
+  mode?: "light" | "dark";
   badge?: string;
   title?: string;
   description?: string;
@@ -84,6 +106,7 @@ function AvatarStack() {
 }
 
 export default function FureyHero({
+  mode = "light",
   title = "Dynamic solutions\nthat power high-growth\nstartups",
   description = "Accounting, finance, and payroll to help you move\nforward confidently.",
   inputPlaceholder = "Enter email",

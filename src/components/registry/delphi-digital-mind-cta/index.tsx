@@ -7,6 +7,17 @@ const fontStyle = `
   @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
 `;
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface Feature {
   number: string;
   title: string;
@@ -14,6 +25,7 @@ interface Feature {
 }
 
 interface DelphiDigitalMindCtaProps {
+  mode?: "light" | "dark";
   /** Main headline text */
   headline?: string;
   /** Subheadline/description text */
@@ -75,6 +87,7 @@ const defaultFeatures: Feature[] = [
 ];
 
 export default function DelphiDigitalMindCta({
+  mode = "light",
   headline = "Create your Digital Mind",
   subheadline = "Build the Digital Version of you to scale\nyour expertise & availability, infinitely.",
   buttonText = "Get Started",

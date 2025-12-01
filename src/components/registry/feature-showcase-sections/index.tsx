@@ -4,6 +4,17 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import { useState } from "react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface FeatureItem {
   title: string;
   description: string;
@@ -175,6 +186,7 @@ function Section({ section, index }: SectionProps) {
 }
 
 interface FeatureShowcaseSectionsProps {
+  mode?: "light" | "dark";
   sections?: FeatureSection[];
 }
 
@@ -246,6 +258,7 @@ const defaultSections: FeatureSection[] = [
 ];
 
 export default function FeatureShowcaseSections({
+  mode = "light",
   sections = defaultSections,
 }: FeatureShowcaseSectionsProps) {
   return (

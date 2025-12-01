@@ -1,5 +1,20 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 import { Sparkles, Leaf, Gift, ShoppingBag } from "lucide-react";
@@ -11,6 +26,7 @@ interface ServiceCard {
 }
 
 interface HawthorneSkinHeroProps {
+  mode?: "light" | "dark";
   hashtag?: string;
   headline?: string;
   description?: string;
@@ -48,6 +64,7 @@ const defaultServiceCards: ServiceCard[] = [
 ];
 
 export default function HawthorneSkinHero({
+  mode = "light",
   hashtag = "#RECONNECTWITHYOURINNERBEAUTY",
   headline = "Holistic skin &\nbeauty lab in\nBrisbane",
   description = "Discover Brisbane's ultimate skin & beauty experience with a range of personalised treatments and facials designed to reveal your most confident, radiant self.",

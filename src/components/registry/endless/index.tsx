@@ -3,7 +3,19 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface EndlessProps {
+  mode?: "light" | "dark";
   title?: string;
   description?: string;
   profileImage?: string;
@@ -14,6 +26,7 @@ interface EndlessProps {
 }
 
 export default function Endless({
+  mode = "light",
   title = "Who is Endless",
   description = "Endless is currently mostly run alone by Daryl Ginn, a designer with 20 years experience living in Perth, Australia. I like to keep things tight-knit, so you'll be working directly with me, this ensures I can give you the maximum quality possible.",
   profileImage = "/registry/endless/profile.jpg",

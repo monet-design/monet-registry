@@ -1,9 +1,25 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 
 interface HelloNetworkHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: Array<{ label: string; href: string }>;
   ctaButtonText?: string;
@@ -70,6 +86,7 @@ function GiftBox({ className }: { className?: string }) {
 }
 
 export default function HelloNetworkHero({
+  mode = "light",
   logoText = "Hello.",
   navItems = [
     { label: "Solutions", href: "#" },

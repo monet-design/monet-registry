@@ -4,12 +4,24 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface Paragraph {
   boldText: string;
   normalText: string;
 }
 
 interface EnsageProps {
+  mode?: "light" | "dark";
   sectionLabel?: string;
   headline?: string;
   paragraphs?: Paragraph[];
@@ -41,6 +53,7 @@ const defaultParagraphs: Paragraph[] = [
 ];
 
 export default function Ensage({
+  mode = "light",
   sectionLabel = "ABOUT ZLATKO",
   headline = "Old-schooler. Dinosaur.\nEighteen years in the\nmaking.",
   paragraphs = defaultParagraphs,

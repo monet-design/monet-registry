@@ -4,12 +4,24 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { ArrowRight, Bell } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface LogoItem {
   name: string;
   logo: React.ReactNode;
 }
 
 interface DesignBellHeroProps {
+  mode?: "light" | "dark";
   brandName?: string;
   launchDate?: string;
   headline?: string;
@@ -140,6 +152,7 @@ const defaultLogos: LogoItem[] = [
 ];
 
 export default function DesignBellHero({
+  mode = "light",
   brandName = "DesignBell",
   launchDate = "LAUNCHING SEPTEMBER 25",
   headline = "Unlock Your Brand's\nDesign Potential",

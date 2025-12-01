@@ -1,5 +1,20 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState } from "react";
 import { motion } from "motion/react";
 import { ChevronDown, Twitter, Linkedin } from "lucide-react";
@@ -12,6 +27,7 @@ interface SelectOption {
 }
 
 interface HederaDxProps {
+  mode?: "light" | "dark";
   sectionLabel?: string;
   headline?: string;
   companyName?: string;
@@ -158,6 +174,7 @@ const defaultHelpOptions: SelectOption[] = [
 
 // Main Component
 export default function HederaDx({
+  mode = "light",
   sectionLabel = "Contact us",
   headline = "Let's make liquid\nbiopsies accessible to\nmore patients, together",
   companyName = "Hedera Dx",

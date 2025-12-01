@@ -1,10 +1,26 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
 
 // Props interface
 interface FinAiCapabilitiesHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: Array<{ label: string; hasDropdown?: boolean }>;
   rightNavItems?: string[];
@@ -346,6 +362,7 @@ function SidebarNote({
 
 // Main Component
 export default function FinAiCapabilitiesHero({
+  mode = "light",
   logoText = "Intercom",
   navItems = [
     { label: "Home" },

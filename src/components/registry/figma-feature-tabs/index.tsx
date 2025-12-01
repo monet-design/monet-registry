@@ -1,5 +1,20 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Zap, Sparkles, Download, Image as ImageIcon } from "lucide-react";
@@ -12,6 +27,7 @@ interface Tab {
 }
 
 interface FigmaFeatureTabsProps {
+  mode?: "light" | "dark";
   title?: string;
   subtitle?: string;
   tabs?: Tab[];
@@ -222,6 +238,7 @@ const defaultTabs: Tab[] = [
 ];
 
 export default function FigmaFeatureTabs({
+  mode = "light",
   title = "Supercharge Figma",
   subtitle = "Build custom drag and drop automations that do\ntime-sensitive Figma tasks for you in one click.",
   tabs = defaultTabs,

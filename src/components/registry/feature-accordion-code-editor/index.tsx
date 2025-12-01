@@ -14,12 +14,24 @@ import {
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface AccordionItem {
   title: string;
   description: string;
 }
 
 interface FeatureAccordionCodeEditorProps {
+  mode?: "light" | "dark";
   headline?: string;
   highlightedWord?: string;
   subheadline?: string;
@@ -477,6 +489,7 @@ function RightPanelContent({ activeIndex }: { activeIndex: number }) {
 }
 
 export default function FeatureAccordionCodeEditor({
+  mode = "light",
   headline = "Do more with Echo.",
   highlightedWord = "more",
   subheadline = "Take a peek at how you can level-up your\ncoding habits with Echo.",

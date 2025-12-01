@@ -1,5 +1,20 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { X, Pencil, Users, Sun, Sparkles } from "lucide-react";
 
@@ -11,6 +26,7 @@ interface ComparisonItem {
 }
 
 interface GlowTeamComparisonProps {
+  mode?: "light" | "dark";
   headingBlack?: string;
   headingGray?: string;
   withTitle?: string;
@@ -198,6 +214,7 @@ function WithoutCard({
 
 // Main Component
 export default function GlowTeamComparison({
+  mode = "light",
   headingBlack = "When startups need outcomes,",
   headingGray = "they choose us",
   withTitle = "With Glow",

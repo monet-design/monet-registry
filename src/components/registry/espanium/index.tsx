@@ -4,6 +4,17 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface TeamMember {
   name: string;
@@ -11,6 +22,7 @@ interface TeamMember {
 }
 
 interface EspaniumProps {
+  mode?: "light" | "dark";
   heading?: string;
   highlightedText?: string;
   headingEnd?: string;
@@ -41,6 +53,7 @@ const defaultTeamMembers: TeamMember[] = [
 
 // Main Component
 export default function Espanium({
+  mode = "light",
   heading = "Start your smooth and faster way to get your ",
   highlightedText = "Spanish residence permit",
   headingEnd = " now",

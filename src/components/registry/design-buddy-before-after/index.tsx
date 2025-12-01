@@ -4,6 +4,17 @@ import { motion } from "motion/react";
 import { FileText, Receipt, DollarSign, Check } from "lucide-react";
 import { ReactNode } from "react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface ScoreCategory {
   label: string;
@@ -25,6 +36,7 @@ interface DesignBuddyFeedback {
 }
 
 interface DesignBuddyBeforeAfterProps {
+  mode?: "light" | "dark";
   beforeScore?: number;
   afterScore?: number;
   beforeFeedback?: DesignBuddyFeedback;
@@ -381,6 +393,7 @@ const defaultAfterFeedback: DesignBuddyFeedback = {
 
 // Main Component
 export default function DesignBuddyBeforeAfter({
+  mode = "light",
   beforeScore = 3.5,
   afterScore = 4.5,
   beforeFeedback = defaultBeforeFeedback,

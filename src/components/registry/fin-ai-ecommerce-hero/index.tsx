@@ -1,5 +1,20 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Search, MoreHorizontal, Minimize2, Paperclip, ArrowUp, ChevronDown } from "lucide-react";
 import "./font.css";
@@ -12,6 +27,7 @@ interface ChatMessage {
 }
 
 interface FinAiEcommerceHeroProps {
+  mode?: "light" | "dark";
   headline?: string;
   subheadline?: string;
   primaryCtaText?: string;
@@ -476,6 +492,7 @@ const defaultMessages: ChatMessage[] = [
 
 // Main Component
 export default function FinAiEcommerceHero({
+  mode = "light",
   headline = "The best-performing AI Agent for\necommerce support",
   subheadline = "Fin is the best-performing AI Agent for ecommerce—resolving customer issues, protecting your brand, and driving conversions. With deep integrations and on-brand automation, Fin helps you build lasting customer loyalty and scale your support without adding headcount.",
   primaryCtaText = "Start free trial",

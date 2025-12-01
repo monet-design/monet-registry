@@ -1,5 +1,20 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ChevronDown, Play } from "lucide-react";
 import "./font.css";
@@ -12,6 +27,7 @@ interface NavItem {
 }
 
 interface FinAiTasksHeroProps {
+  mode?: "light" | "dark";
   logoIcon?: React.ReactNode;
   headline?: {
     prefix?: string;
@@ -292,6 +308,7 @@ const defaultRightNavItems = [
 
 // Main Component
 export default function FinAiTasksHero({
+  mode = "light",
   logoIcon,
   headline = {
     prefix: "The",

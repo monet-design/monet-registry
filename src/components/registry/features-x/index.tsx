@@ -3,6 +3,17 @@
 import { motion } from "motion/react";
 import { Check, CircleDot, ArrowRight, Triangle } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // ============================================
 // Types
 // ============================================
@@ -37,6 +48,7 @@ interface FeatureCardProps {
 }
 
 interface FeaturesXProps {
+  mode?: "light" | "dark";
   heading?: string;
   features?: {
     title: string;
@@ -291,6 +303,7 @@ const defaultFeatures: FeaturesXProps["features"] = [
 // ============================================
 
 export default function FeaturesX({
+  mode = "light",
   heading = "성장을 위한 도구로 앞서 나가세요",
   features = defaultFeatures,
 }: FeaturesXProps) {

@@ -1,5 +1,20 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowUp } from "lucide-react";
 import Image from "next/image";
@@ -12,6 +27,7 @@ interface StatItem {
 }
 
 interface HelpScoutInboxHeroProps {
+  mode?: "light" | "dark";
   headline?: string;
   subheadline?: string;
   screenshotSrc?: string;
@@ -123,6 +139,7 @@ function ProductScreenshot({
 }
 
 export default function HelpScoutInboxHero({
+  mode = "light",
   headline = "The all-inclusive conversation\ndestination",
   subheadline = "Relax, everything you need to manage all of your conversations is available in Help Scout. You'll be basking in the glow of inbox zero in no time.",
   screenshotSrc = "/registry/help-scout-inbox-hero/inbox-screenshot.png",

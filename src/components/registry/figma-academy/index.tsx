@@ -1,10 +1,26 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Twitter } from "lucide-react";
 import Image from "next/image";
 
 interface FigmaAcademyProps {
+  mode?: "light" | "dark";
   profileImage?: string;
   name?: string;
   sectionTitle?: string;
@@ -14,6 +30,7 @@ interface FigmaAcademyProps {
 }
 
 export default function FigmaAcademy({
+  mode = "light",
   profileImage = "https://picsum.photos/seed/figma-creator/200/200",
   name = "Ridd",
   sectionTitle = "Meet the creator",

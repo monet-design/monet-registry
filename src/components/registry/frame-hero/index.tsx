@@ -1,5 +1,26 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ */
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+/**
+ * 이미지 에셋
+ */
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 
@@ -9,6 +30,7 @@ const instrumentSerifStyle = {
 };
 
 interface FrameHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   loginText?: string;
   ctaText?: string;
@@ -83,6 +105,7 @@ const defaultLogos = [
 const defaultFeatures = ["Tasks", "Wikis", "Whiteboards", "Goals", "Notes", "Focus"];
 
 export default function FrameHero({
+  mode = "light",
   logoText = "Frame",
   loginText = "Login",
   ctaText = "Get Started",

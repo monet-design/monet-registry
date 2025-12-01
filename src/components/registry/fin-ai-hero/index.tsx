@@ -1,5 +1,20 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import {
   ChevronLeft,
@@ -16,6 +31,7 @@ import "./font.css";
 
 // Types
 interface FinAiHeroProps {
+  mode?: "light" | "dark";
   headlinePart1?: string;
   headlinePart2?: string;
   description?: string;
@@ -485,6 +501,7 @@ function BackgroundDashboard() {
 
 // Main Component
 export default function FinAiHero({
+  mode = "light",
   headlinePart1 = "The best-performing AI\nAgent for",
   headlinePart2 = "Financial\nServices support",
   description = "Fin is the best-performing AI Agent for financial services\n—resolving complex queries like card issues and\ndisputes with unmatched accuracy. With a complete,\nconfigurable AI Agent System that gives you full control,\nyou can stay compliant and scale your support\nconfidently.",

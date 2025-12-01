@@ -1,10 +1,26 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 
 interface HelpScoutAiHeroProps {
+  mode?: "light" | "dark";
   title?: {
     line1?: string;
     line2?: string;
@@ -21,6 +37,7 @@ interface HelpScoutAiHeroProps {
 }
 
 export default function HelpScoutAiHero({
+  mode = "light",
   title = {
     line1: "Every vendor conversation",
     line2: "One unified platform",

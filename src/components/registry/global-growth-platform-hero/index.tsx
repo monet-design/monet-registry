@@ -1,5 +1,20 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
@@ -13,6 +28,7 @@ interface Avatar {
 }
 
 interface GlobalGrowthPlatformHeroProps {
+  mode?: "light" | "dark";
   logo?: React.ReactNode;
   brandName?: string;
   navItems?: { label: string; href: string; active?: boolean }[];
@@ -84,6 +100,7 @@ const DefaultLogo = ({ color = "#3F5751" }: { color?: string }) => (
 );
 
 export default function GlobalGrowthPlatformHero({
+  mode = "light",
   logo,
   brandName = "grove",
   navItems = [

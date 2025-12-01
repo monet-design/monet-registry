@@ -1,5 +1,26 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ */
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+/**
+ * 이미지 에셋
+ */
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Check, ArrowUp, ArrowDown, Shirt } from "lucide-react";
 import "./font.css";
@@ -11,6 +32,7 @@ interface NavItem {
 }
 
 interface FlagshipHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   headline?: string;
   subheadline?: string;
@@ -293,6 +315,7 @@ const defaultNavItems: NavItem[] = [
 
 // Main Component
 export default function FlagshipHero({
+  mode = "light",
   logoText = "Flagship",
   headline = "Make your retail stores\neven more profitable.",
   subheadline = "Uncover rich insights within your Visual Merchandising process.",

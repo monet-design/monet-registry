@@ -7,7 +7,19 @@ import { ChevronDown } from "lucide-react";
 // Font imports
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface DeeoContactFormProps {
+  mode?: "light" | "dark";
   tagline?: string;
   heading?: string;
   namePlaceholder?: string;
@@ -31,6 +43,7 @@ interface FormData {
 }
 
 export default function DeeoContactForm({
+  mode = "light",
   tagline = "GET IN TOUCH",
   heading = "We're easy to work with and love a friendly collab!",
   namePlaceholder = "Jane",

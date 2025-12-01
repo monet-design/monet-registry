@@ -1,5 +1,26 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ */
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+/**
+ * 이미지 에셋
+ */
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import {
   LayoutGrid,
@@ -26,6 +47,7 @@ interface TableRow {
 }
 
 interface FocalCreativityHeroProps {
+  mode?: "light" | "dark";
   headline?: {
     accent: string;
     main: string;
@@ -232,6 +254,7 @@ function FocalLogo() {
 
 // Main Component
 export default function FocalCreativityHero({
+  mode = "light",
   headline = {
     accent: "Supercharge",
     main: "your creative pipeline",

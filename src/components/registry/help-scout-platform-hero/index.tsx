@@ -1,10 +1,26 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Search, Mail, MessageCircle, ChevronDown, Star } from "lucide-react";
 import "./font.css";
 
 interface HelpScoutPlatformHeroProps {
+  mode?: "light" | "dark";
   headline?: string[];
   description?: string;
   logoText?: string;
@@ -210,6 +226,7 @@ function ProductUIPreview() {
 }
 
 export default function HelpScoutPlatformHero({
+  mode = "light",
   headline = ["SIMPLE", "POWERFUL", "PERSONAL"],
   description = "Stay on top of all your customer conversations with the powerful platform that feels just like an inbox.",
   logoText = "Help Scout",

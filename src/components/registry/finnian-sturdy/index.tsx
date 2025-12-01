@@ -1,11 +1,35 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ * - grayscale 텍스트는 Tailwind semantic color 사용 (text-neutral-900 등)
+ * - 여기에는 브랜드 고유 컬러만 정의
+ */
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+/**
+ * 이미지 에셋
+ */
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import React, { useState } from "react";
 import { motion } from "motion/react";
 import { ChevronDown, Copy, Check } from "lucide-react";
 import "./font.css";
 
 interface FinnianSturdyProps {
+  mode?: "light" | "dark";
   availabilityLabel?: string;
   heading?: string;
   headingAccent?: string;
@@ -87,6 +111,7 @@ const ASCII_ART = `
 `;
 
 export default function FinnianSturdy({
+  mode = "light",
   availabilityLabel = "NEXT AVAILABLE Q4 '25",
   heading = "Seen enough?",
   headingAccent = "Let's get cooking",

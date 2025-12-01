@@ -1,5 +1,20 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import {
   ChevronDown,
@@ -56,6 +71,7 @@ interface NavItem {
 }
 
 interface FinAiZendeskHeroProps {
+  mode?: "light" | "dark";
   brandName?: string;
   navItems?: NavItem[];
   badges?: string[];
@@ -427,6 +443,7 @@ function ZendeskDashboard() {
 }
 
 export default function FinAiZendeskHero({
+  mode = "light",
   brandName = "Intercom",
   navItems = defaultNavItems,
   badges = defaultBadges,

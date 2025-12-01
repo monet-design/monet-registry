@@ -194,7 +194,6 @@
 | 186 | `pera-home-page-section-hero.jpg` | `pera-hero` |
 | 187 | `pipe-enterpreneurs-page-section-hero.jpg` | `pipe-entrepreneurs-hero` |
 | 188 | `pipe-home-page-section-hero.jpg` | `pipe-capital-hero` |
-| 189 | `pipe-partners-page-section-hero.jpg` | `hero-capital-platform` |
 | 190 | `plain-home-page-section-hero.webp` | `plain-home-hero` |
 | 191 | `plain-product-page-section-hero.webp` | `plain-product-page-section-hero` |
 | 192 | `planned-home-page-section-hero.jpg` | `planned-event-hero` |

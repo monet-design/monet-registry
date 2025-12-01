@@ -41,6 +41,7 @@ const CATEGORY_DESCRIPTIONS: Record<string, string> = {
   team: "Team member displays",
   "logo-cloud": "Client logos and partner displays",
   newsletter: "Email signup and subscription forms",
+  waitlist: "Waitlist signup forms and early access sections",
   other: "Miscellaneous components",
 };
 

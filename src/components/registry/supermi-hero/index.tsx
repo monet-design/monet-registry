@@ -12,8 +12,24 @@ import {
 } from "lucide-react";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface SupermiHeroProps {
+  mode?: "light" | "dark";
   logo?: {
     icon?: React.ReactNode;
     text?: string;
@@ -365,6 +381,7 @@ function DashboardPreview({ delay = 0 }: { delay?: number }) {
 
 // Main Component
 export default function SupermiHero({
+  mode = "light",
   logo = {
     icon: <SupermiLogo className="w-6 h-6" />,
     text: "Supermi",

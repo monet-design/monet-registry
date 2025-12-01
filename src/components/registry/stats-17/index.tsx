@@ -9,10 +9,13 @@ interface StatItem {
 }
 
 interface Stats17Props {
+  mode?: "light" | "dark";
   title?: string;
   description?: string;
   stats?: StatItem[];
 }
+
+const CUSTOMIZATION = {}
 
 const defaultStats: StatItem[] = [
   {
@@ -30,6 +33,7 @@ const defaultStats: StatItem[] = [
 ];
 
 export default function Stats17({
+  mode = "dark",
   title = "The Landingfolio Facts",
   description = "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
   stats = defaultStats,

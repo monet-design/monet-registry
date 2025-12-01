@@ -16,10 +16,15 @@ interface Testimonial {
 }
 
 interface WegemsTestimonialSliderProps {
+  mode?: "preview" | "live";
   headline?: string;
   subheadline?: string;
   testimonials?: Testimonial[];
 }
+
+// [CUSTOMIZATION]
+export const CUSTOMIZATION = {};
+// [/CUSTOMIZATION]
 
 // Default testimonials data
 const defaultTestimonials: Testimonial[] = [
@@ -123,6 +128,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
 
 // Main Component
 export default function WegemsTestimonialSlider({
+  mode = "live",
   headline = "What our clients are saying",
   subheadline = "Hear directly from the people who trust us with their digital presence. Our clients' success stories speak volumes.",
   testimonials = defaultTestimonials,

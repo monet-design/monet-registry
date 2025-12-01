@@ -11,8 +11,11 @@ interface StatItem {
 }
 
 interface Stats20Props {
+  mode?: "light" | "dark";
   stats?: StatItem[];
 }
+
+const CUSTOMIZATION = {}
 
 const defaultStats: StatItem[] = [
   {
@@ -41,7 +44,7 @@ const defaultStats: StatItem[] = [
   },
 ];
 
-export default function Stats20({ stats = defaultStats }: Stats20Props) {
+export default function Stats20({ mode = "dark", stats = defaultStats }: Stats20Props) {
   // Load Inter font
   useEffect(() => {
     const link = document.createElement("link");

@@ -3,6 +3,21 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface BeforeAfterImage {
   before: string;
@@ -11,6 +26,7 @@ interface BeforeAfterImage {
 }
 
 interface SupertoonsBeforeAfterProps {
+  mode?: "light" | "dark";
   images?: BeforeAfterImage;
   transformedCount?: number;
   avatarsSrc?: string;
@@ -112,6 +128,7 @@ function SliderControl() {
 
 // Main Component
 export default function SupertoonsBeforeAfter({
+  mode = "light",
   images = defaultImages,
   transformedCount = 67,
   avatarsSrc = "/registry/supertoons/avatars.png",

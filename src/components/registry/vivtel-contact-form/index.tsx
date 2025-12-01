@@ -18,6 +18,7 @@ interface SelectOption {
 }
 
 interface VivtelContactFormProps {
+  mode?: "preview" | "live";
   headline?: {
     line1: string;
     line2: string;
@@ -30,6 +31,10 @@ interface VivtelContactFormProps {
   submitButtonText?: string;
   onSubmit?: (formData: FormData) => void;
 }
+
+// [CUSTOMIZATION]
+export const CUSTOMIZATION = {};
+// [/CUSTOMIZATION]
 
 interface FormData {
   name: string;
@@ -129,6 +134,7 @@ const defaultHearAboutUsOptions: SelectOption[] = [
 
 // Main Component
 export default function VivtelContactForm({
+  mode = "live",
   headline = {
     line1: "Join Us in the",
     line2: "Journey of Love",

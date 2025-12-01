@@ -9,12 +9,16 @@ interface StatItem {
 }
 
 interface Stats15Props {
+  mode?: "light" | "dark";
   title?: string;
   topRowStats?: StatItem[];
   bottomRowStats?: StatItem[];
 }
 
+const CUSTOMIZATION = {}
+
 export default function Stats15({
+  mode = "dark",
   title = "The Landingfolio Facts",
   topRowStats = [
     { value: "1M+", label: "Tickets Delivered This Month" },

@@ -9,10 +9,13 @@ interface StatItem {
 }
 
 interface Stats5Props {
+  mode?: "light" | "dark";
   title?: string;
   description?: string;
   stats?: StatItem[];
 }
+
+const CUSTOMIZATION = {}
 
 // Default stats data
 const defaultStats: StatItem[] = [
@@ -64,6 +67,7 @@ function StatCard({
 
 // Main Component
 export default function Stats5({
+  mode = "dark",
   title = "Numbers are\ntelling our story",
   description = "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
   stats = defaultStats,

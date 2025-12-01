@@ -4,6 +4,21 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface FormData {
   firstName: string;
@@ -19,6 +34,7 @@ interface ServiceOption {
 }
 
 interface SummerSprintProps {
+  mode?: "light" | "dark";
   badgeTitle?: string;
   badgeSubtitle?: string;
   services?: ServiceOption[];
@@ -98,6 +114,7 @@ const defaultServices: ServiceOption[] = [
 
 // Main Component
 export default function SummerSprint({
+  mode = "light",
   badgeTitle = "GRAB YOUR\nSPOT",
   badgeSubtitle = "Head's up: once the month fills up,\nyou'll have to wait 'til next time!",
   services = defaultServices,

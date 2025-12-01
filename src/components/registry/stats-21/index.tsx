@@ -10,6 +10,7 @@ interface StatItem {
 }
 
 interface Stats21Props {
+  mode?: "light" | "dark";
   title?: React.ReactNode;
   description?: string;
   buttonText?: string;
@@ -17,7 +18,10 @@ interface Stats21Props {
   stats?: StatItem[];
 }
 
+const CUSTOMIZATION = {}
+
 export default function Stats21({
+  mode = "dark",
   title = (
     <>
       Some <em className="font-serif italic">statistics.</em>

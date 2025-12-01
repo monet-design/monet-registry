@@ -9,12 +9,16 @@ interface StatItem {
 }
 
 interface Stats19Props {
+  mode?: "light" | "dark";
   title?: string;
   titleHighlight?: string;
   stats?: StatItem[];
 }
 
+const CUSTOMIZATION = {}
+
 export default function Stats19({
+  mode = "dark",
   title = "Some",
   titleHighlight = "statistics.",
   stats = [

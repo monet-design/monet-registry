@@ -18,6 +18,7 @@ interface SocialLink {
 }
 
 interface WellDesignedContactFormProps {
+  mode?: "preview" | "live";
   contactTitle?: string;
   contactDescription?: string;
   formTitle?: string;
@@ -30,6 +31,10 @@ interface WellDesignedContactFormProps {
   submitButtonText?: string;
   onSubmit?: (data: { name: string; email: string; message: string }) => void;
 }
+
+// [CUSTOMIZATION]
+export const CUSTOMIZATION = {};
+// [/CUSTOMIZATION]
 
 // Default data
 const defaultContactInfo: ContactInfo = {
@@ -111,6 +116,7 @@ function UnderlineTextarea({
 
 // Main Component
 export default function WellDesignedContactForm({
+  mode = "live",
   contactTitle = "Contact Us",
   contactDescription = "Let us be your creative partners on this journey, helping you create an indelible mark on Greece's hospitality landscape.",
   formTitle = "Enquiry Form",

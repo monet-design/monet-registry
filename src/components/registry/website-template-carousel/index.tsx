@@ -12,10 +12,15 @@ interface Category {
 }
 
 interface WebsiteTemplateCarouselProps {
+  mode?: "preview" | "live";
   title?: React.ReactNode;
   subtitle?: string;
   categories?: Category[];
 }
+
+// [CUSTOMIZATION]
+export const CUSTOMIZATION = {};
+// [/CUSTOMIZATION]
 
 const defaultCategories: Category[] = [
   {
@@ -56,6 +61,7 @@ const defaultCategories: Category[] = [
 ];
 
 export default function WebsiteTemplateCarousel({
+  mode = "live",
   title = (
     <>
       Multipurpose website designs ready to shine

@@ -5,7 +5,23 @@ import Image from "next/image";
 
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface StephanieBruceProps {
+  mode?: "light" | "dark";
   landscapeImageSrc?: string;
   portraitImageSrc?: string;
   headline?: string;
@@ -17,6 +33,7 @@ interface StephanieBruceProps {
 }
 
 export default function StephanieBruce({
+  mode = "light",
   landscapeImageSrc = "/registry/stephanie-bruce/landscape.jpg",
   portraitImageSrc = "/registry/stephanie-bruce/portrait.jpg",
   headline = "I'M ALL ABOUT CREATING\nSOMETHING THAT FEELS UNIQUE,\nFROM WILD IDEAS\nTO A POLISHED WEBSITE.",

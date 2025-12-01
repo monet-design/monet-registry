@@ -5,10 +5,15 @@ import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
 
 interface YouBallinProps {
+  mode?: "preview" | "live";
   title?: string;
   buttonText?: string;
   onSubmit?: (data: FormData) => void;
 }
+
+// [CUSTOMIZATION]
+export const CUSTOMIZATION = {};
+// [/CUSTOMIZATION]
 
 interface FormData {
   firstName: string;
@@ -32,6 +37,7 @@ const countries = [
 ];
 
 export default function YouBallin({
+  mode = "live",
   title = "Jump in",
   buttonText = "Send Enquiry",
   onSubmit,

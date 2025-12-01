@@ -5,6 +5,7 @@ import Image from "next/image";
 import "./font.css";
 
 interface UiuxBookHeroProps {
+  mode?: "preview" | "live";
   headline?: React.ReactNode;
   description?: string;
   emailPlaceholder?: string;
@@ -13,7 +14,12 @@ interface UiuxBookHeroProps {
   onSubmit?: (email: string) => void;
 }
 
+// [CUSTOMIZATION]
+export const CUSTOMIZATION = {};
+// [/CUSTOMIZATION]
+
 export default function UiuxBookHero({
+  mode = "live",
   headline = (
     <>
       Fundamentals of Creating a Great

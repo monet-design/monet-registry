@@ -20,6 +20,7 @@ interface ContactInfo {
 }
 
 interface VirtuDigitalProps {
+  mode?: "preview" | "live";
   headline?: string;
   navLinks?: NavLink[];
   copyrightText?: string;
@@ -32,6 +33,10 @@ interface VirtuDigitalProps {
   submitText?: string;
   onSubmit?: (data: { name: string; email: string; phone: string }) => void;
 }
+
+// [CUSTOMIZATION]
+export const CUSTOMIZATION = {};
+// [/CUSTOMIZATION]
 
 // Default data
 const defaultNavLinks: NavLink[] = [
@@ -52,6 +57,7 @@ const defaultContactInfo: ContactInfo = {
 };
 
 export default function VirtuDigital({
+  mode = "live",
   headline = "Let\u2019s collaborate!",
   navLinks = defaultNavLinks,
   copyrightText = "\u00A9 2025 / VIRTUDIGITAL / All rights reserved",

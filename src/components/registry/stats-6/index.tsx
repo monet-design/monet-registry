@@ -8,9 +8,12 @@ interface StatItem {
 }
 
 interface Stats6Props {
+  mode?: "light" | "dark";
   title?: string;
   stats?: StatItem[];
 }
+
+const CUSTOMIZATION = {}
 
 function DiagonalLines() {
   return (
@@ -30,6 +33,7 @@ function DiagonalLines() {
 }
 
 export default function Stats6({
+  mode = "dark",
   title = "Join millions getting more resources",
   stats = [
     {

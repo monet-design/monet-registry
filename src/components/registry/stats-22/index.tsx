@@ -9,11 +9,14 @@ interface StatItem {
 }
 
 interface Stats22Props {
+  mode?: "light" | "dark";
   stats?: StatItem[];
   description?: string;
   buttonText?: string;
   onButtonClick?: () => void;
 }
+
+const CUSTOMIZATION = {}
 
 const defaultStats: StatItem[] = [
   { value: "1,800", label: "Students" },
@@ -26,6 +29,7 @@ const defaultDescription =
   "Ultrices at massa ut faucibus pretium placerat. Cursus consectetur mattis in diam pretium risus fringilla.";
 
 export default function Stats22({
+  mode = "dark",
   stats = defaultStats,
   description = defaultDescription,
   buttonText = "Learn More",

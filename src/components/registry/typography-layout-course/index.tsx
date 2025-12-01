@@ -3,12 +3,28 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface ClientLogo {
   name: string;
   element: React.ReactNode;
 }
 
 interface TypographyLayoutCourseProps {
+  mode?: "light" | "dark";
   sectionLabel?: string;
   sectionNumber?: string;
   heading?: string;
@@ -90,6 +106,7 @@ const defaultClosingParagraph =
   "Now I'm sharing that with you to help you build the same skills and creative mindset that will set your work apart.";
 
 export default function TypographyLayoutCourse({
+  mode = "light",
   sectionLabel = "About Me",
   sectionNumber = "(07)",
   heading = "LET ME\nINTRODUCE YOU",

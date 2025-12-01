@@ -8,10 +8,13 @@ interface StatItem {
 }
 
 interface Stats16Props {
+  mode?: "light" | "dark";
   stats?: StatItem[];
   accentColor?: string;
   underlineColor?: string;
 }
+
+const CUSTOMIZATION = {}
 
 const defaultStats: StatItem[] = [
   {
@@ -69,6 +72,7 @@ function StatCard({
 }
 
 export default function Stats16({
+  mode = "light",
   stats = defaultStats,
   accentColor = "#2C64D9",
   underlineColor = "#E5E7EB",

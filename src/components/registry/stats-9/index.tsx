@@ -2,12 +2,28 @@
 
 import { motion } from "motion/react";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface StatItem {
   value: string;
   label: string;
 }
 
 interface Stats9Props {
+  mode?: "light" | "dark";
   title?: string;
   description?: string;
   stats?: StatItem[];
@@ -21,6 +37,7 @@ const defaultStats: StatItem[] = [
 ];
 
 export default function Stats9({
+  mode = "light",
   title = "Our strength is\nexpressed in numbers",
   description = "Clarity gives you the blocks & components you need to create a truly professional website, landing page or admin panel for your SaaS and gives the blocks.",
   stats = defaultStats,

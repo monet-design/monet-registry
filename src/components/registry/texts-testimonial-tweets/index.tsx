@@ -3,6 +3,21 @@
 import { motion } from "motion/react";
 import { Info, MessageCircle, Repeat2, Upload } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface Tweet {
   id: string;
   author: {
@@ -32,6 +47,7 @@ interface Tweet {
 }
 
 interface TextsTestimonialTweetsProps {
+  mode?: "light" | "dark";
   tweets?: Tweet[];
 }
 
@@ -241,6 +257,7 @@ const defaultTweets: Tweet[] = [
 ];
 
 export default function TextsTestimonialTweets({
+  mode = "light",
   tweets = defaultTweets,
 }: TextsTestimonialTweetsProps) {
   return (

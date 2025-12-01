@@ -15,6 +15,7 @@ interface FounderState {
 }
 
 interface UpliftFoundersProps {
+  mode?: "preview" | "live";
   headline?: string;
   ctaText?: string;
   shakyFounders?: FounderState;
@@ -25,6 +26,10 @@ interface UpliftFoundersProps {
   labelColor?: string;
   descriptionColor?: string;
 }
+
+// [CUSTOMIZATION]
+export const CUSTOMIZATION = {};
+// [/CUSTOMIZATION]
 
 // Default data based on the image
 const defaultShakyFounders: FounderState = {
@@ -129,6 +134,7 @@ function TraitItem({
 
 // Main Component
 export default function UpliftFounders({
+  mode = "live",
   headline = "WE EMPOWER YOU\nTO BECOME THE\nFOUNDER YOUR\nCOMPANY NEEDS\nTO SCALE FASTER",
   ctaText = "GET AN UPLIFT",
   shakyFounders = defaultShakyFounders,

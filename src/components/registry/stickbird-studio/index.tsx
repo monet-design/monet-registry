@@ -4,6 +4,21 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface FormData {
   name: string;
@@ -16,6 +31,7 @@ interface FormData {
 }
 
 interface StickbirdStudioProps {
+  mode?: "light" | "dark";
   headline?: string;
   labels?: {
     name?: string;
@@ -100,6 +116,7 @@ function CustomSelect({
 
 // Main Component
 export default function StickbirdStudio({
+  mode = "light",
   headline = "What creative\nchallenge are we\nchatting about?",
   labels = {
     name: "Your Name",

@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import Image from "next/image";
 
 interface ViewportBeforeAfterProps {
+  mode?: "preview" | "live";
   label?: string;
   heading?: string;
   description?: string;
@@ -15,7 +16,12 @@ interface ViewportBeforeAfterProps {
   afterLabel?: string;
 }
 
+// [CUSTOMIZATION]
+export const CUSTOMIZATION = {};
+// [/CUSTOMIZATION]
+
 export default function ViewportBeforeAfter({
+  mode = "live",
   label = "THE ORGANIZED FUTURE",
   heading = "Save hours sifting through chaotic files",
   description = "With Viewport, you capture the highlights as you work — so at the end of your project you have a beautifully organized process book that's ready to be shared however you like.",

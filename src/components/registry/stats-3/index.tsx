@@ -11,10 +11,13 @@ interface StatItem {
 }
 
 interface Stats3Props {
+  mode?: "light" | "dark";
   title?: ReactNode;
   subtitle?: string;
   stats?: StatItem[];
 }
+
+const CUSTOMIZATION = {}
 
 const defaultStats: StatItem[] = [
   {
@@ -65,6 +68,7 @@ function StatCard({
 }
 
 export default function Stats3({
+  mode = "dark",
   title = (
     <>
       Make beautiful

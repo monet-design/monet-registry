@@ -10,8 +10,11 @@ interface StatItem {
 }
 
 interface Stats18Props {
+  mode?: "light" | "dark";
   stats?: StatItem[];
 }
+
+const CUSTOMIZATION = {}
 
 const defaultStats: StatItem[] = [
   {
@@ -73,7 +76,7 @@ function StatCard({
   );
 }
 
-export default function Stats18({ stats = defaultStats }: Stats18Props) {
+export default function Stats18({ mode = "dark", stats = defaultStats }: Stats18Props) {
   return (
     <section className="relative w-full overflow-hidden bg-[#0A0A0B] px-6 py-20 sm:px-8 sm:py-24 lg:px-12 lg:py-32">
       {/* Blue glow effect in the center */}

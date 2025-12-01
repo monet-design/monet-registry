@@ -11,10 +11,13 @@ interface StatItem {
 }
 
 interface Stats7Props {
+  mode?: "light" | "dark";
   title?: string;
   subtitle?: string;
   stats?: StatItem[];
 }
+
+const CUSTOMIZATION = {}
 
 // Default stats data
 const defaultStats: StatItem[] = [
@@ -75,6 +78,7 @@ function StatCard({
 
 // Main Component
 export default function Stats7({
+  mode = "light",
   title = "We create solutions that\nmake dev life easier",
   subtitle = "You can easily build anything with Rareblocks",
   stats = defaultStats,

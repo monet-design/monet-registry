@@ -4,6 +4,21 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Twitter/X Icon Component
 function TwitterIcon({ className = "" }: { className?: string }) {
   return (
@@ -28,6 +43,7 @@ interface Testimonial {
 }
 
 interface TenXDesignersTestimonialProps {
+  mode?: "light" | "dark";
   badgeText?: string;
   heading?: string;
   testimonials?: Testimonial[];
@@ -210,6 +226,7 @@ function EdgeTextFragment({
 
 // Main Component
 export default function TenXDesignersTestimonial({
+  mode = "light",
   badgeText = "Listen up",
   heading = "What designers say about us",
   testimonials = defaultTestimonials,

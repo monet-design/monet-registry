@@ -16,6 +16,7 @@ interface ServiceOption {
 }
 
 interface XiztAgencyProps {
+  mode?: "preview" | "live";
   headline?: {
     prefix: string;
     highlighted1: string;
@@ -31,6 +32,10 @@ interface XiztAgencyProps {
   submitButtonText?: string;
   onSubmit?: (formData: FormData) => void;
 }
+
+// [CUSTOMIZATION]
+export const CUSTOMIZATION = {};
+// [/CUSTOMIZATION]
 
 interface FormData {
   name: string;
@@ -170,6 +175,7 @@ function BudgetChip({
 
 // Main Component
 export default function XiztAgency({
+  mode = "live",
   headline = {
     prefix: "Hey! We are",
     highlighted1: "ready",

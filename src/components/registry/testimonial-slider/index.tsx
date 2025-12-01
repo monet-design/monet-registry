@@ -5,6 +5,21 @@ import { motion, AnimatePresence } from "motion/react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface Testimonial {
   id: number;
   quote: string;
@@ -20,6 +35,7 @@ interface Testimonial {
 }
 
 interface TestimonialSliderProps {
+  mode?: "light" | "dark";
   badgeText?: string;
   headlineRegular?: string;
   headlineItalic?: string;
@@ -150,6 +166,7 @@ function NavigationButton({
 }
 
 export default function TestimonialSlider({
+  mode = "light",
   badgeText = "TESTIMONIALS",
   headlineRegular = "Why people keep",
   headlineItalic = "coming back",

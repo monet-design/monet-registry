@@ -6,6 +6,21 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface FeatureSlide {
   id: number;
   title: string;
@@ -15,6 +30,7 @@ interface FeatureSlide {
 }
 
 interface TelmdFeatureCarouselProps {
+  mode?: "light" | "dark";
   sectionTitle?: string;
   sectionSubtitle?: string;
   slides?: FeatureSlide[];
@@ -113,6 +129,7 @@ function PageIndicator({
 }
 
 export default function TelmdFeatureCarousel({
+  mode = "light",
   sectionTitle = "Features",
   sectionSubtitle = "TelMD Supports You in Becoming the YOU You Want to Be!",
   slides = defaultSlides,

@@ -4,6 +4,21 @@ import { motion } from "motion/react";
 import { Share2, Menu, Rss } from "lucide-react";
 import { useMemo } from "react";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface FeatureCardProps {
   title: string;
   description: string;
@@ -287,6 +302,7 @@ function KnowledgeGraph({ width = 400, height = 350 }: KnowledgeGraphProps) {
 }
 
 interface ToolsForThoughtSectionProps {
+  mode?: "light" | "dark";
   heading?: string;
   subheading?: string;
   features?: {
@@ -328,6 +344,7 @@ const iconMap = {
 };
 
 export default function ToolsForThoughtSection({
+  mode = "light",
   heading = "Tools for thought",
   subheading = "Your brain was made for having ideas, not storing them. That's on us.",
   features = defaultFeatures,

@@ -11,6 +11,7 @@ interface AppIcon {
 }
 
 interface VectaraCtaProps {
+  mode?: "preview" | "live";
   headline?: string;
   description?: string;
   primaryButtonText?: string;
@@ -21,6 +22,10 @@ interface VectaraCtaProps {
   onSecondaryClick?: () => void;
   appIcons?: AppIcon[];
 }
+
+// [CUSTOMIZATION]
+export const CUSTOMIZATION = {};
+// [/CUSTOMIZATION]
 
 // Icon 1: Pen/cursor icon on dark background
 function PenIcon() {
@@ -106,6 +111,7 @@ const defaultAppIcons: AppIcon[] = [
 ];
 
 export default function VectaraCta({
+  mode = "live",
   headline = "Get started with Vectara",
   description = "Vectara is the shortest path between question and\nanswer, delivering true business value in the shortest time.",
   primaryButtonText = "Contact us",

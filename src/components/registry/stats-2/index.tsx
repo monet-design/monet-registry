@@ -8,11 +8,15 @@ interface StatItem {
 }
 
 interface Stats2Props {
+  mode?: "light" | "dark";
   title?: React.ReactNode;
   stats?: StatItem[];
 }
 
+const CUSTOMIZATION = {}
+
 export default function Stats2({
+  mode = "light",
   title = (
     <>
       <em className="not-italic font-normal" style={{ fontStyle: "italic" }}>

@@ -100,6 +100,7 @@ function FlowConnector({ delay = 0 }: { delay?: number }) {
 }
 
 interface UseCasesFlowProps {
+  mode?: "preview" | "live";
   title?: string;
   subtitle?: string;
   useCases?: {
@@ -114,7 +115,12 @@ interface UseCasesFlowProps {
   }[];
 }
 
+// [CUSTOMIZATION]
+export const CUSTOMIZATION = {};
+// [/CUSTOMIZATION]
+
 export default function UseCasesFlow({
+  mode = "live",
   title = "Use cases",
   subtitle = "A few simple examples of what is possible to build with WinWinKit.\nMore complex referral program can be built by combining simple rewards together.",
   useCases = [

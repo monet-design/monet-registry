@@ -1,5 +1,24 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    twitter: "#1D9BF0",  // Twitter/X blue
+  },
+  dark: {
+    twitter: "#1D9BF0",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 
 interface QuotedTweet {
@@ -28,6 +47,7 @@ interface Tweet {
 }
 
 interface IntroToIconsByMdsProps {
+  mode?: "light" | "dark";
   tweets?: Tweet[];
 }
 
@@ -470,8 +490,10 @@ function TweetCard({
 }
 
 export default function IntroToIconsByMds({
+  mode = "light",
   tweets = defaultTweets,
 }: IntroToIconsByMdsProps) {
+  const colors = COLORS[mode];
   const leftColumnTweets = tweets.filter((_, i) => i % 2 === 0);
   const rightColumnTweets = tweets.filter((_, i) => i % 2 === 1);
 

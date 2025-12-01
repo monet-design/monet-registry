@@ -1,9 +1,35 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#0B1E24",      // Dark teal background
+    button: "#384A4F",          // Dark gray button
+    accent: "#C0CE5D",          // Lime green accent
+    green: "#C7F4C2",           // Light green box
+  },
+  dark: {
+    background: "#0a1a1f",
+    button: "#2a3a3f",
+    accent: "#b3c150",
+    green: "#b0e0a8",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowRight, Github } from "lucide-react";
 
 interface HeroDataWarehouseDiagramProps {
+  mode?: "light" | "dark";
   bannerText?: string;
   bannerLinkText?: string;
   bannerLinkHref?: string;
@@ -26,6 +52,7 @@ interface HeroDataWarehouseDiagramProps {
 }
 
 export default function HeroDataWarehouseDiagram({
+  mode = "light",
   bannerText = "Check out The Missing Bridge in Enterprise Data Architecture on the Patch Blog",
   bannerLinkText = "patch-tech/dpm",
   bannerLinkHref = "#",
@@ -50,6 +77,7 @@ export default function HeroDataWarehouseDiagram({
     output: "data warehouse/lake",
   },
 }: HeroDataWarehouseDiagramProps) {
+  const colors = COLORS[mode];
   return (
     <section className="relative min-h-screen w-full bg-white">
       {/* Top Banner */}

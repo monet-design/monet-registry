@@ -1,5 +1,34 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    primary: "#0052FF",           // Blue primary button
+    primaryHover: "#0041CC",       // Blue hover
+    accent: "#25D366",            // WhatsApp green
+    accentRed: "#1A1F71",         // Visa dark blue
+    background: "#E8F4FC",        // Light blue globe bg
+    backgroundGradient: "#D1EAF7", // Globe gradient
+  },
+  dark: {
+    primary: "#3B7EFF",
+    primaryHover: "#2563EB",
+    accent: "#34D875",
+    accentRed: "#2A2F81",
+    background: "#1a2332",
+    backgroundGradient: "#2a3444",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ChevronDown, ArrowRight, X } from "lucide-react";
 
@@ -15,6 +44,7 @@ interface PartnerLogo {
 }
 
 interface CheckoutHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   headline?: string;
   description?: string;
@@ -366,6 +396,7 @@ const defaultPartnerLogos: PartnerLogo[] = [
 
 // Main Component
 export default function CheckoutHero({
+  mode = "light",
   headline = "ACCEPT\nPAYMENTS.\nACCESS SCALE.",
   description = "Accept payments online wherever your customers are – on your website, in your app, or with flexible payments links embedded in key interaction channels.",
   ctaButtonText = "Get in touch",
@@ -378,6 +409,7 @@ export default function CheckoutHero({
   onCtaClick,
   onSecondaryClick,
 }: CheckoutHeroProps) {
+  const colors = COLORS[mode];
   return (
     <section className="relative w-full bg-white min-h-screen">
       {/* Navigation */}

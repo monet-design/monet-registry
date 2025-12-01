@@ -1,5 +1,30 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    primary: "#4052B5",         // Blue primary
+    primaryHover: "#3545A0",    // Blue hover
+    background: "#1a2332",      // Dark bg for knowledge base
+    backgroundLight: "#2a3444", // Lighter dark
+  },
+  dark: {
+    primary: "#5062C5",
+    primaryHover: "#4555B0",
+    background: "#0a1a1f",
+    backgroundLight: "#1a2a2f",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import {
   ChevronDown,
@@ -25,6 +50,7 @@ interface NavItem {
 
 // Props for the component
 interface HelpScoutHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   headlinePrefix?: string;
@@ -366,6 +392,7 @@ function BackgroundText() {
 
 // Main Component
 export default function HelpScoutHero({
+  mode = "light",
   logoText = "Help Scout",
   navItems = defaultNavItems,
   headlinePrefix = "Every",
@@ -377,6 +404,7 @@ export default function HelpScoutHero({
   onLoginClick,
   onFreeTrialClick,
 }: HelpScoutHeroProps) {
+  const colors = COLORS[mode];
   return (
     <section className="relative w-full min-h-screen bg-white overflow-hidden">
       {/* Font Import */}

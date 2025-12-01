@@ -1,5 +1,24 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#2563eb",  // 블루 (헤드라인 액센트)
+  },
+  dark: {
+    accent: "#3B82F6",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import {
@@ -20,6 +39,7 @@ interface Feature {
 }
 
 interface EmailFeatureShowcaseProps {
+  mode?: "light" | "dark";
   headlinePrefix?: string;
   headlineAccent?: string;
   headlineSuffix?: string;
@@ -638,12 +658,14 @@ function AppPreview({ activeFeature }: { activeFeature: string }) {
 }
 
 export default function EmailFeatureShowcase({
+  mode = "light",
   headlinePrefix = "The ",
   headlineAccent = "swiss-army-knife",
   headlineSuffix = " of\nemail testing and debugging.",
   features = defaultFeatures,
   defaultActiveFeature = "debug-views",
 }: EmailFeatureShowcaseProps) {
+  const colors = COLORS[mode];
   const [activeFeature, setActiveFeature] = useState(defaultActiveFeature);
 
   return (
@@ -659,7 +681,7 @@ export default function EmailFeatureShowcase({
         >
           <h2 className="whitespace-pre-line text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             {headlinePrefix}
-            <span className="text-[#2563eb]">{headlineAccent}</span>
+            <span style={{ color: colors.accent }}>{headlineAccent}</span>
             {headlineSuffix}
           </h2>
         </motion.div>

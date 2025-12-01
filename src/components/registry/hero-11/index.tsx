@@ -1,5 +1,46 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    primary: "#222837",         // Dark button
+    primaryHover: "#1a1f2b",    // Dark hover
+    codeHighlight: "#3A3A3C",   // Dark code block
+    codeAccent: "#C1904E",      // Golden code accent
+  },
+  dark: {
+    primary: "#2a3040",
+    primaryHover: "#222735",
+    codeHighlight: "#2a2a2c",
+    codeAccent: "#d1a05e",
+  },
+} as const;
+
+const IMAGES = {
+  avatar1: {
+    path: "/registry/landingfolio-hero-11/avatar-1.png",
+    alt: "User avatar 1",
+    prompt: "Professional developer avatar photo for code review platform",
+  },
+  avatar2: {
+    path: "/registry/landingfolio-hero-11/avatar-2.png",
+    alt: "User avatar 2",
+    prompt: "Professional developer avatar photo for code review platform",
+  },
+  avatar3: {
+    path: "/registry/landingfolio-hero-11/avatar-3.png",
+    alt: "User avatar 3",
+    prompt: "Professional developer avatar photo for code review platform",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Download } from "lucide-react";
 import Image from "next/image";
@@ -21,6 +62,7 @@ interface Comment {
 }
 
 interface LandingfolioHero11Props {
+  mode?: "light" | "dark";
   logoText?: string;
   headlineLine1?: string;
   headlineLine2?: string;
@@ -84,9 +126,9 @@ const defaultComments: Comment[] = [
 ];
 
 const defaultAvatars = [
-  "/registry/landingfolio-hero-11/avatar-1.png",
-  "/registry/landingfolio-hero-11/avatar-2.png",
-  "/registry/landingfolio-hero-11/avatar-3.png",
+  IMAGES.avatar1.path,
+  IMAGES.avatar2.path,
+  IMAGES.avatar3.path,
 ];
 
 // Logo Component
@@ -395,6 +437,7 @@ function CommentsPanel({ comments }: { comments: Comment[] }) {
 
 // Main Component
 export default function LandingfolioHero11({
+  mode = "light",
   logoText = "RAREBLOCKS",
   headlineLine1 = "Get meaningful",
   headlineLine2 = "feedbacks on",
@@ -410,6 +453,7 @@ export default function LandingfolioHero11({
   onPrimaryClick = () => {},
   onSecondaryClick = () => {},
 }: LandingfolioHero11Props) {
+  const colors = COLORS[mode];
   return (
     <section className="relative min-h-screen w-full overflow-hidden bg-[#F9FAFC]">
       <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">

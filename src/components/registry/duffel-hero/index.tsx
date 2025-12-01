@@ -1,5 +1,32 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    primary: "#2E223E",         // Dark purple primary
+    primaryHover: "#3d2f52",    // Purple hover
+    accent: "#E6F0ED",          // Light mint badge bg
+    accentText: "#2E7D5B",      // Green badge text
+    banner: "#EBD5BF",          // Beige banner
+  },
+  dark: {
+    primary: "#4a3a5e",
+    primaryHover: "#5a4a6e",
+    accent: "#d0e0dd",
+    accentText: "#267d5b",
+    banner: "#d5c5af",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ChevronDown, ArrowRight, Check, Plane, MapPin } from "lucide-react";
 
@@ -16,6 +43,7 @@ interface FeatureBadge {
 }
 
 interface DuffelHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   bannerText?: string;
   bannerHighlight?: string;
@@ -391,6 +419,7 @@ const defaultFeatureBadges: FeatureBadge[] = [
 
 // Main Component
 export default function DuffelHero({
+  mode = "light",
   logoText = "Duffel",
   bannerHighlight = "WE LAUNCHED DUFFEL STAYS",
   bannerText = "Check out the fastest way to start selling accommodation",
@@ -404,6 +433,7 @@ export default function DuffelHero({
   onPrimaryCtaClick,
   onSecondaryCtaClick,
 }: DuffelHeroProps) {
+  const colors = COLORS[mode];
   return (
     <section className="relative min-h-screen w-full bg-white overflow-hidden">
       {/* Announcement Banner */}

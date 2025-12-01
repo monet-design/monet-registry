@@ -1,5 +1,41 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    // 배경 그라데이션/다크 컬러
+    bgDark: "#0c0e16",
+    bgDarker: "#0f1219",
+    bgCard: "#161b26",
+    // 액센트 컬러
+    primary: "#22c55e",      // 그린 (로고, 버튼)
+    primaryHover: "#16a34a", // 그린 호버
+    cyan: "#22d3ee",         // 차트 라인
+    // UI 보더
+    border: "#1e2433",
+    borderLight: "#2a3042",
+  },
+  dark: {
+    bgDark: "#0c0e16",
+    bgDarker: "#0f1219",
+    bgCard: "#161b26",
+    primary: "#22c55e",
+    primaryHover: "#16a34a",
+    cyan: "#22d3ee",
+    border: "#1e2433",
+    borderLight: "#2a3042",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState } from "react";
 import { motion } from "motion/react";
 import {
@@ -40,6 +76,7 @@ interface LogoItem {
 }
 
 interface UptimeMonitoringHeroProps {
+  mode?: "light" | "dark";
   // Top Navigation
   brandName?: string;
   topNavItems?: NavItem[];
@@ -497,6 +534,7 @@ function DashboardPreview() {
 
 // Main Component
 export default function UptimeMonitoringHero({
+  mode = "light",
   brandName = "Better Stack",
   topNavItems = defaultTopNavItems,
   bookDemoText = "Book a demo",
@@ -517,6 +555,7 @@ export default function UptimeMonitoringHero({
   onSubmit,
   onBookDemo,
 }: UptimeMonitoringHeroProps) {
+  const colors = COLORS[mode];
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -525,7 +564,7 @@ export default function UptimeMonitoringHero({
   };
 
   return (
-    <section className="relative min-h-screen w-full bg-[#0c0e16] font-inter overflow-hidden">
+    <section className="relative min-h-screen w-full font-inter overflow-hidden" style={{ backgroundColor: colors.bgDark }}>
       {/* Background gradient effects */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl" />
@@ -544,7 +583,7 @@ export default function UptimeMonitoringHero({
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
             <path
               d="M12 2L4 6V12C4 16.42 7.39 20.53 12 22C16.61 20.53 20 16.42 20 12V6L12 2Z"
-              fill="#22c55e"
+              fill={colors.primary}
             />
           </svg>
           <span className="text-sm font-medium text-white">{brandName}</span>
@@ -578,12 +617,13 @@ export default function UptimeMonitoringHero({
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.1 }}
-        className="relative flex items-center justify-between px-6 py-3 border-b border-[#1e2433]/50"
+        className="relative flex items-center justify-between px-6 py-3 border-b"
+        style={{ borderColor: `${colors.border}80` }}
       >
         {/* Product Logo */}
         <div className="flex items-center gap-8">
           <div className="flex items-center gap-2">
-            <Zap size={18} className="text-green-400" />
+            <Zap size={18} style={{ color: colors.primary }} />
             <span className="text-sm font-semibold text-white">{productName}</span>
           </div>
 
@@ -631,7 +671,8 @@ export default function UptimeMonitoringHero({
               initial={{ width: 0 }}
               animate={{ width: "0.25rem" }}
               transition={{ delay: 0.8, duration: 0.3 }}
-              className="absolute -right-1 top-0 h-full bg-green-500"
+              className="absolute -right-1 top-0 h-full"
+              style={{ backgroundColor: colors.primary }}
             />
           </span>
         </motion.h1>
@@ -659,11 +700,15 @@ export default function UptimeMonitoringHero({
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder={inputPlaceholder}
-            className="w-full sm:flex-1 px-4 py-3 bg-[#1a1f2e] border border-[#2a3042] rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-gray-500 transition-colors"
+            className="w-full sm:flex-1 px-4 py-3 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-gray-500 transition-colors"
+            style={{ backgroundColor: colors.bgDarker, borderColor: colors.borderLight }}
           />
           <button
             type="submit"
-            className="w-full sm:w-auto px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-medium rounded-lg transition-colors whitespace-nowrap"
+            className="w-full sm:w-auto px-6 py-3 text-white font-medium rounded-lg transition-colors whitespace-nowrap"
+            style={{ backgroundColor: colors.primary }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.primaryHover}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = colors.primary}
           >
             {ctaText}
           </button>

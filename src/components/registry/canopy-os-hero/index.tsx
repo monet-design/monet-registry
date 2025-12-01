@@ -1,5 +1,32 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#0a0a0a",      // Almost black background
+    backgroundGradient: "#111111", // Dark gray
+    backgroundLight: "#1a1a1a", // Lighter dark
+    accent: "#d4f64e",          // Lime green accent
+    accentHover: "#c5e745",     // Lime hover
+  },
+  dark: {
+    background: "#000000",
+    backgroundGradient: "#0a0a0a",
+    backgroundLight: "#141414",
+    accent: "#c5e745",
+    accentHover: "#b6d836",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ChevronRight, X, LayoutDashboard, Grid2X2, Box, Users, FlaskConical } from "lucide-react";
 
@@ -13,6 +40,7 @@ interface NavItem {
 }
 
 interface CanopyOsHeroProps {
+  mode?: "light" | "dark";
   logo?: {
     icon?: React.ReactNode;
     text?: string;
@@ -348,6 +376,7 @@ function DashboardMockup({ delay = 0 }: { delay?: number }) {
 
 // Main Component
 export default function CanopyOsHero({
+  mode = "light",
   logo = {
     icon: <CanopyIcon className="w-6 h-6 text-white" />,
     text: "Canopy",
@@ -373,6 +402,7 @@ export default function CanopyOsHero({
   ctaText = "Start now",
   onCtaClick,
 }: CanopyOsHeroProps) {
+  const colors = COLORS[mode];
   return (
     <section className="relative w-full min-h-screen overflow-hidden">
       {/* Background Gradient */}

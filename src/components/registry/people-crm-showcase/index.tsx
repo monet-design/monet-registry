@@ -1,5 +1,34 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    primary: "#3B82F6", // blue-600
+    accent: "#8B5CF6", // purple-600
+    gradient: "linear-gradient(90deg, #5A90E6 0%, #8B5CF6 50%, #A855F7 100%)",
+    trafficRed: "#FF5F57",
+    trafficYellow: "#FEBC2E",
+    trafficGreen: "#28C840",
+  },
+  dark: {
+    primary: "#3B82F6",
+    accent: "#8B5CF6",
+    gradient: "linear-gradient(90deg, #5A90E6 0%, #8B5CF6 50%, #A855F7 100%)",
+    trafficRed: "#FF5F57",
+    trafficYellow: "#FEBC2E",
+    trafficGreen: "#28C840",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import {
   Home,
@@ -60,8 +89,7 @@ function CollectionItem({
       }`}
     >
       <div
-        className="flex h-5 w-5 items-center justify-center rounded"
-        style={{ backgroundColor: iconBgColor }}
+        className={`flex h-5 w-5 items-center justify-center rounded ${iconBgColor}`}
       >
         {icon}
       </div>
@@ -120,14 +148,8 @@ function ContactRow({
   );
 }
 
-function TrafficLightButton({ color }: { color: "red" | "yellow" | "green" }) {
-  const colors = {
-    red: "bg-[#FF5F57]",
-    yellow: "bg-[#FEBC2E]",
-    green: "bg-[#28C840]",
-  };
-
-  return <div className={`h-2.5 w-2.5 rounded-full ${colors[color]}`} />;
+function TrafficLightButton({ color, colorValue }: { color: "red" | "yellow" | "green"; colorValue: string }) {
+  return <div className="h-2.5 w-2.5 rounded-full" style={{ backgroundColor: colorValue }} />;
 }
 
 interface TabProps {
@@ -154,6 +176,7 @@ function Tab({ label, isActive = false }: TabProps) {
 }
 
 interface PeopleCrmShowcaseProps {
+  mode?: "light" | "dark";
   title?: string;
   highlightedWord?: string;
   subtitle?: string;
@@ -310,6 +333,7 @@ const defaultContacts = [
 ];
 
 export default function PeopleCrmShowcase({
+  mode = "light",
   title = "Unlock The Potential of",
   highlightedWord = "People",
   subtitle = "The easiest way to get started organizing your people and their communication.",
@@ -317,6 +341,7 @@ export default function PeopleCrmShowcase({
   tabs = ["CRM", "Recruitment", "Fundraising", "Support"],
   activeTab = "CRM",
 }: PeopleCrmShowcaseProps) {
+  const colors = COLORS[mode];
   return (
     <div className="relative w-full h-[680px] overflow-hidden">
       {/* Background gradient */}
@@ -372,8 +397,7 @@ export default function PeopleCrmShowcase({
             <span
               className="bg-clip-text text-transparent"
               style={{
-                backgroundImage:
-                  "linear-gradient(90deg, #5A90E6 0%, #8B5CF6 50%, #A855F7 100%)",
+                backgroundImage: colors.gradient,
               }}
             >
               {highlightedWord}
@@ -418,9 +442,9 @@ export default function PeopleCrmShowcase({
             {/* Window header */}
             <div className="flex items-center justify-between px-4 py-2.5 border-b border-gray-100 bg-gray-50/80 rounded-t-2xl">
               <div className="flex items-center gap-1.5">
-                <TrafficLightButton color="red" />
-                <TrafficLightButton color="yellow" />
-                <TrafficLightButton color="green" />
+                <TrafficLightButton color="red" colorValue={colors.trafficRed} />
+                <TrafficLightButton color="yellow" colorValue={colors.trafficYellow} />
+                <TrafficLightButton color="green" colorValue={colors.trafficGreen} />
               </div>
 
               {/* Search bar */}
@@ -500,35 +524,35 @@ export default function PeopleCrmShowcase({
                     <CollectionItem
                       icon={<Users className="h-3 w-3 text-blue-600" />}
                       label="Leads"
-                      iconBgColor="#DBEAFE"
+                      iconBgColor="bg-blue-50"
                       isActive
                     />
                     <CollectionItem
                       icon={<FolderOpen className="h-3 w-3 text-gray-600" />}
                       label="Accounts"
-                      iconBgColor="#F3F4F6"
+                      iconBgColor="bg-gray-100"
                     />
                     <CollectionItem
                       icon={<Handshake className="h-3 w-3 text-green-600" />}
                       label="Deals"
-                      iconBgColor="#DCFCE7"
+                      iconBgColor="bg-green-50"
                     />
                     <CollectionItem
                       icon={
                         <HeartHandshake className="h-3 w-3 text-pink-600" />
                       }
                       label="Fundraising"
-                      iconBgColor="#FCE7F3"
+                      iconBgColor="bg-pink-50"
                     />
                     <CollectionItem
                       icon={<Users className="h-3 w-3 text-purple-600" />}
                       label="Recruitment"
-                      iconBgColor="#F3E8FF"
+                      iconBgColor="bg-purple-50"
                     />
                     <CollectionItem
                       icon={<Mail className="h-3 w-3 text-orange-600" />}
                       label="Support"
-                      iconBgColor="#FFEDD5"
+                      iconBgColor="bg-orange-50"
                     />
                   </div>
                 </div>

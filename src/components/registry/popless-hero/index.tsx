@@ -1,5 +1,35 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    // 브랜드 컬러는 없음 - 순수 흑백 디자인
+  },
+  dark: {
+    // 다크 모드 (필요시 구현)
+  },
+} as const;
+
+const IMAGES = {
+  tutorAvatar: {
+    path: "/registry/popless-hero/tutor-avatar.png",
+    alt: "Tutor profile photo",
+    prompt: `Professional tutor headshot photo for education marketplace platform.
+Style: Professional, friendly, approachable educator portrait
+Subject: Female tutor in professional attire, warm smile, educational setting
+Mood: Trustworthy, knowledgeable, friendly, professional
+Background: Soft neutral background with books or educational elements
+Quality: High resolution, professional photography, natural lighting`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ChevronDown, ChevronLeft, ChevronRight, Star, Shield, Clock } from "lucide-react";
 
@@ -10,6 +40,7 @@ interface NavItem {
 }
 
 interface PoplessHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   tagline?: string;
   headline?: string;
@@ -394,6 +425,7 @@ const defaultNavItems: NavItem[] = [
 
 // Main Component
 export default function PoplessHero({
+  mode = "light",
   logoText = "Popless",
   tagline = "Tutor on a trusted platform.",
   headline = "Powerful\ntutoring and\nclasses.",
@@ -403,10 +435,11 @@ export default function PoplessHero({
   loginText = "Login",
   getStartedText = "Get started",
   tutorName = "Jane Cooper",
-  tutorAvatar = "/registry/popless-hero/tutor-avatar.png",
+  tutorAvatar = IMAGES.tutorAvatar.path,
   totalEarnings = "$3,350",
   totalBookings = 62,
 }: PoplessHeroProps) {
+  const colors = COLORS[mode];
   return (
     <section className="relative min-h-screen w-full bg-white overflow-hidden">
       {/* Navigation */}

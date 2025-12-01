@@ -1,5 +1,30 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#0B1D2A",      // Dark blue background
+    backgroundGradient: "#162B3D", // Mid gradient
+    backgroundLight: "#1E3448", // Lighter gradient
+    accent: "#6F6EE5",          // Purple accent
+  },
+  dark: {
+    background: "#0a1824",
+    backgroundGradient: "#142535",
+    backgroundLight: "#1c2e42",
+    accent: "#7F7EF5",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Check, ChevronDown } from "lucide-react";
 
@@ -28,6 +53,7 @@ interface PartnerLogo {
 }
 
 interface RoutableAutomationHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   subNavLabel?: string;
@@ -326,6 +352,7 @@ const defaultSubNavItems: SubNavItem[] = [
 
 // Main Component
 export default function RoutableAutomationHero({
+  mode = "light",
   logoText = "Routable",
   navItems = defaultNavItems,
   subNavLabel = "AP Automation",
@@ -339,6 +366,7 @@ export default function RoutableAutomationHero({
   onLoginClick,
   partnerLogos = defaultPartnerLogos,
 }: RoutableAutomationHeroProps) {
+  const colors = COLORS[mode];
   return (
     <section className="relative w-full min-h-screen overflow-hidden bg-gradient-to-b from-[#0B1D2A] via-[#162B3D] to-[#1E3448]">
       {/* Background gradient overlay */}

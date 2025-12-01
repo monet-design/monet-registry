@@ -1,5 +1,71 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ * - grayscale은 Tailwind semantic color 사용 (bg-gray-900, text-gray-500 등)
+ * - 여기에는 브랜드 고유 컬러만 정의
+ */
+const COLORS = {
+  light: {
+    // 브랜드 Primary (그린)
+    accent: "#4CC57A",          // 주요 액센트 (버튼, 아이콘, 포커스)
+    accentHover: "#3DAF68",     // 액센트 호버
+    // 브랜드 Secondary (골드)
+    gold: "#C19710",            // 파운더 뱃지
+  },
+  dark: {
+    accent: "#4CC57A",
+    accentHover: "#3DAF68",
+    gold: "#C19710",
+  },
+} as const;
+
+/**
+ * 이미지 에셋
+ * - path: 이미지 경로
+ * - alt: 접근성용 대체 텍스트
+ * - prompt: AI 이미지 재생성용 상세 프롬프트
+ */
+const IMAGES = {
+  leftDecoration: {
+    path: "/registry/seedesign/3d-shapes-left.png",
+    alt: "3D decorative shapes",
+    prompt: `Abstract 3D decorative shapes floating composition.
+Style: Glossy 3D render, playful, modern, premium quality
+Layout: Vertical arrangement, shapes overlapping/interconnected
+Elements:
+- Pink/magenta wavy squiggle line (S-shape)
+- Gold metallic torus/donut ring
+- Teal/cyan glossy sphere (glass-like transparency)
+- Small emerald green crystal/gem at bottom
+Color palette: Hot pink, metallic gold, teal/cyan, emerald green on transparent background
+Mood: Creative, fun, premium design agency aesthetic
+Technical: Transparent PNG, soft shadows, high-gloss materials, 3D rendered`,
+  },
+  rightDecoration: {
+    path: "/registry/seedesign/pixel-decoration.png",
+    alt: "Pixel decoration",
+    prompt: `Abstract 3D pixel/voxel cube cluster.
+Style: Isometric 3D voxel art, clean, modern, tech-inspired
+Layout: Cloud-like cluster of floating cubes arranged organically
+Elements:
+- Multiple small 3D cubes in varying sizes
+- Mix of white, gray (light and dark), and green accent cubes
+- Cubes appear to be floating/scattered in space
+Color palette: White, light gray, charcoal/dark gray, soft green accent on transparent background
+Mood: Tech, modern, digital, creative
+Technical: Transparent PNG, soft shadows, clean isometric perspective`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
@@ -19,6 +85,7 @@ interface FounderInfo {
 }
 
 interface SeedesignProps {
+  mode?: "light" | "dark";
   headline?: {
     regular: string;
     accent: string;
@@ -94,6 +161,7 @@ function FeatureIcon({ type }: { type: "award" | "zap" | "layout" }) {
 }
 
 export default function Seedesign({
+  mode = "dark",
   headline = {
     regular: "The premium design partner that sets you up for",
     accent: "success.",
@@ -105,11 +173,12 @@ export default function Seedesign({
   budgetOptions = defaultBudgetOptions,
   submitButtonText = "Submit request",
   bookCallButtonText = "Book a free call",
-  leftDecorationImage = "/registry/seedesign/3d-shapes-left.png",
-  rightDecorationImage = "/registry/seedesign/pixel-decoration.png",
+  leftDecorationImage = IMAGES.leftDecoration.path,
+  rightDecorationImage = IMAGES.rightDecoration.path,
   onSubmit,
   onBookCall,
 }: SeedesignProps) {
+  const colors = COLORS[mode];
   const [formData, setFormData] = useState<FormData>({
     fullName: "",
     email: "",
@@ -150,7 +219,7 @@ export default function Seedesign({
 
   return (
     <section
-      className="relative w-full min-h-[600px] bg-[#0A0A0A] overflow-hidden py-12 md:py-16 lg:py-20"
+      className="relative w-full min-h-[600px] bg-gray-950 overflow-hidden py-12 md:py-16 lg:py-20"
       style={{ fontFamily: "'Satoshi Variable', 'Inter', sans-serif" }}
     >
       {/* Left 3D Decoration */}
@@ -162,7 +231,7 @@ export default function Seedesign({
       >
         <Image
           src={leftDecorationImage}
-          alt="3D decorative shapes"
+          alt={IMAGES.leftDecoration.alt}
           fill
           className="object-contain object-left"
         />
@@ -177,7 +246,7 @@ export default function Seedesign({
       >
         <Image
           src={rightDecorationImage}
-          alt="Pixel decoration"
+          alt={IMAGES.rightDecoration.alt}
           fill
           className="object-contain"
         />
@@ -204,8 +273,13 @@ export default function Seedesign({
                   </span>
                 ))}
                 <span className="inline-flex items-center">
-                  <Zap className="w-6 h-6 md:w-7 md:h-7 text-[#4CC57A] mx-1 inline" fill="#4CC57A" />
-                  <span className="text-[#4CC57A] italic">{headline.accent}</span>
+                  <Zap
+                    className="w-6 h-6 md:w-7 md:h-7 mx-1 inline"
+                    style={{ color: colors.accent, fill: colors.accent }}
+                  />
+                  <span className="italic" style={{ color: colors.accent }}>
+                    {headline.accent}
+                  </span>
                 </span>
               </h1>
             </motion.div>
@@ -233,7 +307,7 @@ export default function Seedesign({
                       {feature.title}
                     </h3>
                   </div>
-                  <p className="text-[#888888] text-sm leading-relaxed pl-7">
+                  <p className="text-gray-500 text-sm leading-relaxed pl-7">
                     {feature.description}
                   </p>
                 </motion.div>
@@ -247,14 +321,17 @@ export default function Seedesign({
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="bg-[#080808] border border-[#1A1A1A] rounded-2xl p-6 md:p-8"
+            className="bg-black border border-gray-900 rounded-2xl p-6 md:p-8"
           >
             {/* Form Header */}
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-white font-semibold text-sm tracking-wide">
                 {formTitle}
               </h2>
-              <div className="flex items-center gap-1.5 text-[#4CC57A] text-xs">
+              <div
+                className="flex items-center gap-1.5 text-xs"
+                style={{ color: colors.accent }}
+              >
                 <Sparkles className="w-3.5 h-3.5" />
                 <span className="italic">{formAcceptingText}</span>
               </div>
@@ -265,43 +342,44 @@ export default function Seedesign({
               {/* Name & Email Row */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <label className="text-[#666666] text-xs">Full Name</label>
+                  <label className="text-gray-500 text-xs">Full Name</label>
                   <input
                     type="text"
                     name="fullName"
                     value={formData.fullName}
                     onChange={handleInputChange}
                     placeholder="Jane Smith"
-                    className="w-full bg-[#1A1A1A] border border-[#2A2A2A] rounded-lg px-4 py-3 text-white text-sm placeholder:text-[#555555] focus:outline-none focus:border-[#4CC57A] transition-colors"
+                    className="w-full bg-gray-900 border border-gray-800 rounded-lg px-4 py-3 text-white text-sm placeholder:text-gray-600 focus:outline-none transition-colors"
+                    style={{ borderColor: formData.fullName ? colors.accent : undefined }}
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-[#666666] text-xs">Email</label>
+                  <label className="text-gray-500 text-xs">Email</label>
                   <input
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
                     placeholder="name@company.com"
-                    className="w-full bg-[#1A1A1A] border border-[#2A2A2A] rounded-lg px-4 py-3 text-white text-sm placeholder:text-[#555555] focus:outline-none focus:border-[#4CC57A] transition-colors"
+                    className="w-full bg-gray-900 border border-gray-800 rounded-lg px-4 py-3 text-white text-sm placeholder:text-gray-600 focus:outline-none transition-colors"
                   />
                 </div>
               </div>
 
               {/* Budget Dropdown */}
               <div className="space-y-2">
-                <label className="text-[#666666] text-xs">Budget</label>
+                <label className="text-gray-500 text-xs">Budget</label>
                 <div className="relative">
                   <button
                     type="button"
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                    className="w-full bg-[#1A1A1A] border border-[#2A2A2A] rounded-lg px-4 py-3 text-left text-sm flex items-center justify-between focus:outline-none focus:border-[#4CC57A] transition-colors"
+                    className="w-full bg-gray-900 border border-gray-800 rounded-lg px-4 py-3 text-left text-sm flex items-center justify-between focus:outline-none transition-colors"
                   >
-                    <span className={formData.budget ? "text-white" : "text-[#555555]"}>
+                    <span className={formData.budget ? "text-white" : "text-gray-600"}>
                       {formData.budget || "Select..."}
                     </span>
                     <ChevronDown
-                      className={`w-4 h-4 text-[#555555] transition-transform ${
+                      className={`w-4 h-4 text-gray-600 transition-transform ${
                         isDropdownOpen ? "rotate-180" : ""
                       }`}
                     />
@@ -311,14 +389,14 @@ export default function Seedesign({
                       initial={{ opacity: 0, y: -10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
-                      className="absolute z-20 w-full mt-1 bg-[#1A1A1A] border border-[#2A2A2A] rounded-lg overflow-hidden shadow-xl"
+                      className="absolute z-20 w-full mt-1 bg-gray-900 border border-gray-800 rounded-lg overflow-hidden shadow-xl"
                     >
                       {budgetOptions.map((option) => (
                         <button
                           key={option}
                           type="button"
                           onClick={() => handleBudgetSelect(option)}
-                          className="w-full px-4 py-2.5 text-left text-sm text-[#AAAAAA] hover:bg-[#252525] hover:text-white transition-colors"
+                          className="w-full px-4 py-2.5 text-left text-sm text-gray-400 hover:bg-gray-800 hover:text-white transition-colors"
                         >
                           {option}
                         </button>
@@ -330,21 +408,24 @@ export default function Seedesign({
 
               {/* Brief Textarea */}
               <div className="space-y-2">
-                <label className="text-[#666666] text-xs">Short brief</label>
+                <label className="text-gray-500 text-xs">Short brief</label>
                 <textarea
                   name="brief"
                   value={formData.brief}
                   onChange={handleInputChange}
                   placeholder="Write a short brief"
                   rows={4}
-                  className="w-full bg-[#1A1A1A] border border-[#2A2A2A] rounded-lg px-4 py-3 text-white text-sm placeholder:text-[#555555] focus:outline-none focus:border-[#4CC57A] transition-colors resize-none"
+                  className="w-full bg-gray-900 border border-gray-800 rounded-lg px-4 py-3 text-white text-sm placeholder:text-gray-600 focus:outline-none transition-colors resize-none"
                 />
               </div>
 
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-[#4CC57A] hover:bg-[#3DAF68] text-white font-medium py-3.5 rounded-full flex items-center justify-center gap-2 transition-colors"
+                className="w-full text-white font-medium py-3.5 rounded-full flex items-center justify-center gap-2 transition-colors"
+                style={{ backgroundColor: colors.accent }}
+                onMouseOver={(e) => (e.currentTarget.style.backgroundColor = colors.accentHover)}
+                onMouseOut={(e) => (e.currentTarget.style.backgroundColor = colors.accent)}
               >
                 {submitButtonText}
                 <span className="text-lg">&raquo;</span>
@@ -358,10 +439,10 @@ export default function Seedesign({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-8 flex items-center gap-4 bg-[#151515] rounded-xl p-4 border border-[#222222] max-w-xl"
+          className="mt-8 flex items-center gap-4 bg-gray-900 rounded-xl p-4 border border-gray-800 max-w-xl"
         >
           <div className="relative flex-shrink-0">
-            <div className="w-12 h-12 rounded-full bg-[#2A2A2A] overflow-hidden flex items-center justify-center">
+            <div className="w-12 h-12 rounded-full bg-gray-800 overflow-hidden flex items-center justify-center">
               {founder.avatarUrl ? (
                 <Image
                   src={founder.avatarUrl}
@@ -376,7 +457,10 @@ export default function Seedesign({
                 </span>
               )}
             </div>
-            <div className="absolute -bottom-0.5 -right-0.5 w-4 h-4 bg-[#C19710] rounded-full flex items-center justify-center">
+            <div
+              className="absolute -bottom-0.5 -right-0.5 w-4 h-4 rounded-full flex items-center justify-center"
+              style={{ backgroundColor: colors.gold }}
+            >
               <span className="text-[8px]">S</span>
             </div>
           </div>
@@ -384,13 +468,13 @@ export default function Seedesign({
             <h4 className="text-white font-semibold text-sm">
               Let&apos;s create magic together
             </h4>
-            <p className="text-[#888888] text-xs truncate">
+            <p className="text-gray-500 text-xs truncate">
               Hey, {founder.name} here — {founder.role}. Excited to hear from you!
             </p>
           </div>
           <button
             onClick={onBookCall}
-            className="flex-shrink-0 flex items-center gap-2 px-4 py-2 bg-transparent border border-[#333333] text-white text-xs font-medium rounded-lg hover:bg-[#1A1A1A] transition-colors whitespace-nowrap"
+            className="flex-shrink-0 flex items-center gap-2 px-4 py-2 bg-transparent border border-gray-700 text-white text-xs font-medium rounded-lg hover:bg-gray-900 transition-colors whitespace-nowrap"
           >
             {bookCallButtonText}
             <Calendar className="w-3.5 h-3.5" />

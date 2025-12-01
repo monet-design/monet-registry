@@ -1,5 +1,62 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ * - grayscale 텍스트는 Tailwind semantic color 사용 (text-slate-900 등)
+ * - 여기에는 브랜드 고유 컬러만 정의
+ */
+const COLORS = {
+  light: {
+    // 배경 그라데이션
+    gradientFrom: "#D4D6EA",    // 라벤더 시작
+    gradientTo: "#C8CAE0",      // 라벤더 끝
+    // Primary 버튼/액센트
+    accent: "#5C72D1",          // 퍼플 블루
+    accentHover: "#4B61C0",     // 퍼플 블루 호버
+    // 보더/입력 필드
+    border: "#B8BAD4",          // 라이트 퍼플 보더
+  },
+  dark: {
+    gradientFrom: "#1e1e2e",
+    gradientTo: "#2a2a3e",
+    accent: "#7B8FE0",
+    accentHover: "#6A7ED0",
+    border: "#4a4a6a",
+  },
+} as const;
+
+/**
+ * 이미지 에셋
+ * - path: 이미지 경로
+ * - alt: 접근성용 대체 텍스트
+ * - prompt: AI 이미지 재생성용 상세 프롬프트
+ */
+const IMAGES = {
+  dashboard: {
+    path: "/registry/mercury-hero/dashboard.png",
+    alt: "Mercury Banking Dashboard",
+    prompt: `Fintech banking dashboard UI mockup with 3D isometric perspective.
+Style: Clean, minimal, modern SaaS/fintech aesthetic with glassmorphism effect
+Layout: Multiple floating UI cards arranged in 3D space - main dashboard center, sidebar left, credit card and charts right
+Composition:
+- Main card: Balance display ($1,972.345) with upward trending line chart in purple
+- Left sidebar: Navigation menu (Home, Accounts, Cards, Analytics, Settings) with account list
+- Right side: Credit/debit card mockup with Mastercard logo, donut chart widgets
+Color palette: White/light gray cards, soft purple (#5C72D1) accents, light lavender background
+Elements: Transaction history, balance charts, navigation icons, card details
+Mood: Professional, trustworthy, modern banking, clean fintech UI
+Technical: Transparent PNG with soft shadows, 3D floating effect`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState } from "react";
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
@@ -19,6 +76,7 @@ interface TrustLogo {
 }
 
 interface MercuryHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   headline?: string;
   subheadline?: string;
@@ -44,10 +102,11 @@ function MercuryLogo() {
       viewBox="0 0 28 28"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="text-slate-900"
     >
-      <circle cx="14" cy="14" r="12" stroke="#1a1a2e" strokeWidth="1.5" fill="none" />
-      <circle cx="14" cy="14" r="8" stroke="#1a1a2e" strokeWidth="1.5" fill="none" />
-      <circle cx="14" cy="14" r="4" fill="#1a1a2e" />
+      <circle cx="14" cy="14" r="12" stroke="currentColor" strokeWidth="1.5" fill="none" />
+      <circle cx="14" cy="14" r="8" stroke="currentColor" strokeWidth="1.5" fill="none" />
+      <circle cx="14" cy="14" r="4" fill="currentColor" />
     </svg>
   );
 }
@@ -74,6 +133,7 @@ const defaultTrustLogos: TrustLogo[] = [
 
 // Main Component
 export default function MercuryHero({
+  mode = "light",
   logoText = "MERCURY",
   headline = "Banking for\nwhat you're building",
   subheadline = "Startups of all sizes rely on Mercury as they create the next great companies. Apply in 10 minutes to try business banking as it should be.",
@@ -84,12 +144,13 @@ export default function MercuryHero({
   trustBadgeText = "100K+ venture-backed and bootstrapped startups build with Mercury.",
   navItems = defaultNavItems,
   trustLogos = defaultTrustLogos,
-  dashboardImage = "/registry/mercury-hero/dashboard.png",
+  dashboardImage = IMAGES.dashboard.path,
   onEmailSubmit,
   onPrimaryCtaClick,
   onSecondaryCtaClick,
 }: MercuryHeroProps) {
   const [email, setEmail] = useState("");
+  const colors = COLORS[mode];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -97,7 +158,12 @@ export default function MercuryHero({
   };
 
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-gradient-to-b from-[#D4D6EA] to-[#C8CAE0]">
+    <section
+      className="relative min-h-screen w-full overflow-hidden"
+      style={{
+        background: `linear-gradient(to bottom, ${colors.gradientFrom}, ${colors.gradientTo})`,
+      }}
+    >
       {/* Navigation */}
       <motion.nav
         initial={{ opacity: 0, y: -10 }}
@@ -108,7 +174,7 @@ export default function MercuryHero({
         {/* Logo */}
         <div className="flex items-center gap-2">
           <MercuryLogo />
-          <span className="text-sm font-semibold tracking-wider text-[#1a1a2e]">
+          <span className="text-sm font-semibold tracking-wider text-slate-900">
             {logoText}
           </span>
         </div>
@@ -119,7 +185,7 @@ export default function MercuryHero({
             <a
               key={item.label}
               href={item.href}
-              className="flex items-center gap-1 px-4 py-2 text-sm text-[#1a1a2e]/80 transition-colors hover:text-[#1a1a2e]"
+              className="flex items-center gap-1 px-4 py-2 text-sm text-slate-700 transition-colors hover:text-slate-900"
             >
               {item.label}
               {item.hasDropdown && <ChevronDown size={14} />}
@@ -131,13 +197,16 @@ export default function MercuryHero({
         <div className="flex items-center gap-4">
           <a
             href="#"
-            className="hidden text-sm text-[#1a1a2e]/80 transition-colors hover:text-[#1a1a2e] sm:block"
+            className="hidden text-sm text-slate-700 transition-colors hover:text-slate-900 sm:block"
           >
             Log In
           </a>
           <button
             onClick={onPrimaryCtaClick}
-            className="rounded-full bg-[#5C72D1] px-5 py-2 text-sm font-medium text-white transition-all hover:bg-[#4B61C0] hover:shadow-lg"
+            className="rounded-full px-5 py-2 text-sm font-medium text-white transition-all hover:shadow-lg"
+            style={{ backgroundColor: colors.accent }}
+            onMouseOver={(e) => (e.currentTarget.style.backgroundColor = colors.accentHover)}
+            onMouseOut={(e) => (e.currentTarget.style.backgroundColor = colors.accent)}
           >
             {primaryCtaText}
           </button>
@@ -154,7 +223,7 @@ export default function MercuryHero({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1, duration: 0.6 }}
-              className="font-serif text-4xl font-normal italic leading-[1.1] tracking-tight text-[#1a1a2e] sm:text-5xl md:text-6xl lg:text-[4.5rem]"
+              className="font-serif text-4xl font-normal italic leading-[1.1] tracking-tight text-slate-900 sm:text-5xl md:text-6xl lg:text-[4.5rem]"
               style={{ fontFamily: "'Instrument Serif', Georgia, serif" }}
             >
               {headline.split("\n").map((line, i) => (
@@ -170,7 +239,7 @@ export default function MercuryHero({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="mt-6 max-w-md text-base leading-relaxed text-[#1a1a2e]/70"
+              className="mt-6 max-w-md text-base leading-relaxed text-slate-600"
             >
               {subheadline}
             </motion.p>
@@ -188,19 +257,27 @@ export default function MercuryHero({
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder={inputPlaceholder}
-                className="h-12 flex-1 rounded-lg border border-[#B8BAD4] bg-white/60 px-4 text-sm text-[#1a1a2e] placeholder:text-[#1a1a2e]/40 backdrop-blur-sm focus:border-[#5C72D1] focus:outline-none focus:ring-2 focus:ring-[#5C72D1]/20 sm:max-w-[220px]"
+                className="h-12 flex-1 rounded-lg bg-white/60 px-4 text-sm text-slate-900 placeholder:text-slate-400 backdrop-blur-sm focus:outline-none focus:ring-2 sm:max-w-[220px]"
+                style={{
+                  borderColor: colors.border,
+                  borderWidth: "1px",
+                }}
               />
               <button
                 type="submit"
                 onClick={onPrimaryCtaClick}
-                className="h-12 rounded-lg bg-[#5C72D1] px-6 text-sm font-medium text-white transition-all hover:bg-[#4B61C0] hover:shadow-lg"
+                className="h-12 rounded-lg px-6 text-sm font-medium text-white transition-all hover:shadow-lg"
+                style={{ backgroundColor: colors.accent }}
+                onMouseOver={(e) => (e.currentTarget.style.backgroundColor = colors.accentHover)}
+                onMouseOut={(e) => (e.currentTarget.style.backgroundColor = colors.accent)}
               >
                 {primaryCtaText}
               </button>
               <button
                 type="button"
                 onClick={onSecondaryCtaClick}
-                className="h-12 rounded-lg border border-[#B8BAD4] bg-white/40 px-6 text-sm font-medium text-[#1a1a2e] backdrop-blur-sm transition-all hover:bg-white/60"
+                className="h-12 rounded-lg bg-white/40 px-6 text-sm font-medium text-slate-900 backdrop-blur-sm transition-all hover:bg-white/60"
+                style={{ borderColor: colors.border, borderWidth: "1px" }}
               >
                 {secondaryCtaText}
               </button>
@@ -211,7 +288,7 @@ export default function MercuryHero({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="mt-6 max-w-md text-xs leading-relaxed text-[#1a1a2e]/50"
+              className="mt-6 max-w-md text-xs leading-relaxed text-slate-500"
             >
               {disclaimerText}
             </motion.p>
@@ -246,14 +323,14 @@ export default function MercuryHero({
         className="mx-auto max-w-7xl px-6 pt-16 pb-12 sm:px-10 lg:px-16"
       >
         {/* Trust Badge Text */}
-        <p className="text-sm text-[#1a1a2e]/60">{trustBadgeText}</p>
+        <p className="text-sm text-slate-500">{trustBadgeText}</p>
 
         {/* Logo Cloud */}
         <div className="mt-6 flex flex-wrap items-center gap-8 opacity-60 grayscale lg:gap-12">
           {trustLogos.map((logo) => (
             <div
               key={logo.name}
-              className="flex items-center text-sm font-medium text-[#1a1a2e]/70"
+              className="flex items-center text-sm font-medium text-slate-600"
               style={{ minWidth: logo.width }}
             >
               {logo.name === "Trust & Will" && (

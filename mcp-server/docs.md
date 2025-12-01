@@ -322,3 +322,4 @@ GET /api/v1/stats?include_examples=false
 - 에러 응답은 `success: false`와 함께 `error` 객체를 포함합니다.
 - 일부 API는 복구 정보를 포함한 `recovery` 객체를 제공합니다.
 - 검색 API는 성능 최적화를 위해 결과 수를 제한할 수 있습니다.
+

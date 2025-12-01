@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: intercom-watch-demo-cta
+category: cta
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-cta/intercom-watch-demo.png
+
+freeformKeywords:
+  - cta
+  - call to action
+  - pricing
+  - poppy
+  - flowers
+  - illustration
+  - intercom
+  - saas
+  - subscription
+  - demo
+  - watch demo
+  - one suite
+  - contract
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

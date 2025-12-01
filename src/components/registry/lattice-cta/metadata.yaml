@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: lattice-cta
+category: cta
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-cta/lattice.png
+
+freeformKeywords:
+  - cta
+  - call to action
+  - demo
+  - request demo
+  - review
+  - rating
+  - g2
+  - capterra
+  - green
+  - teal
+  - cloud background
+  - gradient
+  - hr
+  - human resources
+  - people management
+  - saas
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

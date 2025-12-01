@@ -148,7 +148,6 @@
 | 137 | `lawtrades-home-page-section-hero.jpg` | `lawtrades-hero` |
 | 138 | `linear-home-page-section-hero.jpg` | `linear-home-hero` |
 | 139 | `linear-integrations-page-section-hero.jpg` | `linear-integrations-hero` |
-| 140 | `liveblocks-comments-page-section-hero.jpg` | `liveblocks-comments-hero` |
 | 141 | `liveblocks-home-page-section-hero.jpg` | `liveblocks-home-hero` |
 | 142 | `liveblocks-infrastructure-page-section-hero.jpg` | `liveblocks-infrastructure-hero` |
 | 143 | `liveblocks-notifications-page-section-hero-2.jpg` | `liveblocks-notifications-hero` |

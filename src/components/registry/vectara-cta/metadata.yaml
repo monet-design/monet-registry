@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: vectara-cta
+category: cta
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-cta/vectara.png
+
+freeformKeywords:
+  - cta
+  - call to action
+  - get started
+  - contact
+  - saas
+  - ai
+  - enterprise
+  - icons
+  - connected
+  - workflow
+  - integration
+
+fontFamily:
+  - Instrument Serif
+
+createdAt: "2025-12-01"
+status: stable

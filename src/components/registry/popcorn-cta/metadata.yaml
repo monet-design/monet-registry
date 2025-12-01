@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: popcorn-cta
+category: cta
+
+images:
+  preview: /registry/popcorn-cta/preview.png
+
+freeformKeywords:
+  - cta
+  - call to action
+  - email signup
+  - newsletter
+  - mobile app
+  - phone mockup
+  - features list
+  - sign up form
+  - saas
+  - startup
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

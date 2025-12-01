@@ -11,6 +11,7 @@ interface NavItem {
 }
 
 interface LandingfolioHero22Props {
+  mode?: "customization" | "default";
   logoText?: string;
   navItems?: NavItem[];
   tryForFreeText?: string;
@@ -124,7 +125,10 @@ function GooglePlayButton() {
 }
 
 // Main Component
+const CUSTOMIZATION = {};
+
 export default function LandingfolioHero22({
+  mode = "default",
   logoText = "Postcrafts",
   navItems = defaultNavItems,
   tryForFreeText = "Try for free",

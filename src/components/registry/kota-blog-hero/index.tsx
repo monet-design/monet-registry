@@ -25,6 +25,7 @@ interface FeaturedPost {
 }
 
 interface KotaBlogHeroProps {
+  mode?: "customization" | "default";
   logoText?: string;
   navItems?: NavItem[];
   blogCategories?: BlogCategory[];
@@ -75,7 +76,10 @@ function KotaLogo({ className }: { className?: string }) {
   );
 }
 
+const CUSTOMIZATION = {};
+
 export default function KotaBlogHero({
+  mode = "default",
   logoText = "Kota",
   navItems = defaultNavItems,
   blogCategories = defaultBlogCategories,

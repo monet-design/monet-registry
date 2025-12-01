@@ -1,5 +1,22 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#46C989",
+    accentHover: "#3ab577",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState } from "react";
 import { motion } from "motion/react";
 import {
@@ -54,18 +71,18 @@ function PlainLogo() {
     >
       <path
         d="M11 2L2 7L11 12L20 7L11 2Z"
-        fill="#46C989"
+        fill={COLORS.light.accent}
       />
       <path
         d="M2 15L11 20L20 15"
-        stroke="#46C989"
+        stroke={COLORS.light.accent}
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M2 11L11 16L20 11"
-        stroke="#46C989"
+        stroke={COLORS.light.accent}
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -354,7 +371,7 @@ function DashboardPreview() {
               <div className="flex-1">
                 <span className="text-sm font-medium text-white">Annie Atkins</span>
                 <div className="mt-2 space-y-1">
-                  <div className="h-2 bg-[#46C989] rounded w-full opacity-60"></div>
+                  <div className="h-2 rounded w-full opacity-60" style={{ backgroundColor: COLORS.light.accent }}></div>
                   <div className="h-2 bg-[#2a2a2a] rounded w-4/5"></div>
                   <div className="h-2 bg-[#2a2a2a] rounded w-full"></div>
                   <div className="h-2 bg-[#2a2a2a] rounded w-3/4"></div>
@@ -366,7 +383,10 @@ function DashboardPreview() {
           {/* AI Response Panel */}
           <div className="absolute bottom-4 right-4 left-auto w-[320px] bg-[#1a1a1a] rounded-lg border border-[#2a2a2a] shadow-xl">
             <div className="flex items-center gap-2 px-3 py-2">
-              <div className="flex items-center gap-1.5 px-2 py-1 bg-[#46C989] rounded text-xs text-black font-medium">
+              <div
+                className="flex items-center gap-1.5 px-2 py-1 rounded text-xs text-black font-medium"
+                style={{ backgroundColor: COLORS.light.accent }}
+              >
                 <Sparkles size={12} />
                 <span>Drafting AI response...</span>
               </div>
@@ -445,7 +465,14 @@ function ThreadItem({
         <p className="text-[10px] text-gray-400 truncate">{subject}</p>
       </div>
       <div className="flex items-center gap-2">
-        <span className={`px-2 py-0.5 ${badgeColor} rounded text-[10px] ${badgeColor === 'bg-[#46C989]' ? 'text-black' : 'text-gray-300'}`}>
+        <span
+          className={`px-2 py-0.5 rounded text-[10px]`}
+          style={
+            badgeColor === 'bg-[#46C989]'
+              ? { backgroundColor: COLORS.light.accent, color: 'black' }
+              : { backgroundColor: '#2a2a2a', color: '#d1d5db' }
+          }
+        >
           {badge}
         </span>
         {hasTimer && <Clock size={10} className="text-gray-500" />}
@@ -537,7 +564,12 @@ export default function PlainHomeHero({
         </div>
 
         {/* CTA Button */}
-        <button className="rounded-full bg-[#46C989] px-4 py-2 text-sm font-medium text-black transition-colors hover:bg-[#3ab577]">
+        <button
+          className="rounded-full px-4 py-2 text-sm font-medium text-black transition-colors"
+          style={{ backgroundColor: COLORS.light.accent }}
+          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = COLORS.light.accentHover)}
+          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = COLORS.light.accent)}
+        >
           Book a demo
         </button>
       </motion.nav>
@@ -593,7 +625,10 @@ export default function PlainHomeHero({
           />
           <button
             type="submit"
-            className="rounded-full bg-[#46C989] px-5 py-2.5 text-sm font-medium text-black transition-colors hover:bg-[#3ab577]"
+            className="rounded-full px-5 py-2.5 text-sm font-medium text-black transition-colors"
+            style={{ backgroundColor: COLORS.light.accent }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = COLORS.light.accentHover)}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = COLORS.light.accent)}
           >
             {ctaText}
           </button>

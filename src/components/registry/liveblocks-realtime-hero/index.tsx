@@ -1,5 +1,36 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#FFFFFF", // Primary button 배경
+    accentText: "#000000", // Primary button 텍스트
+    badge: "#10B981", // Badge 텍스트 색상 (에메랄드)
+    iconGradientFrom: "#00D9A6", // 3D 아이콘 그라데이션 시작
+    iconGradientMid: "#00A878", // 3D 아이콘 그라데이션 중간
+    iconGradientTo: "#006B4D", // 3D 아이콘 그라데이션 끝
+    iconDark: "#003D1A", // 3D 아이콘 어두운 부분
+    mentionColor: "#E879A9", // Mention 강조 색상 (핑크)
+  },
+  dark: {
+    accent: "#FFFFFF",
+    accentText: "#000000",
+    badge: "#10B981",
+    iconGradientFrom: "#00D9A6",
+    iconGradientMid: "#00A878",
+    iconGradientTo: "#006B4D",
+    iconDark: "#003D1A",
+    mentionColor: "#E879A9",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowRight, Code, Accessibility, Users } from "lucide-react";
 import "./font.css";
@@ -35,6 +66,7 @@ interface FeatureBadge {
 }
 
 interface LiveblocksRealtimeHeroProps {
+  mode?: "light" | "dark";
   badge?: string;
   headline?: string;
   primaryButtonText?: string;
@@ -47,14 +79,14 @@ interface LiveblocksRealtimeHeroProps {
 }
 
 // 3D Notification Icon Component
-function NotificationIcon3D() {
+function NotificationIcon3D({ colors }: { colors: typeof COLORS.light }) {
   return (
     <div className="relative w-24 h-24 mx-auto">
       {/* Back layer - darker */}
       <div
         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-2xl"
         style={{
-          backgroundColor: "#003D1A",
+          backgroundColor: colors.iconDark,
           transform: "translate(-50%, -50%) translateZ(-20px) rotateX(15deg) rotateY(-15deg)",
         }}
       />
@@ -62,7 +94,7 @@ function NotificationIcon3D() {
       <div
         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-2xl"
         style={{
-          background: "linear-gradient(135deg, #00D9A6 0%, #00A878 50%, #006B4D 100%)",
+          background: `linear-gradient(135deg, ${colors.iconGradientFrom} 0%, ${colors.iconGradientMid} 50%, ${colors.iconGradientTo} 100%)`,
           transform: "translate(-40%, -60%) rotateX(15deg) rotateY(-15deg)",
           boxShadow: "0 20px 40px rgba(0, 100, 60, 0.4)",
         }}
@@ -93,9 +125,11 @@ function Avatar({ src, name, size = 32 }: { src: string; name: string; size?: nu
 
 // Notification Item Component
 function NotificationItemCard({
+  colors,
   notification,
   index,
 }: {
+  colors: typeof COLORS.light;
   notification: NotificationItem;
   index: number;
 }) {
@@ -115,7 +149,7 @@ function NotificationItemCard({
         <p className="text-sm text-gray-600 mt-0.5">
           {notification.message}
           {notification.mentions?.map((mention, i) => (
-            <span key={i} style={{ color: mention.color }} className="font-medium">
+            <span key={i} className="font-medium" style={{ color: colors.mentionColor }}>
               {" "}
               @{mention.name}
             </span>
@@ -174,7 +208,7 @@ function EmailPreviewCard({ data }: { data: EmailPreviewData }) {
 }
 
 // Notifications Panel Component
-function NotificationsPanel({ notifications }: { notifications: NotificationItem[] }) {
+function NotificationsPanel({ colors, notifications }: { colors: typeof COLORS.light; notifications: NotificationItem[] }) {
   return (
     <motion.div
       initial={{ opacity: 0, x: 20 }}
@@ -193,7 +227,7 @@ function NotificationsPanel({ notifications }: { notifications: NotificationItem
       {/* Notification List */}
       <div className="px-5 pb-4 divide-y divide-gray-50 max-h-80 overflow-hidden">
         {notifications.map((notification, index) => (
-          <NotificationItemCard key={notification.id} notification={notification} index={index} />
+          <NotificationItemCard key={notification.id} colors={colors} notification={notification} index={index} />
         ))}
       </div>
     </motion.div>
@@ -266,6 +300,7 @@ const defaultEmailPreview: EmailPreviewData = {
 
 // Main Component
 export default function LiveblocksRealtimeHero({
+  mode = "dark",
   badge = "NOTIFICATIONS",
   headline = "The notification system\ndesigned for collaboration",
   primaryButtonText = "Sign up for free",
@@ -276,6 +311,7 @@ export default function LiveblocksRealtimeHero({
   onPrimaryClick,
   onSecondaryClick,
 }: LiveblocksRealtimeHeroProps) {
+  const colors = COLORS[mode];
   return (
     <section className="relative min-h-screen w-full bg-black overflow-hidden">
       {/* Main Content */}
@@ -287,7 +323,7 @@ export default function LiveblocksRealtimeHero({
           transition={{ duration: 0.6 }}
           className="mb-8"
         >
-          <NotificationIcon3D />
+          <NotificationIcon3D colors={colors} />
         </motion.div>
 
         {/* Badge */}
@@ -295,7 +331,8 @@ export default function LiveblocksRealtimeHero({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.5 }}
-          className="text-center text-xs font-medium tracking-[0.2em] text-emerald-400 mb-6"
+          className="text-center text-xs font-medium tracking-[0.2em] mb-6"
+          style={{ color: colors.badge }}
         >
           {badge}
         </motion.p>
@@ -319,7 +356,8 @@ export default function LiveblocksRealtimeHero({
         >
           <button
             onClick={onPrimaryClick}
-            className="flex items-center gap-2 rounded-full border border-gray-600 bg-white px-5 py-2.5 text-sm font-medium text-black transition-all hover:bg-gray-100"
+            className="flex items-center gap-2 rounded-full border border-gray-600 px-5 py-2.5 text-sm font-medium transition-all hover:bg-gray-100"
+            style={{ backgroundColor: colors.accent, color: colors.accentText }}
           >
             {primaryButtonText}
             <ArrowRight size={16} />
@@ -362,7 +400,7 @@ export default function LiveblocksRealtimeHero({
 
           {/* Notifications Panel */}
           <div className="flex justify-center md:justify-start">
-            <NotificationsPanel notifications={notifications} />
+            <NotificationsPanel colors={colors} notifications={notifications} />
           </div>
         </motion.div>
       </div>

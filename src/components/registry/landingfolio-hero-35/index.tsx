@@ -4,6 +4,28 @@ import { motion } from "motion/react";
 import { Play } from "lucide-react";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const IMAGES = {
+  bread: {
+    path: "/landingfolio-hero/hero-35/bread.png",
+    alt: "Artisan sourdough bread cross-section",
+    prompt: `Professional product photography of artisan sourdough bread cross-section.
+Style: Clean product shot, professional lighting, transparent background
+Layout: Side view showing interior texture and crust
+Composition: Half loaf revealing air pockets, crusty exterior
+Color palette: Golden brown crust, cream interior, natural tones
+Mood: Artisanal, fresh, high-quality, authentic
+Technical: High resolution, sharp focus, PNG with transparency`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -81,7 +103,7 @@ export default function LandingfolioHero35({
   pricingText = "Starting at $9.99/month",
   ctaPrimaryText = "Get started",
   ctaSecondaryText = "Watch trailer",
-  breadImage = "/landingfolio-hero/hero-35/bread.png",
+  breadImage = IMAGES.bread.path,
   onCtaPrimaryClick,
   onCtaSecondaryClick,
   onSignUpClick,
@@ -184,7 +206,7 @@ export default function LandingfolioHero35({
               <div className="relative">
                 <img
                   src={breadImage}
-                  alt="Artisan sourdough bread cross-section"
+                  alt={IMAGES.bread.alt}
                   className="w-full h-auto object-contain relative z-10"
                 />
                 {/* Reflection Effect */}

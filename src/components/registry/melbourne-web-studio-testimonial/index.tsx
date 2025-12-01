@@ -1,5 +1,26 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    starRating: "#F59E0B", // 별점 색상 (황금색)
+    navButton: "#F59E0B", // Navigation button 배경
+    navButtonHover: "#FBBF24", // Navigation button 호버
+  },
+  dark: {
+    starRating: "#F59E0B",
+    navButton: "#F59E0B",
+    navButtonHover: "#FBBF24",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ChevronUp, ChevronDown, Star } from "lucide-react";
@@ -15,6 +36,7 @@ interface Testimonial {
 }
 
 interface MelbourneWebStudioTestimonialProps {
+  mode?: "light" | "dark";
   badgeText?: string;
   headline?: string;
   subheadline?: string;
@@ -80,18 +102,15 @@ function GoogleIcon({ className = "" }: { className?: string }) {
 }
 
 // Star Rating Component
-function StarRating({ rating, size = 14 }: { rating: number; size?: number }) {
+function StarRating({ colors, rating, size = 14 }: { colors: typeof COLORS.light; rating: number; size?: number }) {
   return (
     <div className="flex items-center gap-0.5">
       {[...Array(5)].map((_, index) => (
         <Star
           key={index}
           size={size}
-          className={
-            index < rating
-              ? "fill-amber-400 text-amber-400"
-              : "fill-slate-600 text-slate-600"
-          }
+          className={index < rating ? "fill-current" : "fill-slate-600 text-slate-600"}
+          style={index < rating ? { color: colors.starRating } : {}}
         />
       ))}
     </div>
@@ -116,9 +135,11 @@ function Badge({ text }: { text: string }) {
 
 // Google Rating Badge Component
 function GoogleRatingBadge({
+  colors,
   rating,
   subtext,
 }: {
+  colors: typeof COLORS.light;
   rating: string;
   subtext: string;
 }) {
@@ -133,7 +154,7 @@ function GoogleRatingBadge({
       <div className="flex flex-col">
         <div className="flex items-center gap-1.5">
           <span className="text-lg font-semibold text-white">{rating}</span>
-          <Star size={16} className="fill-amber-400 text-amber-400" />
+          <Star size={16} className="fill-current" style={{ color: colors.starRating }} />
         </div>
         <span className="text-xs text-slate-400">{subtext}</span>
       </div>
@@ -143,10 +164,12 @@ function GoogleRatingBadge({
 
 // Testimonial Card Component
 function TestimonialCard({
+  colors,
   testimonial,
   onPrev,
   onNext,
 }: {
+  colors: typeof COLORS.light;
   testimonial: Testimonial;
   onPrev: () => void;
   onNext: () => void;
@@ -176,21 +199,35 @@ function TestimonialCard({
             </p>
             <p className="text-xs text-slate-400">{testimonial.authorRole}</p>
           </div>
-          <StarRating rating={testimonial.rating} size={12} />
+          <StarRating colors={colors} rating={testimonial.rating} size={12} />
         </div>
 
         {/* Navigation Buttons */}
         <div className="flex flex-col gap-2">
           <button
             onClick={onPrev}
-            className="flex h-9 w-9 items-center justify-center rounded-full bg-amber-500/90 text-slate-900 transition-all hover:bg-amber-400"
+            className="flex h-9 w-9 items-center justify-center rounded-full text-slate-900 transition-all"
+            style={{ backgroundColor: `${colors.navButton}E6` }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = colors.navButtonHover;
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = `${colors.navButton}E6`;
+            }}
             aria-label="Previous testimonial"
           >
             <ChevronUp className="h-5 w-5" />
           </button>
           <button
             onClick={onNext}
-            className="flex h-9 w-9 items-center justify-center rounded-full bg-amber-500/90 text-slate-900 transition-all hover:bg-amber-400"
+            className="flex h-9 w-9 items-center justify-center rounded-full text-slate-900 transition-all"
+            style={{ backgroundColor: `${colors.navButton}E6` }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = colors.navButtonHover;
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = `${colors.navButton}E6`;
+            }}
             aria-label="Next testimonial"
           >
             <ChevronDown className="h-5 w-5" />
@@ -203,6 +240,7 @@ function TestimonialCard({
 
 // Main Component
 export default function MelbourneWebStudioTestimonial({
+  mode = "dark",
   badgeText = "Testimonials",
   headline = "Happy Customers",
   subheadline = "Get insights from our clients on how we've helped them achieve their business\ngoals through exceptional web design.",
@@ -211,6 +249,7 @@ export default function MelbourneWebStudioTestimonial({
   testimonials = defaultTestimonials,
 }: MelbourneWebStudioTestimonialProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const colors = COLORS[mode];
 
   const handleNext = () => {
     setCurrentIndex((prev) => (prev + 1) % testimonials.length);
@@ -259,7 +298,7 @@ export default function MelbourneWebStudioTestimonial({
 
             {/* Google Rating */}
             <div className="mt-8">
-              <GoogleRatingBadge rating={googleRating} subtext={googleRatingSubtext} />
+              <GoogleRatingBadge colors={colors} rating={googleRating} subtext={googleRatingSubtext} />
             </div>
           </div>
 
@@ -268,6 +307,7 @@ export default function MelbourneWebStudioTestimonial({
             <div className="w-full max-w-md">
               <AnimatePresence mode="wait">
                 <TestimonialCard
+                  colors={colors}
                   testimonial={testimonials[currentIndex]}
                   onPrev={handlePrev}
                   onNext={handleNext}

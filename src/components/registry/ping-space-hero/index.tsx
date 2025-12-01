@@ -1,5 +1,23 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#3B82F6",
+    accentHover: "#2563EB",
+    star: "#F59E0B",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import {
   Rocket,
@@ -38,7 +56,10 @@ interface PingSpaceHeroProps {
 function PingSpaceLogo({ text = "PingSpace" }: { text?: string }) {
   return (
     <div className="flex items-center gap-2">
-      <div className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-blue-600">
+      <div
+        className="flex h-7 w-7 items-center justify-center rounded-full"
+        style={{ background: `linear-gradient(to bottom right, ${COLORS.light.accent}, ${COLORS.light.accentHover})` }}
+      >
         <Rocket className="h-4 w-4 text-white" strokeWidth={2} />
       </div>
       <span className="text-sm font-semibold text-slate-700">{text}</span>
@@ -59,8 +80,8 @@ function StarDecoration({ className }: { className?: string }) {
     >
       <path
         d="M12 2L13.09 8.26L18 6L14.74 10.91L21 12L14.74 13.09L18 18L13.09 15.74L12 22L10.91 15.74L6 18L9.26 13.09L3 12L9.26 10.91L6 6L10.91 8.26L12 2Z"
-        fill="#F59E0B"
-        stroke="#F59E0B"
+        fill={COLORS.light.star}
+        stroke={COLORS.light.star}
         strokeWidth="1"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -178,7 +199,10 @@ function AppScreenshot() {
                     Lark Suite is an all-in-one cloud-based productivity and collaboration platform...
                   </p>
                 </div>
-                <div className="bg-gradient-to-r from-blue-600 to-blue-500 p-3">
+                <div
+                  className="p-3"
+                  style={{ background: `linear-gradient(to right, ${COLORS.light.accentHover}, ${COLORS.light.accent})` }}
+                >
                   <p className="text-[10px] font-bold uppercase tracking-wider text-white">
                     WHAT IS THE PINGSPACE
                   </p>
@@ -251,9 +275,10 @@ function SidebarItem({
     <div
       className={`flex items-center gap-2 rounded-md px-2 py-1.5 text-xs ${
         active
-          ? "bg-blue-50 text-blue-600"
+          ? "bg-blue-50"
           : "text-slate-600 hover:bg-slate-100"
       }`}
+      style={active ? { color: COLORS.light.accent } : undefined}
     >
       {icon}
       <span>{label}</span>
@@ -435,7 +460,10 @@ export default function PingSpaceHero({
           </button>
           <Button
             size="sm"
-            className="rounded-full bg-blue-500 px-4 text-sm font-medium text-white hover:bg-blue-600"
+            className="rounded-full px-4 text-sm font-medium text-white"
+            style={{ backgroundColor: COLORS.light.accent }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = COLORS.light.accentHover)}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = COLORS.light.accent)}
           >
             Get started
           </Button>
@@ -497,7 +525,13 @@ export default function PingSpaceHero({
         >
           <Button
             onClick={onPrimaryClick}
-            className="rounded-full bg-blue-500 px-6 py-2.5 text-sm font-medium text-white shadow-lg shadow-blue-500/30 hover:bg-blue-600"
+            className="rounded-full px-6 py-2.5 text-sm font-medium text-white shadow-lg"
+            style={{
+              backgroundColor: COLORS.light.accent,
+              boxShadow: `0 10px 15px -3px ${COLORS.light.accent}4D, 0 4px 6px -4px ${COLORS.light.accent}4D`
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = COLORS.light.accentHover)}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = COLORS.light.accent)}
           >
             {primaryCtaText}
           </Button>

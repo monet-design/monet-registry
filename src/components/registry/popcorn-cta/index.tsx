@@ -1,5 +1,46 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    buttonBg: "#2D2D2D",
+    buttonHover: "#1a1a1a",
+  },
+} as const;
+
+const IMAGES = {
+  clouds: {
+    path: "/registry/popcorn-cta/clouds.png",
+    alt: "Decorative clouds",
+    prompt: `Soft, fluffy clouds illustration in pastel colors.
+Style: Minimalist, clean, gentle illustration
+Layout: Horizontal layers at bottom of screen
+Composition: Multiple cloud shapes overlapping, creating depth
+Color palette: Light blue, white, pastel pink accents
+Mood: Calm, peaceful, dreamy, welcoming
+Technical: Wide aspect ratio, transparent background, PNG format`,
+  },
+  phones: {
+    path: "/registry/popcorn-cta/phones.png",
+    alt: "Mobile phones",
+    prompt: `Three modern smartphones displaying colorful app interfaces.
+Style: Clean product photography, floating devices
+Layout: Center aligned, overlapping arrangement
+Composition: Main phone centered, two side phones slightly angled
+Elements: Bright, vibrant app screens showing social content
+Color palette: Varied bright colors on screens, sleek device frames
+Mood: Modern, energetic, connected, friendly
+Technical: High resolution, clean edges, slight shadows for depth`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 
@@ -19,9 +60,10 @@ export default function PopcornCta({
   placeholder = "Enter your e-mail",
   buttonText = "Sign up",
   onSubmit,
-  cloudsImage = "/registry/popcorn-cta/clouds.png",
-  phonesImage = "/registry/popcorn-cta/phones.png",
+  cloudsImage = IMAGES.clouds.path,
+  phonesImage = IMAGES.phones.path,
 }: PopcornCtaProps) {
+  const colors = COLORS.light;
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
@@ -75,8 +117,13 @@ export default function PopcornCta({
             />
             <button
               type="submit"
-              className="px-6 py-2.5 mr-2 bg-[#2D2D2D] text-white text-sm font-medium rounded-full hover:bg-[#1a1a1a] transition-colors duration-200"
-              style={{ fontFamily: "'Inter', sans-serif" }}
+              className="px-6 py-2.5 mr-2 text-white text-sm font-medium rounded-full transition-colors duration-200"
+              style={{
+                fontFamily: "'Inter', sans-serif",
+                backgroundColor: colors.buttonBg,
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = colors.buttonHover)}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = colors.buttonBg)}
             >
               {buttonText}
             </button>
@@ -93,7 +140,7 @@ export default function PopcornCta({
       >
         <Image
           src={phonesImage}
-          alt="Mobile phones"
+          alt={IMAGES.phones.alt}
           width={800}
           height={450}
           className="w-full h-auto object-contain"
@@ -110,7 +157,7 @@ export default function PopcornCta({
       >
         <Image
           src={cloudsImage}
-          alt="Decorative clouds"
+          alt={IMAGES.clouds.alt}
           width={1920}
           height={600}
           className="w-full h-auto object-cover object-bottom"

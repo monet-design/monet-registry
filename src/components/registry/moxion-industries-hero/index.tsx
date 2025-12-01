@@ -1,5 +1,86 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#F3F2E9",
+    accent: "#282625",
+    accentHover: "#3a3835",
+  },
+  dark: {
+    background: "#1A1D1A",
+    accent: "#282625",
+    accentHover: "#3a3835",
+  },
+} as const;
+
+const IMAGES = {
+  gallery: [
+    {
+      path: "/registry/moxion-industries-hero/gallery-1.jpg",
+      alt: "MP-75 at construction site",
+      prompt: `Moxion MP-75 mobile power unit at active construction site.
+Style: Documentary industrial photography, natural daylight
+Layout: Medium shot showing equipment in work environment context
+Composition: Mobile battery unit with construction activity in background
+Color palette: Industrial equipment grays, construction site earth tones, safety yellow accents
+Mood: Reliable, industrial, in-use, professional
+Technical: High resolution, natural lighting, documentary style`,
+    },
+    {
+      path: "/registry/moxion-industries-hero/gallery-2.jpg",
+      alt: "MP-75 being serviced",
+      prompt: `Technician servicing Moxion MP-75 power unit.
+Style: Professional industrial photography, clear documentation
+Layout: Service action shot showing maintenance accessibility
+Composition: Technician working on open panel, equipment detail visible
+Color palette: Professional work environment, equipment grays, safety gear
+Mood: Serviceable, well-engineered, accessible maintenance
+Technical: Sharp focus on service action, professional lighting`,
+    },
+    {
+      path: "/registry/moxion-industries-hero/gallery-3.jpg",
+      alt: "MP-75 in desert environment",
+      prompt: `Moxion MP-75 deployed in desert landscape.
+Style: Environmental portrait photography, golden hour lighting
+Layout: Equipment prominent against dramatic desert backdrop
+Composition: Unit placed in arid environment showing versatility
+Color palette: Desert browns and oranges, equipment grays, blue sky
+Mood: Rugged, versatile, all-environment capable
+Technical: Wide landscape shot, dramatic natural lighting`,
+    },
+    {
+      path: "/registry/moxion-industries-hero/gallery-4.jpg",
+      alt: "MP-75 at production site",
+      prompt: `Moxion MP-75 powering industrial production site.
+Style: Industrial action photography
+Layout: Equipment in active production environment
+Composition: Power unit with industrial operations visible
+Color palette: Industrial equipment tones, work site environment
+Mood: Productive, reliable power delivery
+Technical: Clear equipment visibility, contextual environment`,
+    },
+    {
+      path: "/registry/moxion-industries-hero/gallery-5.jpg",
+      alt: "MP-75 fleet storage",
+      prompt: `Multiple Moxion MP-75 units in fleet storage yard.
+Style: Clean corporate photography, organized composition
+Layout: Multiple units arranged showing scale of operations
+Composition: Fleet of equipment demonstrating deployment capability
+Color palette: Uniform equipment appearance, organized storage environment
+Mood: Professional fleet management, scalability
+Technical: Wide shot showing multiple units, clear branding visibility`,
+    },
+  ],
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowRight, ArrowDown } from "lucide-react";
 import Image from "next/image";
@@ -16,6 +97,7 @@ interface GalleryImage {
 }
 
 interface MoxionIndustriesHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   headline?: string;
   navItems?: NavItem[];
@@ -32,15 +114,13 @@ const defaultNavItems: NavItem[] = [
   { label: "Careers", href: "#" },
 ];
 
-const defaultGalleryImages: GalleryImage[] = [
-  { src: "/registry/moxion-industries-hero/gallery-1.jpg", alt: "MP-75 at construction site" },
-  { src: "/registry/moxion-industries-hero/gallery-2.jpg", alt: "MP-75 being serviced" },
-  { src: "/registry/moxion-industries-hero/gallery-3.jpg", alt: "MP-75 in desert environment" },
-  { src: "/registry/moxion-industries-hero/gallery-4.jpg", alt: "MP-75 at production site" },
-  { src: "/registry/moxion-industries-hero/gallery-5.jpg", alt: "MP-75 fleet storage" },
-];
+const defaultGalleryImages: GalleryImage[] = IMAGES.gallery.map((img) => ({
+  src: img.path,
+  alt: img.alt,
+}));
 
 export default function MoxionIndustriesHero({
+  mode = "light",
   logoText = "MOXION",
   headline = "The MP-75\nin The Wild",
   navItems = defaultNavItems,
@@ -48,10 +128,14 @@ export default function MoxionIndustriesHero({
   contactText = "Contact",
   onContactClick,
 }: MoxionIndustriesHeroProps) {
+  const colors = COLORS[mode];
   const headlineLines = headline.split("\n");
 
   return (
-    <section className="relative min-h-screen w-full bg-[#F3F2E9] overflow-hidden">
+    <section
+      className="relative min-h-screen w-full overflow-hidden"
+      style={{ backgroundColor: colors.background }}
+    >
       {/* Navigation */}
       <motion.nav
         initial={{ opacity: 0, y: -10 }}
@@ -64,7 +148,7 @@ export default function MoxionIndustriesHero({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.1, duration: 0.5 }}
-          className="text-sm font-bold tracking-wider text-[#1A1D1A]"
+          className="text-sm font-bold tracking-wider text-gray-900 dark:text-gray-100"
         >
           {logoText}
         </motion.div>
@@ -78,7 +162,7 @@ export default function MoxionIndustriesHero({
               initial={{ opacity: 0, y: -5 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.15 + index * 0.05, duration: 0.4 }}
-              className={`text-sm text-[#1A1D1A] transition-colors hover:opacity-70 ${
+              className={`text-sm text-gray-900 dark:text-gray-100 transition-colors hover:opacity-70 ${
                 item.isActive ? "underline underline-offset-4 decoration-1" : ""
               }`}
             >
@@ -93,9 +177,12 @@ export default function MoxionIndustriesHero({
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.5 }}
           onClick={onContactClick}
-          className="flex items-center gap-2 text-sm text-[#1A1D1A] hover:opacity-70 transition-opacity"
+          className="flex items-center gap-2 text-sm text-gray-900 dark:text-gray-100 hover:opacity-70 transition-opacity"
         >
-          <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#282625] text-white">
+          <span
+            className="flex items-center justify-center w-8 h-8 rounded-full text-white"
+            style={{ backgroundColor: colors.accent }}
+          >
             <ArrowRight className="w-4 h-4" />
           </span>
           <span className="hidden sm:inline">{contactText}</span>

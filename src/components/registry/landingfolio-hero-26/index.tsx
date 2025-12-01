@@ -16,6 +16,7 @@ interface BenefitItem {
 }
 
 interface LandingfolioHero26Props {
+  mode?: "customization" | "default";
   logoText?: string;
   navItems?: NavItem[];
   ctaButtonText?: string;
@@ -69,7 +70,10 @@ function LogoIcon() {
 }
 
 // Main Component
+const CUSTOMIZATION = {};
+
 export default function LandingfolioHero26({
+  mode = "default",
   logoText = "ClarityUI",
   navItems = defaultNavItems,
   ctaButtonText = "Get Design Inspirations",

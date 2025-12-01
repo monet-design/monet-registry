@@ -5,6 +5,28 @@ import { Play, Search } from "lucide-react";
 import Image from "next/image";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const IMAGES = {
+  hero: {
+    path: "/landingfolio-hero/hero-37/bread-stack.jpg",
+    alt: "Artisan sourdough bread stack",
+    prompt: `Professional photography of artisan sourdough bread stack.
+Style: Food photography, dramatic lighting, rustic aesthetic
+Layout: Stacked bread loaves, vertical composition
+Composition: Multiple loaves showing texture and crust detail
+Color palette: Golden brown crusts, warm tones, dramatic shadows
+Mood: Artisanal, premium, handcrafted
+Technical: High resolution, sharp focus, dramatic side lighting`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -111,8 +133,8 @@ export default function LandingfolioHero37({
   secondaryButtonText = "Watch trailer",
   onPrimaryClick,
   onSecondaryClick,
-  imageSrc = "/landingfolio-hero/hero-37/bread-stack.jpg",
-  imageAlt = "Artisan sourdough bread stack",
+  imageSrc = IMAGES.hero.path,
+  imageAlt = IMAGES.hero.alt,
 }: LandingfolioHero37Props) {
   return (
     <section className="w-full min-h-screen bg-black overflow-hidden relative">

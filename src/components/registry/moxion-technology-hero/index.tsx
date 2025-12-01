@@ -1,5 +1,39 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#919191",
+    backgroundDark: "#919191",
+  },
+  dark: {
+    background: "#919191",
+    backgroundDark: "#919191",
+  },
+} as const;
+
+const IMAGES = {
+  product: {
+    path: "/registry/moxion-technology-hero/battery-unit.png",
+    alt: "MP-75 Mobile Battery Unit product image",
+    prompt: `Clean product photography of Moxion MP-75 mobile battery storage unit.
+Style: Professional product photography, studio quality, transparent background
+Layout: 3/4 angle view showing front and side of unit
+Composition: Industrial battery unit on wheels, clean lines, professional finish
+Color palette: Industrial gray equipment, metallic accents, safety yellow details
+Elements: Control panels, connection ports, wheel base, compact mobile design
+Mood: Professional, high-tech, industrial grade, reliable equipment
+Technical: High resolution PNG with transparency, sharp product details, professional lighting`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowRight, ArrowDown } from "lucide-react";
 import Image from "next/image";
@@ -11,6 +45,7 @@ interface NavItem {
 }
 
 interface MoxionTechnologyHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   contactLabel?: string;
@@ -23,6 +58,7 @@ interface MoxionTechnologyHeroProps {
 }
 
 export default function MoxionTechnologyHero({
+  mode = "light",
   logoText = "MOXION",
   navItems = [
     { label: "Home", href: "#home" },
@@ -34,13 +70,18 @@ export default function MoxionTechnologyHero({
   contactLabel = "Contact",
   headline = "Hello clean power.",
   description = "Meet the MP-75, the intelligent\nmobile battery built to replace\ndiesel generators.",
-  productImageSrc = "/registry/moxion-technology-hero/battery-unit.png",
-  productImageAlt = "MP-75 Mobile Battery Unit",
+  productImageSrc = IMAGES.product.path,
+  productImageAlt = IMAGES.product.alt,
   onContactClick,
   onNavClick,
 }: MoxionTechnologyHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative min-h-screen w-full bg-[#919191] overflow-hidden">
+    <section
+      className="relative min-h-screen w-full overflow-hidden"
+      style={{ backgroundColor: colors.background }}
+    >
       {/* Background texture overlay */}
       <div
         className="absolute inset-0 opacity-30"

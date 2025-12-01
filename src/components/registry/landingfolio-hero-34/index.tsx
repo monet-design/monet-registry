@@ -5,6 +5,28 @@ import { Play, Wheat } from "lucide-react";
 import Image from "next/image";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const IMAGES = {
+  hero: {
+    path: "/landingfolio-hero/hero-34/bread-hero.jpg",
+    alt: "Artisan bread assortment",
+    prompt: `Professional photography of artisan bread assortment.
+Style: Food photography, natural lighting, rustic aesthetic
+Layout: Multiple bread loaves arranged on wooden surface
+Composition: Various shapes and sizes, crusty textures visible
+Color palette: Golden brown crusts, warm wood tones, natural light
+Mood: Artisanal, fresh, authentic, handcrafted
+Technical: High resolution, sharp focus, warm color temperature`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -40,8 +62,8 @@ export default function LandingfolioHero34({
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu penatibus pellentesque dolor consequat ligula egestas massa gravida. Porttitor venenatis enim praesent.",
   buttonText = "Get started",
   playButtonText = "Play trailer",
-  heroImageSrc = "/landingfolio-hero/hero-34/bread-hero.jpg",
-  heroImageAlt = "Artisan bread assortment",
+  heroImageSrc = IMAGES.hero.path,
+  heroImageAlt = IMAGES.hero.alt,
   onButtonClick,
   onPlayClick,
 }: LandingfolioHero34Props) {

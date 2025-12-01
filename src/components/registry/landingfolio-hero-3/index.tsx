@@ -5,6 +5,56 @@ import { motion } from "motion/react";
 import { Search, Star } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#22D3EE", // cyan-400
+    accentSecondary: "#8B5CF6", // purple-500
+    gradientFrom: "#22D3EE",
+    gradientTo: "#8B5CF6",
+  },
+  dark: {
+    accent: "#22D3EE",
+    accentSecondary: "#8B5CF6",
+    gradientFrom: "#22D3EE",
+    gradientTo: "#8B5CF6",
+  },
+} as const;
+
+const IMAGES = {
+  person1: {
+    path: "/registry/landingfolio-hero-3/person-1.jpg",
+    alt: "Guy Hawkins - Software Engineer",
+    prompt: `Professional headshot portrait of a young man.
+Style: Natural lighting, soft focus background, clean professional
+Layout: Head and shoulders, centered composition
+Composition: Confident expression, professional attire
+Background: Solid color with gradient (emerald green)
+Color palette: Natural skin tones, green background
+Mood: Confident, approachable, professional
+Technical: High resolution, sharp facial features`,
+  },
+  person2: {
+    path: "/registry/landingfolio-hero-3/person-2.jpg",
+    alt: "Leslie Alexander - HR Manager at Groove",
+    prompt: `Professional headshot portrait of a young woman.
+Style: Natural lighting, soft focus background, professional
+Layout: Head and shoulders, centered composition
+Composition: Friendly smile, professional presentation
+Background: Solid color with gradient (yellow-green)
+Color palette: Natural skin tones, warm yellow background
+Mood: Friendly, professional, approachable
+Technical: High resolution, sharp facial features`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -20,6 +70,7 @@ interface ProfileCard {
 }
 
 interface LandingfolioHero3Props {
+  mode?: "light" | "dark";
   logoText?: string;
   headline?: string;
   description?: string;
@@ -141,20 +192,21 @@ const defaultProfiles: ProfileCard[] = [
   {
     name: "Guy Hawkins",
     title: "Software Engineer",
-    imageSrc: "/registry/landingfolio-hero-3/person-1.jpg",
+    imageSrc: IMAGES.person1.path,
     bgColor: "linear-gradient(135deg, #6ee7b7 0%, #5eead4 100%)",
   },
   {
     name: "Leslie Alexander",
     title: "HR Manager",
     company: "Groove",
-    imageSrc: "/registry/landingfolio-hero-3/person-2.jpg",
+    imageSrc: IMAGES.person2.path,
     bgColor: "linear-gradient(135deg, #fef9c3 0%, #d9f99d 100%)",
   },
 ];
 
 // Main Component
 export default function LandingfolioHero3({
+  mode = "dark",
   logoText = "DuskUI",
   headline = "Connecting Devs\nwith Employers",
   description = "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.",
@@ -169,6 +221,7 @@ export default function LandingfolioHero3({
   onSearch,
 }: LandingfolioHero3Props) {
   const [searchQuery, setSearchQuery] = useState("");
+  const colors = COLORS[mode];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -207,7 +260,11 @@ export default function LandingfolioHero3({
         <motion.button
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          className="rounded-full border border-cyan-400/50 bg-transparent px-5 py-2 text-sm font-medium text-white transition-all hover:border-cyan-400 hover:shadow-[0_0_20px_rgba(34,211,238,0.3)]"
+          className="rounded-full bg-transparent px-5 py-2 text-sm font-medium text-white transition-all"
+          style={{
+            border: `1px solid ${colors.accent}80`,
+            boxShadow: `0 0 20px ${colors.accent}4D`,
+          }}
         >
           {trialButtonText}
         </motion.button>
@@ -306,8 +363,8 @@ export default function LandingfolioHero3({
             />
             <defs>
               <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#8B5CF6" />
-                <stop offset="100%" stopColor="#22D3EE" />
+                <stop offset="0%" stopColor={colors.accentSecondary} />
+                <stop offset="100%" stopColor={colors.accent} />
               </linearGradient>
             </defs>
           </svg>
@@ -368,8 +425,18 @@ export default function LandingfolioHero3({
       </div>
 
       {/* Background Gradient Effects */}
-      <div className="pointer-events-none absolute top-0 right-0 h-96 w-96 bg-gradient-to-bl from-cyan-500/10 via-transparent to-transparent blur-3xl" />
-      <div className="pointer-events-none absolute bottom-0 left-0 h-96 w-96 bg-gradient-to-tr from-purple-500/10 via-transparent to-transparent blur-3xl" />
+      <div
+        className="pointer-events-none absolute top-0 right-0 h-96 w-96 blur-3xl"
+        style={{
+          background: `radial-gradient(circle at center, ${colors.accent}1A, transparent)`,
+        }}
+      />
+      <div
+        className="pointer-events-none absolute bottom-0 left-0 h-96 w-96 blur-3xl"
+        style={{
+          background: `radial-gradient(circle at center, ${colors.accentSecondary}1A, transparent)`,
+        }}
+      />
     </section>
   );
 }

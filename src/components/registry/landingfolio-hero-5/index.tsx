@@ -4,6 +4,47 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    // Card gradient colors
+    cardGradientFrom: "#FFD700", // Gold
+    cardGradientMid: "#FFC107", // Amber
+    cardGradientTo: "#FF9800", // Orange
+    cardChipBg: "#E5A800", // Darker gold
+    // Accent colors
+    accent: "#F97316", // Orange accent for decorative elements
+  },
+  dark: {
+    cardGradientFrom: "#FFD700",
+    cardGradientMid: "#FFC107",
+    cardGradientTo: "#FF9800",
+    cardChipBg: "#E5A800",
+    accent: "#F97316",
+  },
+} as const;
+
+const IMAGES = {
+  woman: {
+    path: "/registry/landingfolio-hero-5/woman.png",
+    alt: "Happy developer with credit card",
+    prompt: `Professional portrait of a young woman holding a credit card.
+Style: Clean, bright, professional photography with white/light background
+Layout: Full body or 3/4 shot, centered composition, PNG with transparency
+Composition: Confident pose, holding credit card, professional attire
+Color palette: Clean, bright, natural skin tones
+Mood: Happy, confident, successful, approachable
+Technical: High resolution, PNG transparency, professional lighting`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -16,6 +57,7 @@ interface StatItem {
 }
 
 interface LandingfolioHero5Props {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   headline?: string;
@@ -62,7 +104,7 @@ function WavyLines() {
   );
 }
 
-function OrangeWavy() {
+function OrangeWavy({ color = "#F97316" }: { color?: string }) {
   return (
     <svg
       width="50"
@@ -73,7 +115,7 @@ function OrangeWavy() {
     >
       <path
         d="M5 15C15 5 25 25 35 15C45 5 45 15 45 15"
-        stroke="#F97316"
+        stroke={color}
         strokeWidth="3"
         strokeLinecap="round"
         fill="none"
@@ -106,9 +148,11 @@ function BlackTilde() {
 function CreditCard({
   cardholderName = "ESTHER HOWARD",
   companyName = "RJ DEVELOPMENT INC",
+  colors,
 }: {
   cardholderName?: string;
   companyName?: string;
+  colors: typeof COLORS.light;
 }) {
   return (
     <motion.div
@@ -129,12 +173,17 @@ function CreditCard({
 
         {/* Chip */}
         <div className="mt-6">
-          <div className="flex h-10 w-12 items-center justify-center rounded-md bg-gradient-to-br from-[#FFD700] via-[#FFC107] to-[#FF9800]">
+          <div
+            className="flex h-10 w-12 items-center justify-center rounded-md"
+            style={{
+              background: `linear-gradient(to bottom right, ${colors.cardGradientFrom}, ${colors.cardGradientMid}, ${colors.cardGradientTo})`,
+            }}
+          >
             <div className="grid grid-cols-2 gap-0.5">
-              <div className="h-3 w-4 rounded-sm bg-[#E5A800]" />
-              <div className="h-3 w-4 rounded-sm bg-[#E5A800]" />
-              <div className="h-3 w-4 rounded-sm bg-[#E5A800]" />
-              <div className="h-3 w-4 rounded-sm bg-[#E5A800]" />
+              <div className="h-3 w-4 rounded-sm" style={{ backgroundColor: colors.cardChipBg }} />
+              <div className="h-3 w-4 rounded-sm" style={{ backgroundColor: colors.cardChipBg }} />
+              <div className="h-3 w-4 rounded-sm" style={{ backgroundColor: colors.cardChipBg }} />
+              <div className="h-3 w-4 rounded-sm" style={{ backgroundColor: colors.cardChipBg }} />
             </div>
           </div>
         </div>
@@ -186,6 +235,7 @@ const defaultStats: StatItem[] = [
 
 // Main Component
 export default function LandingfolioHero5({
+  mode = "light",
   logoText = "RAREBLOCKS",
   navItems = defaultNavItems,
   headline = "A special credit\ncard made for\nDevelopers.",
@@ -200,6 +250,7 @@ export default function LandingfolioHero5({
   onSubmit,
 }: LandingfolioHero5Props) {
   const [email, setEmail] = useState("");
+  const colors = COLORS[mode];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -330,7 +381,7 @@ export default function LandingfolioHero5({
             <WavyLines />
           </div>
           <div className="absolute right-20 top-0 z-20">
-            <OrangeWavy />
+            <OrangeWavy color={colors.accent} />
           </div>
           <div className="absolute -right-4 top-20 z-20">
             <BlackTilde />
@@ -344,8 +395,8 @@ export default function LandingfolioHero5({
             className="relative ml-auto h-[450px] w-full max-w-[380px] md:h-[520px] md:max-w-[400px]"
           >
             <Image
-              src="/registry/landingfolio-hero-5/woman.png"
-              alt="Happy developer with credit card"
+              src={IMAGES.woman.path}
+              alt={IMAGES.woman.alt}
               fill
               className="rounded-lg object-cover object-top"
               priority
@@ -356,6 +407,7 @@ export default function LandingfolioHero5({
           <CreditCard
             cardholderName={cardholderName}
             companyName={cardCompanyName}
+            colors={colors}
           />
         </div>
       </div>

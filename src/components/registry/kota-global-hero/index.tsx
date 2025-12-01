@@ -11,6 +11,7 @@ interface StatItem {
 }
 
 interface KotaGlobalHeroProps {
+  mode?: "customization" | "default";
   /** Country label displayed above the title */
   countryLabel?: string;
   /** Main headline - supports line breaks with \n */
@@ -59,7 +60,10 @@ const defaultStats: StatItem[] = [
   },
 ];
 
+const CUSTOMIZATION = {};
+
 export default function KotaGlobalHero({
+  mode = "default",
   countryLabel = "AUSTRIA",
   headline = "Benefits for your team\nin Austria",
   description = "Kota makes benefits administration easy. Offer\nHealth Insurance out of the box, and easily for your\nteam in Austria",

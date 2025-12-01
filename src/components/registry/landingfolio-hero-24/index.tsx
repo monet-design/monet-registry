@@ -17,6 +17,7 @@ interface Stat {
 }
 
 interface LandingfolioHero24Props {
+  mode?: "customization" | "default";
   logoText?: string;
   navItems?: NavItem[];
   headline?: string;
@@ -45,7 +46,10 @@ const defaultStats: Stat[] = [
 ];
 
 // Main Component
+const CUSTOMIZATION = {};
+
 export default function LandingfolioHero24({
+  mode = "default",
   logoText = "/RAREBLOCKS",
   navItems = defaultNavItems,
   headline = "Find the best office\naccessories in one tap",

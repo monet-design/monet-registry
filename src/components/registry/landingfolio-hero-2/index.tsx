@@ -6,6 +6,7 @@ import Image from "next/image";
 
 // Types
 interface LandingfolioHero2Props {
+  mode?: "customization" | "default";
   logo?: {
     icon?: React.ReactNode;
     text?: string;
@@ -79,7 +80,10 @@ function CursorIcon({ className = "w-6 h-6" }: { className?: string }) {
 }
 
 // Main Component
+const CUSTOMIZATION = {};
+
 export default function LandingfolioHero2({
+  mode = "default",
   logo = {
     icon: <FolderIcon className="w-6 h-6" />,
     text: "Postcrafts",

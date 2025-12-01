@@ -5,6 +5,59 @@ import { Play, Wheat } from "lucide-react";
 import Image from "next/image";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#C4A574", // Gold/tan tagline color
+  },
+  dark: {
+    accent: "#C4A574",
+  },
+} as const;
+
+const IMAGES = {
+  topRight: {
+    path: "/registry/landingfolio-hero-33/hands-kneading.jpg",
+    alt: "Hands kneading bread dough",
+    prompt: `Close-up photography of hands kneading bread dough.
+Style: Professional food photography, warm natural lighting
+Layout: Hands-focused shot, dough texture prominent
+Composition: Artisan baker's hands working with dough
+Color palette: Warm skin tones, cream dough, natural flour
+Mood: Artisanal, craft, hands-on, traditional
+Technical: High resolution, shallow depth of field`,
+  },
+  middleRight: {
+    path: "/registry/landingfolio-hero-33/flour-artistic.jpg",
+    alt: "Flour close-up",
+    prompt: `Artistic close-up of flour texture.
+Style: Macro food photography, soft lighting
+Layout: Abstract texture shot, flour details
+Composition: Fine powder texture, soft focus
+Color palette: White flour, subtle shadows, cream tones
+Mood: Pure, natural, artisanal ingredient
+Technical: High resolution, macro lens effect`,
+  },
+  bottomCenter: {
+    path: "/registry/landingfolio-hero-33/baked-bread.jpg",
+    alt: "Freshly baked artisan bread",
+    prompt: `Professional photography of freshly baked artisan bread.
+Style: Food photography, warm lighting, rustic aesthetic
+Layout: Bread loaf on wooden surface, centered composition
+Composition: Crusty exterior, golden brown crust visible
+Color palette: Golden brown crust, warm tones, natural wood
+Mood: Fresh, artisanal, inviting, delicious
+Technical: High resolution, sharp focus on texture`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -12,6 +65,7 @@ interface NavItem {
 }
 
 interface LandingfolioHero33Props {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   tagline?: string;
@@ -60,6 +114,7 @@ function Logo({ text = "BakerSTREET" }: { text?: string }) {
 
 // Main Component
 export default function LandingfolioHero33({
+  mode = "dark",
   logoText = "BakerSTREET",
   navItems = defaultNavItems,
   tagline = "STARTING AT $9.99/MONTH",
@@ -69,14 +124,15 @@ export default function LandingfolioHero33({
   primaryButtonText = "Get started",
   secondaryButtonText = "Watch trailer",
   images = {
-    topRight: "/registry/landingfolio-hero-33/hands-kneading.jpg",
-    middleRight: "/registry/landingfolio-hero-33/flour-artistic.jpg",
-    bottomCenter: "/registry/landingfolio-hero-33/baked-bread.jpg",
+    topRight: IMAGES.topRight.path,
+    middleRight: IMAGES.middleRight.path,
+    bottomCenter: IMAGES.bottomCenter.path,
   },
   onPrimaryClick,
   onSecondaryClick,
   onNavClick,
 }: LandingfolioHero33Props) {
+  const colors = COLORS[mode];
   return (
     <section className="relative w-full min-h-screen bg-black overflow-hidden">
       {/* Navigation */}
@@ -119,7 +175,8 @@ export default function LandingfolioHero33({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1, duration: 0.5 }}
-              className="text-[#C4A574] text-xs tracking-widest font-medium mb-6"
+              className="text-xs tracking-widest font-medium mb-6"
+              style={{ color: colors.accent }}
             >
               {tagline}
             </motion.p>
@@ -188,7 +245,7 @@ export default function LandingfolioHero33({
       >
         <Image
           src={images.topRight || ""}
-          alt="Hands kneading bread dough"
+          alt={IMAGES.topRight.alt}
           fill
           className="object-cover"
           sizes="(max-width: 768px) 50vw, 380px"
@@ -204,7 +261,7 @@ export default function LandingfolioHero33({
       >
         <Image
           src={images.middleRight || ""}
-          alt="Flour close-up"
+          alt={IMAGES.middleRight.alt}
           fill
           className="object-cover"
           sizes="(max-width: 768px) 144px, 208px"
@@ -220,7 +277,7 @@ export default function LandingfolioHero33({
       >
         <Image
           src={images.bottomCenter || ""}
-          alt="Freshly baked artisan bread"
+          alt={IMAGES.bottomCenter.alt}
           fill
           className="object-cover"
           sizes="(max-width: 768px) 288px, 380px"

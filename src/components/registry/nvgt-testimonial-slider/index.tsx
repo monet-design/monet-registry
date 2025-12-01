@@ -1,5 +1,26 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#000000",
+    cardBg: "#141416",
+    badgeIndicator: "#bef264",
+  },
+  dark: {
+    background: "#000000",
+    cardBg: "#141416",
+    badgeIndicator: "#bef264",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState, useRef } from "react";
 import { motion } from "motion/react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -17,6 +38,7 @@ interface Testimonial {
 }
 
 interface NvgtTestimonialSliderProps {
+  mode?: "light" | "dark";
   badgeText?: string;
   headlineLine1?: string;
   headlineLine2?: string;
@@ -109,7 +131,7 @@ const defaultTestimonials: Testimonial[] = [
 ];
 
 // Badge Component
-function Badge({ text }: { text: string }) {
+function Badge({ text, colors }: { text: string; colors: typeof COLORS.light }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: -10 }}
@@ -117,14 +139,14 @@ function Badge({ text }: { text: string }) {
       transition={{ duration: 0.5 }}
       className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5"
     >
-      <span className="h-2 w-2 rounded-full bg-lime-400" />
+      <span className="h-2 w-2 rounded-full" style={{ backgroundColor: colors.badgeIndicator }} />
       <span className="text-xs font-medium text-white/90">{text}</span>
     </motion.div>
   );
 }
 
 // Testimonial Card Component
-function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
+function TestimonialCard({ testimonial, colors }: { testimonial: Testimonial; colors: typeof COLORS.light }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30, scale: 0.95 }}
@@ -138,7 +160,8 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
         scale: 1.02,
         transition: { duration: 0.25, ease: "easeOut" },
       }}
-      className="flex h-full min-w-[280px] max-w-[320px] cursor-pointer flex-col rounded-2xl bg-[#141416] p-5 transition-shadow hover:shadow-xl hover:shadow-black/30"
+      className="flex h-full min-w-[280px] max-w-[320px] cursor-pointer flex-col rounded-2xl p-5 transition-shadow hover:shadow-xl hover:shadow-black/30"
+      style={{ backgroundColor: colors.cardBg }}
     >
       {/* Author Info - Top */}
       <div className="flex items-center gap-3">
@@ -194,6 +217,7 @@ function NavButton({
 
 // Main Component
 export default function NvgtTestimonialSlider({
+  mode = "light",
   badgeText = "Testimonials",
   headlineLine1 = "Helping brands achieve their",
   headlineLine2 = "goals and make a change.",
@@ -201,6 +225,7 @@ export default function NvgtTestimonialSlider({
 }: NvgtTestimonialSliderProps) {
   const [scrollIndex, setScrollIndex] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
+  const colors = COLORS[mode];
 
   const handlePrev = () => {
     setScrollIndex((prev) =>
@@ -213,13 +238,16 @@ export default function NvgtTestimonialSlider({
   };
 
   return (
-    <section className="relative w-full overflow-hidden bg-black py-16 sm:py-20 lg:py-24">
+    <section
+      className="relative w-full overflow-hidden py-16 sm:py-20 lg:py-24"
+      style={{ backgroundColor: colors.background }}
+    >
       <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="mb-10 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
             {/* Badge */}
-            <Badge text={badgeText} />
+            <Badge text={badgeText} colors={colors} />
 
             {/* Headline */}
             <motion.h2
@@ -268,7 +296,7 @@ export default function NvgtTestimonialSlider({
             }}
           >
             {testimonials.map((testimonial) => (
-              <TestimonialCard key={testimonial.id} testimonial={testimonial} />
+              <TestimonialCard key={testimonial.id} testimonial={testimonial} colors={colors} />
             ))}
           </motion.div>
         </div>

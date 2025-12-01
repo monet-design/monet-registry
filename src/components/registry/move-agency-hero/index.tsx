@@ -1,9 +1,35 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#EFEEE7",
+    accent: "#C2D719",
+    accentHover: "#B0C510",
+    newsCardBg: "#1a1a1a",
+    newsIndicator: "#ef4444",
+  },
+  dark: {
+    background: "#1a1a1a",
+    accent: "#C2D719",
+    accentHover: "#B0C510",
+    newsCardBg: "#2a2a2a",
+    newsIndicator: "#ef4444",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowRight, ArrowDown, ChevronDown, Globe } from "lucide-react";
 
 interface MoveAgencyHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   logoSubtext?: string;
   navItems?: { label: string; href: string; hasDropdown?: boolean }[];
@@ -40,11 +66,14 @@ export default function MoveAgencyHero({
   exploreText = "Explore",
   contactButtonText = "Contact",
   contactButtonHref = "#",
+  mode = "light",
 }: MoveAgencyHeroProps) {
+  const colors = COLORS[mode];
+
   return (
     <section
       className="relative min-h-screen w-full overflow-hidden"
-      style={{ backgroundColor: "#EFEEE7" }}
+      style={{ backgroundColor: colors.background }}
     >
       {/* Navigation */}
       <motion.nav
@@ -96,7 +125,7 @@ export default function MoveAgencyHero({
           <a
             href={contactButtonHref}
             className="flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-black transition-all hover:scale-105"
-            style={{ backgroundColor: "#C2D719" }}
+            style={{ backgroundColor: colors.accent }}
           >
             {contactButtonText}
             <ArrowRight className="h-4 w-4" />
@@ -123,12 +152,12 @@ export default function MoveAgencyHero({
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             className="absolute bottom-24 left-8 z-10 max-w-xs rounded-2xl p-6 lg:bottom-32 lg:left-12"
-            style={{ backgroundColor: "#1a1a1a" }}
+            style={{ backgroundColor: colors.newsCardBg }}
           >
             <div className="mb-3 flex items-start gap-2">
               <span
                 className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full"
-                style={{ backgroundColor: "#ef4444" }}
+                style={{ backgroundColor: colors.newsIndicator }}
               />
               <p
                 className="text-sm font-medium leading-snug text-white"
@@ -140,7 +169,7 @@ export default function MoveAgencyHero({
             <a
               href={newsIndicator.href}
               className="mt-4 inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-semibold text-black transition-all hover:scale-105"
-              style={{ backgroundColor: "#C2D719" }}
+              style={{ backgroundColor: colors.accent }}
             >
               {newsIndicator.buttonText}
               <ArrowRight className="h-4 w-4" />

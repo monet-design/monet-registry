@@ -1,5 +1,38 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#FFFFFF", // Primary button 배경
+    accentText: "#000000", // Primary button 텍스트
+    iconGradientFrom: "#026841", // 3D 알림 아이콘 그라데이션 시작
+    iconGradientTo: "#024B28", // 3D 알림 아이콘 그라데이션 끝
+    iconHighlight: "#03A65A", // 3D 알림 아이콘 하이라이트
+    iconDark: "#014220", // 3D 알림 아이콘 어두운 부분
+    mentionColor: "#8B5CF6", // Mention 강조 색상 (보라)
+    mentionColorAlt: "#EC4899", // Mention 강조 색상 대체 (핑크)
+    timeAccent: "#A855F7", // Just now 텍스트 색상
+  },
+  dark: {
+    accent: "#FFFFFF",
+    accentText: "#000000",
+    iconGradientFrom: "#026841",
+    iconGradientTo: "#024B28",
+    iconHighlight: "#03A65A",
+    iconDark: "#014220",
+    mentionColor: "#8B5CF6",
+    mentionColorAlt: "#EC4899",
+    timeAccent: "#A855F7",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowRight, Code, Users, Accessibility } from "lucide-react";
 
@@ -28,6 +61,7 @@ interface EmailNotificationProps {
 }
 
 interface LiveblocksNotificationsHeroProps {
+  mode?: "light" | "dark";
   badge?: string;
   title?: string;
   primaryButtonText?: string;
@@ -39,24 +73,24 @@ interface LiveblocksNotificationsHeroProps {
   onSecondaryClick?: () => void;
 }
 
-function NotificationIcon3D() {
+function NotificationIcon3D({ colors }: { colors: typeof COLORS.light }) {
   return (
     <div className="relative w-24 h-24 mb-8">
       <svg viewBox="0 0 100 100" className="w-full h-full">
         <defs>
           <linearGradient id="bellGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#026841" />
-            <stop offset="100%" stopColor="#024B28" />
+            <stop offset="0%" stopColor={colors.iconGradientFrom} />
+            <stop offset="100%" stopColor={colors.iconGradientTo} />
           </linearGradient>
           <linearGradient id="bellHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#03A65A" />
-            <stop offset="100%" stopColor="#026841" />
+            <stop offset="0%" stopColor={colors.iconHighlight} />
+            <stop offset="100%" stopColor={colors.iconGradientFrom} />
           </linearGradient>
         </defs>
         {/* Back face (darker) */}
         <path
           d="M25 35 L25 60 Q25 75 50 80 Q75 75 75 60 L75 35 Q75 20 50 15 Q25 20 25 35 Z"
-          fill="#014220"
+          fill={colors.iconDark}
           transform="translate(8, 8)"
         />
         {/* Main bell body */}
@@ -71,7 +105,7 @@ function NotificationIcon3D() {
           opacity="0.6"
         />
         {/* Bell clapper */}
-        <circle cx="58" cy="85" r="6" fill="#014220" />
+        <circle cx="58" cy="85" r="6" fill={colors.iconDark} />
         <circle cx="50" cy="82" r="6" fill="url(#bellGradient)" />
       </svg>
     </div>
@@ -143,6 +177,7 @@ function EmailCard({
 }
 
 function NotificationsInbox({
+  colors,
   notifications = [
     {
       id: "1",
@@ -180,6 +215,7 @@ function NotificationsInbox({
     },
   ],
 }: {
+  colors: typeof COLORS.light;
   notifications?: NotificationItem[];
 }) {
   return (
@@ -217,7 +253,7 @@ function NotificationsInbox({
                 <span className="text-sm font-medium text-gray-900">
                   {notification.name}
                 </span>
-                <span className="text-xs text-purple-500">Just now</span>
+                <span className="text-xs" style={{ color: colors.timeAccent }}>Just now</span>
               </div>
               <p className="text-sm text-gray-600 truncate">
                 {notification.message}
@@ -238,6 +274,7 @@ function NotificationsInbox({
 }
 
 export default function LiveblocksNotificationsHero({
+  mode = "dark",
   badge = "NOTIFICATIONS",
   title = "The notification system\ndesigned for collaboration",
   primaryButtonText = "Sign up for free",
@@ -252,6 +289,7 @@ export default function LiveblocksNotificationsHero({
   onPrimaryClick,
   onSecondaryClick,
 }: LiveblocksNotificationsHeroProps) {
+  const colors = COLORS[mode];
   return (
     <section className="relative min-h-screen w-full bg-black overflow-hidden">
       {/* Content */}
@@ -262,7 +300,7 @@ export default function LiveblocksNotificationsHero({
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <NotificationIcon3D />
+          <NotificationIcon3D colors={colors} />
         </motion.div>
 
         {/* Badge */}
@@ -294,7 +332,8 @@ export default function LiveblocksNotificationsHero({
         >
           <button
             onClick={onPrimaryClick}
-            className="flex items-center gap-2 bg-white text-black px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
+            className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
+            style={{ backgroundColor: colors.accent, color: colors.accentText }}
           >
             {primaryButtonText}
             <ArrowRight className="w-4 h-4" />
@@ -336,7 +375,7 @@ export default function LiveblocksNotificationsHero({
 
             {/* Notifications inbox card */}
             <div className="flex justify-center md:justify-start">
-              <NotificationsInbox notifications={notifications} />
+              <NotificationsInbox colors={colors} notifications={notifications} />
             </div>
           </div>
         </div>

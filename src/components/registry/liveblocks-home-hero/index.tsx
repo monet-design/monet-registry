@@ -1,9 +1,50 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#FFFFFF", // Primary button 배경
+    accentText: "#000000", // Primary button 텍스트
+  },
+  dark: {
+    accent: "#FFFFFF",
+    accentText: "#000000",
+  },
+} as const;
+
+const IMAGES = {
+  blocks3d: {
+    path: "/registry/liveblocks-home-hero/blocks-3d.png",
+    alt: "3D collaboration blocks",
+    prompt: `3D rendered colorful blocks arranged in a floating composition.
+Style: Modern, vibrant, playful 3D illustration with soft shadows
+Layout: Multiple blocks stacked and arranged at various angles
+Composition: Blocks in different colors (orange, yellow, green, purple) creating a sense of depth
+Color palette: Bright, cheerful colors with soft gradients
+Mood: Collaborative, creative, dynamic
+Technical: PNG with transparency, soft drop shadows, 16:9 aspect ratio`,
+  },
+} as const;
+
+const FEATURE_COLORS = {
+  comments: "#F5A623",
+  notifications: "#7ED321",
+  textEditor: "#BD10E0",
+  realtimeApis: "#E74C3C",
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowRight, MessageSquare, Bell, Type, Zap } from "lucide-react";
 
 interface LiveblocksHomeHeroProps {
+  mode?: "light" | "dark";
   badgeText?: string;
   badgeLinkText?: string;
   title?: string;
@@ -17,6 +58,7 @@ interface LiveblocksHomeHeroProps {
 }
 
 export default function LiveblocksHomeHero({
+  mode = "dark",
   badgeText = "Introducing",
   badgeLinkText = "Liveblocks 2.0",
   title = "Unlock collaboration\nin your product",
@@ -28,24 +70,25 @@ export default function LiveblocksHomeHero({
   onPrimaryClick,
   onSecondaryClick,
 }: LiveblocksHomeHeroProps) {
+  const colors = COLORS[mode];
   const defaultDescription = (
     <>
       Ship features like{" "}
-      <FeatureHighlight icon={<MessageSquare className="w-4 h-4" />} color="#F5A623">
+      <FeatureHighlight icon={<MessageSquare className="w-4 h-4" />} color={FEATURE_COLORS.comments}>
         Comments
       </FeatureHighlight>
       ,{" "}
-      <FeatureHighlight icon={<Bell className="w-4 h-4" />} color="#7ED321">
+      <FeatureHighlight icon={<Bell className="w-4 h-4" />} color={FEATURE_COLORS.notifications}>
         Notifications
       </FeatureHighlight>
       , a{" "}
-      <FeatureHighlight icon={<Type className="w-4 h-4" />} color="#BD10E0">
+      <FeatureHighlight icon={<Type className="w-4 h-4" />} color={FEATURE_COLORS.textEditor}>
         Text Editor
       </FeatureHighlight>
       , or build
       <br />
       any collaborative experience with{" "}
-      <FeatureHighlight icon={<Zap className="w-4 h-4" />} color="#E74C3C">
+      <FeatureHighlight icon={<Zap className="w-4 h-4" />} color={FEATURE_COLORS.realtimeApis}>
         Realtime APIs
       </FeatureHighlight>{" "}
       in days, not months.
@@ -108,7 +151,8 @@ export default function LiveblocksHomeHero({
           <a
             href={primaryButtonHref}
             onClick={onPrimaryClick}
-            className="group flex items-center gap-2 px-6 py-3 bg-white text-black font-medium rounded-full hover:bg-neutral-200 transition-colors"
+            className="group flex items-center gap-2 px-6 py-3 font-medium rounded-full hover:bg-neutral-200 transition-colors"
+            style={{ backgroundColor: colors.accent, color: colors.accentText }}
           >
             {primaryButtonText}
             <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
@@ -133,8 +177,8 @@ export default function LiveblocksHomeHero({
       >
         <div className="relative w-full h-full">
           <img
-            src="/registry/liveblocks-home-hero/blocks-3d.png"
-            alt="3D collaboration blocks"
+            src={IMAGES.blocks3d.path}
+            alt={IMAGES.blocks3d.alt}
             className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-auto object-contain"
           />
           {/* Gradient overlay to blend with background */}

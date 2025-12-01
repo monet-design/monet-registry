@@ -1,5 +1,39 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#0D0D12",
+    accentHover: "#2a2a2a",
+  },
+  dark: {
+    accent: "#0D0D12",
+    accentHover: "#2a2a2a",
+  },
+} as const;
+
+const IMAGES = {
+  hero: {
+    path: "/registry/moxion-hero/hero-bg.jpg",
+    alt: "Moxion power solutions in action",
+    prompt: `Industrial energy storage system in outdoor setting.
+Style: Clean, professional photography, natural daylight
+Layout: Wide landscape shot, equipment centered with environment context
+Composition: Large mobile battery storage unit, industrial setting, clean background
+Background: Open outdoor space, minimal distractions, possibly construction or event site
+Color palette: Industrial grays and silvers, natural outdoor colors, blue sky
+Mood: Professional, powerful, clean energy, innovative technology
+Technical: High resolution, sharp focus, 16:9 aspect ratio, natural lighting`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowRight, ArrowDown } from "lucide-react";
 
@@ -11,6 +45,7 @@ interface NavItem {
 }
 
 interface MoxionHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   headline?: string;
   subheadline?: string;
@@ -40,10 +75,12 @@ function Navigation({
   items,
   ctaText,
   onCtaClick,
+  colors,
 }: {
   items: NavItem[];
   ctaText: string;
   onCtaClick?: () => void;
+  colors: typeof COLORS.light;
 }) {
   return (
     <div className="flex items-center gap-8">
@@ -53,8 +90,8 @@ function Navigation({
           <a
             key={item.label}
             href={item.href}
-            className={`text-sm text-[#1a1a1a] transition-colors hover:text-[#0D0D12] ${
-              item.isActive ? "border-b border-[#1a1a1a]" : ""
+            className={`text-sm text-gray-900 dark:text-gray-100 transition-colors hover:opacity-70 ${
+              item.isActive ? "border-b border-gray-900 dark:border-gray-100" : ""
             }`}
             style={{ fontFamily: "Inter, sans-serif" }}
           >
@@ -66,8 +103,13 @@ function Navigation({
       {/* CTA Button */}
       <button
         onClick={onCtaClick}
-        className="flex items-center gap-2 rounded-full bg-[#0D0D12] px-4 py-2 text-sm text-white transition-all hover:bg-[#2a2a2a]"
-        style={{ fontFamily: "Inter, sans-serif" }}
+        className="flex items-center gap-2 rounded-full px-4 py-2 text-sm text-white transition-all"
+        style={{
+          fontFamily: "Inter, sans-serif",
+          backgroundColor: colors.accent
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.backgroundColor = colors.accentHover)}
+        onMouseOut={(e) => (e.currentTarget.style.backgroundColor = colors.accent)}
       >
         <ArrowRight size={16} />
         <span>{ctaText}</span>
@@ -103,15 +145,17 @@ const defaultNavItems: NavItem[] = [
 
 // Main Component
 export default function MoxionHero({
+  mode = "light",
   logoText = "MOXION",
   headline = "Good Energy.\nRadical Power.",
   subheadline = "Zero-emission power. Delivered.",
   ctaText = "Contact",
   navItems = defaultNavItems,
-  backgroundImage = "/registry/moxion-hero/hero-bg.jpg",
+  backgroundImage = IMAGES.hero.path,
   onCtaClick,
   onScrollClick,
 }: MoxionHeroProps) {
+  const colors = COLORS[mode];
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
       {/* Background Image */}
@@ -138,7 +182,7 @@ export default function MoxionHero({
           <MoxionLogo text={logoText} />
 
           {/* Navigation */}
-          <Navigation items={navItems} ctaText={ctaText} onCtaClick={onCtaClick} />
+          <Navigation items={navItems} ctaText={ctaText} onCtaClick={onCtaClick} colors={colors} />
         </motion.header>
 
         {/* Main Content */}

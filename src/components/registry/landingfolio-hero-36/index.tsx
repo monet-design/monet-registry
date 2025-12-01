@@ -4,6 +4,105 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#5046E5", // Purple brand color
+    buttonBg: "#303743", // Dark button background
+  },
+  dark: {
+    accent: "#5046E5",
+    buttonBg: "#303743",
+  },
+} as const;
+
+const IMAGES = {
+  avatar1: {
+    path: "/registry/landingfolio-hero-36/avatar-1.jpg",
+    alt: "User avatar 1",
+    prompt: `Professional headshot portrait for avatar.
+Style: Clean, professional, friendly
+Layout: Head and shoulders, centered
+Composition: Neutral background, professional attire
+Color palette: Natural, diverse skin tones
+Mood: Approachable, professional
+Technical: Square crop, high resolution`,
+  },
+  avatar2: {
+    path: "/registry/landingfolio-hero-36/avatar-2.jpg",
+    alt: "User avatar 2",
+    prompt: `Professional headshot portrait for avatar.
+Style: Clean, professional, friendly
+Layout: Head and shoulders, centered
+Composition: Neutral background, professional attire
+Color palette: Natural, diverse skin tones
+Mood: Approachable, professional
+Technical: Square crop, high resolution`,
+  },
+  avatar3: {
+    path: "/registry/landingfolio-hero-36/avatar-3.jpg",
+    alt: "User avatar 3",
+    prompt: `Professional headshot portrait for avatar.
+Style: Clean, professional, friendly
+Layout: Head and shoulders, centered
+Composition: Neutral background, professional attire
+Color palette: Natural, diverse skin tones
+Mood: Approachable, professional
+Technical: Square crop, high resolution`,
+  },
+  avatar4: {
+    path: "/registry/landingfolio-hero-36/avatar-4.jpg",
+    alt: "User avatar 4",
+    prompt: `Professional headshot portrait for avatar.
+Style: Clean, professional, friendly
+Layout: Head and shoulders, centered
+Composition: Neutral background, professional attire
+Color palette: Natural, diverse skin tones
+Mood: Approachable, professional
+Technical: Square crop, high resolution`,
+  },
+  avatar5: {
+    path: "/registry/landingfolio-hero-36/avatar-5.jpg",
+    alt: "User avatar 5",
+    prompt: `Professional headshot portrait for avatar.
+Style: Clean, professional, friendly
+Layout: Head and shoulders, centered
+Composition: Neutral background, professional attire
+Color palette: Natural, diverse skin tones
+Mood: Approachable, professional
+Technical: Square crop, high resolution`,
+  },
+  avatar6: {
+    path: "/registry/landingfolio-hero-36/avatar-6.jpg",
+    alt: "User avatar 6",
+    prompt: `Professional headshot portrait for avatar.
+Style: Clean, professional, friendly
+Layout: Head and shoulders, centered
+Composition: Neutral background, professional attire
+Color palette: Natural, diverse skin tones
+Mood: Approachable, professional
+Technical: Square crop, high resolution`,
+  },
+  avatar7: {
+    path: "/registry/landingfolio-hero-36/avatar-7.jpg",
+    alt: "User avatar 7",
+    prompt: `Professional headshot portrait for avatar.
+Style: Clean, professional, friendly
+Layout: Head and shoulders, centered
+Composition: Neutral background, professional attire
+Color palette: Natural, diverse skin tones
+Mood: Approachable, professional
+Technical: Square crop, high resolution`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -21,6 +120,7 @@ interface FeaturedBrand {
 }
 
 interface LandingfolioHero36Props {
+  mode?: "light" | "dark";
   logo?: {
     icon?: React.ReactNode;
     text?: string;
@@ -40,7 +140,7 @@ interface LandingfolioHero36Props {
 }
 
 // Logo Icon Component
-function LogoIcon({ className = "w-6 h-6" }: { className?: string }) {
+function LogoIcon({ className = "w-6 h-6", color = "#5046E5" }: { className?: string; color?: string }) {
   return (
     <svg
       className={className}
@@ -52,7 +152,7 @@ function LogoIcon({ className = "w-6 h-6" }: { className?: string }) {
         cx="16"
         cy="16"
         r="14"
-        stroke="#5046E5"
+        stroke={color}
         strokeWidth="3"
         fill="none"
       />
@@ -175,17 +275,18 @@ function WaverioIcon() {
 
 // Default avatar images (placeholders)
 const defaultAvatars: AvatarUser[] = [
-  { image: "/registry/landingfolio-hero-36/avatar-1.jpg", alt: "User 1" },
-  { image: "/registry/landingfolio-hero-36/avatar-2.jpg", alt: "User 2" },
-  { image: "/registry/landingfolio-hero-36/avatar-3.jpg", alt: "User 3" },
-  { image: "/registry/landingfolio-hero-36/avatar-4.jpg", alt: "User 4" },
-  { image: "/registry/landingfolio-hero-36/avatar-5.jpg", alt: "User 5" },
-  { image: "/registry/landingfolio-hero-36/avatar-6.jpg", alt: "User 6" },
-  { image: "/registry/landingfolio-hero-36/avatar-7.jpg", alt: "User 7" },
+  { image: IMAGES.avatar1.path, alt: IMAGES.avatar1.alt },
+  { image: IMAGES.avatar2.path, alt: IMAGES.avatar2.alt },
+  { image: IMAGES.avatar3.path, alt: IMAGES.avatar3.alt },
+  { image: IMAGES.avatar4.path, alt: IMAGES.avatar4.alt },
+  { image: IMAGES.avatar5.path, alt: IMAGES.avatar5.alt },
+  { image: IMAGES.avatar6.path, alt: IMAGES.avatar6.alt },
+  { image: IMAGES.avatar7.path, alt: IMAGES.avatar7.alt },
 ];
 
 // Main Component
 export default function LandingfolioHero36({
+  mode = "light",
   logo = {
     icon: <LogoIcon className="w-7 h-7" />,
     text: "ClarityUI",
@@ -213,6 +314,8 @@ export default function LandingfolioHero36({
   ],
   onSubmit,
 }: LandingfolioHero36Props) {
+  const colors = COLORS[mode];
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
@@ -268,7 +371,8 @@ export default function LandingfolioHero36({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="max-w-7xl mx-auto bg-[#5046E5] rounded-[2rem] overflow-hidden"
+            className="max-w-7xl mx-auto rounded-[2rem] overflow-hidden"
+            style={{ backgroundColor: colors.accent }}
           >
             <div className="flex flex-col px-8 lg:px-16 py-12 lg:py-16">
               {/* Top Section - Two Columns */}
@@ -336,7 +440,8 @@ export default function LandingfolioHero36({
                       />
                       <button
                         type="submit"
-                        className="w-full px-5 py-4 bg-[#303743] hover:bg-[#3a424f] text-white text-sm font-semibold rounded-xl transition-colors"
+                        className="w-full px-5 py-4 text-white text-sm font-semibold rounded-xl transition-colors hover:opacity-90"
+                        style={{ backgroundColor: colors.buttonBg }}
                       >
                         {buttonText}
                       </button>

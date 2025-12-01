@@ -1,9 +1,50 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    glowOuter: "rgba(6, 182, 212, 0.2)", // 외부 글로우 (시안/틸)
+    glowMid: "rgba(6, 182, 212, 0.1)", // 중간 글로우
+    glowInner: "rgba(20, 184, 166, 0.2)", // 내부 글로우 (에메랄드)
+    border: "rgba(6, 182, 212, 0.2)", // 이미지 보더
+    backgroundWatermark: "rgba(255, 255, 255, 0.06)", // 배경 텍스트
+  },
+  dark: {
+    glowOuter: "rgba(6, 182, 212, 0.2)",
+    glowMid: "rgba(6, 182, 212, 0.1)",
+    glowInner: "rgba(20, 184, 166, 0.2)",
+    border: "rgba(6, 182, 212, 0.2)",
+    backgroundWatermark: "rgba(255, 255, 255, 0.06)",
+  },
+} as const;
+
+const IMAGES = {
+  profile: {
+    path: "/registry/lovro-podobnik/profile.png",
+    alt: "Designer profile photo",
+    prompt: `Professional designer headshot portrait.
+Style: Clean, modern, professional photography
+Layout: Portrait orientation, head and shoulders
+Composition: Subject looking at camera with friendly expression
+Background: Neutral, blurred or solid color
+Color palette: Natural skin tones, neutral background
+Mood: Approachable, professional, creative
+Technical: High resolution, sharp focus on face`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 
 interface LovroPodobnikProps {
+  mode?: "light" | "dark";
   title?: string;
   backgroundText?: string;
   name?: string;
@@ -17,6 +58,7 @@ interface LovroPodobnikProps {
 }
 
 export default function LovroPodobnik({
+  mode = "dark",
   title = "The Designer",
   backgroundText = "Behind the screen",
   name = "Lovro",
@@ -26,8 +68,9 @@ export default function LovroPodobnik({
   benefitText = "This way, you can focus on your business without worrying about the cost of design work.",
   highlightQuote = "My ultimate goal is your success. I'am committed to working with you until you're completely satisfied.",
   ctaText = "If you're interested in learning more about my approach and how I can help grow your business, let's schedule a free call. Together, we can take your business to the next level.",
-  profileImage = "/registry/lovro-podobnik/profile.png",
+  profileImage = IMAGES.profile.path,
 }: LovroPodobnikProps) {
+  const colors = COLORS[mode];
   return (
     <section className="relative min-h-screen w-full overflow-hidden bg-[#030303] px-6 py-16 sm:px-8 lg:px-12">
       <div className="mx-auto max-w-5xl">
@@ -52,7 +95,10 @@ export default function LovroPodobnik({
           >
             {/* Background Text - Behind the screen */}
             <div className="pointer-events-none absolute -top-8 left-0 right-0 select-none whitespace-nowrap text-center lg:-left-20 lg:-right-20 lg:-top-4 lg:text-left">
-              <span className="text-2xl font-medium italic tracking-wide text-white/[0.06] sm:text-3xl lg:text-4xl">
+              <span
+                className="text-2xl font-medium italic tracking-wide sm:text-3xl lg:text-4xl"
+                style={{ color: colors.backgroundWatermark }}
+              >
                 {backgroundText}
               </span>
             </div>
@@ -60,15 +106,32 @@ export default function LovroPodobnik({
             {/* Profile Image Card with Glow Effect */}
             <div className="relative mx-auto w-fit lg:mx-0">
               {/* Outer Glow */}
-              <div className="absolute -inset-4 rounded-2xl bg-gradient-to-br from-cyan-500/20 via-teal-500/15 to-emerald-500/20 blur-xl" />
-              <div className="absolute -inset-2 rounded-xl bg-gradient-to-br from-cyan-400/10 via-teal-400/10 to-emerald-400/10 blur-md" />
+              <div
+                className="absolute -inset-4 rounded-2xl blur-xl"
+                style={{
+                  background: `linear-gradient(135deg, ${colors.glowOuter}, ${colors.glowMid}, ${colors.glowInner})`,
+                }}
+              />
+              <div
+                className="absolute -inset-2 rounded-xl blur-md"
+                style={{
+                  background: `linear-gradient(135deg, ${colors.glowMid}, ${colors.glowMid}, ${colors.glowInner})`,
+                }}
+              />
 
               {/* Image Container */}
-              <div className="relative overflow-hidden rounded-xl border border-cyan-500/20 bg-gradient-to-br from-slate-900/80 to-slate-800/60 p-1 shadow-2xl shadow-cyan-500/10">
+              <div
+                className="relative overflow-hidden rounded-xl bg-gradient-to-br from-slate-900/80 to-slate-800/60 p-1 shadow-2xl"
+                style={{
+                  borderWidth: "1px",
+                  borderColor: colors.border,
+                  boxShadow: `0 25px 50px -12px ${colors.glowOuter}`,
+                }}
+              >
                 <div className="relative h-52 w-44 overflow-hidden rounded-lg sm:h-60 sm:w-52">
                   <Image
                     src={profileImage}
-                    alt={`${name}'s profile`}
+                    alt={IMAGES.profile.alt}
                     fill
                     className="object-cover object-center"
                     sizes="(max-width: 640px) 176px, 208px"

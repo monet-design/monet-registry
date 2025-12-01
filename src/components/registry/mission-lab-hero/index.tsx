@@ -1,9 +1,44 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#D0E890",
+    accentHover: "#C0D880",
+  },
+  dark: {
+    accent: "#D0E890",
+    accentHover: "#C0D880",
+  },
+} as const;
+
+const IMAGES = {
+  background: {
+    path: "/registry/mission-lab-hero/background.jpg",
+    alt: "Mission background image showing community engagement",
+    prompt: `Wide-angle photograph of diverse group of volunteers working together outdoors.
+Style: Natural lighting, documentary photography, authentic candid moments
+Layout: Wide horizontal composition showing multiple people engaged in community work
+Composition: Volunteers in casual clothing working on community project, diverse ages and backgrounds
+Background: Outdoor urban setting with green space, slightly blurred background
+Color palette: Natural earth tones, green vegetation, warm skin tones, soft sunlight
+Mood: Uplifting, community-driven, collaborative, hopeful, energetic
+Technical: High resolution, slight depth of field, natural colors, 16:9 aspect ratio`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 
 interface MissionLabHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: { label: string; href: string }[];
   ctaText?: string;
@@ -29,9 +64,10 @@ export default function MissionLabHero({
     line1: { words: ["Join", "a", "Mission"] },
     line2: { words: ["Make", "a", "Change"] },
   },
-  backgroundImage = "/registry/mission-lab-hero/background.jpg",
+  backgroundImage = IMAGES.background.path,
+  mode = "light",
 }: MissionLabHeroProps) {
-  const accentColor = "#D0E890";
+  const colors = COLORS[mode];
 
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
@@ -56,10 +92,10 @@ export default function MissionLabHero({
       >
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
-          <LogoIcon color={accentColor} />
+          <LogoIcon color={colors.accent} />
           <span
             className="text-sm font-medium leading-tight whitespace-pre-line"
-            style={{ color: accentColor }}
+            style={{ color: colors.accent }}
           >
             {logoText}
           </span>
@@ -72,7 +108,7 @@ export default function MissionLabHero({
               key={index}
               href={item.href}
               className="text-sm font-medium tracking-wide transition-opacity hover:opacity-80"
-              style={{ color: accentColor }}
+              style={{ color: colors.accent }}
             >
               {item.label}
             </a>
@@ -80,7 +116,7 @@ export default function MissionLabHero({
           <a
             href={ctaHref}
             className="rounded-full px-5 py-2 text-sm font-medium text-gray-900 transition-opacity hover:opacity-90"
-            style={{ backgroundColor: accentColor }}
+            style={{ backgroundColor: colors.accent }}
           >
             {ctaText}
           </a>
@@ -89,7 +125,7 @@ export default function MissionLabHero({
         {/* Mobile Menu Button */}
         <button
           className="flex h-10 w-10 items-center justify-center rounded-full md:hidden"
-          style={{ backgroundColor: accentColor }}
+          style={{ backgroundColor: colors.accent }}
         >
           <svg
             width="20"
@@ -118,7 +154,7 @@ export default function MissionLabHero({
             className="flex flex-wrap items-center gap-2"
           >
             {headline.line1.words.map((word, index) => (
-              <PillWord key={index} word={word} color={accentColor} delay={0.3 + index * 0.1} />
+              <PillWord key={index} word={word} color={colors.accent} delay={0.3 + index * 0.1} />
             ))}
           </motion.div>
 
@@ -130,7 +166,7 @@ export default function MissionLabHero({
             className="flex flex-wrap items-center gap-2"
           >
             {headline.line2.words.map((word, index) => (
-              <PillWord key={index} word={word} color={accentColor} delay={0.5 + index * 0.1} />
+              <PillWord key={index} word={word} color={colors.accent} delay={0.5 + index * 0.1} />
             ))}
           </motion.div>
         </div>

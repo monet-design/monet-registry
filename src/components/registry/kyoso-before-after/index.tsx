@@ -19,6 +19,7 @@ interface WorkflowItem {
 }
 
 interface KyosoBeforeAfterProps {
+  mode?: "customization" | "default";
   badge?: string;
   heading?: string;
   subheading?: string;
@@ -269,7 +270,10 @@ function AfterSection({
 }
 
 // Main Component
+const CUSTOMIZATION = {};
+
 export default function KyosoBeforeAfter({
+  mode = "default",
   badge = "Comparison",
   heading = "No more platform\nhopping",
   subheading = "100x your marketing with an AI creative team. The world's first AI designer, marketer, and ad creator in one.",

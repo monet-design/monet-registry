@@ -5,6 +5,7 @@ import { Globe, ChevronDown, Star } from "lucide-react";
 import Image from "next/image";
 
 interface KotaCountriesHeroProps {
+  mode?: "customization" | "default";
   /** Top banner text */
   bannerText?: string;
   /** Badge label text */
@@ -29,7 +30,10 @@ interface KotaCountriesHeroProps {
   globeImagePath?: string;
 }
 
+const CUSTOMIZATION = {};
+
 export default function KotaCountriesHero({
+  mode = "default",
   bannerText = "Kota's 5-star customer reviews",
   badgeText = "COUNTRY AVAILABILITY",
   headline = "Browse our available\nbenefits in 30+\ncountries",

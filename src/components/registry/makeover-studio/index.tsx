@@ -1,5 +1,40 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    activeTabAccent: "#2563EB", // Active tab 파란색
+    inactiveTabText: "#9CA3AF", // Inactive tab 텍스트
+    archDecoration: "#F3E4DA", // Arch 장식 크림/베이지
+  },
+  dark: {
+    activeTabAccent: "#2563EB",
+    inactiveTabText: "#9CA3AF",
+    archDecoration: "#F3E4DA",
+  },
+} as const;
+
+const IMAGES = {
+  sofa: {
+    path: "/registry/makeover-studio/sofa.png",
+    alt: "Umo Sofa product image",
+    prompt: `Modern minimalist sofa product photo.
+Style: Clean, professional product photography
+Layout: Side view showing full sofa profile
+Composition: Centered sofa with neutral background
+Color palette: Neutral tones, beige or light gray upholstery
+Mood: Contemporary, comfortable, stylish
+Technical: PNG with transparency, soft shadows, high resolution`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import Image from "next/image";
@@ -12,6 +47,7 @@ interface BrowserNavItem {
 }
 
 interface MakeoverStudioProps {
+  mode?: "light" | "dark";
   title?: string;
   subtitle?: string;
   productTitle?: string;
@@ -132,7 +168,7 @@ const defaultNavItems: BrowserNavItem[] = [
 ];
 
 // Arch decoration component
-function ArchDecoration() {
+function ArchDecoration({ colors }: { colors: typeof COLORS.light }) {
   return (
     <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
       <div className="relative h-[140px] w-[240px] sm:h-[160px] sm:w-[280px] md:h-[180px] md:w-[320px]">
@@ -152,14 +188,17 @@ function ArchDecoration() {
               <div
                 className="absolute inset-0 rounded-t-full border-t border-l border-r"
                 style={{
-                  borderColor: `rgba(243, 228, 218, ${opacity})`,
+                  borderColor: `${colors.archDecoration}${Math.round(opacity * 255).toString(16).padStart(2, '0')}`,
                 }}
               />
             </div>
           );
         })}
         {/* Center filled arch - cream/beige color matching original */}
-        <div className="absolute bottom-0 left-1/2 h-[50px] w-[80px] -translate-x-1/2 overflow-hidden rounded-t-full bg-[#F2E5DC] sm:h-[60px] sm:w-[100px] md:h-[70px] md:w-[120px]" />
+        <div
+          className="absolute bottom-0 left-1/2 h-[50px] w-[80px] -translate-x-1/2 overflow-hidden rounded-t-full sm:h-[60px] sm:w-[100px] md:h-[70px] md:w-[120px]"
+          style={{ backgroundColor: colors.archDecoration }}
+        />
       </div>
     </div>
   );
@@ -252,6 +291,7 @@ function BrowserWindow({
 
 // Main Component
 export default function MakeoverStudio({
+  mode = "light",
   title = "First makeover quality",
   subtitle = "Complete makeover from branding to website.",
   productTitle = "Umo Sofa",
@@ -263,9 +303,10 @@ export default function MakeoverStudio({
   afterLabel = "After",
   logoText = "Design",
   navItems = defaultNavItems,
-  sofaImageSrc = "/registry/makeover-studio/sofa.png",
+  sofaImageSrc = IMAGES.sofa.path,
 }: MakeoverStudioProps) {
   const [activeTab, setActiveTab] = useState<"before" | "after">("after");
+  const colors = COLORS[mode];
 
   return (
     <section className="relative w-full overflow-hidden bg-[#F4F4F7] px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
@@ -326,13 +367,13 @@ export default function MakeoverStudio({
                     </div>
 
                     {/* Arch decoration */}
-                    <ArchDecoration />
+                    <ArchDecoration colors={colors} />
 
                     {/* Sofa image */}
                     <div className="absolute bottom-6 left-1/2 z-20 w-[160px] -translate-x-1/2 sm:bottom-8 sm:w-[200px] md:w-[240px]">
                       <Image
                         src={sofaImageSrc}
-                        alt="Umo Sofa"
+                        alt={IMAGES.sofa.alt}
                         width={240}
                         height={144}
                         className="h-auto w-full object-contain"
@@ -371,21 +412,39 @@ export default function MakeoverStudio({
         >
           <button
             onClick={() => setActiveTab("before")}
-            className={`text-sm font-medium transition-colors sm:text-base ${
-              activeTab === "before"
-                ? "text-[#2563EB]"
-                : "text-[#9CA3AF] hover:text-[#6B7280]"
-            }`}
+            className="text-sm font-medium transition-colors sm:text-base"
+            style={{
+              color: activeTab === "before" ? colors.activeTabAccent : colors.inactiveTabText,
+            }}
+            onMouseEnter={(e) => {
+              if (activeTab !== "before") {
+                e.currentTarget.style.color = "#6B7280";
+              }
+            }}
+            onMouseLeave={(e) => {
+              if (activeTab !== "before") {
+                e.currentTarget.style.color = colors.inactiveTabText;
+              }
+            }}
           >
             {beforeLabel}
           </button>
           <button
             onClick={() => setActiveTab("after")}
-            className={`text-sm font-medium transition-colors sm:text-base ${
-              activeTab === "after"
-                ? "text-[#2563EB]"
-                : "text-[#9CA3AF] hover:text-[#6B7280]"
-            }`}
+            className="text-sm font-medium transition-colors sm:text-base"
+            style={{
+              color: activeTab === "after" ? colors.activeTabAccent : colors.inactiveTabText,
+            }}
+            onMouseEnter={(e) => {
+              if (activeTab !== "after") {
+                e.currentTarget.style.color = "#6B7280";
+              }
+            }}
+            onMouseLeave={(e) => {
+              if (activeTab !== "after") {
+                e.currentTarget.style.color = colors.inactiveTabText;
+              }
+            }}
           >
             {afterLabel}
           </button>

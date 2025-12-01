@@ -1,5 +1,68 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#FAD718",
+    primary: "#0F372E",
+    primaryHover: "#1a4d42",
+    categoryGreen: "#A4D037",
+    categoryOrange: "#FF6B35",
+  },
+  dark: {
+    background: "#FAD718",
+    primary: "#0F372E",
+    primaryHover: "#1a4d42",
+    categoryGreen: "#A4D037",
+    categoryOrange: "#FF6B35",
+  },
+} as const;
+
+const IMAGES = {
+  cards: [
+    {
+      path: "/registry/onhand-volunteering-hero/litter-picking.jpg",
+      alt: "Volunteers picking up litter",
+      prompt: `Volunteers doing environmental cleanup, picking up litter in park.
+Style: Candid photography, natural lighting, community engagement
+Layout: Group of diverse volunteers with trash bags in outdoor setting
+Composition: Active volunteers cleaning environment, wearing gloves
+Color palette: Natural greens, earth tones, volunteer vests
+Mood: Community spirit, environmental action, positive impact
+Technical: Natural daylight, candid action shots`,
+    },
+    {
+      path: "/registry/onhand-volunteering-hero/blood-donation.jpg",
+      alt: "Blood donation volunteering",
+      prompt: `Blood donation volunteer event scene.
+Style: Healthcare setting photography, professional but warm
+Layout: Donation center interior with volunteers and donors
+Composition: Medical staff assisting donors in organized donation setup
+Color palette: Medical whites, red cross symbols, warm lighting
+Mood: Caring, life-saving, community health support
+Technical: Indoor professional lighting, healthcare environment`,
+    },
+    {
+      path: "/registry/onhand-volunteering-hero/food-donation.jpg",
+      alt: "Food donation and distribution",
+      prompt: `Volunteers organizing food donation and distribution.
+Style: Documentary photography, community action
+Layout: Food bank or distribution center with volunteers sorting
+Composition: Volunteers packing or distributing food boxes
+Color palette: Food boxes, organized shelving, diverse volunteers
+Mood: Community support, food security, helping others
+Technical: Indoor lighting, active volunteering scene`,
+    },
+  ],
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 
@@ -14,6 +77,7 @@ interface VolunteeringCard {
 }
 
 interface OnhandVolunteeringHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   headline?: string;
   subheadline?: string;
@@ -26,27 +90,27 @@ interface OnhandVolunteeringHeroProps {
 const defaultCards: VolunteeringCard[] = [
   {
     category: "ENVIRONMENT",
-    categoryColor: "#A4D037",
+    categoryColor: COLORS.light.categoryGreen,
     title: "LITTER\nPICKED.\nWHAT\nNEXT?",
-    image: "/registry/onhand-volunteering-hero/litter-picking.jpg",
+    image: IMAGES.cards[0].path,
     author: "Francisca H, Oak Catering Limited",
     rotation: -12,
     zIndex: 10,
   },
   {
     category: "DONATION",
-    categoryColor: "#A4D037",
+    categoryColor: COLORS.light.categoryGreen,
     title: "GIVE\nBLOOD.\nALL THE\nLOVE.",
-    image: "/registry/onhand-volunteering-hero/blood-donation.jpg",
+    image: IMAGES.cards[1].path,
     author: "Lisa B, MAPP Limited",
     rotation: 3,
     zIndex: 20,
   },
   {
     category: "POWER",
-    categoryColor: "#FF6B35",
+    categoryColor: COLORS.light.categoryOrange,
     title: "FOOD\nDROP\nNEVER\nSTOPS.",
-    image: "/registry/onhand-volunteering-hero/food-donation.jpg",
+    image: IMAGES.cards[2].path,
     author: "Holly J, Motability Operations Ltd",
     rotation: 10,
     zIndex: 10,
@@ -58,9 +122,11 @@ const defaultNavItems = ["Product", "Resources", "Sign in", "Make a Referral"];
 function SmallCard({
   card,
   style,
+  colors,
 }: {
   card: VolunteeringCard;
   style?: React.CSSProperties;
+  colors: typeof COLORS.light;
 }) {
   return (
     <motion.div
@@ -75,12 +141,12 @@ function SmallCard({
           className="inline-block rounded-full px-2.5 py-0.5 text-[8px] font-bold uppercase tracking-wider"
           style={{
             backgroundColor: card.categoryColor,
-            color: "#0F372E",
+            color: colors.primary,
           }}
         >
           {card.category}
         </span>
-        <h3 className="mt-2 text-sm font-bold leading-tight text-[#0F372E]">
+        <h3 className="mt-2 text-sm font-bold leading-tight" style={{ color: colors.primary }}>
           {card.title.split("\n").map((line, i) => (
             <span key={i}>
               {line}
@@ -98,21 +164,21 @@ function SmallCard({
           />
         </div>
         {card.author && (
-          <p className="mt-2 text-[7px] text-[#0F372E]/60">{card.author}</p>
+          <p className="mt-2 text-[7px]" style={{ color: `${colors.primary}99` }}>{card.author}</p>
         )}
       </div>
     </motion.div>
   );
 }
 
-function MainCard({ card }: { card: VolunteeringCard }) {
+function MainCard({ card, colors }: { card: VolunteeringCard; colors: typeof COLORS.light }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50, rotate: card.rotation }}
       animate={{ opacity: 1, y: 0, rotate: card.rotation }}
       transition={{ duration: 0.7, delay: 0.3 }}
-      className="absolute w-[340px] overflow-hidden rounded-2xl bg-[#0F372E] shadow-2xl"
-      style={{ zIndex: card.zIndex, top: "80px", right: "-20px" }}
+      className="absolute w-[340px] overflow-hidden rounded-2xl shadow-2xl"
+      style={{ backgroundColor: colors.primary, zIndex: card.zIndex, top: "80px", right: "-20px" }}
     >
       <div className="relative flex min-h-[200px]">
         {/* Left content */}
@@ -121,7 +187,7 @@ function MainCard({ card }: { card: VolunteeringCard }) {
             className="inline-block rounded-full px-3 py-1 text-[9px] font-bold uppercase tracking-wider"
             style={{
               backgroundColor: card.categoryColor,
-              color: "#0F372E",
+              color: colors.primary,
             }}
           >
             {card.category}
@@ -140,7 +206,10 @@ function MainCard({ card }: { card: VolunteeringCard }) {
         </div>
 
         {/* Right circular image */}
-        <div className="absolute -right-[60px] top-1/2 h-[180px] w-[180px] -translate-y-1/2 overflow-hidden rounded-full border-4 border-[#0F372E]">
+        <div
+          className="absolute -right-[60px] top-1/2 h-[180px] w-[180px] -translate-y-1/2 overflow-hidden rounded-full border-4"
+          style={{ borderColor: colors.primary }}
+        >
           <Image
             src={card.image}
             alt={card.title.replace(/\n/g, " ")}
@@ -154,6 +223,7 @@ function MainCard({ card }: { card: VolunteeringCard }) {
 }
 
 export default function OnhandVolunteeringHero({
+  mode = "light",
   logoText = "On Hand",
   headline = "Corporate\nvolunteering that\nemployees love.",
   subheadline = "Your all-in-one tool for corporate volunteering &\nsustainability action.",
@@ -162,8 +232,13 @@ export default function OnhandVolunteeringHero({
   navItems = defaultNavItems,
   cards = defaultCards,
 }: OnhandVolunteeringHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative min-h-[600px] w-full overflow-hidden bg-[#FAD718]">
+    <section
+      className="relative min-h-[600px] w-full overflow-hidden"
+      style={{ backgroundColor: colors.background }}
+    >
       {/* Navigation */}
       <nav className="relative z-30 flex items-center justify-between px-8 py-5 lg:px-12">
         <motion.div
@@ -172,7 +247,7 @@ export default function OnhandVolunteeringHero({
           transition={{ duration: 0.5 }}
           className="flex items-center"
         >
-          <span className="text-xl font-bold italic text-[#0F372E]">
+          <span className="text-xl font-bold italic" style={{ color: colors.primary }}>
             {logoText}
           </span>
         </motion.div>
@@ -187,12 +262,16 @@ export default function OnhandVolunteeringHero({
             <a
               key={item}
               href="#"
-              className="text-sm font-medium text-[#0F372E] transition-opacity hover:opacity-70"
+              className="text-sm font-medium transition-opacity hover:opacity-70"
+              style={{ color: colors.primary }}
             >
               {item}
             </a>
           ))}
-          <button className="rounded-full bg-[#0F372E] px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90">
+          <button
+            className="rounded-full px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
+            style={{ backgroundColor: colors.primary }}
+          >
             {ctaText}
           </button>
         </motion.div>
@@ -206,7 +285,8 @@ export default function OnhandVolunteeringHero({
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-[44px] font-bold leading-[1.05] tracking-tight text-[#0F372E] sm:text-[52px] lg:text-[60px]"
+            className="text-[44px] font-bold leading-[1.05] tracking-tight sm:text-[52px] lg:text-[60px]"
+            style={{ color: colors.primary }}
           >
             {headline.split("\n").map((line, index) => (
               <span key={index}>
@@ -220,7 +300,8 @@ export default function OnhandVolunteeringHero({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.35 }}
-            className="mt-6 text-[15px] leading-relaxed text-[#0F372E]/75 lg:text-base"
+            className="mt-6 text-[15px] leading-relaxed lg:text-base"
+            style={{ color: `${colors.primary}bf` }}
           >
             {subheadline.split("\n").map((line, index) => (
               <span key={index}>
@@ -238,7 +319,8 @@ export default function OnhandVolunteeringHero({
           >
             <button
               onClick={onCtaClick}
-              className="rounded-full bg-[#0F372E] px-7 py-4 text-[15px] font-medium text-white shadow-lg transition-all hover:shadow-xl active:scale-[0.98]"
+              className="rounded-full px-7 py-4 text-[15px] font-medium text-white shadow-lg transition-all hover:shadow-xl active:scale-[0.98]"
+              style={{ backgroundColor: colors.primary }}
             >
               {ctaText}
             </button>
@@ -251,15 +333,17 @@ export default function OnhandVolunteeringHero({
           <SmallCard
             card={cards[0]}
             style={{ top: "-30px", right: "80px" }}
+            colors={colors}
           />
 
           {/* Main card (Donation/Blood) */}
-          <MainCard card={cards[1]} />
+          <MainCard card={cards[1]} colors={colors} />
 
           {/* Bottom small card (Food Drop) */}
           <SmallCard
             card={cards[2]}
             style={{ bottom: "-20px", right: "40px" }}
+            colors={colors}
           />
         </div>
       </div>

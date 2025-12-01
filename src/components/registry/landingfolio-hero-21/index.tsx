@@ -18,6 +18,7 @@ interface ArticleCard {
 }
 
 interface LandingfolioHero21Props {
+  mode?: "customization" | "default";
   logoText?: string;
   navItems?: NavItem[];
   ctaButtonText?: string;
@@ -162,7 +163,10 @@ function ArticleCardComponent({
 }
 
 // Main Component
+const CUSTOMIZATION = {};
+
 export default function LandingfolioHero21({
+  mode = "default",
   logoText = "ClarityUI",
   navItems = defaultNavItems,
   ctaButtonText = "Join Email List",

@@ -1,5 +1,23 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#9179ED",
+    accentHover: "#7B5FD9",
+    limeAccent: "#D4ED37",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Monitor, Download } from "lucide-react";
 import "./font.css";
@@ -103,7 +121,12 @@ function Header({
         <button className="hidden rounded-full border border-[#E5E5E5] bg-white px-4 py-2 text-[13px] font-medium text-[#1A1A1A] transition-colors hover:bg-[#F5F5F5] sm:block">
           {signInText}
         </button>
-        <button className="rounded-full bg-[#9179ED] px-4 py-2 text-[13px] font-medium text-white transition-colors hover:bg-[#7B5FD9]">
+        <button
+          className="rounded-full px-4 py-2 text-[13px] font-medium text-white transition-colors"
+          style={{ backgroundColor: COLORS.light.accent }}
+          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = COLORS.light.accentHover)}
+          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = COLORS.light.accent)}
+        >
           {downloadText}
         </button>
       </div>
@@ -141,8 +164,8 @@ function DesktopMockup({
 
           <div className="space-y-1">
             <div className="flex items-center gap-2 rounded-lg bg-[#F5F5F5] px-3 py-2">
-              <div className="h-4 w-4 rounded bg-[#9179ED]/20" />
-              <span className="text-xs font-medium text-[#9179ED]">
+              <div className="h-4 w-4 rounded" style={{ backgroundColor: `${COLORS.light.accent}33` }} />
+              <span className="text-xs font-medium" style={{ color: COLORS.light.accent }}>
                 Accounts
               </span>
             </div>
@@ -262,8 +285,8 @@ function MobileMockup({
             Accounts
           </span>
           <div className="flex items-center gap-2">
-            <span className="text-[10px] text-[#9179ED]">Sort</span>
-            <span className="text-[10px] text-[#9179ED]">+</span>
+            <span className="text-[10px]" style={{ color: COLORS.light.accent }}>Sort</span>
+            <span className="text-[10px]" style={{ color: COLORS.light.accent }}>+</span>
           </div>
         </div>
 
@@ -297,7 +320,7 @@ function MobileMockup({
 
       {/* Lime Green Accent */}
       <div className="flex justify-center pb-4">
-        <div className="h-16 w-16 rounded-full bg-[#D4ED37] opacity-80" />
+        <div className="h-16 w-16 rounded-full opacity-80" style={{ backgroundColor: COLORS.light.limeAccent }} />
       </div>
     </div>
   );
@@ -359,6 +382,7 @@ export default function PeraHero({
   onPrimaryCtaClick = () => {},
   onSecondaryCtaClick = () => {},
 }: PeraHeroProps) {
+  const colors = COLORS.light;
   return (
     <section className="relative flex min-h-screen w-full flex-col bg-[#FBFBFB]">
       {/* Header */}

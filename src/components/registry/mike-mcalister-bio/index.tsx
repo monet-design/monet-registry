@@ -1,5 +1,39 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    gradientFrom: "#2B4FF5", // About 섹션 그라데이션 시작 (파란색)
+    gradientTo: "#6E10F4", // About 섹션 그라데이션 끝 (보라색)
+  },
+  dark: {
+    gradientFrom: "#2B4FF5",
+    gradientTo: "#6E10F4",
+  },
+} as const;
+
+const IMAGES = {
+  profile: {
+    path: "/registry/mike-mcalister-bio/profile.jpg",
+    alt: "Professional profile photo",
+    prompt: `Professional headshot portrait in outdoor setting.
+Style: Natural, warm, approachable photography
+Layout: Portrait orientation, head and shoulders
+Composition: Subject smiling at camera, casual yet professional
+Background: Softly blurred outdoor natural environment
+Color palette: Warm skin tones, natural lighting
+Mood: Friendly, approachable, confident
+Technical: High resolution, shallow depth of field`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { ReactNode } from "react";
 import { motion } from "motion/react";
 import "./font.css";
@@ -11,6 +45,7 @@ interface Link {
 }
 
 interface MikeMcAlisterBioProps {
+  mode?: "light" | "dark";
   // Hero Section
   heroHeadline?: string;
   heroIntro?: string;
@@ -111,16 +146,18 @@ function renderTextWithLinks(text: string, links: Link[]): ReactNode[] {
 
 // Main Component
 export default function MikeMcAlisterBio({
+  mode = "light",
   heroHeadline = "Human-centered problem solver from planet Earth.",
   heroIntro = "Heya friend, I'm Mike McAlister. I design and build killer products for the web, and",
   heroCtaText = "I can teach",
   heroCtaLink = "#",
-  profileImage = "/registry/mike-mcalister-bio/profile.jpg",
+  profileImage = IMAGES.profile.path,
   aboutHeading = "About Me",
   aboutParagraphs = defaultAboutParagraphs,
   links = defaultLinks,
   signatureName = "Mike",
 }: MikeMcAlisterBioProps) {
+  const colors = COLORS[mode];
   return (
     <div className="mike-mcalister-bio w-full">
       {/* Hero Section */}
@@ -160,7 +197,7 @@ export default function MikeMcAlisterBio({
               <div className="relative h-64 w-64 overflow-hidden rounded-2xl sm:h-80 sm:w-80 lg:h-[22rem] lg:w-[22rem]">
                 <img
                   src={profileImage}
-                  alt="Profile photo"
+                  alt={IMAGES.profile.alt}
                   className="h-full w-full object-cover"
                 />
               </div>
@@ -173,7 +210,7 @@ export default function MikeMcAlisterBio({
       <section
         className="px-6 py-16 sm:px-8 md:py-20 lg:px-16 lg:py-24"
         style={{
-          background: "linear-gradient(to right, #2B4FF5, #6E10F4)",
+          background: `linear-gradient(to right, ${colors.gradientFrom}, ${colors.gradientTo})`,
         }}
       >
         <div className="mx-auto max-w-6xl">

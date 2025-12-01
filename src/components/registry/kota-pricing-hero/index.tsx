@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import Image from "next/image";
 
 interface KotaPricingHeroProps {
+  mode?: "customization" | "default";
   badge?: string;
   title?: string;
   subtitle?: string;
@@ -11,7 +12,10 @@ interface KotaPricingHeroProps {
   rightImage?: string;
 }
 
+const CUSTOMIZATION = {};
+
 export default function KotaPricingHero({
+  mode = "default",
   badge = "PRICING",
   title = "An affordable way to scale\nyour benefits",
   subtitle = "No minimums, initial fees or contracts – get started\nin minutes",

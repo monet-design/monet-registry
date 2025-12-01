@@ -4,6 +4,25 @@ import { motion } from "motion/react";
 import { MapPin } from "lucide-react";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#F7F1EC", // Warm beige background
+    accent: "#69A19E", // Teal accent color for "Network" text
+  },
+  dark: {
+    background: "#F7F1EC",
+    accent: "#69A19E",
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface TeamMember {
   name: string;
@@ -13,6 +32,7 @@ interface TeamMember {
 }
 
 interface LawtradesHeroProps {
+  mode?: "light" | "dark";
   titlePrefix?: string;
   titleAccent?: string;
   subtitle?: string;
@@ -158,11 +178,13 @@ function MarqueeRow({
 
 // Main Component
 export default function LawtradesHero({
+  mode = "light",
   titlePrefix = "The Lawtrades",
   titleAccent = "Network",
   subtitle = "Formed with 2000+ Lawtraders from top law firms and legal departments across the US and abroad.",
   members = defaultMembers,
 }: LawtradesHeroProps) {
+  const colors = COLORS[mode];
   // Split members into 3 rows
   const row1 = members.slice(0, 5);
   const row2 = members.slice(5, 10);
@@ -171,7 +193,7 @@ export default function LawtradesHero({
   return (
     <section
       className="relative w-full overflow-hidden py-16 sm:py-20 lg:py-24"
-      style={{ backgroundColor: "#F7F1EC" }}
+      style={{ backgroundColor: colors.background }}
     >
       {/* Title Section */}
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
@@ -182,7 +204,7 @@ export default function LawtradesHero({
           className="lawtrades-hero-title mb-4 text-4xl font-normal tracking-tight sm:text-5xl lg:text-6xl"
         >
           <span className="text-gray-900">{titlePrefix} </span>
-          <span style={{ color: "#69A19E" }}>{titleAccent}</span>
+          <span style={{ color: colors.accent }}>{titleAccent}</span>
         </motion.h1>
 
         <motion.p

@@ -3,6 +3,17 @@
 import { motion } from "motion/react";
 import { Play } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -25,6 +36,7 @@ interface TeamMember {
 }
 
 interface LandingfolioHero20Props {
+  mode?: "light" | "dark";
   logoText?: string;
   logoIcon?: React.ReactNode;
   navItems?: NavItem[];
@@ -224,6 +236,7 @@ function PartialMember({
 
 // Main Component
 export default function LandingfolioHero20({
+  mode = "light",
   logoText = "ClarityUI",
   logoIcon,
   navItems = defaultNavItems,

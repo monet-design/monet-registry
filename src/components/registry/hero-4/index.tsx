@@ -3,6 +3,17 @@
 import { motion } from "motion/react";
 import { Star } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -16,6 +27,7 @@ interface MovieItem {
 }
 
 interface LandingfolioHero4Props {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   ctaButtonText?: string;
@@ -173,6 +185,7 @@ function DecorativeArrow({ className }: { className?: string }) {
 
 // Main Component
 export default function LandingfolioHero4({
+  mode = "light",
   logoText = "RAREBLOCKS",
   navItems = defaultNavItems,
   ctaButtonText = "Try for free",

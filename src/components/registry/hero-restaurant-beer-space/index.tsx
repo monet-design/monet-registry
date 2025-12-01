@@ -1,5 +1,33 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},  // 이 컴포넌트는 Tailwind semantic colors만 사용
+  dark: {},
+} as const;
+
+const IMAGES = {
+  background: {
+    path: "/registry/hero-restaurant-beer-space/background.jpg",
+    alt: "Restaurant interior",
+    prompt: `Atmospheric restaurant and bar interior photograph.
+Style: Natural, warm, inviting hospitality photography
+Layout: Wide angle interior shot showing dining space and bar area
+Composition: Wooden tables and chairs, industrial-style lighting, exposed brick or modern finishes
+Color palette: Warm wood tones, ambient golden lighting, neutral walls, metallic accents
+Elements: Bar counter, beer taps, dining tables, pendant lights, cozy seating areas
+Mood: Welcoming, sophisticated, craft beer culture, casual dining atmosphere
+Technical: High resolution, natural lighting mixed with ambient interior lights, slight vignette`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 
@@ -11,6 +39,7 @@ interface NavItem {
 }
 
 interface HeroRestaurantBeerSpaceProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   languageOptions?: string[];
@@ -58,6 +87,7 @@ const defaultNavItems: NavItem[] = [
 
 // Main Component
 export default function HeroRestaurantBeerSpace({
+  mode = "light",
   logoText = "MOVA",
   navItems = defaultNavItems,
   languageOptions = ["Ukp", "Eng"],
@@ -68,7 +98,7 @@ export default function HeroRestaurantBeerSpace({
   phone = "+38 067 280 19 01",
   menuButtonText = "MENU",
   bookButtonText = "BOOK A TABLE",
-  backgroundImage = "/registry/hero-restaurant-beer-space/background.jpg",
+  backgroundImage = IMAGES.background.path,
   onMenuClick,
   onBookClick,
 }: HeroRestaurantBeerSpaceProps) {

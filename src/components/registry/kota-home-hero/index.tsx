@@ -1,5 +1,30 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#6729E0", // 메인 퍼플
+    accentHover: "#5520C0",
+    bannerBg: "#3D1A8F", // 다크 퍼플
+    yellowAccent: "#FCD34D", // 옐로우 강조색
+  },
+  dark: {
+    accent: "#8B5CF6",
+    accentHover: "#7C3AED",
+    bannerBg: "#1F1B2E",
+    yellowAccent: "#FBBF24",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState } from "react";
 import { motion } from "motion/react";
 import {
@@ -41,6 +66,7 @@ interface BenefitPlan {
 }
 
 interface KotaHomeHeroProps {
+  mode?: "light" | "dark";
   bannerText?: string;
   navItems?: NavItem[];
   headline?: string;
@@ -419,6 +445,7 @@ function DashboardPreview({
 
 // Main Component
 export default function KotaHomeHero({
+  mode = "light",
   bannerText = "Kota's 5-star customer reviews have earned us 24 G2 badges. Book a demo to see why",
   navItems = defaultNavItems,
   headline = "Set up, pay, and manage\nyour benefits all in one\nplace.",
@@ -434,6 +461,7 @@ export default function KotaHomeHero({
   onLogin,
   onDemo,
 }: KotaHomeHeroProps) {
+  const colors = COLORS[mode];
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -442,13 +470,14 @@ export default function KotaHomeHero({
   };
 
   return (
-    <section className="w-full bg-[#6729E0] min-h-screen overflow-hidden">
+    <section className="w-full min-h-screen overflow-hidden" style={{ backgroundColor: colors.accent }}>
       {/* Top Banner */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="w-full bg-[#3D1A8F] py-2.5 px-4"
+        className="w-full py-2.5 px-4"
+        style={{ backgroundColor: colors.bannerBg }}
       >
         <p className="text-center text-white text-sm">
           {bannerText.split("Book a demo")[0]}
@@ -599,21 +628,18 @@ export default function KotaHomeHero({
               }`}
             >
               <div
-                className={`absolute left-0 top-0 w-1 h-full rounded-full ${
-                  feature.isActive ? "bg-yellow-400" : "bg-transparent"
-                }`}
+                className={`absolute left-0 top-0 w-1 h-full rounded-full`}
+                style={{ backgroundColor: feature.isActive ? colors.yellowAccent : "transparent" }}
               />
               <h3
-                className={`text-sm font-medium ${
-                  feature.isActive ? "text-yellow-400" : "text-white/60"
-                }`}
+                className={`text-sm font-medium`}
+                style={{ color: feature.isActive ? colors.yellowAccent : "rgba(255, 255, 255, 0.6)" }}
               >
                 {feature.title}
               </h3>
               <p
-                className={`mt-1 text-xs leading-relaxed ${
-                  feature.isActive ? "text-yellow-300/80" : "text-white/40"
-                }`}
+                className={`mt-1 text-xs leading-relaxed`}
+                style={{ color: feature.isActive ? "rgba(253, 224, 71, 0.8)" : "rgba(255, 255, 255, 0.4)" }}
               >
                 {feature.description}
               </p>
@@ -628,7 +654,7 @@ export default function KotaHomeHero({
       </div>
 
       {/* Logo Cloud */}
-      <div className="bg-[#6729E0] pb-12">
+      <div className="pb-12" style={{ backgroundColor: colors.accent }}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

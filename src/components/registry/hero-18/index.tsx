@@ -4,6 +4,17 @@ import { motion } from "motion/react";
 import { Play } from "lucide-react";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -11,6 +22,7 @@ interface NavItem {
 }
 
 interface LandingfolioHero18Props {
+  mode?: "light" | "dark";
   logoName?: string;
   logoAccent?: string;
   navItems?: NavItem[];
@@ -60,6 +72,7 @@ function WheatIcon({ className = "" }: { className?: string }) {
 
 // Main Component
 export default function LandingfolioHero18({
+  mode = "light",
   logoName = "Baker",
   logoAccent = "STREET",
   navItems = defaultNavItems,

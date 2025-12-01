@@ -1,5 +1,30 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#6366F1", // 인디고 카트 배지
+    ctaBg: "#FFFFFF", // 화이트 CTA 버튼
+    ctaHover: "#F3F4F6",
+    ctaText: "#18181A",
+  },
+  dark: {
+    accent: "#818CF8",
+    ctaBg: "#1F2937",
+    ctaHover: "#374151",
+    ctaText: "#FFFFFF",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ShoppingCart } from "lucide-react";
 
@@ -10,6 +35,7 @@ interface NavItem {
 }
 
 interface LandingfolioHero8Props {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   cartCount?: number;
@@ -198,6 +224,7 @@ function ProfileCard() {
 
 // Main Component
 export default function LandingfolioHero8({
+  mode = "light",
   logoText = "/RAREBLOCKS",
   navItems = defaultNavItems,
   cartCount = 3,
@@ -208,8 +235,10 @@ export default function LandingfolioHero8({
   onPrimaryClick,
   onSecondaryClick,
 }: LandingfolioHero8Props) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="w-full min-h-screen bg-[#18181A] overflow-hidden">
+    <section className="w-full min-h-screen bg-[#18181A] dark:bg-black overflow-hidden">
       {/* Navigation - Dark Background */}
       <motion.nav
         initial={{ opacity: 0, y: -20 }}
@@ -245,7 +274,10 @@ export default function LandingfolioHero8({
                 <ShoppingCart size={22} strokeWidth={1.5} />
               </button>
               {cartCount > 0 && (
-                <span className="absolute -top-1 -right-1 w-5 h-5 bg-[#6366F1] text-white text-xs font-medium rounded-full flex items-center justify-center">
+                <span
+                  className="absolute -top-1 -right-1 w-5 h-5 text-white text-xs font-medium rounded-full flex items-center justify-center"
+                  style={{ backgroundColor: colors.accent }}
+                >
                   {cartCount}
                 </span>
               )}
@@ -286,7 +318,10 @@ export default function LandingfolioHero8({
             >
               <button
                 onClick={onPrimaryClick}
-                className="px-8 py-4 bg-white text-[#18181A] text-sm font-semibold rounded-full hover:bg-gray-100 transition-colors"
+                className="px-8 py-4 text-sm font-semibold rounded-full transition-colors"
+                style={{ backgroundColor: colors.ctaBg, color: colors.ctaText }}
+                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = colors.ctaHover)}
+                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = colors.ctaBg)}
               >
                 {primaryButtonText}
               </button>

@@ -1,5 +1,59 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    // 브랜드 Primary
+    accent: "#E8875C",          // 오렌지 액센트
+    accentHover: "#D67A50",     // 오렌지 호버
+    // 배경 그라데이션
+    gradientFrom: "#2B2520",    // 다크 브라운
+    gradientVia: "#3D3830",     // 미디엄 브라운
+    gradientTo: "#2B2520",      // 다크 브라운
+  },
+  dark: {
+    accent: "#F09770",
+    accentHover: "#E8875C",
+    gradientFrom: "#1A1715",
+    gradientVia: "#2A2620",
+    gradientTo: "#1A1715",
+  },
+} as const;
+
+const IMAGES = {
+  videoThumbnail: {
+    path: "/registry/holocene-hero/warehouse-thumbnail.png",
+    alt: "Video thumbnail",
+    prompt: `Industrial warehouse or logistics facility interior photograph.
+Style: Documentary, business photography with professional lighting
+Layout: Interior shot showing warehouse operations, shelving, or logistics activity
+Composition: Wide shot capturing depth of facility, product storage, or operational workflow
+Color palette: Industrial tones - gray concrete, metallic shelving, warm lighting accents
+Elements: Storage racks, pallets, warehouse equipment, organized inventory systems
+Mood: Professional, efficient, modern supply chain operations
+Technical: High resolution, balanced exposure, suitable for video thumbnail overlay`,
+  },
+  desertRock: {
+    path: "/registry/holocene-hero/desert-rock.png",
+    alt: "Desert rock formation",
+    prompt: `Dramatic desert rock formation or geological structure photograph.
+Style: Fine art landscape photography, ethereal quality
+Layout: Vertical composition showing natural rock formation against sky
+Composition: Striking geological feature - layered sedimentary rock, dramatic erosion patterns
+Color palette: Warm earth tones - terracotta, ochre, burnt orange, sandy beige
+Elements: Natural rock textures, weathered surfaces, geological stratification
+Mood: Timeless, elemental, natural evolution, geological time scale metaphor
+Technical: PNG with transparency or clean cutout, suitable for overlay composition`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ChevronDown, Play, Search, Settings } from "lucide-react";
 import Image from "next/image";
@@ -18,6 +72,7 @@ interface LogoItem {
 }
 
 interface HoloceneHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   headline?: string;
   tagline?: string;
@@ -102,7 +157,10 @@ function Navigation({
         </button>
         <button
           onClick={onCtaClick}
-          className="px-5 py-2.5 text-sm font-medium text-white bg-[#E8875C] hover:bg-[#D67A50] rounded-full transition-colors"
+          className="px-5 py-2.5 text-sm font-medium text-white rounded-full transition-colors"
+          style={{ backgroundColor: COLORS.light.accent }}
+          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = COLORS.light.accentHover}
+          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = COLORS.light.accent}
         >
           {ctaText}
         </button>
@@ -183,7 +241,7 @@ function DashboardPreview() {
               <span className="font-medium text-[#1A1A1A]">All</span>
               <ChevronDown className="w-3 h-3" />
             </div>
-            <button className="px-3 py-1.5 bg-[#E8875C] text-white rounded-lg text-sm">
+            <button className="px-3 py-1.5 text-white rounded-lg text-sm" style={{ backgroundColor: COLORS.light.accent }}>
               <Search className="w-4 h-4" />
             </button>
           </div>
@@ -239,7 +297,7 @@ function DashboardPreview() {
                       cy="16"
                       r="12"
                       fill="none"
-                      stroke="#E8875C"
+                      stroke={COLORS.light.accent}
                       strokeWidth="4"
                       strokeDasharray="30 75"
                       transform="rotate(-90 16 16)"
@@ -259,7 +317,7 @@ function DashboardPreview() {
                 </div>
                 <div className="mt-2 space-y-1 text-[8px]">
                   <div className="flex items-center gap-1">
-                    <div className="w-2 h-2 rounded-full bg-[#E8875C]" />
+                    <div className="w-2 h-2 rounded-full" style={{ backgroundColor: COLORS.light.accent }} />
                     <span className="text-gray-600">Netherlands</span>
                   </div>
                   <div className="flex items-center gap-1">
@@ -298,7 +356,7 @@ function DashboardPreview() {
                 />
               </svg>
               {/* Map Points */}
-              <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-[#E8875C] rounded-full" />
+              <div className="absolute top-1/4 left-1/4 w-3 h-3 rounded-full" style={{ backgroundColor: COLORS.light.accent }} />
               <div className="absolute top-1/3 left-1/2 w-2 h-2 bg-green-500 rounded-full" />
               <div className="absolute top-1/2 right-1/3 w-2 h-2 bg-gray-400 rounded-full" />
             </div>
@@ -335,7 +393,7 @@ function DashboardPreview() {
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-[10px] text-gray-500">Lead Time</span>
-                    <span className="text-sm font-medium text-[#E8875C]">213 d</span>
+                    <span className="text-sm font-medium" style={{ color: COLORS.light.accent }}>213 d</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-[10px] text-gray-500">Defect Rate</span>
@@ -383,7 +441,10 @@ function VideoThumbnail({
       </div>
       <button
         onClick={onCtaClick}
-        className="px-4 py-2.5 text-sm font-medium text-[#1A1A1A] bg-[#E8875C] hover:bg-[#D67A50] rounded-full transition-colors text-center"
+        className="px-4 py-2.5 text-sm font-medium text-[#1A1A1A] rounded-full transition-colors text-center"
+        style={{ backgroundColor: COLORS.light.accent }}
+        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = COLORS.light.accentHover}
+        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = COLORS.light.accent}
       >
         {ctaText}
       </button>
@@ -479,6 +540,7 @@ const defaultLogos: LogoItem[] = [
 
 // Main Component
 export default function HoloceneHero({
+  mode = "light",
   logoText = "Holocene",
   headline = "Embracing\nEvolution",
   tagline = "From signal to structure —",
@@ -489,8 +551,8 @@ export default function HoloceneHero({
   trustText = "Trusted by teams turning complexity into clarity.",
   navItems = defaultNavItems,
   logos = defaultLogos,
-  videoThumbnailSrc = "/registry/holocene-hero/warehouse-thumbnail.png",
-  desertRockSrc = "/registry/holocene-hero/desert-rock.png",
+  videoThumbnailSrc = IMAGES.videoThumbnail.path,
+  desertRockSrc = IMAGES.desertRock.path,
   onCtaClick,
   onLoginClick,
 }: HoloceneHeroProps) {
@@ -507,12 +569,12 @@ export default function HoloceneHero({
       />
 
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-[#2B2520] via-[#3D3830] to-[#2B2520] overflow-hidden">
+      <div className="relative overflow-hidden" style={{ background: `linear-gradient(to bottom right, ${COLORS.light.gradientFrom}, ${COLORS.light.gradientVia}, ${COLORS.light.gradientTo})` }}>
         {/* Dotted Pattern Overlay - Right Side */}
         <div
           className="absolute right-0 top-0 bottom-0 w-1/3 opacity-20"
           style={{
-            backgroundImage: "radial-gradient(circle, #E8875C 1px, transparent 1px)",
+            backgroundImage: `radial-gradient(circle, ${COLORS.light.accent} 1px, transparent 1px)`,
             backgroundSize: "8px 8px",
           }}
         />

@@ -4,6 +4,17 @@ import { motion } from "motion/react";
 import { ShoppingCart } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -26,6 +37,7 @@ interface StatItem {
 }
 
 interface LandingfolioHero19Props {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   cartCount?: number;
@@ -165,6 +177,7 @@ function NFTCard({
 
 // Main Component
 export default function LandingfolioHero19({
+  mode = "light",
   logoText = "RAREBLOCKS",
   navItems = defaultNavItems,
   cartCount = 3,

@@ -1,5 +1,32 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    // 브랜드 Primary
+    accent: "#0A6847",          // 진한 녹색 (주요 CTA)
+    accentHover: "#085239",     // 진한 녹색 호버
+    // 차트/데이터 시각화
+    chartBlue: "#4C91E5",       // 차트 라인 색상
+    chartGreen: "#22C55E",      // 성공/성장 표시
+  },
+  dark: {
+    accent: "#0EA672",
+    accentHover: "#0C8B5F",
+    chartBlue: "#60A5FA",
+    chartGreen: "#34D399",
+  },
+} as const;
+
+const IMAGES = {} as const; // 이 컴포넌트는 이미지를 사용하지 않음
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowRight, ChevronDown, CreditCard, Home, Wallet, Building2 } from "lucide-react";
 
@@ -22,6 +49,7 @@ interface Transaction {
 }
 
 interface HeroPaymentDashboardProps {
+  mode?: "light" | "dark";
   subtitle?: string;
   subtitleHighlight?: string;
   subtitleEnd?: string;
@@ -116,6 +144,7 @@ const defaultTransactions: Transaction[] = [
 
 // Main Component
 export default function HeroPaymentDashboard({
+  mode = "light",
   subtitle = "Powering growth for over",
   subtitleHighlight = "200,000 businesses",
   subtitleEnd = " - from startups to enterprises.",
@@ -133,8 +162,10 @@ export default function HeroPaymentDashboard({
   onPrimaryClick,
   onSecondaryClick,
 }: HeroPaymentDashboardProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative w-full bg-white">
+    <section className="relative w-full bg-white dark:bg-gray-950">
       {/* Top Section - White Background */}
       <div className="mx-auto max-w-6xl px-6 pt-16 sm:px-8 lg:px-12">
         {/* Subtitle */}
@@ -167,14 +198,17 @@ export default function HeroPaymentDashboard({
         >
           <button
             onClick={onPrimaryClick}
-            className="inline-flex items-center gap-2 rounded-full bg-[#0A6847] px-5 py-2.5 text-sm font-medium text-white transition-all hover:bg-[#085239]"
+            className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium text-white transition-all"
+            style={{ backgroundColor: colors.accent }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.accentHover}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = colors.accent}
           >
             {primaryButtonText}
             <ArrowRight className="h-4 w-4" />
           </button>
           <button
             onClick={onSecondaryClick}
-            className="rounded-full bg-[#1E1E1E] px-5 py-2.5 text-sm font-medium text-white transition-all hover:bg-[#333333]"
+            className="rounded-full bg-gray-900 dark:bg-gray-100 px-5 py-2.5 text-sm font-medium text-white dark:text-gray-900 transition-all hover:bg-gray-700 dark:hover:bg-gray-300"
           >
             {secondaryButtonText}
           </button>
@@ -262,7 +296,7 @@ export default function HeroPaymentDashboard({
             {/* Dashboard Header */}
             <div className="flex items-center justify-between border-b border-[#2A2A2E] px-5 py-3">
               <div className="flex items-center gap-2">
-                <div className="flex h-6 w-6 items-center justify-center rounded-md bg-[#0A6847]">
+                <div className="flex h-6 w-6 items-center justify-center rounded-md" style={{ backgroundColor: colors.accent }}>
                   <div className="h-2 w-2 rounded-sm bg-white" />
                 </div>
                 <ChevronDown className="h-4 w-4 text-gray-500" />
@@ -293,7 +327,7 @@ export default function HeroPaymentDashboard({
               <div className="mb-4">
                 <p className="text-sm text-gray-500">Today</p>
                 <p className="text-3xl font-semibold text-white">{dashboardBalance}</p>
-                <p className="flex items-center gap-1 text-sm text-[#22C55E]">
+                <p className="flex items-center gap-1 text-sm" style={{ color: colors.chartGreen }}>
                   <span className="text-xs">&#9650;</span> {dashboardGrowth}
                 </p>
               </div>
@@ -303,14 +337,14 @@ export default function HeroPaymentDashboard({
                 <svg className="h-full w-full" viewBox="0 0 400 100" preserveAspectRatio="none">
                   <defs>
                     <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                      <stop offset="0%" stopColor="#4C91E5" stopOpacity="0.2" />
-                      <stop offset="100%" stopColor="#4C91E5" stopOpacity="0" />
+                      <stop offset="0%" stopColor={colors.chartBlue} stopOpacity="0.2" />
+                      <stop offset="100%" stopColor={colors.chartBlue} stopOpacity="0" />
                     </linearGradient>
                   </defs>
                   <path
                     d="M0,80 Q50,60 80,70 T160,50 T240,60 T320,40 T400,30"
                     fill="none"
-                    stroke="#4C91E5"
+                    stroke={colors.chartBlue}
                     strokeWidth="2"
                   />
                   <path
@@ -337,7 +371,7 @@ export default function HeroPaymentDashboard({
                       </div>
                       <span className="text-center text-sm text-white">{tx.amount}</span>
                       <div className="flex justify-center">
-                        <span className="rounded-full bg-[#22C55E]/20 px-2 py-0.5 text-xs text-[#22C55E]">
+                        <span className="rounded-full px-2 py-0.5 text-xs" style={{ backgroundColor: `${colors.chartGreen}20`, color: colors.chartGreen }}>
                           {tx.status}
                         </span>
                       </div>

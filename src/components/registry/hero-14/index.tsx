@@ -4,6 +4,17 @@ import { motion } from "motion/react";
 import { Search, ShoppingBag } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -17,6 +28,7 @@ interface ProductCard {
 }
 
 interface LandingfolioHero14Props {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   createAccountText?: string;
@@ -94,6 +106,7 @@ function FloatingProductCard({
 
 // Main Component
 export default function LandingfolioHero14({
+  mode = "light",
   logoText = "/RAREBLOCKS",
   navItems = defaultNavItems,
   createAccountText = "Create Free Account",

@@ -2,6 +2,17 @@
 
 import { motion } from "motion/react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -14,6 +25,7 @@ interface Participant {
 }
 
 interface LandingfolioHero13Props {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   ctaButtonText?: string;
@@ -172,6 +184,7 @@ function VideoGridFrame({
 
 // Main Component
 export default function LandingfolioHero13({
+  mode = "light",
   logoText = "DuskUI",
   navItems = defaultNavItems,
   ctaButtonText = "Start free trial",

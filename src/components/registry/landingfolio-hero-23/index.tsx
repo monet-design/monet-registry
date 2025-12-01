@@ -1,5 +1,28 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#3B82F6", // 블루 로고 및 액센트
+    ctaBg: "#111727", // 다크 CTA 버튼
+    ctaHover: "#1F2937",
+  },
+  dark: {
+    accent: "#60A5FA",
+    ctaBg: "#1F2937",
+    ctaHover: "#374151",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Play, ChevronDown } from "lucide-react";
 import "./font.css";
@@ -12,6 +35,7 @@ interface NavItem {
 }
 
 interface LandingfolioHero23Props {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   ctaButtonText?: string;
@@ -635,6 +659,7 @@ function DashboardPreview() {
 
 // Main Component
 export default function LandingfolioHero23({
+  mode = "light",
   logoText = "ClarityUI",
   navItems = defaultNavItems,
   ctaButtonText = "Start free trial",
@@ -646,8 +671,10 @@ export default function LandingfolioHero23({
   onPrimaryClick,
   onSecondaryClick,
 }: LandingfolioHero23Props) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative w-full min-h-screen bg-white overflow-hidden">
+    <section className="relative w-full min-h-screen bg-white dark:bg-gray-950 overflow-hidden">
       {/* Navigation */}
       <motion.nav
         initial={{ opacity: 0, y: -20 }}
@@ -722,7 +749,10 @@ export default function LandingfolioHero23({
           >
             <button
               onClick={onPrimaryClick}
-              className="px-7 py-3.5 bg-[#111727] text-white text-sm font-medium rounded-full hover:bg-[#1F2937] transition-colors"
+              className="px-7 py-3.5 text-white text-sm font-medium rounded-full transition-colors"
+              style={{ backgroundColor: colors.ctaBg }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = colors.ctaHover)}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = colors.ctaBg)}
             >
               {primaryButtonText}
             </button>

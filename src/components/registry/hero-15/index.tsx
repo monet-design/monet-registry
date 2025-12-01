@@ -3,6 +3,17 @@
 import { motion } from "motion/react";
 import { Zap } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -10,6 +21,7 @@ interface NavItem {
 }
 
 interface LandingfolioHero15Props {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   tryForFreeText?: string;
@@ -92,6 +104,7 @@ function DecorativeCurves() {
 
 // Main Component
 export default function LandingfolioHero15({
+  mode = "light",
   logoText = "Postcrafts",
   navItems = defaultNavItems,
   tryForFreeText = "Try for free",

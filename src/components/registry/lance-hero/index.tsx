@@ -1,5 +1,30 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#14B8A6", // Teal CTA 버튼
+    accentHover: "#0D9488",
+    cardBg: "#1a1d21", // 다크 카드 배경
+    cardBorder: "#2a2d32",
+  },
+  dark: {
+    accent: "#14B8A6",
+    accentHover: "#0D9488",
+    cardBg: "#0d0f11",
+    cardBorder: "#1a1d21",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useState } from "react";
 import { motion } from "motion/react";
 import { Briefcase, PiggyBank, DollarSign, Users } from "lucide-react";
@@ -7,6 +32,7 @@ import "./font.css";
 
 // Types
 interface LanceHeroProps {
+  mode?: "light" | "dark";
   logo?: {
     icon?: React.ReactNode;
     text?: string;
@@ -210,6 +236,7 @@ function MountainIcon({ className = "w-6 h-6" }: { className?: string }) {
 
 // Main Component
 export default function LanceHero({
+  mode = "light",
   logo = {
     icon: <MountainIcon className="w-5 h-5 text-white" />,
     text: "lance",
@@ -222,6 +249,7 @@ export default function LanceHero({
   onSubmit,
   onContactClick,
 }: LanceHeroProps) {
+  const colors = COLORS[mode];
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -230,7 +258,7 @@ export default function LanceHero({
   };
 
   return (
-    <section className="w-full bg-black text-white overflow-hidden">
+    <section className="w-full bg-black dark:bg-gray-950 text-white overflow-hidden">
       {/* Header */}
       <nav className="w-full px-6 py-5">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
@@ -298,7 +326,10 @@ export default function LanceHero({
           />
           <button
             type="submit"
-            className="w-full sm:w-auto px-6 py-3 bg-teal-500 hover:bg-teal-400 text-white text-sm font-medium rounded-lg transition-colors"
+            className="w-full sm:w-auto px-6 py-3 text-white text-sm font-medium rounded-lg transition-colors"
+            style={{ backgroundColor: colors.accent }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = colors.accentHover)}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = colors.accent)}
           >
             {ctaText}
           </button>

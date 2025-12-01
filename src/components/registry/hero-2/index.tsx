@@ -4,8 +4,20 @@ import { motion } from "motion/react";
 import { ArrowRight, Folder } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface LandingfolioHero2Props {
+  mode?: "light" | "dark";
   logo?: {
     icon?: React.ReactNode;
     text?: string;
@@ -80,6 +92,7 @@ function CursorIcon({ className = "w-6 h-6" }: { className?: string }) {
 
 // Main Component
 export default function LandingfolioHero2({
+  mode = "light",
   logo = {
     icon: <FolderIcon className="w-6 h-6" />,
     text: "Postcrafts",

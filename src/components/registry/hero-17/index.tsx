@@ -3,6 +3,17 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -15,6 +26,7 @@ interface Stat {
 }
 
 interface LandingfolioHero17Props {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   signInText?: string;
@@ -47,6 +59,7 @@ const defaultStats: Stat[] = [
 
 // Main Component
 export default function LandingfolioHero17({
+  mode = "light",
   logoText = "RAREBLOCKS",
   navItems = defaultNavItems,
   signInText = "Sign in",

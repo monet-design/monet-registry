@@ -1,5 +1,53 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#E91E63", // 핑크 로고 슬래시
+    ctaBg: "#1D1D1F", // 다크 CTA 버튼
+    ctaHover: "#2C2C2E",
+  },
+  dark: {
+    accent: "#F472B6",
+    ctaBg: "#374151",
+    ctaHover: "#4B5563",
+  },
+} as const;
+
+const IMAGES = {
+  personImage: {
+    path: "/registry/landingfolio-hero-6/woman-portrait.jpg",
+    alt: "Community member portrait",
+    prompt: `Professional portrait photo of a young woman.
+Style: Natural lighting, soft focus, warm tones
+Layout: Head and shoulders, slight angle
+Composition: Centered, confident and friendly expression
+Background: Soft neutral blur
+Color palette: Warm skin tones, natural colors
+Mood: Approachable, professional, welcoming
+Technical: High resolution, sharp focus on face, 3:4 aspect ratio`,
+  },
+  floatingPersonImage: {
+    path: "/registry/landingfolio-hero-6/man-portrait.jpg",
+    alt: "Community member avatar",
+    prompt: `Small avatar portrait of a young professional man.
+Style: Clean headshot, professional quality
+Layout: Head only, front-facing
+Composition: Centered, neutral expression
+Background: Plain or subtle blur
+Color palette: Natural, balanced lighting
+Mood: Professional, trustworthy
+Technical: Square crop, suitable for 60x60px avatar`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import Image from "next/image";
 import { Heart, Eye } from "lucide-react";
@@ -33,6 +81,7 @@ interface StatCard {
 }
 
 interface LandingfolioHero6Props {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   loginText?: string;
@@ -283,6 +332,7 @@ const defaultTestimonials: TestimonialCard[] = [
 
 // Main Component
 export default function LandingfolioHero6({
+  mode = "light",
   logoText = "RAREBLOCKS",
   navItems = defaultNavItems,
   loginText = "Login",
@@ -293,14 +343,16 @@ export default function LandingfolioHero6({
   ctaText = "Get access to 4,958 resources",
   testimonials = defaultTestimonials,
   stats = { number: "4,958", label: "free\nresources" },
-  personImage = "/registry/landingfolio-hero-6/woman-portrait.jpg",
-  floatingPersonImage = "/registry/landingfolio-hero-6/man-portrait.jpg",
+  personImage = IMAGES.personImage.path,
+  floatingPersonImage = IMAGES.floatingPersonImage.path,
   onCtaClick,
   onLoginClick,
   onJoinClick,
 }: LandingfolioHero6Props) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative min-h-screen w-full bg-[#F9FAFC]">
+    <section className="relative min-h-screen w-full bg-[#F9FAFC] dark:bg-gray-950">
       {/* Navigation */}
       <motion.nav
         initial={{ opacity: 0, y: -10 }}
@@ -310,8 +362,8 @@ export default function LandingfolioHero6({
       >
         {/* Logo */}
         <div className="flex items-center gap-1.5">
-          <span className="text-xl font-bold text-gray-900 tracking-tight">
-            <span className="text-[#E91E63]">/</span>
+          <span className="text-xl font-bold text-gray-900 dark:text-white tracking-tight">
+            <span style={{ color: colors.accent }}>/</span>
             {logoText}
           </span>
         </div>
@@ -388,7 +440,10 @@ export default function LandingfolioHero6({
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
             onClick={onCtaClick}
-            className="mt-8 rounded-full bg-[#1D1D1F] px-8 py-4 text-base font-medium text-white shadow-lg transition-all hover:bg-gray-800 hover:shadow-xl"
+            className="mt-8 rounded-full px-8 py-4 text-base font-medium text-white shadow-lg transition-all hover:shadow-xl"
+            style={{ backgroundColor: colors.ctaBg }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = colors.ctaHover)}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = colors.ctaBg)}
           >
             {ctaText}
           </motion.button>

@@ -1,5 +1,47 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    // 브랜드 Primary
+    accent: "#574FF2",          // 퍼플 (주요 배경)
+    accentHover: "#4840D1",     // 퍼플 호버
+    accentDark: "#3D35A8",      // 진한 퍼플 (보조 배경)
+    // CTA 버튼
+    ctaButton: "#7A78E8",       // 라이트 퍼플 (Contact 버튼)
+    ctaButtonHover: "#6B69D6",  // 라이트 퍼플 호버
+  },
+  dark: {
+    accent: "#6B63E8",
+    accentHover: "#5B53D8",
+    accentDark: "#4D45C0",
+    ctaButton: "#8A88F0",
+    ctaButtonHover: "#7B79E0",
+  },
+} as const;
+
+const IMAGES = {
+  illustration: {
+    path: "/registry/hero-payment-platform/illustration.png",
+    alt: "Payment illustration",
+    prompt: `Abstract 3D isometric payment platform illustration.
+Style: Modern, geometric, tech-forward aesthetic with 3D depth
+Layout: Centered isometric composition showing interconnected payment elements
+Composition: Floating 3D shapes - credit cards, coins, transaction nodes, network connections
+Color palette: Purple gradient (#574FF2 to #3D35A8), white accents, subtle shadows
+Elements: Credit card mockup, digital coins, network nodes, connection lines, payment symbols
+Mood: Innovative, trustworthy, modern fintech, platform-centric
+Technical: PNG with transparency, isometric 3D illustration style`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ChevronRight, ChevronDown } from "lucide-react";
 import Image from "next/image";
@@ -10,6 +52,7 @@ interface NavItem {
 }
 
 interface HeroPaymentPlatformProps {
+  mode?: "light" | "dark";
   logo?: React.ReactNode;
   navItems?: NavItem[];
   title?: string;
@@ -22,6 +65,7 @@ interface HeroPaymentPlatformProps {
 }
 
 export default function HeroPaymentPlatform({
+  mode = "light",
   logo,
   navItems = [
     { label: "Solution", href: "#" },
@@ -38,8 +82,9 @@ export default function HeroPaymentPlatform({
   secondaryButtonText = "Use cases",
   onPrimaryClick,
   onSecondaryClick,
-  illustrationSrc = "/registry/hero-payment-platform/illustration.png",
+  illustrationSrc = IMAGES.illustration.path,
 }: HeroPaymentPlatformProps) {
+  const colors = COLORS[mode];
   const defaultLogo = (
     <svg
       width="80"
@@ -105,7 +150,12 @@ export default function HeroPaymentPlatform({
           <button className="hidden h-10 w-10 items-center justify-center rounded-full border border-gray-200 md:flex">
             <span className="text-xs">EN</span>
           </button>
-          <button className="flex h-10 items-center gap-2 rounded-full bg-[#7A78E8] px-5 text-sm font-medium text-white transition-all hover:bg-[#6B69D6]">
+          <button
+            className="flex h-10 items-center gap-2 rounded-full px-5 text-sm font-medium text-white transition-all"
+            style={{ backgroundColor: colors.ctaButton }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.ctaButtonHover}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = colors.ctaButton}
+          >
             Contact
             <ChevronDown className="h-4 w-4" />
           </button>
@@ -120,7 +170,8 @@ export default function HeroPaymentPlatform({
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex flex-col justify-center bg-[#574FF2] px-8 py-16 md:px-12 lg:w-[55%] lg:px-16 lg:py-24"
+            className="flex flex-col justify-center px-8 py-16 md:px-12 lg:w-[55%] lg:px-16 lg:py-24"
+            style={{ backgroundColor: colors.accent }}
           >
             <h1 className="text-4xl font-medium leading-[1.1] tracking-tight text-white md:text-5xl lg:text-6xl">
               {title.split("\n").map((line, index) => (
@@ -167,7 +218,8 @@ export default function HeroPaymentPlatform({
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="relative flex items-center justify-center bg-[#3D35A8] px-8 py-16 lg:w-[45%] lg:px-12 lg:py-24"
+            className="relative flex items-center justify-center px-8 py-16 lg:w-[45%] lg:px-12 lg:py-24"
+            style={{ backgroundColor: colors.accentDark }}
           >
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}

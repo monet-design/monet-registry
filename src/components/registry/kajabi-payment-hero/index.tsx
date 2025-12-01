@@ -1,5 +1,34 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    accent: "#123FE5", // 주요 CTA 버튼, 링크
+    accentHover: "#0F32B8",
+
+    // 색상 카드 배경
+    dashboardBg: "#BDE7FF", // 라이트 블루
+    transactionsBg: "#FFCFB9", // 라이트 오렌지
+    chartBg: "#E8E0F0", // 라이트 퍼플
+  },
+  dark: {
+    accent: "#3B82F6",
+    accentHover: "#2563EB",
+    dashboardBg: "#1E3A5F",
+    transactionsBg: "#5C3A29",
+    chartBg: "#3A2D4A",
+  },
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import {
   ChevronDown,
@@ -53,6 +82,7 @@ interface SubscriptionRow {
 }
 
 interface KajabiPaymentHeroProps {
+  mode?: "light" | "dark";
   // Navigation
   logoText?: string;
   navItems?: NavItem[];
@@ -156,6 +186,7 @@ const defaultSubscriptionRows: SubscriptionRow[] = [
 
 /* ===== Main Component ===== */
 export default function KajabiPaymentHero({
+  mode = "light",
   logoText = "KAJABI",
   navItems = defaultNavItems,
   ctaButtonText = "GET STARTED",
@@ -184,10 +215,12 @@ export default function KajabiPaymentHero({
   section3Features = defaultSection3Features,
   subscriptionRows = defaultSubscriptionRows,
 }: KajabiPaymentHeroProps) {
+  const colors = COLORS[mode];
+
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: fontStyles }} />
-      <section className="relative w-full bg-white">
+      <section className="relative w-full bg-white dark:bg-gray-950">
         {/* Navigation */}
         <motion.nav
           initial={{ opacity: 0, y: -20 }}
@@ -228,8 +261,10 @@ export default function KajabiPaymentHero({
           {/* CTA Button */}
           <a
             href={ctaButtonHref}
-            className="px-4 py-2 text-xs font-semibold text-white rounded-md transition-all hover:opacity-90"
-            style={{ backgroundColor: "#123FE5" }}
+            className="px-4 py-2 text-xs font-semibold text-white rounded-md transition-all"
+            style={{ backgroundColor: colors.accent }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = colors.accentHover)}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = colors.accent)}
           >
             {ctaButtonText}
           </a>
@@ -245,7 +280,7 @@ export default function KajabiPaymentHero({
               transition={{ duration: 0.7, delay: 0.2 }}
               className="lg:w-1/2"
             >
-              <div className="rounded-3xl p-6 lg:p-8" style={{ backgroundColor: "#BDE7FF" }}>
+              <div className="rounded-3xl p-6 lg:p-8" style={{ backgroundColor: colors.dashboardBg }}>
                 {/* Dashboard Header */}
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center gap-2">
@@ -392,7 +427,7 @@ export default function KajabiPaymentHero({
               transition={{ duration: 0.7, delay: 0.2 }}
               className="lg:w-1/2"
             >
-              <div className="rounded-3xl p-6" style={{ backgroundColor: "#FFCFB9" }}>
+              <div className="rounded-3xl p-6" style={{ backgroundColor: colors.transactionsBg }}>
                 <div className="bg-white rounded-2xl overflow-hidden">
                   {/* Table Header */}
                   <div className="grid grid-cols-4 px-4 py-3 text-xs font-medium text-gray-500 border-b border-gray-100">
@@ -443,7 +478,7 @@ export default function KajabiPaymentHero({
               transition={{ duration: 0.7 }}
               className="lg:w-1/2"
             >
-              <div className="rounded-3xl p-6 lg:p-8" style={{ backgroundColor: "#E8E0F0" }}>
+              <div className="rounded-3xl p-6 lg:p-8" style={{ backgroundColor: colors.chartBg }}>
                 <div className="bg-white rounded-2xl p-5">
                   {/* Chart Header */}
                   <div className="flex items-center justify-between mb-6">

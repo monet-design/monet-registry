@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: resync-bio
-category: pricing
+category: before-after
 images:
   preview: agent-input/before-after/resync-bio.jpg
 tags:

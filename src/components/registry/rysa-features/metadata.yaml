@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: rysa-features
-category: pricing
+category: feature
 images:
   preview: agent-input/beautiful-sections/rysa-features.png
 tags:

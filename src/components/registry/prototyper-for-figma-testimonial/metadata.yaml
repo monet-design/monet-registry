@@ -1,0 +1,22 @@
+schemaVersion: "2.0"
+name: prototyper-for-figma-testimonial
+category: testimonial
+images:
+  preview: /registry/prototyper-for-figma-testimonial/preview.png
+tags:
+  style:
+    - light-theme
+    - minimal
+  industry:
+    - saas
+    - creative
+freeformKeywords:
+  - testimonial
+  - figma
+  - prototyper
+  - user feedback
+  - plugin
+fontFamily:
+  - Inter
+createdAt: "2025-12-02"
+status: stable

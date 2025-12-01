@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: rysa-hero
-category: biography
+category: hero
 images:
   preview: agent-input/beautiful-sections/rysa-hero.png
 tags:

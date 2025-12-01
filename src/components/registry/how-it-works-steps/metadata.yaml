@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: how-it-works-steps
-category: pricing
+category: how-it-works
 images:
   preview: agent-input/how-it-works/2.png
 tags:

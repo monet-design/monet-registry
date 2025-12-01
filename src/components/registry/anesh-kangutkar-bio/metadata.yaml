@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: anesh-kangutkar-bio
-category: stats
+category: biography
 images:
   preview: agent-input/biography/anesh-kangutkar.jpg
 tags:

@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: rysa-how-it-works
-category: pricing
+category: how-it-works
 images:
   preview: agent-input/beautiful-sections/rysa-how-it-works.png
 tags:

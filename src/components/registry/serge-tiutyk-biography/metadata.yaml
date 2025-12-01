@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: serge-tiutyk-biography
-category: contact
+category: biography
 images:
   preview: agent-input/biography/serge-tiutyk.jpg
 tags:

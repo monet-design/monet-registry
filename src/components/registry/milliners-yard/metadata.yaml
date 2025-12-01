@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: milliners-yard
-category: pricing
+category: contact
 images:
   preview: agent-input/contact-form/milliners-yard.jpg
 tags:

@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: operate-before-after
-category: stats
+category: before-after
 images:
   preview: agent-input/before-after/operate.jpg
 tags:

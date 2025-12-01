@@ -6,6 +6,17 @@ import { CreditCard, CircleDollarSign, BadgeCheck } from "lucide-react";
 
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface Feature {
   icon: "card" | "dollar" | "check";
   title: string;
@@ -13,6 +24,7 @@ interface Feature {
 }
 
 interface CreditBuildingHeroProps {
+  mode?: "light" | "dark";
   headline?: string;
   subheadline?: string;
   heroImageSrc?: string;

@@ -4,6 +4,17 @@ import { motion } from "motion/react";
 import { ChevronRight } from "lucide-react";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface CTAButton {
   text: string;
@@ -12,6 +23,7 @@ interface CTAButton {
 }
 
 interface CanopySafeguardHeroProps {
+  mode?: "light" | "dark";
   badge?: string;
   headline?: string;
   description?: string;
@@ -155,6 +167,7 @@ const defaultCTAButtons: CTAButton[] = [
 
 // Main Component
 export default function CanopySafeguardHero({
+  mode = "light",
   badge = "SAFEGUARD",
   headline = "Get accurate calculations\nfor your lending program,\nevery time.",
   description = "Test cases from your end-to-end borrower lifecycle simulations in LoanLab. SafeGuard ensures new code changes align with the borrower scenarios and edge cases that matter.",

@@ -5,6 +5,17 @@ import { motion } from "motion/react";
 import { Mail, Check } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface BenefitCard {
   icon: React.ReactNode;
@@ -20,6 +31,7 @@ interface TrustedLogo {
 }
 
 interface BenBenefitsHeroProps {
+  mode?: "light" | "dark";
   headline?: string;
   description?: string;
   emailPlaceholder?: string;
@@ -186,6 +198,7 @@ function BenLogo() {
 
 // Main Component
 export default function BenBenefitsHero({
+  mode = "light",
   headline = "Get benefits that get\nyour people",
   description = "Switch Ben On — the all-in-one global employee benefits platform that's\nflexible, automated, and budget-friendly.",
   emailPlaceholder = "Enter your email",

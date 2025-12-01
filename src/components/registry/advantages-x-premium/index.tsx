@@ -3,6 +3,21 @@
 import { motion } from "motion/react";
 import { TrendingUp, MessageSquare } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // ============================================
 // Types
 // ============================================
@@ -14,6 +29,7 @@ interface Advantage {
 }
 
 interface AdvantagesXPremiumProps {
+  mode?: "light" | "dark";
   heading?: string;
   advantages?: Advantage[];
   ctaText?: string;
@@ -121,6 +137,7 @@ const defaultAdvantages: Advantage[] = [
 // ============================================
 
 export default function AdvantagesXPremium({
+  mode = "light",
   heading = "기타 다양한 추가 혜택",
   advantages = defaultAdvantages,
   ctaText = "질문이 있으신가요? 지원팀에게 문의하세요",

@@ -3,6 +3,21 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -10,6 +25,7 @@ interface NavItem {
 }
 
 interface AntimetalHomeHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   headline?: string;
   subheadline?: string;
@@ -137,6 +153,7 @@ const defaultNavItems: NavItem[] = [
 
 // Main Component
 export default function AntimetalHomeHero({
+  mode = "light",
   logoText = "Antimetal",
   headline = "Save time &\nmoney on AWS",
   subheadline = "Savings, visibility, and infrastructure guardrails.\nOne automated platform.",

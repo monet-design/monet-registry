@@ -2,6 +2,21 @@
 
 import { motion } from "motion/react";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface Testimonial {
   id: number;
@@ -12,6 +27,7 @@ interface Testimonial {
 }
 
 interface ReflectTestimonialProps {
+  mode?: "light" | "dark";
   headingHighlight?: string;
   headingRest?: string;
   subtitle?: string;
@@ -130,6 +146,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
 
 // Main Component
 export default function ReflectTestimonial({
+  mode = "light",
   headingHighlight = "Loved by thin",
   headingRest = "kers",
   subtitle = "Here's what people are saying about us",

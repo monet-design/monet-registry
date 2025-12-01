@@ -4,6 +4,21 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface CredentialItem {
   id: number;
@@ -14,6 +29,7 @@ interface CredentialItem {
 }
 
 interface ShowThemCourseProps {
+  mode?: "light" | "dark";
   label?: string;
   name?: string;
   tagline?: string;
@@ -103,6 +119,7 @@ function CredentialCard({ credential }: { credential: CredentialItem }) {
 
 // Main Component
 export default function ShowThemCourse({
+  mode = "light",
   label = "COURSE INSTRUCTOR",
   name = "Rob Hope",
   tagline = "South African product builder, content\ncreator and educator.",

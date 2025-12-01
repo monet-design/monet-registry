@@ -5,6 +5,17 @@ import { Plus } from "lucide-react";
 import Image from "next/image";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface NavItem {
   label: string;
   href: string;
@@ -12,6 +23,7 @@ interface NavItem {
 }
 
 interface AximFocusHeroProps {
+  mode?: "light" | "dark";
   logo?: {
     text: string;
     href?: string;
@@ -37,6 +49,7 @@ const defaultNavItems: NavItem[] = [
 ];
 
 export default function AximFocusHero({
+  mode = "light",
   logo = { text: "axim\ncollaborative", href: "#" },
   navItems = defaultNavItems,
   heroHeadline = "Access is not enough. We need\nto focus on student success.",

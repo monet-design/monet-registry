@@ -5,8 +5,20 @@ import { motion } from "motion/react";
 import { Heart } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface BauplanProps {
+  mode?: "light" | "dark";
   title?: string;
   emailPlaceholder?: string;
   namePlaceholder?: string;
@@ -57,6 +69,7 @@ function FormInput({
 
 // Main Component
 export default function Bauplan({
+  mode = "light",
   title = "Join our private alpha",
   emailPlaceholder = "you@example.com",
   namePlaceholder = "Name",

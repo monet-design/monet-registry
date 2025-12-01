@@ -4,7 +4,19 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import { ArrowRight, CreditCard, Mail, MessageCircle, Smartphone, Bell } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface CheckoutProductHeroProps {
+  mode?: "light" | "dark";
   badge?: string;
   title?: string;
   subtitle?: string;

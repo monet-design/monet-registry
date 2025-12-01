@@ -11,6 +11,17 @@ import {
 } from "lucide-react";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Logo components for the logo cloud
 function TradeRepublicLogo() {
   return (
@@ -451,6 +462,7 @@ function DashboardMockup() {
 
 // Props interface
 interface ClarisightsMarketingHeroProps {
+  mode?: "light" | "dark";
   title?: string;
   subtitle?: string;
   logoCloudTitle?: string;

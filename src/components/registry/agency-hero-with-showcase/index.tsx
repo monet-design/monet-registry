@@ -4,12 +4,28 @@ import { motion } from "motion/react";
 import { ArrowRight, Settings, Users } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface IntegrationCard {
   icon: React.ReactNode;
   name: string;
 }
 
 interface AgencyHeroWithShowcaseProps {
+  mode?: "light" | "dark";
   /** Top banner text */
   bannerText?: string;
   /** Banner link text */
@@ -112,6 +128,7 @@ const defaultIntegrations: IntegrationCard[] = [
 ];
 
 export default function AgencyHeroWithShowcase({
+  mode = "light",
   bannerText = "Sign up for an exclusive demo at CNS Summit from 11/10 to 11/12",
   bannerLinkText = "Schedule an In-person Demo Now",
   bannerLinkUrl = "#",

@@ -4,7 +4,19 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface BrewittyProps {
+  mode?: "light" | "dark";
   title?: string;
   subtitle?: string;
   nameLabel?: string;
@@ -23,6 +35,7 @@ interface BrewittyProps {
 }
 
 export default function Brewitty({
+  mode = "light",
   title = "Your Place, Our Place, or Zoom?\nLet's Chat!",
   subtitle = "Hit us up, and let's create something that keeps your audience coming\nback for refills.",
   nameLabel = "Name",

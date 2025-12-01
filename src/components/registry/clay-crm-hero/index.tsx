@@ -3,7 +3,19 @@
 import { motion } from "motion/react";
 import { ArrowRight, Play, Search, Home, Users, FileText, Star, Plus, Settings, Apple, Monitor, Globe } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface ClayCrmHeroProps {
+  mode?: "light" | "dark";
   badge?: string;
   badgeText?: string;
   title?: string;

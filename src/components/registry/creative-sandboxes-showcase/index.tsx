@@ -4,6 +4,17 @@ import { motion } from "motion/react";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface SandboxCard {
   id: string;
   title: string;
@@ -13,6 +24,7 @@ interface SandboxCard {
 }
 
 interface CreativeSandboxesShowcaseProps {
+  mode?: "light" | "dark";
   badge?: string;
   title?: string;
   description?: string;

@@ -4,6 +4,17 @@ import { useRef, useState, useEffect } from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface Tweet {
   id: number;
@@ -15,6 +26,7 @@ interface Tweet {
 }
 
 interface ConvertKitNewsletterPlanProps {
+  mode?: "light" | "dark";
   heading?: string;
   tweets?: Tweet[];
   accentColor?: string;

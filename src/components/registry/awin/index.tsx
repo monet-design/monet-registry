@@ -4,8 +4,24 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { ChevronRight } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface AwinContactFormProps {
+  mode?: "light" | "dark";
   title?: string;
   subtitle?: string;
   firstNameLabel?: string;
@@ -66,6 +82,7 @@ function DecorativePattern() {
 
 // Main Component
 export default function AwinContactForm({
+  mode = "light",
   title = "Get in touch with us",
   subtitle = "For any queries you have, please use our simple contact form below and one of our team will be happy to help.",
   firstNameLabel = "First",

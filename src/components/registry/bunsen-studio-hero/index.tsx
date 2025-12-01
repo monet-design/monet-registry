@@ -3,12 +3,24 @@
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface NavItem {
   label: string;
   href: string;
 }
 
 interface BunsenStudioHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   ctaText?: string;
@@ -167,6 +179,7 @@ function GeometricBackground() {
 }
 
 export default function BunsenStudioHero({
+  mode = "light",
   logoText = "BUNSEN",
   navItems = [
     { label: "About", href: "#about" },

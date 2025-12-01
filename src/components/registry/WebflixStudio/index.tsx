@@ -3,7 +3,23 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface WebflixStudioProps {
+  mode?: "light" | "dark";
   badgeLabel?: string;
   greeting?: string;
   paragraphs?: string[];
@@ -19,6 +35,7 @@ const defaultParagraphs = [
 ];
 
 export default function WebflixStudio({
+  mode = "light",
   badgeLabel = "ABOUT",
   greeting = "Hey there,",
   paragraphs = defaultParagraphs,

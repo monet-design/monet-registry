@@ -4,6 +4,17 @@ import { motion } from "motion/react";
 import { Instagram, Facebook, Search, ArrowDown, ArrowRight } from "lucide-react";
 import { useState, useEffect } from "react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface NavItem {
   label: string;
   href: string;
@@ -25,6 +36,7 @@ interface ArticleCard {
 }
 
 interface ColabsHeroProps {
+  mode?: "light" | "dark";
   logo?: {
     location?: string;
     name?: string;

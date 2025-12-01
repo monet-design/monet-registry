@@ -3,6 +3,17 @@
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface TestimonialProps {
   quote: string;
@@ -16,6 +27,7 @@ interface FormFieldOption {
 }
 
 interface CanopyStartHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   headlineNormal?: string;
   headlineAccent?: string;

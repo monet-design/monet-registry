@@ -16,6 +16,17 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface FeatureOption {
   id: string;
   label: string;
@@ -23,6 +34,7 @@ interface FeatureOption {
 }
 
 interface CometFeatureShowcaseProps {
+  mode?: "light" | "dark";
   title?: string;
   features?: FeatureOption[];
   defaultActiveFeature?: string;

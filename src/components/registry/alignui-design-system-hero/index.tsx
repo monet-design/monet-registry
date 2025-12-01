@@ -12,6 +12,21 @@ import {
   BarChart3,
 } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface FeatureItem {
   icon: React.ReactNode;
   title: string;
@@ -25,6 +40,7 @@ interface StatItem {
 }
 
 interface AlignuiDesignSystemHeroProps {
+  mode?: "light" | "dark";
   badge?: string;
   headlineBlack?: string;
   headlineAccent?: string;
@@ -170,6 +186,7 @@ const defaultStats: StatItem[] = [
 ];
 
 export default function AlignuiDesignSystemHero({
+  mode = "light",
   badge = "AlignUI - Beta [v1.0]",
   headlineBlack = "The design system",
   headlineAccent = "lightning-fast.",

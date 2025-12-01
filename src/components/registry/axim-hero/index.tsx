@@ -4,12 +4,24 @@ import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface NavItem {
   label: string;
   href: string;
 }
 
 interface AximHeroProps {
+  mode?: "light" | "dark";
   logo?: {
     text: string;
     href?: string;
@@ -39,6 +51,7 @@ const defaultNavItems: NavItem[] = [
 ];
 
 export default function AximHero({
+  mode = "light",
   logo = { text: "axim\ncollaborative", href: "#" },
   navItems = defaultNavItems,
   headline = "Together, we can improve access to\neducation and deepen its impact for\nmillions of learners.",

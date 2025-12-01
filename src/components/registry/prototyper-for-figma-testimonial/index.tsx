@@ -4,6 +4,21 @@ import { motion } from "motion/react";
 import { Heart, MessageCircle, Repeat2, Twitter } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface Tweet {
   id: number;
@@ -17,6 +32,7 @@ interface Tweet {
 }
 
 interface PrototyperForFigmaTestimonialProps {
+  mode?: "light" | "dark";
   title?: string;
   tweets?: Tweet[];
 }
@@ -148,6 +164,7 @@ function TweetCard({ tweet }: { tweet: Tweet }) {
 
 // Main Component
 export default function PrototyperForFigmaTestimonial({
+  mode = "light",
   title = "What Designers Are Saying",
   tweets = defaultTweets,
 }: PrototyperForFigmaTestimonialProps) {

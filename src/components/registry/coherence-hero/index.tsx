@@ -4,7 +4,19 @@ import { motion } from "motion/react";
 import { Play, Slack } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface CoherenceHeroProps {
+  mode?: "light" | "dark";
   title?: string;
   titleAccent?: string;
   description?: string;

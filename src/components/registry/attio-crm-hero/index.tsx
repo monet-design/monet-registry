@@ -18,6 +18,21 @@ import {
   Users,
 } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Navigation item type
 interface NavItem {
   label: string;
@@ -33,6 +48,7 @@ interface CompanyLogo {
 
 // Props for the component
 interface AttioCrmHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   headline?: string;
@@ -521,6 +537,7 @@ function CRMDashboardMock() {
 
 // Main Component
 export default function AttioCrmHero({
+  mode = "light",
   logoText = "attio",
   navItems = defaultNavItems,
   headline = "Customer\nrelationship magic.",

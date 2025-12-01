@@ -4,12 +4,24 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { Instagram } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface LocationInfo {
   name: string;
   schedule: string;
 }
 
 interface BeautyWithIntuitionProps {
+  mode?: "light" | "dark";
   sectionLabel?: string;
   headline?: string;
   locations?: LocationInfo[];
@@ -113,6 +125,7 @@ function FormInput({
 }
 
 export default function BeautyWithIntuition({
+  mode = "light",
   sectionLabel = "CONTACT US",
   headline = "Get in touch today to schedule\nyour lash appointment",
   locations = [

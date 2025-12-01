@@ -4,7 +4,19 @@ import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface CurrentFintechHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navLinks?: { label: string; href: string }[];
   rightLinks?: { label: string; href: string }[];

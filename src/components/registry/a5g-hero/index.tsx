@@ -4,8 +4,24 @@ import { motion } from "motion/react";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface A5GHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: { label: string; href: string }[];
   headerCtaText?: string;
@@ -105,6 +121,7 @@ function Header({
 
 // Main Component
 export default function A5GHero({
+  mode = "light",
   logoText = "A5G",
   navItems = [
     { label: "Features", href: "#features" },

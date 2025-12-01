@@ -6,7 +6,23 @@ import { Sun, Moon } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface AuthkitHeroProps {
+  mode?: "light" | "dark";
   badge?: string;
   title?: string;
   subtitle?: string;
@@ -273,6 +289,7 @@ function WorkOSLogo() {
 }
 
 export default function AuthkitHero({
+  mode = "light",
   badge = "Introducing",
   title = "AuthKit",
   subtitle = "The world's best login box,",

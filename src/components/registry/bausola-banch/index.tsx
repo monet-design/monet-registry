@@ -4,7 +4,19 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface BausolaBanchProps {
+  mode?: "light" | "dark";
   headline?: React.ReactNode;
   description?: string;
   namePlaceholder?: string;
@@ -16,6 +28,7 @@ interface BausolaBanchProps {
 }
 
 export default function BausolaBanch({
+  mode = "light",
   headline = (
     <>
       We know how to

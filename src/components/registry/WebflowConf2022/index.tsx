@@ -2,6 +2,21 @@
 
 import { motion } from "motion/react";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface Tweet {
   id: number;
@@ -19,6 +34,7 @@ interface QuoteCard {
 }
 
 interface WebflowConf2022Props {
+  mode?: "light" | "dark";
   headerText?: string;
   tweets?: Tweet[];
   quoteCard?: QuoteCard;
@@ -149,6 +165,7 @@ function QuoteCardComponent({ quoteCard }: { quoteCard: QuoteCard }) {
 
 // Main Component
 export default function WebflowConf2022({
+  mode = "light",
   headerText = "Don't just take our word for it \u2014 here's what past\nattendees have loved about our events:",
   tweets = defaultTweets,
   quoteCard = defaultQuoteCard,

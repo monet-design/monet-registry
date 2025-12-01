@@ -4,12 +4,24 @@ import { motion } from "motion/react";
 import { Menu } from "lucide-react";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface NavItem {
   label: string;
   href: string;
 }
 
 interface CaseStudyHeroProps {
+  mode?: "light" | "dark";
   /** Logo text displayed in the header */
   logoText?: string;
   /** Navigation items */

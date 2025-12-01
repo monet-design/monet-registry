@@ -19,9 +19,21 @@ import {
 } from "lucide-react";
 import NextImage from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 type ViewType = "list" | "canvas" | "gallery";
 
 interface CanvasViewShowcaseProps {
+  mode?: "light" | "dark";
   title?: string;
   views?: { id: ViewType; label: string }[];
   defaultView?: ViewType;

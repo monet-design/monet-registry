@@ -2,12 +2,28 @@
 
 import { motion } from "motion/react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface LogoItem {
   name: string;
   logo?: React.ReactNode;
 }
 
 interface AvoCustomersHeroProps {
+  mode?: "light" | "dark";
   title?: string;
   description?: string;
   ctaText?: string;
@@ -31,6 +47,7 @@ const defaultLogos: LogoItem[] = [
 ];
 
 export default function AvoCustomersHero({
+  mode = "light",
   title = "You're in good company",
   description = "Join leading organizations using Avo to ship faster without\ncompromising their data quality.",
   ctaText = "Request demo",

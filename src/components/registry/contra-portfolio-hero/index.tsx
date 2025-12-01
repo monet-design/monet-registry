@@ -3,7 +3,19 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface ContraPortfolioHeroProps {
+  mode?: "light" | "dark";
   badge?: string;
   title?: string;
   titleAccent?: string;

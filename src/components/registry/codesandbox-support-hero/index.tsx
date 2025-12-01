@@ -8,6 +8,17 @@ import {
   ArrowRight,
 } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface TagItem {
   label: string;
@@ -23,6 +34,7 @@ interface SupportCard {
 }
 
 interface CodesandboxSupportHeroProps {
+  mode?: "light" | "dark";
   brandName?: string;
   pageTitle?: string;
   headline?: string;

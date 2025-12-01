@@ -5,6 +5,21 @@ import Image from "next/image";
 import { Check, Linkedin, Dribbble, Instagram } from "lucide-react";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface SocialLink {
   icon: "linkedin" | "dribbble" | "behance" | "instagram";
   href: string;
@@ -16,6 +31,7 @@ interface DesignService {
 }
 
 interface UiFlipProps {
+  mode?: "light" | "dark";
   greeting?: string;
   name?: string;
   role?: string;
@@ -147,6 +163,7 @@ const defaultSocialLinks: SocialLink[] = [
 ];
 
 export default function UiFlip({
+  mode = "light",
   greeting = "Hello",
   name = "Ivo",
   role = "Founder & Principal Designer",

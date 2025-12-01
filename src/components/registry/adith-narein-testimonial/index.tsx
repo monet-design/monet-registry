@@ -5,6 +5,21 @@ import { motion } from "motion/react";
 import { ChevronLeft, ChevronRight, Glasses } from "lucide-react";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface Testimonial {
   id: number;
@@ -15,6 +30,7 @@ interface Testimonial {
 }
 
 interface AdithNareinTestimonialProps {
+  mode?: "light" | "dark";
   headingPrefix?: string;
   headingMain?: string;
   testimonials?: Testimonial[];
@@ -127,6 +143,7 @@ function NavButton({
 
 // Main Component
 export default function AdithNareinTestimonial({
+  mode = "light",
   headingPrefix = "H",
   headingMain = "ear from the people I have worked with",
   testimonials = defaultTestimonials,

@@ -4,6 +4,21 @@ import { motion } from "motion/react";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface NavItem {
   label: string;
   href: string;
@@ -11,6 +26,7 @@ interface NavItem {
 }
 
 interface AuctionHeroSkylineProps {
+  mode?: "light" | "dark";
   logoText?: string;
   navItems?: NavItem[];
   headline?: string;
@@ -27,6 +43,7 @@ interface AuctionHeroSkylineProps {
 }
 
 export default function AuctionHeroSkyline({
+  mode = "light",
   logoText = "cpp",
   navItems = [
     { label: "Solution", href: "#" },

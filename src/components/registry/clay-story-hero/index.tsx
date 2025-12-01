@@ -8,7 +8,19 @@ const fontStyle = `
   @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
 `;
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface ClayStoryHeroProps {
+  mode?: "light" | "dark";
   /** Label text above the headline (e.g., "SPOTLIGHT") */
   label?: string;
   /** Date or secondary label (e.g., "JULY 2022") */

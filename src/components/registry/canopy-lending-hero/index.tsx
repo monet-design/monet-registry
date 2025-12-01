@@ -3,6 +3,17 @@
 import { motion } from "motion/react";
 import { ChevronRight, LayoutDashboard, Users, Package, Wallet } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION
+// ============================================================================
+
+const COLORS = { light: {}, dark: {} } as const;
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface AnnouncementBannerProps {
   text: string;
@@ -27,6 +38,7 @@ interface LogoItem {
 }
 
 interface CanopyLendingHeroProps {
+  mode?: "light" | "dark";
   announcementText?: string;
   headline?: HeroHeadlineProps;
   subheadline?: string;
@@ -402,6 +414,7 @@ const defaultCTAButtons: CTAButton[] = [
 
 // Main Component
 export default function CanopyLendingHero({
+  mode = "light",
   announcementText = "Canopy Raises $15.2M to Fuel Growth Plans in 2024",
   headline = defaultHeadline,
   subheadline = "Get everything you need for business loan management and servicing. Plus the ability to operate and scale multiple products. All on a single platform.",

@@ -1,11 +1,13 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import type { ComponentMetadata } from "./page";
 
 type SortOrder = "newest" | "oldest" | "name";
+
+const ITEMS_PER_PAGE = 30;
 
 interface ComponentWithMetadata {
   name: string;
@@ -23,6 +25,7 @@ export function RegistryList({
 }: RegistryListProps) {
   const [selectedDate, setSelectedDate] = useState<string>("all");
   const [sortOrder, setSortOrder] = useState<SortOrder>("newest");
+  const [currentPage, setCurrentPage] = useState<number>(1);
 
   const filteredAndSortedComponents = useMemo(() => {
     let filtered = components;
@@ -54,12 +57,24 @@ export function RegistryList({
     });
   }, [components, selectedDate, sortOrder]);
 
+  // Reset to page 1 when filters or sort order change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedDate, sortOrder]);
+
+  // Calculate pagination
+  const totalPages = Math.ceil(filteredAndSortedComponents.length / ITEMS_PER_PAGE);
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const endIndex = startIndex + ITEMS_PER_PAGE;
+  const paginatedComponents = filteredAndSortedComponents.slice(startIndex, endIndex);
+
   return (
     <div className="min-h-screen bg-gray-50 p-8">
       <div className="flex items-center justify-between mb-8">
         <h1 className="text-3xl font-bold">Component Registry</h1>
         <span className="text-gray-500 text-sm">
-          {filteredAndSortedComponents.length} / {components.length} components
+          Showing {startIndex + 1}-{Math.min(endIndex, filteredAndSortedComponents.length)} of {filteredAndSortedComponents.length}
+          {filteredAndSortedComponents.length !== components.length && ` (${components.length} total)`}
         </span>
       </div>
 
@@ -118,7 +133,7 @@ export function RegistryList({
 
       {/* Component List */}
       <div className="flex flex-col gap-12">
-        {filteredAndSortedComponents.map(({ name: componentName, metadata }) => (
+        {paginatedComponents.map(({ name: componentName, metadata }) => (
           <ComponentCard
             key={componentName}
             name={componentName}
@@ -131,6 +146,65 @@ export function RegistryList({
           </div>
         )}
       </div>
+
+      {/* Pagination Controls */}
+      {totalPages > 1 && (
+        <div className="mt-8 flex items-center justify-center gap-2">
+          <button
+            onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
+            disabled={currentPage === 1}
+            className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            Previous
+          </button>
+
+          <div className="flex items-center gap-1">
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => {
+              // Show first page, last page, current page, and pages around current
+              const showPage =
+                page === 1 ||
+                page === totalPages ||
+                (page >= currentPage - 1 && page <= currentPage + 1);
+
+              const showEllipsis =
+                (page === currentPage - 2 && currentPage > 3) ||
+                (page === currentPage + 2 && currentPage < totalPages - 2);
+
+              if (showEllipsis) {
+                return (
+                  <span key={page} className="px-2 text-gray-400">
+                    ...
+                  </span>
+                );
+              }
+
+              if (!showPage) return null;
+
+              return (
+                <button
+                  key={page}
+                  onClick={() => setCurrentPage(page)}
+                  className={`min-w-[40px] px-3 py-2 text-sm font-medium rounded-md ${
+                    page === currentPage
+                      ? "bg-blue-600 text-white"
+                      : "text-gray-700 bg-white border border-gray-300 hover:bg-gray-50"
+                  }`}
+                >
+                  {page}
+                </button>
+              );
+            })}
+          </div>
+
+          <button
+            onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
+            disabled={currentPage === totalPages}
+            className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            Next
+          </button>
+        </div>
+      )}
     </div>
   );
 }

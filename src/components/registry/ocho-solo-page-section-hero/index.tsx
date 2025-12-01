@@ -3,7 +3,11 @@
 import { motion } from "motion/react";
 import { ArrowRight, ChevronDown, Building, FileText, GraduationCap } from "lucide-react";
 
+// CUSTOMIZATION
+const CUSTOMIZATION = {};
+
 interface OchoSoloPageSectionHeroProps {
+  mode?: "light" | "dark";
   badge?: string;
   title?: string;
   description?: string;
@@ -15,6 +19,7 @@ interface OchoSoloPageSectionHeroProps {
 }
 
 export default function OchoSoloPageSectionHero({
+  mode = "light",
   badge = "Ocho Solo 401k",
   title = "A Supercharged Retirement Plan,\nDesigned For Business Owners",
   description = "The Ocho Solo 401k gives business owners the biggest tax advantages of any retirement plan. Contribute up to $66,000 and invest in any asset class with tax-free compounding. We meticulously crafted Ocho to be the simplest, easiest solo 401k experience you'll ever have. Create your account, make contributions, and invest your funds all in one place through our minimal, intuitive dashboard.",

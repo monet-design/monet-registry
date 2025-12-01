@@ -1,15 +1,32 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import "./font.css";
 
 interface OutsetaPaymentHeroProps {
+  mode?: "light" | "dark";
   label?: string;
   heading?: string;
   description?: string;
 }
 
 export default function OutsetaPaymentHero({
+  mode = "light",
   label = "PAYMENTS",
   heading = "Connect to Stripe.\nStart selling.",
   description = "Outseta is an all-in-one billing system purpose built for SaaS and membership businesses.\nPayments, subscription management, and tax compliance integrated with your site—and\nthe rest of your tech stack—in minutes.",

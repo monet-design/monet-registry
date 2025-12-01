@@ -5,7 +5,11 @@ import { useState } from "react";
 
 import "./font.css";
 
+// CUSTOMIZATION
+const CUSTOMIZATION = {};
+
 interface ObliquesProps {
+  mode?: "light" | "dark";
   headline?: string;
   firstNameLabel?: string;
   firstNamePlaceholder?: string;
@@ -28,6 +32,7 @@ interface ObliquesProps {
 }
 
 export default function Obliques({
+  mode = "dark",
   headline = "Let's plan a first meeting?",
   firstNameLabel = "First name",
   firstNamePlaceholder = "Your first name",

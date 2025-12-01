@@ -7,8 +7,26 @@ import { motion } from "motion/react";
 // ============================================================================
 
 const COLORS = {
-  light: {},
-  dark: {},
+  light: {
+    background: "#070723",           // 다크 배경
+    cardBackground: "#17142E",       // 카드 배경
+    cardBorder: "#2B2749",           // 카드 보더
+    accent: "#C084FC",               // 보라색 강조 (이름)
+    accentGreen: "#2DD4BF",          // 청록색 강조 (점 인디케이터)
+    gradientFrom: "#A78BFA",         // 헤딩 그라데이션 시작 (보라)
+    gradientMid: "#60A5FA",          // 헤딩 그라데이션 중간 (파랑)
+    gradientTo: "#2DD4BF",           // 헤딩 그라데이션 끝 (청록)
+  },
+  dark: {
+    background: "#070723",
+    cardBackground: "#17142E",
+    cardBorder: "#2B2749",
+    accent: "#C084FC",
+    accentGreen: "#2DD4BF",
+    gradientFrom: "#A78BFA",
+    gradientMid: "#60A5FA",
+    gradientTo: "#2DD4BF",
+  },
 } as const;
 
 const IMAGES = {} as const;
@@ -110,34 +128,44 @@ const defaultTestimonials: Testimonial[] = [
 ];
 
 // Testimonial Card Component
-function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
+function TestimonialCard({ testimonial, colors }: { testimonial: Testimonial; colors: typeof COLORS.light }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="rounded-xl border border-[#2B2749]/70 bg-[#17142E] p-5"
+      className="rounded-xl border p-5"
+      style={{
+        backgroundColor: colors.cardBackground,
+        borderColor: `${colors.cardBorder}B3`, // 70% opacity
+      }}
     >
       {/* Author Info */}
       <div className="mb-3 flex items-center gap-3">
         {/* Green dot indicator - positioned inline with avatar */}
-        <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#2DD4BF]" />
+        <span
+          className="h-1.5 w-1.5 shrink-0 rounded-full"
+          style={{ backgroundColor: colors.accentGreen }}
+        />
         <img
           src={testimonial.avatar}
           alt={testimonial.name}
           className="h-10 w-10 rounded-full object-cover"
         />
         <div className="flex flex-col">
-          <span className="text-sm font-medium text-[#C084FC]">
+          <span
+            className="text-sm font-medium"
+            style={{ color: colors.accent }}
+          >
             {testimonial.name}
           </span>
-          <span className="text-xs text-[#6B7280]">{testimonial.handle}</span>
+          <span className="text-xs text-gray-500">{testimonial.handle}</span>
         </div>
       </div>
 
       {/* Quote Text */}
-      <p className="text-[13px] leading-relaxed text-[#9CA3AF]">
+      <p className="text-[13px] leading-relaxed text-gray-400">
         {testimonial.content}
       </p>
     </motion.div>
@@ -152,6 +180,7 @@ export default function ReflectTestimonial({
   subtitle = "Here's what people are saying about us",
   testimonials = defaultTestimonials,
 }: ReflectTestimonialProps) {
+  const colors = COLORS[mode];
   // Split testimonials into 3 columns for masonry effect
   const columns: Testimonial[][] = [[], [], []];
   testimonials.forEach((testimonial, index) => {
@@ -159,7 +188,10 @@ export default function ReflectTestimonial({
   });
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#070723] py-16 sm:py-20 lg:py-24">
+    <section
+      className="relative w-full overflow-hidden py-16 sm:py-20 lg:py-24"
+      style={{ backgroundColor: colors.background }}
+    >
       {/* Background gradient glow */}
       <div
         aria-hidden
@@ -180,12 +212,17 @@ export default function ReflectTestimonial({
           className="mb-12 text-center"
         >
           <h2 className="mb-3 text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
-            <span className="bg-gradient-to-r from-[#A78BFA] via-[#60A5FA] to-[#2DD4BF] bg-clip-text text-transparent">
+            <span
+              className="bg-gradient-to-r bg-clip-text text-transparent"
+              style={{
+                backgroundImage: `linear-gradient(to right, ${colors.gradientFrom}, ${colors.gradientMid}, ${colors.gradientTo})`,
+              }}
+            >
               {headingHighlight}
             </span>
             <span className="text-white">{headingRest}</span>
           </h2>
-          <p className="text-sm text-[#9CA3AF] sm:text-base">{subtitle}</p>
+          <p className="text-sm text-gray-400 sm:text-base">{subtitle}</p>
         </motion.div>
 
         {/* Testimonials Grid - 3 columns masonry */}
@@ -200,7 +237,7 @@ export default function ReflectTestimonial({
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
-                  <TestimonialCard testimonial={testimonial} />
+                  <TestimonialCard testimonial={testimonial} colors={colors} />
                 </motion.div>
               ))}
             </div>

@@ -1,5 +1,20 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import {
   ArrowUpRight,
@@ -13,6 +28,7 @@ import {
 import "./font.css";
 
 interface ParadigmHeroProps {
+  mode?: "light" | "dark";
   logo?: string;
   navItems?: string[];
   ctaButtonText?: string;
@@ -25,6 +41,7 @@ interface ParadigmHeroProps {
 }
 
 export default function ParadigmHero({
+  mode = "light",
   logo = "Paradigm",
   navItems = [
     "Services",

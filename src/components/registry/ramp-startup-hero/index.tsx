@@ -5,6 +5,46 @@ import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#D4D4CF",          // 라이트 그레이 배경
+    accent: "#C5D026",              // 라임 그린 강조색 (CTA)
+    accentHover: "#B5C016",         // 라임 그린 호버
+    text: "#1A1A1A",                // 다크 텍스트
+    border: "#1A1A1A",              // 보더색
+  },
+  dark: {
+    background: "#2A2A28",
+    accent: "#C5D026",
+    accentHover: "#B5C016",
+    text: "#F5F5F5",
+    border: "#F5F5F5",
+  },
+} as const;
+
+const IMAGES = {
+  hero: {
+    path: "/registry/ramp-startup-hero/dashboard.jpg",
+    alt: "Ramp startup dashboard interface",
+    prompt: `Modern fintech dashboard interface for startups.
+Style: Clean, professional SaaS design
+Layout: Dashboard view showing financial metrics and cards
+Composition: Clear data visualization, modern UI elements
+Background: Light interface background
+Color palette: Professional neutrals with brand accents
+Mood: Innovative, trustworthy, startup-friendly
+Technical: High resolution, sharp UI details, 16:9 aspect ratio`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface NavItem {
   label: string;
   href: string;
@@ -12,6 +52,7 @@ interface NavItem {
 }
 
 interface RampStartupHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   headline?: string;
   description?: string;

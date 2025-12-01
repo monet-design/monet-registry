@@ -4,6 +4,9 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { Sparkles, Droplets, Settings2, Wand2 } from "lucide-react";
 
+// CUSTOMIZATION
+const CUSTOMIZATION = {};
+
 interface TabItem {
   id: string;
   label: string;
@@ -11,6 +14,7 @@ interface TabItem {
 }
 
 interface MagicWandFeatureProps {
+  mode?: "light" | "dark";
   title?: string;
   subtitle?: string;
   tabs?: TabItem[];
@@ -24,6 +28,7 @@ const defaultTabs: TabItem[] = [
 ];
 
 export default function MagicWandFeature({
+  mode = "dark",
   title = "Wave Your Magic Wand",
   subtitle = "Design with the power of AI to do everything from\ncopywriting to generating unique icons from text.",
   tabs = defaultTabs,

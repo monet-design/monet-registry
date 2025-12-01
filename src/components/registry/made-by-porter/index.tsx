@@ -2,7 +2,11 @@
 
 import { motion } from "motion/react";
 
+// CUSTOMIZATION
+const CUSTOMIZATION = {};
+
 interface MadeByPorterProps {
+  mode?: "light" | "dark";
   title?: string;
   paragraphs?: string[];
   authorName?: string;
@@ -17,6 +21,7 @@ const defaultParagraphs = [
 ];
 
 export default function MadeByPorter({
+  mode = "light",
   title = "Made by Porter",
   paragraphs = defaultParagraphs,
   authorName = "Chris Porter",

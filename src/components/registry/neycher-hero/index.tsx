@@ -4,6 +4,9 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import "./font.css";
 
+// CUSTOMIZATION
+const CUSTOMIZATION = {};
+
 interface NavItem {
   label: string;
   href: string;
@@ -19,6 +22,7 @@ interface ProductCardProps {
 }
 
 interface NeycherHeroProps {
+  mode?: "light" | "dark";
   brandName?: string;
   navItems?: NavItem[];
   headline?: string;
@@ -89,6 +93,7 @@ const defaultNavItems: NavItem[] = [
 ];
 
 export default function NeycherHero({
+  mode = "light",
   brandName = "Neycher",
   navItems = defaultNavItems,
   headline = "It's time to break up with\nvaginal dryness, BV, and\nyeast infection.",

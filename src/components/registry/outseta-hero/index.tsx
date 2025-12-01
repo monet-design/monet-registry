@@ -1,5 +1,20 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import Image from "next/image";
@@ -17,6 +32,7 @@ interface IntegrationLogo {
 }
 
 interface OutsetaHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   badge?: string;
   badgeLink?: string;
@@ -210,6 +226,7 @@ const defaultNavItems: NavItem[] = [
 
 // Main Component
 export default function OutsetaHero({
+  mode = "light",
   logoText = "Outseta",
   badge = "NEW",
   badgeLink = "Community design showcase",

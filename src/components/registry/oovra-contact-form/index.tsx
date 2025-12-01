@@ -5,8 +5,12 @@ import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import "./font.css";
 
+// CUSTOMIZATION
+const CUSTOMIZATION = {};
+
 // Types
 interface OovraContactFormProps {
+  mode?: "light" | "dark";
   headline?: {
     line1: string;
     line2: string;
@@ -33,6 +37,7 @@ interface FormData {
 
 // Main Component
 export default function OovraContactForm({
+  mode = "light",
   headline = {
     line1: "Schedule a",
     line2: "Meeting",

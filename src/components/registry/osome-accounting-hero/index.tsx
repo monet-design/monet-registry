@@ -1,10 +1,26 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { motion } from "motion/react";
 import { Play, Star } from "lucide-react";
 import Image from "next/image";
 
 interface OsomeAccountingHeroProps {
+  mode?: "light" | "dark";
   breadcrumb?: {
     prefix?: string;
     current?: string;
@@ -34,6 +50,7 @@ interface OsomeAccountingHeroProps {
 }
 
 export default function OsomeAccountingHero({
+  mode = "light",
   breadcrumb = {
     prefix: "Osome SG",
     current: "Accounting",

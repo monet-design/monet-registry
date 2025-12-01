@@ -5,6 +5,9 @@ import { motion, AnimatePresence } from "motion/react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import "./font.css";
 
+// CUSTOMIZATION
+const CUSTOMIZATION = {};
+
 // Types
 interface Testimonial {
   id: number;
@@ -15,6 +18,7 @@ interface Testimonial {
 }
 
 interface MoveToBeMoreProps {
+  mode?: "light" | "dark";
   headline?: string;
   highlightedText?: string;
   testimonials?: Testimonial[];
@@ -175,6 +179,7 @@ function PaginationDots({
 
 // Main Component
 export default function MoveToBeMore({
+  mode = "light",
   headline = "I help people like you realise their",
   highlightedText = "full potential",
   testimonials = defaultTestimonials,

@@ -4,8 +4,12 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import "./font.css";
 
+// CUSTOMIZATION
+const CUSTOMIZATION = {};
+
 // Types
 interface NvgtContactFormProps {
+  mode?: "light" | "dark";
   badgeText?: string;
   headlineLine1?: string;
   headlineLine2?: string;
@@ -106,6 +110,7 @@ function SubmitButton({
 
 // Main Component
 export default function NvgtContactForm({
+  mode = "dark",
   badgeText = "Contact",
   headlineLine1 = "Fuel your startup's",
   headlineLine2 = "growth. Get in touch.",

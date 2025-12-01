@@ -4,7 +4,11 @@ import { motion } from "motion/react";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { Input } from "@/components/ui/input";
 
+// CUSTOMIZATION
+const CUSTOMIZATION = {};
+
 interface OchoHomePageSectionHeroProps {
+  mode?: "light" | "dark";
   badge?: string;
   headline?: string;
   description?: string;
@@ -19,6 +23,7 @@ interface OchoHomePageSectionHeroProps {
 }
 
 export default function OchoHomePageSectionHero({
+  mode = "light",
   badge = "Now in Beta!",
   headline = "Building wealth for\nbusiness owners",
   description = "Ocho is everything you need to build wealth as an entrepreneur, freelancer, consultant or independent business owner. We exist to serve entrepreneurs with the tools, education and network to transform their business income into generational wealth.",

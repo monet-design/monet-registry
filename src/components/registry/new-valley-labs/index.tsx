@@ -4,6 +4,9 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import "./font.css";
 
+// CUSTOMIZATION
+const CUSTOMIZATION = {};
+
 interface FormData {
   name: string;
   email: string;
@@ -14,6 +17,7 @@ interface FormData {
 }
 
 interface NewValleyLabsProps {
+  mode?: "light" | "dark";
   title?: string;
   subtitle?: string;
   subtitleSmall?: string;
@@ -31,6 +35,7 @@ interface NewValleyLabsProps {
 }
 
 export default function NewValleyLabs({
+  mode = "light",
   title = "CONTACT US",
   subtitle = "WHAT'S THE TEA?",
   subtitleSmall = "LET'S CHAT",

@@ -1,5 +1,20 @@
 "use client";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {},
+  dark: {},
+} as const;
+
+const IMAGES = {} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 import { useEffect, useState, useMemo } from "react";
 import { motion } from "motion/react";
 
@@ -15,6 +30,7 @@ interface Dot {
 }
 
 interface OperateBeforeAfterProps {
+  mode?: "light" | "dark";
   brandName?: string;
   navLinkText?: string;
   navLinkHref?: string;
@@ -139,6 +155,7 @@ function ScatterDot({
 
 // Main Component
 export default function OperateBeforeAfter({
+  mode = "light",
   brandName = "OPERATE ALPHA",
   navLinkText = "Want in? Request early access",
   navLinkHref = "#",

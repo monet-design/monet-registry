@@ -5,6 +5,43 @@ import { Pencil } from "lucide-react";
 import Image from "next/image";
 import "./font.css";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#F4F3EF",       // 브랜드 베이지 배경색
+    variantBlue: "#4B4B9E",      // 블루 색상 변형
+    variantOlive: "#5C6B3A",     // 올리브 색상 변형
+    variantBlack: "#1E1E2E",     // 블랙 색상 변형
+  },
+  dark: {
+    background: "#1A1A1A",
+    variantBlue: "#6B6BC0",
+    variantOlive: "#7A8B5A",
+    variantBlack: "#2E2E3E",
+  },
+} as const;
+
+const IMAGES = {
+  pattern: {
+    path: "/registry/rarity-feature-card/geometric-pattern.png",
+    alt: "Geometric pattern",
+    prompt: `Abstract geometric pattern with interconnected nodes and lines.
+Style: Minimalist, technical, network-like structure
+Layout: Centered, symmetrical arrangement
+Composition: Multiple circular nodes connected by straight lines forming a web
+Color palette: Monochromatic, neutral tones
+Mood: Technical, precise, mathematical
+Technical: Vector-style graphics, clean lines, transparent background friendly`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 interface ColorVariant {
   name: string;
   color: string;
@@ -12,6 +49,7 @@ interface ColorVariant {
 }
 
 interface RarityFeatureCardProps {
+  mode?: "light" | "dark";
   title?: {
     prefix?: string;
     highlight1?: string;
@@ -30,6 +68,7 @@ interface RarityFeatureCardProps {
 }
 
 export default function RarityFeatureCard({
+  mode = "light",
   title = {
     prefix: "Rarity for the",
     highlight1: "early",
@@ -48,20 +87,21 @@ export default function RarityFeatureCard({
     </>
   ),
   colorVariants = [
-    { name: "Blue", color: "#4B4B9E", isActive: false },
-    { name: "Olive", color: "#5C6B3A", isActive: false },
-    { name: "Black", color: "#1E1E2E", isActive: true },
+    { name: "Blue", color: COLORS.light.variantBlue, isActive: false },
+    { name: "Olive", color: COLORS.light.variantOlive, isActive: false },
+    { name: "Black", color: COLORS.light.variantBlack, isActive: true },
   ],
-  patternImage = "/registry/rarity-feature-card/geometric-pattern.png",
+  patternImage = IMAGES.pattern.path,
   cardLabels = {
     left: "PFPID",
     right: "10",
   },
 }: RarityFeatureCardProps) {
+  const colors = COLORS[mode];
   return (
     <section
       className="flex min-h-[600px] w-full flex-col items-center justify-center px-6 py-16"
-      style={{ backgroundColor: "#F4F3EF" }}
+      style={{ backgroundColor: colors.background }}
     >
       {/* Title */}
       <motion.h2
@@ -130,7 +170,7 @@ export default function RarityFeatureCard({
             <div className="relative h-20 w-20 opacity-50">
               <Image
                 src={patternImage}
-                alt="Geometric pattern"
+                alt={IMAGES.pattern.alt}
                 fill
                 className="object-contain"
                 style={{ filter: "brightness(0.8) sepia(0.2)" }}

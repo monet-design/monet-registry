@@ -4,6 +4,46 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
 
+// ============================================================================
+// CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
+// ============================================================================
+
+const COLORS = {
+  light: {
+    background: "#EFEDE9",          // 라이트 베이지 배경
+    accent: "#E4F425",              // 라임 옐로우 강조색 (CTA)
+    accentHover: "#D4E420",         // 라임 옐로우 호버
+    text: "#1A1A1A",                // 다크 텍스트
+    border: "#D5D5D3",              // 보더색
+  },
+  dark: {
+    background: "#2A2A28",
+    accent: "#E4F425",
+    accentHover: "#D4E420",
+    text: "#F5F5F5",
+    border: "#4A4A48",
+  },
+} as const;
+
+const IMAGES = {
+  hero: {
+    path: "/registry/ramp-pricing-hero/hand-card.png",
+    alt: "Ramp corporate card in hand",
+    prompt: `Close-up photo of hand holding modern corporate payment card.
+Style: Clean product photography, professional
+Layout: Vertical or angled composition
+Composition: Hand prominently displaying card details
+Background: Neutral, clean gradient
+Color palette: Card branding colors, professional look
+Mood: Premium, trustworthy, modern
+Technical: High resolution, sharp focus on card, commercial quality`,
+  },
+} as const;
+
+// ============================================================================
+// END CUSTOMIZATION
+// ============================================================================
+
 // Types
 interface NavItem {
   label: string;
@@ -12,6 +52,7 @@ interface NavItem {
 }
 
 interface RampPricingHeroProps {
+  mode?: "light" | "dark";
   logoText?: string;
   headline?: string;
   description?: string;

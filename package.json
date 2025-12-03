@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "download-images": "tsx scripts/download-images-from-urls.ts",
     "metadata:migrate": "tsx scripts/migrate-metadata.ts",
     "metadata:validate": "tsx scripts/validate-metadata.ts",
     "metadata:build": "tsx scripts/generate-registry.ts",

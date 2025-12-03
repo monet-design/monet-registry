@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-24
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-master-24.png
+
+freeformKeywords:
+  - pricing
+  - pricing table
+  - subscription
+  - plans
+  - SaaS pricing
+  - free trial
+  - monthly
+  - yearly
+  - one-time payment
+  - pricing cards
+  - pricing grid
+  - email input
+  - CTA button
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:22:27Z"
+status: stable

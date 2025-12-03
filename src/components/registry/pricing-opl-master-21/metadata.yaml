@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-21
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-21.png
+
+freeformKeywords:
+  - pricing
+  - pricing card
+  - lifetime deal
+  - limited offer
+  - saas pricing
+  - fintech pricing
+  - free tier
+  - premium
+  - call to action
+  - CTA button
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:22:30Z"
+status: stable

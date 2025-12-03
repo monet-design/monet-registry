@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-6
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-master-6.png
+
+freeformKeywords:
+  - pricing
+  - dark theme
+  - subscription
+  - UX design
+  - project-based
+  - transparent pricing
+  - cards
+  - features list
+  - two columns
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-12-03T19:29:15Z"
+status: stable

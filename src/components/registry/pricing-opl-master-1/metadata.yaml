@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-1
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-1.png
+
+freeformKeywords:
+  - pricing
+  - subscription
+  - plan
+  - monthly
+  - webflow
+  - affiliate
+  - saas
+  - card
+  - simple
+  - cancel anytime
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:23:47Z"
+status: stable

@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-19
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-19.png
+
+freeformKeywords:
+  - pricing
+  - plans
+  - subscription
+  - monthly
+  - yearly
+  - unlimited
+  - deployments
+  - projects
+  - saas
+  - vapor
+  - laravel
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:22:29Z"
+status: stable

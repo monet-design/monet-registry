@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-33
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-master-33.png
+
+freeformKeywords:
+  - pricing
+  - SaaS
+  - fintech
+  - plans
+  - comparison
+  - transparent
+  - api
+  - launch
+  - scale
+  - customizable
+  - enterprise
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:25:41Z"
+status: stable

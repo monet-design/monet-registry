@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-7
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-master-7.png
+
+freeformKeywords:
+  - pricing
+  - one-time purchase
+  - variable font
+  - course
+  - card
+  - blue
+  - gradient background
+  - lifetime access
+  - italic
+  - serif
+  - check list
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-12-03T19:28:04Z"
+status: stable

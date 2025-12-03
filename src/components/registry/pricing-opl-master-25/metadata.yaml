@@ -1,0 +1,22 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-25
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-25.png
+
+freeformKeywords:
+  - pricing
+  - team pricing
+  - free tier
+  - freemium
+  - membership
+  - SaaS pricing
+  - per member
+  - subscription
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:22:49Z"
+status: stable

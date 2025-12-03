@@ -1,0 +1,23 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-26
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-26.png
+
+freeformKeywords:
+  - pricing
+  - subscription
+  - package
+  - plan
+  - monthly
+  - design service
+  - saas
+  - retainer
+  - agency
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:22:51Z"
+status: stable

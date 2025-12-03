@@ -1,0 +1,23 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-28
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-master-28.png
+
+freeformKeywords:
+  - pricing
+  - beta program
+  - academy
+  - course
+  - lifetime access
+  - limited time offer
+  - two-column pricing
+  - lavender
+  - purple accent
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:24:57Z"
+status: stable

@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-32
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-32.png
+
+freeformKeywords:
+  - pricing
+  - subscription
+  - plans
+  - monthly
+  - quarterly
+  - saas
+  - cards
+  - testimonial
+  - features
+  - design agency
+  - unlimited design
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:25:34Z"
+status: stable

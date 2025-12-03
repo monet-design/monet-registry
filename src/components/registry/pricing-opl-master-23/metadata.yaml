@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-23
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-master-23.png
+
+freeformKeywords:
+  - pricing
+  - plans
+  - subscription
+  - purple
+  - lavender
+  - free tier
+  - pro tier
+  - affordable
+  - saas
+  - startup
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:22:18Z"
+status: stable

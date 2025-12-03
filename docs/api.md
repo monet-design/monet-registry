@@ -483,7 +483,7 @@ Cache-Control: public, s-maxage=3600, stale-while-revalidate=7200
 
 ### Get Registry Stats
 
-컴포넌트 레지스트리의 전체 통계를 조회합니다.
+컴포넌트 레지스트리의 전체 통계를 조회합니다. 특정 카테고리로 필터링할 수 있습니다.
 
 ```
 GET /api/v1/stats
@@ -493,6 +493,7 @@ GET /api/v1/stats
 
 | 파라미터 | 타입 | 기본값 | 설명 |
 |----------|------|--------|------|
+| category | string | - | 카테고리 필터 (지정 시 해당 카테고리만 통계 계산) |
 | include_examples | boolean | `true` | 카테고리별 예제 포함 여부 |
 
 #### Response
@@ -536,6 +537,19 @@ GET /api/v1/stats
     "Try industry-specific searches like 'saas hero'"
   ]
 }
+```
+
+#### Example
+
+```bash
+# 전체 통계 조회
+curl "https://registry.monet.design/api/v1/stats"
+
+# 특정 카테고리 통계 조회
+curl "https://registry.monet.design/api/v1/stats?category=hero"
+
+# 예제 제외하고 조회
+curl "https://registry.monet.design/api/v1/stats?include_examples=false"
 ```
 
 #### Caching

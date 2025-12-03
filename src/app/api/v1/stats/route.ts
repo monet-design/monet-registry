@@ -33,25 +33,45 @@ export async function GET(request: NextRequest) {
   try {
     const includeExamples =
       request.nextUrl.searchParams.get("include_examples") !== "false";
+    const categoryFilter = request.nextUrl.searchParams.get("category");
 
-    const [components, categoryIndex, tagIndex] = await Promise.all([
+    const [allComponents, categoryIndex, tagIndex] = await Promise.all([
       getAllComponents(),
       getCategoryIndex(),
       getTagIndex(),
     ]);
 
-    // Build category stats
-    const categories = Object.entries(categoryIndex).map(([name, ids]) => ({
-      name,
-      count: ids.length,
-      description: CATEGORY_DESCRIPTIONS[name] || "",
-      examples: includeExamples ? ids.slice(0, 3) : undefined,
-    }));
+    // Filter components by category if specified
+    const components = categoryFilter
+      ? allComponents.filter((comp) => comp.category === categoryFilter)
+      : allComponents;
 
-    // Build tag stats
+    // Build category stats (filter if category specified)
+    const filteredCategoryIndex = categoryFilter
+      ? { [categoryFilter]: categoryIndex[categoryFilter] || [] }
+      : categoryIndex;
+
+    const categories = Object.entries(filteredCategoryIndex).map(
+      ([name, ids]) => ({
+        name,
+        count: ids.length,
+        description: CATEGORY_DESCRIPTIONS[name] || "",
+        examples: includeExamples ? ids.slice(0, 3) : undefined,
+      })
+    );
+
+    // Build tag stats from filtered components
+    const componentIds = new Set(components.map((c) => c.id));
+
     const buildTagCounts = (tagMap: Record<string, string[]>) =>
       Object.entries(tagMap)
-        .map(([tag, ids]) => ({ tag, count: ids.length }))
+        .map(([tag, ids]) => ({
+          tag,
+          count: categoryFilter
+            ? ids.filter((id) => componentIds.has(id)).length
+            : ids.length,
+        }))
+        .filter((item) => item.count > 0)
         .sort((a, b) => b.count - a.count);
 
     // Count fonts

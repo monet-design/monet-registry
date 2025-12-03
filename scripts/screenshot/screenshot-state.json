@@ -39,6 +39,1538 @@
     "colabs-hero": {
       "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/colabs-hero.png",
       "capturedAt": "2025-12-03T18:15:50.795Z"
+    },
+    "contra-portfolio-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/contra-portfolio-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "website-template-carousel": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/website-template-carousel.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "clay-story-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/clay-story-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "intercom-suite-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/intercom-suite-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "lance-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/lance-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "espanium": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/espanium.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "intercom-customers-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/intercom-customers-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "clay-crm-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/clay-crm-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "creative-sandboxes-showcase": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/creative-sandboxes-showcase.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "practical-ui-before-after": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/practical-ui-before-after.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "popcorn-home-page-section-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/popcorn-home-page-section-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "driftime-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/driftime-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "sound-ethics-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/sound-ethics-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "milliners-yard": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/milliners-yard.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "restless-rabbit-creative": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/restless-rabbit-creative.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "rivian-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/rivian-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "popcorn-cta": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/popcorn-cta.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "sound-ethics-about-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/sound-ethics-about-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "PrintForFigma": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/PrintForFigma.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "ui-magic-logo-grid": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/ui-magic-logo-grid.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "FreePrBook": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/FreePrBook.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "finnian-sturdy": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/finnian-sturdy.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "supertoons": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/supertoons.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "move-to-be-more": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/move-to-be-more.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "reveni-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/reveni-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "fin-ai-capabilities-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/fin-ai-capabilities-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "help-scout-platform-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/help-scout-platform-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stats-19": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stats-19.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "evolux-waitlist": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/evolux-waitlist.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "pipe-capital-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/pipe-capital-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "popless-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/popless-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "energy-park-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/energy-park-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stats-18": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stats-18.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "iconos-waitlist": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/iconos-waitlist.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "DesignGalStudio": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/DesignGalStudio.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "flagship-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/flagship-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "ocho-solo-page-section-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/ocho-solo-page-section-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "i-am-superjuice": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/i-am-superjuice.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "security-tools-mobile": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/security-tools-mobile.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "clarisights-marketing-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/clarisights-marketing-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "move-agency-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/move-agency-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "innovation-initiative": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/innovation-initiative.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "case-study-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/case-study-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stats-20": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stats-20.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "sevalla-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/sevalla-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "reon-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/reon-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "summer-sprint": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/summer-sprint.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "rarity-feature-card": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/rarity-feature-card.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-payment-platform": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-payment-platform.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stats-21": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stats-21.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "anesh-kangutkar-bio": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/anesh-kangutkar-bio.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-restaurant-beer-space": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-restaurant-beer-space.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "outseta-payment-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/outseta-payment-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "viewport-before-after": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/viewport-before-after.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "liveblocks-realtime-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/liveblocks-realtime-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "solarpunk-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/solarpunk-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "chronicle-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/chronicle-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "kajabi-creator-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/kajabi-creator-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "sketch-handoff-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/sketch-handoff-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "use-cases-flow": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/use-cases-flow.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "kinetic-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/kinetic-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "feel-good-productivity": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/feel-good-productivity.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "linear-home-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/linear-home-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "isla-porter-why-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/isla-porter-why-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "email-feature-showcase": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/email-feature-showcase.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "mike-mcalister-bio": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/mike-mcalister-bio.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "superwhisper-testimonial": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/superwhisper-testimonial.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "sketch-color-variables-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/sketch-color-variables-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "fin-ai-tasks-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/fin-ai-tasks-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "clay-logo-cloud": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/clay-logo-cloud.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stats-22": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stats-22.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "MargheritaFortuna": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/MargheritaFortuna.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "kota-pricing-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/kota-pricing-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "planned-event-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/planned-event-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "ramp-startup-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/ramp-startup-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "glow-guide": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/glow-guide.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "made-by-porter": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/made-by-porter.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "youballin": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/youballin.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "sketch-home-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/sketch-home-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "jords-and-co-testimonial-slider": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/jords-and-co-testimonial-slider.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "landingfolio-hero-6": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/landingfolio-hero-6.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hubspot-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hubspot-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "PortfolioFinalFinal2023": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/PortfolioFinalFinal2023.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "authkit-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/authkit-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "onhand-volunteering-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/onhand-volunteering-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "slice-machine-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/slice-machine-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "uptime-monitoring-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/uptime-monitoring-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stats-7": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stats-7.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "furey-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/furey-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "ShowThemCourse": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/ShowThemCourse.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "atomic-design-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/atomic-design-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "texts-testimonial-tweets": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/texts-testimonial-tweets.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "pipe-entrepreneurs-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/pipe-entrepreneurs-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "kota-blog-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/kota-blog-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-corporate-card": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-corporate-card.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "kyoso-before-after": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/kyoso-before-after.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "lattice-cta": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/lattice-cta.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "terraset-logo-cloud": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/terraset-logo-cloud.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "GalShir": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/GalShir.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stats-6": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stats-6.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "alignui-design-system-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/alignui-design-system-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "plain-home-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/plain-home-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-20": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-20.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "landingfolio-hero-5": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/landingfolio-hero-5.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "pano-cs-vip-roundtable": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/pano-cs-vip-roundtable.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "avo-customers-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/avo-customers-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "oovra-contact-form": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/oovra-contact-form.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "telmd-feature-carousel": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/telmd-feature-carousel.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-brewery-cards": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-brewery-cards.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "uiux-book-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/uiux-book-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "PrototyperForFigma": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/PrototyperForFigma.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "pencil-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/pencil-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "routable-payment-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/routable-payment-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "landingfolio-hero-29": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/landingfolio-hero-29.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "resend-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/resend-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "Helo": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/Helo.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "reon-service-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/reon-service-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "a5g-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/a5g-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "osome-accounting-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/osome-accounting-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-9": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-9.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "credit-building-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/credit-building-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stats-5": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stats-5.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "MikeMcAlister2022": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/MikeMcAlister2022.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "canopy-os-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/canopy-os-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "canopy-safeguard-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/canopy-safeguard-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "jeff-wall": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/jeff-wall.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "help-scout-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/help-scout-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "bausola-banch": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/bausola-banch.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-19": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-19.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "FastForwardFreelance": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/FastForwardFreelance.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "send-money-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/send-money-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-payment-dashboard": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-payment-dashboard.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "paradigm-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/paradigm-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stats-1": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stats-1.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-oddit-fresh-perspective": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-oddit-fresh-perspective.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "vectara-cta": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/vectara-cta.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "fin-ai-zendesk-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/fin-ai-zendesk-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "ensage": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/ensage.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "mission-lab-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/mission-lab-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "Endless2023": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/Endless2023.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "Superwhisper": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/Superwhisper.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "contra-pro-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/contra-pro-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "DerekOrr": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/DerekOrr.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "lawtrades-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/lawtrades-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "sophia-amoruso-story-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/sophia-amoruso-story-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-18": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-18.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "doconomy-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/doconomy-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "uplift-founders": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/uplift-founders.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "intercom-blog-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/intercom-blog-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "Juho": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/Juho.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "landingfolio-hero-3": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/landingfolio-hero-3.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "codesandbox-support-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/codesandbox-support-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "axim-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/axim-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stats-2": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stats-2.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "antimetal-enterprise-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/antimetal-enterprise-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "operate-before-after": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/operate-before-after.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "github-security-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/github-security-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hedera-dx": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hedera-dx.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "cape-hero-section": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/cape-hero-section.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "slite-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/slite-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "artboard-team-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/artboard-team-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "few-and-far-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/few-and-far-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "nvgt-logo-grid": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/nvgt-logo-grid.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "ramp-pricing-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/ramp-pricing-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "serge-tiutyk-biography": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/serge-tiutyk-biography.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "riotters-about-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/riotters-about-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "ping-space-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/ping-space-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "moxion-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/moxion-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "public-invest-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/public-invest-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "canvas-view-showcase": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/canvas-view-showcase.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "focal-creativity-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/focal-creativity-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "antimetal-home-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/antimetal-home-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stats-3": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stats-3.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "WebflixStudio": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/WebflixStudio.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "feature-showcase-sections": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/feature-showcase-sections.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "landingfolio-hero-2": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/landingfolio-hero-2.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "seedesign": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/seedesign.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hawthorne-skin-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hawthorne-skin-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "rysa-pricing": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/rysa-pricing.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "print-for-figma-testimonial": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/print-for-figma-testimonial.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "free-pr-book": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/free-pr-book.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "github-startups-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/github-startups-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "bauplan": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/bauplan.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "landingfolio-hero-37": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/landingfolio-hero-37.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "landingfolio-hero-23": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/landingfolio-hero-23.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-2": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-2.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "kajabi-payment-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/kajabi-payment-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "ahrefs-hero-section": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/ahrefs-hero-section.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "virtu-digital": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/virtu-digital.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "tools-for-thought-section": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/tools-for-thought-section.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "landingfolio-hero-22": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/landingfolio-hero-22.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "landingfolio-hero-36": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/landingfolio-hero-36.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "liveblocks-home-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/liveblocks-home-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "equip-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/equip-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "canopy-start-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/canopy-start-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "brewitty": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/brewitty.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-17": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-17.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "soft-ai-waitlist": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/soft-ai-waitlist.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "full-stack-ui": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/full-stack-ui.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "supermi-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/supermi-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-15": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-15.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "patch-security-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/patch-security-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "ahrefs-enterprise-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/ahrefs-enterprise-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "resync-bio-contact": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/resync-bio-contact.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "ScreenStudio": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/ScreenStudio.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "alfread-testimonial-tweets": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/alfread-testimonial-tweets.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "Ilo": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/Ilo.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "landingfolio-hero-34": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/landingfolio-hero-34.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "passionfroot-cta": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/passionfroot-cta.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "IntroToIconsByMds": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/IntroToIconsByMds.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "delphi-digital-mind-cta": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/delphi-digital-mind-cta.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-1": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-1.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "ai-reading-waitlist": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/ai-reading-waitlist.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "rbb-economics-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/rbb-economics-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "reflect-testimonial-tweets": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/reflect-testimonial-tweets.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hunter-hastings": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hunter-hastings.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "nvgt-testimonial-slider": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/nvgt-testimonial-slider.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "typography-layout-course": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/typography-layout-course.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "awin": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/awin.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "landingfolio-hero-35": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/landingfolio-hero-35.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "landingfolio-hero-21": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/landingfolio-hero-21.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "bunsen-studio-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/bunsen-studio-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "fin-ai-ecommerce-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/fin-ai-ecommerce-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "checkout-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/checkout-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "kota-countries-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/kota-countries-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-14": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-14.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "figma-academy": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/figma-academy.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "parker-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/parker-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "melbourne-web-studio-testimonial": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/melbourne-web-studio-testimonial.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "webflow-conf-2022": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/webflow-conf-2022.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "sketch-collaborate-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/sketch-collaborate-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "agency-hero-with-showcase": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/agency-hero-with-showcase.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stickbird-studio": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stickbird-studio.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "endless": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/endless.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "kota-global-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/kota-global-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "pear": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/pear.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "product-feature-showcase": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/product-feature-showcase.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "eight-pixel": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/eight-pixel.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "oyster-embedded-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/oyster-embedded-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "routable-automation-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/routable-automation-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-4": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-4.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "rivian-r2-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/rivian-r2-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "riotters-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/riotters-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "sophia-amoruso-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/sophia-amoruso-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-data-warehouse-diagram": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-data-warehouse-diagram.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "60-logo-tips-showcase": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/60-logo-tips-showcase.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "landingfolio-hero-24": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/landingfolio-hero-24.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-llm-inference-testimonials": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-llm-inference-testimonials.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "xizt-agency": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/xizt-agency.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-customer-ambassadors": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-customer-ambassadors.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stats-9": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stats-9.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "DesigningInFigmaBook": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/DesigningInFigmaBook.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "beauty-with-intuition": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/beauty-with-intuition.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "landingfolio-hero-8": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/landingfolio-hero-8.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-11": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-11.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "NodejsCli": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/NodejsCli.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "gaelle-perrin-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/gaelle-perrin-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "prototyper-for-figma-testimonial": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/prototyper-for-figma-testimonial.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "isla-porter-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/isla-porter-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "passionfroot-creator-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/passionfroot-creator-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-13": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-13.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "feature-tabs-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/feature-tabs-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "axim-focus-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/axim-focus-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "resync-bio": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/resync-bio.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "rysa-cta": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/rysa-cta.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "plain-product-page-section-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/plain-product-page-section-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "landingfolio-hero-26": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/landingfolio-hero-26.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-7": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-7.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "figma-feature-tabs": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/figma-feature-tabs.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "parable-testimonial-slider": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/parable-testimonial-slider.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "convert-kit-newsletter-plan": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/convert-kit-newsletter-plan.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "solution-section-header": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/solution-section-header.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "popcorn-research-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/popcorn-research-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-6": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-6.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "landingfolio-hero-33": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/landingfolio-hero-33.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "Pyrismic": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/Pyrismic.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "help-scout-ai-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/help-scout-ai-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "SixtyTipsLogoDesign": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/SixtyTipsLogoDesign.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "obliques": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/obliques.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "LiftoffCourse2021": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/LiftoffCourse2021.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "current-fintech-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/current-fintech-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "routable-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/routable-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "mercury-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/mercury-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "design-buddy-before-after": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/design-buddy-before-after.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "glow-team": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/glow-team.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "MetodaTeczowki": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/MetodaTeczowki.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "wegems-testimonial-slider": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/wegems-testimonial-slider.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "MattRothenberg": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/MattRothenberg.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "attio-crm-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/attio-crm-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "people-crm-showcase": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/people-crm-showcase.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "makeover-studio": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/makeover-studio.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "adith-narein-testimonial": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/adith-narein-testimonial.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "liveblocks-infrastructure-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/liveblocks-infrastructure-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "ben-benefits-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/ben-benefits-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "oyster-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/oyster-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stats-13": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stats-13.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-influencer-platform": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-influencer-platform.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "testimonial-slider": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/testimonial-slider.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "graffio-contact-form": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/graffio-contact-form.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "outseta-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/outseta-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "comet-feature-showcase": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/comet-feature-showcase.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stats-12": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stats-12.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "Geneva": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/Geneva.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "magic-wand-feature": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/magic-wand-feature.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "intercom-home-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/intercom-home-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "features-x": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/features-x.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "double-makers-subscription-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/double-makers-subscription-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "features-x-2": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/features-x-2.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "coherence-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/coherence-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "canopy-lending-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/canopy-lending-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "liveblocks-notifications-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/liveblocks-notifications-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "moxion-industries-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/moxion-industries-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hpq-frankfurt": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hpq-frankfurt.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "Reflect": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/Reflect.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "codesandbox-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/codesandbox-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "incab-franchise": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/incab-franchise.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "insurely-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/insurely-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "vivtel-contact-form": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/vivtel-contact-form.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hello-network-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hello-network-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "nvgt-contact-form": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/nvgt-contact-form.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "neycher-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/neycher-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "frame-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/frame-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "harvey-ai-logo-cloud": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/harvey-ai-logo-cloud.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stats-10": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stats-10.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "help-scout-inbox-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/help-scout-inbox-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "rivian-r1t-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/rivian-r1t-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "popcorn-manifesto-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/popcorn-manifesto-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "pera-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/pera-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stats-11": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stats-11.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "TenXDesigners": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/TenXDesigners.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "rbb-about-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/rbb-about-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "ocho-home-page-section-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/ocho-home-page-section-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "auction-hero-skyline": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/auction-hero-skyline.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "prismic-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/prismic-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "sketch-prototype-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/sketch-prototype-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "memory-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/memory-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "global-growth-platform-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/global-growth-platform-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "moxion-technology-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/moxion-technology-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "iphone-creator-course": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/iphone-creator-course.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "well-designed-contact-form": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/well-designed-contact-form.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "deeo": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/deeo.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "linear-integrations-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/linear-integrations-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "designbell-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/designbell-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "dreamflux-ai-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/dreamflux-ai-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hyve-systems": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hyve-systems.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "ramp-home-page-section-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/ramp-home-page-section-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "duffel-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/duffel-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "fin-ai-enterprise-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/fin-ai-enterprise-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "new-valley-labs": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/new-valley-labs.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "oyster-people-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/oyster-people-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "8px-studio": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/8px-studio.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "jimo-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/jimo-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "intercom-watch-demo-cta": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/intercom-watch-demo-cta.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "checkout-product-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/checkout-product-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stats-15": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stats-15.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "geneva-testimonial-tweets": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/geneva-testimonial-tweets.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "BlockThemesProCourse": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/BlockThemesProCourse.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stats-14": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stats-14.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "sketch-extensions-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/sketch-extensions-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "ortto-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/ortto-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "oyster-global-employment-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/oyster-global-employment-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stephanie-bruce": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stephanie-bruce.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "reon-insights-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/reon-insights-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "how-it-works-steps": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/how-it-works-steps.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "rysa-how-it-works": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/rysa-how-it-works.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "hero-beer-drive-cta": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hero-beer-drive-cta.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "WebflowConf2022": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/WebflowConf2022.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "lovro-podobnik": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/lovro-podobnik.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "kickbase-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/kickbase-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "holocene-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/holocene-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "ten-x-designers-testimonial": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/ten-x-designers-testimonial.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stats-16": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stats-16.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "kajabi-home-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/kajabi-home-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "in-tandem-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/in-tandem-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "initiate-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/initiate-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "stats-17": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/stats-17.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "fin-ai-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/fin-ai-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "DanielSun": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/DanielSun.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "advantages-x-premium": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/advantages-x-premium.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "kota-home-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/kota-home-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "oyster-homepage-hero": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/oyster-homepage-hero.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "UiFlip": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/UiFlip.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
+    },
+    "portfolio-final-final": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/portfolio-final-final.png",
+      "capturedAt": "2025-12-03T19:05:33.078658Z"
     }
   }
 }

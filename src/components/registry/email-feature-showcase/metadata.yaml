@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: email-feature-showcase
-category: testimonial
+category: feature
 images:
   preview: agent-input/feature-carousel/helo.jpg
 tags:

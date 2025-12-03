@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: comet-feature-showcase
-category: newsletter
+category: feature
 images:
   preview: agent-input/feature-carousel/comet.jpg
 tags:

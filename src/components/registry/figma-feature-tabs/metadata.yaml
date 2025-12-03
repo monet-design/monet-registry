@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: figma-feature-tabs
-category: testimonial
+category: feature
 images:
   preview: agent-input/feature-carousel/automator-for-figma.jpg
 tags:

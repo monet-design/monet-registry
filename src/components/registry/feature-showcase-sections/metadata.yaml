@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: feature-showcase-sections
-category: showcase
+category: feature
 images:
   preview: agent-input/feature-carousel/screen-studio.jpg
 tags:

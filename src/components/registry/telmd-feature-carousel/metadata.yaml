@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: telmd-feature-carousel
-category: header
+category: feature
 images:
   preview: agent-input/feature-carousel/telmd.jpg
 tags:

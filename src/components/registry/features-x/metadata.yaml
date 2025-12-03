@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: features-x
-category: showcase
+category: feature
 images:
   preview: agent-input/beautiful-sections/features-x.png
 tags:

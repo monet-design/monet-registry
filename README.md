@@ -1,51 +1,40 @@
-이 프로젝트는 [`EasyNext`](https://github.com/easynext/easynext)를 사용해 생성된 [Next.js](https://nextjs.org) 프로젝트입니다.
+# Monet.Design
 
-## Getting Started
+![Monet Design](https://www.monet.design/opengraph-image.png)
 
-개발 서버를 실행합니다.<br/>
-환경에 따른 명령어를 사용해주세요.
+[`Monet.Design`](https://www.monet.design/) is an open-source registry of 540+ high-quality React UI components. Search, preview, and install hero sections, pricing tables, testimonials, bios, and more with a single workflow. This README introduces the project, highlights the open-source spirit, and helps you get hands-on quickly.
+
+## Why Monet?
+
+- **Open source first**: Explore, reuse, and contribute freely.
+- **540+ curated components**: 14+ categories covering landing, marketing, and dashboard patterns.
+- **Next.js & TypeScript ready**: Accessible, production-grade patterns built for modern stacks.
+- **Unified flow**: Search → preview → install in one place.
+- **Practical layouts**: Ship polished hero, feature, pricing, and testimonial sections fast.
+
+## What’s in this repo
+
+- A Next.js + Tailwind CSS starter that showcases Monet-inspired sections.
+- Guidance on pairing Monet components with shadcn-ui, Lucide icons, and es-toolkit utilities.
+- Editable examples in `src/app/page.tsx` you can swap or extend.
+
+## Quick start
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-브라우저에서 [http://localhost:3000](http://localhost:3000)을 열어 결과를 확인할 수 있습니다.
+- Open `http://localhost:3000` to view a Monet-styled demo page.
+- Tweak `src/app/page.tsx` to replace hero, pricing, testimonial, or bio sections with your own content.
 
-`app/page.tsx` 파일을 수정하여 페이지를 편집할 수 있습니다. 파일을 수정하면 자동으로 페이지가 업데이트됩니다.
+## How to use it
 
-## 기본 포함 라이브러리
+- Treat the components as a reference for spacing, typography scale, and layout composition.
+- Combine sections (Hero + Feature + Pricing + Testimonial) to build a landing MVP in minutes.
+- Use the patterns to onboard teammates to Tailwind + shadcn conventions quickly.
 
-- [Next.js](https://nextjs.org)
-- [React](https://react.dev)
-- [Tailwind CSS](https://tailwindcss.com)
-- [TypeScript](https://www.typescriptlang.org)
-- [ESLint](https://eslint.org)
-- [Prettier](https://prettier.io)
-- [Shadcn UI](https://ui.shadcn.com)
-- [Lucide Icon](https://lucide.dev)
-- [es-toolkit](https://github.com/toss/es-toolkit)
+## Contributing
 
-## 사용 가능한 명령어
-
-한글버전 사용
-
-```sh
-easynext lang ko
-```
-
-최신버전으로 업데이트
-
-```sh
-npm i -g @easynext/cli@latest
-# or
-yarn add -g @easynext/cli@latest
-# or
-pnpm add -g @easynext/cli@latest
-```
-
+- This is an open-source project—issues, translations, new examples, and layout tweaks are welcome.
+- If you have an idea for a better layout or component fit, open a PR and let’s refine it together.

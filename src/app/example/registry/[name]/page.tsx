@@ -1,29 +1,27 @@
 import fs from "fs";
 import path from "path";
-import { notFound } from "next/navigation";
 import dynamic from "next/dynamic";
 
 interface PageProps {
   params: Promise<{ name: string }>;
 }
 
-export default async function ComponentPage({ params }: PageProps) {
-  const { name: componentName } = await params;
-
+export async function generateStaticParams() {
   const registryDir = path.join(process.cwd(), "src/components/registry");
 
-  // Ensure registry directory exists
   if (!fs.existsSync(registryDir)) {
-    return <div>Registry directory not found: {registryDir}</div>;
+    return [];
   }
 
   const components = fs.readdirSync(registryDir).filter((file) => {
     return fs.statSync(path.join(registryDir, file)).isDirectory();
   });
 
-  if (!components.includes(componentName)) {
-    notFound();
-  }
+  return components.map((name) => ({ name }));
+}
+
+export default async function ComponentPage({ params }: PageProps) {
+  const { name: componentName } = await params;
 
   const Component = dynamic(() =>
     import(`@/components/registry/${componentName}/index`).catch(() => {

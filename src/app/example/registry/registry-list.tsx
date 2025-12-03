@@ -218,10 +218,12 @@ function ComponentCard({
 }) {
   const Component = useMemo(
     () =>
-      dynamic(() =>
-        import(`@/components/registry/${name}/index`).catch(() => {
-          return () => <div>Failed to load component</div>;
-        })
+      dynamic(
+        () =>
+          import(`@/components/registry/${name}/index`).catch(() => {
+            return () => <div>Failed to load component</div>;
+          }),
+        { ssr: false }
       ),
     [name]
   );

@@ -25,8 +25,10 @@ export async function captureComponent(
     // 2. Wait for active tab stabilization (3초 대기)
     await new Promise((resolve) => setTimeout(resolve, CONFIG.ACTIVE_TAB_WAIT));
 
-    // 3. Navigate to component page
-    await page.goto(url, { waitUntil: "networkidle0", timeout: 30000 });
+    try {
+      // 3. Navigate to component page
+      await page.goto(url, { waitUntil: "networkidle0", timeout: 10000 });
+    } catch {}
 
     // // 4. Trigger viewport animations with scroll and mouse movement
     // await page.evaluate(() => {

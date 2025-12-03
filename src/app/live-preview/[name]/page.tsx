@@ -32,7 +32,6 @@ export default async function ComponentPage({ params }: PageProps) {
   return (
     <>
       <style>{`
-        header, footer { display: none !important; }
         #app-root { min-height: 0 !important; display: block !important; }
       `}</style>
       <div className="min-h-screen flex items-center justify-center bg-white">

@@ -21,6 +21,7 @@ interface CliOptions {
   all: boolean;
   concurrency: number;
   component?: string;
+  components: string[]; // 여러 컴포넌트 지정
 }
 
 function parseArgs(): CliOptions {
@@ -28,6 +29,7 @@ function parseArgs(): CliOptions {
   const options: CliOptions = {
     all: false,
     concurrency: CONFIG.TAB_COUNT,
+    components: [],
   };
 
   for (const arg of args) {
@@ -40,6 +42,9 @@ function parseArgs(): CliOptions {
       }
     } else if (arg.startsWith('--component=')) {
       options.component = arg.split('=')[1];
+    } else if (!arg.startsWith('--')) {
+      // 플래그가 아닌 인자는 컴포넌트 ID로 취급
+      options.components.push(arg);
     }
   }
 
@@ -105,19 +110,41 @@ async function main(): Promise<void> {
   if (options.component) {
     console.log(`Target: ${options.component}`);
   }
+  if (options.components.length > 0) {
+    console.log(`Targets: ${options.components.join(', ')}`);
+  }
   console.log('='.repeat(50));
 
   // 1. Load component IDs
+  const allComponentIds = loadComponentIds();
   let componentIds: string[];
-  if (options.component) {
+
+  if (options.components.length > 0) {
+    // 여러 컴포넌트가 지정된 경우, registry에 존재하는 것만 필터링
+    componentIds = options.components.filter((id) => allComponentIds.includes(id));
+    const notFound = options.components.filter((id) => !allComponentIds.includes(id));
+    if (notFound.length > 0) {
+      console.log(`Warning: Components not found in registry: ${notFound.join(', ')}`);
+    }
+  } else if (options.component) {
     componentIds = [options.component];
   } else {
-    componentIds = loadComponentIds();
+    componentIds = allComponentIds;
   }
-  console.log(`Found ${componentIds.length} components in registry`);
+  console.log(`Found ${componentIds.length} components to process`);
 
   // 2. Load state
-  const state = options.all ? { completed: {} } : loadState();
+  // 특정 컴포넌트가 지정된 경우 (components 또는 component), 해당 컴포넌트는 state에서 제외하여 강제 재캡처
+  let state = loadState();
+  if (options.all) {
+    state = { completed: {} };
+  } else if (options.components.length > 0 || options.component) {
+    // 지정된 컴포넌트들을 state에서 제거하여 재캡처 대상으로 만듦
+    const targetsToRecapture = options.components.length > 0 ? options.components : [options.component!];
+    for (const id of targetsToRecapture) {
+      delete state.completed[id];
+    }
+  }
   console.log(`Already captured: ${Object.keys(state.completed).length} components`);
 
   // 3. Filter uncaptured components

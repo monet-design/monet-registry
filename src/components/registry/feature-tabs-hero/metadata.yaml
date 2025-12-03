@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: feature-tabs-hero
-category: how-it-works
+category: hero
 images:
   preview: agent-input/feature-carousel/straple.jpg
 tags:

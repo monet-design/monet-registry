@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: landingfolio-hero-20
-category: biography
+category: hero
 images:
   preview: agent-input/landingfolio-hero/hero-20.jpg
 tags:

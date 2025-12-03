@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: lance-hero
-category: testimonial
+category: hero
 images:
   preview: agent-input/lead-capture-hero/lance.jpg
 tags:

@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: texts-testimonial-tweets
-category: pricing
+category: testimonial
 images:
   preview: agent-input/testimonial-tweets/texts.jpg
 tags:

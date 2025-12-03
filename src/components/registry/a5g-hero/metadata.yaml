@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: a5g-hero
-category: how-it-works
+category: hero
 images:
   preview: agent-input/dribble-hero/a5g.png
 tags:

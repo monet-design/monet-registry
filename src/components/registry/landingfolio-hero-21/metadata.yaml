@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: landingfolio-hero-21
-category: pricing
+category: hero
 images:
   preview: agent-input/landingfolio-hero/hero-21.jpg
 tags:

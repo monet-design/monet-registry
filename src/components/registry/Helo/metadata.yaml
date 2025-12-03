@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: helo-testimonial-tweets
-category: pricing
+category: testimonial
 images:
   preview: agent-input/testimonial-tweets/helo.jpg
 tags:

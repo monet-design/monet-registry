@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: landingfolio-hero-2
-category: stats
+category: hero
 images:
   preview: agent-input/landingfolio-hero/hero-2.jpg
 tags:

@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: landingfolio-hero-9
-category: cta
+category: hero
 images:
   preview: agent-input/landingfolio-hero/hero-9.jpg
 tags:

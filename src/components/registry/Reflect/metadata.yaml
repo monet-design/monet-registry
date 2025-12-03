@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: reflect-testimonial-tweets
-category: pricing
+category: testimonial
 images:
   preview: agent-input/testimonial-tweets/reflect.jpg
 tags:

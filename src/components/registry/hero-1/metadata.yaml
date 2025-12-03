@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: landingfolio-hero-1
-category: testimonial
+category: hero
 images:
   preview: agent-input/landingfolio-hero/hero-1.jpg
 tags:

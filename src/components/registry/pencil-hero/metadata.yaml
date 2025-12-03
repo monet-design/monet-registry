@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: pencil-hero
-category: cta
+category: hero
 images:
   preview: agent-input/lead-capture-hero/pencil.jpg
 tags:

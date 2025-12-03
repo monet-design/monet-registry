@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: dreamflux-ai-hero
-category: testimonial
+category: hero
 images:
   preview: agent-input/dribble-hero/dreamflux-ai.png
 tags:

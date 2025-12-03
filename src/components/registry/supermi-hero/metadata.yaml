@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: supermi-hero
-category: testimonial
+category: hero
 images:
   preview: agent-input/dribble-hero/supermi.png
 tags:

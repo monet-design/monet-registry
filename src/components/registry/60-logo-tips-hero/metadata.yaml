@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: 60-logo-tips-hero
-category: how-it-works
+category: hero
 images:
   preview: agent-input/beautiful-sections/60-logo-tips-hero.png
 tags:

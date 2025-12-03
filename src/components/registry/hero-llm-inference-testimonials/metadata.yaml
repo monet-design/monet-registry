@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: hero-llm-inference-testimonials
-category: hero
+category: testimonial
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/modal-lm-page-section-hero.jpg

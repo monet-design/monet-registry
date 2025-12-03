@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Dancing+Script:wght@400;500&display=swap');
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-dancing {
+  font-family: 'Dancing Script', cursive;
+}

@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: pricing-opl-big6
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-big6.png
+
+freeformKeywords:
+  - pricing
+  - plans
+  - subscription
+  - pricing table
+  - SaaS
+  - business
+  - monthly
+  - tier
+  - features
+  - Polish
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:12:58Z"
+status: stable

@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: pricing-opl-big-25
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-big-25.png
+
+freeformKeywords:
+  - pricing
+  - pricing table
+  - pricing card
+  - subscription
+  - free plan
+  - pro plan
+  - mint
+  - turquoise
+  - ribbon
+  - diagonal banner
+  - rounded card
+  - call to action
+  - SaaS pricing
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:00:32Z"
+status: stable

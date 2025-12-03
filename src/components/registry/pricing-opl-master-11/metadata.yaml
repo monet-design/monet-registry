@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-11
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-master-11.png
+
+freeformKeywords:
+  - pricing
+  - pricing table
+  - pricing cards
+  - free plan
+  - subscription
+  - simple pricing
+  - two tier
+  - feedback app
+  - SaaS pricing
+  - monthly pricing
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:14:41Z"
+status: stable

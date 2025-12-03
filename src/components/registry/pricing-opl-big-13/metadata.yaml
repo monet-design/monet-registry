@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: pricing-opl-big-13
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-big-13.png
+
+freeformKeywords:
+  - pricing
+  - plans
+  - freelancer
+  - agency
+  - subscription
+  - monthly
+  - saas
+  - two columns
+  - buttons
+  - features list
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T18:53:03Z"
+status: stable

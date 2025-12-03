@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: pricing-opl-big-5
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-big-5.png
+
+freeformKeywords:
+  - pricing
+  - packages
+  - retainer
+  - team
+  - startup
+  - product
+  - design
+  - workshop
+  - quarterly
+  - get in touch
+  - cards
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T18:59:56Z"
+status: stable

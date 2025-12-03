@@ -1,0 +1,23 @@
+schemaVersion: "2.0"
+name: pricing-opl-big-28
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-big-28.png
+
+freeformKeywords:
+  - pricing
+  - subscription
+  - free plan
+  - minimal
+  - clean
+  - two column
+  - comparison
+  - license
+  - SaaS
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:00:27Z"
+status: stable

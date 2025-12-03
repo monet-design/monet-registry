@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: pricing-opl-arrow
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-arrow.png
+
+freeformKeywords:
+  - pricing
+  - price
+  - plans
+  - subscription
+  - arrow
+  - dark
+  - pro
+  - basic
+  - discount
+  - tier
+  - saas
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T18:53:29Z"
+status: stable

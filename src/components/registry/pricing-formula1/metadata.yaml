@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: pricing-formula1
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/Formula1.png
+
+freeformKeywords:
+  - pricing
+  - subscription
+  - F1
+  - formula1
+  - sports
+  - streaming
+  - tv
+  - plans
+  - annual
+  - monthly
+  - toggle
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T18:52:52Z"
+status: stable

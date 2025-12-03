@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-14
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-14.png
+
+freeformKeywords:
+  - pricing
+  - plans
+  - subscription
+  - elementor
+  - plugin
+  - cloud
+  - hosting
+  - discount
+  - offer
+  - saas
+  - software
+  - website builder
+  - pro
+  - agency
+  - expert
+  - advanced
+  - essential
+  - money back guarantee
+  - ssl
+  - payment
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:15:54Z"
+status: stable

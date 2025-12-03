@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: pricing-opl-big-18
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-big-18.png
+
+freeformKeywords:
+  - pricing
+  - payroll
+  - HR
+  - human resources
+  - management
+  - toggle
+  - monthly
+  - yearly
+  - subscription
+  - SaaS
+  - employee
+  - features
+  - comparison
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T18:59:05Z"
+status: stable

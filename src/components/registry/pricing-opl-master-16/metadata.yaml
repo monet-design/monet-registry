@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-16
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-master-16.png
+
+freeformKeywords:
+  - pricing
+  - fonts
+  - subscription
+  - one-time
+  - card
+  - minimal
+  - warm
+  - beige
+  - serif
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-12-03T19:16:31Z"
+status: stable

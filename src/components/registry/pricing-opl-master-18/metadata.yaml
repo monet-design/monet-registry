@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-18
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-master-18.png
+
+freeformKeywords:
+  - pricing
+  - subscription
+  - plans
+  - dark theme
+  - fluid
+  - gradient cards
+  - glass effect
+  - monthly plans
+  - services
+  - cta
+  - referral
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:17:44Z"
+status: stable

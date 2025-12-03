@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: pricing-fonerescue
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/fonerescue-big.png
+
+freeformKeywords:
+  - pricing
+  - price list
+  - repair costs
+  - phone repair
+  - service pricing
+  - cost table
+  - repair service
+  - mobile repair
+  - iPhone repair
+  - pricing table
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T18:53:05Z"
+status: stable

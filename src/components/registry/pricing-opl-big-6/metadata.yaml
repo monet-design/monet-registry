@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: pricing-opl-big-6
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-big-6.png
+
+freeformKeywords:
+  - pricing
+  - yellow
+  - vibrant
+  - simple
+  - license
+  - purchase
+  - three columns
+  - membership
+  - club
+  - one-time payment
+  - VAT
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:04:15Z"
+status: stable

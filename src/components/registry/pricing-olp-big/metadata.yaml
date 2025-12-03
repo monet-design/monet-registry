@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: pricing-olp-big
+category: pricing
+
+images:
+  preview: agent-input/pricing/olp-big.png
+
+freeformKeywords:
+  - pricing
+  - table
+  - comparison
+  - packages
+  - checkmark
+  - features list
+  - three tier
+  - startup
+  - saas
+  - orange accent
+  - teal
+  - plans
+  - web design services
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T18:54:57Z"
+status: stable

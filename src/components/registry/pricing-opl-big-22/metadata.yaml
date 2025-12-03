@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: pricing-opl-big-22
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-big-22.png
+
+freeformKeywords:
+  - pricing
+  - plans
+  - tiers
+  - mail archive
+  - german
+  - gradient background
+  - cards
+  - bronze
+  - silver
+  - gold
+  - platinum
+  - subscription
+  - monthly
+  - enterprise
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T18:59:05Z"
+status: stable

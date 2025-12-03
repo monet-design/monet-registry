@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: pricing-opl-big-7
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-big-7.png
+
+freeformKeywords:
+  - pricing
+  - plans
+  - subscription
+  - free
+  - monthly
+  - yearly
+  - emoji
+  - cards
+  - pricing table
+  - pricing cards
+  - SaaS
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:05:01Z"
+status: stable

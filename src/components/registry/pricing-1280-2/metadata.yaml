@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: pricing-1280-2
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/1280-2.png
+
+freeformKeywords:
+  - pricing
+  - plans
+  - subscription
+  - mobile
+  - development
+  - packages
+  - tiers
+  - dark cards
+  - toggle
+  - features list
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T18:54:40Z"
+status: stable

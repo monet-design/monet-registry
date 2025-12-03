@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: pricing-opl-big49
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-big49.png
+
+freeformKeywords:
+  - pricing
+  - plans
+  - network
+  - space
+  - dark theme
+  - teal
+  - subscription
+  - enterprise
+  - constellation
+  - universe
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:13:00Z"
+status: stable

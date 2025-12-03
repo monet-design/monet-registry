@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: pricing-opl-big-19
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-big-19.png
+
+freeformKeywords:
+  - pricing
+  - plans
+  - subscription
+  - simple
+  - moderate
+  - complex
+  - pricing cards
+  - CTA
+  - get started
+  - project pricing
+  - tiers
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T18:59:54Z"
+status: stable

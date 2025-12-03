@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: pricing-opl-big14
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-big14.png
+
+freeformKeywords:
+  - pricing
+  - plans
+  - saas
+  - startup
+  - agency
+  - enterprise
+  - coral
+  - three tier
+  - subscription
+  - simple pricing
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:04:33Z"
+status: stable

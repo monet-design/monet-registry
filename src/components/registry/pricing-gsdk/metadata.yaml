@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: pricing-gsdk
+category: pricing
+
+images:
+  preview: agent-input/pricing/GSDK.png
+
+freeformKeywords:
+  - pricing
+  - plans
+  - comparison
+  - two columns
+  - buy now
+  - orange
+  - light theme
+  - payment methods
+  - coders
+  - developers
+  - front-end
+  - packages
+  - sass
+  - components
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T18:53:24Z"
+status: stable

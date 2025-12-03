@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: pricing-taco-web
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/TACO-Web-UX-Design-Wir-erschaffen-um-zu-beeindrucken.png
+
+freeformKeywords:
+  - pricing
+  - price table
+  - services
+  - web design
+  - agency
+  - quote
+  - teal
+  - turquoise
+  - german
+  - dienstleistungen
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T18:53:05Z"
+status: stable

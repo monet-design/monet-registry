@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: pricing-opl-big26
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-big26.png
+
+freeformKeywords:
+  - pricing
+  - services
+  - coaching
+  - list
+  - numbered
+  - cream
+  - beige
+  - warm
+  - gold
+  - dutch
+  - therapy
+  - counseling
+  - offer
+  - aanbod
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:12:53Z"
+status: stable

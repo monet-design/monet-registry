@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: nvgt-logo-grid
 category: logo-cloud
-
 images:
   preview: /registry/nvgt-logo-grid/preview.png
-
 freeformKeywords:
   - logo cloud
   - logo grid
@@ -18,9 +16,7 @@ freeformKeywords:
   - industry leaders
   - image tiles
   - cards
-
 fontFamily:
   - Inter
-
-createdAt: "2025-12-02"
+createdAt: "2025-12-02T00:00:00Z"
 status: stable

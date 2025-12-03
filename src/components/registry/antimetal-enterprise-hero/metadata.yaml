@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: antimetal-enterprise-hero
 category: hero
-
 images:
   preview: agent-input/unsection-hero/antimetal-enterprise-page-section-hero.jpg
-
 freeformKeywords:
   - hero
   - enterprise
@@ -20,9 +18,7 @@ freeformKeywords:
   - AWS
   - cost savings
   - dot pattern
-
 fontFamily:
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

@@ -1,10 +1,9 @@
 schemaVersion: "2.0"
 name: oyster-homepage-hero
 category: hero
-
 images:
-  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/oyster-homepage-hero-section.jpg
-
+  preview: >-
+    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/oyster-homepage-hero-section.jpg
 freeformKeywords:
   - hero
   - global employment
@@ -15,9 +14,7 @@ freeformKeywords:
   - employee cards
   - SaaS
   - hiring platform
-
 fontFamily:
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

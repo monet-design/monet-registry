@@ -1,10 +1,9 @@
 schemaVersion: "2.0"
 name: hello-network-hero
 category: hero
-
 images:
-  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/hello-network-section-home-page.jpg
-
+  preview: >-
+    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/hello-network-section-home-page.jpg
 freeformKeywords:
   - hero
   - fintech
@@ -18,9 +17,7 @@ freeformKeywords:
   - french
   - saas
   - landing
-
 fontFamily:
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

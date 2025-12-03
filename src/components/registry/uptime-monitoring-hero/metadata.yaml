@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: uptime-monitoring-hero
 category: hero
-
 images:
   preview: agent-input/unsection-hero/better-stack-uptime-page-section-hero.jpg
-
 freeformKeywords:
   - hero
   - uptime
@@ -19,9 +17,7 @@ freeformKeywords:
   - better stack
   - logo cloud
   - social proof
-
 fontFamily:
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

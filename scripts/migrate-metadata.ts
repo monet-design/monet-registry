@@ -22,6 +22,7 @@ const categoryPriority: Array<[string, string[]]> = [
   ["team", ["team", "team members", "our team", "staff"]],
   ["logo-cloud", ["logo cloud", "logos", "clients", "partners", "trusted by"]],
   ["newsletter", ["newsletter", "subscribe", "email subscribe"]],
+  ["waitlist", ["waitlist", "join waitlist", "early access", "coming soon"]],
   ["header", ["header", "navigation", "navbar", "nav"]],
   ["footer", ["footer", "site footer"]],
   ["gallery", ["gallery", "image gallery", "photo gallery"]],
@@ -252,8 +253,8 @@ function migrateMetadata(legacy: LegacyMetadata): object {
     metadata.fontFamily = legacy.fontFamily;
   }
 
-  // 생성일 추가
-  metadata.createdAt = new Date().toISOString().split("T")[0];
+  // 생성일 추가 (ISO 8601 UTC 형식, 밀리초 제외)
+  metadata.createdAt = new Date().toISOString().replace(/\.\d{3}Z$/, "Z");
   metadata.status = "stable";
 
   return metadata;

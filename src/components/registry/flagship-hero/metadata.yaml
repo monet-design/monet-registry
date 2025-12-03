@@ -1,10 +1,9 @@
 schemaVersion: "2.0"
 name: flagship-hero
 category: hero
-
 images:
-  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/flaghsip-home-page-section-hero.jpg
-
+  preview: >-
+    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/flaghsip-home-page-section-hero.jpg
 freeformKeywords:
   - retail
   - store
@@ -19,9 +18,7 @@ freeformKeywords:
   - cream background
   - purple accent
   - serif headline
-
 fontFamily:
   - Instrument Serif
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

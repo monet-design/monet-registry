@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: kajabi-home-hero
 category: hero
-
 images:
   preview: agent-input/unsection-hero/kajabi-home-page-section-hero.jpg
-
 freeformKeywords:
   - hero
   - landing
@@ -18,9 +16,7 @@ freeformKeywords:
   - blue accent
   - clean
   - modern
-
 fontFamily:
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

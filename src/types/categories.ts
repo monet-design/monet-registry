@@ -22,6 +22,7 @@ export const ComponentCategory = [
   "team",
   "logo-cloud",
   "newsletter",
+  "waitlist",
   "other",
 ] as const;
 

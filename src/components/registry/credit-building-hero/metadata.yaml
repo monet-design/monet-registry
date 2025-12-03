@@ -1,10 +1,9 @@
 schemaVersion: "2.0"
 name: credit-building-hero
 category: hero
-
 images:
-  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/current-spend-page-section-hero.jpg
-
+  preview: >-
+    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/current-spend-page-section-hero.jpg
 freeformKeywords:
   - credit
   - banking
@@ -14,10 +13,8 @@ freeformKeywords:
   - credit building
   - financial services
   - card
-
 fontFamily:
   - Instrument Serif
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

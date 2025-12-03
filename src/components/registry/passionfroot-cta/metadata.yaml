@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: passionfroot-cta
 category: cta
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-cta/passionfruit.png
-
 freeformKeywords:
   - cta
   - call to action
@@ -16,9 +14,7 @@ freeformKeywords:
   - conversion
   - get access
   - book a call
-
 fontFamily:
   - Inter
-
-createdAt: "2025-12-01"
+createdAt: "2025-12-01T00:00:00Z"
 status: stable

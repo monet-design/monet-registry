@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: rivian-r2-hero
 category: hero
-
 images:
   preview: agent-input/unsection-hero/rivian-r2-page-section-hero.jpg
-
 freeformKeywords:
   - hero
   - automotive
@@ -20,9 +18,7 @@ freeformKeywords:
   - reservation
   - luxury
   - coming soon
-
 fontFamily:
   - Inter
-
-createdAt: "2025-12-01"
+createdAt: "2025-12-01T00:00:00Z"
 status: stable

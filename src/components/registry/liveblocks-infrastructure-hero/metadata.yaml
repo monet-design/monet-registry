@@ -1,10 +1,9 @@
 schemaVersion: "2.0"
 name: liveblocks-infrastructure-hero
 category: hero
-
 images:
-  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/liveblocks-infrastructure-page-section-hero.jpg
-
+  preview: >-
+    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/liveblocks-infrastructure-page-section-hero.jpg
 freeformKeywords:
   - hero
   - infrastructure
@@ -17,9 +16,7 @@ freeformKeywords:
   - websocket
   - scaling
   - liveblocks
-
 fontFamily:
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

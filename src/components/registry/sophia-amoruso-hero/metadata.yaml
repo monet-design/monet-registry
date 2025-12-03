@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: sophia-amoruso-hero
 category: hero
-
 images:
   preview: agent-input/unsection-hero/sophia-amoruso-home-page-section-hero.jpg
-
 freeformKeywords:
   - hero
   - personal brand
@@ -21,10 +19,8 @@ freeformKeywords:
   - elegant
   - fashion
   - entrepreneur
-
 fontFamily:
   - Instrument Serif
   - Inter
-
-createdAt: "2025-12-01"
+createdAt: "2025-12-01T00:00:00Z"
 status: stable

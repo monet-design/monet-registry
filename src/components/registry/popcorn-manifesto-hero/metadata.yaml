@@ -1,10 +1,9 @@
 schemaVersion: "2.0"
 name: popcorn-manifesto-hero
 category: hero
-
 images:
-  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/popcorn-manifesto-page-section-hero.jpg
-
+  preview: >-
+    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/popcorn-manifesto-page-section-hero.jpg
 freeformKeywords:
   - hero
   - telecom
@@ -16,9 +15,7 @@ freeformKeywords:
   - serif
   - elegant
   - minimal
-
 fontFamily:
   - Inter
-
-createdAt: "2025-12-01"
+createdAt: "2025-12-01T00:00:00Z"
 status: stable

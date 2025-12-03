@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: clarisights-marketing-hero
 category: hero
-
 images:
   preview: agent-input/unsection-hero/clarisights-home-page-section-hero.jpg
-
 freeformKeywords:
   - hero
   - marketing
@@ -16,10 +14,8 @@ freeformKeywords:
   - logo cloud
   - enterprise
   - B2B
-
 fontFamily:
   - Instrument Serif
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

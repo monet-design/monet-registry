@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: harvey-ai-logo-cloud
 category: logo-cloud
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/logo-cloud/harvey-ai.png
-
 freeformKeywords:
   - logo cloud
   - social proof
@@ -15,9 +13,7 @@ freeformKeywords:
   - enterprise
   - legal tech
   - industry leaders
-
 fontFamily:
   - Instrument Serif
-
-createdAt: "2025-12-02"
+createdAt: "2025-12-02T00:00:00Z"
 status: stable

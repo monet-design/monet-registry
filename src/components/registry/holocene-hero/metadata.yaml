@@ -1,10 +1,9 @@
 schemaVersion: "2.0"
 name: holocene-hero
 category: hero
-
 images:
-  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/holocene-hero-section-design.webp
-
+  preview: >-
+    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/holocene-hero-section-design.webp
 freeformKeywords:
   - hero
   - supply chain
@@ -17,9 +16,7 @@ freeformKeywords:
   - procurement
   - analytics
   - B2B
-
 fontFamily:
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

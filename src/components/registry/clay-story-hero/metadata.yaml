@@ -1,10 +1,9 @@
 schemaVersion: "2.0"
 name: clay-story-hero
 category: hero
-
 images:
-  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/clay-stories-page-section-hero.jpg
-
+  preview: >-
+    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/clay-stories-page-section-hero.jpg
 freeformKeywords:
   - hero
   - story
@@ -20,9 +19,7 @@ freeformKeywords:
   - serif
   - italic
   - clay
-
 fontFamily:
   - Playfair Display
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: solution-section-header
 category: header
-
 images:
   preview: agent-input/unsection-hero/antimetal-home-page-section-solution-header.jpg
-
 freeformKeywords:
   - solution
   - section
@@ -20,9 +18,7 @@ freeformKeywords:
   - announcement
   - hero
   - landing
-
 fontFamily:
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

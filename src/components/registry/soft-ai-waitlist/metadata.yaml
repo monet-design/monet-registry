@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: soft-ai-waitlist
 category: waitlist
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/dribble-waitlist/soft-ui.png
-
 freeformKeywords:
   - waitlist
   - ai
@@ -14,9 +12,7 @@ freeformKeywords:
   - desert
   - community
   - email signup
-
 fontFamily:
   - Inter
-
-createdAt: "2025-12-02"
+createdAt: "2025-12-02T00:00:00Z"
 status: stable

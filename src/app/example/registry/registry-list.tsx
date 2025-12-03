@@ -30,10 +30,10 @@ export function RegistryList({
   const filteredAndSortedComponents = useMemo(() => {
     let filtered = components;
 
-    // Filter by date
+    // Filter by date (compare date part only)
     if (selectedDate !== "all") {
       filtered = components.filter(
-        (c) => c.metadata.createdAt === selectedDate
+        (c) => c.metadata.createdAt?.startsWith(selectedDate)
       );
     }
 
@@ -235,7 +235,7 @@ function ComponentCard({
           <h2 className="text-xl font-semibold">{name}</h2>
           {metadata.createdAt && (
             <span className="px-2 py-0.5 text-xs bg-gray-100 text-gray-600 rounded">
-              {metadata.createdAt}
+              {metadata.createdAt.split("T")[0]}
             </span>
           )}
           {metadata.category && (

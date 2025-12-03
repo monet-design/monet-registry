@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: iconos-waitlist
 category: waitlist
-
 images:
   preview: agent-input/dribble-waitlist/iconos.png
-
 freeformKeywords:
   - waitlist
   - email signup
@@ -16,9 +14,7 @@ freeformKeywords:
   - icon pack
   - join waitlist
   - coming soon
-
 fontFamily:
   - Inter
-
-createdAt: "2025-12-02"
+createdAt: "2025-12-02T00:00:00Z"
 status: stable

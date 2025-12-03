@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: fin-ai-hero
 category: hero
-
 images:
   preview: agent-input/unsection-hero/fin-ai-home-page-hero-design.jpg
-
 freeformKeywords:
   - hero
   - AI
@@ -18,10 +16,8 @@ freeformKeywords:
   - fintech
   - agent
   - chatbot
-
 fontFamily:
   - Instrument Serif
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

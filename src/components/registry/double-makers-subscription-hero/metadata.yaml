@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: double-makers-subscription-hero
 category: hero
-
 images:
   preview: agent-input/unsection-hero/double-makers-subscription-page-section-hero.jpg
-
 freeformKeywords:
   - hero
   - subscription
@@ -17,10 +15,8 @@ freeformKeywords:
   - design partner
   - brand
   - gradient background
-
 fontFamily:
   - Instrument Serif
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

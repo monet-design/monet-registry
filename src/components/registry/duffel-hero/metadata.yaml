@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: duffel-hero
 category: hero
-
 images:
   preview: /registry/duffel-hero/preview.jpg
-
 freeformKeywords:
   - hero
   - travel
@@ -25,10 +23,8 @@ freeformKeywords:
   - code editor
   - flight search
   - hotel booking
-
 fontFamily:
   - Inter
   - Instrument Serif
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

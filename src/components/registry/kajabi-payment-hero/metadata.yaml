@@ -1,10 +1,9 @@
 schemaVersion: "2.0"
 name: kajabi-payment-hero
 category: hero
-
 images:
-  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/kajabi-payment-page-section-hero.jpg
-
+  preview: >-
+    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/kajabi-payment-page-section-hero.jpg
 freeformKeywords:
   - payment
   - hero
@@ -16,10 +15,8 @@ freeformKeywords:
   - data analytics
   - SaaS
   - kajabi
-
 fontFamily:
   - Inter
   - Instrument Serif
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

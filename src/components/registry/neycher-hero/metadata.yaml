@@ -1,10 +1,9 @@
 schemaVersion: "2.0"
 name: neycher-hero
 category: hero
-
 images:
-  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/neycher-home-page-section-hero.jpg
-
+  preview: >-
+    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/neycher-home-page-section-hero.jpg
 freeformKeywords:
   - hero
   - split layout
@@ -17,9 +16,7 @@ freeformKeywords:
   - serif
   - medical
   - beauty
-
 fontFamily:
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

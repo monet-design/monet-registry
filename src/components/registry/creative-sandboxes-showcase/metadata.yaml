@@ -1,10 +1,9 @@
 schemaVersion: "2.0"
 name: creative-sandboxes-showcase
 category: showcase
-
 images:
-  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/codesandbox-sandboxes-page-section-discover-creative-sandboxes.jpg
-
+  preview: >-
+    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/codesandbox-sandboxes-page-section-discover-creative-sandboxes.jpg
 freeformKeywords:
   - sandbox
   - creative
@@ -19,9 +18,7 @@ freeformKeywords:
   - showcase
   - gallery
   - dark theme
-
 fontFamily:
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

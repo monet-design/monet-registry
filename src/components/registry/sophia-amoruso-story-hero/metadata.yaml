@@ -1,10 +1,9 @@
 schemaVersion: "2.0"
 name: sophia-amoruso-story-hero
 category: hero
-
 images:
-  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/sophia-amoruso-my-story-page-section-hero.jpg
-
+  preview: >-
+    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/sophia-amoruso-my-story-page-section-hero.jpg
 freeformKeywords:
   - hero
   - about
@@ -17,9 +16,7 @@ freeformKeywords:
   - testimonial
   - my story
   - about me
-
 fontFamily:
   - Inter
-
-createdAt: "2025-12-01"
+createdAt: "2025-12-01T00:00:00Z"
 status: stable

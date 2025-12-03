@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: sketch-color-variables-hero
 category: hero
-
 images:
   preview: agent-input/unsection-hero/sketch-color-variables-page-section-hero.jpg
-
 freeformKeywords:
   - sketch
   - color
@@ -18,10 +16,8 @@ freeformKeywords:
   - product
   - hero
   - landing
-
 fontFamily:
   - Inter
   - Caveat
-
-createdAt: "2025-12-01"
+createdAt: "2025-12-01T00:00:00Z"
 status: stable

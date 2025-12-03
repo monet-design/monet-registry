@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: canopy-lending-hero
 category: hero
-
 images:
   preview: agent-input/unsection-hero/canopy-home-page-section-hero.jpg
-
 freeformKeywords:
   - hero
   - landing page
@@ -26,9 +24,7 @@ freeformKeywords:
   - clean design
   - minimal
   - professional
-
 fontFamily:
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

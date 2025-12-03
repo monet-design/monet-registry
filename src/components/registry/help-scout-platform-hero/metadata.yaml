@@ -1,10 +1,9 @@
 schemaVersion: "2.0"
 name: help-scout-platform-hero
 category: hero
-
 images:
-  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/help-scout-platform-page-section-hero.jpg
-
+  preview: >-
+    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/help-scout-platform-page-section-hero.jpg
 freeformKeywords:
   - hero
   - help scout
@@ -21,9 +20,7 @@ freeformKeywords:
   - chat
   - email
   - support platform
-
 fontFamily:
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

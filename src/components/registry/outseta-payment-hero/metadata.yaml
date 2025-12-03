@@ -1,10 +1,9 @@
 schemaVersion: "2.0"
 name: outseta-payment-hero
 category: hero
-
 images:
-  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/outseta-payment-page-section-hero.jpg
-
+  preview: >-
+    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/outseta-payment-page-section-hero.jpg
 freeformKeywords:
   - hero
   - payment
@@ -16,9 +15,7 @@ freeformKeywords:
   - gradient blob
   - centered
   - minimal
-
 fontFamily:
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

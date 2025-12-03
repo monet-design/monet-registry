@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: fin-ai-enterprise-hero
 category: hero
-
 images:
   preview: agent-input/unsection-hero/fin-ai-enterprise-hero-design.jpg
-
 freeformKeywords:
   - hero
   - enterprise
@@ -18,9 +16,7 @@ freeformKeywords:
   - tech logos
   - customer service
   - business
-
 fontFamily:
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

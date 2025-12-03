@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: reon-hero
 category: hero
-
 images:
   preview: agent-input/unsection-hero/reon-home-page-section-hero.jpg
-
 freeformKeywords:
   - hero
   - technology consultancy
@@ -19,10 +17,8 @@ freeformKeywords:
   - corporate
   - enterprise
   - warm tones
-
 fontFamily:
   - Instrument Serif
   - Inter
-
-createdAt: "2025-12-01"
+createdAt: "2025-12-01T00:00:00Z"
 status: stable

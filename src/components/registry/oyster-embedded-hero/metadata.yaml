@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: oyster-embedded-hero
 category: hero
-
 images:
   preview: agent-input/unsection-hero/oyster-embedded-page-section-hero.jpg
-
 freeformKeywords:
   - hero
   - landing
@@ -18,10 +16,8 @@ freeformKeywords:
   - white background
   - arrow decoration
   - cta button
-
 fontFamily:
   - Instrument Serif
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

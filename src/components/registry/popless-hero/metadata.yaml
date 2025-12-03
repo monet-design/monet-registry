@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: popless-hero
 category: hero
-
 images:
   preview: agent-input/unsection-hero/popless-home-page-section-hero.jpg
-
 freeformKeywords:
   - hero
   - tutoring
@@ -19,9 +17,7 @@ freeformKeywords:
   - minimal
   - SaaS
   - marketplace
-
 fontFamily:
   - Inter
-
-createdAt: "2025-12-01"
+createdAt: "2025-12-01T00:00:00Z"
 status: stable

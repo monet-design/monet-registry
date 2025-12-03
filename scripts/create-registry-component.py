@@ -21,7 +21,7 @@ import argparse
 import sys
 import re
 from pathlib import Path
-from datetime import date
+from datetime import datetime, timezone
 
 
 def kebab_to_pascal(kebab_string: str) -> str:
@@ -73,7 +73,7 @@ VALID_CATEGORIES = [
     "hero", "stats", "testimonial", "feature", "pricing", "cta",
     "contact", "faq", "how-it-works", "biography", "before-after",
     "showcase", "header", "footer", "gallery", "team", "logo-cloud",
-    "newsletter", "other"
+    "newsletter", "waitlist", "other"
 ]
 
 
@@ -88,7 +88,7 @@ def generate_metadata_yaml(
     # font_family를 YAML 배열 문자열로 변환
     fonts_lines = "\n".join(f"  - {f}" for f in font_family)
 
-    today = date.today().isoformat()
+    now_utc = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
     return f'''schemaVersion: "2.0"
 name: {name}
@@ -103,7 +103,7 @@ freeformKeywords:
 fontFamily:
 {fonts_lines}
 
-createdAt: "{today}"
+createdAt: "{now_utc}"
 status: stable
 '''
 

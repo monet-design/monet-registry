@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: gaelle-perrin-hero
 category: hero
-
 images:
   preview: agent-input/unsection-hero/gaelle-perrin-home-page-section-hero.jpg
-
 freeformKeywords:
   - hero
   - landing page
@@ -20,10 +18,8 @@ freeformKeywords:
   - lifestyle
   - art de vivre
   - communication agency
-
 fontFamily:
   - Instrument Serif
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

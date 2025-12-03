@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: jimo-hero
 category: hero
-
 images:
   preview: agent-input/unsection-hero/jimo-home-page-hero-section.webp
-
 freeformKeywords:
   - hero
   - onboarding
@@ -18,9 +16,7 @@ freeformKeywords:
   - feature showcase
   - conversion
   - retention
-
 fontFamily:
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

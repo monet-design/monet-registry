@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: attio-crm-hero
 category: hero
-
 images:
   preview: agent-input/unsection-hero/attio-home-page-hero-section.jpg
-
 freeformKeywords:
   - hero
   - CRM
@@ -21,10 +19,8 @@ freeformKeywords:
   - logo cloud
   - app screenshot
   - customer relationship
-
 fontFamily:
   - Instrument Serif
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

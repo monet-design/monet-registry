@@ -1,10 +1,9 @@
 schemaVersion: "2.0"
 name: lowes-innovation-hero
 category: hero
-
 images:
-  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/lowe-s-innovation-labs-home-page-section-hero.jpg
-
+  preview: >-
+    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/lowe-s-innovation-labs-home-page-section-hero.jpg
 freeformKeywords:
   - hero
   - innovation
@@ -19,9 +18,7 @@ freeformKeywords:
   - modern
   - cta buttons
   - project showcase
-
 fontFamily:
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

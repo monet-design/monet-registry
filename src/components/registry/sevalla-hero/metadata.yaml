@@ -1,10 +1,9 @@
 schemaVersion: "2.0"
 name: sevalla-hero
 category: hero
-
 images:
-  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/sevalla-home-page-section-hero.jpg
-
+  preview: >-
+    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/sevalla-home-page-section-hero.jpg
 freeformKeywords:
   - hero
   - deploy
@@ -17,9 +16,7 @@ freeformKeywords:
   - infrastructure
   - saas
   - deployment
-
 fontFamily:
   - Inter
-
-createdAt: "2025-12-01"
+createdAt: "2025-12-01T00:00:00Z"
 status: stable

@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: github-security-hero
 category: hero
-
 images:
   preview: agent-input/unsection-hero/github-security-hero-section.webp
-
 freeformKeywords:
   - github
   - security
@@ -20,9 +18,7 @@ freeformKeywords:
   - call to action
   - feature cards
   - logo cloud
-
 fontFamily:
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

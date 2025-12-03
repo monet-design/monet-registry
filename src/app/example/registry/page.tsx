@@ -91,11 +91,11 @@ export default async function RegistryPage({ searchParams }: PageProps) {
     metadata: getComponentMetadata(registryDir, componentName),
   }));
 
-  // Extract unique dates for filtering
+  // Extract unique dates for filtering (date part only, e.g., "2025-11-30")
   const uniqueDates = [
     ...new Set(
       componentsWithMetadata
-        .map((c) => c.metadata.createdAt)
+        .map((c) => c.metadata.createdAt?.split("T")[0])
         .filter((date): date is string => !!date)
     ),
   ].sort((a, b) => new Date(b).getTime() - new Date(a).getTime());

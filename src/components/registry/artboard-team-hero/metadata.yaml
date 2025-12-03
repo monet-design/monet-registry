@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: artboard-team-hero
 category: hero
-
 images:
   preview: agent-input/unsection-hero/artboard-team-page-section-hero.jpg
-
 freeformKeywords:
   - hero
   - landing page
@@ -19,9 +17,7 @@ freeformKeywords:
   - SaaS
   - marketing
   - artboard
-
 fontFamily:
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

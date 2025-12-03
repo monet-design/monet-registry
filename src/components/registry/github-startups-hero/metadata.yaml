@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: github-startups-hero
 category: hero
-
 images:
   preview: agent-input/unsection-hero/github-startups-page-section-hero.jpg
-
 freeformKeywords:
   - hero
   - startup
@@ -18,9 +16,7 @@ freeformKeywords:
   - cta
   - feature cards
   - landing page
-
 fontFamily:
   - Inter
-
-createdAt: "2025-11-30"
+createdAt: "2025-11-30T00:00:00Z"
 status: stable

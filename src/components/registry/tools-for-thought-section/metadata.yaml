@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: tools-for-thought-section
-category: biography
+category: feature-showcase
 images:
   preview: agent-input/feature-carousel/reflect.jpg
 tags:

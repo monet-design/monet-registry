@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: design-buddy-before-after
-category: testimonial
+category: before-after
 images:
   preview: agent-input/before-after/design-buddy.jpg
 tags:

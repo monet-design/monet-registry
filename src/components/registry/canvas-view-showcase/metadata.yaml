@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: canvas-view-showcase
-category: testimonial
+category: feature-showcase
 images:
   preview: agent-input/feature-carousel/order.jpg
 tags:

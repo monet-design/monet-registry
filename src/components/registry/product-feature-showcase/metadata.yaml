@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: product-feature-showcase
-category: feature
+category: feature-showcase
 images:
   preview: agent-input/feature-carousel/the-other-glasses.jpg
 tags:

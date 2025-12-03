@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: figma-feature-tabs
-category: feature
+category: feature-showcase
 images:
   preview: agent-input/feature-carousel/automator-for-figma.jpg
 tags:

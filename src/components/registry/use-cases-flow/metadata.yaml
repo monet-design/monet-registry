@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: use-cases-flow
-category: feature
+category: feature-showcase
 images:
   preview: agent-input/feature-carousel/winwinkit.jpg
 tags:

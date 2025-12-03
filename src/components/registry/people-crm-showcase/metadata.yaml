@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: people-crm-showcase
-category: testimonial
+category: feature-showcase
 images:
   preview: agent-input/feature-carousel/people-app.jpg
 tags:

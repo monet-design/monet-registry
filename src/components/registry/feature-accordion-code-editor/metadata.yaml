@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: feature-accordion-code-editor
-category: feature
+category: feature-showcase
 images:
   preview: agent-input/feature-carousel/echo.jpg
 tags:

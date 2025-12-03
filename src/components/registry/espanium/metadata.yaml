@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: espanium
-category: stats
+category: contact
 images:
   preview: agent-input/contact-form/espanium.jpg
 tags:

@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: magic-wand-feature
-category: feature
+category: feature-showcase
 images:
   preview: agent-input/feature-carousel/magician-for-figma.jpg
 tags:

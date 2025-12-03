@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: security-tools-mobile
-category: showcase
+category: feature-showcase
 images:
   preview: agent-input/feature-carousel/atmosfer.jpg
 tags:

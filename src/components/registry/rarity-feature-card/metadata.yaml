@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: rarity-feature-card
-category: feature
+category: feature-showcase
 images:
   preview: agent-input/feature-carousel/pfpid.jpg
 tags:

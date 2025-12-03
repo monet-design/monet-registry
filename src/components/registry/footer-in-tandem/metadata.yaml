@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: footer-in-tandem
+category: footer
+
+images:
+  preview: agent-input/footer/in-tandem-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - minimal
+  - brands
+  - contact
+  - linkedin
+  - corporate
+  - beige
+  - warm
+  - family
+  - services
+  - two column
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-12-03T21:17:03Z"
+status: stable

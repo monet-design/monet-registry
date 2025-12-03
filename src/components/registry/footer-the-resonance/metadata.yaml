@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: footer-the-resonance
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/the-resonance-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - newsletter
+  - subscribe
+  - email
+  - lab
+  - products
+  - 3D
+  - lime green
+  - dark theme
+  - modern
+  - tech
+  - startup
+  - AI
+  - prompts
+  - brand identity
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T22:07:34Z"
+status: stable

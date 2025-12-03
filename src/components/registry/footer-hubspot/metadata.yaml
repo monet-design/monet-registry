@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: footer-hubspot
+category: footer
+
+images:
+  preview: agent-input/footer/hubspot-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - hubspot
+  - multi-column
+  - dark
+  - enterprise
+  - saas
+  - crm
+  - social media
+  - links
+  - copyright
+  - legal
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:16:44Z"
+status: stable

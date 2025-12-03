@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: footer-minimal-three-column
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/gaelle-perrin-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - minimal
+  - three column
+  - contact
+  - social links
+  - clean
+  - simple
+  - professional
+  - brand
+  - email
+  - phone
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:14:20Z"
+status: stable

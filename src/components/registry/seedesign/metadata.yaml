@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: seedesign
-category: testimonial
+category: contact
 images:
   preview: agent-input/contact-form/seedesign.jpg
 tags:

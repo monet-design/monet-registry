@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: mova-brewing-footer
+category: footer
+
+images:
+  preview: agent-input/footer/move-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - brewery
+  - restaurant
+  - dark green
+  - navigation
+  - social media
+  - contact
+  - phone
+  - address
+  - large text
+  - beer
+  - company info
+
+fontFamily:
+  - Oswald
+  - Inter
+
+createdAt: "2025-12-03T21:24:39Z"
+status: stable

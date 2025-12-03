@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: footer-taiga
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/taiga-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - taiga
+  - navigation
+  - links
+  - social media
+  - electric vehicles
+  - snowmobile
+  - watercraft
+  - minimal
+  - beige
+  - warm gray
+  - multi-column
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:49:30Z"
+status: stable

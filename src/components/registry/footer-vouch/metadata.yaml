@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: footer-vouch
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/vouch-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - vouch
+  - multi-column
+  - navigation
+  - links
+  - social media
+  - legal
+  - copyright
+  - serif headers
+  - italic
+  - teal
+  - minimal
+  - clean
+  - saas
+  - video
+
+fontFamily:
+  - Playfair Display
+  - Plus Jakarta Sans
+
+createdAt: "2025-12-03T22:09:26Z"
+status: stable

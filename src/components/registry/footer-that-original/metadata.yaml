@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: footer-that-original
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/that-original-home-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - dark green
+  - forest green
+  - serif
+  - elegant
+  - luxury
+  - fashion
+  - french
+  - brand
+  - large typography
+  - minimalist
+  - navigation links
+  - contact
+  - instagram
+  - whatsapp
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T22:07:37Z"
+status: stable

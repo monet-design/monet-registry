@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: footer-moxion
+category: footer
+
+images:
+  preview: agent-input/footer/moxion-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - dark
+  - navigation
+  - links
+  - next page
+  - progress bar
+  - industrial
+  - tech
+  - energy
+  - power
+  - moxion
+  - multi-column
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:24:51Z"
+status: stable

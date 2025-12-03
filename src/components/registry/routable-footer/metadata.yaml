@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: routable-footer
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/routable-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - dark footer
+  - mega footer
+  - multi-column footer
+  - accounts payable
+  - fintech
+  - B2B
+  - navigation links
+  - legal footer
+  - CTA footer
+  - demo request
+  - products
+  - features
+  - solutions
+  - resources
+  - company
+  - dark navy
+  - corporate footer
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:34:30Z"
+status: stable

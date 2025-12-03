@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: hasko-footer
+category: footer
+
+images:
+  preview: agent-input/footer/hasko-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - dark
+  - green
+  - dot pattern
+  - minimal
+  - company info
+  - contact
+  - address
+  - links
+  - nordic
+  - swedish
+  - corporate
+  - dotted background
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:14:27Z"
+status: stable

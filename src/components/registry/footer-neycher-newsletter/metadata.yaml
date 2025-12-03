@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: footer-neycher-newsletter
+category: footer
+
+images:
+  preview: agent-input/footer/neycher-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - newsletter
+  - subscription
+  - dark theme
+  - ecommerce
+  - payment icons
+  - form
+  - links
+  - social media
+  - minimal
+  - charcoal
+  - feminine
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-12-03T21:25:35Z"
+status: stable

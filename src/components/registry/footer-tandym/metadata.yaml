@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: footer-tandym
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/tandym-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - dark green
+  - payment
+  - merchant
+  - multi-column
+  - navigation links
+  - social icons
+  - minimal
+  - fintech
+  - e-commerce
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T22:07:33Z"
+status: stable

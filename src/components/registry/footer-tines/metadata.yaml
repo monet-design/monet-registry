@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: footer-tines
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/tines-footer-section.jpg
+
+freeformKeywords:
+  - footer
+  - tines
+  - purple
+  - links
+  - navigation
+  - columns
+  - minimal
+  - platform
+  - solutions
+  - resources
+  - company
+  - connect
+  - rss
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T22:07:39Z"
+status: stable

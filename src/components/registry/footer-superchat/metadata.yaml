@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: footer-superchat
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/superchat-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - superchat
+  - dark
+  - saas
+  - messaging
+  - whatsapp
+  - social links
+  - multi-column
+  - contact
+  - business
+  - cyan
+  - blue
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:49:28Z"
+status: stable

@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: footer-typeform
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/typeform-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - typeform
+  - navigation
+  - links
+  - social media
+  - multi-column
+  - dark theme
+  - modern
+  - saas
+  - website footer
+  - enterprise
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T22:07:32Z"
+status: stable

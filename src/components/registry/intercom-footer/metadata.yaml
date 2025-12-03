@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: intercom-footer
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/intercom-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - intercom
+  - links
+  - navigation
+  - helpdesk
+  - features
+  - pricing
+  - support
+  - company
+  - programs
+  - legal
+  - terms
+  - privacy
+  - multi-column
+  - sitemap
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:16:58Z"
+status: stable

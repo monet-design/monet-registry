@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: footer-oyster
+category: footer
+
+images:
+  preview: agent-input/footer/oyster-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - dark
+  - multi-column
+  - links
+  - navigation
+  - social media
+  - B Corp
+  - HR
+  - global hiring
+  - employment
+  - corporate
+  - comprehensive
+  - script logo
+
+fontFamily:
+  - Inter
+  - Instrument Serif
+
+createdAt: "2025-12-03T21:30:57Z"
+status: stable

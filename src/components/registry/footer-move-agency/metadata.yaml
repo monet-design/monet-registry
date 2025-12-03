@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: footer-move-agency
+category: footer
+
+images:
+  preview: agent-input/footer/move-agency-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - newsletter
+  - email subscription
+  - locations
+  - multi-location
+  - agency
+  - contact
+  - social links
+  - route buttons
+  - mobile agency
+  - corporate footer
+  - light theme
+  - serif heading
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-12-03T21:24:42Z"
+status: stable

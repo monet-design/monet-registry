@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: footer-sound-ethics
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/sound-ethics-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - sound ethics
+  - newsletter
+  - subscription form
+  - lime green
+  - dark theme
+  - music
+  - AI
+  - petition
+  - contact
+  - address
+  - navigation
+  - bold typography
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:49:35Z"
+status: stable

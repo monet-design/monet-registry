@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: mission-lab-footer
+category: footer
+
+images:
+  preview: agent-input/footer/mission-lab-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - mission
+  - dark
+  - minimal
+  - university
+  - education
+  - logo
+  - navigation
+  - copyright
+  - sustainable
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:24:21Z"
+status: stable

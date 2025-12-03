@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: website-template-carousel
-category: testimonial
+category: feature-showcase
 images:
   preview: agent-input/feature-carousel/modulify.jpg
 tags:

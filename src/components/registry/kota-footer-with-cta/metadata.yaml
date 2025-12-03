@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: kota-footer-with-cta
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/kota-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - cta
+  - email signup
+  - newsletter
+  - navigation
+  - links
+  - blog
+  - app store
+  - social media
+  - team
+  - benefits
+  - dark theme
+  - modern
+  - startup
+  - fintech
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:22:24Z"
+status: stable

@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: footer-tbh
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/tbh-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - mental health
+  - dark footer
+  - enterprise footer
+  - privacy
+  - soc2
+  - security
+  - crisis support
+  - social media
+  - tbh
+  - navigation
+  - links
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T22:07:40Z"
+status: stable

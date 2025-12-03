@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: nutsdev-footer
+category: footer
+
+images:
+  preview: agent-input/footer/nutsdev-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - dark theme
+  - minimal
+  - social media
+  - company links
+  - navigation
+  - nutsdev
+  - copyright
+  - privacy policy
+  - linkedin
+  - facebook
+  - instagram
+  - dribbble
+  - behance
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:25:51Z"
+status: stable

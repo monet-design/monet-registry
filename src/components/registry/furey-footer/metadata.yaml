@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: furey-footer
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/furey-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - newsletter
+  - subscribe
+  - navigation
+  - links
+  - services
+  - company
+  - resources
+  - social
+  - linkedin
+  - twitter
+  - saas
+  - b2b
+  - ecommerce
+  - legal
+  - privacy
+  - terms
+  - cookies
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:14:25Z"
+status: stable

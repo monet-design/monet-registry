@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: footer-watershed
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/watershed-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - watershed
+  - climate
+  - sustainability
+  - corporate
+  - enterprise
+  - multi-column
+  - navigation
+  - links
+  - toggle
+  - region selector
+  - environment
+  - carbon
+  - ESG
+  - technology
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T22:09:28Z"
+status: stable

@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: footer-reon
+category: footer
+
+images:
+  preview: agent-input/footer/reon-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - coral
+  - red
+  - pink
+  - cta
+  - contact
+  - get in touch
+  - navigation
+  - social links
+  - three column
+  - minimal
+  - modern
+  - thumbs up
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:33:17Z"
+status: stable

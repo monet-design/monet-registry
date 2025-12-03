@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: grove-footer
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/grove-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - grove
+  - healthcare
+  - hipaa
+  - contact
+  - navigation
+  - links
+  - medical
+  - AI
+  - demo
+  - professional
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:14:33Z"
+status: stable

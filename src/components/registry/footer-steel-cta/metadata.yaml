@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: footer-steel-cta
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/steel-home-page-section-cta-footer.jpg
+
+freeformKeywords:
+  - footer
+  - cta
+  - call to action
+  - steel
+  - dark
+  - industrial
+  - start free
+  - documentation
+  - tech
+  - saas
+  - api
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:50:06Z"
+status: stable

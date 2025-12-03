@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: paradigm-footer
+category: footer
+
+images:
+  preview: agent-input/footer/paradigm-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - newsletter
+  - contact us
+  - marquee
+  - email subscription
+  - dark theme
+  - minimal
+  - serif
+  - elegant
+  - infinite scroll
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:30:48Z"
+status: stable

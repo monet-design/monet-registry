@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: footer-hello-network
+category: footer
+
+images:
+  preview: agent-input/footer/hello-network-footer-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - french
+  - social media
+  - contact
+  - address
+  - resources
+  - opening hours
+  - navigation links
+  - gradient button
+  - corporate
+  - business
+  - financial partners
+  - visa
+  - minimal
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-12-03T21:14:41Z"
+status: stable

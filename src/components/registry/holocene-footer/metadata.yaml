@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: holocene-footer
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/holocene-footer.jpg
+
+freeformKeywords:
+  - footer
+  - dark
+  - black
+  - minimal
+  - corporate
+  - enterprise
+  - navigation
+  - links
+  - columns
+  - copyright
+  - legal
+  - supply chain
+  - manufacturing
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:16:37Z"
+status: stable

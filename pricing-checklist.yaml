@@ -499,10 +499,6 @@ components:
   name: opl-screenshot
   status: completed
   notes: 'pricing-opl-screenshot'
-- filename: opl-sixtep-screen.png
-  name: opl-sixtep-screen
-  status: completed
-  notes: 'pricing-opl-sixtep-screen'
 - filename: reversechaos.png
   name: reversechaos
   status: completed

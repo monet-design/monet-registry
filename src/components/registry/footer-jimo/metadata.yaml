@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: footer-jimo
+category: footer
+
+images:
+  preview: agent-input/footer/jimo-footer-section.jpg
+
+freeformKeywords:
+  - footer
+  - newsletter
+  - dark
+  - saas
+  - product
+  - multi-column
+  - navigation
+  - badges
+  - email subscribe
+  - newsletter signup
+  - g2 badges
+  - techstars
+  - jimo
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:17:30Z"
+status: stable

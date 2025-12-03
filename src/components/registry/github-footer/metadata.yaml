@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: github-footer
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/github-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - github
+  - newsletter
+  - subscribe
+  - links
+  - social media
+  - dark theme
+  - multi-column
+  - navigation
+  - sitemap
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:14:23Z"
+status: stable

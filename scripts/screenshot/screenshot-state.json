@@ -2163,6 +2163,346 @@
     "pricing-reversechaos": {
       "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/pricing-reversechaos.png",
       "capturedAt": "2025-12-03T20:14:44.334Z"
+    },
+    "footer-galileo": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-galileo.png",
+      "capturedAt": "2025-12-03T22:16:20.049Z"
+    },
+    "footer-genie": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-genie.png",
+      "capturedAt": "2025-12-03T22:16:23.759Z"
+    },
+    "footer-hawthorne-skin": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-hawthorne-skin.png",
+      "capturedAt": "2025-12-03T22:16:27.451Z"
+    },
+    "footer-hello-network": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-hello-network.png",
+      "capturedAt": "2025-12-03T22:16:31.173Z"
+    },
+    "footer-hubspot": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-hubspot.png",
+      "capturedAt": "2025-12-03T22:16:34.879Z"
+    },
+    "footer-in-tandem": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-in-tandem.png",
+      "capturedAt": "2025-12-03T22:16:38.543Z"
+    },
+    "footer-innovation-labs": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-innovation-labs.png",
+      "capturedAt": "2025-12-03T22:16:42.256Z"
+    },
+    "footer-insurely": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-insurely.png",
+      "capturedAt": "2025-12-03T22:16:45.941Z"
+    },
+    "footer-isla-porter": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-isla-porter.png",
+      "capturedAt": "2025-12-03T22:16:49.842Z"
+    },
+    "footer-jimo": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-jimo.png",
+      "capturedAt": "2025-12-03T22:16:53.543Z"
+    },
+    "footer-kinetic-hubs-cta": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-kinetic-hubs-cta.png",
+      "capturedAt": "2025-12-03T22:16:57.252Z"
+    },
+    "footer-lawtrades-cta": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-lawtrades-cta.png",
+      "capturedAt": "2025-12-03T22:17:00.968Z"
+    },
+    "footer-linear-asks-use-cases": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-linear-asks-use-cases.png",
+      "capturedAt": "2025-12-03T22:17:04.674Z"
+    },
+    "footer-liveblocks": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-liveblocks.png",
+      "capturedAt": "2025-12-03T22:17:08.358Z"
+    },
+    "footer-memory-cta": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-memory-cta.png",
+      "capturedAt": "2025-12-03T22:17:12.209Z"
+    },
+    "footer-merchlink": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-merchlink.png",
+      "capturedAt": "2025-12-03T22:17:15.914Z"
+    },
+    "footer-minimal-three-column": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-minimal-three-column.png",
+      "capturedAt": "2025-12-03T22:17:19.605Z"
+    },
+    "footer-move-agency": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-move-agency.png",
+      "capturedAt": "2025-12-03T22:17:23.299Z"
+    },
+    "footer-moxion": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-moxion.png",
+      "capturedAt": "2025-12-03T22:17:27.006Z"
+    },
+    "footer-neycher-newsletter": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-neycher-newsletter.png",
+      "capturedAt": "2025-12-03T22:17:30.708Z"
+    },
+    "footer-oddit": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-oddit.png",
+      "capturedAt": "2025-12-03T22:17:34.420Z"
+    },
+    "footer-online-payment-platform": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-online-payment-platform.png",
+      "capturedAt": "2025-12-03T22:17:38.108Z"
+    },
+    "footer-oyster": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-oyster.png",
+      "capturedAt": "2025-12-03T22:17:41.918Z"
+    },
+    "footer-pash-design-sells": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-pash-design-sells.png",
+      "capturedAt": "2025-12-03T22:17:45.644Z"
+    },
+    "footer-patch": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-patch.png",
+      "capturedAt": "2025-12-03T22:17:49.347Z"
+    },
+    "footer-pera-wallet": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-pera-wallet.png",
+      "capturedAt": "2025-12-03T22:17:53.021Z"
+    },
+    "footer-popcorn": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-popcorn.png",
+      "capturedAt": "2025-12-03T22:17:56.716Z"
+    },
+    "footer-reflect": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-reflect.png",
+      "capturedAt": "2025-12-03T22:18:00.413Z"
+    },
+    "footer-relume-ipsum": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-relume-ipsum.png",
+      "capturedAt": "2025-12-03T22:18:04.113Z"
+    },
+    "footer-reon": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-reon.png",
+      "capturedAt": "2025-12-03T22:18:07.818Z"
+    },
+    "footer-reveni": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-reveni.png",
+      "capturedAt": "2025-12-03T22:18:11.516Z"
+    },
+    "footer-sketch": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-sketch.png",
+      "capturedAt": "2025-12-03T22:18:15.232Z"
+    },
+    "footer-slite": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-slite.png",
+      "capturedAt": "2025-12-03T22:18:18.944Z"
+    },
+    "footer-sound-ethics": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-sound-ethics.png",
+      "capturedAt": "2025-12-03T22:18:22.971Z"
+    },
+    "footer-spellbook": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-spellbook.png",
+      "capturedAt": "2025-12-03T22:18:26.663Z"
+    },
+    "footer-steel": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-steel.png",
+      "capturedAt": "2025-12-03T22:18:30.412Z"
+    },
+    "footer-steel-cta": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-steel-cta.png",
+      "capturedAt": "2025-12-03T22:18:34.195Z"
+    },
+    "footer-substack": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-substack.png",
+      "capturedAt": "2025-12-03T22:18:37.898Z"
+    },
+    "footer-superchat": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-superchat.png",
+      "capturedAt": "2025-12-03T22:18:41.599Z"
+    },
+    "footer-swap-commerce": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-swap-commerce.png",
+      "capturedAt": "2025-12-03T22:18:45.276Z"
+    },
+    "footer-taiga": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-taiga.png",
+      "capturedAt": "2025-12-03T22:18:48.963Z"
+    },
+    "footer-tandym": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-tandym.png",
+      "capturedAt": "2025-12-03T22:18:52.663Z"
+    },
+    "footer-tbh": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-tbh.png",
+      "capturedAt": "2025-12-03T22:18:56.417Z"
+    },
+    "footer-teamway": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-teamway.png",
+      "capturedAt": "2025-12-03T22:19:00.121Z"
+    },
+    "footer-that-original": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-that-original.png",
+      "capturedAt": "2025-12-03T22:19:03.794Z"
+    },
+    "footer-the-reach": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-the-reach.png",
+      "capturedAt": "2025-12-03T22:19:07.501Z"
+    },
+    "footer-the-resonance": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-the-resonance.png",
+      "capturedAt": "2025-12-03T22:19:11.263Z"
+    },
+    "footer-timescale": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-timescale.png",
+      "capturedAt": "2025-12-03T22:19:14.954Z"
+    },
+    "footer-tines": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-tines.png",
+      "capturedAt": "2025-12-03T22:19:18.644Z"
+    },
+    "footer-typeform": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-typeform.png",
+      "capturedAt": "2025-12-03T22:19:22.342Z"
+    },
+    "footer-vela-capitals": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-vela-capitals.png",
+      "capturedAt": "2025-12-03T22:19:26.033Z"
+    },
+    "footer-vouch": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-vouch.png",
+      "capturedAt": "2025-12-03T22:19:29.707Z"
+    },
+    "footer-watershed": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-watershed.png",
+      "capturedAt": "2025-12-03T22:19:33.427Z"
+    },
+    "footer-wope": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-wope.png",
+      "capturedAt": "2025-12-03T22:19:37.150Z"
+    },
+    "footer-zapier": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-zapier.png",
+      "capturedAt": "2025-12-03T22:19:40.859Z"
+    },
+    "footer-zazu": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/footer-zazu.png",
+      "capturedAt": "2025-12-03T22:19:44.544Z"
+    },
+    "furey-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/furey-footer.png",
+      "capturedAt": "2025-12-03T22:19:48.296Z"
+    },
+    "github-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/github-footer.png",
+      "capturedAt": "2025-12-03T22:19:51.972Z"
+    },
+    "globalization-partners-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/globalization-partners-footer.png",
+      "capturedAt": "2025-12-03T22:19:55.795Z"
+    },
+    "grove-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/grove-footer.png",
+      "capturedAt": "2025-12-03T22:19:59.530Z"
+    },
+    "hasko-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hasko-footer.png",
+      "capturedAt": "2025-12-03T22:20:03.279Z"
+    },
+    "help-scout-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/help-scout-footer.png",
+      "capturedAt": "2025-12-03T22:20:07.015Z"
+    },
+    "holocene-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/holocene-footer.png",
+      "capturedAt": "2025-12-03T22:20:10.674Z"
+    },
+    "hyperliquid-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/hyperliquid-footer.png",
+      "capturedAt": "2025-12-03T22:20:14.335Z"
+    },
+    "intercom-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/intercom-footer.png",
+      "capturedAt": "2025-12-03T22:20:17.992Z"
+    },
+    "kajabi-cta-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/kajabi-cta-footer.png",
+      "capturedAt": "2025-12-03T22:20:21.698Z"
+    },
+    "kickbase-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/kickbase-footer.png",
+      "capturedAt": "2025-12-03T22:20:25.528Z"
+    },
+    "kinetic-cta-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/kinetic-cta-footer.png",
+      "capturedAt": "2025-12-03T22:20:29.308Z"
+    },
+    "kota-footer-with-cta": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/kota-footer-with-cta.png",
+      "capturedAt": "2025-12-03T22:20:33.015Z"
+    },
+    "mission-lab-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/mission-lab-footer.png",
+      "capturedAt": "2025-12-03T22:20:36.668Z"
+    },
+    "mollie-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/mollie-footer.png",
+      "capturedAt": "2025-12-03T22:20:40.334Z"
+    },
+    "mova-brewing-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/mova-brewing-footer.png",
+      "capturedAt": "2025-12-03T22:20:44.113Z"
+    },
+    "nutri-rich-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/nutri-rich-footer.png",
+      "capturedAt": "2025-12-03T22:20:47.799Z"
+    },
+    "nutsdev-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/nutsdev-footer.png",
+      "capturedAt": "2025-12-03T22:20:51.473Z"
+    },
+    "outseta-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/outseta-footer.png",
+      "capturedAt": "2025-12-03T22:20:55.141Z"
+    },
+    "paradigm-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/paradigm-footer.png",
+      "capturedAt": "2025-12-03T22:20:58.878Z"
+    },
+    "passionfroot-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/passionfroot-footer.png",
+      "capturedAt": "2025-12-03T22:21:02.586Z"
+    },
+    "pipe-newsletter-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/pipe-newsletter-footer.png",
+      "capturedAt": "2025-12-03T22:21:06.274Z"
+    },
+    "plain-section-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/plain-section-footer.png",
+      "capturedAt": "2025-12-03T22:21:09.945Z"
+    },
+    "rbbecon-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/rbbecon-footer.png",
+      "capturedAt": "2025-12-03T22:21:13.615Z"
+    },
+    "resend-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/resend-footer.png",
+      "capturedAt": "2025-12-03T22:21:17.291Z"
+    },
+    "riotters-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/riotters-footer.png",
+      "capturedAt": "2025-12-03T22:21:20.977Z"
+    },
+    "rivian-style-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/rivian-style-footer.png",
+      "capturedAt": "2025-12-03T22:21:24.649Z"
+    },
+    "routable-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/routable-footer.png",
+      "capturedAt": "2025-12-03T22:21:28.443Z"
+    },
+    "sevalla-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/landing-mon-components/public/registry/preview/sevalla-footer.png",
+      "capturedAt": "2025-12-03T22:21:32.128Z"
     }
   }
 }

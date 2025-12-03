@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: footer-wope
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/wope-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - dark footer
+  - SEO
+  - analytics
+  - contact card
+  - map
+  - social links
+  - minimal
+  - modern
+  - SaaS
+  - tech
+  - platform links
+  - legal links
+  - newsletter
+  - CTA button
+  - trial
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T22:09:29Z"
+status: stable

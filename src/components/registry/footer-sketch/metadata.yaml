@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: footer-sketch
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/sketch-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - sketch
+  - newsletter
+  - email signup
+  - multi-column
+  - links
+  - social icons
+  - minimal
+  - clean
+  - light gray
+  - product links
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:49:47Z"
+status: stable

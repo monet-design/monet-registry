@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: plain-section-footer
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/plain-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - links
+  - navigation
+  - minimal
+  - dark
+  - black
+  - columns
+  - company
+  - resources
+  - support
+  - legal
+  - copyright
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T21:31:23Z"
+status: stable

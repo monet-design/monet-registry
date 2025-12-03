@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: show-them-course
-category: testimonial
+category: biography
 images:
   preview: agent-input/biography/show-them-course.jpg
 tags:

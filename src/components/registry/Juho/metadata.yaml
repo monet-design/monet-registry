@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: juho
-category: pricing
+category: biography
 images:
   preview: agent-input/biography/juho.jpg
 tags:

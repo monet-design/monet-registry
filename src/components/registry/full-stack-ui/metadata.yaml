@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: full-stack-ui
-category: contact
+category: biography
 images:
   preview: agent-input/biography/full-stack-ui.jpg
 tags:

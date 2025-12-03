@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: pyrismic
-category: testimonial
+category: biography
 images:
   preview: agent-input/biography/pyrismic.jpg
 tags:

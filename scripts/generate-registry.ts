@@ -153,12 +153,22 @@ async function main() {
   fs.writeFileSync(registryPath, JSON.stringify(registry, null, 2));
 
   // 카테고리별 인덱스 생성
-  const categoryIndex: Record<string, string[]> = {};
+  const categoryIndexUnsorted: Record<string, string[]> = {};
   for (const [id, entry] of Object.entries(registry)) {
-    if (!categoryIndex[entry.category]) {
-      categoryIndex[entry.category] = [];
+    if (!categoryIndexUnsorted[entry.category]) {
+      categoryIndexUnsorted[entry.category] = [];
     }
-    categoryIndex[entry.category].push(id);
+    categoryIndexUnsorted[entry.category].push(id);
+  }
+
+  // 컴포넌트 수가 많은 순서로 정렬
+  const categoryIndex: Record<string, string[]> = {};
+  const sortedCategories = Object.entries(categoryIndexUnsorted)
+    .sort((a, b) => b[1].length - a[1].length)
+    .map(([key]) => key);
+
+  for (const category of sortedCategories) {
+    categoryIndex[category] = categoryIndexUnsorted[category];
   }
 
   const categoryIndexPath = path.join(outputDir, "category-index.json");

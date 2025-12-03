@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: gal-shir
-category: contact
+category: biography
 images:
   preview: agent-input/biography/gal-shir.jpg
 tags:

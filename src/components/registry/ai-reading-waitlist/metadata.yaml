@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: ai-reading-waitlist
-category: contact
+category: waitlist
 images:
   preview: agent-input/dribble-waitlist/fathom.png
 freeformKeywords:

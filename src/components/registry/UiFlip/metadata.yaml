@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: ui-flip
-category: pricing
+category: biography
 images:
   preview: agent-input/biography/ui-flip.jpg
 tags:

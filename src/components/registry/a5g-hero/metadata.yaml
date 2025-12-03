@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: a5g-hero
+category: how-it-works
+images:
+  preview: agent-input/dribble-hero/a5g.png
+tags:
+  functional:
+    - email-capture
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - serif
+  industry:
+    - saas
+    - fintech
+    - startup
+    - ai
+    - crypto
+freeformKeywords:
+  - landing page
+  - automation
+  - intelligent automation
+  - wave effect
+  - abstract waves
+  - gradient waves
+  - blue purple gradient
+  - tech
+  - technology
+  - enterprise
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

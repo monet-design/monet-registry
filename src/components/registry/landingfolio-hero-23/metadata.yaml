@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-23
+category: testimonial
+images:
+  preview: agent-input/landingfolio-hero/hero-23.jpg
+tags:
+  style:
+    - light-theme
+    - minimal
+    - serif
+  layout:
+    - two-column
+  industry:
+    - saas
+    - e-commerce
+    - creative
+    - startup
+freeformKeywords:
+  - landing page
+  - dashboard preview
+  - dual buttons
+  - primary button
+  - secondary button
+  - marketing
+  - conversion
+  - landingfolio
+  - business
+  - developer tools
+fontFamily:
+  - Inter
+  - Instrument Serif
+createdAt: "2025-11-30"
+status: stable

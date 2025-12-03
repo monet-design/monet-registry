@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: stats-9
+category: stats
+images:
+  preview: agent-input/landingfolio-stats/stats-9.jpg
+tags:
+  functional:
+    - counter
+  style:
+    - light-theme
+    - minimal
+  layout:
+    - two-column
+    - card-grid
+    - bento
+  industry:
+    - saas
+    - creative
+freeformKeywords:
+  - landing page
+  - satisfied clients
+  - downloads
+  - projects
+  - awards
+  - achievements
+  - company stats
+  - business metrics
+  - professional
+  - blue accent
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

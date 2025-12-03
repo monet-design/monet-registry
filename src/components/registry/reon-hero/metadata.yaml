@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: reon-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/reon-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - technology consultancy
+  - agency
+  - minimal
+  - cream background
+  - pink accent
+  - serif headline
+  - italic
+  - digital solutions
+  - innovation
+  - corporate
+  - enterprise
+  - warm tones
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

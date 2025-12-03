@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: glow-guide
+category: stats
+images:
+  preview: agent-input/before-after/glow-guide.jpg
+tags:
+  functional:
+    - counter
+  style:
+    - light-theme
+    - minimal
+    - glow
+  layout:
+    - two-column
+  industry:
+    - saas
+    - e-commerce
+    - healthcare
+    - creative
+freeformKeywords:
+  - beauty
+  - skincare
+  - progress tracking
+  - photo comparison
+  - mobile app
+  - iPhone mockup
+  - face analysis
+  - skin tracker
+  - health app
+  - badge
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

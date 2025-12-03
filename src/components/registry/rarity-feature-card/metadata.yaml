@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: rarity-feature-card
+category: showcase
+images:
+  preview: agent-input/feature-carousel/pfpid.jpg
+tags:
+  style:
+    - elegant
+  industry:
+    - e-commerce
+    - ai
+    - crypto
+freeformKeywords:
+  - rarity
+  - nft
+  - pfp
+  - profile picture
+  - collectible
+  - variant
+  - color selector
+  - feature card
+  - limited edition
+  - exclusive
+fontFamily:
+  - Playfair Display
+createdAt: "2025-11-30"
+status: stable

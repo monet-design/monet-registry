@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: deeo
+category: contact
+images:
+  preview: agent-input/contact-form/deeo.jpg
+tags:
+  functional:
+    - email-capture
+    - contact-form
+  style:
+    - dark-theme
+    - minimal
+    - elegant
+    - serif
+  industry:
+    - creative
+    - ai
+freeformKeywords:
+  - contact section
+  - collaboration
+  - studio
+  - serif font
+  - italic heading
+  - form fields
+  - name input
+  - company input
+  - budget dropdown
+  - timeline
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

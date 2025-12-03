@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: popless-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/popless-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - tutoring
+  - platform
+  - education
+  - scheduling
+  - dashboard
+  - profile
+  - earnings
+  - white background
+  - clean
+  - minimal
+  - SaaS
+  - marketplace
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: few-and-far-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/few-and-far-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - landing page
+  - agency
+  - charity
+  - nonprofit
+  - bcorp
+  - split layout
+  - image hero
+  - office photo
+  - warm
+  - beige
+  - cream
+  - minimal
+  - elegant
+  - serif
+  - call to action
+  - about us
+  - book a call
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

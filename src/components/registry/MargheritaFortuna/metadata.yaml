@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: margherita-fortuna
+category: contact
+images:
+  preview: agent-input/biography/margherita-fortuna.jpg
+tags:
+  functional:
+    - contact-form
+  style:
+    - dark-theme
+    - minimal
+    - elegant
+    - serif
+  industry:
+    - creative
+    - portfolio
+    - startup
+    - ai
+freeformKeywords:
+  - profile
+  - about
+  - dark green
+  - olive green
+  - forest green
+  - serif font
+  - italic
+  - awards
+  - achievements
+  - FWA
+fontFamily:
+  - Instrument Serif
+createdAt: "2025-11-30"
+status: stable

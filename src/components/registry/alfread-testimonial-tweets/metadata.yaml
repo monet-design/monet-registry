@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: alfread-testimonial-tweets
+category: testimonial
+images:
+  preview: agent-input/testimonial-tweets/alfread.jpg
+tags:
+  functional:
+    - accordion
+  style:
+    - light-theme
+    - elegant
+  layout:
+    - three-column
+    - card-grid
+  industry:
+    - saas
+    - e-commerce
+    - startup
+freeformKeywords:
+  - twitter
+  - tweets
+  - alfread
+  - scattered layout
+  - user quotes
+  - x
+  - social media
+  - multi-card
+  - grid layout
+  - twitter cards
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

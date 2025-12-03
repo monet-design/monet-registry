@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: initiate-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/initiate-home-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - landing
+  - architecture
+  - renovation
+  - creative agency
+  - interior design
+  - property
+  - real estate
+  - sidebar navigation
+  - serif
+  - elegant
+  - minimal
+  - warm tones
+  - beige
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

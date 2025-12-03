@@ -1,0 +1,35 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-19
+category: pricing
+images:
+  preview: agent-input/landingfolio-hero/hero-19.jpg
+tags:
+  functional:
+    - carousel
+  style:
+    - light-theme
+    - minimal
+    - modern
+  layout:
+    - three-column
+    - card-grid
+  industry:
+    - e-commerce
+    - creative
+    - ai
+    - crypto
+freeformKeywords:
+  - landing page
+  - NFT
+  - NFT marketplace
+  - digital art
+  - artwork
+  - ethereum
+  - ETH
+  - collectibles
+  - pixel art
+  - 8-bit
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

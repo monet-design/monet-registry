@@ -1,0 +1,31 @@
+schemaVersion: "2.0"
+name: makeover-studio
+category: testimonial
+images:
+  preview: agent-input/before-after/makeover-studio.jpg
+tags:
+  functional:
+    - tabs
+    - toggle
+  style:
+    - light-theme
+    - minimal
+  industry:
+    - e-commerce
+    - creative
+    - portfolio
+freeformKeywords:
+  - before and after
+  - makeover
+  - transformation
+  - website redesign
+  - branding
+  - browser mockup
+  - furniture
+  - sofa
+  - landing page
+  - tab selector
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

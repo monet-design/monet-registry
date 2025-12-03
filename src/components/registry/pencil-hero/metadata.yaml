@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: pencil-hero
+category: cta
+images:
+  preview: agent-input/lead-capture-hero/pencil.jpg
+tags:
+  functional:
+    - email-capture
+    - lead-capture
+    - newsletter
+  style:
+    - minimal
+  industry:
+    - saas
+    - e-commerce
+    - creative
+    - startup
+    - ai
+freeformKeywords:
+  - email signup
+  - request access
+  - design tool
+  - cursor
+  - IDE plugin
+  - developer tool
+  - ASCII art
+  - retro
+  - green theme
+  - sage green
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

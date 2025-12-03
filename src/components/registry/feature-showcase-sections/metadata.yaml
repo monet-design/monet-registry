@@ -1,0 +1,31 @@
+schemaVersion: "2.0"
+name: feature-showcase-sections
+category: showcase
+images:
+  preview: agent-input/feature-carousel/screen-studio.jpg
+tags:
+  functional:
+    - animation
+    - video
+  style:
+    - dark-theme
+  layout:
+    - two-column
+  industry:
+    - saas
+    - e-commerce
+freeformKeywords:
+  - screen recording
+  - automatic zoom
+  - professional animations
+  - cursor movement
+  - video editing
+  - feature list
+  - two column layout
+  - feature highlight
+  - software features
+  - demo features
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

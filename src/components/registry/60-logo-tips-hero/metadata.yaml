@@ -1,0 +1,31 @@
+schemaVersion: "2.0"
+name: 60-logo-tips-hero
+category: how-it-works
+images:
+  preview: agent-input/beautiful-sections/60-logo-tips-hero.png
+tags:
+  style:
+    - minimal
+  layout:
+    - card-grid
+    - bento
+  industry:
+    - fintech
+    - e-commerce
+    - education
+    - creative
+freeformKeywords:
+  - logo
+  - tips
+  - book
+  - ebook
+  - landing
+  - icons
+  - educational
+  - branding
+  - typography
+  - sketch
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

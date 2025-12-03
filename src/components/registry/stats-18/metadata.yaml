@@ -1,0 +1,23 @@
+schemaVersion: "2.0"
+name: stats-18
+category: stats
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/landingfolio-stats/stats-18.jpg
+tags:
+  style:
+    - dark-theme
+    - gradient
+    - glow
+freeformKeywords:
+  - blue glow
+  - business stats
+  - revenue
+  - percentage
+  - users
+  - read more link
+  - underline link
+  - gradient glow
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

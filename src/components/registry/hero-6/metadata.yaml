@@ -1,0 +1,31 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-6
+category: testimonial
+images:
+  preview: agent-input/landingfolio-hero/hero-6.jpg
+tags:
+  style:
+    - light-theme
+    - minimal
+    - modern
+  layout:
+    - centered
+    - card-grid
+  industry:
+    - saas
+    - creative
+freeformKeywords:
+  - landing page
+  - community
+  - developer resources
+  - resource sharing
+  - design components
+  - UI library
+  - developer tools
+  - floating cards
+  - badge
+  - tag
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

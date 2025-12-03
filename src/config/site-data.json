@@ -1,0 +1,29 @@
+{
+  "name": "Vooster",
+  "url": "https://vooster.ai",
+  "getStartedUrl": "https://vooster.ai/get-started",
+  "ogImage": "https://vooster.ai/og.jpg",
+  "shortDescription": "AI Product Manager for Vibe Coding",
+  "description": "Transform ideas into production-ready code. Vooster automates PRD, TRD, and task generation, connecting seamlessly with Cursor for end-to-end AI-powered development.",
+  "links": {
+    "twitter": "https://twitter.com/vooster_ai",
+    "github": "https://github.com/vooster/vooster",
+    "email": "hello@vooster.ai"
+  },
+  "pricing": {
+    "pro": "https://vooster.ai/pricing/pro",
+    "team": "https://vooster.ai/pricing/team"
+  },
+  "stats": {
+    "figma": 0,
+    "github": 0,
+    "cli": 0,
+    "total": "5000+",
+    "updated": "24 Nov 2025",
+    "sections": 0,
+    "illustrations": 0,
+    "animations": 0,
+    "appTemplates": 0,
+    "websiteTemplates": 0
+  }
+}

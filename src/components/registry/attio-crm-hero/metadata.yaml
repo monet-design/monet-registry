@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: attio-crm-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/attio-home-page-hero-section.jpg
+
+freeformKeywords:
+  - hero
+  - CRM
+  - sales
+  - pipeline
+  - dashboard
+  - startup
+  - SaaS
+  - clean
+  - minimal
+  - white
+  - serif
+  - italic
+  - logo cloud
+  - app screenshot
+  - customer relationship
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

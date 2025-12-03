@@ -1,0 +1,22 @@
+schemaVersion: "2.0"
+name: stats-14
+category: stats
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/landingfolio-stats/stats-14.jpg
+tags:
+  style:
+    - dark-theme
+freeformKeywords:
+  - slate background
+  - icon boxes
+  - blue icons
+  - vertical list
+  - achievements
+  - customers
+  - projects
+  - awards
+  - lucide icons
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

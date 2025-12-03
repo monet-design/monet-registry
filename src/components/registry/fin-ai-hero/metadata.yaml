@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: fin-ai-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/fin-ai-home-page-hero-design.jpg
+
+freeformKeywords:
+  - hero
+  - AI
+  - artificial intelligence
+  - customer service
+  - SaaS
+  - dark theme
+  - aurora
+  - gradient
+  - landing page
+  - fintech
+  - agent
+  - chatbot
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

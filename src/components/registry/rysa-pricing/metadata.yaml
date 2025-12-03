@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: rysa-pricing
+category: pricing
+images:
+  preview: agent-input/beautiful-sections/rysa-pricing.png
+tags:
+  functional:
+    - tabs
+    - toggle
+  style:
+    - light-theme
+    - minimal
+  layout:
+    - card-grid
+  industry:
+    - saas
+    - creative
+    - startup
+    - fashion
+freeformKeywords:
+  - monthly
+  - yearly
+  - discount
+  - save
+  - popular
+  - badge
+  - features list
+  - checkmark
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

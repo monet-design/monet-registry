@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: sound-ethics-about-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/sound-ethics-about-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - about
+  - our story
+  - music
+  - ethics
+  - AI
+  - artists
+  - lime
+  - dark
+  - bold typography
+  - fullscreen
+  - background image
+
+fontFamily:
+  - Oswald
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

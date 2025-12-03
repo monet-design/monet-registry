@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: clarisights-marketing-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/clarisights-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - marketing
+  - analytics
+  - dashboard
+  - data visualization
+  - SaaS
+  - reporting
+  - logo cloud
+  - enterprise
+  - B2B
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

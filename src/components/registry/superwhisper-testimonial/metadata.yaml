@@ -1,0 +1,21 @@
+schemaVersion: "2.0"
+name: superwhisper-testimonial
+category: testimonial
+images:
+  preview: /registry/superwhisper-testimonial/preview.png
+tags:
+  style:
+    - light-theme
+  industry:
+    - saas
+    - ai
+freeformKeywords:
+  - testimonial
+  - superwhisper
+  - voice
+  - transcription
+  - user feedback
+fontFamily:
+  - Inter
+createdAt: "2025-12-02"
+status: stable

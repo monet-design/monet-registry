@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: linear-integrations-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/linear-integrations-page-section-hero.jpg
+
+freeformKeywords:
+  - integration
+  - customizable
+  - design
+  - components
+  - primitives
+  - code
+  - chat
+  - collaboration
+  - react
+  - developer
+  - API
+  - feature showcase
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

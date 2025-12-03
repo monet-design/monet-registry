@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: resync-bio
+category: before-after
+images:
+  preview: agent-input/before-after/resync-bio.jpg
+tags:
+  style:
+    - light-theme
+    - gradient
+  layout:
+    - two-column
+  industry:
+    - saas
+    - e-commerce
+freeformKeywords:
+  - acceleration
+  - biotech
+  - biotechnology
+  - pharmaceutical
+  - drug discovery
+  - assay
+  - molecular structure
+  - molecule
+  - chemistry
+  - lab
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

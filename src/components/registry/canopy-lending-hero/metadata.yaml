@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: canopy-lending-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/canopy-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - landing page
+  - B2B
+  - lending
+  - fintech
+  - saas
+  - loan management
+  - platform
+  - dashboard preview
+  - logo cloud
+  - green accent
+  - startup
+  - enterprise
+  - financial services
+  - product showcase
+  - announcement banner
+  - cta buttons
+  - clean design
+  - minimal
+  - professional
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

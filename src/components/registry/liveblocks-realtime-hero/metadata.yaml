@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: liveblocks-realtime-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/liveblocks-notifications-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - notification
+  - realtime
+  - collaboration
+  - liveblocks
+  - saas
+  - dark
+  - comments
+  - team
+  - email
+  - inbox
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

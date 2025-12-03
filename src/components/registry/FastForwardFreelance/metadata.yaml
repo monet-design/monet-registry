@@ -1,0 +1,36 @@
+schemaVersion: "2.0"
+name: fast-forward-freelance
+category: testimonial
+images:
+  preview: agent-input/biography/fast-forward-freelance.jpg
+tags:
+  functional:
+    - accordion
+  style:
+    - light-theme
+    - minimal
+    - elegant
+    - serif
+  layout:
+    - centered
+    - two-column
+  industry:
+    - education
+    - creative
+    - portfolio
+freeformKeywords:
+  - profile
+  - web designer
+  - webflow
+  - developer
+  - entrepreneur
+  - online course
+  - six-figure
+  - income
+  - business
+  - marketing
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

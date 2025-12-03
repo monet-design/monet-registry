@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: new-valley-labs
+category: contact
+images:
+  preview: agent-input/contact-form/new-valley-labs.jpg
+tags:
+  functional:
+    - email-capture
+    - newsletter
+    - contact-form
+  style:
+    - light-theme
+    - playful
+  industry:
+    - saas
+    - creative
+    - startup
+    - ai
+freeformKeywords:
+  - form
+  - contact section
+  - retro
+  - vintage
+  - 70s style
+  - quirky
+  - illustration
+  - character
+  - mascot
+  - flower character
+fontFamily:
+  - DM Sans
+  - Inter
+createdAt: "2025-11-30"
+status: stable

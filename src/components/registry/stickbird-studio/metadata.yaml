@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: stickbird-studio
+category: contact
+images:
+  preview: agent-input/contact-form/stickbird-studio.jpg
+tags:
+  functional:
+    - contact-form
+  style:
+    - minimal
+  layout:
+    - two-column
+  industry:
+    - creative
+freeformKeywords:
+  - creative agency
+  - studio contact
+  - lead form
+  - inquiry form
+  - project inquiry
+  - budget form
+  - timeline form
+  - service selection
+  - gray background
+  - minimal form
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

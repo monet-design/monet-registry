@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: sophia-amoruso-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/sophia-amoruso-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - personal brand
+  - author
+  - venture capitalist
+  - newsletter
+  - bio
+  - lead capture
+  - modal
+  - form
+  - orange accent
+  - serif typography
+  - italic
+  - elegant
+  - fashion
+  - entrepreneur
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

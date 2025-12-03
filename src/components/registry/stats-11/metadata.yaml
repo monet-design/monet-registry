@@ -1,0 +1,22 @@
+schemaVersion: "2.0"
+name: stats-11
+category: stats
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/landingfolio-stats/stats-11.jpg
+tags:
+  layout:
+    - card-grid
+freeformKeywords:
+  - blue background
+  - white cards
+  - icon stats
+  - two by two grid
+  - fast delivery
+  - secure
+  - shipping
+  - rating
+  - lucide icons
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

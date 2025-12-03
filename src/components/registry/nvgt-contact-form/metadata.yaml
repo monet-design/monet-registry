@@ -1,0 +1,35 @@
+schemaVersion: "2.0"
+name: nvgt-contact-form
+category: contact
+images:
+  preview: agent-input/contact-form/nvgt.jpg
+tags:
+  functional:
+    - email-capture
+    - contact-form
+  style:
+    - dark-theme
+    - serif
+  layout:
+    - two-column
+  industry:
+    - saas
+    - creative
+    - startup
+    - ai
+freeformKeywords:
+  - form
+  - inquiry
+  - message
+  - name
+  - email
+  - growth
+  - fuel
+  - mint accent
+  - teal accent
+  - cyan accent
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

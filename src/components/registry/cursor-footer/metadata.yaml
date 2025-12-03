@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: cursor-footer
+category: footer
+images:
+  preview: agent-input/footer/cursor.png
+tags:
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  industry:
+    - saas
+    - tech
+    - developer-tools
+freeformKeywords:
+  - footer
+  - navigation
+  - sitemap
+  - multi-column
+  - dark mode toggle
+  - language selector
+  - copyright
+  - social links
+  - cursor
+fontFamily:
+  - Inter
+createdAt: "2025-12-02"
+status: stable

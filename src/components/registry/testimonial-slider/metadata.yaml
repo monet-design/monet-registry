@@ -1,0 +1,37 @@
+schemaVersion: "2.0"
+name: testimonial-slider
+category: testimonial
+images:
+  preview: agent-input/testimonial-slider/done.jpg
+tags:
+  functional:
+    - carousel
+    - slider
+  style:
+    - light-theme
+    - modern
+    - serif
+  layout:
+    - three-column
+    - card-grid
+  industry:
+    - e-commerce
+    - healthcare
+    - food
+    - ai
+freeformKeywords:
+  - customer reviews
+  - protein drink
+  - warm theme
+  - pink card
+  - orange card
+  - brown accent
+  - decorative images
+  - chocolate
+  - strawberry
+  - fruit
+fontFamily:
+  - Inter
+  - Playfair Display
+createdAt: "2025-11-30"
+status: stable

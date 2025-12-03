@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: pash-about-page-section-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/pash-about-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - about
+  - agency
+  - designer
+  - portfolio
+  - creative
+  - personal
+  - marquee
+  - banner
+  - orange
+  - beige
+  - serif
+  - italic
+  - born to design
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

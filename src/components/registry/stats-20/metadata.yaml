@@ -1,0 +1,21 @@
+schemaVersion: "2.0"
+name: stats-20
+category: stats
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/landingfolio-stats/stats-20.jpg
+tags:
+  style:
+    - dark-theme
+    - glow
+  layout:
+    - four-column
+freeformKeywords:
+  - blue glow
+  - four columns
+  - read the story
+  - link underline
+  - light font
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

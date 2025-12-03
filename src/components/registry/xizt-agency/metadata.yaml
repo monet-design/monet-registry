@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: xizt-agency
+category: contact
+images:
+  preview: agent-input/contact-form/xizt-agency.jpg
+tags:
+  functional:
+    - email-capture
+    - lead-capture
+    - contact-form
+  style:
+    - light-theme
+    - minimal
+    - modern
+  layout:
+    - inline
+  industry:
+    - creative
+    - ai
+freeformKeywords:
+  - consultation form
+  - inquiry form
+  - project inquiry
+  - creative agency
+  - design agency
+  - consulting
+  - consultation request
+  - budget selector
+  - price range
+  - project budget
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: checkout-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/checkout-product-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - payments
+  - checkout
+  - fintech
+  - landing page
+  - payment processing
+  - scale
+  - enterprise
+  - online payments
+  - ecommerce
+  - saas
+  - banking
+  - financial services
+  - accept payments
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

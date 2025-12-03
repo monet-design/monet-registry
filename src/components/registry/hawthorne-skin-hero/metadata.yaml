@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: hawthorne-skin-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/hawthorne-skin-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - skin
+  - beauty
+  - spa
+  - wellness
+  - holistic
+  - treatment
+  - facial
+  - skincare
+  - salon
+  - cosmetic
+  - aesthetic
+  - brow
+  - package
+  - service cards
+  - green
+  - elegant
+  - serif
+  - italic
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

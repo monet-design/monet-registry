@@ -1,0 +1,36 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-20
+category: biography
+images:
+  preview: agent-input/landingfolio-hero/hero-20.jpg
+tags:
+  functional:
+    - video
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - playful
+  layout:
+    - centered
+    - card-grid
+  industry:
+    - saas
+    - e-commerce
+    - creative
+    - startup
+freeformKeywords:
+  - landing page
+  - communication
+  - collaboration
+  - UI kit
+  - component library
+  - website builder
+  - professional
+  - user avatars
+  - profile cards
+  - floating cards
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

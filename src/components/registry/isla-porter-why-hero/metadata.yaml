@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: isla-porter-why-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/isla-porter-why-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - luxury
+  - interior design
+  - kitchen
+  - craftmanship
+  - creativity
+  - collaboration
+  - dark theme
+  - gold
+  - serif
+  - elegant
+  - premium
+  - navigation
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

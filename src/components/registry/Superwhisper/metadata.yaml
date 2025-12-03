@@ -1,0 +1,37 @@
+schemaVersion: "2.0"
+name: superwhisper-testimonial
+category: testimonial
+images:
+  preview: agent-input/testimonial-tweets/superwhisper.jpg
+tags:
+  functional:
+    - accordion
+    - email-capture
+    - video
+  style:
+    - dark-theme
+    - elegant
+    - serif
+  layout:
+    - card-grid
+    - bento
+  industry:
+    - saas
+    - e-commerce
+    - ai
+    - crypto
+freeformKeywords:
+  - tweets
+  - twitter
+  - x
+  - customer reviews
+  - user feedback
+  - masonry
+  - avatar
+  - profile
+  - handle
+  - username
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

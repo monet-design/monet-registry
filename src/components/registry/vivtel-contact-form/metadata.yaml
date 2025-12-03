@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: vivtel-contact-form
+category: contact
+images:
+  preview: agent-input/contact-form/vivtel.jpg
+tags:
+  functional:
+    - lead-capture
+    - contact-form
+  style:
+    - dark-theme
+    - elegant
+    - gradient
+    - serif
+  layout:
+    - two-column
+freeformKeywords:
+  - inquiry form
+  - business inquiry
+  - hotel
+  - hospitality
+  - franchise
+  - partnership
+  - VIVTEL
+  - navy blue
+  - gradient background
+  - two column layout
+fontFamily:
+  - Playfair Display
+  - Inter
+createdAt: "2025-11-30"
+status: stable

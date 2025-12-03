@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: fin-ai-enterprise-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/fin-ai-enterprise-hero-design.jpg
+
+freeformKeywords:
+  - hero
+  - enterprise
+  - AI
+  - agent
+  - fintech
+  - dark theme
+  - integration
+  - SaaS
+  - grid pattern
+  - tech logos
+  - customer service
+  - business
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

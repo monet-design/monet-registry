@@ -1,0 +1,31 @@
+schemaVersion: "2.0"
+name: prototyper-for-figma-testimonial
+category: testimonial
+images:
+  preview: agent-input/testimonial-tweets/prototyper-for-figma.jpg
+tags:
+  functional:
+    - accordion
+  style:
+    - dark-theme
+    - elegant
+  layout:
+    - card-grid
+  industry:
+    - e-commerce
+    - creative
+freeformKeywords:
+  - tweets
+  - twitter
+  - x
+  - customer reviews
+  - user feedback
+  - gray background
+  - 2x2 grid
+  - avatar
+  - profile
+  - handle
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

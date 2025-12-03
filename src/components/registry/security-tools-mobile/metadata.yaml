@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: security-tools-mobile
+category: showcase
+images:
+  preview: agent-input/feature-carousel/atmosfer.jpg
+tags:
+  functional:
+    - tabs
+  industry:
+    - saas
+freeformKeywords:
+  - security
+  - mobile
+  - tools
+  - accounts
+  - device
+  - protection
+  - phone
+  - mockup
+  - isometric
+  - illustration
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

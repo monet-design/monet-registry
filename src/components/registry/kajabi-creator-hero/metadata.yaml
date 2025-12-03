@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: kajabi-creator-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/kajabi-creator-hub-page-section-hero.jpg
+
+freeformKeywords:
+  - faq
+  - accordion
+  - questions
+  - answers
+  - creator
+  - studio
+  - kajabi
+  - support
+  - help
+  - collapse
+  - expand
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

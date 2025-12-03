@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: figma-academy
+category: testimonial
+images:
+  preview: agent-input/biography/figma-academy.jpg
+tags:
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - gradient
+    - glassmorphism
+  industry:
+    - e-commerce
+    - education
+    - creative
+    - portfolio
+freeformKeywords:
+  - creator
+  - meet the creator
+  - profile
+  - profile card
+  - about section
+  - introduction
+  - designer profile
+  - twitter
+  - tooltip
+  - speech bubble
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: intercom-customers-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/intercom-customers-hero-design.jpg
+
+freeformKeywords:
+  - hero
+  - customers
+  - success stories
+  - testimonials
+  - case studies
+  - companies
+  - logos
+  - grid
+  - dark theme
+  - intercom
+  - customer stories
+  - social proof
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

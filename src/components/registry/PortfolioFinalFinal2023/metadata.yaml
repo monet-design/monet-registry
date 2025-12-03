@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: portfolio-final-final-2023
+category: biography
+images:
+  preview: agent-input/biography/portfolio-final-final-2023.jpg
+tags:
+  style:
+    - light-theme
+    - minimal
+    - serif
+  layout:
+    - two-column
+  industry:
+    - e-commerce
+    - education
+    - creative
+    - portfolio
+freeformKeywords:
+  - about the author
+  - author bio
+  - product designer
+  - profile
+  - simple layout
+  - profile image
+  - grayscale photo
+  - black and white
+  - serif title
+  - italic
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

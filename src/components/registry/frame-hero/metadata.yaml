@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: frame-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/frame-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - productivity
+  - saas
+  - workspace
+  - tasks
+  - notes
+  - focus
+  - collaboration
+  - startup
+  - lime green
+  - serif
+  - modern
+  - clean
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

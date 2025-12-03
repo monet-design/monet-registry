@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: kota-global-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/kota-countries-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - benefits
+  - global
+  - country
+  - statistics
+  - stats
+  - HR
+  - team
+  - employment
+  - insurance
+  - international
+  - workforce
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

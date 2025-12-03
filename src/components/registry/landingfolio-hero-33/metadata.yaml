@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-33
+category: pricing
+images:
+  preview: agent-input/landingfolio-hero/hero-33.jpg
+tags:
+  functional:
+    - video
+  style:
+    - dark-theme
+    - elegant
+    - serif
+  industry:
+    - education
+    - food
+    - ai
+freeformKeywords:
+  - landing page
+  - bakery
+  - bread making
+  - bread
+  - artisan
+  - baking
+  - culinary
+  - cooking course
+  - circular images
+  - round images
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

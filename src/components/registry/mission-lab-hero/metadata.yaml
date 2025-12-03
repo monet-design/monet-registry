@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: mission-lab-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/mission-lab-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - mission
+  - change
+  - pill
+  - capsule
+  - lime green
+  - navigation
+  - typography
+  - bold
+  - architecture
+  - concrete
+  - modern
+  - nonprofit
+  - social impact
+  - activism
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

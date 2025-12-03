@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: figma-feature-tabs
+category: testimonial
+images:
+  preview: agent-input/feature-carousel/automator-for-figma.jpg
+tags:
+  functional:
+    - carousel
+    - tabs
+  style:
+    - dark-theme
+    - gradient
+  industry:
+    - saas
+    - e-commerce
+    - creative
+    - ai
+freeformKeywords:
+  - figma
+  - automation
+  - plugin
+  - design specs
+  - import
+  - airtable
+  - placeholders
+  - drag and drop
+  - productivity
+  - design tools
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

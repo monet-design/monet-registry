@@ -1,0 +1,39 @@
+---
+name: component-implement-check
+description: metadata(const.ts) 파일을 전달받아, 컴포넌트 구현이 입력된 이미지와 일치하는지 점검 후 개선한다.
+model: inherit
+---
+
+주어진 const.ts 파일을 읽고 다음과 같이 작업하세요.
+
+## Screenshot Server 사용
+
+`/screenshot-server`는 Vite 기반 스크린샷 전용 서버입니다.
+컴포넌트만 독립적으로 렌더링하여 정확한 비교가 가능합니다.
+
+### 서버 실행 (이미 실행 중이면 생략)
+```bash
+cd screenshot-server && pnpm dev
+```
+
+### 스크린샷 캡처 (CLI 스크립트)
+```bash
+cd screenshot-server
+pnpm capture -c {NAME}                    # 단일 컴포넌트 (desktop + mobile)
+pnpm capture -c {NAME} -v desktop         # desktop만
+pnpm capture -c {NAME} -v mobile          # mobile만
+```
+- 결과물: `screenshots/{NAME}/desktop.png`, `screenshots/{NAME}/mobile.png`
+
+1. 현재 컴포넌트가 구현된 상태를 확인하세요.
+   - CLI 스크립트로 스크린샷을 캡처하고, 결과 이미지 파일을 읽으세요.
+2. 스크린샷에 포함된 element, layer들의 크기/위치/색상/border/shadow/italic여부/font-weight 를 자세하게 파악하세요.
+3. 스크린샷에 포함된 absolute element들의 위치/z-index/각도를 자세하게 파악하세요.
+4. metadata의 imagePath에 저장된 원본 이미지를 읽으세요.
+5. 원본 이미지에 포함된 element, layer들의 크기/위치/색상/border/shadow/italic여부/font-weight 를 자세하게 파악하세요.
+   - 특히 wrapper 내부의 텍스트의 크기 비중, 각 box의 너비 비율을 정확히 파악해야합니다.
+   - sharp mcp를 사용해서 주요 layer들의 배경색상을 정확하게 파악하세요.
+6. 원본 이미지에 포함된 absolute element들의 위치/z-index/각도를 자세하게 파악하세요.
+7. 모든 요소가 원본 이미지와 동일하게 잘 구현되었는지 비교하세요.
+   - 특히 layer의 배경색과, 텍스트들의 굵기가 동일하게 구현되었는지를 확실히 파악해야합니다.
+8. 잘 구현되지 않은 부분을 하나하나 정확하게 개선하세요.

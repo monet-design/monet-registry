@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: practical-ui-before-after
+category: before-after
+images:
+  preview: agent-input/before-after/practical-ui.jpg
+tags:
+  style:
+    - light-theme
+    - minimal
+  layout:
+    - two-column
+  industry:
+    - saas
+    - creative
+    - ai
+freeformKeywords:
+  - before and after
+  - property features
+  - real estate
+  - airbnb
+  - listing
+  - ui comparison
+  - ux improvement
+  - readability
+  - content structure
+  - text formatting
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

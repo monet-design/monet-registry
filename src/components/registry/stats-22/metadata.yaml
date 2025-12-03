@@ -1,0 +1,23 @@
+schemaVersion: "2.0"
+name: stats-22
+category: stats
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/landingfolio-stats/stats-22.jpg
+tags:
+  style:
+    - dark-theme
+    - serif
+  layout:
+    - centered
+    - inline
+  industry:
+    - education
+freeformKeywords:
+  - inline stats
+  - pill button
+  - countries
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

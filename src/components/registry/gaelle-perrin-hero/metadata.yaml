@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: gaelle-perrin-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/gaelle-perrin-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - landing page
+  - luxury
+  - hotel
+  - travel
+  - agency
+  - french
+  - elegant
+  - serif
+  - italic
+  - asymmetric layout
+  - lifestyle
+  - art de vivre
+  - communication agency
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

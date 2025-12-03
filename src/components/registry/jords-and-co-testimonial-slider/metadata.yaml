@@ -1,0 +1,36 @@
+schemaVersion: "2.0"
+name: jords-and-co-testimonial-slider
+category: testimonial
+images:
+  preview: agent-input/testimonial-slider/jords-and-co.jpg
+tags:
+  functional:
+    - carousel
+    - slider
+    - email-capture
+  style:
+    - light-theme
+    - serif
+  layout:
+    - centered
+  industry:
+    - saas
+    - e-commerce
+    - startup
+    - ai
+freeformKeywords:
+  - customer reviews
+  - user feedback
+  - quote card
+  - light background
+  - gray theme
+  - purple accent
+  - serif font
+  - italic headline
+  - product thumbnail
+  - company logo
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

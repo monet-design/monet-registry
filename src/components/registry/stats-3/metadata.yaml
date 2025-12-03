@@ -1,0 +1,22 @@
+schemaVersion: "2.0"
+name: stats-3
+category: stats
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/landingfolio-stats/stats-3.jpg
+tags:
+  style:
+    - dark-theme
+  layout:
+    - card-grid
+freeformKeywords:
+  - navy background
+  - icon stats
+  - components
+  - countries
+  - customers
+  - messages
+  - lucide icons
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

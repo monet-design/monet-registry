@@ -1,0 +1,31 @@
+schemaVersion: "2.0"
+name: intro-to-icons-by-mds
+category: pricing
+images:
+  preview: agent-input/testimonial-tweets/intro-to-icons-by-mds.jpg
+tags:
+  functional:
+    - accordion
+  style:
+    - elegant
+  layout:
+    - three-column
+    - card-grid
+  industry:
+    - education
+    - creative
+freeformKeywords:
+  - twitter
+  - tweets
+  - icon design
+  - mds
+  - grid layout
+  - user quotes
+  - x
+  - social media
+  - design course
+  - intro to icons
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

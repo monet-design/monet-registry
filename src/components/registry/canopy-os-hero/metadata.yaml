@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: canopy-os-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/canopy-os-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - landing page
+  - dark theme
+  - fintech
+  - loan
+  - dashboard
+  - gradient background
+  - saas
+  - os
+  - operating system
+  - product screenshot
+  - lime green
+  - CTA button
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

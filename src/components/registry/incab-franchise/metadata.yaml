@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: incab-franchise
+category: contact
+images:
+  preview: agent-input/contact-form/incab-franchise.jpg
+tags:
+  functional:
+    - lead-capture
+    - contact-form
+  style:
+    - light-theme
+    - minimal
+    - elegant
+  industry:
+    - creative
+freeformKeywords:
+  - franchise form
+  - franchise ownership
+  - business inquiry
+  - minimal form
+  - clean form
+  - single column form
+  - simple contact form
+  - get started form
+  - franchise inquiry
+  - business contact
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

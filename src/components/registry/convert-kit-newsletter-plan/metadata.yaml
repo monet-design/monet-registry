@@ -1,0 +1,35 @@
+schemaVersion: "2.0"
+name: convert-kit-newsletter-plan
+category: testimonial
+images:
+  preview: agent-input/testimonial-tweets/convert-kit-newsletter-plan.jpg
+tags:
+  functional:
+    - slider
+    - accordion
+    - newsletter
+  style:
+    - light-theme
+    - minimal
+    - elegant
+  layout:
+    - inline
+  industry:
+    - saas
+    - creative
+    - ai
+freeformKeywords:
+  - twitter
+  - tweets
+  - x
+  - customer reviews
+  - user feedback
+  - card layout
+  - horizontal layout
+  - multi-card
+  - avatar
+  - profile picture
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

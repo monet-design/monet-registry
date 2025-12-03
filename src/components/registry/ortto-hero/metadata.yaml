@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: ortto-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/ortto-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - saas
+  - dashboard
+  - customer data
+  - messaging
+  - analytics
+  - teal
+  - warm background
+  - logo cloud
+  - marketing automation
+  - CDP
+  - customer journey
+  - workflow
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: seedesign
+category: testimonial
+images:
+  preview: agent-input/contact-form/seedesign.jpg
+tags:
+  functional:
+    - lead-capture
+    - contact-form
+  style:
+    - dark-theme
+    - modern
+    - elegant
+  industry:
+    - saas
+    - fintech
+    - creative
+    - startup
+freeformKeywords:
+  - quote request
+  - get a quote
+  - design agency
+  - creative agency
+  - green accent
+  - form
+  - input fields
+  - dropdown
+  - textarea
+  - brief
+fontFamily:
+  - Satoshi
+  - Inter
+createdAt: "2025-11-30"
+status: stable

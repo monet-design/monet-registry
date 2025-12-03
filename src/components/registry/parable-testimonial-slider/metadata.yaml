@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: parable-testimonial-slider
+category: testimonial
+images:
+  preview: agent-input/testimonial-slider/parable.jpg
+tags:
+  functional:
+    - carousel
+    - slider
+  style:
+    - light-theme
+    - minimal
+  layout:
+    - centered
+  industry:
+    - saas
+    - education
+    - creative
+    - startup
+freeformKeywords:
+  - customer reviews
+  - user feedback
+  - quote card
+  - quotation marks
+  - lavender background
+  - purple accent
+  - navigation arrows
+  - square buttons
+  - parable
+  - prisms
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

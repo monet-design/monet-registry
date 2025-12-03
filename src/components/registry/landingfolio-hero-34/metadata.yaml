@@ -1,0 +1,35 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-34
+category: how-it-works
+images:
+  preview: agent-input/landingfolio-hero/hero-34.jpg
+tags:
+  functional:
+    - video
+  style:
+    - dark-theme
+    - minimal
+    - elegant
+    - serif
+  layout:
+    - centered
+  industry:
+    - education
+    - food
+    - ai
+freeformKeywords:
+  - landing page
+  - bakery
+  - bread
+  - artisan
+  - bread making
+  - cafe
+  - cooking
+  - baking
+  - culinary
+  - masterclass
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

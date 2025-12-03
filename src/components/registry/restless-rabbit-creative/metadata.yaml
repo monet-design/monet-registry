@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: restless-rabbit-creative
+category: contact
+images:
+  preview: agent-input/contact-form/restless-rabbit-creative.jpg
+tags:
+  functional:
+    - contact-form
+  style:
+    - light-theme
+    - minimal
+    - serif
+  industry:
+    - saas
+    - creative
+    - ai
+freeformKeywords:
+  - form
+  - inquiry
+  - message form
+  - email form
+  - send message
+  - creative agency
+  - agency contact
+  - minimal form
+  - underline input
+  - input fields
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: people-crm-showcase
+category: testimonial
+images:
+  preview: agent-input/feature-carousel/people-app.jpg
+tags:
+  functional:
+    - tabs
+  style:
+    - minimal
+    - modern
+    - playful
+    - gradient
+  industry:
+    - saas
+    - e-commerce
+    - creative
+    - ai
+freeformKeywords:
+  - crm
+  - people
+  - customer relationship management
+  - contacts
+  - leads
+  - sales
+  - recruitment
+  - fundraising
+  - support
+  - dashboard
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

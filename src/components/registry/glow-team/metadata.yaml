@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: glow-team
+category: testimonial
+images:
+  preview: agent-input/before-after/glow-team.jpg
+tags:
+  style:
+    - light-theme
+    - minimal
+    - glow
+  layout:
+    - two-column
+    - card-grid
+  industry:
+    - saas
+    - e-commerce
+    - creative
+    - startup
+    - ai
+freeformKeywords:
+  - pros cons
+  - with without
+  - feature comparison
+  - benefits
+  - advantages
+  - disadvantages
+  - checklist
+  - check mark
+  - x mark
+  - side by side
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

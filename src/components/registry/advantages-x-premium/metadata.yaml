@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: advantages-x-premium
+category: pricing
+images:
+  preview: agent-input/beautiful-sections/advantages-x-premium.png
+tags:
+  style:
+    - dark-theme
+    - elegant
+  layout:
+    - card-grid
+  industry:
+    - saas
+freeformKeywords:
+  - advantages
+  - benefits
+  - x premium
+  - twitter premium
+  - vip support
+  - supergrok
+  - profile
+  - 3 column
+  - feature cards
+  - cta button
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

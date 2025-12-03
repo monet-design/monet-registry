@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: geneva-testimonial-tweets
+category: testimonial
+images:
+  preview: /registry/geneva-testimonial-tweets/preview.png
+tags:
+  functional:
+    - carousel
+  style:
+    - light-theme
+  layout:
+    - card-grid
+  industry:
+    - saas
+freeformKeywords:
+  - twitter
+  - tweets
+  - testimonials
+  - social proof
+  - geneva
+fontFamily:
+  - Inter
+createdAt: "2025-12-02"
+status: stable

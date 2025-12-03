@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: sketch-collaborate-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/sketch-collaborate-page-section-hero.jpg
+
+freeformKeywords:
+  - collaborative
+  - design
+  - real-time
+  - cursor
+  - team
+  - sketch
+  - figma
+  - design tool
+  - saas
+  - product hero
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

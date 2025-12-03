@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: routable-payment-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/routable-payment-page-section-hero.jpg
+
+freeformKeywords:
+  - payment
+  - fintech
+  - hero
+  - banking
+  - mass payment
+  - international payment
+  - CSV
+  - money transfer
+  - financial
+  - SaaS
+  - enterprise
+  - dark mode
+  - feature cards
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

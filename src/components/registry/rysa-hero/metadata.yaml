@@ -1,0 +1,39 @@
+schemaVersion: "2.0"
+name: rysa-hero
+category: hero
+images:
+  preview: agent-input/beautiful-sections/rysa-hero.png
+tags:
+  functional:
+    - email-capture
+  style:
+    - light-theme
+    - minimal
+    - elegant
+    - serif
+  layout:
+    - two-column
+  industry:
+    - saas
+    - e-commerce
+    - creative
+    - portfolio
+    - startup
+    - fashion
+    - ai
+freeformKeywords:
+  - landing page
+  - style app
+  - serif font
+  - italic headline
+  - ASCII art
+  - halftone illustration
+  - fashion illustration
+  - two column layout
+  - mobile app
+  - decision makers
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

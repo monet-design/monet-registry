@@ -1,0 +1,22 @@
+schemaVersion: "2.0"
+name: clay-logo-cloud
+category: logo-cloud
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/logo-cloud/clay.png
+
+freeformKeywords:
+  - logo cloud
+  - client logos
+  - brand showcase
+  - social proof
+  - trust badges
+  - company logos
+  - partner showcase
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-12-02"
+status: stable

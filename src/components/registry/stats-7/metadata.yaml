@@ -1,0 +1,38 @@
+schemaVersion: "2.0"
+name: stats-7
+category: pricing
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/landingfolio-stats/stats-7.jpg
+tags:
+  functional:
+    - carousel
+    - counter
+    - newsletter
+  style:
+    - light-theme
+    - minimal
+  layout:
+    - three-column
+    - card-grid
+    - bento
+  industry:
+    - saas
+    - fintech
+    - creative
+    - startup
+    - ai
+freeformKeywords:
+  - count
+  - dashboard
+  - 430k
+  - customers
+  - subscribers
+  - transaction
+  - revenue
+  - card
+  - icon stats
+  - active customers
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

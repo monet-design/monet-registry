@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: block-themes-pro-course
+category: how-it-works
+images:
+  preview: agent-input/biography/block-themes-pro-course.jpg
+tags:
+  style:
+    - light-theme
+    - minimal
+    - serif
+  layout:
+    - two-column
+  industry:
+    - e-commerce
+    - education
+    - creative
+    - portfolio
+    - ai
+freeformKeywords:
+  - profile
+  - instructor
+  - meet the instructor
+  - online course
+  - about section
+  - teacher
+  - educator
+  - wordpress
+  - block themes
+  - gutenberg
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

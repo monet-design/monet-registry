@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: telmd-feature-carousel
+category: header
+images:
+  preview: agent-input/feature-carousel/telmd.jpg
+tags:
+  functional:
+    - carousel
+    - slider
+  industry:
+    - saas
+    - e-commerce
+    - healthcare
+freeformKeywords:
+  - dashboard
+  - goal
+  - purple
+  - violet
+  - landing
+  - pagination
+fontFamily:
+  - Playfair Display
+  - Inter
+createdAt: "2025-11-30"
+status: stable

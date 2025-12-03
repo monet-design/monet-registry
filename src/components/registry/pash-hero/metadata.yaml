@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: pash-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/pash-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - portfolio
+  - personal
+  - designer
+  - developer
+  - webflow
+  - marquee
+  - greeting
+  - introduction
+  - profile
+  - orange
+  - beige
+  - italic
+  - serif
+  - bold
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

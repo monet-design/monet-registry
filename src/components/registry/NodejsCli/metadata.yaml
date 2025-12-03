@@ -1,0 +1,31 @@
+schemaVersion: "2.0"
+name: nodejs-cli
+category: biography
+images:
+  preview: agent-input/biography/nodejs-cli.jpg
+tags:
+  style:
+    - light-theme
+    - serif
+  industry:
+    - saas
+    - fintech
+    - creative
+    - portfolio
+    - ai
+freeformKeywords:
+  - profile
+  - developer
+  - open source
+  - github
+  - nodejs
+  - javascript
+  - cli
+  - command line
+  - tedx
+  - speaker
+fontFamily:
+  - Playfair Display
+  - Inter
+createdAt: "2025-11-30"
+status: stable

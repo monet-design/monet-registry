@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: reflect-testimonial-tweets
+category: testimonial
+images:
+  preview: agent-input/testimonial-tweets/reflect.jpg
+tags:
+  functional:
+    - accordion
+  style:
+    - dark-theme
+    - elegant
+    - gradient
+  layout:
+    - three-column
+    - card-grid
+  industry:
+    - saas
+    - e-commerce
+freeformKeywords:
+  - twitter
+  - tweets
+  - reflect
+  - masonry layout
+  - grid layout
+  - 3 column
+  - purple gradient
+  - teal gradient
+  - user quotes
+  - x
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

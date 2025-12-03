@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-8
+category: cta
+images:
+  preview: agent-input/landingfolio-hero/hero-8.jpg
+tags:
+  style:
+    - dark-theme
+  layout:
+    - two-column
+    - card-grid
+  industry:
+    - saas
+    - e-commerce
+freeformKeywords:
+  - landing page
+  - no-code
+  - UI kit
+  - navigation bar
+  - primary button
+  - secondary button
+  - 3D cards
+  - floating cards
+  - perspective
+  - isometric
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: rivian-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/rivian-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - rivian
+  - electric vehicle
+  - ev
+  - automotive
+  - car
+  - fullscreen
+  - nature
+  - outdoor
+  - landscape
+  - cta
+  - lease
+  - pricing
+  - navigation
+  - minimal
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

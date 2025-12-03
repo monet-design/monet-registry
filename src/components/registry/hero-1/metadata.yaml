@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: landingfolio-hero-1
+category: testimonial
+images:
+  preview: agent-input/landingfolio-hero/hero-1.jpg
+tags:
+  style:
+    - light-theme
+    - minimal
+  industry:
+    - saas
+    - creative
+    - startup
+    - ai
+freeformKeywords:
+  - landing page
+  - email campaign
+  - email marketing
+  - dashboard preview
+  - browser mockup
+  - dual buttons
+  - primary button
+  - secondary button
+  - marketing
+  - conversion
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

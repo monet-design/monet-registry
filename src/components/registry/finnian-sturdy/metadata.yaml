@@ -1,0 +1,32 @@
+schemaVersion: "2.0"
+name: finnian-sturdy
+category: contact
+images:
+  preview: agent-input/contact-form/finnian-sturdy.jpg
+tags:
+  functional:
+    - lead-capture
+    - contact-form
+  style:
+    - light-theme
+    - minimal
+  industry:
+    - creative
+    - portfolio
+    - ai
+freeformKeywords:
+  - contact section
+  - availability
+  - booking
+  - inquiry form
+  - project inquiry
+  - scope of work
+  - minimal design
+  - gray background
+  - underline inputs
+  - textarea
+fontFamily:
+  - DM Serif Display
+  - Inter
+createdAt: "2025-11-30"
+status: stable

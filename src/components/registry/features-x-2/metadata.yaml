@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: features-x-2
+category: biography
+images:
+  preview: agent-input/beautiful-sections/features-x-2.png
+tags:
+  functional:
+    - accordion
+  style:
+    - dark-theme
+    - elegant
+  layout:
+    - card-grid
+  industry:
+    - saas
+freeformKeywords:
+  - X
+  - twitter
+  - social media
+  - analytics
+  - dashboard
+  - korean
+  - profile
+  - verification
+  - affiliates
+  - trends
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

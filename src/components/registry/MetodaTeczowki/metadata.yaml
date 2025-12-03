@@ -1,0 +1,35 @@
+schemaVersion: "2.0"
+name: metoda-teczowki
+category: biography
+images:
+  preview: agent-input/biography/metoda-teczowki.jpg
+tags:
+  functional:
+    - video
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - serif
+  layout:
+    - two-column
+    - card-grid
+  industry:
+    - e-commerce
+    - portfolio
+    - ai
+freeformKeywords:
+  - about
+  - author
+  - profile
+  - sidebar
+  - vertical text
+  - rotated text
+  - polish
+  - klosinski
+  - jacek klosinski
+  - portrait
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

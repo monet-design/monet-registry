@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: rysa-how-it-works
+category: how-it-works
+images:
+  preview: agent-input/beautiful-sections/rysa-how-it-works.png
+tags:
+  style:
+    - minimal
+    - modern
+  layout:
+    - three-column
+    - card-grid
+    - bento
+  industry:
+    - saas
+    - fashion
+freeformKeywords:
+  - how-it-works
+  - onboarding
+  - stylist
+  - app-showcase
+  - mobile-app
+  - landing-page
+  - clean
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: resend-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/resend-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - email
+  - developer
+  - api
+  - dark theme
+  - minimal
+  - SaaS
+  - startup
+  - resend
+  - transactional email
+  - 3D
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

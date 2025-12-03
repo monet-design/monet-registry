@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: chronicle-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/chronicle-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - presentation
+  - storytelling
+  - dark theme
+  - startup
+  - SaaS
+  - collaboration
+  - media logos
+  - product showcase
+  - funding announcement
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

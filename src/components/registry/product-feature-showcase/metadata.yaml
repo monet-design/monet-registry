@@ -1,0 +1,31 @@
+schemaVersion: "2.0"
+name: product-feature-showcase
+category: header
+images:
+  preview: agent-input/feature-carousel/the-other-glasses.jpg
+tags:
+  functional:
+    - carousel
+  style:
+    - minimal
+    - elegant
+    - glassmorphism
+  industry:
+    - e-commerce
+    - ai
+freeformKeywords:
+  - scroll
+  - glasses
+  - eyewear
+  - detail
+  - specification
+  - highlight
+  - sidebar
+  - sticky
+  - product-detail
+  - feature-list
+fontFamily:
+  - Playfair Display
+  - Inter
+createdAt: "2025-11-30"
+status: stable

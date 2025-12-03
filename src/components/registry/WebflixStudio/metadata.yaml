@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: webflix-studio
+category: biography
+images:
+  preview: agent-input/biography/webflix-studio.jpg
+tags:
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - gradient
+  industry:
+    - creative
+    - portfolio
+    - startup
+freeformKeywords:
+  - about
+  - about section
+  - personal introduction
+  - founder bio
+  - founder story
+  - studio introduction
+  - agency about
+  - webflow
+  - webflow studio
+  - web design agency
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

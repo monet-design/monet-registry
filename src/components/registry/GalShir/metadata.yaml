@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: gal-shir
+category: contact
+images:
+  preview: agent-input/biography/gal-shir.jpg
+tags:
+  functional:
+    - email-capture
+    - contact-form
+  style:
+    - light-theme
+    - minimal
+  layout:
+    - two-column
+  industry:
+    - creative
+    - portfolio
+    - startup
+    - ai
+freeformKeywords:
+  - profile
+  - about
+  - brand designer
+  - independent
+  - email
+  - location
+  - tel aviv
+  - israel
+  - profile image
+  - avatar
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,35 @@
+schemaVersion: "2.0"
+name: pyrismic
+category: testimonial
+images:
+  preview: agent-input/biography/pyrismic.jpg
+tags:
+  style:
+    - light-theme
+    - minimal
+    - elegant
+    - serif
+  layout:
+    - centered
+  industry:
+    - saas
+    - e-commerce
+    - creative
+    - portfolio
+    - startup
+freeformKeywords:
+  - profile
+  - founder
+  - personal story
+  - entrepreneur
+  - startup founder
+  - mint background
+  - cyan background
+  - pastel
+  - italic heading
+  - serif heading
+fontFamily:
+  - Playfair Display
+  - Inter
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: endless
+category: biography
+images:
+  preview: agent-input/biography/endless.jpg
+tags:
+  style:
+    - light-theme
+    - minimal
+  industry:
+    - creative
+    - portfolio
+freeformKeywords:
+  - about
+  - about us
+  - profile
+  - founder
+  - founder bio
+  - team member
+  - personal profile
+  - introduction
+  - designer bio
+  - agency bio
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: global-growth-platform-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/grove-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - AI
+  - clinical research
+  - healthcare
+  - carousel
+  - avatar
+  - multilingual
+  - agent
+  - medical
+  - research
+  - recruitment
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

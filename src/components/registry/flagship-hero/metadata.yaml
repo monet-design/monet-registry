@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: flagship-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/flaghsip-home-page-section-hero.jpg
+
+freeformKeywords:
+  - retail
+  - store
+  - merchandising
+  - visual merchandising
+  - ecommerce
+  - profitable
+  - insights
+  - analytics
+  - dashboard
+  - floating cards
+  - cream background
+  - purple accent
+  - serif headline
+
+fontFamily:
+  - Instrument Serif
+
+createdAt: "2025-11-30"
+status: stable

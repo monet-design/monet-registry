@@ -1,0 +1,21 @@
+schemaVersion: "2.0"
+name: ai-reading-waitlist
+category: contact
+
+images:
+  preview: agent-input/dribble-waitlist/fathom.png
+
+freeformKeywords:
+  - waitlist
+  - ai
+  - reading assistant
+  - email capture
+  - product launch
+  - clean design
+  - mobile preview
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-02"
+status: stable

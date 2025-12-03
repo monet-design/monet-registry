@@ -1,0 +1,34 @@
+schemaVersion: "2.0"
+name: obliques
+category: contact
+images:
+  preview: agent-input/contact-form/obliques.jpg
+tags:
+  functional:
+    - lead-capture
+    - contact-form
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - neon
+  layout:
+    - two-column
+  industry:
+    - creative
+freeformKeywords:
+  - meeting request
+  - lime green
+  - neon accent
+  - underline input
+  - minimal form
+  - italic heading
+  - two column layout
+  - business inquiry
+  - first meeting
+  - schedule meeting
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

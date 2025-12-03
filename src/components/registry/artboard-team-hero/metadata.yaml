@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: artboard-team-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/artboard-team-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - landing page
+  - design tool
+  - creative automation
+  - team
+  - logo cloud
+  - trust badges
+  - beige background
+  - serif font
+  - illustration
+  - SaaS
+  - marketing
+  - artboard
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

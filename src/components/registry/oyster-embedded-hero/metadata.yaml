@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: oyster-embedded-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/oyster-embedded-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - landing
+  - minimal
+  - typography
+  - serif
+  - italic
+  - pink accent
+  - global talent
+  - embedded
+  - white background
+  - arrow decoration
+  - cta button
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

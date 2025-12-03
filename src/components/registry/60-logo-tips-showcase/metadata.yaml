@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: logo-tips-showcase
+category: pricing
+images:
+  preview: agent-input/beautiful-sections/60-logo-tips-showcase.png
+tags:
+  functional:
+    - carousel
+  style:
+    - minimal
+  layout:
+    - three-column
+    - card-grid
+    - inline
+  industry:
+    - e-commerce
+    - creative
+    - portfolio
+freeformKeywords:
+  - logo
+  - brand
+  - branding
+  - mockup
+  - horizontal-scroll
+  - company
+  - client
+  - work
+  - case-study
+  - impact
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

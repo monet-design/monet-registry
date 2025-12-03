@@ -1,0 +1,23 @@
+schemaVersion: "2.0"
+name: ui-magic-logo-grid
+category: logo-cloud
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/logo-cloud/ui-magic.png
+
+freeformKeywords:
+  - logo
+  - grid
+  - testimonial
+  - partners
+  - brands
+  - trusted
+  - industry
+  - leaders
+  - social proof
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-02"
+status: stable

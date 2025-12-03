@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: serge-tiutyk-biography
+category: biography
+images:
+  preview: agent-input/biography/serge-tiutyk.jpg
+tags:
+  functional:
+    - slider
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - elegant
+  layout:
+    - two-column
+  industry:
+    - creative
+    - portfolio
+freeformKeywords:
+  - about
+  - about section
+  - personal bio
+  - designer bio
+  - profile
+  - introduction
+  - polaroid
+  - photo frame
+  - photo slider
+  - pagination dots
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

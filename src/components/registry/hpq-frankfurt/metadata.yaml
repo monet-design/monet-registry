@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: hpq-frankfurt
+category: contact
+images:
+  preview: agent-input/contact-form/hpq-frankfurt.jpg
+tags:
+  functional:
+    - contact-form
+  style:
+    - light-theme
+    - minimal
+    - elegant
+    - serif
+  layout:
+    - two-column
+  industry:
+    - ai
+freeformKeywords:
+  - contact page
+  - minimal form
+  - elegant form
+  - beige background
+  - warm background
+  - underline inputs
+  - minimal inputs
+  - paper airplane
+  - send message
+  - message form
+fontFamily:
+  - Playfair Display
+  - Inter
+createdAt: "2025-11-30"
+status: stable

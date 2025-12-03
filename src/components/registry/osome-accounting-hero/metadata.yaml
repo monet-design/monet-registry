@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: osome-accounting-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/osome-accounting-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - accounting
+  - finance
+  - testimonial
+  - video
+  - review
+  - google reviews
+  - breadcrumb
+  - cta
+  - two column
+  - saas
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

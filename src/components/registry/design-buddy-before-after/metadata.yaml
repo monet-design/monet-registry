@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: design-buddy-before-after
+category: testimonial
+images:
+  preview: agent-input/before-after/design-buddy.jpg
+tags:
+  style:
+    - light-theme
+  layout:
+    - two-column
+    - stack
+  industry:
+    - saas
+    - creative
+    - ai
+freeformKeywords:
+  - before and after
+  - design feedback
+  - design review
+  - design audit
+  - ui feedback
+  - ux review
+  - accessibility score
+  - layout score
+  - typography score
+  - color score
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

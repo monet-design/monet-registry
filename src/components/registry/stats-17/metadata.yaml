@@ -1,0 +1,33 @@
+schemaVersion: "2.0"
+name: stats-17
+category: stats
+images:
+  preview: agent-input/landingfolio-stats/stats-17.jpg
+tags:
+  style:
+    - dark-theme
+    - modern
+    - glassmorphism
+    - glow
+    - serif
+  layout:
+    - three-column
+    - card-grid
+  industry:
+    - ai
+freeformKeywords:
+  - facts
+  - light effect
+  - blue glow
+  - three columns
+  - grid layout
+  - card container
+  - rounded container
+  - border
+  - divider
+  - vertical divider
+fontFamily:
+  - Inter
+  - Instrument Serif
+createdAt: "2025-11-30"
+status: stable

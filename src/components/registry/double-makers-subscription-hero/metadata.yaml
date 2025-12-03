@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: double-makers-subscription-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero/double-makers-subscription-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - subscription
+  - design agency
+  - dark theme
+  - abstract shapes
+  - trial
+  - CTA
+  - pricing
+  - design partner
+  - brand
+  - gradient background
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-11-30"
+status: stable

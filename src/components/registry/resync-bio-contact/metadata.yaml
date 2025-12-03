@@ -1,0 +1,35 @@
+schemaVersion: "2.0"
+name: resync-bio-contact
+category: contact
+images:
+  preview: agent-input/contact-form/resync-bio.jpg
+tags:
+  functional:
+    - email-capture
+    - lead-capture
+    - contact-form
+  style:
+    - light-theme
+    - minimal
+  layout:
+    - centered
+  industry:
+    - saas
+    - creative
+    - startup
+    - ai
+freeformKeywords:
+  - form
+  - email form
+  - message form
+  - inquiry form
+  - sync
+  - resync
+  - submit form
+  - first name
+  - last name
+  - message textarea
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

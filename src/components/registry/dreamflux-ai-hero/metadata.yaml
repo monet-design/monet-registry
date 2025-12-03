@@ -1,0 +1,37 @@
+schemaVersion: "2.0"
+name: dreamflux-ai-hero
+category: testimonial
+images:
+  preview: agent-input/dribble-hero/dreamflux-ai.png
+tags:
+  functional:
+    - email-capture
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - serif
+  layout:
+    - two-column
+    - card-grid
+  industry:
+    - saas
+    - creative
+    - startup
+    - ai
+    - crypto
+freeformKeywords:
+  - image generation
+  - text to image
+  - landing page
+  - image grid
+  - design tool
+  - user avatars
+  - clean
+  - dreamflux
+  - visuals
+  - stunning
+fontFamily:
+  - Inter
+createdAt: "2025-11-30"
+status: stable

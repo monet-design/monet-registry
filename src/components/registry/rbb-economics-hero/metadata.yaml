@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: rbb-economics-hero
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/rbbecon-home-page-section-hero.jpg
+
+freeformKeywords:
+  - hero
+  - economics
+  - consulting
+  - professional
+  - corporate
+  - dark
+  - teal
+  - serif
+  - business
+  - finance
+  - global
+  - office
+  - team
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-01"
+status: stable

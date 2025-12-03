@@ -1,0 +1,31 @@
+schemaVersion: "2.0"
+name: hyve-systems
+category: contact
+images:
+  preview: agent-input/contact-form/hyve-systems.jpg
+tags:
+  functional:
+    - lead-capture
+    - contact-form
+  style:
+    - serif
+  layout:
+    - two-column
+  industry:
+    - ai
+freeformKeywords:
+  - discovery call
+  - AI business
+  - consultation
+  - calendly
+  - sales contact
+  - booking form
+  - business inquiry
+  - green
+  - teal
+  - serif heading
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

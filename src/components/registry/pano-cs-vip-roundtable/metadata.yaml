@@ -1,0 +1,37 @@
+schemaVersion: "2.0"
+name: pano-cs-vip-roundtable
+category: contact
+images:
+  preview: agent-input/contact-form/pano-cs-vip-roundtable.jpg
+tags:
+  functional:
+    - tabs
+    - lead-capture
+    - contact-form
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - neon
+    - serif
+  layout:
+    - centered
+  industry:
+    - saas
+    - creative
+freeformKeywords:
+  - registration form
+  - VIP roundtable
+  - customer success
+  - event registration
+  - webinar signup
+  - discussion signup
+  - enterprise form
+  - B2B form
+  - green gradient
+  - neon green
+fontFamily:
+  - Instrument Serif
+  - Inter
+createdAt: "2025-11-30"
+status: stable

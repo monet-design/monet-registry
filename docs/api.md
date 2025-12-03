@@ -87,6 +87,7 @@ GET /api/v1/components/search
 | query | string | - | `""` | 검색어 |
 | category | string | - | - | 카테고리 필터 |
 | limit | number | - | `10` | 결과 개수 (최대 50) |
+| offset | number | - | `0` | 건너뛸 결과 수 (페이지네이션) |
 | functional | string | - | - | 기능 태그 (쉼표 구분) |
 | style | string | - | - | 스타일 태그 (쉼표 구분) |
 | layout | string | - | - | 레이아웃 태그 (쉼표 구분) |
@@ -99,6 +100,9 @@ GET /api/v1/components/search
   "success": true,
   "query": "hero modern",
   "total": 5,
+  "offset": 0,
+  "limit": 10,
+  "hasNext": false,
   "elapsed_ms": 12,
   "results": [
     {
@@ -129,6 +133,81 @@ curl "https://registry.monet.design/api/v1/components/search?category=hero&style
 
 # 복합 검색
 curl "https://registry.monet.design/api/v1/components/search?query=pricing&industry=saas&limit=20"
+```
+
+#### Caching
+
+```
+Cache-Control: public, s-maxage=300, stale-while-revalidate=600
+```
+
+---
+
+### List Components
+
+컴포넌트 목록을 조회합니다. 검색어 없이 필터링과 페이지네이션을 지원합니다.
+
+```
+GET /api/v1/components
+```
+
+#### Query Parameters
+
+| 파라미터 | 타입 | 필수 | 기본값 | 설명 |
+|----------|------|------|--------|------|
+| limit | number | - | `20` | 결과 개수 (최대 50) |
+| offset | number | - | `0` | 건너뛸 결과 수 (페이지네이션) |
+| category | string | - | - | 카테고리 필터 |
+| status | string | - | - | 상태 필터 (stable, draft, deprecated) |
+| functional | string | - | - | 기능 태그 (쉼표 구분) |
+| style | string | - | - | 스타일 태그 (쉼표 구분) |
+| layout | string | - | - | 레이아웃 태그 (쉼표 구분) |
+| industry | string | - | - | 산업 태그 (쉼표 구분) |
+
+#### Response
+
+```json
+{
+  "success": true,
+  "pagination": {
+    "total": 120,
+    "offset": 0,
+    "limit": 20,
+    "hasNext": true
+  },
+  "components": [
+    {
+      "id": "hero-gradient-01",
+      "name": "hero-gradient-01",
+      "category": "hero",
+      "preview_image": "/images/hero-gradient-01.png",
+      "tags": {
+        "functional": ["cta", "headline"],
+        "style": ["modern", "gradient"],
+        "layout": ["centered"],
+        "industry": ["saas", "tech"]
+      },
+      "status": "stable",
+      "created_at": "2024-01-15T00:00:00.000Z"
+    }
+  ]
+}
+```
+
+#### Example
+
+```bash
+# 전체 목록 (첫 20개)
+curl "https://registry.monet.design/api/v1/components"
+
+# 카테고리 필터링
+curl "https://registry.monet.design/api/v1/components?category=hero"
+
+# 페이지네이션
+curl "https://registry.monet.design/api/v1/components?offset=20&limit=20"
+
+# 복합 필터링
+curl "https://registry.monet.design/api/v1/components?category=hero&style=modern,gradient&limit=10"
 ```
 
 #### Caching
@@ -338,6 +417,70 @@ Cache-Control: public, s-maxage=3600, stale-while-revalidate=7200
 
 ---
 
+### Get Filters
+
+사용 가능한 필터링 옵션과 각 옵션별 컴포넌트 개수를 조회합니다.
+
+```
+GET /api/v1/filters
+```
+
+#### Response
+
+```json
+{
+  "success": true,
+  "categories": [
+    { "value": "hero", "label": "Hero", "count": 45 },
+    { "value": "feature", "label": "Feature", "count": 38 }
+  ],
+  "tags": {
+    "functional": [
+      { "value": "animation", "label": "Animation", "count": 52 },
+      { "value": "carousel", "label": "Carousel", "count": 23 }
+    ],
+    "style": [
+      { "value": "minimal", "label": "Minimal", "count": 89 }
+    ],
+    "layout": [
+      { "value": "centered", "label": "Centered", "count": 120 }
+    ],
+    "industry": [
+      { "value": "saas", "label": "Saas", "count": 67 }
+    ]
+  },
+  "status": [
+    { "value": "stable", "label": "Stable", "count": 380 },
+    { "value": "draft", "label": "Draft", "count": 10 }
+  ]
+}
+```
+
+| 필드 | 설명 |
+|------|------|
+| categories | 카테고리 필터 옵션 목록 |
+| tags.functional | 기능 태그 필터 옵션 목록 |
+| tags.style | 스타일 태그 필터 옵션 목록 |
+| tags.layout | 레이아웃 태그 필터 옵션 목록 |
+| tags.industry | 산업 태그 필터 옵션 목록 |
+| status | 상태 필터 옵션 목록 |
+
+각 필터 옵션에는 `value` (API 파라미터 값), `label` (표시용 이름), `count` (해당 필터를 가진 컴포넌트 수)가 포함됩니다.
+
+#### Example
+
+```bash
+curl "https://registry.monet.design/api/v1/filters"
+```
+
+#### Caching
+
+```
+Cache-Control: public, s-maxage=3600, stale-while-revalidate=7200
+```
+
+---
+
 ### Get Registry Stats
 
 컴포넌트 레지스트리의 전체 통계를 조회합니다.
@@ -463,8 +606,14 @@ const getComponentCode = async (id) => {
 # Health check
 curl https://registry.monet.design/api/health
 
-# 컴포넌트 검색
-curl "https://registry.monet.design/api/v1/components/search?query=hero&limit=5"
+# 컴포넌트 검색 (페이지네이션 포함)
+curl "https://registry.monet.design/api/v1/components/search?query=hero&limit=10&offset=0"
+
+# 컴포넌트 목록 조회
+curl "https://registry.monet.design/api/v1/components?limit=20&offset=0"
+
+# 필터링과 함께 목록 조회
+curl "https://registry.monet.design/api/v1/components?category=hero&style=modern"
 
 # 컴포넌트 상세 조회
 curl https://registry.monet.design/api/v1/components/hero-gradient-01
@@ -474,6 +623,9 @@ curl https://registry.monet.design/api/v1/components/hero-gradient-01/code
 
 # 카테고리 목록
 curl https://registry.monet.design/api/v1/categories
+
+# 필터링 옵션 조회
+curl https://registry.monet.design/api/v1/filters
 
 # 통계 조회
 curl https://registry.monet.design/api/v1/stats

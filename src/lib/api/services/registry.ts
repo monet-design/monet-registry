@@ -90,3 +90,79 @@ export async function getCategoryIndex() {
 export async function getTagIndex() {
   return loadTagIndex();
 }
+
+/**
+ * Options for listing components
+ */
+export interface ListComponentsOptions {
+  category?: string;
+  status?: string;
+  tags?: {
+    functional?: string[];
+    style?: string[];
+    layout?: string[];
+    industry?: string[];
+  };
+  offset?: number;
+  limit?: number;
+}
+
+/**
+ * List components with filtering and pagination
+ */
+export async function listComponents(
+  options: ListComponentsOptions = {}
+): Promise<{ components: RegistryEntry[]; total: number }> {
+  const { category, status, tags, offset = 0, limit = 20 } = options;
+
+  let components = await getAllComponents();
+
+  // Apply category filter
+  if (category) {
+    components = components.filter((c) => c.category === category);
+  }
+
+  // Apply status filter
+  if (status) {
+    components = components.filter((c) => c.status === status);
+  }
+
+  // Apply tag filters (AND logic - component must have all specified tags)
+  if (tags?.functional?.length) {
+    components = components.filter((c) =>
+      tags.functional!.every((t) => c.tags.functional.includes(t))
+    );
+  }
+
+  if (tags?.style?.length) {
+    components = components.filter((c) =>
+      tags.style!.every((t) => c.tags.style.includes(t))
+    );
+  }
+
+  if (tags?.layout?.length) {
+    components = components.filter((c) =>
+      tags.layout!.every((t) => c.tags.layout.includes(t))
+    );
+  }
+
+  if (tags?.industry?.length) {
+    components = components.filter((c) =>
+      tags.industry!.every((t) => c.tags.industry.includes(t))
+    );
+  }
+
+  const total = components.length;
+
+  // Sort by createdAt (newest first)
+  components.sort((a, b) => {
+    const dateA = a.createdAt ? new Date(a.createdAt).getTime() : 0;
+    const dateB = b.createdAt ? new Date(b.createdAt).getTime() : 0;
+    return dateB - dateA;
+  });
+
+  // Apply pagination
+  const paginated = components.slice(offset, offset + limit);
+
+  return { components: paginated, total };
+}

@@ -31,11 +31,22 @@ export interface RegistryEntry {
   status: string;
 }
 
+// Pagination metadata
+export interface PaginationMeta {
+  total: number;
+  offset: number;
+  limit: number;
+  hasNext: boolean;
+}
+
 // Search Components Response
 export interface SearchComponentsResponse {
   success: true;
   query: string;
   total: number;
+  offset: number;
+  limit: number;
+  hasNext: boolean;
   elapsed_ms: number;
   results: ComponentSearchResult[];
   suggestions?: {
@@ -172,4 +183,45 @@ export interface ErrorResponse {
     suggestions?: string[];
     similar_ids?: string[];
   };
+}
+
+// List Components Response
+export interface ListComponentsResponse {
+  success: true;
+  pagination: PaginationMeta;
+  components: ComponentListItem[];
+}
+
+export interface ComponentListItem {
+  id: string;
+  name: string;
+  category: string;
+  preview_image: string;
+  tags: {
+    functional: string[];
+    style: string[];
+    layout: string[];
+    industry: string[];
+  };
+  status: string;
+  created_at?: string;
+}
+
+// Get Filters Response
+export interface GetFiltersResponse {
+  success: true;
+  categories: FilterOption[];
+  tags: {
+    functional: FilterOption[];
+    style: FilterOption[];
+    layout: FilterOption[];
+    industry: FilterOption[];
+  };
+  status: FilterOption[];
+}
+
+export interface FilterOption {
+  value: string;
+  label: string;
+  count: number;
 }

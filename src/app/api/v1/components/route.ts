@@ -1,20 +1,21 @@
 import { NextRequest, NextResponse } from "next/server";
-import { searchComponents } from "@/lib/api/services/search";
-import type {
-  SearchComponentsResponse,
-  ErrorResponse,
-} from "@/lib/api/types";
+import { listComponents } from "@/lib/api/services/registry";
+import type { ListComponentsResponse, ErrorResponse } from "@/lib/api/types";
 
 export async function GET(request: NextRequest) {
   try {
     const searchParams = request.nextUrl.searchParams;
-    const query = searchParams.get("query") || "";
-    const category = searchParams.get("category") || undefined;
+
+    // Pagination
     const limit = Math.min(
-      Math.max(parseInt(searchParams.get("limit") || "10"), 1),
+      Math.max(parseInt(searchParams.get("limit") || "20"), 1),
       50
     );
     const offset = Math.max(parseInt(searchParams.get("offset") || "0"), 0);
+
+    // Filters
+    const category = searchParams.get("category") || undefined;
+    const status = searchParams.get("status") || undefined;
 
     // Parse comma-separated tags
     const parseTags = (value: string | null): string[] | undefined => {
@@ -34,38 +35,31 @@ export async function GET(request: NextRequest) {
 
     const hasAnyTags = Object.values(tags).some((v) => v && v.length > 0);
 
-    const result = await searchComponents({
-      query,
+    const { components, total } = await listComponents({
       category,
+      status,
       tags: hasAnyTags ? tags : undefined,
-      limit,
       offset,
+      limit,
     });
 
-    const response: SearchComponentsResponse = {
+    const response: ListComponentsResponse = {
       success: true,
-      query,
-      total: result.total,
-      offset,
-      limit,
-      hasNext: offset + result.hits.length < result.total,
-      elapsed_ms: result.elapsed,
-      results: result.hits.map((hit) => {
-        const doc = hit.document;
-        return {
-          id: doc.id,
-          name: doc.name,
-          category: doc.category,
-          preview_image: doc.previewImage,
-          tags: {
-            functional: doc.functionalTags,
-            style: doc.styleTags,
-            layout: doc.layoutTags,
-            industry: doc.industryTags,
-          },
-          keywords: doc.freeformKeywords,
-        };
-      }),
+      pagination: {
+        total,
+        offset,
+        limit,
+        hasNext: offset + components.length < total,
+      },
+      components: components.map((c) => ({
+        id: c.id,
+        name: c.name,
+        category: c.category,
+        preview_image: c.images.preview,
+        tags: c.tags,
+        status: c.status,
+        created_at: c.createdAt,
+      })),
     };
 
     return NextResponse.json(response, {

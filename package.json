@@ -16,7 +16,8 @@
     "prebuild": "pnpm metadata:build",
     "screenshot:server": "cd screenshot-server && pnpm dev",
     "screenshot:capture": "tsx scripts/screenshot/cli.ts",
-    "screenshot:all": "tsx scripts/screenshot/cli.ts --all"
+    "screenshot:all": "tsx scripts/screenshot/cli.ts --all",
+    "screenshot:reset": "tsx scripts/screenshot/reset.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^4",

@@ -1,221 +1,177 @@
-#!/usr/bin/env tsx
-import * as path from "path";
+import * as fs from 'fs';
+import * as path from 'path';
+import { ScreenshotQueue } from './queue';
+import { loadState, saveState, isCompleted, markCompleted, ScreenshotState } from './state';
 import {
-  ScreenshotCapture,
-  getComponentList,
-  defaultViewports,
-  Viewport,
-} from "./capture";
+  initBrowser,
+  createTabs,
+  closeBrowser,
+  TabWorker,
+  CONFIG,
+} from './browser';
+import { captureComponent, CaptureResult } from './screenshot';
 
-interface CLIOptions {
-  component?: string;
-  components?: string[];
-  all?: boolean;
-  viewports: Viewport[];
-  baseUrl: string;
-  outputDir: string;
-  waitTime: number;
-  concurrency: number;
+interface FailedCapture {
+  componentId: string;
+  error: string;
+  timestamp: string;
 }
 
-function parseArgs(): CLIOptions {
+interface CliOptions {
+  all: boolean;
+  concurrency: number;
+  component?: string;
+}
+
+function parseArgs(): CliOptions {
   const args = process.argv.slice(2);
-  const options: CLIOptions = {
-    viewports: defaultViewports,
-    baseUrl: "http://localhost:4173",
-    outputDir: path.resolve(process.cwd(), "../screenshots"),
-    waitTime: 1500,
-    concurrency: 3,
+  const options: CliOptions = {
+    all: false,
+    concurrency: CONFIG.TAB_COUNT,
   };
 
-  for (let i = 0; i < args.length; i++) {
-    const arg = args[i];
-    const value = args[i + 1];
-
-    switch (arg) {
-      case "--component":
-      case "-c":
-        options.component = value;
-        i++;
-        break;
-
-      case "--components":
-        options.components = value.split(",").map((s) => s.trim());
-        i++;
-        break;
-
-      case "--all":
-      case "-a":
-        options.all = true;
-        break;
-
-      case "--viewport":
-      case "-v":
-        if (value === "desktop") {
-          options.viewports = [defaultViewports[0]];
-        } else if (value === "mobile") {
-          options.viewports = [defaultViewports[1]];
-        }
-        i++;
-        break;
-
-      case "--url":
-      case "-u":
-        options.baseUrl = value;
-        i++;
-        break;
-
-      case "--output":
-      case "-o":
-        options.outputDir = path.resolve(process.cwd(), value);
-        i++;
-        break;
-
-      case "--wait":
-      case "-w":
-        options.waitTime = parseInt(value, 10);
-        i++;
-        break;
-
-      case "--concurrency":
-        options.concurrency = parseInt(value, 10);
-        i++;
-        break;
-
-      case "--help":
-      case "-h":
-        printHelp();
-        process.exit(0);
+  for (const arg of args) {
+    if (arg === '--all') {
+      options.all = true;
+    } else if (arg.startsWith('--concurrency=')) {
+      const value = parseInt(arg.split('=')[1], 10);
+      if (!isNaN(value) && value > 0) {
+        options.concurrency = value;
+      }
+    } else if (arg.startsWith('--component=')) {
+      options.component = arg.split('=')[1];
     }
   }
 
   return options;
 }
 
-function printHelp(): void {
-  console.log(`
-Component Screenshot CLI
+function loadComponentIds(): string[] {
+  const registryPath = path.join(__dirname, '../../dist/registry.json');
 
-Usage:
-  pnpm capture [options]
+  if (!fs.existsSync(registryPath)) {
+    console.error('Error: dist/registry.json not found. Run "pnpm run generate-registry" first.');
+    process.exit(1);
+  }
 
-Options:
-  -c, --component <name>     Capture a single component
-  --components <list>        Capture multiple components (comma-separated)
-  -a, --all                  Capture all components
-  -v, --viewport <type>      Viewport type: desktop, mobile (default: both)
-  -u, --url <url>            Base URL (default: http://localhost:4173)
-  -o, --output <dir>         Output directory (default: ../screenshots)
-  -w, --wait <ms>            Wait time for animations (default: 1500)
-  --concurrency <n>          Number of concurrent captures (default: 3)
-  -h, --help                 Show this help message
+  const data = fs.readFileSync(registryPath, 'utf-8');
+  const registry = JSON.parse(data);
 
-Examples:
-  pnpm capture --components stats-1,feature-tabs
-  pnpm capture --all
-`);
+  // registry는 객체 형태: { "component-id": { id: "component-id", ... }, ... }
+  return Object.keys(registry);
+}
+
+async function processQueue(
+  queue: ScreenshotQueue,
+  workers: TabWorker[],
+  state: ScreenshotState,
+  failures: FailedCapture[]
+): Promise<void> {
+  let completedCount = 0;
+  const totalCount = queue.size();
+  const worker = workers[0]; // 단일 탭 사용
+
+  // 순차 처리: 하나씩 차례대로 캡처
+  while (!queue.isEmpty()) {
+    const componentId = queue.dequeue();
+    if (!componentId) break;
+
+    const result: CaptureResult = await captureComponent(worker.page, componentId);
+
+    if (result.success && result.path) {
+      markCompleted(state, componentId, result.path);
+      saveState(state);
+      completedCount++;
+      console.log(`[${completedCount}/${totalCount}] ✓ ${componentId}`);
+    } else {
+      failures.push({
+        componentId,
+        error: result.error || 'Unknown error',
+        timestamp: new Date().toISOString(),
+      });
+      console.log(`[${completedCount}/${totalCount}] ✗ ${componentId}: ${result.error}`);
+    }
+  }
 }
 
 async function main(): Promise<void> {
   const options = parseArgs();
-  const registryPath = path.resolve(
-    process.cwd(),
-    "../src/components/registry"
-  );
 
-  // 캡처할 컴포넌트 목록 결정
-  let components: string[] = [];
-
+  console.log('='.repeat(50));
+  console.log('Screenshot Capture Script');
+  console.log('='.repeat(50));
+  console.log(`Concurrency: ${options.concurrency} tabs`);
+  console.log(`Mode: ${options.all ? 'Capture all (ignore state)' : 'Incremental'}`);
   if (options.component) {
-    components = [options.component];
-  } else if (options.components) {
-    components = options.components;
-  } else if (options.all) {
-    console.log("Fetching component list...");
-    components = await getComponentList(registryPath);
+    console.log(`Target: ${options.component}`);
+  }
+  console.log('='.repeat(50));
+
+  // 1. Load component IDs
+  let componentIds: string[];
+  if (options.component) {
+    componentIds = [options.component];
   } else {
-    console.error(
-      "Error: Specify a component with -c, --components, or --all"
-    );
-    printHelp();
-    process.exit(1);
+    componentIds = loadComponentIds();
+  }
+  console.log(`Found ${componentIds.length} components in registry`);
+
+  // 2. Load state
+  const state = options.all ? { completed: {} } : loadState();
+  console.log(`Already captured: ${Object.keys(state.completed).length} components`);
+
+  // 3. Filter uncaptured components
+  const uncaptured = componentIds.filter((id) => !isCompleted(state, id));
+  console.log(`To capture: ${uncaptured.length} components`);
+
+  if (uncaptured.length === 0) {
+    console.log('All components already captured. Use --all to recapture.');
+    return;
   }
 
-  console.log(`\nCapturing ${components.length} component(s)...`);
-  console.log(`Base URL: ${options.baseUrl}`);
-  console.log(`Output: ${options.outputDir}`);
-  console.log(
-    `Viewports: ${options.viewports.map((v) => v.name).join(", ")}`
-  );
-  console.log(`Wait time: ${options.waitTime}ms`);
-  console.log("");
+  // 4. Initialize queue
+  const queue = new ScreenshotQueue();
+  queue.enqueueAll(uncaptured);
 
-  const capture = new ScreenshotCapture();
+  // 5. Initialize browser
+  console.log('\nStarting browser...');
+  const browser = await initBrowser();
 
-  try {
-    await capture.initialize();
-    console.log("Browser initialized\n");
+  // 6. Create tabs
+  console.log(`Creating ${options.concurrency} tabs...`);
+  const workers = await createTabs(browser, options.concurrency);
 
-    const startTime = Date.now();
+  // 7. Process queue
+  const failures: FailedCapture[] = [];
+  console.log('\nStarting capture...\n');
 
-    if (components.length === 1) {
-      // 단일 컴포넌트
-      const component = components[0];
-      console.log(`Capturing: ${component}`);
+  const startTime = Date.now();
+  await processQueue(queue, workers, state, failures);
+  const duration = ((Date.now() - startTime) / 1000).toFixed(1);
 
-      const screenshots = await capture.captureComponent({
-        component,
-        baseUrl: options.baseUrl,
-        outputDir: options.outputDir,
-        viewports: options.viewports,
-        waitTime: options.waitTime,
-      });
+  // 8. Close browser
+  console.log('\nClosing browser...');
+  await closeBrowser(browser);
 
-      console.log(`  Saved ${screenshots.length} screenshot(s):`);
-      for (const screenshot of screenshots) {
-        console.log(`    - ${screenshot}`);
-      }
-    } else {
-      // 여러 컴포넌트
-      const results = await capture.captureMultiple(
-        components,
-        {
-          baseUrl: options.baseUrl,
-          outputDir: options.outputDir,
-          viewports: options.viewports,
-          waitTime: options.waitTime,
-        },
-        options.concurrency
-      );
+  // 9. Print summary
+  console.log('\n' + '='.repeat(50));
+  console.log('Summary');
+  console.log('='.repeat(50));
+  console.log(`Duration: ${duration}s`);
+  console.log(`Captured: ${uncaptured.length - failures.length}`);
+  console.log(`Failed: ${failures.length}`);
 
-      let successCount = 0;
-      let totalScreenshots = 0;
-
-      for (const [component, screenshots] of results) {
-        successCount++;
-        totalScreenshots += screenshots.length;
-        console.log(`✓ ${component} (${screenshots.length} screenshots)`);
-      }
-
-      const failedCount = components.length - successCount;
-      console.log(
-        `\nCompleted: ${successCount}/${components.length} components`
-      );
-      console.log(`Total screenshots: ${totalScreenshots}`);
-
-      if (failedCount > 0) {
-        console.log(`Failed: ${failedCount}`);
-      }
+  if (failures.length > 0) {
+    console.log('\nFailed components:');
+    for (const failure of failures) {
+      console.log(`  - ${failure.componentId}: ${failure.error}`);
     }
-
-    const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
-    console.log(`\nDone in ${elapsed}s`);
-  } catch (error) {
-    console.error("Error:", error);
-    process.exit(1);
-  } finally {
-    await capture.close();
   }
+
+  console.log('\nDone!');
 }
 
-main();
+main().catch((error) => {
+  console.error('Fatal error:', error);
+  process.exit(1);
+});

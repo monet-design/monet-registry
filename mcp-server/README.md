@@ -48,7 +48,7 @@ cp .env.example .env
 | --------------- | ------------------ | --------------------------- |
 | API_KEY         | 인증용 API 키      | (설정 안하면 인증 비활성화) |
 | PORT            | 서버 포트          | 3001                        |
-| REGISTRY_PATH   | registry.json 경로 | ../dist/registry.json       |
+| REGISTRY_PATH   | registry.json 경로 | ../public/generated/registry.json |
 | COMPONENTS_PATH | 컴포넌트 소스 경로 | ../src/components/registry  |
 
 ## 엔드포인트
@@ -121,7 +121,7 @@ docker build -t landing-components-mcp .
 ```bash
 docker run -p 3001:3001 \
   -e API_KEY=your-secret-key \
-  -v $(pwd)/../dist:/app/data \
+  -v $(pwd)/../public/generated:/app/data \
   -v $(pwd)/../src/components/registry:/app/components \
   landing-components-mcp
 ```

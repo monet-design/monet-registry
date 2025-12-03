@@ -85,9 +85,9 @@ function buildSearchableText(metadata: MetadataYaml): string {
 
 async function main() {
   const registryDir = path.join(process.cwd(), "src/components/registry");
-  const outputDir = path.join(process.cwd(), "dist");
+  const outputDir = path.join(process.cwd(), "public/generated");
 
-  // dist 디렉토리 생성
+  // public/generated 디렉토리 생성
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
   }

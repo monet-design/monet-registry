@@ -118,10 +118,13 @@ async function loadAndIndexRegistry(): Promise<{
   db: Orama<any>;
   entries: RegistryEntry[];
 }> {
-  const registryPath = path.join(process.cwd(), "dist/registry.json");
+  const registryPath = path.join(
+    process.cwd(),
+    "public/generated/registry.json"
+  );
 
   if (!fs.existsSync(registryPath)) {
-    console.error("Error: dist/registry.json not found.");
+    console.error("Error: public/generated/registry.json not found.");
     console.error("Run 'pnpm metadata:build' first.");
     process.exit(1);
   }

@@ -4,12 +4,18 @@ import fs from "fs/promises";
 import path from "path";
 import type { RegistryEntry } from "../types";
 
-const REGISTRY_PATH = path.join(process.cwd(), "dist/registry.json");
+const REGISTRY_PATH = path.join(
+  process.cwd(),
+  "public/generated/registry.json"
+);
 const CATEGORY_INDEX_PATH = path.join(
   process.cwd(),
-  "dist/category-index.json"
+  "public/generated/category-index.json"
 );
-const TAG_INDEX_PATH = path.join(process.cwd(), "dist/tag-index.json");
+const TAG_INDEX_PATH = path.join(
+  process.cwd(),
+  "public/generated/tag-index.json"
+);
 
 /**
  * Load registry data with 1-hour cache

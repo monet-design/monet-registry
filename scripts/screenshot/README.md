@@ -101,7 +101,7 @@ scripts/screenshot/
 
 ## 동작 방식
 
-1. `dist/registry.json`에서 컴포넌트 목록 로드
+1. `public/generated/registry.json`에서 컴포넌트 목록 로드
 2. `screenshot-state.json`에서 이미 촬영된 목록 확인
 3. 미촬영 컴포넌트만 FIFO 큐에 추가
 4. Puppeteer 브라우저 시작 (visible 모드)

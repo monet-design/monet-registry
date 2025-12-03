@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: agency-hero-with-showcase
-category: feature-showcase
+category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/grove-prm-page-section-hero.jpg

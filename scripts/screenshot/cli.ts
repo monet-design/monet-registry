@@ -52,10 +52,15 @@ function parseArgs(): CliOptions {
 }
 
 function loadComponentIds(): string[] {
-  const registryPath = path.join(__dirname, '../../dist/registry.json');
+  const registryPath = path.join(
+    __dirname,
+    "../../public/generated/registry.json"
+  );
 
   if (!fs.existsSync(registryPath)) {
-    console.error('Error: dist/registry.json not found. Run "pnpm run generate-registry" first.');
+    console.error(
+      'Error: public/generated/registry.json not found. Run "pnpm metadata:build" first.'
+    );
     process.exit(1);
   }
 

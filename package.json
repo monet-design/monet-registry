@@ -13,11 +13,13 @@
     "metadata:search": "tsx scripts/search-metadata.ts",
     "metadata:query": "tsx scripts/query-metadata.ts",
     "metadata:stats": "tsx scripts/stats-metadata.ts",
-    "prebuild": "pnpm metadata:build",
+    "prebuild": "pnpm metadata:build && pnpm registry:build",
     "screenshot:server": "cd screenshot-server && pnpm dev",
     "screenshot:capture": "tsx scripts/screenshot/cli.ts",
     "screenshot:all": "tsx scripts/screenshot/cli.ts --all",
-    "screenshot:reset": "tsx scripts/screenshot/reset.ts"
+    "screenshot:reset": "tsx scripts/screenshot/reset.ts",
+    "registry:generate": "tsx scripts/generate-shadcn-registry.ts",
+    "registry:build": "pnpm registry:generate && shadcn build"
   },
   "dependencies": {
     "@hookform/resolvers": "^4",
@@ -61,6 +63,7 @@
     "eslint-config-next": "15.1.0",
     "postcss": "^8",
     "puppeteer": "^24.31.0",
+    "shadcn": "^3.5.1",
     "tailwind-merge": "^2.5.2",
     "tailwindcss": "^4.1.17",
     "tailwindcss-animate": "^1.0.7",

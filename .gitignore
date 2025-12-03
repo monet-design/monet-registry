@@ -67,3 +67,7 @@ next-env.d.ts
 
 logs/*
 dist
+
+# shadcn registry (auto-generated)
+registry.json
+public/r/

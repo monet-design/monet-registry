@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: designbell-hero
-category: hero
+category: waitlist
 images:
   preview: agent-input/lead-capture-hero/designbell.jpg
 tags:

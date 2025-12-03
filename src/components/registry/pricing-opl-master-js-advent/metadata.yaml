@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-js-advent
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-master-js-advent.png
+
+freeformKeywords:
+  - pricing
+  - christmas
+  - advent
+  - javascript
+  - challenge
+  - holiday
+  - festive
+  - ribbon
+  - ornaments
+  - cards
+  - tiers
+
+fontFamily:
+  - Inter
+  - Pacifico
+
+createdAt: "2025-12-03T19:43:06Z"
+status: stable

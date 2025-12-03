@@ -1,0 +1,29 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-8
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-8.png
+
+freeformKeywords:
+  - pricing
+  - membership
+  - plans
+  - subscription
+  - waitlist
+  - founder
+  - standard
+  - premium
+  - club
+  - lounge
+  - two-column
+  - serif
+  - monospace
+  - beige
+  - green
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:40:29Z"
+status: stable

@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: footer-ahrefs
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/ahref-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - ahrefs
+  - seo
+  - dark
+  - navigation
+  - links
+  - multi-column
+  - sitemap
+  - language selector
+  - black background
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:49:28Z"
+status: stable

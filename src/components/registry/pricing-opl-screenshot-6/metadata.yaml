@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: pricing-opl-screenshot-6
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-screenshot-6.png
+
+freeformKeywords:
+  - pricing
+  - plans
+  - subscription
+  - usage-based
+  - free
+  - pro
+  - enterprise
+  - tiers
+  - cards
+  - comparison
+  - saas
+  - features
+  - monthly
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:55:02Z"
+status: stable

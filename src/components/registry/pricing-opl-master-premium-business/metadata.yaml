@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-premium-business
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-master-premium-business.png
+
+freeformKeywords:
+  - pricing
+  - subscription
+  - plans
+  - tiers
+  - basic
+  - full access
+  - enterprise
+  - custom
+  - dark theme
+  - toggle
+  - annually
+  - monthly
+  - gold
+  - checkmark
+  - saas
+  - business
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:48:33Z"
+status: stable

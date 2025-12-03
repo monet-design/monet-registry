@@ -1,0 +1,477 @@
+description: Footer component implementation status checklist
+source_directory: agent-input/footer
+total_count: 117
+status_legend:
+  pending: Not started
+  in_progress: Currently being implemented
+  completed: Implementation finished
+  skipped: Decided not to implement
+components:
+  - filename: 10clouds-home-section-footer.jpg
+    name: 10clouds-home-section-footer
+    status: completed
+    notes: "footer-10clouds-cta"
+  - filename: ahref-home-page-section-footer.jpg
+    name: ahref-home-page-section-footer
+    status: completed
+    notes: "footer-ahrefs"
+  - filename: aker-home-page-section-footer.jpg
+    name: aker-home-page-section-footer
+    status: completed
+    notes: "footer-aker"
+  - filename: alignui-home-page-section-footer.jpg
+    name: alignui-home-page-section-footer
+    status: completed
+    notes: "footer-alignui"
+  - filename: antimetal-home-page-section-footer.jpg
+    name: antimetal-home-page-section-footer
+    status: completed
+    notes: "footer-antimetal"
+  - filename: atomic-home-page-section-footer.jpg
+    name: atomic-home-page-section-footer
+    status: completed
+    notes: "footer-atomic"
+  - filename: atrium-home-page-section-footer.jpg
+    name: atrium-home-page-section-footer
+    status: completed
+    notes: "footer-atrium"
+  - filename: avo-home-page-section-footer.jpg
+    name: avo-home-page-section-footer
+    status: completed
+    notes: "footer-avo"
+  - filename: be-on-hand-home-section-footer.jpg
+    name: be-on-hand-home-section-footer
+    status: completed
+    notes: "footer-be-on-hand"
+  - filename: ben-home-page-section-footer.jpg
+    name: ben-home-page-section-footer
+    status: completed
+    notes: "footer-ben"
+  - filename: bunsen-studio-home-page-section-footer.jpg
+    name: bunsen-studio-home-page-section-footer
+    status: completed
+    notes: "footer-bunsen-studio"
+  - filename: canopy-home-page-section-footer.jpg
+    name: canopy-home-page-section-footer
+    status: completed
+    notes: "footer-canopy"
+  - filename: cape-home-page-section-footer.jpg
+    name: cape-home-page-section-footer
+    status: completed
+    notes: "footer-cape"
+  - filename: checkout-home-page-section-footer.jpg
+    name: checkout-home-page-section-footer
+    status: completed
+    notes: "footer-checkout"
+  - filename: chronicle-home-page-section-footer.jpg
+    name: chronicle-home-page-section-footer
+    status: completed
+    notes: "footer-chronicle"
+  - filename: coherence-home-section-footer.jpg
+    name: coherence-home-section-footer
+    status: completed
+    notes: "footer-coherence-cta"
+  - filename: colabs-home-page-section-footer.jpg
+    name: colabs-home-page-section-footer
+    status: completed
+    notes: "footer-colabs"
+  - filename: coterie-home-page-section-footer.jpg
+    name: coterie-home-page-section-footer
+    status: completed
+    notes: "footer-coterie"
+  - filename: current-home-page-section-footer.jpg
+    name: current-home-page-section-footer
+    status: completed
+    notes: "footer-current"
+  - filename: cut-the-code-home-page-section-footer.jpg
+    name: cut-the-code-home-page-section-footer
+    status: completed
+    notes: "footer-cut-the-code"
+  - filename: den-home-page-section-footer.jpg
+    name: den-home-page-section-footer
+    status: completed
+    notes: "footer-den"
+  - filename: doconomy-home-page-section-footer.jpg
+    name: doconomy-home-page-section-footer
+    status: completed
+    notes: "footer-doconomy"
+  - filename: double-makers-home-page-section-footer.jpg
+    name: double-makers-home-page-section-footer
+    status: completed
+    notes: "footer- double-makers"
+  - filename: energy-park-home-page-section-footer.jpg
+    name: energy-park-home-page-section-footer
+    status: completed
+    notes: "footer-energy-park"
+  - filename: euphemia-home-page-section-footer.jpg
+    name: euphemia-home-page-section-footer
+    status: completed
+    notes: "footer-euphemia"
+  - filename: eventbeds-home-page-section-footer.jpg
+    name: eventbeds-home-page-section-footer
+    status: completed
+    notes: "footer-eventbeds"
+  - filename: few-and-far-home-page-section-footer.jpg
+    name: few-and-far-home-page-section-footer
+    status: completed
+    notes: "footer-few-and-far"
+  - filename: fin-ai-footer.jpg
+    name: fin-ai-footer
+    status: completed
+    notes: "footer-fin-ai"
+  - filename: flaghsip-home-page-section-footer.jpg
+    name: flaghsip-home-page-section-footer
+    status: completed
+    notes: "footer-flaghsip"
+  - filename: flecto-home-page-section-footer.jpg
+    name: flecto-home-page-section-footer
+    status: completed
+    notes: "footer-flecto"
+  - filename: focal-home-page-section-footer.jpg
+    name: focal-home-page-section-footer
+    status: completed
+    notes: "footer-focal"
+  - filename: foundation-alloy-home-page-section-footer.jpg
+    name: foundation-alloy-home-page-section-footer
+    status: completed
+    notes: "footer-foundation-alloy"
+  - filename: furey-home-page-section-footer.jpg
+    name: furey-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: gaelle-perrin-home-page-section-footer.jpg
+    name: gaelle-perrin-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: galileo-platform-page-section-footer.jpg
+    name: galileo-platform-page-section-footer
+    status: pending
+    notes: ""
+  - filename: genie-home-page-section-footer.jpg
+    name: genie-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: github-home-page-section-footer.jpg
+    name: github-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: globalization-partners-home-page-section-footer.jpg
+    name: globalization-partners-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: grove-home-page-section-footer.jpg
+    name: grove-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: hasko-home-page-section-footer.jpg
+    name: hasko-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: hawthorne-skin-home-page-section-footer.jpg
+    name: hawthorne-skin-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: hello-network-footer-page-section-footer.jpg
+    name: hello-network-footer-page-section-footer
+    status: pending
+    notes: ""
+  - filename: help-scout-home-page-section-footer.jpg
+    name: help-scout-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: holocene-footer.jpg
+    name: holocene-footer
+    status: pending
+    notes: ""
+  - filename: hubspot-home-page-section-footer.jpg
+    name: hubspot-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: hyperliquid-home-page-section-footer.jpg
+    name: hyperliquid-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: in-tandem-home-page-section-footer.jpg
+    name: in-tandem-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: insurely-home-page-section-footer.jpg
+    name: insurely-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: intercom-home-page-section-footer.jpg
+    name: intercom-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: isla-porter-home-page-section-footer.jpg
+    name: isla-porter-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: jimo-footer-section.jpg
+    name: jimo-footer-section
+    status: pending
+    notes: ""
+  - filename: kajabi-home-page-section-footer.jpg
+    name: kajabi-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: kickbase-home-page-section-footer.jpg
+    name: kickbase-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: kinetic-home-page-section-footer.jpg
+    name: kinetic-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: kinetic-hubs-page-section-footer.jpg
+    name: kinetic-hubs-page-section-footer
+    status: pending
+    notes: ""
+  - filename: kota-home-page-section-footer.jpg
+    name: kota-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: lawtrades-home-page-section-footer.jpg
+    name: lawtrades-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: linear-ask-page-section-footer.jpg
+    name: linear-ask-page-section-footer
+    status: pending
+    notes: ""
+  - filename: liveblocks-home-page-section-footer.jpg
+    name: liveblocks-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: lowe-s-innovation-labs-home-page-section-footer.jpg
+    name: lowe-s-innovation-labs-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: memory-home-page-section-footer.jpg
+    name: memory-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: merchlink-home-page-section-footer.jpg
+    name: merchlink-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: mission-lab-home-page-section-footer.jpg
+    name: mission-lab-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: mollie-home-page-section-footer.jpg
+    name: mollie-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: move-agency-home-page-section-footer.jpg
+    name: move-agency-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: move-home-page-section-footer.jpg
+    name: move-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: moxion-home-page-section-footer.jpg
+    name: moxion-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: neycher-home-page-section-footer.jpg
+    name: neycher-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: nutri-rich-home-section-footer.jpg
+    name: nutri-rich-home-section-footer
+    status: pending
+    notes: ""
+  - filename: nutsdev-home-page-section-footer.jpg
+    name: nutsdev-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: oddit-home-page-section-footer.jpg
+    name: oddit-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: online-payment-platform-home-page-section-footer.jpg
+    name: online-payment-platform-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: outseta-home-page-section-footer.jpg
+    name: outseta-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: oyster-home-page-section-footer.jpg
+    name: oyster-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: paradigm-home-page-section-footer.jpg
+    name: paradigm-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: pash-home-page-section-footer.jpg
+    name: pash-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: passionfroot-home-page-section-footer.jpg
+    name: passionfroot-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: patch-home-page-section-footer.jpg
+    name: patch-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: pera-home-page-section-footer.jpg
+    name: pera-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: pipe-home-page-section-footer.jpg
+    name: pipe-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: plain-section-footer.jpg
+    name: plain-section-footer
+    status: pending
+    notes: ""
+  - filename: popcorn-home-page-section-footer.jpg
+    name: popcorn-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: rbbecon-home-page-section-footer.jpg
+    name: rbbecon-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: reflect-home-page-section-footer.jpg
+    name: reflect-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: relumeipsum-home-page-section-footer.jpg
+    name: relumeipsum-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: reon-home-page-section-footer.jpg
+    name: reon-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: resend-home-page-section-footer.jpg
+    name: resend-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: reveni-home-page-section-footer.jpg
+    name: reveni-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: riotters-home-page-section-footer.jpg
+    name: riotters-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: rivian-home-page-section-footer.jpg
+    name: rivian-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: routable-home-page-section-footer.jpg
+    name: routable-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: sevalla-home-page-section-footer.jpg
+    name: sevalla-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: sketch-home-page-section-footer.jpg
+    name: sketch-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: slite-home-page-section-footer.jpg
+    name: slite-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: sound-ethics-home-page-section-footer.jpg
+    name: sound-ethics-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: spellbook-home-page-section-footer.jpg
+    name: spellbook-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: steel-home-page-section-cta-footer.jpg
+    name: steel-home-page-section-cta-footer
+    status: pending
+    notes: ""
+  - filename: steel-home-page-section-footer.jpg
+    name: steel-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: substack-home-page-section-footer.jpg
+    name: substack-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: superchat-home-page-section-footer.jpg
+    name: superchat-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: swap-commerce-home-page-section-footer.jpg
+    name: swap-commerce-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: taiga-home-page-section-footer.jpg
+    name: taiga-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: tandym-home-page-section-footer.jpg
+    name: tandym-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: tbh-home-page-section-footer.jpg
+    name: tbh-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: teamway-home-page-section-footer.jpg
+    name: teamway-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: that-original-home-section-footer.jpg
+    name: that-original-home-section-footer
+    status: pending
+    notes: ""
+  - filename: the-reach-home-page-section-footer.jpg
+    name: the-reach-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: the-resonance-home-page-section-footer.jpg
+    name: the-resonance-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: timescale-home-page-section-footer.jpg
+    name: timescale-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: tines-footer-section.jpg
+    name: tines-footer-section
+    status: pending
+    notes: ""
+  - filename: typeform-home-page-section-footer.jpg
+    name: typeform-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: vela-capitals-home-page-section-footer.jpg
+    name: vela-capitals-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: vouch-home-page-section-footer.jpg
+    name: vouch-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: watershed-home-page-section-footer.jpg
+    name: watershed-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: wope-home-page-section-footer.jpg
+    name: wope-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: zapier-home-page-section-footer.jpg
+    name: zapier-home-page-section-footer
+    status: pending
+    notes: ""
+  - filename: zazu-home-page-section-footer.jpg
+    name: zazu-home-page-section-footer
+    status: pending
+    notes: ""

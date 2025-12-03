@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: footer-chronicle
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/chronicle-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - chronicle
+  - storytelling
+  - early access
+  - beta
+  - cta
+  - links
+  - about
+  - company
+  - navigation
+  - minimal
+  - clean
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:52:14Z"
+status: stable

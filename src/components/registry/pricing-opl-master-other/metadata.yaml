@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-other
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-master-other.png
+
+freeformKeywords:
+  - pricing
+  - design agency
+  - single plan
+  - tabs
+  - comparison
+  - value proposition
+  - light theme
+  - minimal
+  - SaaS
+  - subscription
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:44:22Z"
+status: stable

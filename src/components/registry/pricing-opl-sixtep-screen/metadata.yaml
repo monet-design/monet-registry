@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: pricing-opl-sixtep-screen
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-sixtep-screen.png
+
+freeformKeywords:
+  - pricing
+  - free
+  - pro
+  - app store
+  - mobile app
+  - game
+  - subscription
+  - yellow
+  - gold
+  - dark card
+  - cta button
+
+fontFamily:
+  - Space Grotesk
+
+createdAt: "2025-12-03T19:55:06Z"
+status: stable

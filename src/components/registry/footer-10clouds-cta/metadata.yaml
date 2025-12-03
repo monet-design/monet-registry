@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: footer-10clouds-cta
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/10clouds-home-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - cta
+  - call to action
+  - contact
+  - social links
+  - dark
+  - purple
+  - green
+  - mint
+  - startup
+  - tech
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:50:00Z"
+status: stable

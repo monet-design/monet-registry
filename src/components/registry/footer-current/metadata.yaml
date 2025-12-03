@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: footer-current
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/current-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - current
+  - trustpilot
+  - bbb
+  - accredited
+  - social links
+  - copyright
+  - fintech
+  - banking
+  - navigation
+  - clean
+  - minimal
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:52:56Z"
+status: stable

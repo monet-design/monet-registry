@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: footer-foundation-alloy
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/foundation-alloy-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - minimal
+  - yellow
+  - lime
+  - social links
+  - industrial
+  - decorative
+  - foundation alloy
+  - back to top
+  - copyright
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T20:00:20Z"
+status: stable

@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-kyoso
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-kyoso.png
+
+freeformKeywords:
+  - pricing
+  - teams
+  - custom pricing
+  - free
+  - starter
+  - education
+  - research
+  - creative teams
+  - waitlist
+  - book intro
+  - card layout
+
+fontFamily:
+  - Inter
+  - Instrument Serif
+
+createdAt: "2025-12-03T19:42:55Z"
+status: stable

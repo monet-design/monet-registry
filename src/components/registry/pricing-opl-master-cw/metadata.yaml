@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-cw
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-cw.png
+
+freeformKeywords:
+  - pricing
+  - pay once
+  - lifetime
+  - mockup
+  - bundle
+  - pro access
+  - subscription
+  - cards
+  - gradient
+  - testimonial
+  - commercial license
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:40:14Z"
+status: stable

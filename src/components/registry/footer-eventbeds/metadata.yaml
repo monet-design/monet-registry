@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: footer-eventbeds
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/eventbeds-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - sitemap
+  - address
+  - corporate footer
+  - minimal footer
+  - hotel
+  - travel
+  - business footer
+  - company info
+  - links
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:58:52Z"
+status: stable

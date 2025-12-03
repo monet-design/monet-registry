@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: pricing-opl-screenshot-35
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-screenshot-35.png
+
+freeformKeywords:
+  - pricing
+  - plans
+  - web design
+  - landing page
+  - website design
+  - cards
+  - pricing table
+  - subscription
+  - service
+  - packages
+  - popular
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:55:00Z"
+status: stable

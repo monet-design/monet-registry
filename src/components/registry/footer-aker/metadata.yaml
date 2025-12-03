@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: footer-aker
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/aker-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - navigation
+  - links
+  - logo
+  - corporate
+  - minimal
+  - clean
+  - business
+  - real estate
+  - investment
+  - multi-column
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:49:28Z"
+status: stable

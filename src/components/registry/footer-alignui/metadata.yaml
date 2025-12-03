@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: footer-alignui
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/alignui-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - design system
+  - multi-column
+  - links
+  - social
+  - navigation
+  - sitemap
+  - legal
+  - components
+  - figma
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:49:33Z"
+status: stable

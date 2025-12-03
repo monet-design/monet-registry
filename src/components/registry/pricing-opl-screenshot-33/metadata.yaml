@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: pricing-opl-screenshot-33
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-screenshot-33.png
+
+freeformKeywords:
+  - pricing
+  - membership
+  - subscription
+  - plans
+  - monthly
+  - quarterly
+  - yearly
+  - dark theme
+  - gold accent
+  - call to action
+  - schedule call
+  - tiers
+  - billing cycle
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:55:04Z"
+status: stable

@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-good
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-good.png
+
+freeformKeywords:
+  - pricing
+  - subscription
+  - plans
+  - tier
+  - monthly
+  - quarterly
+  - billing
+  - SaaS
+  - orange
+  - gold
+  - dark button
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:40:11Z"
+status: stable

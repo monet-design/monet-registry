@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-dt
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-dt.png
+
+freeformKeywords:
+  - pricing
+  - subscription
+  - design
+  - saas
+  - dark
+  - gradient
+  - book call
+  - refer
+  - earn
+  - discount
+  - limited offer
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:40:17Z"
+status: stable

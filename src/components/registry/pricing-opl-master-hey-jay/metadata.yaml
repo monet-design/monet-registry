@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-hey-jay
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-master-hey-jay.png
+
+freeformKeywords:
+  - pricing
+  - subscription
+  - plans
+  - colorful
+  - geometric shapes
+  - playful
+  - design agency
+  - creative
+  - compare
+  - calculator
+  - monthly
+  - weekly
+
+fontFamily:
+  - Playfair Display
+  - Inter
+  - Caveat
+
+createdAt: "2025-12-03T19:40:21Z"
+status: stable

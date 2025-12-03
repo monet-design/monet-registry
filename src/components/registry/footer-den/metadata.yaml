@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: footer-den
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/den-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - real estate
+  - luxury
+  - dark
+  - contact
+  - brochure
+  - email signup
+  - social links
+  - elegant
+  - serif
+  - minimalist
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:58:30Z"
+status: stable

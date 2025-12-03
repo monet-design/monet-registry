@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: pricing-opl-master
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-master.png
+
+freeformKeywords:
+  - pricing
+  - one-time payment
+  - lifetime
+  - icons
+  - free
+  - solo
+  - team
+  - affiliate
+  - enterprise
+  - beige
+  - warm
+  - coral
+  - orange
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-12-03T19:50:36Z"
+status: stable

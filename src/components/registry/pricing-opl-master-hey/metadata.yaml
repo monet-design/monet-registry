@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-hey
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-hey.png
+
+freeformKeywords:
+  - pricing
+  - youtube
+  - video editing
+  - subscription
+  - tiers
+  - plans
+  - waitlist
+  - studio
+  - creator
+  - starter
+  - dark green
+  - serif
+
+fontFamily:
+  - DM Serif Display
+  - Inter
+
+createdAt: "2025-12-03T19:40:09Z"
+status: stable

@@ -1,0 +1,27 @@
+schemaVersion: "2.0"
+name: footer-colabs
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/colabs-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - newsletter
+  - subscribe
+  - coworking
+  - lab
+  - science
+  - community
+  - email signup
+  - dark footer
+  - blue accent
+  - location
+  - address
+  - social media
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:52:16Z"
+status: stable

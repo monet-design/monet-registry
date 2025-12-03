@@ -3,307 +3,181 @@ import * as fs from "fs/promises";
 import * as path from "path";
 
 // ============================================================
-// Configuration - 여기에 URL 배열과 카테고리명을 설정하세요
+// Configuration - 여기에 DATA_STRING과 카테고리명을 설정하세요
 // ============================================================
-const CATEGORY_NAME = "pricing";
+const CATEGORY_NAME = "footer";
 
-const IMAGE_URLS: string[] = [
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6501;0;4164;0,width=640,height=292,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/12/opl-master-3.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=16181;0;4353;0,width=640,height=400,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/12/opl-master.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=7866;0;81;0,width=640,height=392,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/10/opl-sixtep-screen.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=1161;0;11444;0,width=640,height=375,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/10/opl-master-premium-business.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=21186;0;5597;0,width=640,height=797,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/10/opl-master-10.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13966;0;6154;0,width=640,height=396,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/10/opl-master-9.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=26802;0;2350;0,width=640,height=372,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/10/opl-master-8.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=989;0;5000;0,width=640,height=283,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/10/opl-master-3.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=21081;0;4217;0,width=640,height=561,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/10/opl-master-kyoso.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=2978;0;2474;0,width=640,height=242,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/09/opl-master-17.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=9619;0;5500;0,width=640,height=676,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/09/opl-master-nvgt.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6368;0;179;0,width=640,height=307,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/09/opl-master-13.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=4190;0;3843;0,width=640,height=508,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/08/opl-master-21.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=9660;0;2874;0,width=640,height=522,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/08/opl-master-15.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8559;0;1331;0,width=640,height=341,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/08/opl-master-11.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=14733;0;3593;0,width=640,height=424,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/08/opl-master-7.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6379;0;1197;0,width=640,height=493,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/08/opl-master-6.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5198;0;266;0,width=640,height=387,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/08/opl-master-1.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8838;0;1769;0,width=640,height=595,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/07/opl-master-logopoint.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6485;0;5328;0,width=640,height=544,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/07/opl-master-uimagic.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=21191;0;3947;0,width=640,height=650,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/07/opl-master-7.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13429;0;2193;0,width=640,height=290,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/07/opl-master-6.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=7552;0;3846;0,width=640,height=442,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/05/opl-master-17.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6702;0;5429;0,width=640,height=705,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/06/opl-master-21.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=2526;0;2490;0,width=640,height=389,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/06/opl-master-9.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13144;0;2442;0,width=640,height=465,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/06/opl-master-4.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=4090;0;2558;0,width=640,height=473,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/05/opl-master-2.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8684;0;11185;0,width=640,height=338,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/05/opl-master-1.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8385;0;2596;0,width=640,height=404,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/04/opl-master-wwk.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5552;0;8678;0,width=640,height=420,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/03/opl-master-km.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=15002;0;776;0,width=640,height=195,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/04/opl-master-6.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=10720;0;5681;0,width=640,height=594,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/04/opl-master-4.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=11109;0;8897;0,width=640,height=433,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/03/opl-master-espanium.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=21251;0;2421;0,width=640,height=539,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/04/opl-master-rfx.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=23022;0;830;0,width=640,height=389,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/03/opl-master-glass.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=19441;0;2225;0,width=640,height=373,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/03/opl-master-good.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=9190;0;1918;0,width=640,height=297,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/03/opl-master-wittl.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=10398;0;7024;0,width=640,height=385,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/03/opl-master-9.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13024;0;926;0,width=640,height=414,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/03/opl-master-motion.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6829;0;4124;0,width=640,height=353,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/02/opl-master-17.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=11967;0;4662;0,width=640,height=518,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/02/opl-master-16.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=1811;0;8367;0,width=640,height=193,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/02/opl-master-12.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13185;0;2047;0,width=640,height=649,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/02/opl-master-4.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=9765;0;2817;0,width=640,height=924,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/01/opl-master-22.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8114;0;2477;0,width=640,height=341,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/01/opl-master-14.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=3168;0;6;0,width=640,height=391,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/01/opl-master-8.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6041;0;3783;0,width=640,height=583,fit=cover,format=jpg,quality=85/wp-content/uploads/2025/01/opl-master-other.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=9934;0;6876;0,width=640,height=291,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/12/opl-porter.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=29577;0;913;0,width=640,height=464,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/11/opl-master-14.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=18168;0;3029;0,width=640,height=544,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/10/opl-master-20.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=20069;0;94;0,width=640,height=647,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/10/opl-master-18.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=9138;0;3282;0,width=640,height=309,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/10/opl-master-6.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=3446;0;1128;0,width=640,height=374,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/09/opl-master-23.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=17717;0;6357;0,width=640,height=721,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/09/opl-master-14.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8101;0;2693;0,width=640,height=321,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/09/opl-master-8.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=14067;0;5602;0,width=640,height=728,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/09/opl-master-4.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=7296;0;3749;0,width=640,height=600,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/09/opl-master-2.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=10920;0;7870;0,width=640,height=574,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/09/opl-master.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13378;0;6258;0,width=640,height=632,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/08/opl-master-6.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=24358;0;934;0,width=640,height=445,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/07/opl-master-19.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=17901;0;5140;0,width=640,height=406,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/07/opl-master-6.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=18099;0;3112;0,width=640,height=292,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/06/opl-master-pff.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=1139;0;9569;0,width=640,height=202,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/06/opl-master.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=2675;0;4168;0,width=640,height=244,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/05/opl-master-26.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=10885;0;2532;0,width=640,height=468,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/05/opl-master-20.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=2253;0;6448;0,width=640,height=265,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/05/opl-master-17.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13560;0;462;0,width=640,height=473,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/05/opl-master-13.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=23253;0;7899;0,width=640,height=532,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/05/opl-master-11.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=10656;0;3760;0,width=640,height=208,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/05/opl-master-ss.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=19940;0;4844;0,width=640,height=543,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/05/opl-master-1.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13595;0;4925;0,width=640,height=571,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/04/opl-master-13.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5974;0;6052;0,width=640,height=410,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/04/opl-master-jades.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=26810;0;14;0,width=640,height=439,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/04/opl-master-1.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6542;0;1525;0,width=640,height=433,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/03/opl-master-27.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=3293;0;3966;0,width=640,height=916,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/03/opl-master-ugur.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=19018;0;1138;0,width=640,height=208,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/02/opl-master-24.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13800;0;4373;0,width=640,height=715,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/02/opl-master-14.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=15745;0;269;0,width=640,height=499,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/02/opl-master-11.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=3;0;17753;0,width=640,height=274,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/02/opl-master-6.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=4261;0;2549;0,width=640,height=351,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/01/opl-master-22.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=11233;0;4736;0,width=640,height=478,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/01/opl-master-21.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13051;0;13697;0,width=640,height=845,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/01/opl-arrow.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=7754;0;3331;0,width=640,height=552,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/01/opl-master-4.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=12250;0;1493;0,width=640,height=408,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/01/opl-master-2.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=14261;0;3474;0,width=640,height=579,fit=cover,format=jpg,quality=85/wp-content/uploads/2024/01/opl-master.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=7636;0;4016;0,width=640,height=733,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/12/opl-master-26.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=7331;0;3758;0,width=640,height=468,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/12/opl-master-11.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=23904;0;351;0,width=640,height=580,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/12/opl-master.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=10030;0;3766;0,width=640,height=476,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/11/opl-master-26.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=7443;0;4035;0,width=640,height=480,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/11/opl-master-32.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=12797;0;3586;0,width=640,height=530,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/11/opl-master-22.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=18457;0;973;0,width=640,height=428,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/11/opl-master-20.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8201;0;3495;0,width=640,height=425,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/11/opl-master-19.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=15048;0;2084;0,width=640,height=445,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/11/opl-master-cw.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=19568;0;2572;0,width=640,height=507,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/11/opl-master-dt.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=15925;0;3410;0,width=640,height=454,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/11/opl-master-10.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=14418;0;3155;0,width=640,height=706,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/11/opl-master-4.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=9319;0;3059;0,width=640,height=652,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/11/opl-master.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=12227;0;2962;0,width=640,height=488,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/10/opl-master-14.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=19976;0;148;0,width=640,height=493,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/10/opl-master-inflate.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=7648;0;978;0,width=640,height=439,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/10/opl-master-10.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6218;0;1933;0,width=640,height=552,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/10/opl-master-contrast.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=10678;0;2052;0,width=640,height=947,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/09/opl-master-hey-jay.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=10441;0;4846;0,width=640,height=438,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/09/opl-master-18.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=15953;0;5133;0,width=640,height=796,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/09/opl-master-hey.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=10176;0;6611;0,width=640,height=816,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/09/opl-master-7.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=9652;0;2727;0,width=640,height=1161,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/11/opl-master-17.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13999;0;3787;0,width=640,height=510,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/09/opl-master-ds.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=10191;0;476;0,width=640,height=425,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/08/opl-master-21.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=9321;0;1967;0,width=640,height=470,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/08/opl-master-8.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=12239;0;1321;0,width=640,height=538,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/08/opl-master-6.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5312;0;2545;0,width=640,height=474,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/08/opl-master.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=11876;0;4555;0,width=640,height=593,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/08/opl-master-2.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13500;0;192;0,width=640,height=324,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/07/opl-master-22.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8945;0;5474;0,width=640,height=865,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/07/opl-master-16.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=11632;0;2756;0,width=640,height=553,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/07/opl-master-3.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13511;0;3627;0,width=640,height=782,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/06/opl-master-21.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=11617;0;3426;0,width=640,height=484,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/06/opl-master-12.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=11533;0;289;0,width=640,height=409,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/06/opl-master-14.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=11289;0;3879;0,width=640,height=531,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/05/opl-screenshot-33.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=10735;0;4316;0,width=640,height=582,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/05/opl-screenshot-35.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=14733;0;804;0,width=640,height=345,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/05/opl-screenshot-20.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=12420;0;2768;0,width=640,height=626,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/05/opl-master-10.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6426;0;6067;0,width=640,height=390,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/05/opl-master-7.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13683;0;4167;0,width=640,height=445,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/04/opl-screenshot-21.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=12287;0;4876;0,width=640,height=555,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/05/opl-master-3.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5857;0;195;0,width=640,height=345,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/04/opl-screenshot.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8570;0;5180;0,width=640,height=429,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/04/opl-screenshot-1.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6647;0;9108;0,width=640,height=923,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/03/opl-master-1.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=17385;0;848;0,width=640,height=347,fit=cover,format=jpg,quality=85/wp-content/uploads/2023/03/opl-screenshot-13.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=14173;0;344;0,width=640,height=518,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/12/opl-master-7.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=10302;0;1280;0,width=640,height=375,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/12/opl-screenshot.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=18865;0;3334;0,width=640,height=577,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/11/opl-screenshot-17.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=15038;0;881;0,width=640,height=448,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/11/opl-screenshot-24.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=4640;0;422;0,width=640,height=153,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/11/opl-master-14.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=11986;0;5990;0,width=640,height=688,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/10/opl-screenshot-32.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13165;0;2037;0,width=640,height=449,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/11/opl-master-13.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13948;0;650;0,width=640,height=498,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/10/opl-screenshot-31.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8039;0;294;0,width=640,height=519,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/10/opl-screenshot-6.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=22850;0;661;0,width=640,height=410,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/10/opl-screenshot-1.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=17186;0;1855;0,width=640,height=495,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/09/opl-screenshot-18.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13271;0;2053;0,width=640,height=636,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/08/opl-screenshot-19.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=14517;0;2604;0,width=640,height=443,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/08/opl-master-2.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=7263;0;2800;0,width=640,height=362,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/07/opl-master-12.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=3231;0;8274;0,width=640,height=596,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/07/opl-screenshot-20.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=7385;0;1634;0,width=640,height=217,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/07/opl-screenshot-14.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6519;0;4024;0,width=640,height=422,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/07/opl-screenshot-2.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5938;0;2568;0,width=640,height=487,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/06/opl-screenshot-27.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8331;0;575;0,width=640,height=312,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/06/opl-screenshot-15.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=7217;0;6229;0,width=640,height=651,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/06/opl-screenshot-copy-4.jpeg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=1379;0;8745;0,width=640,height=665,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/05/opl-master-14.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=10229;0;3574;0,width=640,height=386,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/05/opl-screenshot-4.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=7103;0;383;0,width=640,height=243,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/05/opl-master-9.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8174;0;3109;0,width=640,height=567,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/05/opl-screenshot.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=11832;0;5788;0,width=640,height=400,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/05/opl-master-6.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=3415;0;565;0,width=640,height=264,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/04/reversechaos.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=808;0;7512;0,width=640,height=389,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/04/Formula1.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=10794;0;2680;0,width=640,height=435,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/04/opl-master-25.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=10826;0;3419;0,width=640,height=332,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/04/opl-master-24.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5323;0;4440;0,width=640,height=502,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/04/opl-master-14.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=10011;0;4982;0,width=640,height=535,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/04/opl-master-12.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=12364;0;2019;0,width=640,height=542,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/04/opl-master-5.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6442;0;2089;0,width=640,height=262,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/04/opl-master-3.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5648;0;5745;0,width=640,height=485,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/03/opl-master-19.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13378;0;2360;0,width=640,height=478,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/03/opl-master-13.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6392;0;6526;0,width=640,height=416,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/03/opl-master-9.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=4578;0;245;0,width=640,height=382,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/03/opl-master-6.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=15539;0;1358;0,width=640,height=663,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/03/opl-master-1.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=4922;0;5400;0,width=640,height=387,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/02/opl-master-4.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=9177;0;2206;0,width=640,height=450,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/01/opl-master-16.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=15510;0;6;0,width=640,height=345,fit=cover,format=jpg,quality=85/wp-content/uploads/2022/01/opl-master-15.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=2024;0;2054;0,width=640,height=137,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/12/opl-master-12.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=11634;0;786;0,width=640,height=403,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/12/opl-master-10.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=12397;0;734;0,width=640,height=390,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/12/opl-master-js-advent.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13763;0;642;0,width=640,height=610,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/12/opl-master-universal.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=12188;0;10;0,width=640,height=427,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/12/opl-master-4.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=1709;0;11834;0,width=640,height=456,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/11/opl-master-21.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13878;0;2185;0,width=640,height=334,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/11/opl-master-20.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=11588;0;879;0,width=640,height=606,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/11/opl-master-12.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=14543;0;3973;0,width=640,height=431,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/11/opl-master-4.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5205;0;1977;0,width=640,height=262,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/10/opl-master-18.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8894;0;3356;0,width=640,height=426,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/10/opl-master-7.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6597;0;2425;0,width=640,height=368,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/10/opl-master-4.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=15095;0;3052;0,width=640,height=583,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/10/opl-master-1.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=7822;0;773;0,width=640,height=635,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/09/opl-master-33.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=15884;0;515;0,width=640,height=369,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/09/opl-master-29.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=7826;0;4862;0,width=640,height=653,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/09/opl-master-24.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5692;0;2787;0,width=640,height=548,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/09/opl-master-18.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8266;0;385;0,width=640,height=404,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/08/opl-master-28.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=7701;0;2963;0,width=640,height=303,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/08/opl-master-13.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=10096;0;671;0,width=640,height=604,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/07/opl-master-29.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6312;0;1085;0,width=640,height=379,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/06/opl-master-27.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=12825;0;1033;0,width=640,height=521,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/06/opl-master-lance.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8535;0;367;0,width=640,height=379,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/06/opl-master-slides.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=12254;0;2082;0,width=640,height=305,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/06/opl-master-6.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=12615;0;981;0,width=640,height=460,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/05/opl-master-5.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=7904;0;1316;0,width=640,height=504,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/03/opl-master-26.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=3775;0;783;0,width=640,height=602,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/03/opl-master-24.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8922;0;1105;0,width=640,height=480,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/03/opl-master-22.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=3093;0;4558;0,width=640,height=652,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/03/opl-master-8.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=9153;0;1205;0,width=640,height=410,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/02/opl-master-17.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8170;0;853;0,width=640,height=567,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/01/opl-master-27.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=16905;0;13;0,width=640,height=425,fit=cover,format=jpg,quality=85/wp-content/uploads/2021/01/opl-master-24.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=15554;0;164;0,width=640,height=507,fit=cover,format=jpg,quality=85/wp-content/uploads/2020/12/opl-master-11.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=9363;0;1054;0,width=640,height=300,fit=cover,format=jpg,quality=85/wp-content/uploads/2020/12/opl-master-vzy.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=14163;0;398;0,width=640,height=468,fit=cover,format=jpg,quality=85/wp-content/uploads/2020/11/opl-master-22.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5781;0;5986;0,width=640,height=685,fit=cover,format=jpg,quality=85/wp-content/uploads/2020/10/opl-master-16.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=4935;0;3307;0,width=640,height=1279,fit=cover,format=jpg,quality=85/wp-content/uploads/2020/10/opl-master-7.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=15791;0;1041;0,width=640,height=448,fit=cover,format=jpg,quality=85/wp-content/uploads/2020/09/opl-master-15.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=10791;0;1324;0,width=640,height=611,fit=cover,format=jpg,quality=85/wp-content/uploads/2020/09/opl-master-ilo.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=4927;0;8359;0,width=640,height=574,fit=cover,format=jpg,quality=85/wp-content/uploads/2020/08/opl-master-6.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=2944;0;1184;0,width=640,height=360,fit=cover,format=jpg,quality=85/wp-content/uploads/2020/07/opl-master-11.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=14267;0;1030;0,width=640,height=463,fit=cover,format=jpg,quality=85/wp-content/uploads/2019/11/opl-master-11-12-39-947.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=11107;0;5961;0,width=640,height=751,fit=cover,format=jpg,quality=85/wp-content/uploads/2020/06/opl-master-2.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8039;0;281;0,width=640,height=368,fit=cover,format=jpg,quality=85/wp-content/uploads/2020/05/opl-master-18.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6389;0;2375;0,width=640,height=607,fit=cover,format=jpg,quality=85/wp-content/uploads/2020/04/opl-master-15.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8325;0;4482;0,width=640,height=440,fit=cover,format=jpg,quality=85/wp-content/uploads/2020/04/opl-master-8.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=4114;0;1212;0,width=640,height=592,fit=cover,format=jpg,quality=85/wp-content/uploads/2020/03/opl-master-4.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=13208;0;224;0,width=640,height=422,fit=cover,format=jpg,quality=85/wp-content/uploads/2020/01/opl-master-14.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5254;0;737;0,width=640,height=250,fit=cover,format=jpg,quality=85/wp-content/uploads/2019/12/opl-master-16.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8687;0;195;0,width=640,height=456,fit=cover,format=jpg,quality=85/wp-content/uploads/2019/11/opl-master-19.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8815;0;1470;0,width=640,height=387,fit=cover,format=jpg,quality=85/wp-content/uploads/2019/11/opl-master-8.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8127;0;2674;0,width=640,height=341,fit=cover,format=jpg,quality=85/wp-content/uploads/2019/10/opl-master-9.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8211;0;417;0,width=640,height=213,fit=cover,format=jpg,quality=85/wp-content/uploads/2019/09/opl-master-25.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6262;0;562;0,width=640,height=338,fit=cover,format=jpg,quality=85/wp-content/uploads/2019/09/opl-master-17.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5040;0;3346;0,width=640,height=465,fit=cover,format=jpg,quality=85/wp-content/uploads/2019/09/opl-master-6.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=3259;0;463;0,width=640,height=428,fit=cover,format=jpg,quality=85/wp-content/uploads/2019/09/opl-master-2.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=1821;0;914;0,width=640,height=304,fit=cover,format=jpg,quality=85/wp-content/uploads/2019/08/opl-master-9.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6078;0;1142;0,width=640,height=293,fit=cover,format=jpg,quality=85/wp-content/uploads/2019/07/opl-master-19.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=11898;0;2378;0,width=640,height=613,fit=cover,format=jpg,quality=85/wp-content/uploads/2019/07/opl-master-4.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=11189;0;7901;0,width=640,height=439,fit=cover,format=jpg,quality=85/wp-content/uploads/2019/07/opl-master-1.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=9520;0;107;0,width=640,height=362,fit=cover,format=jpg,quality=85/wp-content/uploads/2019/02/opl-master-6.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=7799;0;1821;0,width=640,height=346,fit=cover,format=jpg,quality=85/wp-content/uploads/2019/02/opl-master.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=7664;0;1779;0,width=640,height=371,fit=cover,format=jpg,quality=85/wp-content/uploads/2018/12/opl-master-4.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5763;0;7740;0,width=640,height=784,fit=cover,format=jpg,quality=85/wp-content/uploads/2018/12/opl-master-1.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5883;0;663;0,width=640,height=374,fit=cover,format=jpg,quality=85/wp-content/uploads/2018/12/opl-master.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8779;0;413;0,width=640,height=308,fit=cover,format=jpg,quality=85/wp-content/uploads/2018/11/opl-big-6.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=2462;0;10;0,width=640,height=356,fit=cover,format=jpg,quality=85/wp-content/uploads/2018/10/opl-big-8.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5026;0;2235;0,width=640,height=606,fit=cover,format=jpg,quality=85/wp-content/uploads/2018/09/opl-big-19.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=9887;0;895;0,width=640,height=532,fit=cover,format=jpg,quality=85/wp-content/uploads/2018/09/opl-big-9.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=4779;0;1480;0,width=640,height=409,fit=cover,format=jpg,quality=85/wp-content/uploads/2018/05/opl-big-25.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=7139;0;297;0,width=640,height=484,fit=cover,format=jpg,quality=85/wp-content/uploads/2018/05/opl-big-13.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5278;0;1673;0,width=640,height=360,fit=cover,format=jpg,quality=85/wp-content/uploads/2018/05/opl-big-7.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5989;0;989;0,width=640,height=353,fit=cover,format=jpg,quality=85/wp-content/uploads/2018/03/opl-big-22.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8694;0;2958;0,width=640,height=505,fit=cover,format=jpg,quality=85/wp-content/uploads/2018/02/opl-big-4.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6676;0;1870;0,width=640,height=373,fit=cover,format=jpg,quality=85/wp-content/uploads/2017/11/opl-big-27.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=3938;0;5047;0,width=640,height=320,fit=cover,format=jpg,quality=85/wp-content/uploads/2017/11/opl-big-20.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=14682;0;2279;0,width=640,height=586,fit=cover,format=jpg,quality=85/wp-content/uploads/2017/11/opl-big-5.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=2987;0;570;0,width=640,height=267,fit=cover,format=jpg,quality=85/wp-content/uploads/2017/08/opl-big-13.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=6043;0;229;0,width=640,height=412,fit=cover,format=jpg,quality=85/wp-content/uploads/2017/07/opl-big-18.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=2484;0;237;0,width=640,height=114,fit=cover,format=jpg,quality=85/wp-content/uploads/2017/05/opl-big.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=1119;0;2419;0,width=640,height=517,fit=cover,format=jpg,quality=85/wp-content/uploads/2017/04/opl-big-27.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=3757;0;944;0,width=640,height=471,fit=cover,format=jpg,quality=85/wp-content/uploads/2016/03/opl-big-28.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=1474;0;3347;0,width=640,height=519,fit=cover,format=jpg,quality=85/wp-content/uploads/2016/05/opl-big-40.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5975;0;1349;0,width=640,height=364,fit=cover,format=jpg,quality=85/wp-content/uploads/2016/05/opl-screenshot-2.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5424;0;1098;0,width=640,height=419,fit=cover,format=jpg,quality=85/wp-content/uploads/2016/03/opl-big-8.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=4900;0;1128;0,width=640,height=566,fit=cover,format=jpg,quality=85/wp-content/uploads/2015/09/olp-big.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=1945;0;588;0,width=640,height=416,fit=cover,format=jpg,quality=85/wp-content/uploads/2015/07/opl-big14.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=2465;0;1049;0,width=640,height=286,fit=cover,format=jpg,quality=85/wp-content/uploads/2015/06/opl-big55.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=8183;0;317;0,width=640,height=363,fit=cover,format=jpg,quality=85/wp-content/uploads/gravity/GSDK.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=550;0;2378;0,width=640,height=604,fit=cover,format=jpg,quality=85/wp-content/uploads/gravity/1280-2.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=4598;0;1170;0,width=640,height=537,fit=cover,format=jpg,quality=85/wp-content/uploads/2015/03/opl-big26.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=1754;0;3607;0,width=640,height=298,fit=cover,format=jpg,quality=85/wp-content/uploads/gravity/TACO-Web-UX-Design-Wir-erschaffen-um-zu-beeindrucken.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=5574;0;930;0,width=640,height=390,fit=cover,format=jpg,quality=85/wp-content/uploads/2014/11/opl-big10.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=3323;0;70;0,width=640,height=218,fit=cover,format=jpg,quality=85/wp-content/uploads/2014/10/opl-big25.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=3103;0;1051;0,width=640,height=381,fit=cover,format=jpg,quality=85/wp-content/uploads/2014/09/opl-big11.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=3836;0;272;0,width=640,height=456,fit=cover,format=jpg,quality=85/wp-content/uploads/2014/07/opl-big49.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=1996;0;1724;0,width=640,height=319,fit=cover,format=jpg,quality=85/wp-content/uploads/gravity/epicentre-big.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=4116;0;1182;0,width=640,height=552,fit=cover,format=jpg,quality=85/wp-content/uploads/2014/06/opl-big21.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=3910;0;2703;0,width=640,height=448,fit=cover,format=jpg,quality=85/wp-content/uploads/2014/05/opl-big38.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=3372;0;826;0,width=640,height=597,fit=cover,format=jpg,quality=85/wp-content/uploads/2013/08/opl-big4.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=4688;0;13;0,width=640,height=401,fit=cover,format=jpg,quality=85/wp-content/uploads/2013/10/opl-big6.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=618;0;3195;0,width=640,height=554,fit=cover,format=jpg,quality=85/wp-content/uploads/2013/07/opl-big14.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=804;0;1420;0,width=640,height=792,fit=cover,format=jpg,quality=85/wp-content/uploads/2013/06/opl-big15.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=1261;0;974;0,width=640,height=311,fit=cover,format=jpg,quality=85/wp-content/uploads/gravity/fonerescue-big.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=1120;0;630;0,width=640,height=340,fit=cover,format=jpg,quality=85/wp-content/uploads/gravity/flock_home.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=3304;0;499;0,width=640,height=400,fit=cover,format=jpg,quality=85/wp-content/uploads/2013/04/opl-big.jpg",
-  "https://assets.onepagelove.com/cdn-cgi/image/trim=1794;0;408;0,width=640,height=139,fit=cover,format=jpg,quality=85/wp-content/uploads/2012/11/opl-big33.jpg",
-];
+// name,url 형식의 문자열 (각 줄마다 name,url)
+const DATA_STRING = `Holocene Footer,https://unsection.b-cdn.net/Holocene_Footer.webp?class=thumbnail
+Intercom Home Page Section Footer,https://unsection.b-cdn.net/Intercom_Suite_Footer.jpg?class=thumbnail
+Fin AI Footer,https://unsection.b-cdn.net/Fin_AI_Footer.jpg?class=thumbnail
+Tines Footer Section,https://unsection.b-cdn.net/Tines_Footer_Section.webp?class=thumbnail
+Jimo Footer Section,https://unsection.b-cdn.net/Jimo_Footer_Section.webp?class=thumbnail
+Plain Section Footer,https://unsection.b-cdn.net/Plain_Section_Footer.webp?class=thumbnail
+GitHub Home Page Section Footer,https://unsection.b-cdn.net/cf-fd456838-5de5-468a-d572-de6b5bf0ee00.jpg?class=thumbnail
+Flaghsip Home Page Section Footer,https://unsection.b-cdn.net/cf-0bc14701-6a0e-4246-238c-d065858f8e00.jpg?class=thumbnail
+Popcorn Home Page Section Footer,https://unsection.b-cdn.net/cf-fb6d0501-f290-46d6-d188-d9c907823300.jpg?class=thumbnail
+Passionfroot Home Page Section Footer,https://unsection.b-cdn.net/cf-4814f330-c23e-403c-3954-b0cb60ed7f00.jpg?class=thumbnail
+Steel Home Page Section Footer,https://unsection.b-cdn.net/cf-7a3f57cc-6291-4cf8-c844-823f1acfba00.jpg?class=thumbnail
+Steel Home Page Section CTA Footer,https://unsection.b-cdn.net/cf-ff5aed73-6a21-4b35-e033-b5b7883dd500.jpg?class=thumbnail
+Current Home Page Section Footer,https://unsection.b-cdn.net/cf-4cdb9085-ec0b-438a-9ff3-be6009191500.jpg?class=thumbnail
+Kinetic Hubs Page Section Footer,https://unsection.b-cdn.net/cf-c1638e38-bed1-470a-05cd-5e68e7718400.jpg?class=thumbnail
+Kinetic Home Page Section Footer,https://unsection.b-cdn.net/cf-f959da25-ab59-4bc1-b903-3e22c15e8a00.jpg?class=thumbnail
+Zazu Home Page Section Footer,https://unsection.b-cdn.net/cf-da135e22-94f1-4b47-8323-4ee0ea3db700.jpg?class=thumbnail
+Energy Park Home Page Section Footer,https://unsection.b-cdn.net/cf-f78ba80f-d490-4162-7446-3724ad30fa00.jpg?class=thumbnail
+Den Home Page Section Footer,https://unsection.b-cdn.net/cf-f6e2f213-5027-46e2-43d2-ed992c026900.jpg?class=thumbnail
+Neycher Home Page Section Footer,https://unsection.b-cdn.net/cf-1bd42dae-9ee7-479e-5199-d4ca487eb800.jpg?class=thumbnail
+Doconomy Home Page Section Footer,https://unsection.b-cdn.net/cf-625b0d9d-855e-4c8f-aafb-a825ba050000.jpg?class=thumbnail
+In Tandem Home Page Section Footer,https://unsection.b-cdn.net/cf-65be05e0-f6e6-45ed-7437-f5ccf92d8a00.jpg?class=thumbnail
+Hasko Home Page Section Footer,https://unsection.b-cdn.net/cf-0abb5b48-8485-4e19-c139-954ff5d40c00.jpg?class=thumbnail
+Few and Far Home Page Section Footer,https://unsection.b-cdn.net/cf-ee5cad42-ba69-4d44-4439-8c6932338300.jpg?class=thumbnail
+Riotters Home Page Section Footer,https://unsection.b-cdn.net/cf-30cc82fc-eee2-4f55-6fa9-e2ee90894200.jpg?class=thumbnail
+Isla Porter Home Page Section Footer,https://unsection.b-cdn.net/cf-848ddfc1-5aef-4eca-4b65-71c906303700.jpg?class=thumbnail
+Aker Home Page Section Footer,https://unsection.b-cdn.net/cf-5c329e6f-4f89-4ded-9455-b706f4050300.jpg?class=thumbnail
+The Resonance Home Page Section Footer,https://unsection.b-cdn.net/cf-341f87f4-de70-4bb9-14be-8e8d5aeab100.jpg?class=thumbnail
+Sevalla Home Page Section Footer,https://unsection.b-cdn.net/cf-bf347565-8133-475b-5bb5-462ad80ca600.jpg?class=thumbnail
+Spellbook Home Page Section Footer,https://unsection.b-cdn.net/cf-3c8db8fc-0ab2-41ff-f56d-f998ef3bfe00.jpg?class=thumbnail
+Grove Home Page Section Footer,https://unsection.b-cdn.net/cf-dc59b9cd-f682-4cc9-01dc-743b69250c00.jpg?class=thumbnail
+Move Home Page Section Footer,https://unsection.b-cdn.net/cf-55e4fcbd-991f-42bc-9254-2a902d5d0900.jpg?class=thumbnail
+Outseta Home Page Section Footer,https://unsection.b-cdn.net/cf-6425dff9-cfa9-4b0f-82ae-c801eb061b00.jpg?class=thumbnail
+Reon Home Page Section Footer,https://unsection.b-cdn.net/cf-a76ee772-d6c7-47ca-282f-c665b201fd00.jpg?class=thumbnail
+Vela Capitals Home Page Section Footer,https://unsection.b-cdn.net/cf-251e8e2b-943d-4aff-9325-80b27931e600.jpg?class=thumbnail
+Sound Ethics Home Page Section Footer,https://unsection.b-cdn.net/cf-ef248650-e7ce-4101-ab39-618794152800.jpg?class=thumbnail
+Atomic Home Page Section Footer,https://unsection.b-cdn.net/cf-864a1464-0848-474e-29e0-60175519cc00.jpg?class=thumbnail
+Gaelle Perrin Home Page Section Footer,https://unsection.b-cdn.net/cf-c49aff00-0714-4fd8-50d5-eb1015a39800.jpg?class=thumbnail
+Sketch Home Page Section Footer,https://unsection.b-cdn.net/cf-008e0cb4-147a-4620-34e4-26cd69306700.jpg?class=thumbnail
+Kota Home Page Section Footer,https://unsection.b-cdn.net/cf-6629a262-0847-464e-5249-ef83b3d2a800.jpg?class=thumbnail
+Routable Home Page Section Footer,https://unsection.b-cdn.net/cf-12aa6c6a-9098-49a2-aaad-868915c0de00.jpg?class=thumbnail
+Lowe's Innovation Labs Home Page Section Footer,https://unsection.b-cdn.net/cf-328987b2-d6b4-40cd-f35c-353fa0ee5400.jpg?class=thumbnail
+Oddit Home Page Section Footer,https://unsection.b-cdn.net/cf-7191ab90-f835-46ad-4101-5fc1672ba300.jpg?class=thumbnail
+The Reach Home Page Section Footer,https://unsection.b-cdn.net/cf-ac392400-ad31-4027-8b83-c8110b2a9600.jpg?class=thumbnail
+Liveblocks Home Page Section Footer,https://unsection.b-cdn.net/cf-5c59dbe4-2182-478d-433b-db3333a62200.jpg?class=thumbnail
+Online Payment Platform Home Page Section Footer,https://unsection.b-cdn.net/cf-bf6042e2-d69d-4393-d066-fa01f1692500.jpg?class=thumbnail
+HubSpot Home Page Section Footer,https://unsection.b-cdn.net/cf-399a96fe-98df-4eca-3f0b-d0699ce21600.jpg?class=thumbnail
+Taiga Home Page Section Footer,https://unsection.b-cdn.net/cf-cfad742a-2de3-4750-36a0-9e67f23c7700.jpg?class=thumbnail
+Rivian Home Page Section Footer,https://unsection.b-cdn.net/cf-61ddc430-d72b-4bbf-d0b7-ed82ef951a00.jpg?class=thumbnail
+Canopy Home Page Section Footer,https://unsection.b-cdn.net/cf-c6bc89f7-4a9c-48ba-742d-011d9a022800.jpg?class=thumbnail
+Checkout Home Page Section Footer,https://unsection.b-cdn.net/cf-8fd346b8-2de6-443f-ca97-0436db098700.jpg?class=thumbnail
+Ahref Home Page Section Footer,https://unsection.b-cdn.net/cf-7efce7eb-07ee-4242-5444-676566f6ef00.jpg?class=thumbnail
+Antimetal Home Page Section Footer,https://unsection.b-cdn.net/cf-947c2c65-d1a9-47a4-545f-16d5a2f64600.jpg?class=thumbnail
+Kajabi Home Page Section Footer,https://unsection.b-cdn.net/cf-9bebca05-d7dd-4d29-7049-25b080d55300.jpg?class=thumbnail
+Mollie Home Page Section Footer,https://unsection.b-cdn.net/cf-369032b9-535b-4713-8d61-90b3c0f03800.jpg?class=thumbnail
+Vouch Home Page Section Footer,https://unsection.b-cdn.net/cf-c810ec39-a006-467c-3903-58522292fc00.jpg?class=thumbnail
+Cape Home Page Section Footer,https://unsection.b-cdn.net/cf-ff56ccc0-5f45-4ea6-781c-297b7c9b2a00.jpg?class=thumbnail
+Avo Home Page Section Footer,https://unsection.b-cdn.net/cf-f6c50bc3-1e0d-4506-4592-23120f0da400.jpg?class=thumbnail
+Globalization Partners Home Page Section Footer,https://unsection.b-cdn.net/cf-cea4e486-2356-43e7-126f-305e166e9600.jpg?class=thumbnail
+Superchat Home Page Section Footer,https://unsection.b-cdn.net/cf-3e5b5cec-d7c8-4091-530a-0051dcccb200.jpg?class=thumbnail
+Ben Home Page Section Footer,https://unsection.b-cdn.net/cf-536e3031-2bad-43de-0db5-47bea01f4400.jpg?class=thumbnail
+Patch Home Page Section Footer,https://unsection.b-cdn.net/cf-52451fc0-6dd2-4031-1947-9c54342a1500.jpg?class=thumbnail
+Tandym Home Page Section Footer,https://unsection.b-cdn.net/cf-e0005372-76fb-4a2d-a6bc-aa321fd0b200.jpg?class=thumbnail
+Pash Home Page Section Footer,https://unsection.b-cdn.net/cf-6a0f738c-2ac2-4110-48dc-e59d3aa24400.jpg?class=thumbnail
+Help Scout Home Page Section Footer,https://unsection.b-cdn.net/cf-ba6a906b-6dea-44d1-530d-65a2e6a3e800.jpg?class=thumbnail
+Eventbeds Home Page Section Footer,https://unsection.b-cdn.net/cf-5b38bb74-7eca-47af-9ac9-b7c818339000.jpg?class=thumbnail
+Watershed Home Page Section Footer,https://unsection.b-cdn.net/cf-c556440c-847e-4578-5471-8addbcf0d000.jpg?class=thumbnail
+Resend Home Page Section Footer,https://unsection.b-cdn.net/cf-60578308-e3e3-4949-6bb1-89a1f4921a00.jpg?class=thumbnail
+Wope Home Page Section Footer,https://unsection.b-cdn.net/cf-1c7f1d28-d9b0-4731-46f8-039337591e00.jpg?class=thumbnail
+Reflect Home Page Section Footer,https://unsection.b-cdn.net/cf-e39b4489-f7a4-4117-c0cd-1d08cef34200.jpg?class=thumbnail
+Oyster Home Page Section Footer,https://unsection.b-cdn.net/cf-1600bdc6-1150-4dbe-bd62-e0d78b656f00.jpg?class=thumbnail
+Paradigm Home Page Section Footer,https://unsection.b-cdn.net/cf-cf501d8d-8fc6-46f6-fcac-0ab732bd9d00.jpg?class=thumbnail
+Help Scout Home Page Section Footer,https://unsection.b-cdn.net/cf-fd9994d7-46e6-431e-f98e-19e4724d8c00.jpg?class=thumbnail
+Merchlink Home Page Section Footer,https://unsection.b-cdn.net/cf-461bf739-3da6-4e84-a3ec-7a65d47d7100.jpg?class=thumbnail
+Nutsdev Home Page Section Footer,https://unsection.b-cdn.net/cf-121eabd9-3221-4298-ffef-9c50d6b64800.jpg?class=thumbnail
+TBH Home Page Section Footer,https://unsection.b-cdn.net/cf-de72541a-7657-4a86-e859-d241d4718d00.jpg?class=thumbnail
+Focal Home Page Section Footer,https://unsection.b-cdn.net/cf-aaa4e509-88be-4a20-56f7-00eb1d7acc00.jpg?class=thumbnail
+AlignUI Home Page Section Footer,https://unsection.b-cdn.net/cf-a4764e2b-d034-492b-dc0d-9440f0071500.jpg?class=thumbnail
+Foundation Alloy Home Page Section Footer,https://unsection.b-cdn.net/cf-cc1b17e5-1eb6-4681-551d-9e0ab5049100.jpg?class=thumbnail
+Pipe Home Page Section Footer,https://unsection.b-cdn.net/cf-049511eb-43ff-44ae-820c-b5d522d3d100.jpg?class=thumbnail
+Nutri Rich Home Section Footer,https://unsection.b-cdn.net/cf-749db465-b5d1-4c80-f7d6-237467a6ef00.jpg?class=thumbnail
+Be On Hand Home Section Footer,https://unsection.b-cdn.net/cf-9b60a616-7d7b-4674-8081-a8ee624af900.jpg?class=thumbnail
+Linear Ask Page Section Footer,https://unsection.b-cdn.net/cf-3c34a7a3-6309-4923-7f11-200efd986d00.jpg?class=thumbnail
+Insurely Home Page Section Footer,https://unsection.b-cdn.net/cf-b4f3929d-c7b0-47e9-b844-6f037a072f00.jpg?class=thumbnail
+Hawthorne Skin Home Page Section Footer,https://unsection.b-cdn.net/cf-38de42f7-6d62-4895-3970-4efbdb9bb400.jpg?class=thumbnail
+Genie Home Page Section Footer,https://unsection.b-cdn.net/cf-3f0c186d-f675-434c-959e-2b529f856400.jpg?class=thumbnail
+Furey Home Page Section Footer,https://unsection.b-cdn.net/cf-ce31ff95-8a28-4195-75d8-8493cfd95500.jpg?class=thumbnail
+Moxion Home Page Section Footer,https://unsection.b-cdn.net/cf-1b26355f-c1a2-4469-c25e-013d28cbbf00.jpg?class=thumbnail
+Hello Network Footer Page Section Footer,https://unsection.b-cdn.net/cf-c789e6d1-d95a-4fb5-996d-54145f419f00.jpg?class=thumbnail
+Coherence Home Section Footer,https://unsection.b-cdn.net/cf-1a055924-ea0b-47ba-c625-981df332b600.jpg?class=thumbnail
+Typeform Home Page Section Footer,https://unsection.b-cdn.net/cf-a951bfff-ac96-4057-dd07-4fea858af600.jpg?class=thumbnail
+Cut The Code Home Page Section Footer,https://unsection.b-cdn.net/cf-44905032-e8d3-4550-9990-061cc718df00.jpg?class=thumbnail
+Rbbecon Home Page Section Footer,https://unsection.b-cdn.net/cf-37461065-1c4d-496e-3fbe-3550a7610d00.jpg?class=thumbnail
+Atrium Home Page Section Footer,https://unsection.b-cdn.net/cf-41353433-c3e5-4814-4543-e0a1311c6000.jpg?class=thumbnail
+Zapier Home Page Section Footer,https://unsection.b-cdn.net/cf-e967c991-eeca-434b-dfd3-acaa117cf900.jpg?class=thumbnail
+Substack Home Page Section Footer,https://unsection.b-cdn.net/cf-3491a5de-0aa1-4ebc-29df-8b86a6ea9e00.jpg?class=thumbnail
+Coterie Home Page Section Footer,https://unsection.b-cdn.net/cf-14c2a743-cebe-4db5-f23b-0e507658a300.jpg?class=thumbnail
+Mission Lab Home Page Section Footer,https://unsection.b-cdn.net/cf-f671704c-38c6-46d4-32c7-a25ed6612a00.jpg?class=thumbnail
+Kickbase Home Page Section Footer,https://unsection.b-cdn.net/cf-98b29478-8e9a-4767-9ccf-d1efa1629000.jpg?class=thumbnail
+Bunsen Studio Home Page Section Footer,https://unsection.b-cdn.net/cf-b0977d3e-1368-43ba-605e-543c19f5f200.jpg?class=thumbnail
+Euphemia Home Page Section Footer,https://unsection.b-cdn.net/cf-f695e503-8560-4674-40c7-89049f5f9000.jpg?class=thumbnail
+Double Makers Home Page Section Footer,https://unsection.b-cdn.net/cf-1bce1f6f-7c2e-4672-7020-02fd54c92900.jpg?class=thumbnail
+Colabs Home Page Section Footer,https://unsection.b-cdn.net/cf-e287b77b-0ad0-4d0a-ef5d-d0d3dc60a200.jpg?class=thumbnail
+Flecto Home Page Section Footer,https://unsection.b-cdn.net/cf-df3ec077-1ee6-4623-8f7d-b4034ec57300.jpg?class=thumbnail
+Timescale Home Page Section Footer,https://unsection.b-cdn.net/cf-959de4bf-1d46-46ed-fc33-e8fa4ae89c00.jpg?class=thumbnail
+Hyperliquid Home Page Section Footer,https://unsection.b-cdn.net/cf-a1b63e71-0c2a-496d-b16c-6f67bb56a900.jpg?class=thumbnail
+Move Agency Home Page Section Footer,https://unsection.b-cdn.net/cf-fa2723c2-557d-492b-1025-fe0e11988e00.jpg?class=thumbnail
+Memory Home Page Section Footer,https://unsection.b-cdn.net/cf-b7a81c48-9aaf-494e-a68a-7819de554800.jpg?class=thumbnail
+Slite Home Page Section Footer,https://unsection.b-cdn.net/cf-a46f8fef-f53b-403a-ffdd-5e6e06a36100.jpg?class=thumbnail
+Swap Commerce Home Page Section Footer,https://unsection.b-cdn.net/cf-3a324338-81b0-4886-4963-b5e91cf16900.jpg?class=thumbnail
+Teamway Home Page Section Footer,https://unsection.b-cdn.net/cf-d49b4b45-e598-4676-3fa7-bdbbcdbfb800.jpg?class=thumbnail
+Pera Home Page Section Footer,https://unsection.b-cdn.net/cf-4e654527-e960-434d-cb4e-2fe9835d1b00.jpg?class=thumbnail
+Reveni Home Page Section Footer,https://unsection.b-cdn.net/cf-1b2e603a-45a9-47f1-4a81-eb801c1a0300.jpg?class=thumbnail
+Relumeipsum Home Page Section Footer,https://unsection.b-cdn.net/cf-ee070e99-9cdd-4b0b-5b4b-a3839ff90100.jpg?class=thumbnail
+Galileo Platform Page Section Footer,https://unsection.b-cdn.net/cf-461a26c5-06d1-4c7c-58e8-92ceba9a1500.jpg?class=thumbnail
+10Clouds Home Section Footer,https://unsection.b-cdn.net/cf-9483b3da-8d71-454d-1d13-84f76c8bca00.jpg?class=thumbnail
+That Original Home Section Footer,https://unsection.b-cdn.net/cf-ebd55d91-7cce-4183-0f11-4bac86742500.jpg?class=thumbnail
+Chronicle Home Page Section Footer,https://unsection.b-cdn.net/cf-9dffcc08-28e8-4972-fb10-8d65a6871f00.jpg?class=thumbnail
+Lawtrades Home Page Section Footer,https://unsection.b-cdn.net/cf-4429d394-abe9-4b1d-795a-5963aee1fe00.jpg?class=thumbnail
+`;
 // ============================================================
 
 const CONCURRENCY_LIMIT = 5;
 
-function extractNameFromUrl(url: string): string {
-  const urlWithoutQuery = url.split("?")[0];
-  const lastSegment = urlWithoutQuery.split("/").pop() || "unknown";
-  const nameWithoutExt = lastSegment.replace(/\.[^.]+$/, "");
-  return nameWithoutExt || "unknown";
+interface ImageEntry {
+  name: string;
+  url: string;
+}
+
+function toKebabCase(str: string): string {
+  return str
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z0-9-]/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+function parseDataString(data: string): ImageEntry[] {
+  const lines = data
+    .split("\n")
+    .map((line) => line.trim())
+    .filter((line) => line.length > 0);
+
+  const entries: ImageEntry[] = [];
+
+  for (const line of lines) {
+    const commaIndex = line.indexOf(",");
+    if (commaIndex === -1) continue;
+
+    const name = line.substring(0, commaIndex).trim();
+    const url = line.substring(commaIndex + 1).trim();
+
+    if (name && url) {
+      entries.push({
+        name: toKebabCase(name),
+        url,
+      });
+    }
+  }
+
+  return entries;
 }
 
 async function downloadImage(
-  url: string,
+  entry: ImageEntry,
   outputDir: string
 ): Promise<{ success: boolean; name: string; path?: string; error?: string }> {
-  const name = extractNameFromUrl(url);
-  const fileName = `${name}.png`;
+  const { name, url } = entry;
+  const fileName = `${name}.jpg`;
   const filePath = path.join(outputDir, fileName);
 
   try {
@@ -353,10 +227,12 @@ async function downloadWithConcurrencyLimit<T, R>(
 }
 
 async function main() {
-  if (IMAGE_URLS.length === 0) {
-    console.error("Error: IMAGE_URLS 배열이 비어있습니다.");
+  const entries = parseDataString(DATA_STRING);
+
+  if (entries.length === 0) {
+    console.error("Error: DATA_STRING이 비어있거나 유효한 데이터가 없습니다.");
     console.error(
-      "스크립트 상단의 IMAGE_URLS에 다운로드할 이미지를 추가하세요."
+      "스크립트 상단의 DATA_STRING에 name,url 형식의 데이터를 추가하세요."
     );
     process.exit(1);
   }
@@ -366,7 +242,7 @@ async function main() {
 
   console.log(`Category: ${CATEGORY_NAME}`);
   console.log(`Output directory: ${outputDir}`);
-  console.log(`Found ${IMAGE_URLS.length} images to download`);
+  console.log(`Found ${entries.length} images to download`);
   console.log(`Concurrency limit: ${CONCURRENCY_LIMIT}`);
   console.log("");
 
@@ -375,9 +251,9 @@ async function main() {
 
   // Download images with concurrency limit
   const results = await downloadWithConcurrencyLimit(
-    IMAGE_URLS,
+    entries,
     CONCURRENCY_LIMIT,
-    (url) => downloadImage(url, outputDir)
+    (entry) => downloadImage(entry, outputDir)
   );
 
   // Process results
@@ -400,7 +276,7 @@ async function main() {
   // Summary
   console.log("");
   console.log("=".repeat(50));
-  console.log(`Total: ${IMAGE_URLS.length}`);
+  console.log(`Total: ${entries.length}`);
   console.log(`Success: ${succeeded.length}`);
   console.log(`Failed: ${failed.length}`);
 

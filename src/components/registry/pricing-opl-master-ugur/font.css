@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+.instrument-serif {
+  font-family: 'Instrument Serif', Georgia, serif;
+}
+
+.instrument-serif-italic {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-style: italic;
+}

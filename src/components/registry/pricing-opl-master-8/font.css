@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+}
+
+.playfair-display-italic {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+
+.space-mono {
+  font-family: "Space Mono", monospace;
+}
+
+.instrument-serif {
+  font-family: "Instrument Serif", serif;
+}
+
+.instrument-serif-italic {
+  font-family: "Instrument Serif", serif;
+  font-style: italic;
+}

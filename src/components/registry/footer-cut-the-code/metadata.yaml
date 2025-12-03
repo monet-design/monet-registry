@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: footer-cut-the-code
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/cut-the-code-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - marquee
+  - newsletter
+  - subscription
+  - contact
+  - social media
+  - no-code
+  - agency
+  - dark theme
+  - purple
+  - lavender
+  - animated banner
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:53:19Z"
+status: stable

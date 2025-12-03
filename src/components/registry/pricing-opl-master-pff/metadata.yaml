@@ -1,0 +1,26 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-pff
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-master-pff.png
+
+freeformKeywords:
+  - pricing
+  - ebook
+  - paperback
+  - book
+  - product
+  - digital product
+  - amazon
+  - buy
+  - purchase
+  - tablet
+  - mockup
+  - orange button
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:48:31Z"
+status: stable

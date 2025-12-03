@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-ilo
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-master-ilo.png
+
+freeformKeywords:
+  - pricing
+  - launch
+  - deal
+  - lifetime access
+  - progress bar
+  - limited offer
+  - saas
+  - subscription
+  - one-time payment
+  - discount
+  - launch pricing
+  - ilo
+  - twitter analytics
+
+fontFamily:
+  - DM Serif Display
+  - Inter
+
+createdAt: "2025-12-03T19:42:16Z"
+status: stable

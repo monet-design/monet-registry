@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-vzy
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-vzy.png
+
+freeformKeywords:
+  - pricing
+  - pricing table
+  - pricing cards
+  - launch deal
+  - lifetime license
+  - subscription
+  - plans
+  - dark theme
+  - saas pricing
+  - icon pack
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:48:26Z"
+status: stable

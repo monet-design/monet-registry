@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-logopoint
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-master-logopoint.png
+
+freeformKeywords:
+  - pricing
+  - logo design
+  - brand identity
+  - packages
+  - tiers
+  - subscription
+  - creative agency
+  - design service
+  - logobook
+  - mockups
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:43:09Z"
+status: stable

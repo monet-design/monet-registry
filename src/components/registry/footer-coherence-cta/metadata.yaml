@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: footer-coherence-cta
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/coherence-home-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - cta
+  - call to action
+  - dark
+  - purple
+  - lavender
+  - italic
+  - saas
+  - tech
+  - startup
+  - minimal
+  - buttons
+  - demo
+  - sandbox
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:53:41Z"
+status: stable

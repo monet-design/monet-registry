@@ -1,0 +1,24 @@
+schemaVersion: "2.0"
+name: footer-euphemia
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/euphemia-home-page-section-footer.jpg
+
+freeformKeywords:
+  - footer
+  - dark footer
+  - startup footer
+  - founder footer
+  - social links
+  - serif logo
+  - minimal footer
+  - contact footer
+  - terms footer
+
+fontFamily:
+  - Inter
+  - Playfair Display
+
+createdAt: "2025-12-03T19:58:20Z"
+status: stable

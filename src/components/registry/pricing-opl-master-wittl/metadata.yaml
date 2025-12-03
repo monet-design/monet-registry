@@ -1,0 +1,25 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-wittl
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-master-wittl.png
+
+freeformKeywords:
+  - pricing
+  - simple pricing
+  - single plan
+  - beta
+  - teal
+  - gradient
+  - hiring
+  - recruitment
+  - features list
+  - italic
+  - lime green
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:48:48Z"
+status: stable

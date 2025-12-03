@@ -1,0 +1,31 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-km
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-master-km.png
+
+freeformKeywords:
+  - pricing
+  - spa
+  - massage
+  - services
+  - menu
+  - wellness
+  - beauty
+  - hair
+  - body
+  - face
+  - treatment
+  - service pricing
+  - elegant
+  - beige
+  - calm
+  - relaxing
+
+fontFamily:
+  - Cormorant Garamond
+  - Inter
+
+createdAt: "2025-12-03T19:43:26Z"
+status: stable

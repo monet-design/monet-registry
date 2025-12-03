@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: pricing-opl-master-inflate
+category: pricing
+
+images:
+  preview: agent-input/pricing/opl-master-inflate.png
+
+freeformKeywords:
+  - pricing
+  - 3d
+  - inflatable
+  - purple
+  - lavender
+  - dark
+  - cards
+  - subscription
+  - pro access
+  - full set
+  - demo
+  - download
+  - illustrations
+  - mockups
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-03T19:42:18Z"
+status: stable

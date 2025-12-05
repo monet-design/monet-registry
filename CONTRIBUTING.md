@@ -165,6 +165,59 @@ pnpm screenshot:capture --concurrency=10
 
 ---
 
+## 4. Running API E2E Tests
+
+### Related Files
+
+| File | Description |
+|------|-------------|
+| `e2e/api/*.test.ts` | API endpoint test files |
+| `e2e/helpers/api-client.ts` | HTTP client wrapper |
+| `e2e/setup.ts` | Test global setup |
+| `vitest.e2e.config.mts` | Vitest E2E configuration |
+
+### Running Tests
+
+```bash
+# Terminal 1: Start server on port 4413
+pnpm dev --port 4413
+
+# Terminal 2: Run E2E tests
+pnpm test:e2e
+
+# Run in watch mode
+pnpm test:e2e:watch
+```
+
+### Writing New Tests
+
+1. Create test file in `e2e/api/` directory
+2. Use the `apiGet` helper from `e2e/helpers/api-client.ts`
+3. Follow existing test patterns for consistency
+
+Example:
+```typescript
+import { describe, it, expect } from "vitest";
+import { apiGet } from "../helpers/api-client";
+
+describe("GET /api/v1/your-endpoint", () => {
+  it("should return expected response", async () => {
+    const { status, data } = await apiGet("/api/v1/your-endpoint");
+
+    expect(status).toBe(200);
+    expect(data.success).toBe(true);
+  });
+});
+```
+
+### Validation Checklist
+
+- [ ] Server is running on port 4413
+- [ ] `pnpm test:e2e` passes all tests
+- [ ] New endpoints have corresponding test files
+
+---
+
 ## General Guidelines
 
 - Component names must be **kebab-case**

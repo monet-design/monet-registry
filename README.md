@@ -1,5 +1,9 @@
 # Monet.Design
 
+[![E2E Tests](https://img.shields.io/badge/e2e_tests-61_passed-brightgreen)](./e2e)
+[![Vitest](https://img.shields.io/badge/tested_with-vitest-6E9F18?logo=vitest&logoColor=white)](https://vitest.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+
 ![Monet Design](https://www.monet.design/opengraph-image.png)
 
 [`Monet.Design`](https://www.monet.design/) is an open-source registry of 540+ high-quality React UI components. Search, preview, and install hero sections, pricing tables, testimonials, bios, and more.

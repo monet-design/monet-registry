@@ -1,10 +1,6 @@
 import { NextResponse } from "next/server";
-import {
-  getCategoryIndex,
-  getTagIndex,
-  getAllComponents,
-} from "@/lib/api/services/registry";
-import type { GetFiltersResponse, ErrorResponse } from "@/lib/api/types";
+import { registryService } from "@/app/api/_common/services";
+import type { GetFiltersResponse, ErrorResponse } from "@/app/api/_common/types";
 
 // Human-readable labels for categories
 const CATEGORY_LABELS: Record<string, string> = {
@@ -46,9 +42,9 @@ function toTitleCase(str: string): string {
 export async function GET() {
   try {
     const [categoryIndex, tagIndex, components] = await Promise.all([
-      getCategoryIndex(),
-      getTagIndex(),
-      getAllComponents(),
+      registryService.getCategoryIndex(),
+      registryService.getTagIndex(),
+      registryService.getAllComponents(),
     ]);
 
     // Build category options

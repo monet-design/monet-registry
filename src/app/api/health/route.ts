@@ -1,15 +1,15 @@
 import { NextResponse } from "next/server";
-import { getAllComponents } from "@/lib/api/services/registry";
+import { registryService } from "@/app/api/_common/services";
 
 export async function GET() {
   try {
-    const components = await getAllComponents();
+    const componentCount = await registryService.getTotalCount();
 
     return NextResponse.json({
       status: "ok",
       version: "1.0.0",
       initialized: true,
-      component_count: components.length,
+      component_count: componentCount,
     });
   } catch (error) {
     return NextResponse.json(

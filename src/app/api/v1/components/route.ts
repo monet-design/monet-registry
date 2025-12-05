@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { listComponents } from "@/lib/api/services/registry";
-import type { ListComponentsResponse, ErrorResponse } from "@/lib/api/types";
+import { registryService } from "@/app/api/_common/services";
+import type { ListComponentsResponse, ErrorResponse } from "@/app/api/_common/types";
 
 export async function GET(request: NextRequest) {
   try {
@@ -35,7 +35,7 @@ export async function GET(request: NextRequest) {
 
     const hasAnyTags = Object.values(tags).some((v) => v && v.length > 0);
 
-    const { components, total } = await listComponents({
+    const { components, total } = await registryService.listComponents({
       category,
       status,
       tags: hasAnyTags ? tags : undefined,

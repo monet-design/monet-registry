@@ -1,13 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getComponent } from "@/lib/api/services/registry";
-import {
-  readComponentCode,
-  analyzeCode,
-} from "@/lib/api/services/code-reader";
+import { registryService, codeReaderService } from "@/app/api/_common/services";
 import type {
   GetComponentCodeResponse,
   ErrorResponse,
-} from "@/lib/api/types";
+} from "@/app/api/_common/types";
 
 export async function GET(
   request: NextRequest,
@@ -16,7 +12,7 @@ export async function GET(
   try {
     const { id: componentId } = await params;
 
-    const component = await getComponent(componentId);
+    const component = await registryService.getComponent(componentId);
     if (!component) {
       const errorResponse: ErrorResponse = {
         success: false,
@@ -28,26 +24,20 @@ export async function GET(
       return NextResponse.json(errorResponse, { status: 404 });
     }
 
-    let code = await readComponentCode(componentId);
+    const codeResult = await codeReaderService.readComponentCode(componentId);
     // Remove font.css import statement (handled separately in production)
-    code = code.replace(/import\s*["']\.\/font\.css["']\s*;?\s*\n?/g, "");
-    const analysis = analyzeCode(code);
+    const code = codeResult.code.replace(/import\s*["']\.\/font\.css["']\s*;?\s*\n?/g, "");
 
     const response: GetComponentCodeResponse = {
       success: true,
       component_id: componentId,
       code,
-      code_info: {
-        line_count: analysis.line_count,
-        has_client_directive: analysis.has_client_directive,
-        exports: analysis.exports,
-        imports: analysis.imports,
-      },
-      dependencies: analysis.dependencies,
-      integration_guide: {
-        import_statement: `import { ${analysis.exports[0] || component.name} } from "${component.componentPath}"`,
-        basic_usage: `<${analysis.exports[0] || component.name} />`,
-      },
+      code_info: codeResult.info,
+      dependencies: codeResult.dependencies,
+      integration_guide: codeReaderService.getIntegrationGuide(
+        componentId,
+        codeResult.info.exports[0] || component.name
+      ),
     };
 
     return NextResponse.json(response, {

@@ -1,9 +1,8 @@
 /**
- * API Type Definitions
- * Adapted from mcp-server/src/types/responses.ts
+ * API/MCP 공통 응답 타입 정의
  */
 
-// Registry Entry (from generate-registry.ts)
+// Registry Entry (컴포넌트 메타데이터)
 export interface RegistryEntry {
   id: string;
   name: string;
@@ -39,6 +38,19 @@ export interface PaginationMeta {
   hasNext: boolean;
 }
 
+// Error Response
+export interface ErrorResponse {
+  success: false;
+  error: {
+    code: string;
+    message: string;
+  };
+  recovery?: {
+    suggestions?: string[];
+    similar_ids?: string[];
+  };
+}
+
 // Search Components Response
 export interface SearchComponentsResponse {
   success: true;
@@ -70,20 +82,34 @@ export interface ComponentSearchResult {
   keywords: string[];
 }
 
+// List Components Response
+export interface ListComponentsResponse {
+  success: true;
+  pagination: PaginationMeta;
+  components: ComponentListItem[];
+}
+
+export interface ComponentListItem {
+  id: string;
+  name: string;
+  category: string;
+  preview_image: string;
+  tags: {
+    functional: string[];
+    style: string[];
+    layout: string[];
+    industry: string[];
+  };
+  status: string;
+  created_at?: string;
+}
+
 // Get Component Code Response
 export interface GetComponentCodeResponse {
   success: true;
   component_id: string;
   code: string;
-  code_info: {
-    line_count: number;
-    has_client_directive: boolean;
-    exports: string[];
-    imports: {
-      package: string;
-      items: string[];
-    }[];
-  };
+  code_info: CodeInfo;
   dependencies: {
     npm: string[];
     internal: string[];
@@ -92,6 +118,16 @@ export interface GetComponentCodeResponse {
     import_statement: string;
     basic_usage: string;
   };
+}
+
+export interface CodeInfo {
+  line_count: number;
+  has_client_directive: boolean;
+  exports: string[];
+  imports: {
+    package: string;
+    items: string[];
+  }[];
 }
 
 // Get Component Details Response
@@ -172,41 +208,6 @@ export interface TagCount {
   count: number;
 }
 
-// Error Response
-export interface ErrorResponse {
-  success: false;
-  error: {
-    code: string;
-    message: string;
-  };
-  recovery?: {
-    suggestions?: string[];
-    similar_ids?: string[];
-  };
-}
-
-// List Components Response
-export interface ListComponentsResponse {
-  success: true;
-  pagination: PaginationMeta;
-  components: ComponentListItem[];
-}
-
-export interface ComponentListItem {
-  id: string;
-  name: string;
-  category: string;
-  preview_image: string;
-  tags: {
-    functional: string[];
-    style: string[];
-    layout: string[];
-    industry: string[];
-  };
-  status: string;
-  created_at?: string;
-}
-
 // Get Filters Response
 export interface GetFiltersResponse {
   success: true;
@@ -224,4 +225,60 @@ export interface FilterOption {
   value: string;
   label: string;
   count: number;
+}
+
+// Service internal types
+export interface ListComponentsOptions {
+  category?: string;
+  status?: string;
+  tags?: {
+    functional?: string[];
+    style?: string[];
+    layout?: string[];
+    industry?: string[];
+  };
+  offset?: number;
+  limit?: number;
+}
+
+export interface SearchQuery {
+  text?: string;
+  category?: string;
+  tags?: {
+    functional?: string[];
+    style?: string[];
+    layout?: string[];
+    industry?: string[];
+  };
+  offset?: number;
+  limit?: number;
+}
+
+export interface SearchResult {
+  id: string;
+  name: string;
+  category: string;
+  previewImage: string;
+  tags: {
+    functional: string[];
+    style: string[];
+    layout: string[];
+    industry: string[];
+  };
+  keywords: string[];
+}
+
+export interface SearchResponse {
+  results: SearchResult[];
+  total: number;
+  elapsed: number;
+}
+
+export interface ComponentCode {
+  code: string;
+  info: CodeInfo;
+  dependencies: {
+    npm: string[];
+    internal: string[];
+  };
 }

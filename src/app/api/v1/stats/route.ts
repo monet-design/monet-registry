@@ -1,33 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
-import {
-  getAllComponents,
-  getCategoryIndex,
-  getTagIndex,
-} from "@/lib/api/services/registry";
-import type { GetRegistryStatsResponse, ErrorResponse } from "@/lib/api/types";
-
-const CATEGORY_DESCRIPTIONS: Record<string, string> = {
-  hero: "Hero sections for landing pages",
-  stats: "Statistics and metrics displays",
-  testimonial: "Customer testimonials and reviews",
-  feature: "Product features and benefits",
-  pricing: "Pricing tables and plans",
-  cta: "Call-to-action sections",
-  contact: "Contact forms and information",
-  faq: "Frequently asked questions",
-  "how-it-works": "Process explanations",
-  biography: "Personal or company bios",
-  "before-after": "Before and after comparisons",
-  showcase: "Product or project showcases",
-  header: "Navigation headers",
-  footer: "Page footers",
-  gallery: "Image galleries",
-  team: "Team member displays",
-  "logo-cloud": "Partner and client logos",
-  newsletter: "Newsletter subscription forms",
-  waitlist: "Waitlist signup forms",
-  other: "Other components",
-};
+import { registryService } from "@/app/api/_common/services";
+import { CATEGORY_DESCRIPTIONS } from "@/app/api/_common/utils";
+import type { GetRegistryStatsResponse, ErrorResponse } from "@/app/api/_common/types";
 
 export async function GET(request: NextRequest) {
   try {
@@ -36,9 +10,9 @@ export async function GET(request: NextRequest) {
     const categoryFilter = request.nextUrl.searchParams.get("category");
 
     const [allComponents, categoryIndex, tagIndex] = await Promise.all([
-      getAllComponents(),
-      getCategoryIndex(),
-      getTagIndex(),
+      registryService.getAllComponents(),
+      registryService.getCategoryIndex(),
+      registryService.getTagIndex(),
     ]);
 
     // Filter components by category if specified

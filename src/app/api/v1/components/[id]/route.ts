@@ -1,10 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getComponent } from "@/lib/api/services/registry";
-import { searchComponents } from "@/lib/api/services/search";
+import { registryService, searchService } from "@/app/api/_common/services";
 import type {
   GetComponentDetailsResponse,
   ErrorResponse,
-} from "@/lib/api/types";
+} from "@/app/api/_common/types";
 
 export async function GET(
   request: NextRequest,
@@ -15,7 +14,7 @@ export async function GET(
     const includeSimilar =
       request.nextUrl.searchParams.get("include_similar") !== "false";
 
-    const component = await getComponent(componentId);
+    const component = await registryService.getComponent(componentId);
 
     if (!component) {
       const errorResponse: ErrorResponse = {
@@ -31,7 +30,7 @@ export async function GET(
     // Find similar components
     let similarComponents = [];
     if (includeSimilar) {
-      const similarResult = await searchComponents({
+      const similarResult = await searchService.search({
         category: component.category,
         tags: {
           style: component.tags.style.slice(0, 2),
@@ -39,13 +38,13 @@ export async function GET(
         limit: 6,
       });
 
-      similarComponents = similarResult.hits
-        .filter((hit) => hit.document.id !== componentId)
+      similarComponents = similarResult.results
+        .filter((r) => r.id !== componentId)
         .slice(0, 5)
-        .map((hit) => ({
-          id: hit.document.id,
-          name: hit.document.name,
-          category: hit.document.category,
+        .map((r) => ({
+          id: r.id,
+          name: r.name,
+          category: r.category,
           match_reason: `Similar ${component.category} component`,
         }));
     }

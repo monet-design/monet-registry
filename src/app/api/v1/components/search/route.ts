@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
-import { searchComponents } from "@/lib/api/services/search";
+import { searchService } from "@/app/api/_common/services";
 import type {
   SearchComponentsResponse,
   ErrorResponse,
-} from "@/lib/api/types";
+} from "@/app/api/_common/types";
 
 export async function GET(request: NextRequest) {
   try {
@@ -34,8 +34,8 @@ export async function GET(request: NextRequest) {
 
     const hasAnyTags = Object.values(tags).some((v) => v && v.length > 0);
 
-    const result = await searchComponents({
-      query,
+    const result = await searchService.search({
+      text: query,
       category,
       tags: hasAnyTags ? tags : undefined,
       limit,
@@ -48,24 +48,16 @@ export async function GET(request: NextRequest) {
       total: result.total,
       offset,
       limit,
-      hasNext: offset + result.hits.length < result.total,
+      hasNext: offset + result.results.length < result.total,
       elapsed_ms: result.elapsed,
-      results: result.hits.map((hit) => {
-        const doc = hit.document;
-        return {
-          id: doc.id,
-          name: doc.name,
-          category: doc.category,
-          preview_image: doc.previewImage,
-          tags: {
-            functional: doc.functionalTags,
-            style: doc.styleTags,
-            layout: doc.layoutTags,
-            industry: doc.industryTags,
-          },
-          keywords: doc.freeformKeywords,
-        };
-      }),
+      results: result.results.map((r) => ({
+        id: r.id,
+        name: r.name,
+        category: r.category,
+        preview_image: r.previewImage,
+        tags: r.tags,
+        keywords: r.keywords,
+      })),
     };
 
     return NextResponse.json(response, {

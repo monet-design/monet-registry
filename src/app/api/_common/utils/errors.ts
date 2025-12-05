@@ -2,7 +2,7 @@
  * 에러 처리 유틸리티
  */
 
-import type { ErrorResponse } from "../types/responses.js";
+import type { ErrorResponse } from "../types";
 
 export const ERROR_CODES = {
   COMPONENT_NOT_FOUND: "COMPONENT_NOT_FOUND",
@@ -13,6 +13,7 @@ export const ERROR_CODES = {
   CODE_READ_ERROR: "CODE_READ_ERROR",
   NOT_INITIALIZED: "NOT_INITIALIZED",
   INVALID_INPUT: "INVALID_INPUT",
+  INTERNAL_ERROR: "INTERNAL_ERROR",
 } as const;
 
 export type ErrorCode = (typeof ERROR_CODES)[keyof typeof ERROR_CODES];
@@ -64,6 +65,10 @@ export function emptyResultsError(query: string): ErrorResponse {
       ],
     }
   );
+}
+
+export function internalError(message: string): ErrorResponse {
+  return createErrorResponse(ERROR_CODES.INTERNAL_ERROR, message);
 }
 
 // Fuzzy matching for component IDs

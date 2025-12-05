@@ -5,6 +5,11 @@ category: footer
 images:
   preview: agent-input/footer/kinetic-hubs-page-section-footer.jpg
 
+tags:
+  functional: [email-capture, lead-capture, newsletter]
+  style: [dark-theme, modern, corporate, minimal]
+  layout: [two-column, split-layout, responsive]
+  industry: [enterprise, saas]
 freeformKeywords:
   - footer
   - cta

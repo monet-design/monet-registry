@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-vzy.png
 
+tags:
+  functional: []
+  style: [dark-theme, modern, minimal]
+  layout: [three-column, centered, card-grid]
+  industry: [saas]
 freeformKeywords:
   - pricing
   - pricing table

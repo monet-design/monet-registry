@@ -5,6 +5,24 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-21.png
 
+tags:
+  functional: []
+  style:
+    - light-theme
+    - modern
+    - bold
+    - playful
+    - gradient
+    - shadow
+    - colorful
+    - sans-serif
+  layout:
+    - two-column
+    - card-grid
+    - responsive
+  industry:
+    - saas
+    - fintech
 freeformKeywords:
   - pricing
   - pricing card

@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/sevalla-home-page-section-footer.jpg
 
+tags:
+  functional: [toggle]
+  style: [dark-theme, modern, minimal, corporate, sans-serif]
+  layout: [four-column, full-width, responsive]
+  industry: [saas, enterprise]
 freeformKeywords:
   - footer
   - dark

@@ -3,6 +3,20 @@ name: sketch-home-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/sketch-home-page-section-hero.jpg
+tags:
+  functional: []
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - elegant
+    - gradient
+    - colorful
+  layout:
+    - centered
+  industry:
+    - saas
+    - creative
 freeformKeywords:
   - sketch
   - design tool

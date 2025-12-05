@@ -3,6 +3,25 @@ name: harvey-ai-logo-cloud
 category: logo-cloud
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/logo-cloud/harvey-ai.png
+tags:
+  functional:
+    - animation
+    - scroll-animation
+    - hover-effect
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - elegant
+    - serif
+  layout:
+    - centered
+    - single-column
+    - responsive
+  industry:
+    - enterprise
+    - saas
+    - ai
 freeformKeywords:
   - logo cloud
   - social proof

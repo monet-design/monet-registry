@@ -4,6 +4,27 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/ascon-home-page-section-hero.jpg
+tags:
+  functional:
+    - hover-effect
+    - animation
+  style:
+    - gradient
+    - minimal
+    - modern
+    - bold
+    - colorful
+    - sans-serif
+  layout:
+    - full-width
+    - split-layout
+    - left-aligned
+    - responsive
+  industry:
+    - saas
+    - startup
+    - enterprise
+    - agency
 freeformKeywords:
   - hero
   - landing

@@ -5,6 +5,21 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-8.png
 
+tags:
+  functional:
+    - email-capture
+    - lead-capture
+    - hover-effect
+  style:
+    - minimal
+    - elegant
+    - serif
+    - monochrome
+  layout:
+    - two-column
+    - centered
+  industry:
+    - saas
 freeformKeywords:
   - pricing
   - membership

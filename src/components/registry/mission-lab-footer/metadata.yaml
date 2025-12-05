@@ -5,6 +5,19 @@ category: footer
 images:
   preview: agent-input/footer/mission-lab-home-page-section-footer.jpg
 
+tags:
+  functional: []
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - split-layout
+    - two-column
+    - responsive
+  industry:
+    - education
 freeformKeywords:
   - footer
   - mission

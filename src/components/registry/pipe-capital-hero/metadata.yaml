@@ -3,6 +3,26 @@ name: pipe-capital-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/pipe-home-page-section-hero.jpg
+tags:
+  functional:
+    - animation
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - sans-serif
+    - bold
+  layout:
+    - centered
+    - card-grid
+    - full-width
+    - responsive
+  industry:
+    - fintech
+    - startup
+    - saas
+    - enterprise
 freeformKeywords:
   - hero
   - capital

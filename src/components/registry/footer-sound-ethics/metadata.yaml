@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/sound-ethics-home-page-section-footer.jpg
 
+tags:
+  functional: [newsletter, contact-form]
+  style: [dark-theme, bold, colorful, modern]
+  layout: [three-column, centered, full-width]
+  industry: [music, ai]
 freeformKeywords:
   - footer
   - sound ethics

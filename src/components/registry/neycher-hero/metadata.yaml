@@ -4,6 +4,21 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/neycher-home-page-section-hero.jpg
+tags:
+  functional: []
+  style:
+    - light-theme
+    - modern
+    - elegant
+    - pastel
+    - sans-serif
+  layout:
+    - split-layout
+    - two-column
+    - responsive
+  industry:
+    - healthcare
+    - e-commerce
 freeformKeywords:
   - hero
   - split layout

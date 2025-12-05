@@ -5,6 +5,23 @@ category: footer
 images:
   preview: agent-input/footer/lawtrades-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - hover-effect
+    - scroll-animation
+    - lead-capture
+  style:
+    - gradient
+    - minimal
+    - modern
+    - shadow
+    - serif
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - fintech
 freeformKeywords:
   - footer
   - cta

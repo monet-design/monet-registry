@@ -4,6 +4,25 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/kajabi-payment-page-section-hero.jpg
+tags:
+  functional:
+    - animation
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - pastel
+    - serif
+    - sans-serif
+  layout:
+    - single-column
+    - split-layout
+    - card-grid
+    - centered
+    - responsive
+  industry:
+    - saas
+    - fintech
 freeformKeywords:
   - payment
   - hero

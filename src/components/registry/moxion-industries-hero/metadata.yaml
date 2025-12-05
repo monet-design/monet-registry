@@ -4,6 +4,22 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/moxion-industries-page-section-hero.jpg
+tags:
+  functional:
+    - carousel
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - bold
+    - sans-serif
+  layout:
+    - single-column
+    - centered
+    - full-width
+  industry:
+    - enterprise
+    - startup
 freeformKeywords:
   - hero
   - gallery

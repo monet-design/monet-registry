@@ -5,6 +5,18 @@ category: pricing
 images:
   preview: agent-input/pricing/GSDK.png
 
+tags:
+  functional: []
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - two-column
+    - centered
+  industry:
+    - saas
 freeformKeywords:
   - pricing
   - plans

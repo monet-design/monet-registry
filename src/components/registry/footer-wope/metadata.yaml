@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/wope-home-page-section-footer.jpg
 
+tags:
+  functional: [newsletter, email-capture, map]
+  style: [dark-theme, modern, minimal, gradient, sans-serif]
+  layout: [three-column, responsive, full-width]
+  industry: [saas, startup, ai]
 freeformKeywords:
   - footer
   - dark footer

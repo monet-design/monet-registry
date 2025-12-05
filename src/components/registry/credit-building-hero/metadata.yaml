@@ -4,6 +4,21 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/current-spend-page-section-hero.jpg
+tags:
+  functional: []
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - elegant
+    - serif
+  layout:
+    - centered
+    - three-column
+    - responsive
+  industry:
+    - fintech
+    - saas
 freeformKeywords:
   - credit
   - banking

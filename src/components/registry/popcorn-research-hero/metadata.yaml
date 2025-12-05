@@ -3,6 +3,22 @@ name: popcorn-research-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/popcorn-research-page-section-hero.jpg
+tags:
+  functional: []
+  style:
+    - dark-theme
+    - elegant
+    - modern
+    - serif
+    - sans-serif
+  layout:
+    - single-column
+    - centered
+    - full-width
+  industry:
+    - saas
+    - startup
+    - ai
 freeformKeywords:
   - hero
   - telecom

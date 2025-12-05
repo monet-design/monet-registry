@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-wwk.png
 
+tags:
+  functional: [hover-effect]
+  style: [dark-theme, modern, bold, gradient, colorful, neon]
+  layout: [two-column, card-grid, left-aligned]
+  industry: [saas, startup]
 freeformKeywords:
   - pricing
   - win-win

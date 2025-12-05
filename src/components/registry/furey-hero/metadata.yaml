@@ -4,6 +4,25 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/furey-home-page-section-hero.jpg
+tags:
+  functional:
+    - email-capture
+    - lead-capture
+  style:
+    - light-theme
+    - modern
+    - corporate
+    - bold
+    - sans-serif
+  layout:
+    - split-layout
+    - left-aligned
+    - card-grid
+    - responsive
+  industry:
+    - saas
+    - fintech
+    - startup
 freeformKeywords:
   - hero
   - startup

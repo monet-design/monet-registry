@@ -4,6 +4,25 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/ocho-solo-page-section-hero.jpg
+tags:
+  functional:
+    - animation
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - shadow
+    - colorful
+    - serif
+    - sans-serif
+  layout:
+    - centered
+    - full-width
+    - responsive
+  industry:
+    - fintech
+    - saas
+    - startup
 freeformKeywords:
   - hero
   - 401k

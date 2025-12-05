@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/lowe-s-innovation-labs-home-page-section-footer.jpg
 
+tags:
+  functional: [contact-form, email-capture]
+  style: [minimal, modern, clean, corporate, sans-serif]
+  layout: [three-column, responsive, full-width]
+  industry: [startup, corporate, agency, saas]
 freeformKeywords:
   - footer
   - navigation

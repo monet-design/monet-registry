@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/teamway-home-page-section-footer.jpg
 
+tags:
+  functional: [hover-effect]
+  style: [minimal, modern, corporate, light-theme]
+  layout: [four-column, responsive]
+  industry: [saas, startup, enterprise]
 freeformKeywords:
   - footer
   - teamway

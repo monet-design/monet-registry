@@ -4,6 +4,26 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/pera-home-page-section-hero.jpg
+tags:
+  functional:
+    - animation
+    - hover-effect
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - sans-serif
+    - gradient
+    - shadow
+  layout:
+    - centered
+    - split-layout
+    - single-column
+    - contained
+    - responsive
+  industry:
+    - crypto
+    - fintech
 freeformKeywords:
   - hero
   - wallet

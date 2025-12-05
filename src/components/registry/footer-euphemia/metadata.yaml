@@ -5,6 +5,25 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/euphemia-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - elegant
+    - serif
+  layout:
+    - two-column
+    - split-layout
+    - left-aligned
+    - responsive
+  industry:
+    - startup
+    - agency
+    - saas
+    - portfolio
 freeformKeywords:
   - footer
   - dark footer

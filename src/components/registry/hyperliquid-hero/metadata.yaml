@@ -4,6 +4,23 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/hyperliquid-home-page-section-hero.jpg
+tags:
+  functional: []
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - elegant
+    - gradient
+    - serif
+  layout:
+    - centered
+    - single-column
+    - full-width
+  industry:
+    - crypto
+    - fintech
+    - saas
 freeformKeywords:
   - hero
   - trading

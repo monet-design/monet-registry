@@ -4,6 +4,23 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/doconomy-home-page-section-hero.jpg
+tags:
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - bold
+    - corporate
+    - sans-serif
+  layout:
+    - single-column
+    - left-aligned
+    - full-width
+  industry:
+    - fintech
+    - saas
+    - enterprise
 freeformKeywords:
   - hero
   - doconomy

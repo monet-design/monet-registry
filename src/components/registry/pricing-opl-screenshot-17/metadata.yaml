@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-screenshot-17.png
 
+tags:
+  functional: []
+  style: [dark-theme, modern, gradient, glow, sans-serif, colorful]
+  layout: [two-column, centered, card-grid]
+  industry: [saas, startup]
 freeformKeywords:
   - pricing
   - time tracking

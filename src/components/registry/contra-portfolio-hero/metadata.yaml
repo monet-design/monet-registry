@@ -4,6 +4,29 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/contra-portfolios-page-section-hero.jpg
+tags:
+  functional:
+    - animation
+    - hover-effect
+    - email-capture
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - glassmorphism
+    - colorful
+    - serif
+    - sans-serif
+  layout:
+    - single-column
+    - centered
+    - full-width
+    - responsive
+  industry:
+    - portfolio
+    - creative
+    - personal
+    - freelancer
 freeformKeywords:
   - portfolio
   - freelancer

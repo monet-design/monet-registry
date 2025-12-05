@@ -4,6 +4,22 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/ahref-enterprise-section-hero.jpg
+tags:
+  functional:
+    - lead-capture
+    - hover-effect
+  style:
+    - modern
+    - bold
+    - colorful
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+    - full-width
+  industry:
+    - saas
+    - enterprise
 freeformKeywords:
   - hero
   - enterprise

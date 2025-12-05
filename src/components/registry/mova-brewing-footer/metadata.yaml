@@ -5,6 +5,21 @@ category: footer
 images:
   preview: agent-input/footer/move-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - contact-form
+  style:
+    - dark-theme
+    - modern
+    - bold
+    - sans-serif
+  layout:
+    - multi-column
+    - full-width
+    - responsive
+  industry:
+    - food
+    - restaurant
 freeformKeywords:
   - footer
   - brewery

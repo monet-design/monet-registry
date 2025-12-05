@@ -5,6 +5,11 @@ category: footer
 images:
   preview: agent-input/footer/hello-network-footer-page-section-footer.jpg
 
+tags:
+  functional: [hover-effect]
+  style: [light-theme, minimal, modern, elegant, gradient, sans-serif]
+  layout: [three-column, responsive]
+  industry: [corporate, fintech, business]
 freeformKeywords:
   - footer
   - french

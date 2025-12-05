@@ -4,6 +4,24 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/intercom-blog-page-section-hero.jpg
+tags:
+  functional:
+    - tabs
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - corporate
+    - sans-serif
+  layout:
+    - split-layout
+    - two-column
+    - centered
+    - full-width
+  industry:
+    - saas
+    - blog
+    - enterprise
 freeformKeywords:
   - blog
   - hero

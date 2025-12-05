@@ -3,6 +3,11 @@ name: solarpunk-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/solarpunk-home-page-section-hero.jpg
+tags:
+  functional: [search, email-capture, lead-capture]
+  style: [light-theme, modern, bold, colorful, sans-serif, serif]
+  layout: [centered, full-width, single-column]
+  industry: [startup, enterprise]
 freeformKeywords:
   - hero
   - solar

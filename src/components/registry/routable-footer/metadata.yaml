@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/routable-home-page-section-footer.jpg
 
+tags:
+  functional: [email-capture, newsletter]
+  style: [dark-theme, gradient, modern, corporate, serif]
+  layout: [multi-column, full-width, centered]
+  industry: [fintech, saas, enterprise]
 freeformKeywords:
   - footer
   - dark footer

@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-hey-jay.png
 
+tags:
+  functional: [toggle, counter]
+  style: [colorful, playful, modern, serif, gradient]
+  layout: [three-column, centered, responsive]
+  industry: [creative, agency, saas]
 freeformKeywords:
   - pricing
   - subscription

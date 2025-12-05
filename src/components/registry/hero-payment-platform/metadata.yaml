@@ -4,6 +4,25 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/online-payment-platform-home-page-section-hero.jpg
+tags:
+  functional:
+    - video
+    - animation
+  style:
+    - modern
+    - bold
+    - gradient
+    - colorful
+    - sans-serif
+  layout:
+    - split-layout
+    - centered
+    - responsive
+  industry:
+    - fintech
+    - saas
+    - startup
+    - e-commerce
 freeformKeywords:
   - hero
   - payment

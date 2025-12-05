@@ -4,6 +4,21 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/oyster-people-page-section-hero.jpg
+tags:
+  functional:
+    - animation
+  style:
+    - light-theme
+    - playful
+    - modern
+    - colorful
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - enterprise
 freeformKeywords:
   - hero
   - community

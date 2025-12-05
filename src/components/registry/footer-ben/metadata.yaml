@@ -5,6 +5,24 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/ben-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - corporate
+    - minimal
+    - sans-serif
+  layout:
+    - four-column
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - fintech
+    - enterprise
+    - corporate
 freeformKeywords:
   - footer
   - dark footer

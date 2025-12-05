@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/timescale-home-page-section-footer.jpg
 
+tags:
+  functional: [newsletter, email-capture]
+  style: [dark-theme, modern, minimal]
+  layout: [three-column, responsive]
+  industry: [saas, startup, enterprise]
 freeformKeywords:
   - footer
   - timescale

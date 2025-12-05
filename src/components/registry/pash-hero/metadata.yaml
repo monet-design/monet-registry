@@ -4,6 +4,28 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/pash-home-page-section-hero.jpg
+tags:
+  functional:
+    - animation
+    - hover-effect
+    - auto-play
+  style:
+    - light-theme
+    - modern
+    - bold
+    - colorful
+    - serif
+    - sans-serif
+  layout:
+    - asymmetric
+    - split-layout
+    - full-width
+    - responsive
+  industry:
+    - portfolio
+    - personal
+    - creative
+    - agency
 freeformKeywords:
   - hero
   - portfolio

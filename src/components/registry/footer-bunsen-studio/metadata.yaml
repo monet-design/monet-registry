@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/bunsen-studio-home-page-section-footer.jpg
 
+tags:
+  functional: [email-capture, newsletter]
+  style: [dark-theme, gradient, glow, modern, bold, colorful]
+  layout: [four-column, responsive]
+  industry: [creative, agency, studio]
 freeformKeywords:
   - footer
   - cta

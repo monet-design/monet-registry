@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-big-20.png
 
+tags:
+  functional: []
+  style: [light-theme, minimal, modern, sans-serif]
+  layout: [three-column, card-grid, centered, contained]
+  industry: [saas]
 freeformKeywords:
   - pricing
   - plans

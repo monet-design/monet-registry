@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-big10.png
 
+tags:
+  functional: [animation, hover-effect, scroll-animation]
+  style: [dark-theme, elegant, serif, gradient, monochrome]
+  layout: [single-column, centered, contained]
+  industry: [personal]
 freeformKeywords:
   - pricing
   - service list

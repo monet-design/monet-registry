@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master.png
 
+tags:
+  functional: []
+  style: [minimal, modern, elegant, serif, sans-serif, colorful]
+  layout: [three-column, centered, card-grid, responsive]
+  industry: [saas, startup, creative, agency]
 freeformKeywords:
   - pricing
   - one-time payment

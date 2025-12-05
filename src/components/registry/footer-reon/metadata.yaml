@@ -5,6 +5,11 @@ category: footer
 images:
   preview: agent-input/footer/reon-home-page-section-footer.jpg
 
+tags:
+  functional: [hover-effect, scroll-animation]
+  style: [light-theme, minimal, modern, bold, colorful]
+  layout: [three-column, split-layout, responsive]
+  industry: [saas, agency, creative, startup]
 freeformKeywords:
   - footer
   - coral

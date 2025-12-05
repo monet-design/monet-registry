@@ -3,6 +3,11 @@ name: jimo-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/jimo-home-page-hero-section.webp
+tags:
+  functional: [email-capture, tabs, modal]
+  style: [light-theme, modern, gradient, playful, sans-serif]
+  layout: [centered, full-width]
+  industry: [saas]
 freeformKeywords:
   - hero
   - onboarding

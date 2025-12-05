@@ -4,6 +4,24 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/colabs-home-page-section-hero.jpg
+tags:
+  functional:
+    - carousel
+    - hover-effect
+  style:
+    - modern
+    - colorful
+    - bold
+    - gradient
+    - sans-serif
+  layout:
+    - asymmetric
+    - card-grid
+    - responsive
+  industry:
+    - startup
+    - creative
+    - agency
 freeformKeywords:
   - hero
   - landing

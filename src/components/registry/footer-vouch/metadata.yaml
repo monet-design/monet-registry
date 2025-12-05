@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/vouch-home-page-section-footer.jpg
 
+tags:
+  functional: [navigation, social-media]
+  style: [minimal, modern, clean, teal, serif]
+  layout: [four-column, full-width, centered]
+  industry: [saas, video]
 freeformKeywords:
   - footer
   - vouch

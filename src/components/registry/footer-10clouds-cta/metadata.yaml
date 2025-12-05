@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/10clouds-home-section-footer.jpg
 
+tags:
+  functional: [email-capture, contact-form]
+  style: [dark-theme, modern, bold, gradient, colorful]
+  layout: [centered, single-column]
+  industry: [saas, startup, agency, tech]
 freeformKeywords:
   - footer
   - cta

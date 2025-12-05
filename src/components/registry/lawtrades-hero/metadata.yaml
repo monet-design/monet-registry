@@ -4,6 +4,23 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/lawtrades-home-page-section-hero.jpg
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - corporate
+    - sans-serif
+  layout:
+    - centered
+    - card-grid
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - startup
 freeformKeywords:
   - hero
   - network

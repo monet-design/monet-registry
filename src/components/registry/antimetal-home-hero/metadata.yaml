@@ -4,6 +4,24 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/antimetal-home-page-section-hero.jpg
+tags:
+  functional:
+    - animation
+    - hover-effect
+    - lead-capture
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - gradient
+  layout:
+    - centered
+    - single-column
+    - full-width
+  industry:
+    - saas
+    - fintech
+    - enterprise
 freeformKeywords:
   - hero
   - saas

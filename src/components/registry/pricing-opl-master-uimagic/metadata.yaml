@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-uimagic.png
 
+tags:
+  functional: [toggle, hover-effect]
+  style: [dark-theme, modern, gradient, shadow]
+  layout: [two-column, centered, card-grid]
+  industry: [saas, agency, creative]
 freeformKeywords:
   - pricing
   - design wizard

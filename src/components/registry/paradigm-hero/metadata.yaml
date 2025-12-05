@@ -3,6 +3,22 @@ name: paradigm-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/paradigm-home-page-section-hero.jpg
+tags:
+  functional:
+    - animation
+  style:
+    - light-theme
+    - modern
+    - elegant
+    - serif
+    - colorful
+  layout:
+    - centered
+    - full-width
+  industry:
+    - saas
+    - agency
+    - creative
 freeformKeywords:
   - hero
   - landing page

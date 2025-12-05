@@ -3,6 +3,24 @@ name: ai-reading-waitlist
 category: waitlist
 images:
   preview: agent-input/dribble-waitlist/fathom.png
+tags:
+  functional:
+    - email-capture
+    - lead-capture
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - single-column
+    - centered
+    - responsive
+    - mobile-first
+  industry:
+    - ai
+    - saas
+    - startup
 freeformKeywords:
   - waitlist
   - ai

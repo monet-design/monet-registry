@@ -3,6 +3,24 @@ name: popcorn-cta
 category: cta
 images:
   preview: /registry/popcorn-cta/preview.png
+tags:
+  functional:
+    - email-capture
+    - newsletter
+  style:
+    - light-theme
+    - minimal
+    - elegant
+    - gradient
+    - blur
+    - serif
+  layout:
+    - split-layout
+    - two-column
+    - responsive
+  industry:
+    - saas
+    - startup
 freeformKeywords:
   - cta
   - call to action

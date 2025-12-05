@@ -3,6 +3,11 @@ name: evolux-waitlist
 category: waitlist
 images:
   preview: agent-input/dribble-waitlist/evolux.png
+tags:
+  functional: [email-capture, lead-capture, newsletter, toggle]
+  style: [light-theme, minimal, modern, elegant, shadow]
+  layout: [single-column, centered, card-grid]
+  industry: [ai, saas, startup]
 freeformKeywords:
   - waitlist
   - early access

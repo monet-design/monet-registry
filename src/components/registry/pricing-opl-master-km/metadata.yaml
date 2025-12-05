@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-km.png
 
+tags:
+  functional: []
+  style: [elegant, minimal, serif, light-theme]
+  layout: [three-column, centered, card-grid]
+  industry: [healthcare, personal]
 freeformKeywords:
   - pricing
   - spa

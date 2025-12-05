@@ -5,6 +5,23 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/nutri-rich-home-section-footer.jpg
 
+tags:
+  functional:
+    - email-capture
+    - newsletter
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - elegant
+    - serif
+  layout:
+    - three-column
+    - responsive
+  industry:
+    - food
+    - healthcare
+    - e-commerce
 freeformKeywords:
   - footer
   - newsletter

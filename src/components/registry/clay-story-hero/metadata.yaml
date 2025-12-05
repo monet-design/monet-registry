@@ -4,6 +4,22 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/clay-stories-page-section-hero.jpg
+tags:
+  functional: []
+  style:
+    - dark-theme
+    - minimal
+    - elegant
+    - serif
+  layout:
+    - centered
+    - single-column
+    - full-width
+  industry:
+    - saas
+    - portfolio
+    - creative
+    - agency
 freeformKeywords:
   - hero
   - story

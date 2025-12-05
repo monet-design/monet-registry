@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-jades.png
 
+tags:
+  functional: [hover-effect]
+  style: [dark-theme, modern, gradient, sans-serif]
+  layout: [two-column, centered, card-grid]
+  industry: [saas, agency, startup, creative]
 freeformKeywords:
   - pricing
   - dark theme

@@ -4,6 +4,11 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/rbbecon-home-page-section-hero.jpg
+tags:
+  functional: [animation]
+  style: [dark-theme, elegant, corporate, serif, modern]
+  layout: [asymmetric, full-width, single-column]
+  industry: [corporate, enterprise, fintech]
 freeformKeywords:
   - hero
   - economics

@@ -5,6 +5,20 @@ category: footer
 images:
   preview: agent-input/footer/outseta-home-page-section-footer.jpg
 
+tags:
+  functional: []
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - corporate
+    - sans-serif
+  layout:
+    - four-column
+    - contained
+    - responsive
+  industry:
+    - saas
 freeformKeywords:
   - footer
   - navigation

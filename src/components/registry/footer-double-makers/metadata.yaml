@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/double-makers-home-page-section-footer.jpg
 
+tags:
+  functional: [email-capture, contact-form]
+  style: [dark-theme, minimal, modern, elegant, sans-serif]
+  layout: [three-column, centered, full-width, responsive]
+  industry: [agency, creative, startup, portfolio]
 freeformKeywords:
   - footer
   - dark footer

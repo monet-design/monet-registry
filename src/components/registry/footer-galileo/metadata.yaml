@@ -5,6 +5,11 @@ category: footer
 images:
   preview: agent-input/footer/galileo-platform-page-section-footer.jpg
 
+tags:
+  functional: [dropdown]
+  style: [dark-theme, modern, corporate]
+  layout: [multi-column, responsive]
+  industry: [fintech, saas, enterprise]
 freeformKeywords:
   - footer
   - fintech

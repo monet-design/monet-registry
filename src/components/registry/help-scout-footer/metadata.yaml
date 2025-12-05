@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/help-scout-home-page-section-footer.jpg
 
+tags:
+  functional: [newsletter]
+  style: [dark-theme, modern, elegant, serif, sans-serif]
+  layout: [four-column, responsive]
+  industry: [saas, enterprise]
 freeformKeywords:
   - footer
   - dark footer

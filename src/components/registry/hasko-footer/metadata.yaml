@@ -5,6 +5,11 @@ category: footer
 images:
   preview: agent-input/footer/hasko-home-page-section-footer.jpg
 
+tags:
+  functional: [contact-form]
+  style: [dark-theme, minimal, modern, corporate]
+  layout: [four-column, full-width, responsive]
+  industry: [fintech, corporate, enterprise]
 freeformKeywords:
   - footer
   - dark

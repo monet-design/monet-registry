@@ -5,6 +5,19 @@ category: footer
 images:
   preview: agent-input/footer/hawthorne-skin-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - contact-form
+  style:
+    - dark-theme
+    - elegant
+    - minimal
+    - colorful
+  layout:
+    - multi-column
+    - responsive
+  industry:
+    - healthcare
 freeformKeywords:
   - footer
   - beauty

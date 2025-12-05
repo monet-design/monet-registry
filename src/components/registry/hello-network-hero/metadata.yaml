@@ -4,6 +4,20 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/hello-network-section-home-page.jpg
+tags:
+  functional:
+    - lead-capture
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - elegant
+  layout:
+    - single-column
+    - centered
+  industry:
+    - fintech
+    - saas
 freeformKeywords:
   - hero
   - fintech

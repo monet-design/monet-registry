@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/github-home-page-section-footer.jpg
 
+tags:
+  functional: [newsletter, hover-effect]
+  style: [dark-theme, minimal, modern, sans-serif]
+  layout: [four-column, full-width, responsive]
+  industry: [saas, enterprise, startup]
 freeformKeywords:
   - footer
   - github

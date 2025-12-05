@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/typeform-home-page-section-footer.jpg
 
+tags:
+  functional: [dropdown, newsletter]
+  style: [dark-theme, modern, minimal, sans-serif]
+  layout: [multi-column, full-width, responsive]
+  industry: [saas, enterprise]
 freeformKeywords:
   - footer
   - typeform

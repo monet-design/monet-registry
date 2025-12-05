@@ -5,6 +5,22 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-screenshot-copy-4.png
 
+tags:
+  functional:
+    - hover-effect
+  style:
+    - modern
+    - colorful
+    - gradient
+    - sans-serif
+  layout:
+    - three-column
+    - card-grid
+    - centered
+  industry:
+    - saas
+    - agency
+    - creative
 freeformKeywords:
   - pricing
   - plans

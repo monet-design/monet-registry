@@ -5,6 +5,19 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-9.png
 
+tags:
+  functional:
+    - contact-form
+  style:
+    - dark-theme
+    - modern
+    - bold
+  layout:
+    - two-column
+    - card-grid
+  industry:
+    - saas
+    - agency
 freeformKeywords:
   - pricing
   - plans

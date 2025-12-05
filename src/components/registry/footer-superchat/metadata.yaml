@@ -5,6 +5,23 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/superchat-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - email-capture
+    - contact-form
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - corporate
+  layout:
+    - four-column
+    - left-aligned
+    - responsive
+  industry:
+    - saas
+    - startup
+    - enterprise
 freeformKeywords:
   - footer
   - superchat

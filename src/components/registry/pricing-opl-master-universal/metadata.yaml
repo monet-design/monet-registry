@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-universal.png
 
+tags:
+  functional: []
+  style: [minimal, modern, dark-theme, light-theme, shadow]
+  layout: [two-column, split-layout, centered, contained]
+  industry: [saas, creative, design-system]
 freeformKeywords:
   - pricing
   - license

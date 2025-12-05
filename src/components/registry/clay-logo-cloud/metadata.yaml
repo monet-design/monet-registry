@@ -3,6 +3,26 @@ name: clay-logo-cloud
 category: logo-cloud
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/logo-cloud/clay.png
+tags:
+  functional:
+    - animation
+    - scroll-animation
+  style:
+    - dark-theme
+    - light-theme
+    - minimal
+    - modern
+    - elegant
+    - serif
+  layout:
+    - card-grid
+    - centered
+    - responsive
+  industry:
+    - saas
+    - startup
+    - agency
+    - enterprise
 freeformKeywords:
   - logo cloud
   - client logos

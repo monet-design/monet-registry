@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-big-13.png
 
+tags:
+  functional: []
+  style: [light-theme, minimal, modern, sans-serif]
+  layout: [two-column, centered, responsive]
+  industry: [saas, agency, freelancer]
 freeformKeywords:
   - pricing
   - plans

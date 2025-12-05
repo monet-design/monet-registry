@@ -4,6 +4,22 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/kajabi-creator-hub-page-section-hero.jpg
+tags:
+  functional:
+    - accordion
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - single-column
+    - contained
+    - responsive
+  industry:
+    - saas
+    - education
+    - creative
 freeformKeywords:
   - faq
   - accordion

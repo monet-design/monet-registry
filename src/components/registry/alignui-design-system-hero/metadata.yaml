@@ -4,6 +4,11 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/alignui-home-page-section-hero.jpg
+tags:
+  functional: [counter, hover-effect]
+  style: [light-theme, modern, minimal, gradient, sans-serif, shadow]
+  layout: [split-layout, centered, two-column, full-width, responsive]
+  industry: [saas, creative, startup]
 freeformKeywords:
   - hero
   - design system

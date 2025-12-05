@@ -5,6 +5,20 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-nvgt.png
 
+tags:
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - gradient
+  layout:
+    - three-column
+    - card-grid
+    - centered
+  industry:
+    - saas
+    - social
 freeformKeywords:
   - pricing
   - subscription

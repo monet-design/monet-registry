@@ -3,6 +3,20 @@ name: popless-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/popless-home-page-section-hero.jpg
+tags:
+  functional: []
+  style:
+    - modern
+    - minimal
+    - bold
+    - sans-serif
+  layout:
+    - split-layout
+    - asymmetric
+    - responsive
+  industry:
+    - saas
+    - education
 freeformKeywords:
   - hero
   - tutoring

@@ -5,6 +5,11 @@ category: footer
 images:
   preview: agent-input/footer/moxion-home-page-section-footer.jpg
 
+tags:
+  functional: [progress]
+  style: [dark-theme, modern, bold, gradient]
+  layout: [multi-column, full-width]
+  industry: [enterprise, startup, ai]
 freeformKeywords:
   - footer
   - dark

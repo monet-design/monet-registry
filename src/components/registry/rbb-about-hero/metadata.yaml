@@ -4,6 +4,11 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/rbbecon-about-page-section-hero.jpg
+tags:
+  functional: []
+  style: [elegant, minimal, serif, light-theme]
+  layout: [asymmetric, split-layout, two-column]
+  industry: [corporate, professional, consulting]
 freeformKeywords:
   - about
   - hero

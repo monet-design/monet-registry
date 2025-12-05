@@ -5,6 +5,11 @@ category: footer
 images:
   preview: agent-input/footer/pera-home-page-section-footer.jpg
 
+tags:
+  functional: [hover-effect]
+  style: [dark-theme, light-theme, minimal, modern]
+  layout: [four-column, responsive, full-width]
+  industry: [crypto, fintech]
 freeformKeywords:
   - footer
   - wallet

@@ -4,6 +4,26 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/help-scout-home-page-section-hero.jpg
+tags:
+  functional:
+    - modal
+    - tabs
+    - search
+  style:
+    - light-theme
+    - modern
+    - corporate
+    - minimal
+    - serif
+    - sans-serif
+  layout:
+    - centered
+    - card-grid
+    - single-column
+    - responsive
+  industry:
+    - saas
+    - enterprise
 freeformKeywords:
   - hero
   - customer support

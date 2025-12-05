@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/epicentre-big.png
 
+tags:
+  functional: []
+  style: [light-theme, minimal, modern, corporate, shadow]
+  layout: [four-column, card-grid, centered, responsive, contained]
+  industry: [real-estate, startup, enterprise]
 freeformKeywords:
   - pricing
   - coworking

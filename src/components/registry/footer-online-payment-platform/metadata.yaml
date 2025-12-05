@@ -5,6 +5,11 @@ category: footer
 images:
   preview: agent-input/footer/online-payment-platform-home-page-section-footer.jpg
 
+tags:
+  functional: [animation, hover-effect, contact-form, email-capture]
+  style: [gradient, modern, corporate, colorful]
+  layout: [four-column, responsive, split-layout]
+  industry: [fintech, saas]
 freeformKeywords:
   - footer
   - payment

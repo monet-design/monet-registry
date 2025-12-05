@@ -5,6 +5,23 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/steel-home-page-section-cta-footer.jpg
 
+tags:
+  functional:
+    - email-capture
+    - lead-capture
+  style:
+    - dark-theme
+    - modern
+    - bold
+    - gradient
+  layout:
+    - full-width
+    - centered
+    - single-column
+  industry:
+    - saas
+    - startup
+    - enterprise
 freeformKeywords:
   - footer
   - cta

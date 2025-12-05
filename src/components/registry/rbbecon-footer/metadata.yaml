@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/rbbecon-home-page-section-footer.jpg
 
+tags:
+  functional: []
+  style: [dark-theme, minimal, modern, corporate, sans-serif]
+  layout: [two-column, left-aligned, responsive]
+  industry: [corporate, enterprise]
 freeformKeywords:
   - footer
   - dark footer

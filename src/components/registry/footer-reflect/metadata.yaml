@@ -5,6 +5,22 @@ category: footer
 images:
   preview: agent-input/footer/reflect-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - newsletter
+    - email-capture
+    - animation
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - gradient
+  layout:
+    - three-column
+    - responsive
+    - full-width
+  industry:
+    - saas
 freeformKeywords:
   - footer
   - dark theme

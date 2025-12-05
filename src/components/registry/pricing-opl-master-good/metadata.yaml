@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-good.png
 
+tags:
+  functional: []
+  style: [gradient, bold, modern, colorful]
+  layout: [two-column, centered]
+  industry: [saas, startup]
 freeformKeywords:
   - pricing
   - subscription

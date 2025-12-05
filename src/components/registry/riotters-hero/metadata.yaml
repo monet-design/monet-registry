@@ -4,6 +4,11 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/riotters-home-page-section-hero.jpg
+tags:
+  functional: [contact-form]
+  style: [modern, minimal, colorful, corporate]
+  layout: [split-layout, asymmetric, responsive]
+  industry: [agency, creative, portfolio]
 freeformKeywords:
   - hero
   - agency

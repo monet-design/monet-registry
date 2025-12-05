@@ -5,6 +5,22 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/alignui-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - navigation
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - four-column
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - creative
+    - agency
 freeformKeywords:
   - footer
   - design system

@@ -3,6 +3,23 @@ name: fin-ai-capabilities-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/fin-ai-capabilities-hero-design.jpg
+tags:
+  functional:
+    - animation
+    - scroll-animation
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - serif
+  layout:
+    - centered
+    - single-column
+  industry:
+    - fintech
+    - saas
+    - ai
+    - enterprise
 freeformKeywords:
   - hero
   - ai

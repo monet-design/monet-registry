@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/kickbase-home-page-section-footer.jpg
 
+tags:
+  functional: [animation, video, hover-effect]
+  style: [dark-theme, modern, bold]
+  layout: [single-column, centered, full-width]
+  industry: [gaming]
 freeformKeywords:
   - footer
   - sports

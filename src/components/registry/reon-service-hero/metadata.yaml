@@ -3,6 +3,11 @@ name: reon-service-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/reon-service-page-section-hero.jpg
+tags:
+  functional: []
+  style: [bold, colorful, serif, modern]
+  layout: [single-column, centered, full-width]
+  industry: [consultancy, agency, corporate, enterprise]
 freeformKeywords:
   - hero
   - consultancy

@@ -5,6 +5,24 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/focal-home-page-section-footer.jpg
 
+tags:
+  functional: []
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - corporate
+    - shadow
+  layout:
+    - four-column
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - startup
+    - corporate
+    - agency
+    - creative
 freeformKeywords:
   - footer
   - dark

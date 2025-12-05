@@ -4,6 +4,24 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/grove-prm-page-section-hero.jpg
+tags:
+  functional:
+    - lead-capture
+    - animation
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+    - colorful
+  layout:
+    - centered
+    - single-column
+    - responsive
+  industry:
+    - saas
+    - enterprise
+    - ai
 freeformKeywords:
   - hero
   - platform

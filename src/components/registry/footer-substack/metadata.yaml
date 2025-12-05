@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/substack-home-page-section-footer.jpg
 
+tags:
+  functional: [newsletter, email-capture]
+  style: [minimal, light-theme, sans-serif]
+  layout: [four-column, responsive, left-aligned]
+  industry: [blog, creative, news]
 freeformKeywords:
   - footer
   - substack

@@ -4,6 +4,25 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/slite-home-page-section-hero.jpg
+tags:
+  functional:
+    - email-capture
+    - animation
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - colorful
+    - playful
+    - sans-serif
+  layout:
+    - centered
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - startup
+    - ai
 freeformKeywords:
   - hero
   - saas

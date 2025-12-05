@@ -5,6 +5,20 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-big11.png
 
+tags:
+  functional:
+    - toggle
+  style:
+    - minimal
+    - modern
+    - light-theme
+    - colorful
+  layout:
+    - single-column
+    - centered
+    - contained
+  industry:
+    - saas
 freeformKeywords:
   - pricing
   - price

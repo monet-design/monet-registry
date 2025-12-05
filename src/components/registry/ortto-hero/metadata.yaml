@@ -3,6 +3,22 @@ name: ortto-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/ortto-home-page-section-hero.jpg
+tags:
+  functional:
+    - video
+    - animation
+  style:
+    - light-theme
+    - modern
+    - colorful
+    - sans-serif
+    - minimal
+  layout:
+    - single-column
+    - centered
+    - full-width
+  industry:
+    - saas
 freeformKeywords:
   - hero
   - saas

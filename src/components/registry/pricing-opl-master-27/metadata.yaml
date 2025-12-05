@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-27.png
 
+tags:
+  functional: [toggle]
+  style: [modern, light-theme, minimal]
+  layout: [three-column, card-grid, centered]
+  industry: [saas, startup, hosting]
 freeformKeywords:
   - pricing
   - plans

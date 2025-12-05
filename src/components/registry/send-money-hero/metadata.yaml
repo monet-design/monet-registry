@@ -3,6 +3,22 @@ name: send-money-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/send-home-page-section-hero.jpg
+tags:
+  functional:
+    - dropdown
+    - lead-capture
+  style:
+    - playful
+    - colorful
+    - modern
+    - bold
+  layout:
+    - split-layout
+    - two-column
+    - responsive
+  industry:
+    - fintech
+    - saas
 freeformKeywords:
   - money transfer
   - fintech

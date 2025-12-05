@@ -3,6 +3,11 @@ name: resend-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/resend-home-page-section-hero.jpg
+tags:
+  functional: [animation, hover-effect]
+  style: [dark-theme, minimal, modern, elegant, gradient, shadow, sans-serif]
+  layout: [split-layout, centered, responsive]
+  industry: [saas, startup]
 freeformKeywords:
   - hero
   - email

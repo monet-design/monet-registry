@@ -5,6 +5,11 @@ category: footer
 images:
   preview: agent-input/footer/insurely-home-page-section-footer.jpg
 
+tags:
+  functional: [contact-form]
+  style: [dark-theme, minimal, modern, corporate, serif, sans-serif]
+  layout: [four-column, full-width, responsive]
+  industry: [fintech, saas, insurance, corporate, enterprise]
 freeformKeywords:
   - footer
   - insurance

@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/that-original-home-section-footer.jpg
 
+tags:
+  functional: [email-capture, contact-form]
+  style: [dark-theme, minimal, elegant, serif, bold, monochrome]
+  layout: [full-width, centered, responsive]
+  industry: [fashion, luxury, personal, creative]
 freeformKeywords:
   - footer
   - dark green

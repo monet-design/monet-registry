@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-big21.png
 
+tags:
+  functional: []
+  style: [dark-theme, modern, bold, gradient, shadow]
+  layout: [three-column, centered, card-grid, responsive]
+  industry: [saas]
 freeformKeywords:
   - pricing
   - subscription

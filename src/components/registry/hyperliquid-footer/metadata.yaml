@@ -5,6 +5,20 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/hyperliquid-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - hover-effect
+  style:
+    - minimal
+    - modern
+    - gradient
+    - serif
+  layout:
+    - split-layout
+    - full-width
+    - centered
+  industry:
+    - crypto
 freeformKeywords:
   - footer
   - crypto

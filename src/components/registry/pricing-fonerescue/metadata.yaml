@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/fonerescue-big.png
 
+tags:
+  functional: []
+  style: [playful, colorful, bold, modern, sans-serif]
+  layout: [centered, single-column, contained]
+  industry: []
 freeformKeywords:
   - pricing
   - price list

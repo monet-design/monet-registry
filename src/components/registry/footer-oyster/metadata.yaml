@@ -5,6 +5,11 @@ category: footer
 images:
   preview: agent-input/footer/oyster-home-page-section-footer.jpg
 
+tags:
+  functional: [animation, hover-effect]
+  style: [dark-theme, modern, corporate, sans-serif, serif]
+  layout: [four-column, responsive, full-width]
+  industry: [saas, enterprise, corporate]
 freeformKeywords:
   - footer
   - dark

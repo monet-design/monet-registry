@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-ilo.png
 
+tags:
+  functional: [progress, countdown, hover-effect]
+  style: [light-theme, modern, elegant, serif, gradient, shadow]
+  layout: [two-column, centered, card-grid, responsive]
+  industry: [saas, startup]
 freeformKeywords:
   - pricing
   - launch

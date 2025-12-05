@@ -3,6 +3,23 @@ name: uptime-monitoring-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/better-stack-uptime-page-section-hero.jpg
+tags:
+  functional:
+    - email-capture
+    - animation
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - glow
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+    - full-width
+  industry:
+    - saas
+    - enterprise
 freeformKeywords:
   - hero
   - uptime

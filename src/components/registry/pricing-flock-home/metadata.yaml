@@ -5,6 +5,22 @@ category: pricing
 images:
   preview: agent-input/pricing/flock_home.png
 
+tags:
+  functional:
+    - toggle
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - elegant
+    - serif
+  layout:
+    - three-column
+    - card-grid
+    - centered
+    - full-width
+  industry:
+    - saas
 freeformKeywords:
   - pricing
   - plans

@@ -5,6 +5,23 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-16.png
 
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - minimal
+    - elegant
+    - modern
+    - serif
+    - pastel
+  layout:
+    - two-column
+    - centered
+    - card-grid
+    - contained
+  industry:
+    - creative
 freeformKeywords:
   - pricing
   - fonts

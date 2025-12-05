@@ -4,6 +4,26 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/outseta-home-page-section-hero.jpg
+tags:
+  functional:
+    - modal
+    - video
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - bold
+    - gradient
+    - pastel
+    - sans-serif
+  layout:
+    - single-column
+    - centered
+    - full-width
+  industry:
+    - saas
+    - startup
+    - education
 freeformKeywords:
   - hero
   - membership

@@ -4,6 +4,24 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/ocho-home-page-section-hero.jpg
+tags:
+  functional:
+    - email-capture
+    - tabs
+    - dropdown
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+    - responsive
+  industry:
+    - fintech
+    - saas
+    - startup
 freeformKeywords:
   - hero
   - fintech

@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/avo-home-page-section-footer.jpg
 
+tags:
+  functional: [email-capture, lead-capture]
+  style: [dark-theme, modern, bold, gradient, colorful, sans-serif]
+  layout: [full-width, centered, responsive]
+  industry: [saas, analytics, enterprise]
 freeformKeywords:
   - footer
   - cta

@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-29.png
 
+tags:
+  functional: [tabs, hover-effect]
+  style: [dark-theme, light-theme, minimal, modern, shadow]
+  layout: [three-column, centered, card-grid, responsive]
+  industry: [saas, creative, design-tools]
 freeformKeywords:
   - pricing
   - icon set

@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-4.png
 
+tags:
+  functional: [email-capture, toggle]
+  style: [modern, bold, minimal, monochrome]
+  layout: [two-column, card-grid, centered, responsive]
+  industry: [saas, creative, startup]
 freeformKeywords:
   - pricing
   - subscription

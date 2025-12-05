@@ -5,6 +5,19 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-motion.png
 
+tags:
+  functional: []
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - gradient
+  layout:
+    - two-column
+    - centered
+    - card-grid
+  industry:
+    - saas
 freeformKeywords:
   - pricing
   - one-time payment

@@ -4,6 +4,21 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/frame-home-page-section-hero.jpg
+tags:
+  functional:
+    - lead-capture
+  style:
+    - modern
+    - minimal
+    - light-theme
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+    - full-width
+  industry:
+    - saas
+    - startup
 freeformKeywords:
   - hero
   - productivity

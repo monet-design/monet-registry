@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /registry/footer-isla-porter/preview.jpg
 
+tags:
+  functional: [newsletter, email-capture, scroll-animation]
+  style: [elegant, serif, minimal, monochrome]
+  layout: [centered, responsive, multi-column]
+  industry: [e-commerce, creative, portfolio]
 freeformKeywords:
   - footer
   - newsletter

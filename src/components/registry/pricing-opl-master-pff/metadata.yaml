@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-pff.png
 
+tags:
+  functional: []
+  style: [minimal, light-theme, modern, bold]
+  layout: [two-column, card-grid, centered, responsive]
+  industry: [e-commerce, creative, education]
 freeformKeywords:
   - pricing
   - ebook

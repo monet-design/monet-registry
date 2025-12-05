@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-screenshot-6.png
 
+tags:
+  functional: []
+  style: [light-theme, modern, minimal, colorful]
+  layout: [three-column, card-grid, centered]
+  industry: [saas, startup]
 freeformKeywords:
   - pricing
   - plans

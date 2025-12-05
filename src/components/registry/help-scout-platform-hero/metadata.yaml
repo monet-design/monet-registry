@@ -4,6 +4,23 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/help-scout-platform-page-section-hero.jpg
+tags:
+  functional: []
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - corporate
+    - sans-serif
+  layout:
+    - split-layout
+    - two-column
+    - left-aligned
+    - contained
+    - responsive
+  industry:
+    - saas
+    - enterprise
 freeformKeywords:
   - hero
   - help scout

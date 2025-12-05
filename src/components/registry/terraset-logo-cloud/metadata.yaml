@@ -3,6 +3,11 @@ name: terraset-logo-cloud
 category: logo-cloud
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/logo-cloud/terraset.png
+tags:
+  functional: []
+  style: [light-theme, minimal, modern, elegant, serif]
+  layout: [centered, single-column, responsive]
+  industry: [portfolio, enterprise, startup]
 freeformKeywords:
   - logo cloud
   - portfolio

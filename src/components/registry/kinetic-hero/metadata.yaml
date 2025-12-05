@@ -4,6 +4,24 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/kinetic-home-page-section-hero.jpg
+tags:
+  functional:
+    - animation
+    - hover-effect
+    - counter
+  style:
+    - dark-theme
+    - modern
+    - corporate
+    - gradient
+    - glow
+  layout:
+    - single-column
+    - split-layout
+    - full-width
+  industry:
+    - enterprise
+    - ai
 freeformKeywords:
   - hero
   - automotive

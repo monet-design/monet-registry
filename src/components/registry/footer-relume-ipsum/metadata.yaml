@@ -5,6 +5,21 @@ category: footer
 images:
   preview: agent-input/footer/relumeipsum-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - minimal
+    - modern
+  layout:
+    - multi-column
+    - left-aligned
+    - responsive
+  industry:
+    - saas
+    - startup
+    - agency
 freeformKeywords:
   - footer
   - dark

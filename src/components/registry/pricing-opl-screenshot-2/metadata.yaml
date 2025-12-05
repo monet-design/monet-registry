@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-screenshot-2.png
 
+tags:
+  functional: []
+  style: [dark-theme, elegant, serif, gradient, modern]
+  layout: [two-column, centered]
+  industry: [creative, portfolio]
 freeformKeywords:
   - pricing
   - dark theme

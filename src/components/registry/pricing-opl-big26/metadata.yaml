@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-big26.png
 
+tags:
+  functional: []
+  style: [minimal, elegant, serif, pastel]
+  layout: [single-column, left-aligned, contained]
+  industry: [healthcare, personal]
 freeformKeywords:
   - pricing
   - services

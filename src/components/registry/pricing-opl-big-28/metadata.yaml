@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-big-28.png
 
+tags:
+  functional: [email-capture, lead-capture]
+  style: [light-theme, minimal, modern]
+  layout: [two-column, centered]
+  industry: [saas]
 freeformKeywords:
   - pricing
   - subscription

@@ -3,6 +3,23 @@ name: canopy-lending-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/canopy-home-page-section-hero.jpg
+tags:
+  functional:
+    - lead-capture
+  style:
+    - minimal
+    - modern
+    - corporate
+    - gradient
+  layout:
+    - single-column
+    - centered
+    - full-width
+  industry:
+    - fintech
+    - saas
+    - startup
+    - enterprise
 freeformKeywords:
   - hero
   - landing page

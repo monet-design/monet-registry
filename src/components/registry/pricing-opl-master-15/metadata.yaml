@@ -5,6 +5,25 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-15.png
 
+tags:
+  functional:
+    - hover-effect
+    - animation
+  style:
+    - bold
+    - minimal
+    - modern
+    - monochrome
+    - sans-serif
+  layout:
+    - three-column
+    - card-grid
+    - centered
+    - contained
+  industry:
+    - creative
+    - agency
+    - portfolio
 freeformKeywords:
   - pricing
   - cards

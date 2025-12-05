@@ -4,6 +4,21 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/patch-home-page-section-hero.jpg
+tags:
+  functional:
+    - animation
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - split-layout
+    - two-column
+    - responsive
+  industry:
+    - saas
+    - enterprise
 freeformKeywords:
   - hero
   - data warehouse

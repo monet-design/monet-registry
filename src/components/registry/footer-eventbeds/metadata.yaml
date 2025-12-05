@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/eventbeds-home-page-section-footer.jpg
 
+tags:
+  functional: []
+  style: [light-theme, minimal, corporate, modern, sans-serif]
+  layout: [three-column, responsive, full-width]
+  industry: [travel, enterprise]
 freeformKeywords:
   - footer
   - sitemap

@@ -4,6 +4,22 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/memory-home-page-section-hero.jpg
+tags:
+  functional: []
+  style:
+    - light-theme
+    - modern
+    - playful
+    - colorful
+    - sans-serif
+  layout:
+    - split-layout
+    - centered
+    - responsive
+  industry:
+    - saas
+    - ai
+    - enterprise
 freeformKeywords:
   - hero
   - AI

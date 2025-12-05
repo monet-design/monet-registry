@@ -5,6 +5,24 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/cape-home-page-section-footer.jpg
 
+tags:
+  functional: []
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - corporate
+    - monochrome
+    - sans-serif
+  layout:
+    - three-column
+    - full-width
+  industry:
+    - corporate
+    - startup
+    - agency
+    - enterprise
+    - saas
 freeformKeywords:
   - footer
   - dark

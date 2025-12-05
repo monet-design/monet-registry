@@ -5,6 +5,24 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/foundation-alloy-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - hover-effect
+  style:
+    - minimal
+    - modern
+    - playful
+    - colorful
+    - sans-serif
+  layout:
+    - single-column
+    - full-width
+    - centered
+  industry:
+    - creative
+    - agency
+    - startup
+    - portfolio
 freeformKeywords:
   - footer
   - social links

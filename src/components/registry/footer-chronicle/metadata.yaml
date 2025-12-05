@@ -5,6 +5,24 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/chronicle-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - email-capture
+    - lead-capture
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - clean
+    - sans-serif
+  layout:
+    - two-column
+    - left-aligned
+    - responsive
+  industry:
+    - saas
+    - startup
+    - creative
 freeformKeywords:
   - footer
   - chronicle

@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-js-advent.png
 
+tags:
+  functional: []
+  style: [playful, colorful, bold, modern]
+  layout: [three-column, centered, card-grid]
+  industry: [education, saas]
 freeformKeywords:
   - pricing
   - christmas

@@ -4,6 +4,24 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/mercury-home-page-section-hero.jpg
+tags:
+  functional:
+    - email-capture
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - serif
+    - gradient
+    - shadow
+  layout:
+    - split-layout
+    - left-aligned
+    - asymmetric
+  industry:
+    - fintech
+    - startup
+    - saas
 freeformKeywords:
   - hero
   - banking

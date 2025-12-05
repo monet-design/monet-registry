@@ -4,6 +4,22 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/kickbase-home-page-section-hero.jpg
+tags:
+  functional:
+    - counter
+  style:
+    - dark-theme
+    - modern
+    - bold
+    - colorful
+    - sans-serif
+  layout:
+    - masonry
+    - card-grid
+    - responsive
+  industry:
+    - gaming
+    - sports
 freeformKeywords:
   - hero
   - sports

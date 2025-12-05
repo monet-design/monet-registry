@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/Formula1.png
 
+tags:
+  functional: [toggle, hover-effect]
+  style: [dark-theme, modern, bold, colorful]
+  layout: [two-column, centered, card-grid, responsive]
+  industry: []
 freeformKeywords:
   - pricing
   - subscription

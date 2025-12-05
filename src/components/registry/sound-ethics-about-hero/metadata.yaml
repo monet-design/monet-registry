@@ -3,6 +3,21 @@ name: sound-ethics-about-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/sound-ethics-about-page-section-hero.jpg
+tags:
+  functional: []
+  style:
+    - dark-theme
+    - bold
+    - modern
+    - neon
+  layout:
+    - centered
+    - full-width
+    - single-column
+  industry:
+    - music
+    - ai
+    - creative
 freeformKeywords:
   - hero
   - about

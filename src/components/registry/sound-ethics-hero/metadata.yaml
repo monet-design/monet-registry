@@ -4,6 +4,25 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/sound-ethics-home-page-section-hero.jpg
+tags:
+  functional:
+    - animation
+    - hover-effect
+  style:
+    - dark-theme
+    - bold
+    - neon
+    - modern
+    - gradient
+    - glow
+  layout:
+    - single-column
+    - centered
+    - full-width
+  industry:
+    - music
+    - ai
+    - creative
 freeformKeywords:
   - hero
   - dark

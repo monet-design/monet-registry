@@ -3,6 +3,22 @@ name: passionfroot-cta
 category: cta
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-cta/passionfruit.png
+tags:
+  functional:
+    - animation
+    - lead-capture
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - colorful
+    - serif
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - creative
 freeformKeywords:
   - cta
   - call to action

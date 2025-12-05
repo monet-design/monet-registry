@@ -4,6 +4,27 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/ramp-startup-page-section-hero.jpg
+tags:
+  functional:
+    - email-capture
+    - lead-capture
+  style:
+    - modern
+    - minimal
+    - light-theme
+    - sans-serif
+    - serif
+    - bold
+  layout:
+    - two-column
+    - split-layout
+    - left-aligned
+    - responsive
+  industry:
+    - fintech
+    - startup
+    - saas
+    - enterprise
 freeformKeywords:
   - hero
   - startup

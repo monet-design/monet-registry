@@ -5,6 +5,23 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/zazu-home-page-section-footer.jpg
 
+tags:
+  functional: []
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - corporate
+    - sans-serif
+  layout:
+    - four-column
+    - full-width
+    - responsive
+    - left-aligned
+  industry:
+    - fintech
+    - enterprise
+    - saas
 freeformKeywords:
   - footer
   - zazu

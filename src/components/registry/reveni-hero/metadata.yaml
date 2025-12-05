@@ -3,6 +3,11 @@ name: reveni-hero
 category: hero
 images:
   preview: /agent-input/unsection-hero/reveni-business-page-section-hero.jpg
+tags:
+  functional: [lead-capture]
+  style: [light-theme, modern, elegant, serif, sans-serif]
+  layout: [left-aligned, full-width, responsive]
+  industry: [saas, e-commerce]
 freeformKeywords:
   - hero
   - ecommerce

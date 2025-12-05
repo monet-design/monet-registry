@@ -4,6 +4,25 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/be-on-hand-home-section-hero.jpg
+tags:
+  functional:
+    - animation
+    - hover-effect
+  style:
+    - modern
+    - bold
+    - corporate
+    - playful
+    - colorful
+    - sans-serif
+  layout:
+    - two-column
+    - split-layout
+    - asymmetric
+    - responsive
+  industry:
+    - corporate
+    - enterprise
 freeformKeywords:
   - hero
   - volunteering

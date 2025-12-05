@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-ugur.png
 
+tags:
+  functional: [toggle, email-capture]
+  style: [light-theme, minimal, modern, elegant, gradient, colorful, serif]
+  layout: [single-column, centered, card-grid]
+  industry: [agency, creative, saas]
 freeformKeywords:
   - pricing
   - subscription

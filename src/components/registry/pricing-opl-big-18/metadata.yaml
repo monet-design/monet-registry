@@ -5,6 +5,21 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-big-18.png
 
+tags:
+  functional:
+    - toggle
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - pastel
+    - sans-serif
+  layout:
+    - two-column
+    - centered
+    - contained
+  industry:
+    - saas
 freeformKeywords:
   - pricing
   - payroll

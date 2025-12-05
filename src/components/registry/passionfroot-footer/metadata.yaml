@@ -5,6 +5,23 @@ category: footer
 images:
   preview: agent-input/footer/passionfroot-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - bold
+    - colorful
+    - sans-serif
+  layout:
+    - two-column
+    - responsive
+    - full-width
+  industry:
+    - saas
+    - startup
+    - creative
 freeformKeywords:
   - footer
   - dark

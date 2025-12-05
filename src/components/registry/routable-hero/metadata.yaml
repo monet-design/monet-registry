@@ -4,6 +4,24 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/routable-home-page-section-hero.jpg
+tags:
+  functional:
+    - email-capture
+    - animation
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - serif
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+    - full-width
+  industry:
+    - fintech
+    - saas
+    - enterprise
 freeformKeywords:
   - hero
   - accounts payable

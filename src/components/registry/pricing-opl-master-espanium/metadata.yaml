@@ -5,6 +5,19 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-espanium.png
 
+tags:
+  functional: []
+  style:
+    - minimal
+    - elegant
+    - serif
+    - light-theme
+    - modern
+  layout:
+    - two-column
+    - left-aligned
+  industry:
+    - startup
 freeformKeywords:
   - pricing
   - spain

@@ -4,6 +4,23 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/memory-customer-page-section-hero.jpg
+tags:
+  functional:
+    - tabs
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - gradient
+    - colorful
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+    - full-width
+  industry:
+    - saas
+    - startup
 freeformKeywords:
   - hero
   - customer

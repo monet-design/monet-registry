@@ -4,6 +4,21 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/kota-pricing-page-section-hero.jpg
+tags:
+  functional: []
+  style:
+    - light-theme
+    - modern
+    - colorful
+    - gradient
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+    - responsive
+  industry:
+    - saas
+    - enterprise
 freeformKeywords:
   - pricing
   - hero

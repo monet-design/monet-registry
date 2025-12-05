@@ -5,6 +5,22 @@ category: footer
 images:
   preview: agent-input/footer/pash-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - scroll-animation
+    - animation
+  style:
+    - minimal
+    - modern
+    - colorful
+  layout:
+    - centered
+    - full-width
+  industry:
+    - agency
+    - creative
+    - portfolio
+    - startup
 freeformKeywords:
   - footer
   - orange

@@ -5,6 +5,26 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-big-5.png
 
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - elegant
+    - pastel
+    - serif
+  layout:
+    - three-column
+    - card-grid
+    - responsive
+    - centered
+  industry:
+    - agency
+    - startup
+    - saas
+    - creative
 freeformKeywords:
   - pricing
   - packages

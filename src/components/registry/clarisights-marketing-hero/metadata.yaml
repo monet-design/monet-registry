@@ -3,6 +3,19 @@ name: clarisights-marketing-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/clarisights-home-page-section-hero.jpg
+tags:
+  functional:
+    - logo-cloud
+  style:
+    - modern
+    - corporate
+    - serif
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - enterprise
 freeformKeywords:
   - hero
   - marketing

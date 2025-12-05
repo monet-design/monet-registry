@@ -3,6 +3,22 @@ name: axim-focus-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/axim-our-focus-page-section-hero.jpg
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - serif
+    - sans-serif
+  layout:
+    - single-column
+    - centered
+    - full-width
+  industry:
+    - education
+    - nonprofit
 freeformKeywords:
   - hero
   - education

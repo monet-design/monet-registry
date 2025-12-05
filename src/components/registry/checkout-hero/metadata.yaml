@@ -3,6 +3,11 @@ name: checkout-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/checkout-product-page-section-hero.jpg
+tags:
+  functional: [animation, hover-effect, modal, dropdown]
+  style: [light-theme, minimal, modern, gradient, shadow, colorful]
+  layout: [two-column, split-layout, centered, responsive, full-width]
+  industry: [fintech, saas, e-commerce, enterprise]
 freeformKeywords:
   - hero
   - payments

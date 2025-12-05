@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-kyoso.png
 
+tags:
+  functional: [lead-capture, email-capture]
+  style: [light-theme, minimal, modern, sans-serif]
+  layout: [card-grid, centered, responsive, three-column]
+  industry: [saas, education, creative, startup]
 freeformKeywords:
   - pricing
   - teams

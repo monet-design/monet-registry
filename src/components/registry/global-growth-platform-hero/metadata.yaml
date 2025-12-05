@@ -4,6 +4,25 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/grove-home-page-section-hero.jpg
+tags:
+  functional:
+    - carousel
+    - auto-play
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - corporate
+    - serif
+  layout:
+    - centered
+    - single-column
+    - responsive
+  industry:
+    - healthcare
+    - ai
+    - saas
+    - enterprise
 freeformKeywords:
   - hero
   - AI

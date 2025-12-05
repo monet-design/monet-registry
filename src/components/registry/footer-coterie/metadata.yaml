@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/coterie-home-page-section-footer.jpg
 
+tags:
+  functional: [newsletter, email-capture]
+  style: [minimal, modern, serif, light-theme]
+  layout: [two-column, full-width, responsive]
+  industry: [e-commerce]
 freeformKeywords:
   - footer
   - newsletter

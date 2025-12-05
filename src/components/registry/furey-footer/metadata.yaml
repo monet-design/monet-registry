@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/furey-home-page-section-footer.jpg
 
+tags:
+  functional: [newsletter, email-capture, lead-capture]
+  style: [light-theme, modern, minimal, clean, sans-serif]
+  layout: [four-column, responsive, contained]
+  industry: [saas, fintech, e-commerce, b2b, startup]
 freeformKeywords:
   - footer
   - newsletter

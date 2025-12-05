@@ -5,6 +5,22 @@ category: pricing
 images:
   preview: agent-input/pricing/olp-big.png
 
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - colorful
+    - sans-serif
+  layout:
+    - three-column
+    - centered
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - agency
 freeformKeywords:
   - pricing
   - table

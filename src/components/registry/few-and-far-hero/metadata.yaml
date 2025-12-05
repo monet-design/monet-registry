@@ -3,6 +3,20 @@ name: few-and-far-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/few-and-far-home-page-section-hero.jpg
+tags:
+  functional:
+    - lead-capture
+  style:
+    - light-theme
+    - minimal
+    - elegant
+    - serif
+  layout:
+    - split-layout
+    - centered
+  industry:
+    - agency
+    - startup
 freeformKeywords:
   - hero
   - landing page

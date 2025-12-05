@@ -5,6 +5,22 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/steel-home-page-section-footer.jpg
 
+tags:
+  functional: []
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - corporate
+    - sans-serif
+  layout:
+    - three-column
+    - responsive
+  industry:
+    - saas
+    - startup
+    - ai
+    - enterprise
 freeformKeywords:
   - footer
   - dark footer

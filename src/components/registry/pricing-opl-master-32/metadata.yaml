@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-32.png
 
+tags:
+  functional: [toggle, email-capture, lead-capture]
+  style: [light-theme, minimal, modern, sans-serif]
+  layout: [single-column, card-grid, centered]
+  industry: [saas, agency, creative]
 freeformKeywords:
   - pricing
   - subscription

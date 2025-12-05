@@ -4,6 +4,25 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/sophia-amoruso-my-story-page-section-hero.jpg
+tags:
+  functional: []
+  style:
+    - minimal
+    - modern
+    - bold
+    - monochrome
+    - serif
+  layout:
+    - two-column
+    - split-layout
+    - left-aligned
+    - responsive
+  industry:
+    - personal
+    - portfolio
+    - creative
+    - fashion
+    - startup
 freeformKeywords:
   - hero
   - about

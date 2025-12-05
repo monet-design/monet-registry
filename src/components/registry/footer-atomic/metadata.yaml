@@ -5,6 +5,21 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/atomic-home-page-section-footer.jpg
 
+tags:
+  functional: []
+  style:
+    - dark-theme
+    - minimal
+    - modern
+  layout:
+    - single-column
+    - full-width
+    - inline
+  industry:
+    - saas
+    - startup
+    - portfolio
+    - agency
 freeformKeywords:
   - footer
   - minimal

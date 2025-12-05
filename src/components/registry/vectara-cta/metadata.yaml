@@ -3,6 +3,21 @@ name: vectara-cta
 category: cta
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-cta/vectara.png
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - ai
+    - enterprise
 freeformKeywords:
   - cta
   - call to action

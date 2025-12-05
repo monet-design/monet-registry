@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/vela-capitals-home-page-section-footer.jpg
 
+tags:
+  functional: [contact-form]
+  style: [modern, corporate, bold, colorful, sans-serif, minimal]
+  layout: [three-column, full-width, responsive]
+  industry: [fintech, corporate, enterprise]
 freeformKeywords:
   - footer
   - corporate

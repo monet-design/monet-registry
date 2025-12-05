@@ -4,6 +4,23 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/routable-payment-page-section-hero.jpg
+tags:
+  functional:
+    - lead-capture
+  style:
+    - dark-theme
+    - modern
+    - elegant
+    - corporate
+    - serif
+  layout:
+    - centered
+    - three-column
+    - card-grid
+  industry:
+    - fintech
+    - saas
+    - enterprise
 freeformKeywords:
   - payment
   - fintech

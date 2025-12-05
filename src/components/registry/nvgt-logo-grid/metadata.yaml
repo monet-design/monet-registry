@@ -3,6 +3,21 @@ name: nvgt-logo-grid
 category: logo-cloud
 images:
   preview: /registry/nvgt-logo-grid/preview.png
+tags:
+  functional: []
+  style:
+    - dark-theme
+    - modern
+    - bold
+    - colorful
+  layout:
+    - centered
+    - card-grid
+    - responsive
+  industry:
+    - saas
+    - startup
+    - enterprise
 freeformKeywords:
   - logo cloud
   - logo grid

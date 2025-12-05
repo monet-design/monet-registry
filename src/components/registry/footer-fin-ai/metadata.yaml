@@ -5,6 +5,20 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/fin-ai-footer.jpg
 
+tags:
+  functional: []
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - four-column
+    - full-width
+  industry:
+    - ai
+    - saas
+    - enterprise
 freeformKeywords:
   - footer
   - dark footer

@@ -4,6 +4,25 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/canopy-start-page-section-hero.jpg
+tags:
+  functional:
+    - contact-form
+    - lead-capture
+    - dropdown
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - clean
+    - sans-serif
+  layout:
+    - two-column
+    - split-layout
+    - responsive
+  industry:
+    - fintech
+    - saas
+    - startup
 freeformKeywords:
   - hero
   - canopy

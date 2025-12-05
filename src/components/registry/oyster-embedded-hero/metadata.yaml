@@ -3,6 +3,11 @@ name: oyster-embedded-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/oyster-embedded-page-section-hero.jpg
+tags:
+  functional: []
+  style: [minimal, modern, light-theme, serif, sans-serif, colorful]
+  layout: [centered, single-column, contained, responsive]
+  industry: [saas, enterprise]
 freeformKeywords:
   - hero
   - landing

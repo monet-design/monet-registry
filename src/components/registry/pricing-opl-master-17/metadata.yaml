@@ -5,6 +5,23 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-17.png
 
+tags:
+  functional: []
+  style:
+    - gradient
+    - modern
+    - pastel
+    - colorful
+    - light-theme
+    - sans-serif
+  layout:
+    - single-column
+    - full-width
+    - centered
+  industry:
+    - creative
+    - agency
+    - freelance
 freeformKeywords:
   - pricing
   - services

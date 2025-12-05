@@ -4,6 +4,21 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/move-home-page-section-hero-beer-drive-cta.jpg
+tags:
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - bold
+    - modern
+    - sans-serif
+  layout:
+    - two-column
+    - split-layout
+    - responsive
+  industry:
+    - food
+    - restaurant
 freeformKeywords:
   - hero
   - beer

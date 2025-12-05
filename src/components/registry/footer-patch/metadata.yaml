@@ -5,6 +5,11 @@ category: footer
 images:
   preview: agent-input/footer/patch-home-page-section-footer.jpg
 
+tags:
+  functional: [newsletter, email-capture]
+  style: [light-theme, minimal, modern, sans-serif]
+  layout: [four-column, responsive]
+  industry: [saas, developer, startup]
 freeformKeywords:
   - footer
   - newsletter

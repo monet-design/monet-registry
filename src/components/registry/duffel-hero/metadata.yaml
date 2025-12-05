@@ -3,6 +3,11 @@ name: duffel-hero
 category: hero
 images:
   preview: /registry/duffel-hero/preview.jpg
+tags:
+  functional: [animation, hover-effect, search]
+  style: [light-theme, minimal, modern, elegant, serif, shadow, gradient]
+  layout: [centered, single-column, full-width, responsive]
+  industry: [saas, travel, fintech, startup]
 freeformKeywords:
   - hero
   - travel

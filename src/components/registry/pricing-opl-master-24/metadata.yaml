@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-24.png
 
+tags:
+  functional: [email-capture, lead-capture]
+  style: [dark-theme, modern, minimal, gradient, shadow]
+  layout: [card-grid, centered, responsive]
+  industry: [saas]
 freeformKeywords:
   - pricing
   - pricing table

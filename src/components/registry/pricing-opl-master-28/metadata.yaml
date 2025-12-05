@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-28.png
 
+tags:
+  functional: [email-capture]
+  style: [light-theme, minimal, modern, gradient]
+  layout: [two-column, card-grid, centered]
+  industry: [education, saas]
 freeformKeywords:
   - pricing
   - beta program

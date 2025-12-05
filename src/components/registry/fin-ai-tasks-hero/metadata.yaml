@@ -3,6 +3,11 @@ name: fin-ai-tasks-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/fin-ai-tasks-hero-design.jpg
+tags:
+  functional: [animation, hover-effect, modal]
+  style: [dark-theme, modern, gradient, shadow, blur]
+  layout: [two-column, centered, responsive, split-layout]
+  industry: [saas, fintech, ai]
 freeformKeywords:
   - hero
   - landing

@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/flecto-home-page-section-footer.jpg
 
+tags:
+  functional: [newsletter, email-capture, lead-capture]
+  style: [minimal, modern, light-theme]
+  layout: [multi-column, left-aligned, responsive]
+  industry: [saas, startup]
 freeformKeywords:
   - footer
   - newsletter

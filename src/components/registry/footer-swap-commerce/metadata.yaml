@@ -5,6 +5,23 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/swap-commerce-home-page-section-footer.jpg
 
+tags:
+  functional: []
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - corporate
+    - sans-serif
+  layout:
+    - four-column
+    - left-aligned
+    - full-width
+    - responsive
+  industry:
+    - e-commerce
+    - startup
+    - saas
 freeformKeywords:
   - footer
   - swap commerce

@@ -3,6 +3,11 @@ name: soft-ai-waitlist
 category: waitlist
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/dribble-waitlist/soft-ui.png
+tags:
+  functional: [email-capture, newsletter]
+  style: [glassmorphism, modern, gradient, blur, colorful, sans-serif]
+  layout: [centered, single-column]
+  industry: [ai, startup]
 freeformKeywords:
   - waitlist
   - ai

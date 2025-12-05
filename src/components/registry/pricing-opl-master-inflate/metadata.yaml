@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-inflate.png
 
+tags:
+  functional: [hover-effect]
+  style: [dark-theme, modern, playful, gradient, colorful, sans-serif]
+  layout: [two-column, card-grid, centered, responsive]
+  industry: [creative, saas]
 freeformKeywords:
   - pricing
   - 3d

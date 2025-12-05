@@ -5,6 +5,22 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-contrast.png
 
+tags:
+  functional: []
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - shadow
+  layout:
+    - four-column
+    - card-grid
+    - responsive
+  industry:
+    - saas
+    - startup
+    - agency
+    - creative
 freeformKeywords:
   - pricing
   - plans

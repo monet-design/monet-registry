@@ -4,6 +4,21 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/cape-home-page-section-hero.jpg
+tags:
+  functional:
+    - navigation
+  style:
+    - minimal
+    - modern
+    - serif
+    - elegant
+  layout:
+    - full-width
+    - centered
+    - single-column
+  industry:
+    - startup
+    - saas
 freeformKeywords:
   - hero
   - landing

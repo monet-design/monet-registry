@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-33.png
 
+tags:
+  functional: [hover-effect]
+  style: [dark-theme, modern, gradient, colorful]
+  layout: [two-column, centered, card-grid]
+  industry: [saas, fintech, startup, enterprise]
 freeformKeywords:
   - pricing
   - SaaS

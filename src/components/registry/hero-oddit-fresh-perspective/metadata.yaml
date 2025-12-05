@@ -4,6 +4,23 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/oddit-home-page-section-hero.jpg
+tags:
+  functional:
+    - animation
+  style:
+    - light-theme
+    - modern
+    - playful
+    - bold
+    - minimal
+  layout:
+    - split-layout
+    - centered
+    - responsive
+  industry:
+    - agency
+    - saas
+    - creative
 freeformKeywords:
   - hero
   - conversion

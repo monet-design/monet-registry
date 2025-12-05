@@ -3,6 +3,23 @@ name: sketch-collaborate-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/sketch-collaborate-page-section-hero.jpg
+tags:
+  functional:
+    - animation
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - gradient
+    - glow
+    - shadow
+  layout:
+    - centered
+    - single-column
+    - full-width
+  industry:
+    - saas
+    - creative
 freeformKeywords:
   - collaborative
   - design

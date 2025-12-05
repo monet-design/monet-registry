@@ -5,6 +5,11 @@ category: footer
 images:
   preview: agent-input/footer/liveblocks-home-page-section-footer.jpg
 
+tags:
+  functional: [hover-effect, animation]
+  style: [dark-theme, minimal, modern, sans-serif]
+  layout: [four-column, responsive, mobile-first]
+  industry: [saas, startup, ai]
 freeformKeywords:
   - footer
   - dark theme

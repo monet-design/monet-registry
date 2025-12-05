@@ -4,6 +4,24 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/insurely-home-page-section-hero.jpg
+tags:
+  functional:
+    - animation
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - gradient
+    - sans-serif
+  layout:
+    - split-layout
+    - two-column
+    - centered
+    - responsive
+  industry:
+    - fintech
+    - saas
+    - enterprise
 freeformKeywords:
   - hero
   - insurance

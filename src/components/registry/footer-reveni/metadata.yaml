@@ -5,6 +5,20 @@ category: footer
 images:
   preview: agent-input/footer/reveni-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - email-capture
+    - dropdown
+  style:
+    - minimal
+    - light-theme
+    - modern
+  layout:
+    - single-column
+    - full-width
+    - centered
+  industry:
+    - saas
 freeformKeywords:
   - footer
   - minimal

@@ -3,6 +3,11 @@ name: sophia-amoruso-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/sophia-amoruso-home-page-section-hero.jpg
+tags:
+  functional: [modal, lead-capture, email-capture, contact-form]
+  style: [elegant, serif, modern, colorful, bold]
+  layout: [split-layout, left-aligned, asymmetric]
+  industry: [personal, fashion, portfolio]
 freeformKeywords:
   - hero
   - personal brand

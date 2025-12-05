@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-screenshot-35.png
 
+tags:
+  functional: [email-capture, lead-capture]
+  style: [light-theme, modern, minimal, gradient, pastel, sans-serif]
+  layout: [three-column, card-grid, centered]
+  industry: [agency, creative, saas]
 freeformKeywords:
   - pricing
   - plans

@@ -5,6 +5,24 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/1280-2.png
 
+tags:
+  functional:
+    - toggle
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - shadow
+    - colorful
+  layout:
+    - three-column
+    - centered
+    - card-grid
+    - responsive
+  industry:
+    - saas
+    - startup
+    - agency
 freeformKeywords:
   - pricing
   - plans

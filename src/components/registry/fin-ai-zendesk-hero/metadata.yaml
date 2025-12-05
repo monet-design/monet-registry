@@ -3,6 +3,11 @@ name: fin-ai-zendesk-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/fin-ai-zendesk-hero-design.jpg
+tags:
+  functional: [animation, hover-effect]
+  style: [dark-theme, modern, gradient, minimal]
+  layout: [centered, single-column, full-width]
+  industry: [saas, ai]
 freeformKeywords:
   - hero
   - AI

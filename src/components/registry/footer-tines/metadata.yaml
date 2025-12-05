@@ -5,6 +5,23 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/tines-footer-section.jpg
 
+tags:
+  functional: []
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - gradient
+    - sans-serif
+    - colorful
+  layout:
+    - multi-column
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - enterprise
+    - startup
 freeformKeywords:
   - footer
   - tines

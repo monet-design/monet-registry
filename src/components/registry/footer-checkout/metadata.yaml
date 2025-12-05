@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/checkout-home-page-section-footer.jpg
 
+tags:
+  functional: [dropdown]
+  style: [dark-theme, modern, minimal, sans-serif]
+  layout: [four-column, responsive]
+  industry: [fintech, saas, e-commerce]
 freeformKeywords:
   - footer
   - payment

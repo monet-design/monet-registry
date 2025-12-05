@@ -5,6 +5,23 @@ category: footer
 images:
   preview: agent-input/footer/linear-ask-page-section-footer.jpg
 
+tags:
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - shadow
+  layout:
+    - card-grid
+    - two-column
+    - centered
+    - responsive
+  industry:
+    - saas
+    - enterprise
+    - startup
 freeformKeywords:
   - footer
   - linear

@@ -4,6 +4,22 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/intercom-home-page-section-hero.jpg
+tags:
+  functional:
+    - video
+  style:
+    - dark-theme
+    - modern
+    - bold
+    - gradient
+    - serif
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - enterprise
+    - ai
 freeformKeywords:
   - hero
   - intercom

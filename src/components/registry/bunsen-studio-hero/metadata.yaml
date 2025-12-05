@@ -3,6 +3,11 @@ name: bunsen-studio-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/bunsen-studio-home-page-section-hero.jpg
+tags:
+  functional: [animation, scroll-animation]
+  style: [dark-theme, minimal, modern, gradient]
+  layout: [centered, full-width]
+  industry: [creative, agency, startup]
 freeformKeywords:
   - hero
   - dark theme

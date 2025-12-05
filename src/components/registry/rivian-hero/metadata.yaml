@@ -3,6 +3,11 @@ name: rivian-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/rivian-home-page-section-hero.jpg
+tags:
+  functional: [video, hover-effect]
+  style: [dark-theme, modern, minimal, bold, sans-serif]
+  layout: [full-width, centered, single-column]
+  industry: [startup, enterprise]
 freeformKeywords:
   - hero
   - rivian

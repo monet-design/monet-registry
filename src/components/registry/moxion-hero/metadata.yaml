@@ -4,6 +4,23 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/moxion-home-page-section-hero.jpg
+tags:
+  functional:
+    - animation
+    - hover-effect
+    - scroll-animation
+  style:
+    - light-theme
+    - modern
+    - bold
+    - minimal
+  layout:
+    - full-width
+    - single-column
+    - left-aligned
+  industry:
+    - enterprise
+    - startup
 freeformKeywords:
   - hero
   - energy

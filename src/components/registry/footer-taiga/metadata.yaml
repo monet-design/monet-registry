@@ -5,6 +5,22 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/taiga-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - hover-effect
+  style:
+    - minimal
+    - modern
+    - corporate
+    - sans-serif
+    - monochrome
+  layout:
+    - four-column
+    - left-aligned
+    - responsive
+  industry:
+    - enterprise
+    - startup
 freeformKeywords:
   - footer
   - taiga

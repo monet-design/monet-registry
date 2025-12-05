@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-big-27.png
 
+tags:
+  functional: [dropdown, counter, filter, calculator]
+  style: [light-theme, minimal, modern, shadow, colorful, sans-serif]
+  layout: [centered, card-grid, responsive, full-width]
+  industry: [fintech, e-commerce]
 freeformKeywords:
   - pricing
   - comparison

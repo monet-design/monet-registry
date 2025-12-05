@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-screenshot-14.png
 
+tags:
+  functional: [email-capture, hover-effect]
+  style: [dark-theme, minimal, modern, gradient, shadow]
+  layout: [single-column, centered, contained]
+  industry: [saas]
 freeformKeywords:
   - pricing
   - simple

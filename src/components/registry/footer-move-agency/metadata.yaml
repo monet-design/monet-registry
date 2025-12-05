@@ -5,6 +5,11 @@ category: footer
 images:
   preview: agent-input/footer/move-agency-home-page-section-footer.jpg
 
+tags:
+  functional: [newsletter, email-capture, contact-form]
+  style: [light-theme, serif, modern, corporate]
+  layout: [multi-column, responsive]
+  industry: [agency, corporate]
 freeformKeywords:
   - footer
   - newsletter

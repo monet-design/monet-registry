@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-hey.png
 
+tags:
+  functional: [email-capture, lead-capture]
+  style: [dark-theme, modern, elegant, serif]
+  layout: [three-column, card-grid, centered, responsive]
+  industry: [saas, creative, startup]
 freeformKeywords:
   - pricing
   - youtube

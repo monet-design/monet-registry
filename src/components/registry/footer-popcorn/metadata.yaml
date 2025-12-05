@@ -5,6 +5,19 @@ category: footer
 images:
   preview: agent-input/footer/popcorn-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - social
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - three-column
+    - full-width
+  industry:
+    - startup
 freeformKeywords:
   - footer
   - dark theme

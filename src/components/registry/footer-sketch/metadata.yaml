@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/sketch-home-page-section-footer.jpg
 
+tags:
+  functional: [newsletter, email-capture]
+  style: [light-theme, minimal, modern, sans-serif]
+  layout: [multi-column, left-aligned, responsive]
+  industry: [saas, creative]
 freeformKeywords:
   - footer
   - sketch

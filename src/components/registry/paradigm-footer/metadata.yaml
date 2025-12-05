@@ -5,6 +5,21 @@ category: footer
 images:
   preview: agent-input/footer/paradigm-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - animation
+    - email-capture
+    - newsletter
+  style:
+    - dark-theme
+    - minimal
+    - elegant
+    - serif
+  layout:
+    - centered
+    - full-width
+  industry:
+    - crypto
 freeformKeywords:
   - footer
   - newsletter

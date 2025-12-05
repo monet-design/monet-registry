@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-other.png
 
+tags:
+  functional: [tabs, comparison]
+  style: [light-theme, minimal, modern, colorful]
+  layout: [centered, single-column]
+  industry: [saas, agency]
 freeformKeywords:
   - pricing
   - design agency

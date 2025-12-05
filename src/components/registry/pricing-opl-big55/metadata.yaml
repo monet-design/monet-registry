@@ -5,6 +5,24 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-big55.png
 
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - serif
+    - sans-serif
+    - colorful
+  layout:
+    - four-column
+    - centered
+    - card-grid
+    - contained
+    - responsive
+  industry:
+    - e-commerce
 freeformKeywords:
   - pricing
   - note packages

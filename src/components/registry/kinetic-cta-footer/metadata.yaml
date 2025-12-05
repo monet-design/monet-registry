@@ -5,6 +5,20 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/kinetic-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - animation
+  style:
+    - light-theme
+    - modern
+    - gradient
+    - sans-serif
+  layout:
+    - full-width
+    - centered
+  industry:
+    - startup
+    - saas
 freeformKeywords:
   - footer
   - cta

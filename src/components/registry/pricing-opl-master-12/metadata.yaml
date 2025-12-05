@@ -5,6 +5,23 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-12.png
 
+tags:
+  functional:
+    - dropdown
+    - hover-effect
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - shadow
+    - sans-serif
+  layout:
+    - single-column
+    - centered
+    - card-grid
+  industry:
+    - saas
+    - startup
 freeformKeywords:
   - pricing
   - subscription

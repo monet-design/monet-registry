@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-7.png
 
+tags:
+  functional: []
+  style: [gradient, bold, modern, serif, colorful]
+  layout: [single-column, centered, card-grid]
+  industry: [education, saas]
 freeformKeywords:
   - pricing
   - one-time purchase

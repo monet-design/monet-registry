@@ -3,6 +3,11 @@ name: plain-home-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/plain-home-page-section-hero.webp
+tags:
+  functional: [email-capture, animation, hover-effect, modal]
+  style: [dark-theme, modern, gradient, minimal, sans-serif]
+  layout: [centered, single-column, full-width]
+  industry: [saas, enterprise, startup]
 freeformKeywords:
   - hero
   - saas

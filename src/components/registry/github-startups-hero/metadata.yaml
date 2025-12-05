@@ -3,6 +3,11 @@ name: github-startups-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/github-startups-page-section-hero.jpg
+tags:
+  functional: [animation, hover-effect, lead-capture, search]
+  style: [dark-theme, modern, gradient, glassmorphism, glow, shadow, blur]
+  layout: [single-column, centered, card-grid, full-width, responsive]
+  industry: [startup, saas, enterprise]
 freeformKeywords:
   - hero
   - startup

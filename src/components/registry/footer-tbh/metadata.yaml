@@ -5,6 +5,26 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/tbh-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - email-capture
+    - newsletter
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - elegant
+    - serif
+    - handwritten
+  layout:
+    - three-column
+    - centered
+    - full-width
+    - responsive
+  industry:
+    - healthcare
+    - enterprise
+    - startup
 freeformKeywords:
   - footer
   - mental health

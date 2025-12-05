@@ -3,6 +3,11 @@ name: iconos-waitlist
 category: waitlist
 images:
   preview: agent-input/dribble-waitlist/iconos.png
+tags:
+  functional: [email-capture, lead-capture]
+  style: [modern, gradient, glassmorphism, colorful, minimal]
+  layout: [centered, single-column]
+  industry: [saas, startup, creative]
 freeformKeywords:
   - waitlist
   - email signup

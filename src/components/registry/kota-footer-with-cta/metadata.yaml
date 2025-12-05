@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/kota-home-page-section-footer.jpg
 
+tags:
+  functional: [email-capture, newsletter]
+  style: [dark-theme, modern, sans-serif]
+  layout: [four-column, full-width, asymmetric]
+  industry: [fintech, saas, startup]
 freeformKeywords:
   - footer
   - cta

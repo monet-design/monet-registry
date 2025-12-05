@@ -4,6 +4,21 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/oyster-home-page-section-hero.jpg
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - playful
+    - sans-serif
+  layout:
+    - two-column
+    - split-layout
+    - responsive
+  industry:
+    - saas
+    - enterprise
 freeformKeywords:
   - hero
   - global employment

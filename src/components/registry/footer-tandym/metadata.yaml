@@ -5,6 +5,20 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/tandym-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - three-column
+    - responsive
+  industry:
+    - fintech
+    - e-commerce
 freeformKeywords:
   - footer
   - dark green

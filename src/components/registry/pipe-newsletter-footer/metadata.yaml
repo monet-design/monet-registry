@@ -5,6 +5,23 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/pipe-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - email-capture
+    - newsletter
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - multi-column
+    - left-aligned
+    - full-width
+  industry:
+    - fintech
+    - saas
+    - startup
 freeformKeywords:
   - footer
   - newsletter

@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-cw.png
 
+tags:
+  functional: [email-capture, hover-effect]
+  style: [gradient, modern, colorful, pastel, light-theme]
+  layout: [two-column, card-grid, centered, responsive]
+  industry: [saas, creative, startup]
 freeformKeywords:
   - pricing
   - pay once

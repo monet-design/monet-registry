@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/resend-home-page-section-footer.jpg
 
+tags:
+  functional: []
+  style: [dark-theme, minimal, modern, sans-serif]
+  layout: [multi-column, full-width, left-aligned]
+  industry: [saas, startup]
 freeformKeywords:
   - footer
   - dark footer

@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-25.png
 
+tags:
+  functional: [hover-effect]
+  style: [light-theme, minimal, modern, gradient, sans-serif]
+  layout: [two-column, centered, responsive]
+  industry: [saas, startup]
 freeformKeywords:
   - pricing
   - team pricing

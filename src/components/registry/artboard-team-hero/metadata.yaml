@@ -3,6 +3,11 @@ name: artboard-team-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/artboard-team-page-section-hero.jpg
+tags:
+  functional: [animation, hover-effect, logo-cloud]
+  style: [light-theme, modern, gradient, serif, colorful]
+  layout: [split-layout, centered, responsive]
+  industry: [saas, creative, agency, startup]
 freeformKeywords:
   - hero
   - landing page

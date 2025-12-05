@@ -5,6 +5,25 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-big49.png
 
+tags:
+  functional:
+    - email-capture
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - gradient
+    - colorful
+  layout:
+    - three-column
+    - centered
+    - card-grid
+    - responsive
+  industry:
+    - saas
+    - enterprise
+    - startup
 freeformKeywords:
   - pricing
   - plans

@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/zapier-home-page-section-footer.jpg
 
+tags:
+  functional: [filter, search]
+  style: [light-theme, minimal, modern, corporate, sans-serif]
+  layout: [multi-column, centered, full-width]
+  industry: [saas, enterprise]
 freeformKeywords:
   - footer
   - zapier

@@ -5,6 +5,11 @@ category: footer
 images:
   preview: agent-input/footer/kajabi-home-page-section-footer.jpg
 
+tags:
+  functional: []
+  style: [gradient, bold, modern, colorful]
+  layout: [centered, single-column, full-width]
+  industry: [saas, creative, education]
 freeformKeywords:
   - footer
   - cta

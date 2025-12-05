@@ -5,6 +5,24 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/reversechaos.png
 
+tags:
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - gradient
+    - modern
+    - bold
+  layout:
+    - three-column
+    - card-grid
+    - centered
+    - responsive
+  industry:
+    - saas
+    - startup
+    - enterprise
+    - creative
 freeformKeywords:
   - pricing
   - subscription

@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/flaghsip-home-page-section-footer.jpg
 
+tags:
+  functional: [contact-form, email-capture]
+  style: [dark-theme, modern, gradient, serif, bold]
+  layout: [two-column, left-aligned, full-width]
+  industry: [saas, e-commerce, startup]
 freeformKeywords:
   - footer
   - cta

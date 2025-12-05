@@ -4,6 +4,21 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/isla-porter-home-page-section-hero.jpg
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - elegant
+    - serif
+    - modern
+  layout:
+    - centered
+    - full-width
+    - split-layout
+  industry:
+    - creative
+    - portfolio
 freeformKeywords:
   - hero
   - cabinetry

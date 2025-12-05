@@ -3,6 +3,24 @@ name: sketch-color-variables-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/sketch-color-variables-page-section-hero.jpg
+tags:
+  functional:
+    - animation
+    - hover-effect
+  style:
+    - gradient
+    - modern
+    - colorful
+    - sans-serif
+    - light-theme
+  layout:
+    - two-column
+    - split-layout
+    - centered
+    - responsive
+  industry:
+    - saas
+    - creative
 freeformKeywords:
   - sketch
   - color

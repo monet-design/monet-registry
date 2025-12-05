@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/ahref-home-page-section-footer.jpg
 
+tags:
+  functional: [dropdown]
+  style: [dark-theme, minimal, modern, sans-serif]
+  layout: [left-aligned, responsive]
+  industry: [saas]
 freeformKeywords:
   - footer
   - ahrefs

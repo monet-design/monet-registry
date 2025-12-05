@@ -5,6 +5,22 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/atrium-home-page-section-footer.jpg
 
+tags:
+  functional:
+    - email-capture
+    - contact-form
+  style:
+    - gradient
+    - elegant
+    - modern
+    - serif
+    - colorful
+  layout:
+    - single-column
+    - left-aligned
+    - full-width
+  industry:
+    - healthcare
 freeformKeywords:
   - footer
   - cta

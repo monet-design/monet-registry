@@ -5,6 +5,21 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/be-on-hand-home-section-footer.jpg
 
+tags:
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - colorful
+  layout:
+    - four-column
+    - left-aligned
+    - full-width
+  industry:
+    - saas
+    - corporate
 freeformKeywords:
   - footer
   - dark green

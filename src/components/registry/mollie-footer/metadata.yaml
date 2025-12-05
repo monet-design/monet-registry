@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/mollie-home-page-section-footer.jpg
 
+tags:
+  functional: [dropdown]
+  style: [dark-theme, modern, minimal, sans-serif]
+  layout: [multi-column, full-width, responsive]
+  industry: [fintech, saas]
 freeformKeywords:
   - footer
   - mollie

@@ -4,6 +4,26 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/ramp-pricing-page-section-hero.jpg
+tags:
+  functional:
+    - email-capture
+    - lead-capture
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - corporate
+    - bold
+    - sans-serif
+  layout:
+    - split-layout
+    - asymmetric
+    - left-aligned
+    - full-width
+  industry:
+    - fintech
+    - saas
+    - startup
 freeformKeywords:
   - hero
   - pricing

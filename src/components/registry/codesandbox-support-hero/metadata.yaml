@@ -4,6 +4,22 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/codesandbox-support-page-section-hero.jpg
+tags:
+  functional:
+    - filter
+    - search
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - three-column
+    - centered
+    - card-grid
+    - responsive
+  industry:
+    - saas
+    - startup
 freeformKeywords:
   - hero
   - support

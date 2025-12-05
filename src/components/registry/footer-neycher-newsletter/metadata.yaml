@@ -5,6 +5,11 @@ category: footer
 images:
   preview: agent-input/footer/neycher-home-page-section-footer.jpg
 
+tags:
+  functional: [newsletter, email-capture, contact-form, hover-effect, scroll-animation]
+  style: [dark-theme, minimal, elegant, serif]
+  layout: [three-column, responsive, left-aligned]
+  industry: [e-commerce, healthcare]
 freeformKeywords:
   - footer
   - newsletter

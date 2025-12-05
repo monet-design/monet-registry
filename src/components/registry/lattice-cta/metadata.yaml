@@ -3,6 +3,11 @@ name: lattice-cta
 category: cta
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-cta/lattice.png
+tags:
+  functional: [animation, hover-effect, scroll-animation]
+  style: [light-theme, modern, gradient, blur, pastel, sans-serif]
+  layout: [single-column, centered, full-width, responsive]
+  industry: [saas, enterprise]
 freeformKeywords:
   - cta
   - call to action

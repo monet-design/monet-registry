@@ -3,6 +3,20 @@ name: intercom-watch-demo-cta
 category: cta
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-cta/intercom-watch-demo.png
+tags:
+  functional:
+    - video
+  style:
+    - modern
+    - colorful
+    - elegant
+    - gradient
+  layout:
+    - centered
+    - single-column
+    - full-width
+  industry:
+    - saas
 freeformKeywords:
   - cta
   - call to action

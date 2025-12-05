@@ -3,6 +3,24 @@ name: pipe-entrepreneurs-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/pipe-enterpreneurs-page-section-hero.jpg
+tags:
+  functional:
+    - hover-effect
+  style:
+    - gradient
+    - modern
+    - bold
+    - light-theme
+    - sans-serif
+  layout:
+    - split-layout
+    - two-column
+    - left-aligned
+    - responsive
+  industry:
+    - fintech
+    - saas
+    - startup
 freeformKeywords:
   - hero
   - fintech

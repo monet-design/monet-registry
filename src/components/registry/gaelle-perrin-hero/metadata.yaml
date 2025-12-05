@@ -3,6 +3,11 @@ name: gaelle-perrin-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/gaelle-perrin-home-page-section-hero.jpg
+tags:
+  functional: [hover-effect]
+  style: [elegant, serif, minimal, light-theme]
+  layout: [asymmetric, single-column, centered]
+  industry: [travel, agency, creative]
 freeformKeywords:
   - hero
   - landing page

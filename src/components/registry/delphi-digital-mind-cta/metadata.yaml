@@ -3,6 +3,23 @@ name: delphi-digital-mind-cta
 category: cta
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-cta/delphi.png
+tags:
+  functional:
+    - lead-capture
+  style:
+    - gradient
+    - modern
+    - minimal
+    - warm
+    - serif
+  layout:
+    - centered
+    - single-column
+    - responsive
+  industry:
+    - ai
+    - saas
+    - startup
 freeformKeywords:
   - cta
   - call to action

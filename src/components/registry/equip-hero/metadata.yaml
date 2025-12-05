@@ -4,6 +4,24 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/equip-home-page-section-hero.jpg
+tags:
+  functional:
+    - animation
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - colorful
+    - gradient
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+    - responsive
+  industry:
+    - fintech
+    - saas
+    - enterprise
 freeformKeywords:
   - hero
   - financial

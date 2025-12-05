@@ -3,6 +3,22 @@ name: reon-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/reon-home-page-section-hero.jpg
+tags:
+  functional: []
+  style:
+    - minimal
+    - elegant
+    - corporate
+    - serif
+    - modern
+  layout:
+    - single-column
+    - centered
+    - full-width
+  industry:
+    - agency
+    - enterprise
+    - startup
 freeformKeywords:
   - hero
   - technology consultancy

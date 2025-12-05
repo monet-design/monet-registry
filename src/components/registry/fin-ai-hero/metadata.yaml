@@ -3,6 +3,11 @@ name: fin-ai-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/fin-ai-home-page-hero-design.jpg
+tags:
+  functional: [animation, hover-effect]
+  style: [dark-theme, gradient, modern, bold, colorful]
+  layout: [three-column, card-grid, responsive, centered]
+  industry: [fintech, ai, saas]
 freeformKeywords:
   - hero
   - AI

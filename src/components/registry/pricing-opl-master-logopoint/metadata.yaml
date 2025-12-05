@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-logopoint.png
 
+tags:
+  functional: []
+  style: [dark-theme, light-theme, modern, minimal, elegant, corporate]
+  layout: [three-column, centered, card-grid]
+  industry: [creative, agency, design]
 freeformKeywords:
   - pricing
   - logo design

@@ -4,6 +4,25 @@ category: feature-showcase
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/codesandbox-sandboxes-page-section-discover-creative-sandboxes.jpg
+tags:
+  functional:
+    - animation
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - bold
+    - gradient
+  layout:
+    - centered
+    - card-grid
+    - single-column
+    - responsive
+  industry:
+    - saas
+    - creative
+    - portfolio
 freeformKeywords:
   - sandbox
   - creative

@@ -5,6 +5,23 @@ category: footer
 images:
   preview: agent-input/footer/jimo-footer-section.jpg
 
+tags:
+  functional:
+    - newsletter
+    - email-capture
+    - hover-effect
+    - scroll-animation
+  style:
+    - dark-theme
+    - modern
+    - bold
+  layout:
+    - multi-column
+    - responsive
+    - full-width
+  industry:
+    - saas
+    - startup
 freeformKeywords:
   - footer
   - newsletter

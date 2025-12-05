@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-master-wittl.png
 
+tags:
+  functional: [email-capture, lead-capture]
+  style: [dark-theme, gradient, modern, serif, elegant]
+  layout: [single-column, asymmetric, left-aligned]
+  industry: [saas, startup]
 freeformKeywords:
   - pricing
   - simple pricing

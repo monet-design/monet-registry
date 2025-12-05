@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/watershed-home-page-section-footer.jpg
 
+tags:
+  functional: [toggle]
+  style: [light-theme, minimal, modern, corporate, sans-serif]
+  layout: [multi-column, responsive]
+  industry: [saas, enterprise]
 freeformKeywords:
   - footer
   - watershed

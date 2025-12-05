@@ -5,6 +5,17 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-big15.png
 
+tags:
+  functional: []
+  style:
+    - dark-theme
+    - modern
+    - bold
+  layout:
+    - single-column
+    - contained
+  industry:
+    - music
 freeformKeywords:
   - pricing
   - music studio

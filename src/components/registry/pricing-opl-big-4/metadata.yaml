@@ -5,6 +5,11 @@ category: pricing
 images:
   preview: agent-input/pricing/opl-big-4.png
 
+tags:
+  functional: []
+  style: [light-theme, minimal, modern, elegant, shadow, serif]
+  layout: [three-column, centered, card-grid, responsive]
+  industry: [healthcare]
 freeformKeywords:
   - pricing
   - subscription

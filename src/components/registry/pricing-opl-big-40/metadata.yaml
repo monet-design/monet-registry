@@ -5,6 +5,23 @@ category: pricing
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-big-40.png
 
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - minimal
+    - elegant
+    - serif
+    - sans-serif
+  layout:
+    - two-column
+    - card-grid
+    - centered
+    - responsive
+  industry:
+    - e-commerce
+    - food
 freeformKeywords:
   - pricing
   - product card

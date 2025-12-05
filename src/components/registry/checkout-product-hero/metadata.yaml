@@ -4,6 +4,11 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/checkout-product-page-section-hero.jpg
+tags:
+  functional: [email-capture, lead-capture]
+  style: [light-theme, modern, minimal, colorful, gradient, sans-serif]
+  layout: [two-column, split-layout, left-aligned, responsive]
+  industry: [fintech, saas, e-commerce]
 freeformKeywords:
   - hero
   - payment

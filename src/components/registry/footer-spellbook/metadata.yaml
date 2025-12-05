@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/spellbook-home-page-section-footer.jpg
 
+tags:
+  functional: [newsletter, email-capture, lead-capture]
+  style: [dark-theme, modern, corporate, minimal, colorful]
+  layout: [three-column, full-width]
+  industry: [ai, saas, enterprise]
 freeformKeywords:
   - footer
   - spellbook

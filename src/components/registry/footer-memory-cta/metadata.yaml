@@ -5,6 +5,11 @@ category: footer
 images:
   preview: agent-input/footer/memory-home-page-section-footer.jpg
 
+tags:
+  functional: [email-capture, lead-capture]
+  style: [dark-theme, playful, colorful, serif, sans-serif]
+  layout: [centered, full-width, responsive]
+  industry: [e-commerce, saas, startup]
 freeformKeywords:
   - footer
   - cta

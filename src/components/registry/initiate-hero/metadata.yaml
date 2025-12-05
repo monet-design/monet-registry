@@ -4,6 +4,11 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/initiate-home-section-hero.jpg
+tags:
+  functional: [hover-effect]
+  style: [light-theme, minimal, modern, elegant, sans-serif]
+  layout: [single-column, centered, full-width, responsive]
+  industry: [creative, agency, real-estate]
 freeformKeywords:
   - hero
   - landing

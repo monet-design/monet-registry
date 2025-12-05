@@ -5,6 +5,11 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/few-and-far-home-page-section-footer.jpg
 
+tags:
+  functional: [newsletter, email-capture]
+  style: [dark-theme, minimal, modern, elegant, sans-serif]
+  layout: [two-column, split-layout, responsive]
+  industry: [corporate, agency, startup]
 freeformKeywords:
   - footer
   - dark

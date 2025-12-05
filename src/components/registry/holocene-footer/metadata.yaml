@@ -5,6 +5,21 @@ category: footer
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/holocene-footer.jpg
 
+tags:
+  functional: []
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - corporate
+    - sans-serif
+  layout:
+    - four-column
+    - contained
+    - responsive
+  industry:
+    - saas
+    - enterprise
 freeformKeywords:
   - footer
   - dark

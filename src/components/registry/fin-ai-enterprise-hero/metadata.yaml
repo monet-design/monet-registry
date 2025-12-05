@@ -3,6 +3,24 @@ name: fin-ai-enterprise-hero
 category: hero
 images:
   preview: agent-input/unsection-hero/fin-ai-enterprise-hero-design.jpg
+tags:
+  functional:
+    - animation
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - shadow
+  layout:
+    - centered
+    - single-column
+    - responsive
+  industry:
+    - fintech
+    - ai
+    - enterprise
+    - saas
 freeformKeywords:
   - hero
   - enterprise

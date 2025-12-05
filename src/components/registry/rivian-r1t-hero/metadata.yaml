@@ -4,6 +4,20 @@ category: hero
 images:
   preview: >-
     /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/rivian-r1t-page-section-hero.jpg
+tags:
+  functional:
+    - tabs
+  style:
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - full-width
+    - centered
+    - single-column
+  industry:
+    - automotive
+    - e-commerce
 freeformKeywords:
   - hero
   - automotive

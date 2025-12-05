@@ -5,6 +5,11 @@ category: footer
 images:
   preview: agent-input/footer/globalization-partners-home-page-section-footer.jpg
 
+tags:
+  functional: [dropdown]
+  style: [light-theme, minimal, modern, corporate, sans-serif]
+  layout: [four-column, responsive]
+  industry: [saas, enterprise]
 freeformKeywords:
   - footer
   - multi-column

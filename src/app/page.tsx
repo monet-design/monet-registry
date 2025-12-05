@@ -6,14 +6,5 @@ import Workflow from "@/components/sections/workflow";
 import VoosterCTA from "@/components/sections/vooster-cta";
 
 export default function Home() {
-  return (
-    <>
-      <VoosterHero />
-      <WhyVooster />
-      <PRDAutomation />
-      <CursorIntegration />
-      <Workflow />
-      <VoosterCTA />
-    </>
-  );
+  return <></>;
 }

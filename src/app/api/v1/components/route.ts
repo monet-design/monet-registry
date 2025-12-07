@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { registryService } from "@/app/api/_common/services";
+import { getPreviewImageUrl } from "@/app/api/_common/utils";
 import type { ListComponentsResponse, ErrorResponse } from "@/app/api/_common/types";
 
 export async function GET(request: NextRequest) {
@@ -55,7 +56,7 @@ export async function GET(request: NextRequest) {
         id: c.id,
         name: c.name,
         category: c.category,
-        preview_image: c.images.preview,
+        preview_image: getPreviewImageUrl(c.id),
         tags: c.tags,
         status: c.status,
         created_at: c.createdAt,

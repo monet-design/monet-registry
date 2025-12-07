@@ -2,6 +2,13 @@
  * 공통 상수 정의
  */
 
+const REGISTRY_BASE_URL = `https://${process.env.MY_HOST}`;
+
+// URL Helpers
+export function getPreviewImageUrl(componentId: string): string {
+  return `${REGISTRY_BASE_URL}/registry/preview/${componentId}.png`;
+}
+
 export const CATEGORY_DESCRIPTIONS: Record<string, string> = {
   hero: "Above-the-fold landing sections with headlines and CTAs",
   stats: "Statistics and metrics display sections",

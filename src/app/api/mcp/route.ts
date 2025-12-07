@@ -17,6 +17,7 @@ import {
   componentNotFoundError,
   emptyResultsError,
   findSimilarComponentIds,
+  getPreviewImageUrl,
   CATEGORY_DESCRIPTIONS,
   QUERY_TIPS,
 } from "../_common/utils";
@@ -250,7 +251,7 @@ async function handleSearchComponents(args: {
         id: r.id,
         name: r.name,
         category: r.category,
-        preview_image: r.previewImage,
+        preview_image: getPreviewImageUrl(r.id),
         tags: r.tags,
         keywords: r.keywords,
       })),
@@ -260,7 +261,8 @@ async function handleSearchComponents(args: {
       success: false,
       error: {
         code: "SEARCH_ERROR",
-        message: error instanceof Error ? error.message : "Unknown search error",
+        message:
+          error instanceof Error ? error.message : "Unknown search error",
       },
     };
   }

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { searchService } from "@/app/api/_common/services";
+import { getPreviewImageUrl } from "@/app/api/_common/utils";
 import type {
   SearchComponentsResponse,
   ErrorResponse,
@@ -54,7 +55,7 @@ export async function GET(request: NextRequest) {
         id: r.id,
         name: r.name,
         category: r.category,
-        preview_image: r.previewImage,
+        preview_image: getPreviewImageUrl(r.id),
         tags: r.tags,
         keywords: r.keywords,
       })),

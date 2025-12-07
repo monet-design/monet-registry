@@ -18,16 +18,66 @@ const CONTENT = {
 };
 
 const STATS = [
-  { value: "199,590+", label: "누적 발행량" },
-  { value: "4,459억원+", label: "누적 발행액" },
-  { value: "5,897개+", label: "사용 기업수" },
+  { value: 199590, suffix: "+", label: "누적 발행량" },
+  { value: 4459, suffix: "억원+", label: "누적 발행액" },
+  { value: 5897, suffix: "개+", label: "사용 기업수" },
 ];
 
 // ============================================================================
 // END CUSTOMIZATION
 // ============================================================================
 
-import { motion } from "motion/react";
+import { useEffect, useRef, useState } from "react";
+import { motion, useInView } from "motion/react";
+
+interface AnimatedNumberProps {
+  value: number;
+  suffix?: string;
+  duration?: number;
+}
+
+function AnimatedNumber({
+  value,
+  suffix = "",
+  duration = 1000,
+}: AnimatedNumberProps) {
+  const [displayValue, setDisplayValue] = useState(0);
+  const ref = useRef<HTMLSpanElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  useEffect(() => {
+    if (!isInView) return;
+
+    const startTime = performance.now();
+    const startValue = 0;
+
+    const animate = (currentTime: number) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+
+      // easeOutExpo for smooth deceleration
+      const easeProgress = 1 - Math.pow(1 - progress, 4);
+      const currentValue = Math.floor(
+        startValue + (value - startValue) * easeProgress
+      );
+
+      setDisplayValue(currentValue);
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      }
+    };
+
+    requestAnimationFrame(animate);
+  }, [isInView, value, duration]);
+
+  return (
+    <span ref={ref}>
+      {displayValue.toLocaleString()}
+      {suffix}
+    </span>
+  );
+}
 
 interface BoltaIoStats4Props {
   mode?: "light" | "dark";
@@ -62,7 +112,7 @@ export default function BoltaIoStats4({ mode = "light" }: BoltaIoStats4Props) {
                 <div className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 w-px h-16 bg-gray-200" />
               )}
               <div className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
-                {stat.value}
+                <AnimatedNumber value={stat.value} suffix={stat.suffix} />
               </div>
               <div className="text-gray-500">{stat.label}</div>
             </motion.div>

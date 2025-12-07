@@ -24,17 +24,20 @@ const TRUST_ITEMS = [
   {
     icon: "shield",
     title: "데이터 통신 암호화",
-    description: "모든 통신 과정에서 TLS/SSL을 이용하여 고객의 정보와 모든 데이터를 안전하게 보호합니다.",
+    description:
+      "모든 통신 과정에서 TLS/SSL을 이용하여 고객의 정보와 모든 데이터를 안전하게 보호합니다.",
   },
   {
     icon: "aws",
     title: "Zero-trust on AWS",
-    description: "서버와 데이터베이스 접근에 대한 기기/네트워크 (VPN), IdP/MFA 등 여러 보안 레이어를 확보하여 최고 수준의 보안성을 준수하고 있습니다.",
+    description:
+      "서버와 데이터베이스 접근에 대한 기기/네트워크 (VPN), IdP/MFA 등 여러 보안 레이어를 확보하여 최고 수준의 보안성을 준수하고 있습니다.",
   },
   {
     icon: "lock",
     title: "비밀 유지 서약",
-    description: "고객사의 정보를 누설하지 않도록 전 직원 비밀 유지 서약을 진행합니다.",
+    description:
+      "고객사의 정보를 누설하지 않도록 전 직원 비밀 유지 서약을 진행합니다.",
   },
 ];
 
@@ -96,7 +99,7 @@ export default function BoltaIoTrust6({ mode = "light" }: BoltaIoTrust6Props) {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-normal"
           >
             {CONTENT.title}
             <br />

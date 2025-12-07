@@ -1,0 +1,40 @@
+schemaVersion: "2.0"
+name: team-fin-ai-home
+category: team
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/fin-ai-home-page-team-section.jpg
+
+freeformKeywords:
+  - team
+  - ai
+  - leadership
+  - experts
+  - fintech
+  - machine learning
+  - engineers
+  - designers
+  - staff
+  - grid
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T19:12:42Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - grid
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - two-column
+    - grid
+  industry:
+    - ai
+    - fintech
+    - saas

@@ -1,0 +1,40 @@
+schemaVersion: "2.0"
+name: team-driftime-extended
+category: team
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/driftime-team-page-section-extended-team.jpg
+
+freeformKeywords:
+  - team
+  - extended team
+  - advisory board
+  - development team
+  - team grid
+  - team members
+  - dark theme
+  - startup team
+  - contractors
+  - consultants
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T19:11:18Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - grid
+    - full-width
+  industry:
+    - startup
+    - agency
+    - tech

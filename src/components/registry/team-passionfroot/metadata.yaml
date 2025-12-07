@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: team-passionfroot
+category: team
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/passionfroot-about-page-section-meet-the-team.jpg
+
+freeformKeywords:
+  - team
+  - meet the team
+  - team members
+  - about us
+  - company
+  - startup
+  - founders
+  - employees
+  - staff
+  - crew
+  - people
+  - organization
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-12-07T19:11:19Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - warm
+    - elegant
+    - serif
+    - minimal
+  layout:
+    - grid
+    - centered
+  industry:
+    - saas
+    - startup

@@ -1,0 +1,41 @@
+schemaVersion: "2.0"
+name: team-doconomy
+category: team
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/doconomy-home-page-section-our-people.jpg
+
+freeformKeywords:
+  - team
+  - our people
+  - carbon footprint
+  - sustainability
+  - climate action
+  - employee spotlight
+  - quote
+  - testimonial
+  - corporate team
+
+fontFamily:
+  - Inter
+  - Instrument Serif
+
+createdAt: "2025-12-07T19:11:23Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - serif
+  layout:
+    - two-column
+    - split-layout
+  industry:
+    - sustainability
+    - fintech
+    - climate-tech

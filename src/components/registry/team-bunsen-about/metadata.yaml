@@ -1,0 +1,41 @@
+schemaVersion: "2.0"
+name: team-bunsen-about
+category: team
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/bunsen-studio-about-page-section-global-team.jpg
+
+freeformKeywords:
+  - team
+  - global team
+  - about
+  - team grid
+  - team members
+  - brand logos
+  - company logos
+  - join us
+  - careers
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T19:11:16Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+  layout:
+    - grid
+    - two-column
+    - full-width
+  industry:
+    - agency
+    - creative
+    - startup

@@ -1,0 +1,49 @@
+schemaVersion: "2.0"
+name: team-mercury
+category: team
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/mercury-about-page-section-our-team.jpg
+
+freeformKeywords:
+  - team
+  - about
+  - masonry
+  - grid
+  - photos
+  - product-led
+  - culture
+  - company
+  - hiring
+  - careers
+  - join team
+  - mercury
+  - fintech
+
+fontFamily:
+  - Inter
+  - Instrument Serif
+
+createdAt: "2025-12-07T19:11:17Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - masonry-grid
+    - cta-button
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - soft-colors
+    - elegant
+    - serif
+  layout:
+    - centered
+    - full-width
+    - grid
+  industry:
+    - fintech
+    - saas
+    - startup

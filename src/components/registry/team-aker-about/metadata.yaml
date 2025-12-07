@@ -1,0 +1,49 @@
+schemaVersion: "2.0"
+name: team-aker-about
+category: team
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/aker-aboutpage-section-our-team.jpg
+
+freeformKeywords:
+  - team
+  - about
+  - our team
+  - staff
+  - employees
+  - members
+  - directory
+  - organization
+  - departments
+  - management
+  - investments
+  - operations
+  - development
+  - accounting
+  - finance
+  - corporate
+  - real estate
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T19:11:25Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - list
+    - avatar
+  style:
+    - light-theme
+    - minimal
+    - elegant
+    - serif
+  layout:
+    - three-column
+    - full-width
+  industry:
+    - real-estate
+    - corporate
+    - investment

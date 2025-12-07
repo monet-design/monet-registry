@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: team-fin-ai-cx
+category: team
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/fin-ai-cx-model-ai-team.jpg
+
+freeformKeywords:
+  - team
+  - AI team
+  - leadership
+  - experts
+  - team section
+  - carousel
+  - team members
+  - about us
+  - company team
+  - AI experts
+
+fontFamily:
+  - Inter
+  - Instrument Serif
+
+createdAt: "2025-12-07T19:11:17Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - carousel
+  style:
+    - light-theme
+    - minimal
+    - elegant
+    - serif
+    - warm
+  layout:
+    - full-width
+    - left-aligned
+  industry:
+    - ai
+    - saas
+    - fintech

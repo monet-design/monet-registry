@@ -1,0 +1,41 @@
+schemaVersion: "2.0"
+name: team-driftime-core
+category: team
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/driftime-team-page-section-core-team.jpg
+
+freeformKeywords:
+  - team
+  - core team
+  - team grid
+  - team members
+  - about us
+  - meet the team
+  - company team
+  - creative agency
+  - startup team
+  - employee profiles
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T19:11:20Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - team-grid
+    - social-links
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - grid
+    - full-width
+  industry:
+    - agency
+    - startup
+    - creative

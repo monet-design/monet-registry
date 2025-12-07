@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: team-in-tandem
+category: team
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/in-tandem-home-page-section-join-team.jpg
+
+freeformKeywords:
+  - team
+  - join team
+  - careers
+  - hiring
+  - job openings
+  - open roles
+  - team photos
+  - carousel
+  - company culture
+  - workplace
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T19:11:20Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - carousel
+    - hover-effect
+  style:
+    - warm
+    - elegant
+    - serif
+    - modern
+    - light-theme
+  layout:
+    - centered
+    - full-width
+  industry:
+    - saas
+    - startup
+    - tech

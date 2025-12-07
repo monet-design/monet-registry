@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: team-axim
+category: team
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/axim-about-page-section-case-team.jpg
+
+freeformKeywords:
+  - team
+  - leadership
+  - senior team
+  - executives
+  - about us
+  - company
+  - staff
+  - members
+  - corporate
+  - list
+  - accordion
+
+fontFamily:
+  - Inter
+  - Instrument Serif
+
+createdAt: "2025-12-07T19:11:18Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+    - accordion
+  style:
+    - light-theme
+    - minimal
+    - elegant
+    - serif
+  layout:
+    - single-column
+    - left-aligned
+  industry:
+    - startup
+    - corporate

@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: team-adept-ai
+category: team
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/adept-ai-home-page-section-career.jpg
+
+freeformKeywords:
+  - hiring
+  - career
+  - jobs
+  - positions
+  - team
+  - recruitment
+  - job listing
+  - open positions
+  - careers page
+  - job board
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T19:11:17Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - minimal
+    - light-theme
+    - modern
+    - clean
+  layout:
+    - single-column
+    - left-aligned
+    - full-width
+  industry:
+    - ai
+    - startup
+    - saas

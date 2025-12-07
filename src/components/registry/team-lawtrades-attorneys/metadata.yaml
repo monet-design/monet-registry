@@ -1,0 +1,41 @@
+schemaVersion: "2.0"
+name: team-lawtrades-attorneys
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/lawtrades-home-page-section-choose-attorneys.jpg
+
+freeformKeywords:
+  - footer
+  - dark footer
+  - newsletter
+  - email subscription
+  - legal
+  - lawtrades
+  - social links
+  - app store
+  - multi-column footer
+  - corporate footer
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T19:11:15Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - email-capture
+    - newsletter
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - four-column
+    - full-width
+  industry:
+    - legal
+    - saas

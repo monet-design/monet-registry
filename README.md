@@ -1,5 +1,6 @@
 # Monet.Design
 
+![Components](https://img.shields.io/endpoint?url=https://registry.monet.design/api/v1/badge)
 [![E2E Tests](https://img.shields.io/badge/e2e_tests-61_passed-brightgreen)](./e2e)
 [![Vitest](https://img.shields.io/badge/tested_with-vitest-6E9F18?logo=vitest&logoColor=white)](https://vitest.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)

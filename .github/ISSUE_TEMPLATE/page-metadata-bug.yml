@@ -1,0 +1,43 @@
+name: Page Component Metadata Bug
+description: Report incorrect metadata for a page component
+title: "[Page Metadata] "
+labels: ["bug", "page-metadata"]
+body:
+  - type: input
+    id: page-id
+    attributes:
+      label: Page ID
+      description: The ID of the page component (e.g., clerk-com-landing)
+      placeholder: clerk-com-landing
+    validations:
+      required: true
+
+  - type: textarea
+    id: incorrect-metadata
+    attributes:
+      label: Incorrect Metadata
+      description: Which metadata field(s) are incorrect and what are the current values?
+      placeholder: |
+        Field: title
+        Current value: "Clerk Landing Page"
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-metadata
+    attributes:
+      label: Expected Metadata
+      description: What should the correct values be?
+      placeholder: |
+        Field: title
+        Expected value: "Clerk - Authentication Platform"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any additional information or screenshots
+    validations:
+      required: false

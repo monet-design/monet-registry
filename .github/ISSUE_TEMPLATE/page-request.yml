@@ -1,0 +1,51 @@
+name: Page Request
+description: Request a new page to be added to the registry
+title: "[Page Request] "
+labels: ["enhancement", "page-request"]
+body:
+  - type: input
+    id: page-url
+    attributes:
+      label: Page URL
+      description: The URL of the page you want to be added
+      placeholder: https://example.com
+    validations:
+      required: true
+
+  - type: input
+    id: company-name
+    attributes:
+      label: Company/Brand Name
+      description: The name of the company or brand
+      placeholder: Example Inc
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason for Request
+      description: Why do you think this page should be added?
+      placeholder: |
+        This page has a great hero section design...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: page-type
+    attributes:
+      label: Page Type
+      description: What type of page is this?
+      options:
+        - label: Landing Page
+        - label: Marketing Page
+        - label: Product Page
+        - label: Other
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any additional information, screenshots, or specific sections you want highlighted
+    validations:
+      required: false

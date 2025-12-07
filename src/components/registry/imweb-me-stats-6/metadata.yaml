@@ -1,0 +1,55 @@
+schemaVersion: "2.0"
+name: imweb-me-stats-6
+category: stats
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/imweb-me-2025-12-07/sections/section-6.png
+
+freeformKeywords:
+  - stats
+  - growth
+  - bar chart
+  - statistics
+  - metrics
+  - 성장
+  - 통계
+  - 그래프
+  - 막대그래프
+  - 사이트 개설
+  - 거래액
+  - brand builder
+  - SaaS
+  - website builder
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T16:49:49Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - animation
+    - video
+  style:
+    - modern
+    - light-theme
+    - bold
+    - clean
+    - minimal
+  layout:
+    - two-column
+    - left-aligned
+    - full-width
+  industry:
+    - saas
+    - startup
+
+parentPage: imweb-me-landing
+
+source:
+  type: url
+  url: https://imweb.me/
+  scrapedAt: "2025-12-07T16:49:49Z"
+  sectionIndex: 6

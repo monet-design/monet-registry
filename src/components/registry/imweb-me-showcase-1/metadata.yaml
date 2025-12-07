@@ -1,0 +1,57 @@
+schemaVersion: "2.0"
+name: imweb-me-showcase-1
+category: showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/imweb-me-2025-12-07/sections/section-1.png
+
+freeformKeywords:
+  - 템플릿
+  - 쇼케이스
+  - 웹사이트
+  - template
+  - showcase
+  - website builder
+  - gallery
+  - 갤러리
+  - 선택
+  - 디자인
+  - design
+  - 무료
+  - free
+  - 80개
+  - templates
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T16:48:58Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - hover-effect
+    - animation
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - split-layout
+    - left-aligned
+    - full-width
+  industry:
+    - saas
+    - startup
+    - creative
+    - agency
+
+parentPage: imweb-me-landing
+
+source:
+  type: url
+  url: https://imweb.me/
+  scrapedAt: "2025-12-07T16:48:58Z"
+  sectionIndex: 1

@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: channel-io-hero-1
+category: hero
+
+images:
+  preview: scraped/channel-io-2025-12-07/sections/section-0.png
+
+freeformKeywords:
+  - hero
+  - AI customer service
+  - chatbot
+  - video
+  - CTA button
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T16:50:38Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - video
+    - animation
+    - lead-capture
+  style:
+    - light-theme
+    - modern
+    - gradient
+  layout:
+    - centered
+    - full-width
+  industry:
+    - saas
+    - ai
+
+parentPage: channel-io-landing
+
+source:
+  type: url
+  url: https://channel.io/ko
+  scrapedAt: "2025-12-07T16:50:38Z"
+  sectionIndex: 1

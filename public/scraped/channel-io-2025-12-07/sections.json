@@ -1,0 +1,24 @@
+[
+  {
+    "index": 0,
+    "tag": "div",
+    "selector": "div.sc-5dd10cb1-2",
+    "category": null,
+    "rect": {
+      "top": 0,
+      "height": 8202.46875
+    },
+    "confidence": 0.5
+  },
+  {
+    "index": 1,
+    "tag": "footer",
+    "selector": "footer.sc-31d166a-0",
+    "category": "footer",
+    "rect": {
+      "top": 8218.46875,
+      "height": 787
+    },
+    "confidence": 0.8
+  }
+]

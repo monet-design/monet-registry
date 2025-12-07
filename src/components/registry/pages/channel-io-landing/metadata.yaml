@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: channel-io-landing
+category: page
+images:
+  preview: scraped/channel-io-2025-12-07/full-page.png
+title: channel.io Landing Page
+sections:
+  - id: channel-io-header-0
+    category: header
+    order: 0
+  - id: channel-io-hero-1
+    category: hero
+    order: 1
+  - id: channel-io-logo-cloud-2
+    category: logo-cloud
+    order: 2
+  - id: channel-io-feature-3
+    category: feature-showcase
+    order: 3
+  - id: channel-io-feature-4
+    category: feature-showcase
+    order: 4
+  - id: channel-io-feature-5
+    category: feature-showcase
+    order: 5
+  - id: channel-io-cta-6
+    category: cta
+    order: 6
+  - id: channel-io-footer-7
+    category: footer
+    order: 7
+source:
+  type: url
+  url: https://channel.io/ko
+  scrapedAt: "2025-12-07T16:54:25.596Z"
+pageInfo:
+  totalSections: 8
+freeformKeywords:
+  - complete landing page
+  - full page
+  - channel.io
+createdAt: "2025-12-07T16:54:25.596Z"
+status: stable

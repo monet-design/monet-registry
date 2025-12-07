@@ -1,0 +1,41 @@
+schemaVersion: "2.0"
+name: channel-io-cta-6
+category: cta
+
+images:
+  preview: scraped/channel-io-2025-12-07/sections/section-0.png
+
+freeformKeywords:
+  - CTA
+  - call to action
+  - gradient background
+  - signup
+  - trial
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T16:50:52Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - lead-capture
+  style:
+    - gradient
+    - modern
+    - bold
+  layout:
+    - centered
+    - full-width
+  industry:
+    - saas
+
+parentPage: channel-io-landing
+
+source:
+  type: url
+  url: https://channel.io/ko
+  scrapedAt: "2025-12-07T16:50:52Z"
+  sectionIndex: 6

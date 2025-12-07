@@ -1,0 +1,52 @@
+schemaVersion: "2.0"
+name: imweb-me-hero-0
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/imweb-me-2025-12-07/sections/section-0.png
+
+freeformKeywords:
+  - hero
+  - ai
+  - ecommerce
+  - shopping mall
+  - 쇼핑몰
+  - chatbot
+  - carousel
+  - 3d
+  - website builder
+  - 웹사이트 빌더
+  - imweb
+  - saas
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T16:49:00Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - ai
+    - animation
+    - carousel
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+  layout:
+    - centered
+    - full-width
+  industry:
+    - saas
+    - ecommerce
+
+parentPage: imweb-me-landing
+
+source:
+  type: url
+  url: https://imweb.me/
+  scrapedAt: "2025-12-07T16:49:00Z"
+  sectionIndex: 0

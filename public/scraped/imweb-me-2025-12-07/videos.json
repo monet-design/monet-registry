@@ -1,0 +1,44 @@
+[
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/home/new-feature-designmode-520x640.mp4",
+    "platform": "html5",
+    "type": "video",
+    "posterUrl": "https://static-v2.imweb.me/io/home/new-feature-designmode-thumbnail-520x640.png",
+    "sectionIndex": 3,
+    "width": 1040,
+    "height": 1280,
+    "thumbnailPath": "videos/thumb-0.png",
+    "thumbnailDownloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/home/new-feature-commerce-520x640.mp4",
+    "platform": "html5",
+    "type": "video",
+    "posterUrl": "https://static-v2.imweb.me/io/home/new-feature-commerce-thumbnail-520x640.png",
+    "sectionIndex": 3,
+    "width": 1040,
+    "height": 1280,
+    "thumbnailPath": "videos/thumb-1.png",
+    "thumbnailDownloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/home/new-feature-marketing-520x640.mp4",
+    "platform": "html5",
+    "type": "video",
+    "posterUrl": "https://static-v2.imweb.me/io/home/new-feature-marketing-thumbnail-520x640.png",
+    "sectionIndex": 3,
+    "width": 1040,
+    "height": 1280,
+    "thumbnailPath": "videos/thumb-2.png",
+    "thumbnailDownloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/home/growth-graph-video.mp4",
+    "platform": "html5",
+    "type": "video",
+    "sectionIndex": 6,
+    "width": 1080,
+    "height": 1080,
+    "thumbnailDownloaded": false
+  }
+]

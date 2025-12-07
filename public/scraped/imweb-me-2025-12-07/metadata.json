@@ -1,0 +1,22 @@
+{
+  "url": "https://imweb.me/",
+  "domain": "imweb-me",
+  "timestamp": "2025-12-07T16:46:40.559Z",
+  "pageTitle": "아임웹",
+  "totalHeight": 9644,
+  "imageStats": {
+    "total": 40,
+    "downloaded": 40,
+    "failed": 0
+  },
+  "fontStats": {
+    "total": 11,
+    "downloaded": 0,
+    "failed": 0
+  },
+  "videoStats": {
+    "total": 4,
+    "thumbnailsDownloaded": 3,
+    "failed": 0
+  }
+}

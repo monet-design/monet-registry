@@ -1,0 +1,352 @@
+[
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/images/imweb_logo_v2.svg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Imweb Logo",
+    "width": 138,
+    "height": 30,
+    "localPath": "images/image-0.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/images/imweb_symbol_logo_large.svg",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Imweb Logo",
+    "width": 20,
+    "height": 20,
+    "localPath": "images/image-1.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://imweb.me/io-static/_next/image?url=https%3A%2F%2Fstatic-v2.imweb.me%2Fio%2Fhome%2Fshopping-template-1.png&w=750&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "DEVINE",
+    "width": 358,
+    "height": 208,
+    "localPath": "images/image-2.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://imweb.me/io-static/_next/image?url=https%3A%2F%2Fstatic-v2.imweb.me%2Fio%2Fhome%2Fshopping-template-2.png&w=750&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Object-B",
+    "width": 358,
+    "height": 208,
+    "localPath": "images/image-3.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://imweb.me/io-static/_next/image?url=https%3A%2F%2Fstatic-v2.imweb.me%2Fio%2Fhome%2Fshopping-template-3.png&w=750&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "WISE",
+    "width": 358,
+    "height": 208,
+    "localPath": "images/image-4.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://imweb.me/io-static/_next/image?url=https%3A%2F%2Fstatic-v2.imweb.me%2Fio%2Fhome%2Fshopping-template-4.png&w=750&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Euphoria seoul",
+    "width": 384,
+    "height": 224,
+    "localPath": "images/image-5.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://imweb.me/io-static/_next/image?url=https%3A%2F%2Fstatic-v2.imweb.me%2Fio%2Fhome%2Fshopping-template-5.png&w=750&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Euphoria seoul",
+    "width": 384,
+    "height": 224,
+    "localPath": "images/image-6.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://imweb.me/io-static/_next/image?url=https%3A%2F%2Fstatic-v2.imweb.me%2Fio%2Fhome%2Fbusiness-template-1.png&w=750&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "My Cleaning",
+    "width": 384,
+    "height": 224,
+    "localPath": "images/image-7.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://imweb.me/io-static/_next/image?url=https%3A%2F%2Fstatic-v2.imweb.me%2Fio%2Fhome%2Fbusiness-template-2.png&w=750&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Volt.X",
+    "width": 384,
+    "height": 224,
+    "localPath": "images/image-8.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://imweb.me/io-static/_next/image?url=https%3A%2F%2Fstatic-v2.imweb.me%2Fio%2Fhome%2Fbusiness-template-3.png&w=750&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "GLOBAL LOGISTICS",
+    "width": 384,
+    "height": 224,
+    "localPath": "images/image-9.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://imweb.me/io-static/_next/image?url=https%3A%2F%2Fstatic-v2.imweb.me%2Fio%2Fhome%2Freservation-template-1.png&w=750&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Reservation",
+    "width": 384,
+    "height": 224,
+    "localPath": "images/image-10.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://imweb.me/io-static/_next/image?url=https%3A%2F%2Fstatic-v2.imweb.me%2Fio%2Fhome%2Fblog-template-1.png&w=750&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "ZIGULAB",
+    "width": 384,
+    "height": 224,
+    "localPath": "images/image-11.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://imweb.me/io-static/_next/image?url=https%3A%2F%2Fstatic-v2.imweb.me%2Fio%2Fhome%2Fportfolio-template-1.png&w=750&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Archive",
+    "width": 384,
+    "height": 224,
+    "localPath": "images/image-12.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://imweb.me/io-static/_next/image?url=https%3A%2F%2Fstatic-v2.imweb.me%2Fio%2Fhome%2Fportfolio-template-2.png&w=750&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Attention",
+    "width": 384,
+    "height": 224,
+    "localPath": "images/image-13.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://imweb.me/io-static/_next/image?url=https%3A%2F%2Fstatic-v2.imweb.me%2Fio%2Fhome%2Fevent-template-1.png&w=750&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Seoul Designer Conference",
+    "width": 384,
+    "height": 224,
+    "localPath": "images/image-14.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://imweb.me/io-static/_next/image?url=https%3A%2F%2Fstatic-v2.imweb.me%2Fio%2Fhome%2Fcommunity-template-1.png&w=750&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Running Today",
+    "width": 384,
+    "height": 224,
+    "localPath": "images/image-15.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/icons/facebook_icon.svg",
+    "type": "img",
+    "sectionIndex": 8,
+    "alt": "페이스북",
+    "width": 8,
+    "height": 16,
+    "localPath": "images/image-16.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/icons/instagram_icon.svg",
+    "type": "img",
+    "sectionIndex": 8,
+    "alt": "인스타그램",
+    "width": 16,
+    "height": 16,
+    "localPath": "images/image-17.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/icons/youtube_icon.svg",
+    "type": "img",
+    "sectionIndex": 8,
+    "alt": "유투브",
+    "width": 16,
+    "height": 16,
+    "localPath": "images/image-18.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/images/ISMS.png",
+    "type": "img",
+    "sectionIndex": 8,
+    "alt": "ISMS",
+    "width": 108,
+    "height": 108,
+    "localPath": "images/image-19.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://yeorcqadlpopsmgaoudu.supabase.co/storage/v1/object/public/certification/mark/f02f432a-19fb-442f-9bcf-53ee10c443d4/195eefce-c97b-42b8-bed2-cbf784f319d8-2025-01-08T06:34:38.003Z",
+    "type": "img",
+    "sectionIndex": 8,
+    "alt": "아임웹 대량문자 발송 인증",
+    "width": 100,
+    "height": 100,
+    "localPath": "images/image-20.003z",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/icons/ico_heart.svg",
+    "type": "img",
+    "sectionIndex": 8,
+    "alt": "imweb Corp. Heart Logo",
+    "width": 13,
+    "height": 12,
+    "localPath": "images/image-21.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bat.bing.com/action/0?ti=97026702&Ver=2&mid=16547a8e-44e8-4cc9-ad4f-7f0712768547&bo=1&sid=4653d0b0d38c11f09a3d63f21a38f68d&vid=4653bb70d38c11f0bee7010e7457a771&vids=1&msclkid=N&pi=918639831&lg=en-US&sw=800&sh=600&sc=24&nwd=1&tl=%EC%95%84%EC%9E%84%EC%9B%B9&p=https%3A%2F%2Fimweb.me%2F&r=&lt=691&evt=pageLoad&sv=2&cdb=AQAQ&rn=893719",
+    "type": "img",
+    "sectionIndex": 1,
+    "localPath": "images/image-22.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://t.co/1/i/adsct?bci=4&dv=Asia%2FSeoul%26en-US%26Google%20Inc.%26MacIntel%26127%26800%26600%2610%2624%26800%26600%260%26na&eci=3&event=%7B%7D&event_id=5f80530c-8235-4438-83d3-98a34009ba2a&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=8e0554f9-3907-4b39-918e-4b03c473a9bb&pt=%EC%95%84%EC%9E%84%EC%9B%B9&tw_document_href=https%3A%2F%2Fimweb.me%2F&tw_iframe_status=0&txn_id=puyuo&type=javascript&version=2.3.35",
+    "type": "img",
+    "sectionIndex": 1,
+    "width": 1,
+    "height": 1,
+    "localPath": "images/image-23.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://analytics.twitter.com/1/i/adsct?bci=4&dv=Asia%2FSeoul%26en-US%26Google%20Inc.%26MacIntel%26127%26800%26600%2610%2624%26800%26600%260%26na&eci=3&event=%7B%7D&event_id=5f80530c-8235-4438-83d3-98a34009ba2a&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=8e0554f9-3907-4b39-918e-4b03c473a9bb&pt=%EC%95%84%EC%9E%84%EC%9B%B9&tw_document_href=https%3A%2F%2Fimweb.me%2F&tw_iframe_status=0&txn_id=puyuo&type=javascript&version=2.3.35",
+    "type": "img",
+    "sectionIndex": 1,
+    "width": 1,
+    "height": 1,
+    "localPath": "images/image-24.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/home/ai-marquee-img-1.png",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-25.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/home/ai-marquee-img-2.png",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-26.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/home/ai-marquee-img-3.png",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-27.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/home/ai-marquee-img-4.png",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-28.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/home/ai-marquee-img-5.png",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-29.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/home/ai-marquee-img-6.png",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-30.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/home/ai-marquee-img-7.png",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-31.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/home/ai-marquee-img-8.png",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-32.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/home/ai-marquee-img-9.png",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-33.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/home/ai-marquee-img-10.png",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-34.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/home/ai-marquee-img-11.png",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-35.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/home/ai-marquee-img-12.png",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-36.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/home/brand-blog-1.png",
+    "type": "background",
+    "sectionIndex": 2,
+    "localPath": "images/image-37.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/home/brand-blog-2.png",
+    "type": "background",
+    "sectionIndex": 2,
+    "localPath": "images/image-38.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://static-v2.imweb.me/io/home/brand-blog-3.png",
+    "type": "background",
+    "sectionIndex": 2,
+    "localPath": "images/image-39.png",
+    "downloaded": true
+  }
+]

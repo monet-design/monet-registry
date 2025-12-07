@@ -1,0 +1,61 @@
+[
+  {
+    "family": "__BildV5_0a977f",
+    "url": "https://channel.io/_next/static/media/4da435e9a5432516-s.p.woff2",
+    "source": "custom",
+    "weights": [
+      "400",
+      "700"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "localPath": "fonts/--BildV5-0a977f.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "__BildV5_Fallback_0a977f",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Inter",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "NotoSansKR",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "NotoSansJP",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  }
+]

@@ -15,7 +15,7 @@ sections:
     category: testimonial
     order: 2
   - id: bolta-io-feature-3
-    category: feature
+    category: feature-showcase
     order: 3
   - id: bolta-io-stats-4
     category: stats
@@ -24,7 +24,7 @@ sections:
     category: newsletter
     order: 5
   - id: bolta-io-trust-6
-    category: feature
+    category: feature-showcase
     order: 6
   - id: bolta-io-faq-7
     category: faq

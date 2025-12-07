@@ -1,0 +1,101 @@
+[
+  {
+    "index": 0,
+    "tag": "section",
+    "selector": "section#ai",
+    "category": null,
+    "rect": {
+      "top": 10,
+      "height": 5400
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 1,
+    "tag": "section",
+    "selector": "section#template-list",
+    "category": null,
+    "rect": {
+      "top": 5410,
+      "height": 780.5625
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 2,
+    "tag": "section",
+    "selector": "section#brand-blog",
+    "category": "logo-cloud",
+    "rect": {
+      "top": 6190.5625,
+      "height": 850
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 3,
+    "tag": "section",
+    "selector": "section#feature-designmode",
+    "category": "feature",
+    "rect": {
+      "top": 7040.5625,
+      "height": 8100
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 4,
+    "tag": "section",
+    "selector": "section#feature-commerce",
+    "category": "feature",
+    "rect": {
+      "top": 15140.5625,
+      "height": 8100
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 5,
+    "tag": "section",
+    "selector": "section#feature-marketing",
+    "category": "feature",
+    "rect": {
+      "top": 23240.5625,
+      "height": 8100
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 6,
+    "tag": "section",
+    "selector": "section#growth-graph",
+    "category": null,
+    "rect": {
+      "top": 36740.5625,
+      "height": 1072
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 7,
+    "tag": "section",
+    "selector": "section#outro",
+    "category": null,
+    "rect": {
+      "top": 37812.5625,
+      "height": 508
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 8,
+    "tag": "footer",
+    "selector": "footer.css-1il3ktp",
+    "category": "footer",
+    "rect": {
+      "top": 38320.5625,
+      "height": 573
+    },
+    "confidence": 0.8
+  }
+]

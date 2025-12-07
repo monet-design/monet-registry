@@ -1,0 +1,18 @@
+{
+  "nav.GlobalNavigation_container__7ncW2": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgba(0, 0, 0, 0.85)",
+    "fontFamily": "Inter, NotoSansKR, NotoSansJP, -apple-system, \"system-ui\", \"Helvetica Neue\", \"Segoe UI\", Roboto, \"system-ui\", sans-serif",
+    "fontSize": "10px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "footer.sc-31d166a-0": {
+    "backgroundColor": "rgb(255, 255, 255)",
+    "color": "rgba(0, 0, 0, 0.85)",
+    "fontFamily": "Inter, NotoSansKR, NotoSansJP, -apple-system, \"system-ui\", \"Helvetica Neue\", \"Segoe UI\", Roboto, \"system-ui\", sans-serif",
+    "fontSize": "10px",
+    "padding": "0px",
+    "margin": "0px"
+  }
+}

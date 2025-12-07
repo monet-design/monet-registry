@@ -1,0 +1,48 @@
+schemaVersion: "2.0"
+name: imweb-me-cta-7
+category: cta
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/imweb-me-2025-12-07/sections/section-7.png
+
+freeformKeywords:
+  - cta
+  - call to action
+  - 시작하기
+  - 무료
+  - 아임웹
+  - korean
+  - 한국어
+  - simple
+  - minimal
+  - centered
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T16:48:51Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - cta
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - clean
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - startup
+
+parentPage: imweb-me-landing
+
+source:
+  type: url
+  url: https://imweb.me/
+  scrapedAt: "2025-12-07T16:48:51Z"
+  sectionIndex: 7

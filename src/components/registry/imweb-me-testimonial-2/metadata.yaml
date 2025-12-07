@@ -1,0 +1,50 @@
+schemaVersion: "2.0"
+name: imweb-me-testimonial-2
+category: testimonial
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/imweb-me-2025-12-07/sections/section-2.png
+
+freeformKeywords:
+  - testimonial
+  - 고객사례
+  - 케이스스터디
+  - case study
+  - carousel
+  - 캐러셀
+  - 브랜드
+  - brand
+  - 성장
+  - growth
+  - 패션
+  - fashion
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T16:48:54Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - carousel
+    - hover-effect
+  style:
+    - warm
+    - modern
+    - dark-theme
+  layout:
+    - left-aligned
+    - full-width
+  industry:
+    - saas
+    - startup
+
+parentPage: imweb-me-landing
+
+source:
+  type: url
+  url: https://imweb.me/
+  scrapedAt: "2025-12-07T16:48:54Z"
+  sectionIndex: 2

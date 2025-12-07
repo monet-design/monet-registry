@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: channel-io-feature-4
+category: feature-showcase
+
+images:
+  preview: scraped/channel-io-2025-12-07/sections/section-0.png
+
+freeformKeywords:
+  - feature
+  - all-in-one
+  - messenger
+  - CRM
+  - marketing
+  - internal chat
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T16:50:48Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - shadow
+  layout:
+    - grid
+    - responsive
+  industry:
+    - saas
+    - ai
+
+parentPage: channel-io-landing
+
+source:
+  type: url
+  url: https://channel.io/ko
+  scrapedAt: "2025-12-07T16:50:48Z"
+  sectionIndex: 4

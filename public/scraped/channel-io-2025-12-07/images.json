@@ -1,0 +1,425 @@
+[
+  {
+    "originalUrl": "https://channel.io/_next/image?url=%2Flegacy%2Fimages2%2Fcommon%2Fch-logo-ko.png&w=3840&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "logo",
+    "width": 157,
+    "height": 57,
+    "localPath": "images/image-0.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=%2Flegacy%2Fimages2%2Fcommon%2Fch-logo-white-ko.png&w=3840&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "logo",
+    "width": 157,
+    "height": 57,
+    "downloaded": false,
+    "error": "HTTP 504"
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=https%3A%2F%2Fcdn.channel.io%2Fcht-homepage%2Fassets%2Fv1.30.6%2Fpublic%2Fimages%2Fmain-v8%2Flogo-collection%2Flg-electronics.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "lg-electronics",
+    "width": 256,
+    "height": 64,
+    "localPath": "images/image-2.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=https%3A%2F%2Fcdn.channel.io%2Fcht-homepage%2Fassets%2Fv1.30.6%2Fpublic%2Fimages%2Fmain-v8%2Flogo-collection%2Fotoki.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "otoki",
+    "width": 256,
+    "height": 64,
+    "localPath": "images/image-3.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=https%3A%2F%2Fcdn.channel.io%2Fcht-homepage%2Fassets%2Fv1.30.6%2Fpublic%2Fimages%2Fmain-v8%2Flogo-collection%2Feland-eats.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "eland-eats",
+    "width": 256,
+    "height": 64,
+    "localPath": "images/image-4.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=https%3A%2F%2Fcdn.channel.io%2Fcht-homepage%2Fassets%2Fv1.30.6%2Fpublic%2Fimages%2Fmain-v8%2Flogo-collection%2Fnongsim-mall.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "nongsim-mall",
+    "width": 256,
+    "height": 65,
+    "localPath": "images/image-5.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=https%3A%2F%2Fcdn.channel.io%2Fcht-homepage%2Fassets%2Fv1.30.6%2Fpublic%2Fimages%2Fmain-v8%2Flogo-collection%2Fair-premia.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "air-premia",
+    "width": 256,
+    "height": 65,
+    "localPath": "images/image-6.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=https%3A%2F%2Fcdn.channel.io%2Fcht-homepage%2Fassets%2Fv1.30.6%2Fpublic%2Fimages%2Fmain-v8%2Flogo-collection%2Feastarjet.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "eastarjet",
+    "width": 256,
+    "height": 64,
+    "localPath": "images/image-7.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=https%3A%2F%2Fcdn.channel.io%2Fcht-homepage%2Fassets%2Fv1.30.6%2Fpublic%2Fimages%2Fmain-v8%2Flogo-collection%2Fvt-cosmetics.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "vt-cosmetics",
+    "width": 256,
+    "height": 64,
+    "localPath": "images/image-8.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=https%3A%2F%2Fcdn.channel.io%2Fcht-homepage%2Fassets%2Fv1.30.6%2Fpublic%2Fimages%2Fmain-v8%2Flogo-collection%2Fcoach.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "coach",
+    "width": 256,
+    "height": 65,
+    "localPath": "images/image-9.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=https%3A%2F%2Fcdn.channel.io%2Fcht-homepage%2Fassets%2Fv1.30.6%2Fpublic%2Fimages%2Fmain-v8%2Flogo-collection%2Famuse.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "amuse",
+    "width": 256,
+    "height": 64,
+    "localPath": "images/image-10.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=https%3A%2F%2Fcdn.channel.io%2Fcht-homepage%2Fassets%2Fv1.30.6%2Fpublic%2Fimages%2Fmain-v8%2Flogo-collection%2Fmardi-mecredi.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "mardi-mecredi",
+    "width": 256,
+    "height": 64,
+    "localPath": "images/image-11.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=https%3A%2F%2Fcdn.channel.io%2Fcht-homepage%2Fassets%2Fv1.30.6%2Fpublic%2Fimages%2Fmain-v8%2Flogo-collection%2Fverish.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "verish",
+    "width": 256,
+    "height": 65,
+    "localPath": "images/image-12.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=https%3A%2F%2Fcdn.channel.io%2Fcht-homepage%2Fassets%2Fv1.30.6%2Fpublic%2Fimages%2Fmain-v8%2Flogo-collection%2Fspao.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "spao",
+    "width": 256,
+    "height": 64,
+    "localPath": "images/image-13.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=https%3A%2F%2Fcdn.channel.io%2Fcht-homepage%2Fassets%2Fv1.30.6%2Fpublic%2Fimages%2Fmain-v8%2Flogo-collection%2Ftoss-business.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "toss-business",
+    "width": 256,
+    "height": 65,
+    "localPath": "images/image-14.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=https%3A%2F%2Fcdn.channel.io%2Fcht-homepage%2Fassets%2Fv1.30.6%2Fpublic%2Fimages%2Fmain-v8%2Flogo-collection%2Fdaewoong.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "daewoong",
+    "width": 256,
+    "height": 64,
+    "localPath": "images/image-15.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=https%3A%2F%2Fcdn.channel.io%2Fcht-homepage%2Fassets%2Fv1.30.6%2Fpublic%2Fimages%2Fmain-v8%2Flogo-collection%2Flotte-world.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "lotte-world",
+    "width": 256,
+    "height": 65,
+    "localPath": "images/image-16.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=https%3A%2F%2Fcdn.channel.io%2Fcht-homepage%2Fassets%2Fv1.30.6%2Fpublic%2Fimages%2Fmain-v8%2Flogo-collection%2Fmegabox.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "megabox",
+    "width": 256,
+    "height": 65,
+    "localPath": "images/image-17.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=https%3A%2F%2Fcdn.channel.io%2Fcht-homepage%2Fassets%2Fv1.30.6%2Fpublic%2Fimages%2Fmain-v8%2Flogo-collection%2Fmyrealtrip.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "myrealtrip",
+    "width": 256,
+    "height": 64,
+    "localPath": "images/image-18.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=https%3A%2F%2Fcdn.channel.io%2Fcht-homepage%2Fassets%2Fv1.30.6%2Fpublic%2Fimages%2Fmain-v8%2Flogo-collection%2Fimarket.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "imarket",
+    "width": 256,
+    "height": 64,
+    "localPath": "images/image-19.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://cdn.channel.io/cht-homepage/assets/v1.30.6/public/images/alf-customer/ai-messenger-userchat-ko.webp",
+    "type": "img",
+    "sectionIndex": 0,
+    "width": 1334,
+    "height": 840,
+    "localPath": "images/image-20.webp",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://cdn.channel.io/cht-homepage/assets/v1.30.6/public/images/alf-customer/ai-messenger-meet-ko.webp",
+    "type": "img",
+    "sectionIndex": 0,
+    "width": 1400,
+    "height": 1040,
+    "localPath": "images/image-21.webp",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://cdn.channel.io/cht-homepage/assets/v1.30.6/public/images/alf-customer/ai-messenger-document-ko.webp",
+    "type": "img",
+    "sectionIndex": 0,
+    "width": 1240,
+    "height": 800,
+    "localPath": "images/image-22.webp",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://cdn.channel.io/cht-homepage/assets/v1.30.6/public/images/alf-customer/ai-messenger-marketing-ko.webp",
+    "type": "img",
+    "sectionIndex": 0,
+    "width": 1240,
+    "height": 800,
+    "localPath": "images/image-23.webp",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://cdn.channel.io/cht-homepage/assets/v1.30.6/public/images/alf-customer/ai-messenger-teamchat-ko.webp",
+    "type": "img",
+    "sectionIndex": 0,
+    "width": 1240,
+    "height": 1000,
+    "localPath": "images/image-24.webp",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://cdn.channel.io/cht-homepage/assets/v1.30.6/public/images/alf-customer/ai-automation-task-ko.webp",
+    "type": "img",
+    "sectionIndex": 0,
+    "width": 1480,
+    "height": 881,
+    "localPath": "images/image-25.webp",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://cdn.channel.io/cht-homepage/assets/v1.30.6/public/images/alf-customer/ai-automation-knowledge-ko.webp",
+    "type": "img",
+    "sectionIndex": 0,
+    "width": 1136,
+    "height": 841,
+    "localPath": "images/image-26.webp",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://cdn.channel.io/cht-homepage/assets/v1.30.6/public/images/alf-customer/ai-automation-rule-ko.webp",
+    "type": "img",
+    "sectionIndex": 0,
+    "width": 1136,
+    "height": 841,
+    "localPath": "images/image-27.webp",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://cdn.channel.io/cht-homepage/assets/v1.30.6/public/images/alf-customer/video-demo-1-logo.webp",
+    "type": "img",
+    "sectionIndex": 0,
+    "width": 541,
+    "height": 116,
+    "localPath": "images/image-28.webp",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fisms.03f81085.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "isms-mark",
+    "width": 180,
+    "height": 180,
+    "localPath": "images/image-29.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fiso.da36dc65.webp&w=1080&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "iso-mark",
+    "width": 500,
+    "height": 240,
+    "localPath": "images/image-30.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Faws-qualified.d6e15682.webp&w=640&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "aws-mark",
+    "width": 200,
+    "height": 200,
+    "localPath": "images/image-31.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmark-best-support.a1fc8c1a.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "g2-best-support-mark",
+    "width": 180,
+    "height": 180,
+    "localPath": "images/image-32.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmark-high-performer.ee44cbdb.webp&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "g2-high-performer-mark",
+    "width": 180,
+    "height": 180,
+    "localPath": "images/image-33.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fch-logo-ko.95dd2b7d.png&w=256&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "logo",
+    "width": 128,
+    "height": 46,
+    "localPath": "images/image-34.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://yeorcqadlpopsmgaoudu.supabase.co/storage/v1/object/public/certification/mark/28d06dfa-0548-47ec-9593-d22855e654c9/211ffd80-300b-4652-9dba-b0e3d24af860-2025-02-12T07:09:50.712Z",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "대량문자 전송자격인증마크",
+    "width": 187,
+    "height": 187,
+    "localPath": "images/image-35.712z",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/icons/facebook.svg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Facebook",
+    "width": 28,
+    "height": 28,
+    "localPath": "images/image-36.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/icons/youtube.svg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "YouTube",
+    "width": 28,
+    "height": 28,
+    "localPath": "images/image-37.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/icons/instagram.svg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Instagram",
+    "width": 28,
+    "height": 28,
+    "localPath": "images/image-38.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/legacy/images/chevron-down-grey-700.png",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-39.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/static/media/hero-bg.5cb59145.webp",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-40.webp",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/static/media/slider-card-bg.d3df96a4.png",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-41.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://cdn.channel.io/cht-homepage/assets/v1.30.6/public/images/alf-customer/video-demo-1-thumb.png",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-42.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/static/media/enterprise-bg.02a92bed.webp",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-43.webp",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://channel.io/_next/static/media/cta-bg.6feeea62.webp",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-44.webp",
+    "downloaded": true
+  }
+]

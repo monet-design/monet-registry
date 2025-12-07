@@ -58,6 +58,51 @@ model: inherit
 
 4. 아래 주의사항에 따라 index.tsx 내용을 구현하세요.
 
+## 비디오 구현 가이드
+
+섹션에 비디오가 포함된 경우 (이미지에서 YouTube 플레이어나 비디오 요소가 보이는 경우):
+
+### YouTube 비디오 구현
+```tsx
+// 방법 1: iframe 직접 사용
+<iframe
+  src={`https://www.youtube.com/embed/${videoId}`}
+  width="560"
+  height="315"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+  className="rounded-lg"
+/>
+
+// 방법 2: 썸네일 + 클릭 시 재생 (성능 최적화)
+const [isPlaying, setIsPlaying] = useState(false);
+{!isPlaying ? (
+  <button onClick={() => setIsPlaying(true)} className="relative">
+    <Image src={thumbnailPath} alt="Video thumbnail" fill />
+    <Play className="absolute inset-0 m-auto w-16 h-16 text-white" />
+  </button>
+) : (
+  <iframe src={`https://www.youtube.com/embed/${videoId}?autoplay=1`} ... />
+)}
+```
+
+### HTML5 비디오 구현
+```tsx
+<video
+  src={videoUrl}
+  poster={posterUrl}
+  controls
+  className="w-full rounded-lg"
+>
+  Your browser does not support the video tag.
+</video>
+```
+
+### 주의사항
+- 비디오가 포함된 섹션은 `--tags-functional "video"` 옵션이 이미 지정되어 있어야 함
+- 썸네일 이미지가 있다면 `public/registry/{NAME}/` 폴더에 복사하여 사용
+- autoplay는 muted 속성과 함께 사용해야 브라우저에서 허용됨
+
 ## 주의사항:
 
 - 스크립트가 생성한 기본 파일 외에, 필요시 다음 파일을 추가할 수 있습니다:

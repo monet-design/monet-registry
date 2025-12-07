@@ -57,6 +57,33 @@ export interface FontInfo {
   error?: string;
 }
 
+export interface VideoInfo {
+  /** 원본 URL (YouTube embed URL 또는 video src) */
+  originalUrl: string;
+  /** 비디오 플랫폼 */
+  platform: "youtube" | "html5";
+  /** 비디오 타입 */
+  type: "iframe" | "video";
+  /** YouTube video ID (YouTube인 경우) */
+  videoId?: string;
+  /** 임베드 코드 (iframe인 경우) */
+  embedCode?: string;
+  /** 포스터/썸네일 이미지 URL */
+  posterUrl?: string;
+  /** 로컬에 저장된 썸네일 경로 */
+  thumbnailPath?: string;
+  /** 비디오가 속한 섹션 인덱스 */
+  sectionIndex: number;
+  /** 비디오 너비 */
+  width?: number;
+  /** 비디오 높이 */
+  height?: number;
+  /** 썸네일 다운로드 성공 여부 */
+  thumbnailDownloaded: boolean;
+  /** 에러 메시지 */
+  error?: string;
+}
+
 export interface DOMSection {
   index: number;
   tag: string;
@@ -86,6 +113,7 @@ export interface ScrapeResult {
   sections: DOMSection[];
   images: ImageInfo[];
   fonts: FontInfo[];
+  videos: VideoInfo[];
   metadata: {
     url: string;
     domain: string;
@@ -100,6 +128,11 @@ export interface ScrapeResult {
     fontStats: {
       total: number;
       downloaded: number;
+      failed: number;
+    };
+    videoStats: {
+      total: number;
+      thumbnailsDownloaded: number;
       failed: number;
     };
   };

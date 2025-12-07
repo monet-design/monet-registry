@@ -54,6 +54,7 @@ public/scraped/{domain}-{date}/
 ├── sections.json      # 분할된 섹션 정보
 ├── images.json        # 추출된 이미지 정보
 ├── fonts.json         # 추출된 폰트 정보
+├── videos.json        # 추출된 비디오 정보
 ├── metadata.json      # 스크래핑 메타데이터
 ├── sections/
 │   ├── section-0.png  # 섹션별 스크린샷
@@ -65,8 +66,11 @@ public/scraped/{domain}-{date}/
 │   ├── image-0.png
 │   ├── image-1.jpg
 │   └── ...
-└── fonts/             # 다운로드된 폰트 파일
-    ├── CustomFont.woff2
+├── fonts/             # 다운로드된 폰트 파일
+│   ├── CustomFont.woff2
+│   └── ...
+└── videos/            # 비디오 썸네일 파일
+    ├── thumb-0.jpg    # YouTube/HTML5 비디오 썸네일
     └── ...
 ```
 
@@ -351,6 +355,56 @@ status: stable
 - 커스텀 웹폰트 파일: 직접 다운로드
 - Google Fonts / Adobe Fonts: CSS 링크만 저장 (라이선스 준수)
 - 시스템 폰트: 다운로드하지 않음
+
+## 비디오 추출
+
+스크래핑 시 다음 소스에서 비디오를 추출합니다:
+
+| 소스 | 설명 | 플랫폼 |
+|------|------|--------|
+| `<iframe>` YouTube | `youtube.com/embed/*` 또는 `youtu.be/*` URL | `youtube` |
+| `<video>` 태그 | src 속성 또는 `<source>` 태그의 src | `html5` |
+
+**videos.json 예시:**
+```json
+[
+  {
+    "originalUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "platform": "youtube",
+    "type": "iframe",
+    "videoId": "dQw4w9WgXcQ",
+    "embedCode": "<iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" ...></iframe>",
+    "posterUrl": "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
+    "thumbnailPath": "videos/thumb-0.jpg",
+    "sectionIndex": 1,
+    "width": 560,
+    "height": 315,
+    "thumbnailDownloaded": true
+  },
+  {
+    "originalUrl": "https://example.com/video.mp4",
+    "platform": "html5",
+    "type": "video",
+    "posterUrl": "https://example.com/poster.jpg",
+    "thumbnailPath": "videos/thumb-1.jpg",
+    "sectionIndex": 3,
+    "width": 1280,
+    "height": 720,
+    "thumbnailDownloaded": true
+  }
+]
+```
+
+**비디오 정보:**
+- YouTube: video ID 추출, 고품질 썸네일 URL 자동 생성
+- HTML5 video: poster 속성에서 썸네일 URL 추출
+- 비디오가 속한 섹션 인덱스 매핑
+- 썸네일 이미지 자동 다운로드
+
+**컴포넌트 구현 시:**
+- YouTube: `<iframe>` 또는 썸네일 클릭 시 재생 패턴 사용
+- HTML5 video: `<video>` 태그에 controls, poster 속성 활용
+- 비디오가 포함된 섹션은 `tags.functional`에 `video` 태그 추가
 
 ## 스크래핑 설정
 

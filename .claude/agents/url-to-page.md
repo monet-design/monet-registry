@@ -20,8 +20,11 @@ npx tsx scripts/scrape/scrape-website.ts --url "{URL}"
 - `public/scraped/{domain}-{date}/styles.json` - 계산된 CSS
 - `public/scraped/{domain}-{date}/dom-tree.json` - DOM 구조 분석
 - `public/scraped/{domain}-{date}/sections.json` - 1차 분할된 섹션 정보
+- `public/scraped/{domain}-{date}/images.json` - 추출된 이미지 정보
+- `public/scraped/{domain}-{date}/videos.json` - 추출된 비디오 정보 (YouTube, HTML5 video)
 - `public/scraped/{domain}-{date}/sections/section-*.png` - 섹션별 스크린샷
 - `public/scraped/{domain}-{date}/sections/section-*.html` - 섹션별 HTML
+- `public/scraped/{domain}-{date}/videos/thumb-*.jpg` - 비디오 썸네일
 
 ## 2단계: 섹션 분할 검증
 
@@ -34,6 +37,7 @@ npx tsx scripts/scrape/scrape-website.ts --url "{URL}"
    - 시각적으로 분리되어야 하는데 DOM이 하나로 본 경우 → 분할 필요
 4. 각 섹션의 카테고리를 확인/수정하세요 (hero, feature, pricing, footer 등).
 5. 페이지 텍스트의 언어를 파악하세요 (en: 영어, ko: 한국어).
+6. `videos.json`을 확인하여 비디오가 포함된 섹션을 파악하세요.
 
 **섹션 카테고리 기준:**
 - `header`: 최상단 네비게이션 바
@@ -117,6 +121,24 @@ pnpm metadata:build
 - 스크래핑 실패 시 최대 3회 재시도
 - 각 섹션 컴포넌트 생성 후 TypeScript 에러가 없는지 확인
 - 절대 `npm run build`를 실행하지 마세요
+
+## 비디오 처리 지침
+
+섹션에 비디오가 포함된 경우 (`videos.json`의 `sectionIndex` 확인):
+
+**YouTube 비디오:**
+- `videoId`를 사용하여 임베드 구현
+- 썸네일 이미지 경로: `videos/thumb-{index}.jpg`
+- 구현 방식: `<iframe>` 또는 `lite-youtube-embed` 라이브러리 권장
+
+**HTML5 비디오:**
+- `originalUrl`을 `<video>` 태그의 `src`로 사용
+- `posterUrl`이 있으면 `poster` 속성에 활용
+- 썸네일 경로: `videos/thumb-{index}.jpg` (다운로드된 경우)
+
+**img-to-component 호출 시:**
+- 비디오가 포함된 섹션은 `--tags-functional "video"` 옵션 추가
+- 섹션 HTML snippet에서 비디오 관련 코드 확인 후 구현에 반영
 
 ## 최종 결과물
 

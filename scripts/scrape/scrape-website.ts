@@ -18,6 +18,7 @@ import type {
   DOMSection,
   ImageInfo,
   FontInfo,
+  VideoInfo,
 } from "./types";
 
 const DEFAULT_VIEWPORT = { width: 1440, height: 900 };
@@ -390,6 +391,188 @@ async function extractFonts(
 }
 
 /**
+ * YouTube video ID 추출
+ */
+function extractYouTubeVideoId(url: string): string | null {
+  // youtube.com/embed/VIDEO_ID 형식
+  const embedMatch = url.match(/youtube\.com\/embed\/([a-zA-Z0-9_-]{11})/);
+  if (embedMatch) return embedMatch[1];
+
+  // youtu.be/VIDEO_ID 형식
+  const shortMatch = url.match(/youtu\.be\/([a-zA-Z0-9_-]{11})/);
+  if (shortMatch) return shortMatch[1];
+
+  // youtube.com/watch?v=VIDEO_ID 형식
+  const watchMatch = url.match(/youtube\.com\/watch\?v=([a-zA-Z0-9_-]{11})/);
+  if (watchMatch) return watchMatch[1];
+
+  return null;
+}
+
+/**
+ * 페이지에서 비디오 정보 추출
+ */
+async function extractVideos(
+  page: Page,
+  baseUrl: string,
+  sections: DOMSection[]
+): Promise<Omit<VideoInfo, "thumbnailPath" | "thumbnailDownloaded" | "error">[]> {
+  const rawVideos = await page.evaluate(() => {
+    const videos: Array<{
+      src: string;
+      platform: "youtube" | "html5";
+      type: "iframe" | "video";
+      embedCode?: string;
+      posterUrl?: string;
+      width?: number;
+      height?: number;
+      top: number;
+    }> = [];
+
+    // 1. YouTube iframe 추출
+    document.querySelectorAll("iframe").forEach((iframe) => {
+      const src = iframe.src || iframe.dataset.src;
+      if (src && (src.includes("youtube.com/embed") || src.includes("youtu.be"))) {
+        const rect = iframe.getBoundingClientRect();
+        videos.push({
+          src,
+          platform: "youtube",
+          type: "iframe",
+          embedCode: iframe.outerHTML,
+          width: iframe.width ? parseInt(iframe.width as unknown as string) : rect.width,
+          height: iframe.height ? parseInt(iframe.height as unknown as string) : rect.height,
+          top: rect.top + window.scrollY,
+        });
+      }
+    });
+
+    // 2. HTML5 video 태그 추출
+    document.querySelectorAll("video").forEach((video) => {
+      let src = video.src;
+
+      // video에 직접 src가 없으면 source 태그에서 찾기
+      if (!src) {
+        const source = video.querySelector("source");
+        if (source) {
+          src = source.src || source.getAttribute("src") || "";
+        }
+      }
+
+      if (src && !src.startsWith("data:")) {
+        const rect = video.getBoundingClientRect();
+        videos.push({
+          src,
+          platform: "html5",
+          type: "video",
+          posterUrl: video.poster || undefined,
+          width: video.videoWidth || video.width || rect.width,
+          height: video.videoHeight || video.height || rect.height,
+          top: rect.top + window.scrollY,
+        });
+      }
+    });
+
+    return videos;
+  });
+
+  // 중복 제거 및 절대 URL로 변환
+  const uniqueUrls = new Set<string>();
+  const result: Omit<VideoInfo, "thumbnailPath" | "thumbnailDownloaded" | "error">[] = [];
+
+  for (const video of rawVideos) {
+    const absoluteUrl = resolveUrl(baseUrl, video.src);
+    if (uniqueUrls.has(absoluteUrl)) continue;
+    uniqueUrls.add(absoluteUrl);
+
+    // 비디오가 속한 섹션 찾기
+    let sectionIndex = -1;
+    for (const section of sections) {
+      if (
+        video.top >= section.rect.top &&
+        video.top < section.rect.top + section.rect.height
+      ) {
+        sectionIndex = section.index;
+        break;
+      }
+    }
+
+    // YouTube 썸네일 URL 생성
+    let posterUrl = video.posterUrl ? resolveUrl(baseUrl, video.posterUrl) : undefined;
+    let videoId: string | undefined;
+
+    if (video.platform === "youtube") {
+      videoId = extractYouTubeVideoId(absoluteUrl) || undefined;
+      if (videoId && !posterUrl) {
+        // YouTube 고품질 썸네일 URL
+        posterUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+      }
+    }
+
+    result.push({
+      originalUrl: absoluteUrl,
+      platform: video.platform,
+      type: video.type,
+      videoId,
+      embedCode: video.embedCode,
+      posterUrl,
+      sectionIndex,
+      width: video.width,
+      height: video.height,
+    });
+  }
+
+  return result;
+}
+
+/**
+ * 비디오 썸네일 다운로드
+ */
+async function downloadVideoThumbnails(
+  videos: Omit<VideoInfo, "thumbnailPath" | "thumbnailDownloaded" | "error">[],
+  outputDir: string
+): Promise<VideoInfo[]> {
+  const videosDir = path.join(outputDir, "videos");
+  fs.mkdirSync(videosDir, { recursive: true });
+
+  const results: VideoInfo[] = [];
+
+  for (let i = 0; i < videos.length; i++) {
+    const video = videos[i];
+
+    // 썸네일 URL이 없으면 스킵
+    if (!video.posterUrl) {
+      results.push({
+        ...video,
+        thumbnailDownloaded: false,
+      } as VideoInfo);
+      continue;
+    }
+
+    const ext = getExtensionFromUrl(video.posterUrl);
+    const filename = `thumb-${i}${ext}`;
+    const localPath = `videos/${filename}`;
+    const fullPath = path.join(outputDir, localPath);
+
+    const { success, error } = await downloadFile(video.posterUrl, fullPath);
+
+    results.push({
+      ...video,
+      thumbnailPath: success ? localPath : undefined,
+      thumbnailDownloaded: success,
+      error,
+    } as VideoInfo);
+
+    if (success) {
+      console.log(`    ✓ ${filename} (${video.platform})`);
+    } else {
+      console.log(`    ✗ ${filename}: ${error}`);
+    }
+  }
+
+  return results;
+}
+
+/**
  * 이미지 다운로드
  */
 async function downloadImages(
@@ -692,13 +875,23 @@ export async function scrapeWebsite(
     );
 
     // 폰트 추출 및 다운로드
-    console.log("[8/8] Extracting and downloading fonts...");
+    console.log("[8/9] Extracting and downloading fonts...");
     const rawFonts = await extractFonts(page, url);
     console.log(`  Found ${rawFonts.length} fonts`);
     const fonts = await downloadFonts(rawFonts, outputDir);
     fs.writeFileSync(
       path.join(outputDir, "fonts.json"),
       JSON.stringify(fonts, null, 2)
+    );
+
+    // 비디오 추출 및 썸네일 다운로드
+    console.log("[9/9] Extracting videos and downloading thumbnails...");
+    const rawVideos = await extractVideos(page, url, sections);
+    console.log(`  Found ${rawVideos.length} videos`);
+    const videos = await downloadVideoThumbnails(rawVideos, outputDir);
+    fs.writeFileSync(
+      path.join(outputDir, "videos.json"),
+      JSON.stringify(videos, null, 2)
     );
 
     await browser.close();
@@ -714,6 +907,11 @@ export async function scrapeWebsite(
       downloaded: fonts.filter((f) => f.downloaded).length,
       failed: fonts.filter((f) => !f.downloaded && f.source === "custom").length,
     };
+    const videoStats = {
+      total: videos.length,
+      thumbnailsDownloaded: videos.filter((v) => v.thumbnailDownloaded).length,
+      failed: videos.filter((v) => v.posterUrl && !v.thumbnailDownloaded).length,
+    };
 
     const result: ScrapeResult = {
       success: true,
@@ -721,6 +919,7 @@ export async function scrapeWebsite(
       sections,
       images,
       fonts,
+      videos,
       metadata: {
         url,
         domain,
@@ -729,6 +928,7 @@ export async function scrapeWebsite(
         totalHeight: bodyHeight,
         imageStats,
         fontStats,
+        videoStats,
       },
     };
 
@@ -738,7 +938,7 @@ export async function scrapeWebsite(
       JSON.stringify(result.metadata, null, 2)
     );
 
-    console.log(`\n[Success] Scraped ${sections.length} sections, ${imageStats.downloaded}/${imageStats.total} images, ${fontStats.total} fonts`);
+    console.log(`\n[Success] Scraped ${sections.length} sections, ${imageStats.downloaded}/${imageStats.total} images, ${fontStats.total} fonts, ${videoStats.total} videos`);
     console.log(`[Output] ${outputDir}\n`);
 
     return result;
@@ -750,6 +950,7 @@ export async function scrapeWebsite(
       sections: [],
       images: [],
       fonts: [],
+      videos: [],
       metadata: {
         url,
         domain,
@@ -758,6 +959,7 @@ export async function scrapeWebsite(
         totalHeight: 0,
         imageStats: { total: 0, downloaded: 0, failed: 0 },
         fontStats: { total: 0, downloaded: 0, failed: 0 },
+        videoStats: { total: 0, thumbnailsDownloaded: 0, failed: 0 },
       },
       error: error instanceof Error ? error.message : String(error),
     };
@@ -800,11 +1002,13 @@ async function main() {
   console.log(`  - ${result.outputDir}/sections.json`);
   console.log(`  - ${result.outputDir}/images.json`);
   console.log(`  - ${result.outputDir}/fonts.json`);
+  console.log(`  - ${result.outputDir}/videos.json`);
   console.log(`  - ${result.outputDir}/metadata.json`);
   console.log(`  - ${result.outputDir}/sections/section-*.png`);
   console.log(`  - ${result.outputDir}/sections/section-*.html`);
   console.log(`  - ${result.outputDir}/images/*`);
   console.log(`  - ${result.outputDir}/fonts/*`);
+  console.log(`  - ${result.outputDir}/videos/*`);
 }
 
 main().catch(console.error);

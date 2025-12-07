@@ -1,0 +1,22 @@
+{
+  "url": "https://www.ycombinator.com/",
+  "domain": "ycombinator-com",
+  "timestamp": "2025-12-07T16:42:51.604Z",
+  "pageTitle": "Y Combinator",
+  "totalHeight": 6845,
+  "imageStats": {
+    "total": 205,
+    "downloaded": 199,
+    "failed": 6
+  },
+  "fontStats": {
+    "total": 6,
+    "downloaded": 0,
+    "failed": 0
+  },
+  "videoStats": {
+    "total": 1,
+    "thumbnailsDownloaded": 1,
+    "failed": 0
+  }
+}

@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: ycombinator-com-hero-0
+category: hero
+
+images:
+  preview: scraped/ycombinator-com-2025-12-07/sections/section-0.png
+
+freeformKeywords:
+  - startup
+  - accelerator
+  - Y Combinator
+  - apply
+  - funding
+  - make something people want
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T16:43:50Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - bold
+    - sans-serif
+  layout:
+    - centered
+    - full-width
+    - responsive
+  industry:
+    - startup
+    - saas
+    - accelerator
+
+parentPage: ycombinator-com-landing
+
+source:
+  type: url
+  url: https://www.ycombinator.com/
+  scrapedAt: "2025-12-07T16:43:50Z"
+  sectionIndex: 0

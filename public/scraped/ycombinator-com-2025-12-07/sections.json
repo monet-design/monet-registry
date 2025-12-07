@@ -1,0 +1,46 @@
+[
+  {
+    "index": 0,
+    "tag": "div",
+    "selector": "div#WhyPage-react-component-59640486-ead1-4c6f-abc0-cc95ce00a3b5",
+    "category": null,
+    "rect": {
+      "top": 0,
+      "height": 5184.265625
+    },
+    "confidence": 0.5
+  },
+  {
+    "index": 1,
+    "tag": "div",
+    "selector": "div#WhyPageCarousel-react-component-5718fc78-d032-4ce1-8abd-e5fb8127ebd5",
+    "category": null,
+    "rect": {
+      "top": 5184.265625,
+      "height": 654
+    },
+    "confidence": 0.5
+  },
+  {
+    "index": 2,
+    "tag": "div",
+    "selector": "div",
+    "category": null,
+    "rect": {
+      "top": 5838.265625,
+      "height": 510
+    },
+    "confidence": 0.5
+  },
+  {
+    "index": 3,
+    "tag": "footer",
+    "selector": "footer",
+    "category": "footer",
+    "rect": {
+      "top": 6348.265625,
+      "height": 497
+    },
+    "confidence": 0.8
+  }
+]

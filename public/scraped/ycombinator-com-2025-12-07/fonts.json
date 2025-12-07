@@ -1,0 +1,68 @@
+[
+  {
+    "family": "Avenir",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "ui-sans-serif",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Apple Color Emoji",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Segoe UI Emoji",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Segoe UI Symbol",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Noto Color Emoji",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  }
+]

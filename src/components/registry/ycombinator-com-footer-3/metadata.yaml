@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: ycombinator-com-footer-3
+category: footer
+
+images:
+  preview: scraped/ycombinator-com-2025-12-07/sections/section-3.png
+
+freeformKeywords:
+  - footer
+  - programs
+  - company
+  - resources
+  - social links
+  - copyright
+  - Y Combinator
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T16:43:55Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - social-links
+  style:
+    - light-theme
+    - minimal
+    - clean
+    - sans-serif
+  layout:
+    - multi-column
+    - responsive
+    - full-width
+  industry:
+    - startup
+    - saas
+
+parentPage: ycombinator-com-landing
+
+source:
+  type: url
+  url: https://www.ycombinator.com/
+  scrapedAt: "2025-12-07T16:43:55Z"
+  sectionIndex: 3

@@ -1,0 +1,1998 @@
+[
+  {
+    "originalUrl": "https://www.ycombinator.com/vite/assets/garry_and_sam-BDiyZpUw.webp",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Garry Tan and Sam Altman at a YC dinner",
+    "width": 810,
+    "height": 594,
+    "localPath": "images/image-0.webp",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/stripe-d1d72c19fe7fbfd9514ffbc26f1c5922a1b77fd7445c78a34fe319c03b986713.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Stripe logo",
+    "width": 226,
+    "height": 94,
+    "localPath": "images/image-1.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/airbnb-423deceb57ea913e2f3a39a1c2b6ecb690f019933b4d767ac91121777aa59107.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Airbnb logo",
+    "width": 301,
+    "height": 67,
+    "localPath": "images/image-2.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/instacart-81d147c59ca98d84b72f606de3af981da477423738120d3b2baec64c3162ba14.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Instacart logo",
+    "width": 330,
+    "height": 66,
+    "localPath": "images/image-3.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/doordash-f41c839bb0522ead71e8d99ed3ae0495c04271f6f3f3edc6b0effbbff172bc1d.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "DoorDash logo",
+    "width": 291,
+    "height": 33,
+    "localPath": "images/image-4.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/cruise-38dda623d4f317a49a65099cd460bd1c6b3e4b91ffeccb6df0ec02284345b338.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Cruise logo",
+    "width": 251,
+    "height": 54,
+    "localPath": "images/image-5.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/twitch-1b4772b83a73b6fa827ef467ecc17023a2bfbbf936633bffb5e93674690e74d6.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Twitch logo",
+    "width": 169,
+    "height": 105,
+    "localPath": "images/image-6.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/coinbase-5c8bfb41c875bb6163cebf467fe6afa1cbaf092c16ea7711034e32218965ff93.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Coinbase logo",
+    "width": 2296,
+    "height": 411,
+    "localPath": "images/image-7.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/pagerduty-dc361aab31ef341eaed4d0a5a420c42f4d557745c67ffc5999c7b556c408d150.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "PagerDuty logo",
+    "width": 296,
+    "height": 58,
+    "localPath": "images/image-8.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/faire-3113845be6506be7761eaef7257e882b6e0c94081653c0f7459f8ed0c0596338.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Faire logo",
+    "width": 330,
+    "height": 41,
+    "localPath": "images/image-9.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/brex-a76f83603a430f266cddacaceaf525080d91c3febf04ea8000ae1b4c67e8786f.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Brex logo",
+    "width": 330,
+    "height": 87,
+    "localPath": "images/image-10.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/deel-2eb5105300f66ebfa07b0ea805b6680d71c0b6de0272c3f75eebf6d2ae3077cf.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Deel logo",
+    "width": 297,
+    "height": 105,
+    "localPath": "images/image-11.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/rippling-100bc0c1cdabd9e38c671420ba16ba8f6d1af656dc3bc32eeeaa029f1bec257a.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Rippling logo",
+    "width": 200,
+    "height": 35,
+    "localPath": "images/image-12.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/reddit-d5ed3340e70326e6a372be76e2ec1b761a4d757954ae69311671f82f59afbedb.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "reddit logo",
+    "width": 192,
+    "height": 67,
+    "localPath": "images/image-13.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/gusto-b3f56f64a500a85cb44a2621db217778c9c698f83da59921e41c732dacdb3f35.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Gusto logo",
+    "width": 277,
+    "height": 105,
+    "localPath": "images/image-14.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/flexport-ace3180f9926a45ed72eea63ed4c5a1a0aeb4e14ec7eb3ffff7c513aba07d0a9.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Flexport logo",
+    "width": 330,
+    "height": 73,
+    "localPath": "images/image-15.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/dropbox-83b803aca663267bc2c480efca454ea8f9d31c39dd2ccba3856104a987e2692d.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Dropbox logo",
+    "width": 311,
+    "height": 72,
+    "localPath": "images/image-16.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/razorpay-7b4097215fa2d028e821d34bd3d1558309acd87ac5599e8164545e3a7fda5b95.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Razorpay logo",
+    "width": 330,
+    "height": 69,
+    "localPath": "images/image-17.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/scale_ai-09562d62f19867f7e4af006fb0003148d1f0dff4ad32fa23e283c98a88044443.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Scale AI logo",
+    "width": 327,
+    "height": 105,
+    "localPath": "images/image-18.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/gitlab-9998d8cb37a75de7004d679606bb8c5517d8c82848fb3e6ff13f8587143545b3.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "GitLab logo",
+    "width": 330,
+    "height": 101,
+    "localPath": "images/image-19.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/benchling-cabc6ab6f92c92af620210d56c5cb872d5a2b77d3244924a4b35c0fba03aa411.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Benchling logo",
+    "width": 330,
+    "height": 70,
+    "localPath": "images/image-20.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/fivetran-80f044801357e31b679f1c6adb33cd674b80a6fba2eef509dcb930f57118d324.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Fivetran logo",
+    "width": 330,
+    "height": 92,
+    "localPath": "images/image-21.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/rappi-58eceb42cb4e6ba589842600cba0a0448e2ebe42a8ad4d0b9e26f1e6ccd9f36d.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Rappi logo",
+    "width": 248,
+    "height": 105,
+    "localPath": "images/image-22.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/checkr-dfe048bab6c8869e0faa186c947e1f8ba70fe25468952d432d6730bc7c64b557.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Checkr logo",
+    "width": 330,
+    "height": 86,
+    "localPath": "images/image-23.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/zapier-a571989e13599601b2555b75551ee1cee4161f77df939d8f9d99ef750d6c9851.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Zapier logo",
+    "width": 229,
+    "height": 105,
+    "localPath": "images/image-24.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/whatnot-44d4dfd2add836c788c42baa567fa4769b88f6e4da07d8f8eaf79d321b9be41c.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Whatnot logo",
+    "width": 330,
+    "height": 52,
+    "localPath": "images/image-25.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/podium-403d2cf6edcf8bd760845e1a356161d69df559a59aeda2e36bf90b0454d75c85.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Podium logo",
+    "width": 330,
+    "height": 73,
+    "localPath": "images/image-26.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/webflow-e0f324025f848a85519e046dfcffa3c517ad4470106e8ee54f697df16be929ce.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Webflow logo",
+    "width": 330,
+    "height": 83,
+    "localPath": "images/image-27.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/zepto-ed94889c5a2c2128ca2a39d5ce829a68cc792ed3e1b479089d2cbd3e03fa6483.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Zepto logo",
+    "width": 200,
+    "height": 65,
+    "localPath": "images/image-28.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/groww-b94b5a87bc987c7fa70ef04790d93b54fdca1d9edcf3d4d104865d740542fd4f.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Groww logo",
+    "width": 330,
+    "height": 89,
+    "localPath": "images/image-29.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/segment-bc64ab58b63ec0bdb1aa5888ca7771acabc39db12e9c30b4a5215014b766ffc4.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Segment logo",
+    "width": 294,
+    "height": 63,
+    "localPath": "images/image-30.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bookface-static.ycombinator.com/assets/ycdc/startups/ironclad-7ea21638879d20154e44f1614042b2fc93babefe9059a42835874975f73106d1.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Ironclad logo",
+    "width": 330,
+    "height": 63,
+    "localPath": "images/image-31.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/vite/assets/marc-andreessen-B6IB5XEE.jpg",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Marc Andreessen headshot",
+    "width": 200,
+    "height": 200,
+    "localPath": "images/image-32.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/vite/assets/ron-conway-DahY8Lgh.jpg",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Ron Conway headshot",
+    "width": 200,
+    "height": 200,
+    "localPath": "images/image-33.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/vite/assets/brian-chesky-Dok3kT1b.jpg",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Brian Chesky headshot",
+    "width": 200,
+    "height": 200,
+    "localPath": "images/image-34.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/vite/assets/patrick-collinson-MjupD62W.jpg",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Patrick Collison headshot",
+    "width": 200,
+    "height": 200,
+    "localPath": "images/image-35.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/t8co94HS6tY/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "What Founders Have To Unlearn To Become Great CEOs",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-36.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/RynySryqM_0/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Cursor Head of Design Reviews Startup Websites",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-37.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/KTmxaMdUbHA/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "AI Is Eating Logistics",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-38.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/hKw6cRKcqzY/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Inside The Startup Launching AI Into Space",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-39.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/i_PjjXKNpA4/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How To Recruit The Best Engineers And Sales Reps",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-40.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/DULfEcPR0Gc/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Inside The MIT AI Study Everyone Misunderstood (And What It Means For Startups)",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-41.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/JZLZQVmfGn8/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Transformers Explained: The Discovery That Changed AI Forever",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-42.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/nGLmpKi-jRU/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "YC Partners Answer Your Questions | Office Hours",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-43.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/Hm-ZIiwiN1o/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Unpopular Ideas That Became Billion-Dollar Businesses",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-44.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/IqwSb2hO1jE/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "What Everyone Is Getting Wrong About AI And Jobs",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-45.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/ENG_DQF5E60/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "The World's First Commercial Mobile Carbon Capture Device",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-46.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/DJjZzzPANBY/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Every AI Founder Should Be Asking These Questions",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-47.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/bxBzsSsqQAM/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "The 7 Most Powerful Moats For AI Startup",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-48.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/YFeb3yAxtjE/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How To Train An LLM with Anthropic's Head of Pretraining",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-49.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/Pdne9xaRLUc/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Fintech 3.0: Now Is The Best Time To Build In Crypto",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-50.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/lWmDiDGsLK4/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "The Future of Software Creation with Replit CEO Amjad Masad",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-51.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/Zyw-YA0k3xo/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "The FDE Playbook for AI Startups with Bob McGrew",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-52.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/TrXi3naD6Og/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Michael Truell: Building Cursor at 23, Taking on GitHub Copilot, and Advice to Engineering Students",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-53.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/raTbhtKZTZA/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "GPT-OSS vs. Qwen vs. Deepseek: Comparing Open Source LLM Architectures",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-54.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/pHuXCzM2ntU/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How This 25-Year-Old Built A $675M Legal AI Startup (With No Legal Experience)",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-55.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/JdT78t1Offo/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Anthropic Co-founder: Building Claude Code, Lessons From GPT-3 & LLM System Design",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-56.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/DH7REvnQ1y4/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "The Sales Playbook for Founders",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-57.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/-7Qz7tSTfUU/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Figma CEO Dylan Field: How AI Will Transform Design",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-58.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/lqokpIme47A/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "The Finance Startup Bringing Agentic AI to Wall Street",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-59.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/p8Jx4qvDoSo/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Scaling and the Road to Human-Level AI | Anthropic Co-founder Jared Kaplan",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-60.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/uEeFsW9343g/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Brand Design Tips From Linear Founder Karri Saarinen",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-61.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/a8-QsBHoH94/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Chelsea Finn: Building Robots That Can Do Anything",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-62.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/kOyIjt6FUrw/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Replit CEO Amjad Masad: Coding Agents, Autonomy, and the Future of Work",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-63.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/2Yguz5U-Nic/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "John Jumper: AlphaFold and the Future of Science",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-64.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/2jOnoTEk-xA/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Aravind Srinivas: The Race to Build the AI Browser of the Future",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-65.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/RNJCfif1dPY/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Andrew Ng: Building Faster with AI",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-66.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/ShYKkPPhOoc/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How to Spend Your 20s in the AI Era",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-67.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/5QcCeSsNRks/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "François Chollet: The ARC Prize & How We Get to AGI",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-68.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/_PioN-CpOP0/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Fei-Fei Li: Spatial Intelligence is the Next Frontier in AI",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-69.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/AUUZuzVHKdo/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Satya Nadella: Microsoft's AI Bets, Hyperscaling, Quantum Computing Breakthroughs",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-70.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/V979Wd1gmTU/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Sam Altman: The Future of OpenAI, ChatGPT's Origins, and Building AI Hardware",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-71.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/cFIlta1GkiE/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Elon Musk: Digital Superintelligence, Multiplanetary Life, How to Be Useful",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-72.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/LCEmiRjPEtQ/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Andrej Karpathy: Software Is Changing (Again)",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-73.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/5noIKN8t69U/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Alexandr Wang: Building Scale AI, Transforming Work with Agents & Competing With China",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-74.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/oOylEw3tPQ8/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Cursor CEO: Going Beyond Code, Superintelligent AI Agents And Why Taste Still Matters",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-75.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/XdigD0LOXx0/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Fusion Energy Is Tech's Next Big Unlock",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-76.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/DL82mGde6wo/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "State-Of-The-Art Prompting For AI Agents",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-77.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/WJoZK9sMwvw/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "AI Apps Are Broken — Here's How To Fix Them",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-78.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/K4s6Cgicw_A/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Startup Ideas You Can Now Build With AI",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-79.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/TECDj4JUx7o/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How AI Coding Agents Will Change Your Job",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-80.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/LKgAx7FWva4/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Windsurf CEO: Betting On AI Agents, Pivoting In 48 Hours, And The Future of Coding",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-81.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/BJjsfNO5JTo/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How To Get The Most Out Of Vibe Coding",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-82.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/JOYSDqJdiro/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "The Next Breakthrough In AI Agents Is Here",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-83.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/aYK0H85E_oU/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How Zepto Became India’s Fastest Growing Startup",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-84.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/ksGNfd-wQY4/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Why Every Founder Should Care About Design",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-85.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/3N3TnaViyjk/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How To Build The Future: Tony Xu",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-86.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/bvjyaz4ZiVI/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How To Navigate Co-Founder Disputes",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-87.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/VaQA55ZZWBU/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Customer Obsession Made Gusto A $9.6 Billion Company",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-88.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/4UE4e6b2qtA/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "The Future Of Design With Figma's Dylan Field",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-89.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/5uBAQrg4SoQ/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "GPT-4.5 = Big Model Energy",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-90.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/IACHfKmZMr8/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Vibe Coding Is The Future",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-91.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/DBhSfROq3wU/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Design Experts Critique AI Interfaces",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-92.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/SP7Ua8FKZN4/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How To Build The Future: Aravind Srinivas",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-93.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/aIKfA3gIXwo/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How AI Is Changing Enterprise",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-94.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/sOFmYwYa9Pk/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Building A Supersonic Plane Company From The Ground Up",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-95.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/IRROi-Q1V44/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "The Right (And Wrong) Way To Spend Money At Your Startup",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-96.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/TANaRNMbYgk/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How To Get AI Startup Ideas",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-97.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/4Tmn-XP93m4/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "The Engineering Unlocks Behind DeepSeek | YC Decoded",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-98.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/eW7rUtYHD9U/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How To Build The AGI Future: Bob McGrew",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-99.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/0LMK5JYkB94/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "AI Revolution: Why This Is The Best Time To Start A Startup",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-100.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/d6Ed5bZAtrM/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How Scaling Laws Will Determine AI's Future",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-101.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/7Kt9ugD3bGQ/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How To Use AI In Your Startup",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-102.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/FwD0wqwUjAI/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How To Build The Future: Parker Conrad",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-103.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/rjyJsbUunQ4/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Building A $2 Billion SaaS Company: Lessons From A Two Time Founder",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-104.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/uGjv25IrjoE/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "The Lightcone 2025 Forecast",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-105.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/z-TeST6LnOk/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How To Focus On The Right Problems",
+    "width": 120,
+    "height": 90,
+    "downloaded": false,
+    "error": "HTTP 404"
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/CcnwFJqEnxU/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How David Lieb Turned a Failing Startup Into Google Photos",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-107.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/z0wt2pe_LZM/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "2024’s Biggest Startup Trends",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-108.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/VDmU0jjklBo/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Anthropic’s Claude Computer Use Is A Game Changer",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-109.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/H_XMqRhLhic/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How To Make The Most Out of Your 20s",
+    "width": 120,
+    "height": 90,
+    "downloaded": false,
+    "error": "HTTP 404"
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/z1aKRhRnVNk/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How To Start A Dev Tools Company",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-111.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/ASABxNenD_U/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Vertical AI Agents Could Be 10X Bigger Than SaaS",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-112.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/EW9TUqOgjmQ/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Twitter vs. X: Product Lessons For Startup Founders",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-113.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/JiwiqYGw4iU/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Why The Next AI Breakthroughs Will Be In Reasoning, Not Scaling",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-114.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/xXCBz_8hM9w/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How To Build The Future: Sam Altman",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-115.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/wRLTfC_PMKU/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "The AI Future Has Arrived: Here's What You Should Do About It",
+    "width": 120,
+    "height": 90,
+    "downloaded": false,
+    "error": "HTTP 404"
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/lbJilIQhHko/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "The 10 Trillion Parameter AI Model With 300 IQ",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-117.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/Q0Xs0lGgwVA/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "You Don’t Have To Be A Billionaire To Launch Satellites",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-118.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/Lv9bKyQgoHo/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Why OpenAI's o1 Is A Huge Deal",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-119.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/wH3TKpALlw4/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Starting A Company? The Key Terms You Should Know",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-120.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/jbIQfoldLag/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Now Anyone Can Code: How AI Agents Can Build Your Whole App",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-121.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/CKfERe55CeA/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Why Design Matters: Lessons from Stripe, Lyft and Airbnb",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-122.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/HB3l1BPi7zo/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How Do Billion Dollar Startups Start?",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-123.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/NhrkiK1SggE/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Meta VS Apple: What Their Battle Means For AI Startups",
+    "width": 120,
+    "height": 90,
+    "downloaded": false,
+    "error": "HTTP 404"
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/eBVi_sLaYsc/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Why Vertical LLM Agents Are The New $1 Billion SaaS Opportunities",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-125.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/DY5Z-uZ6ZMc/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Stripe Head of Design Katie Dill Reviews Startup Websites",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-126.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/Fk9BCr5pLTU/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How To Find A Co-Founder",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-127.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/FlonCU9txXI/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "What Founder Mode Really Means",
+    "width": 120,
+    "height": 90,
+    "downloaded": false,
+    "error": "HTTP 404"
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/VyIOoqjm8HA/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Building The World's Best Image Diffusion Model",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-129.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/kVGvC7Ix_nc/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Signs Your Company Is Recovering From ZIRP",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-130.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/7Kh_fpxP1yY/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How To Convert Customers With Cold Emails",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-131.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/6u4JVz7iQTY/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How YC Was Created With Jessica Livingston",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-132.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/jyp-cHmpfgk/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Why AI Hasn’t Blown Our Minds…Yet",
+    "width": 120,
+    "height": 90,
+    "downloaded": false,
+    "error": "HTTP 404"
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/VNxBZ7ka5J0/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How To Improve Cohort Retention",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-134.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/_-5xJQ4U8g0/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Are We In An AI Hype Cycle?",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-135.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/8PB0l7x73rM/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How To Influence Decision Makers",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-136.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/DISocTmEwiI/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Co-Founder Equity Mistakes to Avoid",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-137.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/uZVyBc1CKN0/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How Nothing Founder Carl Pei Built A Multi-Million Dollar Smartphone Brand In Just 2 Years",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-138.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/LSUviaN1eso/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Gmail Creator Paul Buchheit On AGI, Open Source Models, Freedom",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-139.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/ClWQCm2h9iI/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "The Problem With Startup \"Experts\"",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-140.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/4hjiRmgmHiU/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How To Price For B2B",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-141.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/GU9iT7MW0rs/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Tarpit Ideas: The Sequel",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-142.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/Nsx5RDVKZSk/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Why Startup Founders Should Launch Companies Sooner Than They Think",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-143.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/CKvo_kQbakU/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "10 People + AI = Billion Dollar Company?",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-144.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/iMo5-4h_XwE/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "What Is ZIRP And How Did It Poison Startups?",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-145.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/6WtdFqgsEY0/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Standing Up For Startups - YC Goes To D.C.",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-146.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/4aMQPG9gPoM/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Better AI Models, Better Startups [Lightcone Podcast Ep. 7]",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-147.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/IjPDIjge81o/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "YC's Group Partners Discuss Doing Things That Don't Scale",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-148.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/KxjPgGLVJSg/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How New Technology Creates New Businesses",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-149.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/pqwOL6YfRIo/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Does Your Startup Website Pass The First Impression Test?",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-150.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/e1Yhs9BEOSw/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Consumer is back, What’s getting funded now, The vibes immaculate [Lightcone Podcast Ep. 6]",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-151.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/2ViqdR5E2wU/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "When Should You Trust Your Gut?",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-152.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/erDE2e69dlc/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Inside The Hard Tech Startups Turning Sci-Fi Into Reality [Lightcone Podcast Ep. 5]",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-153.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/8-Zrhz1QKGo/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How to Survive the Crypto Boom & Bust Cycle",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-154.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/fmI_OciHV_8/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Building AI Models Faster And Cheaper Than You Think  [Lightcone Podcast Ep. 4]",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-155.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/wA0qC9D4LA0/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Where Is The REAL Cerebral Valley? [Lightcone Podcast Ep. 3]",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-156.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/FNwu440UxhU/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Stop Innovating (On The Wrong Things)",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-157.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/a_n4yOqlWbA/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Apple Vision Pro: Startup Platform Of The Future? [Lightcone Podcast Ep. 2]",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-158.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/TwDJhUJL-5o/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "The Truth About Building AI Startups Today [Lightcone Podcast Ep. 1]",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-159.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/media?key=user_uploads/thumbnails/7d8d9a6b-39d9-49bc-9003-3fa918536e7c&upload_type=article",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Backstory: Tom Blomfield",
+    "width": 480,
+    "height": 270,
+    "localPath": "images/image-160.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/43RhhwpiSk0/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Do technical founders need a business co-founder?",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-161.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/vhXdUXmmhb4/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "The asymmetric upside of being positive",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-162.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/CYdsh1FhpI4/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Five DevTool Startups Get Their Websites Reviewed",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-163.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/ZpKu2wvquWg/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Does your tech startup really need a technical co-founder? Yes.",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-164.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/media?key=user_uploads/thumbnails/6f44955b-9220-40bf-9104-69f2c0fa4522&upload_type=article",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Emmett Shear, Co-Founder of Twitch",
+    "width": 480,
+    "height": 270,
+    "localPath": "images/image-165.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/qFBUd0b8TjY/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "The 10-Year “Overnight” Success Story of Casetext",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-166.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/media?key=user_uploads/thumbnails/61881e26-14c6-4b49-be16-5fc1242099c7&upload_type=article",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "From Underdog to Undefeated: The Edrizio De La Cruz founder story",
+    "width": 480,
+    "height": 270,
+    "localPath": "images/image-167.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/media?key=user_uploads/thumbnails/4a72f890-2d44-4396-ab58-93f17d95a39f&upload_type=article",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How to convert more visitors into customers",
+    "width": 480,
+    "height": 270,
+    "localPath": "images/image-168.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/HQjjgi6271k/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Why YC? We asked 50 founders why they applied to Y Combinator",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-169.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/media?key=user_uploads/thumbnails/9cbffbd7-31e2-4e6c-a946-5357b71b112e&upload_type=article",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Bill Clerico, Co-Founder & CEO of WePay",
+    "width": 480,
+    "height": 270,
+    "localPath": "images/image-170.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/media?key=user_uploads/thumbnails/5854029c-c20f-4844-ac4a-9f41a550e313&upload_type=article",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "How Athelas is revolutionizing healthcare",
+    "width": 480,
+    "height": 270,
+    "localPath": "images/image-171.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/chAoH_AeGAg/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Is it time to quit your job at a unicorn?",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-172.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/media?key=user_uploads/thumbnails/2365c5c4-27aa-4c37-908b-135218d98062&upload_type=article",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Dimitri Dadiomov, Co-Founder & CEO of Modern Treasury",
+    "width": 480,
+    "height": 270,
+    "localPath": "images/image-173.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/media?key=user_uploads/thumbnails/015f0cf0-46f4-455a-b688-9b6372ac37de&upload_type=article",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Backstory: Surbhi Sarna",
+    "width": 480,
+    "height": 270,
+    "localPath": "images/image-174.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/TNgjY5twBIg/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Founder FAQ: 40 AI startup founders on the current state of AI tech",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-175.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/media?key=user_uploads/thumbnails/9cfcf25d-1b9e-4739-b1c1-6b45443dfea0&upload_type=article",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Brian Armstrong, Co-Founder and CEO of Coinbase",
+    "width": 480,
+    "height": 270,
+    "localPath": "images/image-176.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/09mXPGVkfVA/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Dalton & Michael: Why You Shouldn't Copy Your Tech Idols",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-177.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/media?key=user_uploads/thumbnails/bf620f33-3670-42b1-9093-ce7c47be1a37&upload_type=article",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Building a better mobile app",
+    "width": 480,
+    "height": 270,
+    "localPath": "images/image-178.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/media?key=user_uploads/thumbnails/9e197926-abe9-49f4-8fe8-a1eab897e933&upload_type=article",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Brian Chesky, Co-Founder & CEO of Airbnb (Part II)",
+    "width": 480,
+    "height": 270,
+    "localPath": "images/image-179.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/bgp5QZwuNQI/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Dalton & Michael: Why Investors (Secretly) Love Y Combinator",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-180.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/ljVan7CGBiE/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "YC's Group Partners share their worst investor meetings",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-181.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/NZp5j5hvn9I/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Founder FAQ: How did you get your first customer?",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-182.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/ZqGOCF4O6ks/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Dalton & Michael: Does Your Startup Need To Be In San Francisco?",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-183.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/IyhLAbqDw0k/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Founder FAQ: How did you meet your co-founder?",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-184.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/DmehFuCMtvc/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "YC's Group Partners share their favorite pivot stories",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-185.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://img.youtube.com/vi/smHw9kEwcgM/hqdefault.jpg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Dalton & Michael: Will OpenAI kill all startups?",
+    "width": 480,
+    "height": 360,
+    "localPath": "images/image-186.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/vite/assets/most-experienced-partners-DX4ZPbr4.jpg",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-187.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/vite/assets/investor-network-DsrGWUIM.jpg",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-188.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/vite/assets/private-social-network-DAUtdNFy.jpg",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-189.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/vite/assets/exclusive-deals-DZOi8DL7.jpg",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-190.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/vite/assets/secret-handbook-BLok8-bB.jpg",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-191.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/vite/assets/capital-after-batch-DQmLQXDH.jpg",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-192.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/vite/assets/Left-BiSNksVM.jpg",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-193.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/vite/assets/Middle-ORNvunn1.jpg",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-194.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.ycombinator.com/vite/assets/Right-CEqBBFo3.jpg",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-195.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://yc-website.s3.us-west-2.amazonaws.com/why-yc/startupschool.png",
+    "type": "background",
+    "sectionIndex": 1,
+    "localPath": "images/image-196.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://yc-website.s3.us-west-2.amazonaws.com/why-yc/paulg.jpeg",
+    "type": "background",
+    "sectionIndex": 1,
+    "localPath": "images/image-197.jpeg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://yc-website.s3.us-west-2.amazonaws.com/why-yc/paulglecture.png",
+    "type": "background",
+    "sectionIndex": 1,
+    "localPath": "images/image-198.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://yc-website.s3.us-west-2.amazonaws.com/why-yc/learn-more-library.jpg",
+    "type": "background",
+    "sectionIndex": 2,
+    "localPath": "images/image-199.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://yc-website.s3.us-west-2.amazonaws.com/why-yc/learn-more-newsletter.jpg",
+    "type": "background",
+    "sectionIndex": 2,
+    "localPath": "images/image-200.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://yc-website.s3.us-west-2.amazonaws.com/why-yc/learn-more-launch-yc.jpg",
+    "type": "background",
+    "sectionIndex": 2,
+    "localPath": "images/image-201.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://yc-website.s3.us-west-2.amazonaws.com/why-yc/learn-more-waas.jpg",
+    "type": "background",
+    "sectionIndex": 2,
+    "localPath": "images/image-202.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://yc-website.s3.us-west-2.amazonaws.com/why-yc/learn-more-blog.jpg",
+    "type": "background",
+    "sectionIndex": 2,
+    "localPath": "images/image-203.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://yc-website.s3.us-west-2.amazonaws.com/why-yc/learn-more-events.jpg",
+    "type": "background",
+    "sectionIndex": 2,
+    "localPath": "images/image-204.jpg",
+    "downloaded": true
+  }
+]

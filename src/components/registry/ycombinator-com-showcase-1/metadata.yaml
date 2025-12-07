@@ -1,0 +1,47 @@
+schemaVersion: "2.0"
+name: ycombinator-com-showcase-1
+category: showcase
+
+images:
+  preview: scraped/ycombinator-com-2025-12-07/sections/section-1.png
+
+freeformKeywords:
+  - latest
+  - blog
+  - videos
+  - startup school
+  - essays
+  - content
+  - YC library
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T16:44:08Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - grid
+    - responsive
+    - three-column
+  industry:
+    - startup
+    - media
+    - education
+
+parentPage: ycombinator-com-landing
+
+source:
+  type: url
+  url: https://www.ycombinator.com/
+  scrapedAt: "2025-12-07T16:44:08Z"
+  sectionIndex: 1

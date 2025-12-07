@@ -1,0 +1,49 @@
+schemaVersion: "2.0"
+name: ycombinator-com-landing
+category: page
+images:
+  preview: scraped/ycombinator-com-2025-12-07/full-page.png
+title: ycombinator.com Landing Page
+sections:
+  - id: ycombinator-com-hero-0
+    category: hero
+    order: 0
+  - id: ycombinator-com-logo-cloud-4
+    category: logo-cloud
+    order: 1
+  - id: ycombinator-com-video-7
+    category: video
+    order: 2
+  - id: ycombinator-com-benefit-8
+    category: feature-showcase
+    order: 3
+  - id: ycombinator-com-principles-9
+    category: cta
+    order: 4
+  - id: ycombinator-com-feature-5
+    category: feature-showcase
+    order: 5
+  - id: ycombinator-com-testimonial-6
+    category: testimonial
+    order: 6
+  - id: ycombinator-com-showcase-1
+    category: showcase
+    order: 7
+  - id: ycombinator-com-cta-2
+    category: cta
+    order: 8
+  - id: ycombinator-com-footer-3
+    category: footer
+    order: 9
+source:
+  type: url
+  url: https://www.ycombinator.com/
+  scrapedAt: "2025-12-07T16:48:01.556Z"
+pageInfo:
+  totalSections: 10
+freeformKeywords:
+  - complete landing page
+  - full page
+  - ycombinator.com
+createdAt: "2025-12-07T16:48:01.556Z"
+status: stable

@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: ycombinator-com-benefit-8
+category: feature-showcase
+
+images:
+  preview: scraped/ycombinator-com-2025-12-07/sections/section-0.png
+
+freeformKeywords:
+  - benefits
+  - features
+  - value proposition
+  - partners
+  - investors
+  - network
+  - Y Combinator
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-08T00:00:00Z"
+status: stable
+language: en
+
+tags:
+  functional: []
+  style:
+    - light-theme
+    - modern
+    - minimal
+  layout:
+    - centered
+    - grid-layout
+    - responsive
+  industry:
+    - startup
+    - saas
+    - accelerator
+
+parentPage: ycombinator-com-landing
+
+source:
+  type: url
+  url: https://www.ycombinator.com/
+  scrapedAt: "2025-12-07T16:43:50Z"
+  sectionIndex: 8

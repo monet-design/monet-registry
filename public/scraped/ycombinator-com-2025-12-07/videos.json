@@ -1,0 +1,15 @@
+[
+  {
+    "originalUrl": "https://www.youtube.com/embed/EiRnSjcVIqk",
+    "platform": "youtube",
+    "type": "iframe",
+    "videoId": "EiRnSjcVIqk",
+    "embedCode": "<iframe title=\"YouTube embed\" class=\"absolute left-0 top-0 h-full w-full rounded-sm\" src=\"https://www.youtube.com/embed/EiRnSjcVIqk\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"></iframe>",
+    "posterUrl": "https://img.youtube.com/vi/EiRnSjcVIqk/maxresdefault.jpg",
+    "sectionIndex": 0,
+    "width": 672,
+    "height": 378,
+    "thumbnailPath": "videos/thumb-0.jpg",
+    "thumbnailDownloaded": true
+  }
+]

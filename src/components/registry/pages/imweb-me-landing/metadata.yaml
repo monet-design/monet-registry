@@ -1,0 +1,40 @@
+schemaVersion: "2.0"
+name: imweb-me-landing
+category: page
+images:
+  preview: scraped/imweb-me-2025-12-07/full-page.png
+title: imweb.me Landing Page
+sections:
+  - id: imweb-me-hero-0
+    category: hero
+    order: 0
+  - id: imweb-me-showcase-1
+    category: showcase
+    order: 1
+  - id: imweb-me-testimonial-2
+    category: testimonial
+    order: 2
+  - id: imweb-me-feature-3
+    category: feature-showcase
+    order: 3
+  - id: imweb-me-stats-6
+    category: stats
+    order: 4
+  - id: imweb-me-cta-7
+    category: cta
+    order: 5
+  - id: imweb-me-footer-8
+    category: footer
+    order: 6
+source:
+  type: url
+  url: https://imweb.me/
+  scrapedAt: "2025-12-07T16:53:19.805Z"
+pageInfo:
+  totalSections: 7
+freeformKeywords:
+  - complete landing page
+  - full page
+  - imweb.me
+createdAt: "2025-12-07T16:53:19.805Z"
+status: stable

@@ -14,6 +14,9 @@ export const ERROR_CODES = {
   NOT_INITIALIZED: "NOT_INITIALIZED",
   INVALID_INPUT: "INVALID_INPUT",
   INTERNAL_ERROR: "INTERNAL_ERROR",
+  // Page API error codes
+  PAGE_NOT_FOUND: "PAGE_NOT_FOUND",
+  PAGE_EMPTY_RESULTS: "PAGE_EMPTY_RESULTS",
 } as const;
 
 export type ErrorCode = (typeof ERROR_CODES)[keyof typeof ERROR_CODES];
@@ -69,6 +72,37 @@ export function emptyResultsError(query: string): ErrorResponse {
 
 export function internalError(message: string): ErrorResponse {
   return createErrorResponse(ERROR_CODES.INTERNAL_ERROR, message);
+}
+
+export function pageNotFoundError(
+  pageId: string,
+  similarIds?: string[]
+): ErrorResponse {
+  return createErrorResponse(
+    ERROR_CODES.PAGE_NOT_FOUND,
+    `Page '${pageId}' not found`,
+    {
+      suggestions: [
+        "Check the page ID spelling",
+        "Use /api/v1/pages to list available pages",
+      ],
+      similar_ids: similarIds,
+    }
+  );
+}
+
+export function pageEmptyResultsError(query: string): ErrorResponse {
+  return createErrorResponse(
+    ERROR_CODES.PAGE_EMPTY_RESULTS,
+    `No pages match your criteria: "${query}"`,
+    {
+      suggestions: [
+        "Try broader search terms",
+        "Remove some filter constraints",
+        "Use /api/v1/pages/stats to see available pages",
+      ],
+    }
+  );
 }
 
 // Fuzzy matching for component IDs

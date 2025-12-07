@@ -134,6 +134,7 @@ export interface CodeInfo {
 export interface GetComponentDetailsResponse {
   success: true;
   component: ComponentMetadata;
+  parent_page?: ParentPageInfo;
   similar_components?: SimilarComponent[];
   usage_hints: {
     best_for: string[];
@@ -281,4 +282,207 @@ export interface ComponentCode {
     npm: string[];
     internal: string[];
   };
+}
+
+// ============================================
+// Page Registry Types
+// ============================================
+
+// Page Section Reference (in page metadata)
+export interface PageSectionReference {
+  id: string;
+  category: string;
+  order: number;
+}
+
+// Page Registry Entry (from page-registry.json)
+export interface PageRegistryEntry {
+  id: string;
+  name: string;
+  category: "page";
+  images: {
+    preview: string;
+  };
+  title?: string;
+  tags: {
+    functional: string[];
+    style: string[];
+    layout: string[];
+    industry: string[];
+  };
+  freeformKeywords: string[];
+  searchableText: string;
+  fontFamily: string[];
+  componentPath: string;
+  source?: {
+    type: "url" | "manual";
+    url?: string;
+    scrapedAt?: string;
+  };
+  createdAt?: string;
+  status: string;
+  sections: PageSectionReference[];
+  pageInfo: {
+    totalSections: number;
+  };
+}
+
+// List Pages Response
+export interface ListPagesResponse {
+  success: true;
+  pagination: PaginationMeta;
+  pages: PageListItem[];
+}
+
+export interface PageListItem {
+  id: string;
+  name: string;
+  title?: string;
+  preview_image: string;
+  sections_count: number;
+  section_categories: string[];
+  status: string;
+  source?: {
+    type: "url" | "manual";
+    url?: string;
+  };
+  created_at?: string;
+}
+
+// Get Page Details Response
+export interface GetPageDetailsResponse {
+  success: true;
+  page: PageMetadata;
+  sections: PageSectionItem[];
+  page_info: {
+    total_sections: number;
+    categories_used: string[];
+  };
+  similar_pages?: SimilarPage[];
+}
+
+export interface PageMetadata {
+  id: string;
+  name: string;
+  title?: string;
+  images: {
+    preview: string;
+  };
+  tags: {
+    functional: string[];
+    style: string[];
+    layout: string[];
+    industry: string[];
+  };
+  keywords: string[];
+  source?: {
+    type: "url" | "manual";
+    url?: string;
+    scrapedAt?: string;
+  };
+  component_path: string;
+  status: string;
+  created_at?: string;
+}
+
+export interface PageSectionItem {
+  id: string;
+  name: string;
+  category: string;
+  order: number;
+  preview_image: string;
+  details?: SectionDetails;
+}
+
+export interface SectionDetails {
+  name: string;
+  tags: {
+    functional: string[];
+    style: string[];
+    layout: string[];
+    industry: string[];
+  };
+  keywords: string[];
+  component_path: string;
+}
+
+export interface SimilarPage {
+  id: string;
+  name: string;
+  title?: string;
+  sections_count: number;
+  match_reason: string;
+}
+
+// Get Page Sections Response
+export interface GetPageSectionsResponse {
+  success: true;
+  page_id: string;
+  total_sections: number;
+  sections: PageSectionItem[];
+}
+
+// Search Pages Response
+export interface SearchPagesResponse {
+  success: true;
+  query: string;
+  total: number;
+  offset: number;
+  limit: number;
+  hasNext: boolean;
+  elapsed_ms: number;
+  results: PageSearchResult[];
+}
+
+export interface PageSearchResult {
+  id: string;
+  name: string;
+  title?: string;
+  preview_image: string;
+  sections_count: number;
+  keywords: string[];
+}
+
+// Get Pages Stats Response
+export interface GetPagesStatsResponse {
+  success: true;
+  total_pages: number;
+  total_sections_across_pages: number;
+  average_sections_per_page: number;
+  section_categories: CategoryCount[];
+  sources: {
+    url: number;
+    manual: number;
+  };
+  query_tips: string[];
+}
+
+export interface CategoryCount {
+  category: string;
+  count: number;
+}
+
+// Parent Page Info (for component detail response)
+export interface ParentPageInfo {
+  id: string;
+  name: string;
+  title?: string;
+  order_in_page: number;
+}
+
+// Service internal types for Pages
+export interface ListPagesOptions {
+  status?: string;
+  sortBy?: "created_at" | "sections_count";
+  sortOrder?: "asc" | "desc";
+  offset?: number;
+  limit?: number;
+}
+
+export interface SearchPagesQuery {
+  text?: string;
+  minSections?: number;
+  maxSections?: number;
+  offset?: number;
+  limit?: number;
 }

@@ -1,8 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
-import { registryService, searchService } from "@/app/api/_common/services";
+import {
+  registryService,
+  searchService,
+  pageRegistryService,
+} from "@/app/api/_common/services";
 import type {
   GetComponentDetailsResponse,
   ErrorResponse,
+  ParentPageInfo,
 } from "@/app/api/_common/types";
 
 export async function GET(
@@ -25,6 +30,18 @@ export async function GET(
         },
       };
       return NextResponse.json(errorResponse, { status: 404 });
+    }
+
+    // Find parent page info
+    let parentPage: ParentPageInfo | undefined;
+    const parentInfo = await pageRegistryService.getParentPage(componentId);
+    if (parentInfo) {
+      parentPage = {
+        id: parentInfo.pageId,
+        name: parentInfo.page.name,
+        title: parentInfo.page.title,
+        order_in_page: parentInfo.order,
+      };
     }
 
     // Find similar components
@@ -65,6 +82,7 @@ export async function GET(
         status: component.status,
         created_at: component.createdAt,
       },
+      parent_page: parentPage,
       similar_components: similarComponents,
       usage_hints: {
         best_for: [],

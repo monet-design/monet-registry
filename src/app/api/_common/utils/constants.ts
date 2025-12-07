@@ -51,3 +51,15 @@ export const QUERY_TIPS = [
   "Combine multiple filters for precise results",
   "Use freeform keywords for specific features",
 ];
+
+// Page API helpers
+export function getPagePreviewImageUrl(pageId: string): string {
+  return `${REGISTRY_BASE_URL}/registry/preview/pages/${pageId}.png`;
+}
+
+export const PAGE_QUERY_TIPS = [
+  "Search for pages by source URL or title",
+  "Filter pages by minimum section count: min_sections=3",
+  "View all sections of a page with /pages/{id}/sections",
+  "Get detailed section info with include_details=true",
+];

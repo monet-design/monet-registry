@@ -1,7 +1,15 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { ScreenshotQueue } from './queue';
-import { loadState, saveState, isCompleted, markCompleted, ScreenshotState } from './state';
+import {
+  loadState,
+  saveState,
+  isCompleted,
+  markCompleted,
+  isPageCompleted,
+  markPageCompleted,
+  ScreenshotState,
+} from './state';
 import {
   initBrowser,
   createTabs,
@@ -9,7 +17,7 @@ import {
   TabWorker,
   CONFIG,
 } from './browser';
-import { captureComponent, CaptureResult } from './screenshot';
+import { captureComponent, CaptureResult, capturePage, PageCaptureResult } from './screenshot';
 
 interface FailedCapture {
   componentId: string;
@@ -71,12 +79,29 @@ function loadComponentIds(): string[] {
   return Object.keys(registry);
 }
 
-async function processQueue(
+function loadPageIds(): string[] {
+  const registryPath = path.join(
+    __dirname,
+    "../../public/generated/page-registry.json"
+  );
+
+  if (!fs.existsSync(registryPath)) {
+    // 페이지 레지스트리가 없으면 빈 배열 반환 (페이지가 아직 없을 수 있음)
+    return [];
+  }
+
+  const data = fs.readFileSync(registryPath, 'utf-8');
+  const registry = JSON.parse(data);
+
+  return Object.keys(registry);
+}
+
+async function processComponentQueue(
   queue: ScreenshotQueue,
   workers: TabWorker[],
   state: ScreenshotState,
   failures: FailedCapture[]
-): Promise<void> {
+): Promise<number> {
   let completedCount = 0;
   const totalCount = queue.size();
   const worker = workers[0]; // 단일 탭 사용
@@ -92,16 +117,50 @@ async function processQueue(
       markCompleted(state, componentId, result.path);
       saveState(state);
       completedCount++;
-      console.log(`[${completedCount}/${totalCount}] ✓ ${componentId}`);
+      console.log(`[Component ${completedCount}/${totalCount}] ✓ ${componentId}`);
     } else {
       failures.push({
         componentId,
         error: result.error || 'Unknown error',
         timestamp: new Date().toISOString(),
       });
-      console.log(`[${completedCount}/${totalCount}] ✗ ${componentId}: ${result.error}`);
+      console.log(`[Component ${completedCount}/${totalCount}] ✗ ${componentId}: ${result.error}`);
     }
   }
+  return completedCount;
+}
+
+async function processPageQueue(
+  queue: ScreenshotQueue,
+  workers: TabWorker[],
+  state: ScreenshotState,
+  failures: FailedCapture[]
+): Promise<number> {
+  let completedCount = 0;
+  const totalCount = queue.size();
+  const worker = workers[0];
+
+  while (!queue.isEmpty()) {
+    const pageId = queue.dequeue();
+    if (!pageId) break;
+
+    const result: PageCaptureResult = await capturePage(worker.page, pageId);
+
+    if (result.success && result.path) {
+      markPageCompleted(state, pageId, result.path);
+      saveState(state);
+      completedCount++;
+      console.log(`[Page ${completedCount}/${totalCount}] ✓ ${pageId}`);
+    } else {
+      failures.push({
+        componentId: pageId, // reusing the same interface
+        error: result.error || 'Unknown error',
+        timestamp: new Date().toISOString(),
+      });
+      console.log(`[Page ${completedCount}/${totalCount}] ✗ ${pageId}: ${result.error}`);
+    }
+  }
+  return completedCount;
 }
 
 async function main(): Promise<void> {
@@ -113,19 +172,21 @@ async function main(): Promise<void> {
   console.log(`Concurrency: ${options.concurrency} tabs`);
   console.log(`Mode: ${options.all ? 'Capture all (ignore state)' : 'Incremental'}`);
   if (options.component) {
-    console.log(`Target: ${options.component}`);
+    console.log(`Target component: ${options.component}`);
   }
   if (options.components.length > 0) {
-    console.log(`Targets: ${options.components.join(', ')}`);
+    console.log(`Target components: ${options.components.join(', ')}`);
   }
   console.log('='.repeat(50));
 
-  // 1. Load component IDs
+  // 1. Load component IDs and page IDs
   const allComponentIds = loadComponentIds();
+  const allPageIds = loadPageIds();
   let componentIds: string[];
+  let pageIds: string[];
 
+  // 컴포넌트 필터링
   if (options.components.length > 0) {
-    // 여러 컴포넌트가 지정된 경우, registry에 존재하는 것만 필터링
     componentIds = options.components.filter((id) => allComponentIds.includes(id));
     const notFound = options.components.filter((id) => !allComponentIds.includes(id));
     if (notFound.length > 0) {
@@ -136,65 +197,79 @@ async function main(): Promise<void> {
   } else {
     componentIds = allComponentIds;
   }
-  console.log(`Found ${componentIds.length} components to process`);
+
+  // 페이지는 특정 지정이 없으면 전체 사용
+  pageIds = allPageIds;
+
+  console.log(`Found ${componentIds.length} components, ${pageIds.length} pages`);
 
   // 2. Load state
-  // 특정 컴포넌트가 지정된 경우 (components 또는 component), 해당 컴포넌트는 state에서 제외하여 강제 재캡처
   let state = loadState();
   if (options.all) {
-    state = { completed: {} };
+    state = { completed: {}, pageCompleted: {} };
   } else if (options.components.length > 0 || options.component) {
-    // 지정된 컴포넌트들을 state에서 제거하여 재캡처 대상으로 만듦
     const targetsToRecapture = options.components.length > 0 ? options.components : [options.component!];
     for (const id of targetsToRecapture) {
       delete state.completed[id];
     }
   }
-  console.log(`Already captured: ${Object.keys(state.completed).length} components`);
+  console.log(`Already captured: ${Object.keys(state.completed).length} components, ${Object.keys(state.pageCompleted).length} pages`);
 
-  // 3. Filter uncaptured components
-  const uncaptured = componentIds.filter((id) => !isCompleted(state, id));
-  console.log(`To capture: ${uncaptured.length} components`);
+  // 3. Filter uncaptured
+  const uncapturedComponents = componentIds.filter((id) => !isCompleted(state, id));
+  const uncapturedPages = pageIds.filter((id) => !isPageCompleted(state, id));
+  console.log(`To capture: ${uncapturedComponents.length} components, ${uncapturedPages.length} pages`);
 
-  if (uncaptured.length === 0) {
-    console.log('All components already captured. Use --all to recapture.');
+  if (uncapturedComponents.length === 0 && uncapturedPages.length === 0) {
+    console.log('All components and pages already captured. Use --all to recapture.');
     return;
   }
 
-  // 4. Initialize queue
-  const queue = new ScreenshotQueue();
-  queue.enqueueAll(uncaptured);
-
-  // 5. Initialize browser
+  // 4. Initialize browser
   console.log('\nStarting browser...');
   const browser = await initBrowser();
 
-  // 6. Create tabs
+  // 5. Create tabs
   console.log(`Creating ${options.concurrency} tabs...`);
   const workers = await createTabs(browser, options.concurrency);
 
-  // 7. Process queue
+  // 6. Process queues
   const failures: FailedCapture[] = [];
-  console.log('\nStarting capture...\n');
-
   const startTime = Date.now();
-  await processQueue(queue, workers, state, failures);
+
+  // Process components
+  if (uncapturedComponents.length > 0) {
+    console.log('\n--- Capturing Components ---\n');
+    const componentQueue = new ScreenshotQueue();
+    componentQueue.enqueueAll(uncapturedComponents);
+    await processComponentQueue(componentQueue, workers, state, failures);
+  }
+
+  // Process pages
+  if (uncapturedPages.length > 0) {
+    console.log('\n--- Capturing Pages ---\n');
+    const pageQueue = new ScreenshotQueue();
+    pageQueue.enqueueAll(uncapturedPages);
+    await processPageQueue(pageQueue, workers, state, failures);
+  }
+
   const duration = ((Date.now() - startTime) / 1000).toFixed(1);
 
-  // 8. Close browser
+  // 7. Close browser
   console.log('\nClosing browser...');
   await closeBrowser(browser);
 
-  // 9. Print summary
+  // 8. Print summary
+  const totalToCapture = uncapturedComponents.length + uncapturedPages.length;
   console.log('\n' + '='.repeat(50));
   console.log('Summary');
   console.log('='.repeat(50));
   console.log(`Duration: ${duration}s`);
-  console.log(`Captured: ${uncaptured.length - failures.length}`);
+  console.log(`Captured: ${totalToCapture - failures.length}`);
   console.log(`Failed: ${failures.length}`);
 
   if (failures.length > 0) {
-    console.log('\nFailed components:');
+    console.log('\nFailed:');
     for (const failure of failures) {
       console.log(`  - ${failure.componentId}: ${failure.error}`);
     }

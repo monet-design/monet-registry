@@ -10,18 +10,23 @@ export interface ScreenshotRecord {
 
 export interface ScreenshotState {
   completed: Record<string, ScreenshotRecord>;
+  pageCompleted: Record<string, ScreenshotRecord>;
 }
 
 export function loadState(): ScreenshotState {
   try {
     if (fs.existsSync(STATE_FILE_PATH)) {
       const data = fs.readFileSync(STATE_FILE_PATH, 'utf-8');
-      return JSON.parse(data);
+      const parsed = JSON.parse(data);
+      return {
+        completed: parsed.completed || {},
+        pageCompleted: parsed.pageCompleted || {},
+      };
     }
   } catch (error) {
     console.error('Failed to load state file:', error);
   }
-  return { completed: {} };
+  return { completed: {}, pageCompleted: {} };
 }
 
 export function saveState(state: ScreenshotState): void {
@@ -48,8 +53,23 @@ export function markCompleted(
 }
 
 export function resetState(): void {
-  const emptyState: ScreenshotState = { completed: {} };
+  const emptyState: ScreenshotState = { completed: {}, pageCompleted: {} };
   saveState(emptyState);
+}
+
+export function isPageCompleted(state: ScreenshotState, pageId: string): boolean {
+  return pageId in state.pageCompleted;
+}
+
+export function markPageCompleted(
+  state: ScreenshotState,
+  pageId: string,
+  screenshotPath: string
+): void {
+  state.pageCompleted[pageId] = {
+    path: screenshotPath,
+    capturedAt: new Date().toISOString(),
+  };
 }
 
 export function getStateFilePath(): string {

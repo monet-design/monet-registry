@@ -2544,5 +2544,15 @@
       "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/bolta-io-trust-6.png",
       "capturedAt": "2025-12-07T15:22:07.727Z"
     }
+  },
+  "pageCompleted": {
+    "bolta-io-landing": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/pages/bolta-io-landing.png",
+      "capturedAt": "2025-12-07T15:52:56.012Z"
+    },
+    "cal-com-landing": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/pages/cal-com-landing.png",
+      "capturedAt": "2025-12-07T15:53:00.205Z"
+    }
   }
 }

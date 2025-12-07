@@ -1,14 +1,41 @@
+schemaVersion: "2.0"
 name: vooster-ai-ko-header
-description: Vooster AI 랜딩 페이지의 헤더 컴포넌트. 로고, 네비게이션 메뉴, CTA 버튼이 포함된 반응형 헤더
 category: header
-keywords:
+images:
+  preview: ""
+tags:
+  functional:
+    - mobile-menu
+    - dropdown
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - clean
+    - sans-serif
+  layout:
+    - full-width
+    - responsive
+    - sticky
+  industry:
+    - saas
+    - ai
+freeformKeywords:
   - header
   - navigation
   - navbar
   - vooster
   - saas
-tags:
-  - header
-  - navigation
+  - korean
+  - mobile menu
+  - cta button
   - responsive
-source: vooster.ai
+  - hamburger menu
+fontFamily:
+  - Inter
+createdAt: "2025-12-08T00:00:00Z"
+status: stable
+source:
+  type: url
+  url: https://vooster.ai/
+language: ko

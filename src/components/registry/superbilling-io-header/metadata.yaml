@@ -1,15 +1,38 @@
+schemaVersion: "2.0"
 name: superbilling-io-header
-description: SuperBilling 랜딩 페이지의 헤더 컴포넌트. 다크 모드의 심플한 로고 헤더
 category: header
-keywords:
+images:
+  preview: ""
+tags:
+  functional: []
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - clean
+    - sans-serif
+  layout:
+    - full-width
+    - responsive
+    - sticky
+  industry:
+    - saas
+    - fintech
+freeformKeywords:
   - header
   - navigation
   - navbar
   - superbilling
   - saas
   - dark
-tags:
-  - header
-  - navigation
+  - logo
   - minimal
-source: superbilling.io
+  - sticky header
+fontFamily:
+  - Inter
+createdAt: "2025-12-08T00:00:00Z"
+status: stable
+source:
+  type: url
+  url: https://superbilling.io/
+language: en

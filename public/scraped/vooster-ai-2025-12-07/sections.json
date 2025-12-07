@@ -1,0 +1,90 @@
+[
+  {
+    "index": 0,
+    "tag": "section",
+    "selector": "section.bg-background",
+    "category": "footer",
+    "rect": {
+      "top": 65,
+      "height": 1755.109375
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 1,
+    "tag": "section",
+    "selector": "section#features",
+    "category": "feature",
+    "rect": {
+      "top": 5465,
+      "height": 652
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 2,
+    "tag": "section",
+    "selector": "section.px-4",
+    "category": null,
+    "rect": {
+      "top": 6117,
+      "height": 1175.25
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 3,
+    "tag": "section",
+    "selector": "section.px-4",
+    "category": null,
+    "rect": {
+      "top": 7292.25,
+      "height": 1133.75
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 4,
+    "tag": "section",
+    "selector": "section#pricing",
+    "category": "pricing",
+    "rect": {
+      "top": 8426,
+      "height": 1345.5
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 5,
+    "tag": "section",
+    "selector": "section#faq",
+    "category": "faq",
+    "rect": {
+      "top": 9771.5,
+      "height": 874
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 6,
+    "tag": "section",
+    "selector": "section#community",
+    "category": null,
+    "rect": {
+      "top": 10645.5,
+      "height": 604.4375
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 7,
+    "tag": "footer",
+    "selector": "footer.bg-white",
+    "category": "footer",
+    "rect": {
+      "top": 11249.9375,
+      "height": 290
+    },
+    "confidence": 0.8
+  }
+]

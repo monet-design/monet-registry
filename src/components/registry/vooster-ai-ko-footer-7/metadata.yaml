@@ -1,0 +1,40 @@
+schemaVersion: "2.0"
+name: vooster-ai-ko-footer-7
+category: footer
+
+images:
+  preview: scraped/vooster-ai-2025-12-07/sections/section-7.png
+
+freeformKeywords:
+  - footer
+  - links
+  - copyright
+  - privacy
+  - terms
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T19:15:16Z"
+status: stable
+language: ko
+
+tags:
+  functional: []
+  style:
+    - light-theme
+    - modern
+    - minimal
+  layout:
+    - full-width
+    - grid
+  industry:
+    - saas
+
+parentPage: vooster-ai-ko-landing
+
+source:
+  type: url
+  url: https://www.vooster.ai/ko
+  scrapedAt: "2025-12-07T19:15:16Z"
+  sectionIndex: 7

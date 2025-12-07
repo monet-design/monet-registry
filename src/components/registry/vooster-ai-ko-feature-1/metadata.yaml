@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: vooster-ai-ko-feature-1
+category: feature
+
+images:
+  preview: scraped/vooster-ai-2025-12-07/sections/section-1.png
+
+freeformKeywords:
+  - AI partner
+  - PRD
+  - implementation plan
+  - codebase
+  - project management
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T19:14:48Z"
+status: stable
+language: ko
+
+tags:
+  functional: []
+  style:
+    - light-theme
+    - modern
+    - minimal
+  layout:
+    - centered
+    - grid
+    - three-column
+  industry:
+    - saas
+    - ai
+
+parentPage: vooster-ai-ko-landing
+
+source:
+  type: url
+  url: https://www.vooster.ai/ko
+  scrapedAt: "2025-12-07T19:14:48Z"
+  sectionIndex: 1

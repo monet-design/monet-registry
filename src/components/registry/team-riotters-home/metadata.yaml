@@ -1,0 +1,40 @@
+schemaVersion: "2.0"
+name: team-riotters-home
+category: team
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/riotters-home-page-section-meet-our-team.jpg
+
+freeformKeywords:
+  - team
+  - meet the team
+  - about us
+  - design team
+  - agency
+  - creative
+  - tech geeks
+  - design folks
+  - office
+  - company culture
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T19:16:58Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - serif
+  layout:
+    - left-aligned
+    - single-column
+  industry:
+    - agency
+    - creative

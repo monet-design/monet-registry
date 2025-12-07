@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: team-watershed
+category: team
+
+images:
+  preview: /registry/team-watershed/preview.jpg
+
+freeformKeywords:
+  - team
+  - climate leaders
+  - advisory
+  - carousel
+  - slider
+  - network
+  - experts
+  - government
+  - investors
+  - sustainability
+
+fontFamily:
+  - Inter
+  - Instrument Serif
+
+createdAt: "2025-12-07T19:22:55Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - carousel
+    - slider
+  style:
+    - light-theme
+    - modern
+    - elegant
+    - serif
+  layout:
+    - grid
+    - full-width
+  industry:
+    - climate
+    - sustainability
+    - saas

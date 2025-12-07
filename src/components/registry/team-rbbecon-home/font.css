@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
+
+.team-rbbecon-font {
+  font-family: "Inter", sans-serif;
+}
+
+.team-rbbecon-font h1,
+.team-rbbecon-font h2,
+.team-rbbecon-font h3,
+.team-rbbecon-font blockquote {
+  font-family: "Instrument Serif", Georgia, serif;
+}

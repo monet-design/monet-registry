@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: vooster-ai-ko-landing
+category: page
+images:
+  preview: scraped/vooster-ai-2025-12-07/full-page.png
+title: vooster.ai Landing Page
+sections:
+  - id: vooster-ai-ko-hero-0
+    category: hero
+    order: 0
+  - id: vooster-ai-ko-feature-1
+    category: feature
+    order: 1
+  - id: vooster-ai-ko-target-user-2
+    category: feature
+    order: 2
+  - id: vooster-ai-ko-roadmap-3
+    category: feature
+    order: 3
+  - id: vooster-ai-ko-pricing-4
+    category: pricing
+    order: 4
+  - id: vooster-ai-ko-faq-5
+    category: faq
+    order: 5
+  - id: vooster-ai-ko-cta-6
+    category: cta
+    order: 6
+  - id: vooster-ai-ko-footer-7
+    category: footer
+    order: 7
+source:
+  type: url
+  url: https://www.vooster.ai/ko
+  scrapedAt: "2025-12-07T19:20:12.137Z"
+pageInfo:
+  totalSections: 8
+freeformKeywords:
+  - complete landing page
+  - full page
+  - vooster.ai
+createdAt: "2025-12-07T19:20:12.137Z"
+status: stable

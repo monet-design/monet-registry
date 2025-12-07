@@ -1,0 +1,82 @@
+[
+  {
+    "family": "pretendard",
+    "url": "https://www.vooster.ai/_next/static/media/6d91cd47f81bb898-s.p.ttf",
+    "source": "custom",
+    "weights": [
+      "45 920"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "truetype",
+    "localPath": "fonts/pretendard.truetype",
+    "downloaded": true
+  },
+  {
+    "family": "pretendard Fallback",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "ui-sans-serif",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Apple Color Emoji",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Segoe UI Emoji",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Segoe UI Symbol",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Noto Color Emoji",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  }
+]

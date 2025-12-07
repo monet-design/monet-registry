@@ -1,0 +1,49 @@
+schemaVersion: "2.0"
+name: team-rbbecon-experience
+category: team
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/rbbecon-experience-page-section-team.jpg
+
+freeformKeywords:
+  - team
+  - multinational
+  - multilingual
+  - global
+  - experience
+  - offices
+  - languages
+  - consulting
+  - law firm
+  - economics
+  - globe
+  - world map
+  - contact us
+  - corporate
+  - professional
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-12-07T19:23:36Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+    - animation
+  style:
+    - dark-theme
+    - professional
+    - corporate
+    - serif
+  layout:
+    - split-layout
+    - two-column
+    - left-aligned
+  industry:
+    - consulting
+    - law
+    - professional-services

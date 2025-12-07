@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: team-sound-ethics
+category: team
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/sound-ethics-about-page-section-team.jpg
+
+freeformKeywords:
+  - team
+  - about
+  - leadership
+  - founders
+  - co-ceo
+  - careers
+  - join team
+  - music industry
+  - ai
+  - decentralized
+  - dark theme
+  - lime accent
+
+fontFamily:
+  - Inter
+  - Instrument Serif
+
+createdAt: "2025-12-07T19:22:53Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - team-section
+    - social-links
+  style:
+    - dark-theme
+    - modern
+    - bold
+    - high-contrast
+  layout:
+    - two-column
+    - asymmetric
+  industry:
+    - music
+    - ai
+    - tech
+    - startup

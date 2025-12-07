@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: team-zazu
+category: team
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/zazu-about-page-section-our-team.jpg
+
+freeformKeywords:
+  - team
+  - about
+  - offices
+  - photo gallery
+  - image grid
+  - black and white
+  - monochrome
+  - company culture
+  - workspace
+  - startup
+  - agency
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T19:22:53Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - photo-gallery
+    - image-grid
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - sans-serif
+    - monochrome
+  layout:
+    - grid
+    - asymmetric-grid
+    - two-column
+  industry:
+    - startup
+    - agency
+    - creative

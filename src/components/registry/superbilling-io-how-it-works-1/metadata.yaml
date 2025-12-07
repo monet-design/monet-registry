@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: superbilling-io-how-it-works-1
+category: how-it-works
+
+images:
+  preview: scraped/superbilling-io-2025-12-07/sections/section-1.png
+
+freeformKeywords:
+  - subscription billing
+  - 3 steps
+  - payment gateway
+  - SDK integration
+  - no-code
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T19:14:01Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - grid
+    - three-column
+  industry:
+    - saas
+    - fintech
+
+parentPage: superbilling-io-landing
+
+source:
+  type: url
+  url: https://superbilling.io/
+  scrapedAt: "2025-12-07T19:14:01Z"
+  sectionIndex: 1

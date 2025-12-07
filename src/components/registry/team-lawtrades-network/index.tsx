@@ -70,7 +70,7 @@ const defaultTestimonials: Testimonial[] = [
       "Invaluable is the word we're using. If you're a legal team of one, or even two, and you still need to plug holes in places, Lawtrades is a really fantastic solution.",
     name: "BRANDON UNE",
     company: "RECHARGE",
-    profileGradient: "from-[#7cd4c8] via-[#a8e0d4] to-[#e8dcc8]",
+    profileImage: "https://picsum.photos/seed/brandon-une/200/200",
   },
   {
     id: 2,
@@ -78,7 +78,7 @@ const defaultTestimonials: Testimonial[] = [
       "The quality of legal talent we've found through the platform has been exceptional. It's transformed how we handle our legal needs.",
     name: "SARAH CHEN",
     company: "STRIPE",
-    profileGradient: "from-[#a8c8e8] via-[#c8d8e8] to-[#f0e8d8]",
+    profileImage: "https://picsum.photos/seed/sarah-chen/200/200",
   },
   {
     id: 3,
@@ -86,7 +86,7 @@ const defaultTestimonials: Testimonial[] = [
       "Having access to on-demand legal expertise has been a game-changer for our growing startup. Highly recommend for any scaling company.",
     name: "MICHAEL ROSS",
     company: "NOTION",
-    profileGradient: "from-[#e8c8a8] via-[#d8c8b8] to-[#c8d8c8]",
+    profileImage: "https://picsum.photos/seed/michael-ross/200/200",
   },
 ];
 

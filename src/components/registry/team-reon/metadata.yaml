@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: team-reon
+category: team
+
+images:
+  preview: /registry/team-reon/preview.jpg
+
+freeformKeywords:
+  - team
+  - people
+  - employees
+  - staff
+  - about us
+  - company culture
+  - team members
+  - our team
+  - management
+  - team grid
+
+fontFamily:
+  - Instrument Serif
+
+createdAt: "2025-12-07T19:22:53Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - team-grid
+    - image-gallery
+  style:
+    - warm
+    - light-theme
+    - elegant
+    - serif
+  layout:
+    - grid
+    - two-column
+    - asymmetric
+  industry:
+    - agency
+    - startup
+    - creative

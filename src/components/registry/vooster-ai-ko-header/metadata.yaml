@@ -1,0 +1,14 @@
+name: vooster-ai-ko-header
+description: Vooster AI 랜딩 페이지의 헤더 컴포넌트. 로고, 네비게이션 메뉴, CTA 버튼이 포함된 반응형 헤더
+category: header
+keywords:
+  - header
+  - navigation
+  - navbar
+  - vooster
+  - saas
+tags:
+  - header
+  - navigation
+  - responsive
+source: vooster.ai

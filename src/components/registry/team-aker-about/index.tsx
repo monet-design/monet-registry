@@ -50,6 +50,7 @@ interface TeamMember {
   title: string;
   initials: string;
   colorIndex: number;
+  image?: string;
 }
 
 interface Department {
@@ -64,44 +65,44 @@ const DEFAULT_DEPARTMENTS: Department[] = [
   {
     name: "Management",
     members: [
-      { name: "Mike Amato", title: "Principal", initials: "MA", colorIndex: 0 },
-      { name: "Will Brocker", title: "Principal", initials: "WB", colorIndex: 1 },
+      { name: "Mike Amato", title: "Principal", initials: "MA", colorIndex: 0, image: "https://picsum.photos/seed/mike-amato/100/100" },
+      { name: "Will Brocker", title: "Principal", initials: "WB", colorIndex: 1, image: "https://picsum.photos/seed/will-brocker/100/100" },
     ],
   },
   {
     name: "Investments",
     members: [
-      { name: "Harrison Mack", title: "Senior Associate", initials: "HM", colorIndex: 0 },
-      { name: "Riley Rickfelder", title: "Associate", initials: "RR", colorIndex: 1 },
-      { name: "Cate Sawkins", title: "Associate", initials: "CS", colorIndex: 2 },
+      { name: "Harrison Mack", title: "Senior Associate", initials: "HM", colorIndex: 0, image: "https://picsum.photos/seed/harrison-mack/100/100" },
+      { name: "Riley Rickfelder", title: "Associate", initials: "RR", colorIndex: 1, image: "https://picsum.photos/seed/riley-rickfelder/100/100" },
+      { name: "Cate Sawkins", title: "Associate", initials: "CS", colorIndex: 2, image: "https://picsum.photos/seed/cate-sawkins/100/100" },
     ],
   },
   {
     name: "Operations",
     members: [
-      { name: "Katie Tang", title: "Director", initials: "KT", colorIndex: 2 },
-      { name: "Paula Bracci", title: "Vice President", initials: "PB", colorIndex: 0 },
-      { name: "Vasily Chernoplekov", title: "Vice President", initials: "VC", colorIndex: 2 },
-      { name: "Michael Fairest", title: "Vice President", initials: "MF", colorIndex: 3 },
-      { name: "Aly Davidson", title: "Operations Manager", initials: "AD", colorIndex: 0 },
+      { name: "Katie Tang", title: "Director", initials: "KT", colorIndex: 2, image: "https://picsum.photos/seed/katie-tang/100/100" },
+      { name: "Paula Bracci", title: "Vice President", initials: "PB", colorIndex: 0, image: "https://picsum.photos/seed/paula-bracci/100/100" },
+      { name: "Vasily Chernoplekov", title: "Vice President", initials: "VC", colorIndex: 2, image: "https://picsum.photos/seed/vasily-chernoplekov/100/100" },
+      { name: "Michael Fairest", title: "Vice President", initials: "MF", colorIndex: 3, image: "https://picsum.photos/seed/michael-fairest/100/100" },
+      { name: "Aly Davidson", title: "Operations Manager", initials: "AD", colorIndex: 0, image: "https://picsum.photos/seed/aly-davidson/100/100" },
     ],
   },
   {
     name: "Development",
     members: [
-      { name: "Tina Ladd", title: "Senior Vice President", initials: "TL", colorIndex: 2 },
-      { name: "Gary Williams", title: "Vice President", initials: "GW", colorIndex: 0 },
-      { name: "Stephanie He", title: "Senior Project Manager", initials: "SH", colorIndex: 1 },
-      { name: "Thomas Walsh", title: "Senior Project Manager", initials: "TW", colorIndex: 2 },
-      { name: "Alex Rellos", title: "Project Manager", initials: "AR", colorIndex: 3 },
+      { name: "Tina Ladd", title: "Senior Vice President", initials: "TL", colorIndex: 2, image: "https://picsum.photos/seed/tina-ladd/100/100" },
+      { name: "Gary Williams", title: "Vice President", initials: "GW", colorIndex: 0, image: "https://picsum.photos/seed/gary-williams/100/100" },
+      { name: "Stephanie He", title: "Senior Project Manager", initials: "SH", colorIndex: 1, image: "https://picsum.photos/seed/stephanie-he/100/100" },
+      { name: "Thomas Walsh", title: "Senior Project Manager", initials: "TW", colorIndex: 2, image: "https://picsum.photos/seed/thomas-walsh/100/100" },
+      { name: "Alex Rellos", title: "Project Manager", initials: "AR", colorIndex: 3, image: "https://picsum.photos/seed/alex-rellos/100/100" },
     ],
   },
   {
     name: "Accounting & Finance",
     members: [
-      { name: "Michele Cade", title: "Chief Financial Officer, Real Estate", initials: "MC", colorIndex: 0 },
-      { name: "Austin Brown", title: "Vice President", initials: "AB", colorIndex: 1 },
-      { name: "Emily Wieczorek", title: "Accounting Manager", initials: "EW", colorIndex: 0 },
+      { name: "Michele Cade", title: "Chief Financial Officer, Real Estate", initials: "MC", colorIndex: 0, image: "https://picsum.photos/seed/michele-cade/100/100" },
+      { name: "Austin Brown", title: "Vice President", initials: "AB", colorIndex: 1, image: "https://picsum.photos/seed/austin-brown/100/100" },
+      { name: "Emily Wieczorek", title: "Accounting Manager", initials: "EW", colorIndex: 0, image: "https://picsum.photos/seed/emily-wieczorek/100/100" },
     ],
   },
 ];
@@ -111,10 +112,19 @@ const DEFAULT_DEPARTMENTS: Department[] = [
 // ============================================================================
 
 import { motion } from "motion/react";
+import Image from "next/image";
 
-// Avatar component with initials
-function Avatar({ initials, colorIndex }: { initials: string; colorIndex: number }) {
+// Avatar component with initials or image
+function Avatar({ initials, colorIndex, image }: { initials: string; colorIndex: number; image?: string }) {
   const bgColor = AVATAR_COLORS[colorIndex % AVATAR_COLORS.length];
+
+  if (image) {
+    return (
+      <div className="relative h-10 w-10 flex-shrink-0 overflow-hidden rounded-full">
+        <Image src={image} alt={initials} fill className="object-cover" />
+      </div>
+    );
+  }
 
   return (
     <div
@@ -137,7 +147,7 @@ function TeamMemberRow({ member, index }: { member: TeamMember; index: number })
       className="grid grid-cols-[auto_1fr_1fr] items-center gap-4 py-3 sm:grid-cols-[auto_1fr_1fr] md:gap-8"
     >
       <div className="flex items-center gap-3 md:gap-4">
-        <Avatar initials={member.initials} colorIndex={member.colorIndex} />
+        <Avatar initials={member.initials} colorIndex={member.colorIndex} image={member.image} />
         <span className="text-sm font-medium text-gray-900 md:text-base">{member.name}</span>
       </div>
       <div className="hidden sm:block" />

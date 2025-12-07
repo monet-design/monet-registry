@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: superbilling-io-feature-4
+category: feature
+
+images:
+  preview: scraped/superbilling-io-2025-12-07/sections/section-4.png
+
+freeformKeywords:
+  - no-code UI
+  - subscription management
+  - payment UI
+  - embed widget
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T19:14:06Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - hover-effect
+    - accordion
+  style:
+    - dark-theme
+    - modern
+    - colorful
+  layout:
+    - two-column
+    - split-layout
+  industry:
+    - saas
+    - fintech
+
+parentPage: superbilling-io-landing
+
+source:
+  type: url
+  url: https://superbilling.io/
+  scrapedAt: "2025-12-07T19:14:06Z"
+  sectionIndex: 4

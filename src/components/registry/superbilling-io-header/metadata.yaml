@@ -1,0 +1,15 @@
+name: superbilling-io-header
+description: SuperBilling 랜딩 페이지의 헤더 컴포넌트. 다크 모드의 심플한 로고 헤더
+category: header
+keywords:
+  - header
+  - navigation
+  - navbar
+  - superbilling
+  - saas
+  - dark
+tags:
+  - header
+  - navigation
+  - minimal
+source: superbilling.io

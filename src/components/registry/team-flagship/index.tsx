@@ -68,6 +68,7 @@ const defaultTeamMembers: TeamMember[] = [
     role: "Founder",
     description:
       "Tech whiz turned jewellery mogul. Simon turns old-school retailers into data wizards while crushing it in work-life balance and PlayStation high scores.",
+    image: "https://picsum.photos/seed/simon-molnar/200/200",
     linkedinUrl: "#",
   },
   {
@@ -75,6 +76,7 @@ const defaultTeamMembers: TeamMember[] = [
     role: "Chief Product Officer",
     description:
       "Roger is the retail whisperer, tackling the big opportunities, building innovative, customer-centric solutions that add value and make a significant impact to customer businesses.",
+    image: "https://picsum.photos/seed/roger-qian/200/200",
     linkedinUrl: "#",
   },
   {
@@ -82,6 +84,7 @@ const defaultTeamMembers: TeamMember[] = [
     role: "Growth & Strategy",
     description:
       "A seasoned tech aficionado with a wealth of experience fostering successful ventures. Ronnie steers Flagship's strategy and growth initiatives, with strong focus and motivation.",
+    image: "https://picsum.photos/seed/ronnie-kessler/200/200",
     linkedinUrl: "#",
   },
   {
@@ -89,6 +92,7 @@ const defaultTeamMembers: TeamMember[] = [
     role: "Head of US Sales",
     description:
       "Meet Shane, our seasoned sales guru with a decade of retail mastery. With a passion for growth and a contagious smile, he's the driving force to redefine retail success.",
+    image: "https://picsum.photos/seed/shane-knowles/200/200",
     linkedinUrl: "#",
   },
   {
@@ -96,6 +100,7 @@ const defaultTeamMembers: TeamMember[] = [
     role: "Partnerships",
     description:
       "Say hi to Marcel, the business guru with a killer 3-point shot. He brings wit, wisdom, and wicked problem-solving skills to the Flagship team.",
+    image: "https://picsum.photos/seed/marcel-ninio/200/200",
     linkedinUrl: "#",
   },
   {
@@ -103,6 +108,7 @@ const defaultTeamMembers: TeamMember[] = [
     role: "Customer Success",
     description:
       "Deena is an operational ninja, taking on any challenge that comes her way. At Flagship, she ensures our customers receive top-notch service with a touch of joy.",
+    image: "https://picsum.photos/seed/deena-metz/200/200",
     linkedinUrl: "#",
   },
   {
@@ -110,6 +116,7 @@ const defaultTeamMembers: TeamMember[] = [
     role: "Co-CTO",
     description:
       "With a nickname like Big Brain – he's not just a genius but turns code into coolness. With a resume boasting Atlassian and Optiver, he turns every project into a tech spectacle.",
+    image: "https://picsum.photos/seed/ben-rohald/200/200",
     linkedinUrl: "#",
   },
   {
@@ -117,6 +124,7 @@ const defaultTeamMembers: TeamMember[] = [
     role: "Co-CTO",
     description:
       "Ryan is a code wizard with a reputation for building systems like a boss at Canva and various other startups. He's always hungry for a new challenge, coding at full throttle.",
+    image: "https://picsum.photos/seed/ryan-lonstein/200/200",
     linkedinUrl: "#",
   },
   {
@@ -124,6 +132,7 @@ const defaultTeamMembers: TeamMember[] = [
     role: "Senior Product Designer",
     description:
       "Our design dynamo, turns customer needs into digital dreams with pixel perfection. When he's not crafting solutions, he is riding waves or blazing trails in the bush.",
+    image: "https://picsum.photos/seed/sylvain-garcia/200/200",
     linkedinUrl: "#",
   },
   {
@@ -131,6 +140,7 @@ const defaultTeamMembers: TeamMember[] = [
     role: "Software Engineer",
     description:
       "A biotech whiz turned self-taught software guru. Now at Flagship, Derek's ready to lift both industries and weights, dreaming of squatting 2x his bodyweight.",
+    image: "https://picsum.photos/seed/derek-wang/200/200",
     linkedinUrl: "#",
   },
 ];

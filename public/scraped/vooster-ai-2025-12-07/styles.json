@@ -1,0 +1,82 @@
+{
+  "header.z-50": {
+    "backgroundColor": "oklch(1 0 0)",
+    "color": "oklch(0.145 0 0)",
+    "fontFamily": "pretendard, \"pretendard Fallback\"",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "nav.items-center": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.145 0 0)",
+    "fontFamily": "pretendard, \"pretendard Fallback\"",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.bg-background": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.145 0 0)",
+    "fontFamily": "pretendard, \"pretendard Fallback\"",
+    "fontSize": "16px",
+    "padding": "128px 16px",
+    "margin": "0px"
+  },
+  "section#features.px-4": {
+    "backgroundColor": "oklch(0.985 0.002 247.839)",
+    "color": "oklch(0.145 0 0)",
+    "fontFamily": "pretendard, \"pretendard Fallback\"",
+    "fontSize": "16px",
+    "padding": "96px 32px",
+    "margin": "0px"
+  },
+  "section.px-4": {
+    "backgroundColor": "oklch(0.985 0.002 247.839)",
+    "color": "oklch(0.145 0 0)",
+    "fontFamily": "pretendard, \"pretendard Fallback\"",
+    "fontSize": "16px",
+    "padding": "96px 16px",
+    "margin": "0px"
+  },
+  "section#pricing.relative": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.145 0 0)",
+    "fontFamily": "pretendard, \"pretendard Fallback\"",
+    "fontSize": "16px",
+    "padding": "96px 0px",
+    "margin": "0px"
+  },
+  "section#faq.px-4": {
+    "backgroundColor": "oklch(0.985 0.002 247.839)",
+    "color": "oklch(0.145 0 0)",
+    "fontFamily": "pretendard, \"pretendard Fallback\"",
+    "fontSize": "16px",
+    "padding": "96px 16px",
+    "margin": "0px"
+  },
+  "section#community.relative": {
+    "backgroundColor": "oklch(0.21 0.034 264.665)",
+    "color": "oklch(1 0 0)",
+    "fontFamily": "pretendard, \"pretendard Fallback\"",
+    "fontSize": "16px",
+    "padding": "96px 16px",
+    "margin": "0px"
+  },
+  "footer.bg-white": {
+    "backgroundColor": "oklch(1 0 0)",
+    "color": "oklch(0.145 0 0)",
+    "fontFamily": "pretendard, \"pretendard Fallback\"",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.145 0 0)",
+    "fontFamily": "pretendard, \"pretendard Fallback\"",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  }
+}

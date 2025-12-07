@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: team-tines-services
+category: team
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/tines-services-page-meet-the-team-section.jpg
+
+freeformKeywords:
+  - team
+  - meet the team
+  - team members
+  - staff
+  - employees
+  - awards
+  - badges
+  - G2
+  - enterprise
+  - customer success
+  - project management
+
+fontFamily:
+  - Inter
+  - Playfair Display
+
+createdAt: "2025-12-07T19:22:55Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - team-grid
+    - awards
+    - slider
+  style:
+    - warm
+    - elegant
+    - serif
+    - light-theme
+  layout:
+    - centered
+    - full-width
+    - horizontal-scroll
+  industry:
+    - saas
+    - enterprise

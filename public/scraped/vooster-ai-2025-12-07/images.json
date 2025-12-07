@@ -1,0 +1,32 @@
+[
+  {
+    "originalUrl": "https://www.vooster.ai/vooster.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "logo",
+    "width": 24,
+    "height": 24,
+    "localPath": "images/image-0.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.vooster.ai/_next/image?url=%2Fimages%2Fpreview.png&w=3840&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "대시보드 미리보기",
+    "width": 1152,
+    "height": 889,
+    "localPath": "images/image-1.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.vooster.ai/images/target-user/vibecoder.png",
+    "type": "img",
+    "sectionIndex": 2,
+    "alt": "아이디어는 넘치지만\n정리가 어려운 '바이브 코더'",
+    "width": 1024,
+    "height": 1024,
+    "localPath": "images/image-2.png",
+    "downloaded": true
+  }
+]

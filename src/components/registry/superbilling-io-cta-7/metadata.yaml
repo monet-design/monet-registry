@@ -1,0 +1,41 @@
+schemaVersion: "2.0"
+name: superbilling-io-cta-7
+category: cta
+
+images:
+  preview: scraped/superbilling-io-2025-12-07/sections/section-7.png
+
+freeformKeywords:
+  - early access
+  - call to action
+  - start now
+  - subscription
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T19:14:11Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - lead-capture
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - centered
+    - full-width
+  industry:
+    - saas
+    - fintech
+
+parentPage: superbilling-io-landing
+
+source:
+  type: url
+  url: https://superbilling.io/
+  scrapedAt: "2025-12-07T19:14:11Z"
+  sectionIndex: 7

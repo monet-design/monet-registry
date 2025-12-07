@@ -1,0 +1,2309 @@
+{
+  "tag": "body",
+  "id": null,
+  "className": "antialiased __variable_db9eeb font-pretendard",
+  "rect": {
+    "top": 0,
+    "left": 0,
+    "width": 1440,
+    "height": 11539.9375
+  },
+  "children": [
+    {
+      "tag": "header",
+      "id": null,
+      "className": "z-50 w-full bg-white border-b border-gray-200",
+      "rect": {
+        "top": 0,
+        "left": 0,
+        "width": 1440,
+        "height": 65
+      },
+      "children": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "px-4 mx-auto max-w-7xl sm:px-6 lg:px-8",
+          "rect": {
+            "top": 0,
+            "left": 80,
+            "width": 1280,
+            "height": 64
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "flex items-center justify-between h-16",
+              "rect": {
+                "top": 0,
+                "left": 112,
+                "width": 1216,
+                "height": 64
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "className": "",
+      "rect": {
+        "top": 65,
+        "left": 0,
+        "width": 1440,
+        "height": 5400
+      },
+      "children": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative min-h-screen",
+          "rect": {
+            "top": 65,
+            "left": 0,
+            "width": 1440,
+            "height": 5400
+          },
+          "children": [
+            {
+              "tag": "section",
+              "id": null,
+              "className": "bg-background text-foreground py-12 sm:py-24 md:py-32 px-4 fade-bottom overflow-hidden pb-0 !bg-transparent relative z-10",
+              "rect": {
+                "top": 65,
+                "left": 0,
+                "width": 1440,
+                "height": 1755.109375
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "flex flex-col max-w-6xl gap-12 pt-6 mx-auto sm:gap-24",
+                  "rect": {
+                    "top": 193,
+                    "left": 144,
+                    "width": 1152,
+                    "height": 1499.109375
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "flex flex-col items-center gap-6 text-center sm:gap-10",
+                      "rect": {
+                        "top": 217,
+                        "left": 144,
+                        "width": 1152,
+                        "height": 1475.109375
+                      },
+                      "children": [
+                        {
+                          "tag": "h1",
+                          "id": null,
+                          "className": "relative z-10 inline-block text-4xl font-semibold leading-tight text-transparent whitespace-pre-line animate-appear bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text drop-shadow-2xl sm:text-5xl sm:leading-tight md:text-6xl md:leading-tight lg:text-7xl lg:leading-tight xl:text-8xl xl:leading-tight",
+                          "rect": {
+                            "top": 279,
+                            "left": 376.703125,
+                            "width": 686.578125,
+                            "height": 240
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "flex flex-col gap-4",
+                          "rect": {
+                            "top": 559,
+                            "left": 491.75,
+                            "width": 456.5,
+                            "height": 56
+                          },
+                          "children": [
+                            {
+                              "tag": "p",
+                              "id": null,
+                              "className": "text-md relative z-10 max-w-[550px] animate-appear font-medium text-muted-foreground/70 opacity-0 delay-100 sm:text-xl whitespace-pre-line",
+                              "rect": {
+                                "top": 559,
+                                "left": 491.75,
+                                "width": 456.5,
+                                "height": 56
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "flex flex-col items-center gap-4",
+                          "rect": {
+                            "top": 655,
+                            "left": 570.734375,
+                            "width": 298.53125,
+                            "height": 96
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "relative pt-2",
+                          "rect": {
+                            "top": 791,
+                            "left": 144,
+                            "width": 1152,
+                            "height": 901.109375
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "bg-accent/5 flex relative z-10 overflow-hidden rounded-2xl p-2 delay-700 opacity-0 animate-appear",
+                              "rect": {
+                                "top": 799,
+                                "left": 144,
+                                "width": 1152,
+                                "height": 893.109375
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex relative z-10 overflow-hidden shadow-2xl border border-border/5 border-t-border/15 rounded-md",
+                                  "rect": {
+                                    "top": 807,
+                                    "left": 152,
+                                    "width": 1136,
+                                    "height": 877.109375
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "img",
+                                      "id": null,
+                                      "className": "",
+                                      "rect": {
+                                        "top": 808,
+                                        "left": 153,
+                                        "width": 1134,
+                                        "height": 875.109375
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "className": "",
+      "rect": {
+        "top": 5465,
+        "left": 0,
+        "width": 1440,
+        "height": 652
+      },
+      "children": [
+        {
+          "tag": "section",
+          "id": "features",
+          "className": "px-4 py-24 sm:px-6 lg:px-8 bg-gray-50",
+          "rect": {
+            "top": 5465,
+            "left": 0,
+            "width": 1440,
+            "height": 652
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "max-w-6xl mx-auto ",
+              "rect": {
+                "top": 5561,
+                "left": 144,
+                "width": 1152,
+                "height": 460
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "flex flex-col items-center text-center",
+                  "rect": {
+                    "top": 5561,
+                    "left": 144,
+                    "width": 1152,
+                    "height": 264
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "max-w-3xl mb-16",
+                      "rect": {
+                        "top": 5553,
+                        "left": 517.984375,
+                        "width": 404.015625,
+                        "height": 200
+                      },
+                      "children": [
+                        {
+                          "tag": "h2",
+                          "id": null,
+                          "className": "mb-4 text-4xl font-medium tracking-tight md:text-5xl text-gray-950",
+                          "rect": {
+                            "top": 5585,
+                            "left": 517.984375,
+                            "width": 404.015625,
+                            "height": 96
+                          },
+                          "children": [
+                            {
+                              "tag": "span",
+                              "id": null,
+                              "className": "",
+                              "rect": {
+                                "top": 5580,
+                                "left": 528.1875,
+                                "width": 383.609375,
+                                "height": 58
+                              },
+                              "children": [
+                                {
+                                  "tag": "br",
+                                  "id": null,
+                                  "className": "",
+                                  "rect": {
+                                    "top": 5580,
+                                    "left": 911.796875,
+                                    "width": 0,
+                                    "height": 58
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "span",
+                              "id": null,
+                              "className": "",
+                              "rect": {
+                                "top": 5628,
+                                "left": 541.75,
+                                "width": 356.484375,
+                                "height": 58
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "p",
+                          "id": null,
+                          "className": "text-lg font-light text-gray-600",
+                          "rect": {
+                            "top": 5697,
+                            "left": 517.984375,
+                            "width": 404.015625,
+                            "height": 56
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "grid grid-cols-1 gap-4 border border-dashed divide-x divide-y divide-dashed sm:grid-cols-2 md:grid-cols-3",
+                  "rect": {
+                    "top": 5817,
+                    "left": 144,
+                    "width": 1152,
+                    "height": 196
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "group relative overflow-hidden p-6 border border-dashed border-gray-300 rounded-lg hover:shadow-lg transition-all hover:border-brand/50",
+                      "rect": {
+                        "top": 5818,
+                        "left": 145,
+                        "width": 372.65625,
+                        "height": 194
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "pointer-events-none absolute top-0 left-1/2 -mt-2 -ml-20 h-full w-full [mask-image:linear-gradient(white,transparent)]",
+                          "rect": {
+                            "top": 5811,
+                            "left": 251.328125,
+                            "width": 370.65625,
+                            "height": 192
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "from-foreground/5 to-foreground/1 absolute inset-0 bg-gradient-to-r [mask-image:radial-gradient(farthest-side_at_top,white,transparent)] opacity-100",
+                              "rect": {
+                                "top": 5811,
+                                "left": 251.328125,
+                                "width": 370.65625,
+                                "height": 192
+                              },
+                              "children": [
+                                {
+                                  "tag": "svg",
+                                  "id": null,
+                                  "className": null,
+                                  "rect": {
+                                    "top": 5811,
+                                    "left": 251.328125,
+                                    "width": 370.65625,
+                                    "height": 192
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "rect",
+                                      "id": null,
+                                      "className": null,
+                                      "rect": {
+                                        "top": 5811,
+                                        "left": 251.328125,
+                                        "width": 370.65625,
+                                        "height": 192
+                                      },
+                                      "children": []
+                                    },
+                                    {
+                                      "tag": "svg",
+                                      "id": null,
+                                      "className": null,
+                                      "rect": {
+                                        "top": 5835,
+                                        "left": 399.328125,
+                                        "width": 61,
+                                        "height": 121
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "p",
+                          "id": null,
+                          "className": "relative z-20 mt-4 text-lg font-light text-gray-600 whitespace-pre-line",
+                          "rect": {
+                            "top": 5931,
+                            "left": 170,
+                            "width": 322.65625,
+                            "height": 56
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "group relative overflow-hidden p-6 border border-dashed border-gray-300 rounded-lg hover:shadow-lg transition-all hover:border-brand/50",
+                      "rect": {
+                        "top": 5818,
+                        "left": 533.65625,
+                        "width": 372.671875,
+                        "height": 194
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "pointer-events-none absolute top-0 left-1/2 -mt-2 -ml-20 h-full w-full [mask-image:linear-gradient(white,transparent)]",
+                          "rect": {
+                            "top": 5811,
+                            "left": 639.984375,
+                            "width": 370.671875,
+                            "height": 192
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "from-foreground/5 to-foreground/1 absolute inset-0 bg-gradient-to-r [mask-image:radial-gradient(farthest-side_at_top,white,transparent)] opacity-100",
+                              "rect": {
+                                "top": 5811,
+                                "left": 639.984375,
+                                "width": 370.671875,
+                                "height": 192
+                              },
+                              "children": [
+                                {
+                                  "tag": "svg",
+                                  "id": null,
+                                  "className": null,
+                                  "rect": {
+                                    "top": 5811,
+                                    "left": 639.984375,
+                                    "width": 370.671875,
+                                    "height": 192
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "rect",
+                                      "id": null,
+                                      "className": null,
+                                      "rect": {
+                                        "top": 5811,
+                                        "left": 639.984375,
+                                        "width": 370.671875,
+                                        "height": 192
+                                      },
+                                      "children": []
+                                    },
+                                    {
+                                      "tag": "svg",
+                                      "id": null,
+                                      "className": null,
+                                      "rect": {
+                                        "top": 5855,
+                                        "left": 807.984375,
+                                        "width": 41,
+                                        "height": 81
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "p",
+                          "id": null,
+                          "className": "relative z-20 mt-4 text-lg font-light text-gray-600 whitespace-pre-line",
+                          "rect": {
+                            "top": 5931,
+                            "left": 558.65625,
+                            "width": 322.671875,
+                            "height": 56
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "group relative overflow-hidden p-6 border border-dashed border-gray-300 rounded-lg hover:shadow-lg transition-all hover:border-brand/50",
+                      "rect": {
+                        "top": 5818,
+                        "left": 922.328125,
+                        "width": 372.65625,
+                        "height": 194
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "pointer-events-none absolute top-0 left-1/2 -mt-2 -ml-20 h-full w-full [mask-image:linear-gradient(white,transparent)]",
+                          "rect": {
+                            "top": 5811,
+                            "left": 1028.65625,
+                            "width": 370.65625,
+                            "height": 192
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "from-foreground/5 to-foreground/1 absolute inset-0 bg-gradient-to-r [mask-image:radial-gradient(farthest-side_at_top,white,transparent)] opacity-100",
+                              "rect": {
+                                "top": 5811,
+                                "left": 1028.65625,
+                                "width": 370.65625,
+                                "height": 192
+                              },
+                              "children": [
+                                {
+                                  "tag": "svg",
+                                  "id": null,
+                                  "className": null,
+                                  "rect": {
+                                    "top": 5811,
+                                    "left": 1028.65625,
+                                    "width": 370.65625,
+                                    "height": 192
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "rect",
+                                      "id": null,
+                                      "className": null,
+                                      "rect": {
+                                        "top": 5811,
+                                        "left": 1028.65625,
+                                        "width": 370.65625,
+                                        "height": 192
+                                      },
+                                      "children": []
+                                    },
+                                    {
+                                      "tag": "svg",
+                                      "id": null,
+                                      "className": null,
+                                      "rect": {
+                                        "top": 5835,
+                                        "left": 1176.65625,
+                                        "width": 61,
+                                        "height": 81
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "p",
+                          "id": null,
+                          "className": "relative z-20 mt-4 text-lg font-light text-gray-600 whitespace-pre-line",
+                          "rect": {
+                            "top": 5931,
+                            "left": 947.328125,
+                            "width": 322.65625,
+                            "height": 56
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "className": "",
+      "rect": {
+        "top": 6117,
+        "left": 0,
+        "width": 1440,
+        "height": 1175.25
+      },
+      "children": [
+        {
+          "tag": "section",
+          "id": null,
+          "className": "px-4 py-24 bg-white",
+          "rect": {
+            "top": 6117,
+            "left": 0,
+            "width": 1440,
+            "height": 1175.25
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "max-w-6xl mx-auto",
+              "rect": {
+                "top": 6213,
+                "left": 144,
+                "width": 1152,
+                "height": 983.25
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "mb-20 text-center",
+                  "rect": {
+                    "top": 6213,
+                    "left": 144,
+                    "width": 1152,
+                    "height": 189.25
+                  },
+                  "children": [
+                    {
+                      "tag": "h2",
+                      "id": null,
+                      "className": "mb-6 text-4xl font-medium tracking-tight md:text-5xl text-gray-950 whitespace-pre-line",
+                      "rect": {
+                        "top": 6253,
+                        "left": 144,
+                        "width": 1152,
+                        "height": 96
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "flex flex-col gap-2 mt-8",
+                  "rect": {
+                    "top": 6482.25,
+                    "left": 144,
+                    "width": 1152,
+                    "height": 714
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "p-8 mx-auto mt-12 rounded-2xl bg-gray-50 lg:p-16",
+                      "rect": {
+                        "top": 6588.25,
+                        "left": 144,
+                        "width": 1152,
+                        "height": 608
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "grid gap-12 place-items-center lg:grid-cols-2 lg:gap-16",
+                          "rect": {
+                            "top": 6652.25,
+                            "left": 208,
+                            "width": 1024,
+                            "height": 480
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "flex flex-col gap-6",
+                              "rect": {
+                                "top": 6658.25,
+                                "left": 752,
+                                "width": 480,
+                                "height": 468
+                              },
+                              "children": [
+                                {
+                                  "tag": "h3",
+                                  "id": null,
+                                  "className": "text-3xl font-medium leading-tight text-gray-950 lg:text-4xl",
+                                  "rect": {
+                                    "top": 6658.25,
+                                    "left": 752,
+                                    "width": 480,
+                                    "height": 90
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "tag": "p",
+                                  "id": null,
+                                  "className": "text-lg leading-relaxed text-gray-600 whitespace-pre-line lg:text-xl",
+                                  "rect": {
+                                    "top": 6772.25,
+                                    "left": 752,
+                                    "width": 480,
+                                    "height": 130
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "hidden mt-4 space-y-3 lg:block",
+                                  "rect": {
+                                    "top": 6942.25,
+                                    "left": 752,
+                                    "width": 480,
+                                    "height": 96
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "img",
+                              "id": null,
+                              "className": "w-full max-w-md row-start-1 shadow-lg rounded-xl lg:max-w-full",
+                              "rect": {
+                                "top": 6652.25,
+                                "left": 208,
+                                "width": 480,
+                                "height": 480
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "className": "",
+      "rect": {
+        "top": 7292.25,
+        "left": 0,
+        "width": 1440,
+        "height": 1133.75
+      },
+      "children": [
+        {
+          "tag": "section",
+          "id": null,
+          "className": "px-4 py-24 bg-gray-50",
+          "rect": {
+            "top": 7292.25,
+            "left": 0,
+            "width": 1440,
+            "height": 1133.75
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "max-w-6xl mx-auto",
+              "rect": {
+                "top": 7388.25,
+                "left": 144,
+                "width": 1152,
+                "height": 941.75
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "mb-16 text-center",
+                  "rect": {
+                    "top": 7388.25,
+                    "left": 144,
+                    "width": 1152,
+                    "height": 137.25
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "grid w-full auto-rows-[22rem] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16 lg:grid-rows-2 !auto-rows-[10rem] lg:auto-rows-[22rem]",
+                  "rect": {
+                    "top": 7589.5,
+                    "left": 144,
+                    "width": 1152,
+                    "height": 352
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "group relative lg:col-span-3 flex flex-col justify-between overflow-hidden rounded-xl h-fit sm:h-auto pt-10 bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] col-span-1 md:col-span-1 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2",
+                      "rect": {
+                        "top": 7589.5,
+                        "left": 144,
+                        "width": 373.328125,
+                        "height": 168
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "z-10 flex flex-col mt-auto gap-1 p-6 transition-all duration-300 pointer-events-none transform-gpu group-hover:-translate-y-10",
+                          "rect": {
+                            "top": 7629.5,
+                            "left": 144,
+                            "width": 373.328125,
+                            "height": 128
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "pointer-events-none absolute bottom-0 flex w-full translate-y-10 transform-gpu flex-row items-center p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100",
+                          "rect": {
+                            "top": 7733.5,
+                            "left": 144,
+                            "width": 373.328125,
+                            "height": 64
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03]",
+                          "rect": {
+                            "top": 7589.5,
+                            "left": 144,
+                            "width": 373.328125,
+                            "height": 168
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "group relative lg:col-span-3 flex flex-col justify-between overflow-hidden rounded-xl h-fit sm:h-auto pt-10 bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] col-span-1 md:col-span-1 lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2",
+                      "rect": {
+                        "top": 7589.5,
+                        "left": 533.328125,
+                        "width": 373.328125,
+                        "height": 168
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "z-10 flex flex-col mt-auto gap-1 p-6 transition-all duration-300 pointer-events-none transform-gpu group-hover:-translate-y-10",
+                          "rect": {
+                            "top": 7629.5,
+                            "left": 533.328125,
+                            "width": 373.328125,
+                            "height": 128
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "pointer-events-none absolute bottom-0 flex w-full translate-y-10 transform-gpu flex-row items-center p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100",
+                          "rect": {
+                            "top": 7733.5,
+                            "left": 533.328125,
+                            "width": 373.328125,
+                            "height": 64
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03]",
+                          "rect": {
+                            "top": 7589.5,
+                            "left": 533.328125,
+                            "width": 373.328125,
+                            "height": 168
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "group relative lg:col-span-3 flex flex-col justify-between overflow-hidden rounded-xl h-fit sm:h-auto pt-10 bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] col-span-1 md:col-span-1 lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3",
+                      "rect": {
+                        "top": 7773.5,
+                        "left": 144,
+                        "width": 373.328125,
+                        "height": 168
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "z-10 flex flex-col mt-auto gap-1 p-6 transition-all duration-300 pointer-events-none transform-gpu group-hover:-translate-y-10",
+                          "rect": {
+                            "top": 7813.5,
+                            "left": 144,
+                            "width": 373.328125,
+                            "height": 128
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "pointer-events-none absolute bottom-0 flex w-full translate-y-10 transform-gpu flex-row items-center p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100",
+                          "rect": {
+                            "top": 7917.5,
+                            "left": 144,
+                            "width": 373.328125,
+                            "height": 64
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03]",
+                          "rect": {
+                            "top": 7773.5,
+                            "left": 144,
+                            "width": 373.328125,
+                            "height": 168
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "group relative lg:col-span-3 flex flex-col justify-between overflow-hidden rounded-xl h-fit sm:h-auto pt-10 bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] col-span-1 md:col-span-1 lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3",
+                      "rect": {
+                        "top": 7773.5,
+                        "left": 533.328125,
+                        "width": 373.328125,
+                        "height": 168
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "z-10 flex flex-col mt-auto gap-1 p-6 transition-all duration-300 pointer-events-none transform-gpu group-hover:-translate-y-10",
+                          "rect": {
+                            "top": 7813.5,
+                            "left": 533.328125,
+                            "width": 373.328125,
+                            "height": 128
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "pointer-events-none absolute bottom-0 flex w-full translate-y-10 transform-gpu flex-row items-center p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100",
+                          "rect": {
+                            "top": 7917.5,
+                            "left": 533.328125,
+                            "width": 373.328125,
+                            "height": 64
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03]",
+                          "rect": {
+                            "top": 7773.5,
+                            "left": 533.328125,
+                            "width": 373.328125,
+                            "height": 168
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "group relative lg:col-span-3 flex flex-col justify-between overflow-hidden rounded-xl h-fit sm:h-auto pt-10 bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] col-span-1 md:col-span-1 lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-3",
+                      "rect": {
+                        "top": 7589.5,
+                        "left": 922.65625,
+                        "width": 373.34375,
+                        "height": 352
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "z-10 flex flex-col mt-auto gap-1 p-6 transition-all duration-300 pointer-events-none transform-gpu group-hover:-translate-y-10",
+                          "rect": {
+                            "top": 7813.5,
+                            "left": 922.65625,
+                            "width": 373.34375,
+                            "height": 128
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "pointer-events-none absolute bottom-0 flex w-full translate-y-10 transform-gpu flex-row items-center p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100",
+                          "rect": {
+                            "top": 7917.5,
+                            "left": 922.65625,
+                            "width": 373.34375,
+                            "height": 64
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03]",
+                          "rect": {
+                            "top": 7589.5,
+                            "left": 922.65625,
+                            "width": 373.34375,
+                            "height": 352
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "p-12 text-center text-white bg-gray-900 rounded-3xl",
+                  "rect": {
+                    "top": 8005.5,
+                    "left": 144,
+                    "width": 1152,
+                    "height": 324.5
+                  },
+                  "children": [
+                    {
+                      "tag": "p",
+                      "id": null,
+                      "className": "max-w-2xl mx-auto mb-4 text-lg font-light leading-relaxed opacity-80",
+                      "rect": {
+                        "top": 8109.5,
+                        "left": 384,
+                        "width": 672,
+                        "height": 58.5
+                      },
+                      "children": [
+                        {
+                          "tag": "span",
+                          "id": null,
+                          "className": "",
+                          "rect": {
+                            "top": 8113.5,
+                            "left": 678.890625,
+                            "width": 374.71875,
+                            "height": 50.25
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "className": "",
+      "rect": {
+        "top": 8426,
+        "left": 0,
+        "width": 1440,
+        "height": 1345.5
+      },
+      "children": [
+        {
+          "tag": "section",
+          "id": "pricing",
+          "className": "relative py-24 overflow-hidden",
+          "rect": {
+            "top": 8426,
+            "left": 0,
+            "width": 1440,
+            "height": 1345.5
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8",
+              "rect": {
+                "top": 8522,
+                "left": 80,
+                "width": 1280,
+                "height": 1153.5
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "mb-16 text-center",
+                  "rect": {
+                    "top": 8542,
+                    "left": 112,
+                    "width": 1216,
+                    "height": 226.5
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "grid max-w-6xl gap-8 mx-auto lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1",
+                  "rect": {
+                    "top": 8812.5,
+                    "left": 144,
+                    "width": 1152,
+                    "height": 763
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "w-full",
+                      "rect": {
+                        "top": 8861.5751953125,
+                        "left": 150.60000610351562,
+                        "width": 250.79998779296875,
+                        "height": 724.849609375
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm relative overflow-visible transition-all duration-500 border border-gray-400 bg-white/80 backdrop-blur-sm hover:bg-white hover:shadow-xl hover:shadow-gray-200 group",
+                          "rect": {
+                            "top": 8861.5751953125,
+                            "left": 150.60000610351562,
+                            "width": 250.79998779296875,
+                            "height": 684.9501953125
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 relative pt-10 sm:pt-12 pb-6 sm:pb-8 text-center",
+                              "rect": {
+                                "top": 8885.3251953125,
+                                "left": 151.5500030517578,
+                                "width": 248.8999786376953,
+                                "height": 298.2998046875
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "mt-6",
+                                  "rect": {
+                                    "top": 9037.3251953125,
+                                    "left": 174.35000610351562,
+                                    "width": 203.29998779296875,
+                                    "height": 57
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "flex items-baseline justify-center space-x-2",
+                                      "rect": {
+                                        "top": 9037.3251953125,
+                                        "left": 174.35000610351562,
+                                        "width": 203.29998779296875,
+                                        "height": 57
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "span",
+                                          "id": null,
+                                          "className": "text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900",
+                                          "rect": {
+                                            "top": 9037.3251953125,
+                                            "left": 225.17498779296875,
+                                            "width": 73.53594970703125,
+                                            "height": 57
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "px-6 sm:px-8 pb-6 sm:pb-8",
+                              "rect": {
+                                "top": 9206.4248046875,
+                                "left": 151.5500030517578,
+                                "width": 248.8999786376953,
+                                "height": 217.5498046875
+                              },
+                              "children": [
+                                {
+                                  "tag": "ul",
+                                  "id": null,
+                                  "className": "space-y-3 sm:space-y-4",
+                                  "rect": {
+                                    "top": 9206.4248046875,
+                                    "left": 181.9499969482422,
+                                    "width": 188.09999084472656,
+                                    "height": 121.6005859375
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "flex items-center [.border-t]:pt-6 px-6 sm:px-8 pb-6 sm:pb-8",
+                              "rect": {
+                                "top": 9446.775390625,
+                                "left": 151.5500030517578,
+                                "width": 248.8999786376953,
+                                "height": 76
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "w-full",
+                      "rect": {
+                        "top": 8861.5751953125,
+                        "left": 446.6000061035156,
+                        "width": 250.80001831054688,
+                        "height": 724.849609375
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "text-card-foreground flex flex-col gap-6 rounded-xl py-6 shadow-sm relative overflow-visible transition-all duration-500 border border-gray-400 bg-white/80 backdrop-blur-sm hover:bg-white hover:shadow-xl hover:shadow-gray-200 group",
+                          "rect": {
+                            "top": 8861.5751953125,
+                            "left": 446.6000061035156,
+                            "width": 250.80001831054688,
+                            "height": 703.9501953125
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 relative pt-10 sm:pt-12 pb-6 sm:pb-8 text-center",
+                              "rect": {
+                                "top": 8885.3251953125,
+                                "left": 447.5500183105469,
+                                "width": 248.89999389648438,
+                                "height": 317.2998046875
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "mt-6",
+                                  "rect": {
+                                    "top": 9037.3251953125,
+                                    "left": 470.3500061035156,
+                                    "width": 203.30001831054688,
+                                    "height": 95
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "flex items-baseline justify-center space-x-2",
+                                      "rect": {
+                                        "top": 9075.3251953125,
+                                        "left": 470.3500061035156,
+                                        "width": 203.30001831054688,
+                                        "height": 57
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "span",
+                                          "id": null,
+                                          "className": "text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900",
+                                          "rect": {
+                                            "top": 9075.3251953125,
+                                            "left": 508.30548095703125,
+                                            "width": 99.28985595703125,
+                                            "height": 57
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "px-6 sm:px-8 pb-6 sm:pb-8",
+                              "rect": {
+                                "top": 9225.4248046875,
+                                "left": 447.5500183105469,
+                                "width": 248.89999389648438,
+                                "height": 217.5498046875
+                              },
+                              "children": [
+                                {
+                                  "tag": "ul",
+                                  "id": null,
+                                  "className": "space-y-3 sm:space-y-4",
+                                  "rect": {
+                                    "top": 9225.4248046875,
+                                    "left": 477.95001220703125,
+                                    "width": 188.0999755859375,
+                                    "height": 121.6005859375
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "flex items-center [.border-t]:pt-6 px-6 sm:px-8 pb-6 sm:pb-8",
+                              "rect": {
+                                "top": 9465.775390625,
+                                "left": 447.5500183105469,
+                                "width": 248.89999389648438,
+                                "height": 76
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "w-full",
+                      "rect": {
+                        "top": 8861.5751953125,
+                        "left": 742.5999755859375,
+                        "width": 250.79998779296875,
+                        "height": 724.849609375
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "flex flex-col gap-6 rounded-xl py-6 shadow-sm relative overflow-visible text-white transition-all duration-500 lg:scale-105 bg-gray-900 border-2 border-gray-900 hover:bg-gray-800 hover:shadow-2xl hover:shadow-gray-900/30 group",
+                          "rect": {
+                            "top": 8843.9287109375,
+                            "left": 736.3299560546875,
+                            "width": 263.3399658203125,
+                            "height": 741.142578125
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 relative pt-10 sm:pt-12 pb-6 sm:pb-8 text-center",
+                              "rect": {
+                                "top": 8869.8642578125,
+                                "left": 738.3250122070312,
+                                "width": 259.3499755859375,
+                                "height": 333.1640625
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "mt-6",
+                                  "rect": {
+                                    "top": 9029.4638671875,
+                                    "left": 762.2650146484375,
+                                    "width": 211.469970703125,
+                                    "height": 99.75
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "flex items-baseline justify-center space-x-2",
+                                      "rect": {
+                                        "top": 9069.36328125,
+                                        "left": 762.2650146484375,
+                                        "width": 211.469970703125,
+                                        "height": 59.8505859375
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "span",
+                                          "id": null,
+                                          "className": "text-4xl sm:text-5xl md:text-6xl font-bold text-white",
+                                          "rect": {
+                                            "top": 9069.36328125,
+                                            "left": 795.3850708007812,
+                                            "width": 115.71002197265625,
+                                            "height": 59.8505859375
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "px-6 sm:px-8 pb-6 sm:pb-8",
+                              "rect": {
+                                "top": 9226.96875,
+                                "left": 738.3250122070312,
+                                "width": 259.3499755859375,
+                                "height": 228.427734375
+                              },
+                              "children": [
+                                {
+                                  "tag": "ul",
+                                  "id": null,
+                                  "className": "space-y-3 sm:space-y-4",
+                                  "rect": {
+                                    "top": 9226.96875,
+                                    "left": 770.2449951171875,
+                                    "width": 195.510009765625,
+                                    "height": 127.6796875
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "flex items-center [.border-t]:pt-6 px-6 sm:px-8 pb-6 sm:pb-8",
+                              "rect": {
+                                "top": 9479.3359375,
+                                "left": 738.3250122070312,
+                                "width": 259.3499755859375,
+                                "height": 79.80078125
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "w-full",
+                      "rect": {
+                        "top": 8861.5751953125,
+                        "left": 1038.5999755859375,
+                        "width": 250.800048828125,
+                        "height": 724.849609375
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "flex flex-col gap-6 rounded-xl py-6 shadow-sm relative overflow-visible text-white transition-all duration-500 lg:scale-105 bg-gray-900 border-2 border-gray-900 hover:bg-gray-800 hover:shadow-2xl hover:shadow-gray-900/30 group",
+                          "rect": {
+                            "top": 8843.4541015625,
+                            "left": 1032.3299560546875,
+                            "width": 263.3399658203125,
+                            "height": 761.091796875
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 relative pt-10 sm:pt-12 pb-6 sm:pb-8 text-center",
+                              "rect": {
+                                "top": 8869.388671875,
+                                "left": 1034.324951171875,
+                                "width": 259.3499755859375,
+                                "height": 353.115234375
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "mt-6",
+                                  "rect": {
+                                    "top": 9028.98828125,
+                                    "left": 1058.2650146484375,
+                                    "width": 211.469970703125,
+                                    "height": 99.75
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "flex items-baseline justify-center space-x-2",
+                                      "rect": {
+                                        "top": 9068.888671875,
+                                        "left": 1058.2650146484375,
+                                        "width": 211.469970703125,
+                                        "height": 59.849609375
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "span",
+                                          "id": null,
+                                          "className": "text-4xl sm:text-5xl md:text-6xl font-bold text-white",
+                                          "rect": {
+                                            "top": 9068.888671875,
+                                            "left": 1076.93701171875,
+                                            "width": 144.606201171875,
+                                            "height": 59.849609375
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "px-6 sm:px-8 pb-6 sm:pb-8",
+                              "rect": {
+                                "top": 9246.443359375,
+                                "left": 1034.324951171875,
+                                "width": 259.3499755859375,
+                                "height": 228.427734375
+                              },
+                              "children": [
+                                {
+                                  "tag": "ul",
+                                  "id": null,
+                                  "className": "space-y-3 sm:space-y-4",
+                                  "rect": {
+                                    "top": 9246.443359375,
+                                    "left": 1066.2449951171875,
+                                    "width": 195.510009765625,
+                                    "height": 127.6806640625
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "flex items-center [.border-t]:pt-6 px-6 sm:px-8 pb-6 sm:pb-8",
+                              "rect": {
+                                "top": 9498.8115234375,
+                                "left": 1034.324951171875,
+                                "width": 259.3499755859375,
+                                "height": 79.7998046875
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "mt-12 text-center",
+                  "rect": {
+                    "top": 9643.5,
+                    "left": 112,
+                    "width": 1216,
+                    "height": 52
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "className": "",
+      "rect": {
+        "top": 9771.5,
+        "left": 0,
+        "width": 1440,
+        "height": 874
+      },
+      "children": [
+        {
+          "tag": "section",
+          "id": "faq",
+          "className": "px-4 py-24 bg-gray-50",
+          "rect": {
+            "top": 9771.5,
+            "left": 0,
+            "width": 1440,
+            "height": 874
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "max-w-4xl mx-auto",
+              "rect": {
+                "top": 9867.5,
+                "left": 272,
+                "width": 896,
+                "height": 682
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "mb-16 text-center",
+                  "rect": {
+                    "top": 9897.5,
+                    "left": 272,
+                    "width": 896,
+                    "height": 100
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "",
+                  "rect": {
+                    "top": 10031.5,
+                    "left": 272,
+                    "width": 896,
+                    "height": 518
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "space-y-4",
+                      "rect": {
+                        "top": 10031.5,
+                        "left": 272,
+                        "width": 896,
+                        "height": 518
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "group",
+                          "rect": {
+                            "top": 10053.3251953125,
+                            "left": 294.3999938964844,
+                            "width": 851.199951171875,
+                            "height": 69.349609375
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "last:border-b-0 overflow-hidden transition-all duration-500 bg-white border border-gray-200 shadow-sm rounded-xl hover:shadow-lg hover:border-gray-300 hover:-translate-y-1",
+                              "rect": {
+                                "top": 10053.3251953125,
+                                "left": 294.3999938964844,
+                                "width": 851.199951171875,
+                                "height": 69.349609375
+                              },
+                              "children": [
+                                {
+                                  "tag": "h3",
+                                  "id": null,
+                                  "className": "flex",
+                                  "rect": {
+                                    "top": 10054.275390625,
+                                    "left": 295.3500061035156,
+                                    "width": 849.300048828125,
+                                    "height": 68.3994140625
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "button",
+                                      "id": "radix-«R26jnbnb»",
+                                      "className": "focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 px-6 py-5 text-base font-medium text-left text-gray-950 hover:no-underline group-hover:text-gray-700 transition-all duration-300 [&[data-state=open]>div>svg]:rotate-180",
+                                      "rect": {
+                                        "top": 10054.275390625,
+                                        "left": 295.3500061035156,
+                                        "width": 849.300048828125,
+                                        "height": 68.3994140625
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "group",
+                          "rect": {
+                            "top": 10142.3251953125,
+                            "left": 294.3999938964844,
+                            "width": 851.199951171875,
+                            "height": 69.349609375
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "last:border-b-0 overflow-hidden transition-all duration-500 bg-white border border-gray-200 shadow-sm rounded-xl hover:shadow-lg hover:border-gray-300 hover:-translate-y-1",
+                              "rect": {
+                                "top": 10142.3251953125,
+                                "left": 294.3999938964844,
+                                "width": 851.199951171875,
+                                "height": 69.349609375
+                              },
+                              "children": [
+                                {
+                                  "tag": "h3",
+                                  "id": null,
+                                  "className": "flex",
+                                  "rect": {
+                                    "top": 10143.275390625,
+                                    "left": 295.3500061035156,
+                                    "width": 849.300048828125,
+                                    "height": 68.3994140625
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "button",
+                                      "id": "radix-«R2ajnbnb»",
+                                      "className": "focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 px-6 py-5 text-base font-medium text-left text-gray-950 hover:no-underline group-hover:text-gray-700 transition-all duration-300 [&[data-state=open]>div>svg]:rotate-180",
+                                      "rect": {
+                                        "top": 10143.275390625,
+                                        "left": 295.3500061035156,
+                                        "width": 849.300048828125,
+                                        "height": 68.3994140625
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "group",
+                          "rect": {
+                            "top": 10231.3251953125,
+                            "left": 294.3999938964844,
+                            "width": 851.199951171875,
+                            "height": 69.349609375
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "last:border-b-0 overflow-hidden transition-all duration-500 bg-white border border-gray-200 shadow-sm rounded-xl hover:shadow-lg hover:border-gray-300 hover:-translate-y-1",
+                              "rect": {
+                                "top": 10231.3251953125,
+                                "left": 294.3999938964844,
+                                "width": 851.199951171875,
+                                "height": 69.349609375
+                              },
+                              "children": [
+                                {
+                                  "tag": "h3",
+                                  "id": null,
+                                  "className": "flex",
+                                  "rect": {
+                                    "top": 10232.275390625,
+                                    "left": 295.3500061035156,
+                                    "width": 849.300048828125,
+                                    "height": 68.3994140625
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "button",
+                                      "id": "radix-«R2ejnbnb»",
+                                      "className": "focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 px-6 py-5 text-base font-medium text-left text-gray-950 hover:no-underline group-hover:text-gray-700 transition-all duration-300 [&[data-state=open]>div>svg]:rotate-180",
+                                      "rect": {
+                                        "top": 10232.275390625,
+                                        "left": 295.3500061035156,
+                                        "width": 849.300048828125,
+                                        "height": 68.3994140625
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "group",
+                          "rect": {
+                            "top": 10320.3251953125,
+                            "left": 294.3999938964844,
+                            "width": 851.199951171875,
+                            "height": 69.349609375
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "last:border-b-0 overflow-hidden transition-all duration-500 bg-white border border-gray-200 shadow-sm rounded-xl hover:shadow-lg hover:border-gray-300 hover:-translate-y-1",
+                              "rect": {
+                                "top": 10320.3251953125,
+                                "left": 294.3999938964844,
+                                "width": 851.199951171875,
+                                "height": 69.349609375
+                              },
+                              "children": [
+                                {
+                                  "tag": "h3",
+                                  "id": null,
+                                  "className": "flex",
+                                  "rect": {
+                                    "top": 10321.275390625,
+                                    "left": 295.3500061035156,
+                                    "width": 849.300048828125,
+                                    "height": 68.3994140625
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "button",
+                                      "id": "radix-«R2ijnbnb»",
+                                      "className": "focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 px-6 py-5 text-base font-medium text-left text-gray-950 hover:no-underline group-hover:text-gray-700 transition-all duration-300 [&[data-state=open]>div>svg]:rotate-180",
+                                      "rect": {
+                                        "top": 10321.275390625,
+                                        "left": 295.3500061035156,
+                                        "width": 849.300048828125,
+                                        "height": 68.3994140625
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "group",
+                          "rect": {
+                            "top": 10409.3251953125,
+                            "left": 294.3999938964844,
+                            "width": 851.199951171875,
+                            "height": 69.349609375
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "last:border-b-0 overflow-hidden transition-all duration-500 bg-white border border-gray-200 shadow-sm rounded-xl hover:shadow-lg hover:border-gray-300 hover:-translate-y-1",
+                              "rect": {
+                                "top": 10409.3251953125,
+                                "left": 294.3999938964844,
+                                "width": 851.199951171875,
+                                "height": 69.349609375
+                              },
+                              "children": [
+                                {
+                                  "tag": "h3",
+                                  "id": null,
+                                  "className": "flex",
+                                  "rect": {
+                                    "top": 10410.275390625,
+                                    "left": 295.3500061035156,
+                                    "width": 849.300048828125,
+                                    "height": 68.3994140625
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "button",
+                                      "id": "radix-«R2mjnbnb»",
+                                      "className": "focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 px-6 py-5 text-base font-medium text-left text-gray-950 hover:no-underline group-hover:text-gray-700 transition-all duration-300 [&[data-state=open]>div>svg]:rotate-180",
+                                      "rect": {
+                                        "top": 10410.275390625,
+                                        "left": 295.3500061035156,
+                                        "width": 849.300048828125,
+                                        "height": 68.3994140625
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "group",
+                          "rect": {
+                            "top": 10498.3251953125,
+                            "left": 294.3999938964844,
+                            "width": 851.199951171875,
+                            "height": 69.349609375
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "last:border-b-0 overflow-hidden transition-all duration-500 bg-white border border-gray-200 shadow-sm rounded-xl hover:shadow-lg hover:border-gray-300 hover:-translate-y-1",
+                              "rect": {
+                                "top": 10498.3251953125,
+                                "left": 294.3999938964844,
+                                "width": 851.199951171875,
+                                "height": 69.349609375
+                              },
+                              "children": [
+                                {
+                                  "tag": "h3",
+                                  "id": null,
+                                  "className": "flex",
+                                  "rect": {
+                                    "top": 10499.275390625,
+                                    "left": 295.3500061035156,
+                                    "width": 849.300048828125,
+                                    "height": 68.3994140625
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "button",
+                                      "id": "radix-«R2qjnbnb»",
+                                      "className": "focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 px-6 py-5 text-base font-medium text-left text-gray-950 hover:no-underline group-hover:text-gray-700 transition-all duration-300 [&[data-state=open]>div>svg]:rotate-180",
+                                      "rect": {
+                                        "top": 10499.275390625,
+                                        "left": 295.3500061035156,
+                                        "width": 849.300048828125,
+                                        "height": 68.3994140625
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "className": "",
+      "rect": {
+        "top": 10645.5,
+        "left": 0,
+        "width": 1440,
+        "height": 604.4375
+      },
+      "children": [
+        {
+          "tag": "section",
+          "id": "community",
+          "className": "relative px-4 py-24 overflow-hidden text-white bg-gray-900",
+          "rect": {
+            "top": 10645.5,
+            "left": 0,
+            "width": 1440,
+            "height": 604.4375
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "relative z-10 max-w-4xl mx-auto text-center",
+              "rect": {
+                "top": 10741.5,
+                "left": 272,
+                "width": 896,
+                "height": 380.4375
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "mb-12",
+                  "rect": {
+                    "top": 10741.5,
+                    "left": 272,
+                    "width": 896,
+                    "height": 120.4375
+                  },
+                  "children": [
+                    {
+                      "tag": "h2",
+                      "id": null,
+                      "className": "mb-6 text-4xl font-medium !leading-[1.4] tracking-tight md:text-5xl",
+                      "rect": {
+                        "top": 10741.5,
+                        "left": 272,
+                        "width": 896,
+                        "height": 67.1875
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "grid gap-8 mb-12 md:grid-cols-3",
+                  "rect": {
+                    "top": 10909.9375,
+                    "left": 272,
+                    "width": 896,
+                    "height": 124
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "flex flex-col items-center space-y-4",
+                      "rect": {
+                        "top": 10909.9375,
+                        "left": 272,
+                        "width": 277.328125,
+                        "height": 124
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "flex flex-col items-center space-y-4",
+                      "rect": {
+                        "top": 10909.9375,
+                        "left": 581.328125,
+                        "width": 277.328125,
+                        "height": 124
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "flex flex-col items-center space-y-4",
+                      "rect": {
+                        "top": 10909.9375,
+                        "left": 890.65625,
+                        "width": 277.34375,
+                        "height": 124
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "footer",
+      "id": null,
+      "className": "bg-white border-t border-gray-200",
+      "rect": {
+        "top": 11249.9375,
+        "left": 0,
+        "width": 1440,
+        "height": 290
+      },
+      "children": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "max-w-6xl px-4 py-12 mx-auto sm:px-6 lg:px-8",
+          "rect": {
+            "top": 11250.9375,
+            "left": 144,
+            "width": 1152,
+            "height": 289
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "grid grid-cols-2 gap-8 mb-8 md:grid-cols-4",
+              "rect": {
+                "top": 11298.9375,
+                "left": 176,
+                "width": 1088,
+                "height": 108
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "col-span-2 md:col-span-1",
+                  "rect": {
+                    "top": 11298.9375,
+                    "left": 176,
+                    "width": 248,
+                    "height": 108
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "",
+                  "rect": {
+                    "top": 11298.9375,
+                    "left": 456,
+                    "width": 248,
+                    "height": 108
+                  },
+                  "children": [
+                    {
+                      "tag": "ul",
+                      "id": null,
+                      "className": "space-y-2 text-sm text-gray-600",
+                      "rect": {
+                        "top": 11330.9375,
+                        "left": 456,
+                        "width": 248,
+                        "height": 76
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "",
+                  "rect": {
+                    "top": 11298.9375,
+                    "left": 736,
+                    "width": 248,
+                    "height": 108
+                  },
+                  "children": [
+                    {
+                      "tag": "ul",
+                      "id": null,
+                      "className": "space-y-2 text-sm text-gray-600",
+                      "rect": {
+                        "top": 11330.9375,
+                        "left": 736,
+                        "width": 248,
+                        "height": 76
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "",
+                  "rect": {
+                    "top": 11298.9375,
+                    "left": 1016,
+                    "width": 248,
+                    "height": 108
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "className": "pt-8 border-t border-gray-200",
+              "rect": {
+                "top": 11438.9375,
+                "left": 176,
+                "width": 1088,
+                "height": 53
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "className": "fixed z-50 bottom-6 right-6",
+      "rect": {
+        "top": 5320,
+        "left": 1360,
+        "width": 56,
+        "height": 56
+      },
+      "children": [
+        {
+          "tag": "a",
+          "id": null,
+          "className": "flex items-center justify-center text-white transition-all duration-200 bg-gray-900 rounded-full shadow-lg w-14 h-14 hover:bg-gray-800 hover:scale-105 hover:shadow-xl",
+          "rect": {
+            "top": 5320,
+            "left": 1360,
+            "width": 56,
+            "height": 56
+          },
+          "children": []
+        }
+      ]
+    }
+  ]
+}

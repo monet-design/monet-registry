@@ -1,0 +1,92 @@
+[
+  {
+    "originalUrl": "https://superbilling.io/svg/logo-text-dark.svg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "logo",
+    "width": 637,
+    "height": 124,
+    "localPath": "images/image-0.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://superbilling.io/svg/bg-graphic.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "Feature showcase",
+    "width": 1464,
+    "height": 1352,
+    "localPath": "images/image-1.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://superbilling.io/_next/image?url=%2Fimages%2Fsections%2Fconcept%2Fplan.png&w=3840&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "요금제 생성",
+    "width": 1200,
+    "height": 675,
+    "localPath": "images/image-2.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://superbilling.io/_next/image?url=%2Fimages%2Fsections%2Fconcept%2Fpg.png&w=3840&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "PG사 연동",
+    "width": 1200,
+    "height": 675,
+    "localPath": "images/image-3.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://superbilling.io/_next/image?url=%2Fimages%2Fsections%2Fconcept%2Fintegration.png&w=3840&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "코드 한 줄로 구독 기능 구현",
+    "width": 1200,
+    "height": 675,
+    "localPath": "images/image-4.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://superbilling.io/images/sections/nocode-features/subscription.png",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "구독 관리 페이지",
+    "width": 1600,
+    "height": 900,
+    "localPath": "images/image-5.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://superbilling.io/images/sections/nocode-features/payment.png",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "결제 내역 페이지",
+    "width": 1600,
+    "height": 900,
+    "localPath": "images/image-6.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://superbilling.io/images/sections/nocode-features/invoice.png",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "인보이스 페이지",
+    "width": 1600,
+    "height": 900,
+    "localPath": "images/image-7.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://superbilling.io/images/sections/nocode-features/widget.png",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "Embed 위젯 지원",
+    "width": 1600,
+    "height": 900,
+    "localPath": "images/image-8.png",
+    "downloaded": true
+  }
+]

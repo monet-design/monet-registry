@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: superbilling-io-hero-0
+category: hero
+
+images:
+  preview: scraped/superbilling-io-2025-12-07/sections/section-0.png
+
+freeformKeywords:
+  - subscription billing
+  - payment system
+  - no-code
+  - SaaS
+  - hero banner
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T19:14:00Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - lead-capture
+  style:
+    - dark-theme
+    - gradient
+    - modern
+  layout:
+    - centered
+    - full-width
+  industry:
+    - saas
+    - fintech
+
+parentPage: superbilling-io-landing
+
+source:
+  type: url
+  url: https://superbilling.io/
+  scrapedAt: "2025-12-07T19:14:00Z"
+  sectionIndex: 0

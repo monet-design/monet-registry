@@ -8,6 +8,7 @@ import { create, insert, search as oramaSearch } from "@orama/orama";
 import type { Orama } from "@orama/orama";
 import { registryService } from "./registry.service";
 import type { SearchQuery, SearchResponse, SearchResult } from "../types";
+import { getPreviewImageUrl } from "../utils";
 
 const SEARCH_SCHEMA = {
   id: "string",
@@ -60,7 +61,7 @@ class SearchService {
         industryTags: component.tags.industry,
         freeformKeywords: component.freeformKeywords,
         fontFamily: component.fontFamily,
-        previewImage: component.images.preview,
+        previewImage: getPreviewImageUrl(component.id),
         createdAt: component.createdAt || "",
         status: component.status,
         language: component.language,

@@ -188,6 +188,7 @@ GET /api/v1/components
         "industry": ["saas", "tech"]
       },
       "status": "stable",
+      "language": "ko",
       "created_at": "2024-01-15T00:00:00.000Z"
     }
   ]
@@ -263,6 +264,7 @@ GET /api/v1/components/:id
     "fonts": ["Inter", "Poppins"],
     "component_path": "hero/hero-gradient-01",
     "status": "active",
+    "language": "ko",
     "created_at": "2024-01-15T00:00:00.000Z"
   },
   "similar_components": [
@@ -560,6 +562,373 @@ Cache-Control: public, s-maxage=3600, stale-while-revalidate=7200
 
 ---
 
+## Page Endpoints
+
+페이지 컴포넌트는 여러 섹션 컴포넌트로 구성된 전체 랜딩 페이지입니다.
+
+---
+
+### List Pages
+
+페이지 목록을 조회합니다. 필터링과 페이지네이션을 지원합니다.
+
+```
+GET /api/v1/pages
+```
+
+#### Query Parameters
+
+| 파라미터 | 타입 | 필수 | 기본값 | 설명 |
+|----------|------|------|--------|------|
+| limit | number | - | `20` | 결과 개수 (최대 50) |
+| offset | number | - | `0` | 건너뛸 결과 수 (페이지네이션) |
+| status | string | - | - | 상태 필터 (stable, draft, deprecated) |
+| sort_by | string | - | - | 정렬 기준 (`created_at`, `sections_count`) |
+| sort_order | string | - | `desc` | 정렬 순서 (`asc`, `desc`) |
+
+#### Response
+
+```json
+{
+  "success": true,
+  "pagination": {
+    "total": 25,
+    "offset": 0,
+    "limit": 20,
+    "hasNext": true
+  },
+  "pages": [
+    {
+      "id": "bolta-io",
+      "name": "bolta-io",
+      "title": "Bolta.io Landing Page",
+      "preview_image": "/registry/preview/pages/bolta-io.png",
+      "sections_count": 8,
+      "section_categories": ["hero", "feature", "stats", "testimonial", "pricing", "cta", "footer"],
+      "status": "stable",
+      "language": "ko",
+      "source": {
+        "type": "url",
+        "url": "https://bolta.io"
+      },
+      "created_at": "2024-01-15T00:00:00.000Z"
+    }
+  ]
+}
+```
+
+#### Example
+
+```bash
+# 전체 목록 (첫 20개)
+curl "https://registry.monet.design/api/v1/pages"
+
+# 페이지네이션
+curl "https://registry.monet.design/api/v1/pages?offset=20&limit=20"
+
+# 섹션 개수로 정렬
+curl "https://registry.monet.design/api/v1/pages?sort_by=sections_count&sort_order=desc"
+```
+
+#### Caching
+
+```
+Cache-Control: public, s-maxage=300, stale-while-revalidate=600
+```
+
+---
+
+### Get Page Details
+
+특정 페이지의 상세 정보를 조회합니다.
+
+```
+GET /api/v1/pages/:id
+```
+
+#### Path Parameters
+
+| 파라미터 | 타입 | 설명 |
+|----------|------|------|
+| id | string | 페이지 ID |
+
+#### Query Parameters
+
+| 파라미터 | 타입 | 기본값 | 설명 |
+|----------|------|--------|------|
+| include_sections | boolean | `true` | 섹션 목록 포함 여부 |
+| include_similar | boolean | `true` | 유사 페이지 포함 여부 |
+
+#### Response
+
+```json
+{
+  "success": true,
+  "page": {
+    "id": "bolta-io",
+    "name": "bolta-io",
+    "title": "Bolta.io Landing Page",
+    "images": {
+      "preview": "/registry/preview/pages/bolta-io.png"
+    },
+    "tags": {
+      "functional": ["animation", "form"],
+      "style": ["modern", "gradient"],
+      "layout": ["centered"],
+      "industry": ["saas", "fintech"]
+    },
+    "keywords": ["landing", "saas", "fintech"],
+    "source": {
+      "type": "url",
+      "url": "https://bolta.io",
+      "scrapedAt": "2024-01-15T00:00:00.000Z"
+    },
+    "component_path": "pages/bolta-io",
+    "status": "stable",
+    "language": "ko",
+    "created_at": "2024-01-15T00:00:00.000Z"
+  },
+  "sections": [
+    {
+      "id": "bolta-io-hero-1",
+      "name": "bolta-io-hero-1",
+      "category": "hero",
+      "order": 1,
+      "preview_image": "/registry/preview/bolta-io-hero-1.png",
+      "details": {
+        "name": "bolta-io-hero-1",
+        "tags": {
+          "functional": ["cta", "animation"],
+          "style": ["modern", "gradient"],
+          "layout": ["centered"],
+          "industry": ["saas"]
+        },
+        "keywords": ["hero", "landing"],
+        "component_path": "hero/bolta-io-hero-1"
+      }
+    }
+  ],
+  "page_info": {
+    "total_sections": 8,
+    "categories_used": ["hero", "feature", "stats", "testimonial", "pricing", "cta", "footer"]
+  },
+  "similar_pages": [
+    {
+      "id": "acme-landing",
+      "name": "acme-landing",
+      "title": "Acme Landing Page",
+      "sections_count": 7,
+      "match_reason": "Similar section composition"
+    }
+  ]
+}
+```
+
+#### Status Codes
+
+| 코드 | 설명 |
+|------|------|
+| 200 | 성공 |
+| 404 | 페이지를 찾을 수 없음 (유사 ID 제안 포함) |
+| 500 | 서버 에러 |
+
+#### Caching
+
+```
+Cache-Control: public, s-maxage=3600, stale-while-revalidate=7200
+```
+
+---
+
+### Get Page Sections
+
+특정 페이지의 섹션 목록을 조회합니다.
+
+```
+GET /api/v1/pages/:id/sections
+```
+
+#### Path Parameters
+
+| 파라미터 | 타입 | 설명 |
+|----------|------|------|
+| id | string | 페이지 ID |
+
+#### Query Parameters
+
+| 파라미터 | 타입 | 기본값 | 설명 |
+|----------|------|--------|------|
+| include_details | boolean | `false` | 섹션 상세 정보 포함 여부 |
+| category | string | - | 특정 카테고리 섹션만 필터링 |
+
+#### Response
+
+```json
+{
+  "success": true,
+  "page_id": "bolta-io",
+  "total_sections": 8,
+  "sections": [
+    {
+      "id": "bolta-io-hero-1",
+      "name": "bolta-io-hero-1",
+      "category": "hero",
+      "order": 1,
+      "preview_image": "/registry/preview/bolta-io-hero-1.png",
+      "details": {
+        "name": "bolta-io-hero-1",
+        "tags": {
+          "functional": ["cta"],
+          "style": ["modern"],
+          "layout": ["centered"],
+          "industry": ["saas"]
+        },
+        "keywords": ["hero"],
+        "component_path": "hero/bolta-io-hero-1"
+      }
+    }
+  ]
+}
+```
+
+#### Example
+
+```bash
+# 페이지의 모든 섹션
+curl "https://registry.monet.design/api/v1/pages/bolta-io/sections"
+
+# 상세 정보 포함
+curl "https://registry.monet.design/api/v1/pages/bolta-io/sections?include_details=true"
+
+# 특정 카테고리만 필터링
+curl "https://registry.monet.design/api/v1/pages/bolta-io/sections?category=hero"
+```
+
+#### Caching
+
+```
+Cache-Control: public, s-maxage=3600, stale-while-revalidate=7200
+```
+
+---
+
+### Search Pages
+
+페이지를 검색합니다. 텍스트 검색과 섹션 개수 필터링을 지원합니다.
+
+```
+GET /api/v1/pages/search
+```
+
+#### Query Parameters
+
+| 파라미터 | 타입 | 필수 | 기본값 | 설명 |
+|----------|------|------|--------|------|
+| query | string | O | - | 검색어 |
+| limit | number | - | `10` | 결과 개수 (최대 50) |
+| offset | number | - | `0` | 건너뛸 결과 수 (페이지네이션) |
+| min_sections | number | - | - | 최소 섹션 개수 |
+| max_sections | number | - | - | 최대 섹션 개수 |
+
+#### Response
+
+```json
+{
+  "success": true,
+  "query": "saas landing",
+  "total": 5,
+  "offset": 0,
+  "limit": 10,
+  "hasNext": false,
+  "elapsed_ms": 8,
+  "results": [
+    {
+      "id": "bolta-io",
+      "name": "bolta-io",
+      "title": "Bolta.io Landing Page",
+      "preview_image": "/registry/preview/pages/bolta-io.png",
+      "sections_count": 8,
+      "keywords": ["saas", "fintech", "landing"]
+    }
+  ]
+}
+```
+
+#### Example
+
+```bash
+# 텍스트 검색
+curl "https://registry.monet.design/api/v1/pages/search?query=saas+landing"
+
+# 섹션 개수 필터링
+curl "https://registry.monet.design/api/v1/pages/search?query=landing&min_sections=5"
+
+# 페이지네이션
+curl "https://registry.monet.design/api/v1/pages/search?query=modern&limit=20&offset=0"
+```
+
+#### Caching
+
+```
+Cache-Control: public, s-maxage=300, stale-while-revalidate=600
+```
+
+---
+
+### Get Pages Stats
+
+페이지 레지스트리의 전체 통계를 조회합니다.
+
+```
+GET /api/v1/pages/stats
+```
+
+#### Response
+
+```json
+{
+  "success": true,
+  "total_pages": 25,
+  "total_sections_across_pages": 180,
+  "average_sections_per_page": 7.2,
+  "section_categories": [
+    { "category": "hero", "count": 25 },
+    { "category": "feature", "count": 42 },
+    { "category": "testimonial", "count": 18 },
+    { "category": "pricing", "count": 15 },
+    { "category": "cta", "count": 30 },
+    { "category": "footer", "count": 25 }
+  ],
+  "sources": {
+    "url": 20,
+    "manual": 5
+  },
+  "query_tips": [
+    "Search for pages by source URL or title",
+    "Filter pages by minimum section count: min_sections=3",
+    "View all sections of a page with /pages/{id}/sections",
+    "Get detailed section info with include_details=true"
+  ]
+}
+```
+
+| 필드 | 설명 |
+|------|------|
+| total_pages | 등록된 전체 페이지 수 |
+| total_sections_across_pages | 모든 페이지의 총 섹션 수 |
+| average_sections_per_page | 페이지당 평균 섹션 수 |
+| section_categories | 카테고리별 섹션 분포 |
+| sources.url | URL에서 스크래핑한 페이지 수 |
+| sources.manual | 수동으로 추가한 페이지 수 |
+
+#### Caching
+
+```
+Cache-Control: public, s-maxage=3600, stale-while-revalidate=7200
+```
+
+---
+
 ## Error Codes
 
 | 코드 | HTTP Status | 설명 |
@@ -612,6 +981,42 @@ const getComponentCode = async (id) => {
 
   return data.code;
 };
+
+// 페이지 검색
+const searchPages = async (query) => {
+  const res = await fetch(`${BASE_URL}/api/v1/pages/search?query=${encodeURIComponent(query)}`);
+  const data = await res.json();
+
+  if (!data.success) {
+    throw new Error(data.error.message);
+  }
+
+  return data.results;
+};
+
+// 페이지 상세 조회
+const getPage = async (id) => {
+  const res = await fetch(`${BASE_URL}/api/v1/pages/${id}`);
+  const data = await res.json();
+
+  if (!data.success) {
+    throw new Error(data.error.message);
+  }
+
+  return data.page;
+};
+
+// 페이지 섹션 목록 조회
+const getPageSections = async (id, includeDetails = false) => {
+  const res = await fetch(`${BASE_URL}/api/v1/pages/${id}/sections?include_details=${includeDetails}`);
+  const data = await res.json();
+
+  if (!data.success) {
+    throw new Error(data.error.message);
+  }
+
+  return data.sections;
+};
 ```
 
 ### cURL
@@ -643,6 +1048,21 @@ curl https://registry.monet.design/api/v1/filters
 
 # 통계 조회
 curl https://registry.monet.design/api/v1/stats
+
+# 페이지 목록 조회
+curl "https://registry.monet.design/api/v1/pages"
+
+# 페이지 검색
+curl "https://registry.monet.design/api/v1/pages/search?query=saas+landing"
+
+# 페이지 상세 조회
+curl https://registry.monet.design/api/v1/pages/bolta-io
+
+# 페이지 섹션 목록 조회
+curl "https://registry.monet.design/api/v1/pages/bolta-io/sections?include_details=true"
+
+# 페이지 통계 조회
+curl https://registry.monet.design/api/v1/pages/stats
 ```
 
 ---

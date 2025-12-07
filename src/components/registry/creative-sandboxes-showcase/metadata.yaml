@@ -2,8 +2,7 @@ schemaVersion: "2.0"
 name: creative-sandboxes-showcase
 category: feature-showcase
 images:
-  preview: >-
-    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/codesandbox-sandboxes-page-section-discover-creative-sandboxes.jpg
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/codesandbox-sandboxes-page-section-discover-creative-sandboxes.jpg
 tags:
   functional:
     - animation
@@ -41,3 +40,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

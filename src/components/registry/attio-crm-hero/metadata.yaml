@@ -4,10 +4,23 @@ category: hero
 images:
   preview: agent-input/unsection-hero/attio-home-page-hero-section.jpg
 tags:
-  functional: [modal, filter, animation]
-  style: [minimal, modern, light-theme, serif, shadow]
-  layout: [centered, single-column]
-  industry: [saas, startup, enterprise]
+  functional:
+    - modal
+    - filter
+    - animation
+  style:
+    - minimal
+    - modern
+    - light-theme
+    - serif
+    - shadow
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - startup
+    - enterprise
 freeformKeywords:
   - hero
   - CRM
@@ -29,3 +42,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

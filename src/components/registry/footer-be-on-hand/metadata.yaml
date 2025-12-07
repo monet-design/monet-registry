@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: footer-be-on-hand
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/be-on-hand-home-section-footer.jpg
-
 tags:
   functional:
     - hover-effect
@@ -35,9 +33,8 @@ freeformKeywords:
   - script logo
   - multi-column
   - underline links
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:49:39Z"
 status: stable
+language: en

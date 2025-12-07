@@ -1,15 +1,25 @@
 schemaVersion: "2.0"
 name: grove-footer
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/grove-home-page-section-footer.jpg
-
 tags:
-  functional: [contact-form]
-  style: [light-theme, minimal, modern, corporate, sans-serif]
-  layout: [three-column, full-width, responsive]
-  industry: [healthcare, saas, enterprise]
+  functional:
+    - contact-form
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - corporate
+    - sans-serif
+  layout:
+    - three-column
+    - full-width
+    - responsive
+  industry:
+    - healthcare
+    - saas
+    - enterprise
 freeformKeywords:
   - footer
   - grove
@@ -22,9 +32,8 @@ freeformKeywords:
   - AI
   - demo
   - professional
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:14:33Z"
 status: stable
+language: en

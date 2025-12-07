@@ -1,15 +1,23 @@
 schemaVersion: "2.0"
 name: footer-coterie
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/coterie-home-page-section-footer.jpg
-
 tags:
-  functional: [newsletter, email-capture]
-  style: [minimal, modern, serif, light-theme]
-  layout: [two-column, full-width, responsive]
-  industry: [e-commerce]
+  functional:
+    - newsletter
+    - email-capture
+  style:
+    - minimal
+    - modern
+    - serif
+    - light-theme
+  layout:
+    - two-column
+    - full-width
+    - responsive
+  industry:
+    - e-commerce
 freeformKeywords:
   - footer
   - newsletter
@@ -25,10 +33,9 @@ freeformKeywords:
   - serif
   - baby products
   - ecommerce
-
 fontFamily:
   - DM Serif Display
   - Inter
-
 createdAt: "2025-12-03T19:53:42Z"
 status: stable
+language: en

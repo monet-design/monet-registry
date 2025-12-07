@@ -1,15 +1,25 @@
 schemaVersion: "2.0"
 name: rivian-style-footer
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/rivian-home-page-section-footer.jpg
-
 tags:
-  functional: [dropdown]
-  style: [dark-theme, minimal, modern, corporate, sans-serif]
-  layout: [multi-column, full-width, responsive]
-  industry: [automotive, enterprise, corporate]
+  functional:
+    - dropdown
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - corporate
+    - sans-serif
+  layout:
+    - multi-column
+    - full-width
+    - responsive
+  industry:
+    - automotive
+    - enterprise
+    - corporate
 freeformKeywords:
   - footer
   - navigation
@@ -23,9 +33,8 @@ freeformKeywords:
   - legal links
   - minimal
   - clean
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:34:13Z"
 status: stable
+language: en

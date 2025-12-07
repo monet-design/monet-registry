@@ -1,15 +1,25 @@
 schemaVersion: "2.0"
 name: pricing-opl-master-33
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-master-33.png
-
 tags:
-  functional: [hover-effect]
-  style: [dark-theme, modern, gradient, colorful]
-  layout: [two-column, centered, card-grid]
-  industry: [saas, fintech, startup, enterprise]
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - colorful
+  layout:
+    - two-column
+    - centered
+    - card-grid
+  industry:
+    - saas
+    - fintech
+    - startup
+    - enterprise
 freeformKeywords:
   - pricing
   - SaaS
@@ -22,9 +32,8 @@ freeformKeywords:
   - scale
   - customizable
   - enterprise
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:25:41Z"
 status: stable
+language: en

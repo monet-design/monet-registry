@@ -1,15 +1,27 @@
 schemaVersion: "2.0"
 name: footer-neycher-newsletter
 category: footer
-
 images:
   preview: agent-input/footer/neycher-home-page-section-footer.jpg
-
 tags:
-  functional: [newsletter, email-capture, contact-form, hover-effect, scroll-animation]
-  style: [dark-theme, minimal, elegant, serif]
-  layout: [three-column, responsive, left-aligned]
-  industry: [e-commerce, healthcare]
+  functional:
+    - newsletter
+    - email-capture
+    - contact-form
+    - hover-effect
+    - scroll-animation
+  style:
+    - dark-theme
+    - minimal
+    - elegant
+    - serif
+  layout:
+    - three-column
+    - responsive
+    - left-aligned
+  industry:
+    - e-commerce
+    - healthcare
 freeformKeywords:
   - footer
   - newsletter
@@ -23,10 +35,9 @@ freeformKeywords:
   - minimal
   - charcoal
   - feminine
-
 fontFamily:
   - Instrument Serif
   - Inter
-
 createdAt: "2025-12-03T21:25:35Z"
 status: stable
+language: en

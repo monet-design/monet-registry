@@ -1,15 +1,25 @@
 schemaVersion: "2.0"
 name: footer-current
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/current-home-page-section-footer.jpg
-
 tags:
   functional: []
-  style: [light-theme, minimal, modern, corporate, sans-serif]
-  layout: [four-column, full-width, responsive]
-  industry: [fintech, saas, enterprise, startup]
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - corporate
+    - sans-serif
+  layout:
+    - four-column
+    - full-width
+    - responsive
+  industry:
+    - fintech
+    - saas
+    - enterprise
+    - startup
 freeformKeywords:
   - footer
   - current
@@ -23,9 +33,8 @@ freeformKeywords:
   - navigation
   - clean
   - minimal
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:52:56Z"
 status: stable
+language: en

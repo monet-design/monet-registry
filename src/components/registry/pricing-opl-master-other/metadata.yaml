@@ -1,15 +1,23 @@
 schemaVersion: "2.0"
 name: pricing-opl-master-other
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-master-other.png
-
 tags:
-  functional: [tabs, comparison]
-  style: [light-theme, minimal, modern, colorful]
-  layout: [centered, single-column]
-  industry: [saas, agency]
+  functional:
+    - tabs
+    - comparison
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - colorful
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - agency
 freeformKeywords:
   - pricing
   - design agency
@@ -21,9 +29,8 @@ freeformKeywords:
   - minimal
   - SaaS
   - subscription
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:44:22Z"
 status: stable
+language: en

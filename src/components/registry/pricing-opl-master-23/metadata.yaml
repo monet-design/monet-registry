@@ -1,15 +1,25 @@
 schemaVersion: "2.0"
 name: pricing-opl-master-23
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-master-23.png
-
 tags:
-  functional: [hover-effect]
-  style: [light-theme, minimal, modern, gradient, colorful]
-  layout: [two-column, centered, contained, responsive]
-  industry: [saas, startup]
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - gradient
+    - colorful
+  layout:
+    - two-column
+    - centered
+    - contained
+    - responsive
+  industry:
+    - saas
+    - startup
 freeformKeywords:
   - pricing
   - plans
@@ -21,9 +31,8 @@ freeformKeywords:
   - affordable
   - saas
   - startup
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:22:18Z"
 status: stable
+language: en

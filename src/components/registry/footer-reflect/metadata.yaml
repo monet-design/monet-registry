@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: footer-reflect
 category: footer
-
 images:
   preview: agent-input/footer/reflect-home-page-section-footer.jpg
-
 tags:
   functional:
     - newsletter
@@ -36,9 +34,8 @@ freeformKeywords:
   - minimal
   - modern
   - saas
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:32:51Z"
 status: stable
+language: en

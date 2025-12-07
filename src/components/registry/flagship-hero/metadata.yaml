@@ -2,13 +2,30 @@ schemaVersion: "2.0"
 name: flagship-hero
 category: hero
 images:
-  preview: >-
-    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/flaghsip-home-page-section-hero.jpg
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/flaghsip-home-page-section-hero.jpg
 tags:
-  functional: [animation, hover-effect]
-  style: [modern, minimal, elegant, gradient, serif, colorful, pastel, light-theme]
-  layout: [centered, full-width, asymmetric, responsive]
-  industry: [e-commerce, saas, retail, startup]
+  functional:
+    - animation
+    - hover-effect
+  style:
+    - modern
+    - minimal
+    - elegant
+    - gradient
+    - serif
+    - colorful
+    - pastel
+    - light-theme
+  layout:
+    - centered
+    - full-width
+    - asymmetric
+    - responsive
+  industry:
+    - e-commerce
+    - saas
+    - retail
+    - startup
 freeformKeywords:
   - retail
   - store
@@ -27,3 +44,4 @@ fontFamily:
   - Instrument Serif
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

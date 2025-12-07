@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: pricing-opl-screenshot-copy-4
 category: pricing
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-screenshot-copy-4.png
-
 tags:
   functional:
     - hover-effect
@@ -34,9 +32,8 @@ freeformKeywords:
   - design services
   - webflow
   - marketing
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:55:04Z"
 status: stable
+language: en

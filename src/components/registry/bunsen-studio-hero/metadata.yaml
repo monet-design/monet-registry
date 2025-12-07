@@ -4,10 +4,21 @@ category: hero
 images:
   preview: agent-input/unsection-hero/bunsen-studio-home-page-section-hero.jpg
 tags:
-  functional: [animation, scroll-animation]
-  style: [dark-theme, minimal, modern, gradient]
-  layout: [centered, full-width]
-  industry: [creative, agency, startup]
+  functional:
+    - animation
+    - scroll-animation
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - gradient
+  layout:
+    - centered
+    - full-width
+  industry:
+    - creative
+    - agency
+    - startup
 freeformKeywords:
   - hero
   - dark theme
@@ -23,3 +34,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

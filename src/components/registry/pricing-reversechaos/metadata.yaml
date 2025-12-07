@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: pricing-reversechaos
 category: pricing
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/reversechaos.png
-
 tags:
   functional:
     - hover-effect
@@ -34,10 +32,9 @@ freeformKeywords:
   - SaaS
   - monthly pricing
   - price cards
-
 fontFamily:
   - Inter
   - Instrument Serif
-
 createdAt: "2025-12-03T19:55:06Z"
 status: stable
+language: en

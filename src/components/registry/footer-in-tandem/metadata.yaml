@@ -1,15 +1,26 @@
 schemaVersion: "2.0"
 name: footer-in-tandem
 category: footer
-
 images:
   preview: agent-input/footer/in-tandem-home-page-section-footer.jpg
-
 tags:
   functional: []
-  style: [minimal, elegant, corporate, serif, light-theme]
-  layout: [two-column, left-aligned, responsive]
-  industry: [corporate, saas, agency, startup, enterprise]
+  style:
+    - minimal
+    - elegant
+    - corporate
+    - serif
+    - light-theme
+  layout:
+    - two-column
+    - left-aligned
+    - responsive
+  industry:
+    - corporate
+    - saas
+    - agency
+    - startup
+    - enterprise
 freeformKeywords:
   - footer
   - minimal
@@ -22,10 +33,9 @@ freeformKeywords:
   - family
   - services
   - two column
-
 fontFamily:
   - Instrument Serif
   - Inter
-
 createdAt: "2025-12-03T21:17:03Z"
 status: stable
+language: en

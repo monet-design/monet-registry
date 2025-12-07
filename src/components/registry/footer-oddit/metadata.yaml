@@ -1,15 +1,25 @@
 schemaVersion: "2.0"
 name: footer-oddit
 category: footer
-
 images:
   preview: agent-input/footer/oddit-home-page-section-footer.jpg
-
 tags:
-  functional: [newsletter, email-capture, contact-form]
-  style: [playful, colorful, modern, bold]
-  layout: [multi-column, split-layout, full-width]
-  industry: [saas, startup]
+  functional:
+    - newsletter
+    - email-capture
+    - contact-form
+  style:
+    - playful
+    - colorful
+    - modern
+    - bold
+  layout:
+    - multi-column
+    - split-layout
+    - full-width
+  industry:
+    - saas
+    - startup
 freeformKeywords:
   - footer
   - newsletter
@@ -26,10 +36,9 @@ freeformKeywords:
   - split layout
   - startup
   - saas
-
 fontFamily:
   - Instrument Serif
   - Inter
-
 createdAt: "2025-12-03T21:26:08Z"
 status: stable
+language: en

@@ -2,13 +2,26 @@ schemaVersion: "2.0"
 name: lowes-innovation-hero
 category: hero
 images:
-  preview: >-
-    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/lowe-s-innovation-labs-home-page-section-hero.jpg
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/lowe-s-innovation-labs-home-page-section-hero.jpg
 tags:
-  functional: [carousel, animation, hover-effect]
-  style: [light-theme, minimal, modern, corporate, sans-serif]
-  layout: [single-column, left-aligned, full-width, responsive]
-  industry: [enterprise, corporate]
+  functional:
+    - carousel
+    - animation
+    - hover-effect
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - corporate
+    - sans-serif
+  layout:
+    - single-column
+    - left-aligned
+    - full-width
+    - responsive
+  industry:
+    - enterprise
+    - corporate
 freeformKeywords:
   - hero
   - innovation
@@ -27,3 +40,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

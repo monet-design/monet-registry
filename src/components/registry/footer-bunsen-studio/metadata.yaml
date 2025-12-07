@@ -1,15 +1,26 @@
 schemaVersion: "2.0"
 name: footer-bunsen-studio
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/bunsen-studio-home-page-section-footer.jpg
-
 tags:
-  functional: [email-capture, newsletter]
-  style: [dark-theme, gradient, glow, modern, bold, colorful]
-  layout: [four-column, responsive]
-  industry: [creative, agency, studio]
+  functional:
+    - email-capture
+    - newsletter
+  style:
+    - dark-theme
+    - gradient
+    - glow
+    - modern
+    - bold
+    - colorful
+  layout:
+    - four-column
+    - responsive
+  industry:
+    - creative
+    - agency
+    - studio
 freeformKeywords:
   - footer
   - cta
@@ -25,9 +36,8 @@ freeformKeywords:
   - studio
   - agency
   - creative
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:51:44Z"
 status: stable
+language: en

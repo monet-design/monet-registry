@@ -1,15 +1,23 @@
 schemaVersion: "2.0"
 name: pricing-opl-master-27
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-master-27.png
-
 tags:
-  functional: [toggle]
-  style: [modern, light-theme, minimal]
-  layout: [three-column, card-grid, centered]
-  industry: [saas, startup, hosting]
+  functional:
+    - toggle
+  style:
+    - modern
+    - light-theme
+    - minimal
+  layout:
+    - three-column
+    - card-grid
+    - centered
+  industry:
+    - saas
+    - startup
+    - hosting
 freeformKeywords:
   - pricing
   - plans
@@ -22,9 +30,8 @@ freeformKeywords:
   - green
   - cards
   - features list
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:25:07Z"
 status: stable
+language: en

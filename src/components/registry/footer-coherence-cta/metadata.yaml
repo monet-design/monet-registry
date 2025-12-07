@@ -1,15 +1,30 @@
 schemaVersion: "2.0"
 name: footer-coherence-cta
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/coherence-home-section-footer.jpg
-
 tags:
-  functional: [email-capture, lead-capture, video, hover-effect]
-  style: [dark-theme, minimal, modern, gradient, sans-serif]
-  layout: [single-column, centered, full-width, responsive]
-  industry: [saas, startup, ai, fintech]
+  functional:
+    - email-capture
+    - lead-capture
+    - video
+    - hover-effect
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - gradient
+    - sans-serif
+  layout:
+    - single-column
+    - centered
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - startup
+    - ai
+    - fintech
 freeformKeywords:
   - footer
   - cta
@@ -25,9 +40,8 @@ freeformKeywords:
   - buttons
   - demo
   - sandbox
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:53:41Z"
 status: stable
+language: en

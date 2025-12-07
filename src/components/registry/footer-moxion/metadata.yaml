@@ -1,15 +1,23 @@
 schemaVersion: "2.0"
 name: footer-moxion
 category: footer
-
 images:
   preview: agent-input/footer/moxion-home-page-section-footer.jpg
-
 tags:
-  functional: [progress]
-  style: [dark-theme, modern, bold, gradient]
-  layout: [multi-column, full-width]
-  industry: [enterprise, startup, ai]
+  functional:
+    - progress
+  style:
+    - dark-theme
+    - modern
+    - bold
+    - gradient
+  layout:
+    - multi-column
+    - full-width
+  industry:
+    - enterprise
+    - startup
+    - ai
 freeformKeywords:
   - footer
   - dark
@@ -23,9 +31,8 @@ freeformKeywords:
   - power
   - moxion
   - multi-column
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:24:51Z"
 status: stable
+language: en

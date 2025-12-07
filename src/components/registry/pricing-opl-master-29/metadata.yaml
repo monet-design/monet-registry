@@ -1,15 +1,27 @@
 schemaVersion: "2.0"
 name: pricing-opl-master-29
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-master-29.png
-
 tags:
-  functional: [tabs, hover-effect]
-  style: [dark-theme, light-theme, minimal, modern, shadow]
-  layout: [three-column, centered, card-grid, responsive]
-  industry: [saas, creative, design-tools]
+  functional:
+    - tabs
+    - hover-effect
+  style:
+    - dark-theme
+    - light-theme
+    - minimal
+    - modern
+    - shadow
+  layout:
+    - three-column
+    - centered
+    - card-grid
+    - responsive
+  industry:
+    - saas
+    - creative
+    - design-tools
 freeformKeywords:
   - pricing
   - icon set
@@ -21,9 +33,8 @@ freeformKeywords:
   - product hunt
   - info table
   - features list
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:25:14Z"
 status: stable
+language: en

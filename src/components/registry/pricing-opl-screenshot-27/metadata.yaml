@@ -1,15 +1,23 @@
 schemaVersion: "2.0"
 name: pricing-opl-screenshot-27
 category: pricing
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-screenshot-27.png
-
 tags:
-  functional: [toggle]
-  style: [dark-theme, modern, glassmorphism, gradient]
-  layout: [centered, card-grid, two-column]
-  industry: [saas, startup]
+  functional:
+    - toggle
+  style:
+    - dark-theme
+    - modern
+    - glassmorphism
+    - gradient
+  layout:
+    - centered
+    - card-grid
+    - two-column
+  industry:
+    - saas
+    - startup
 freeformKeywords:
   - pricing
   - subscription
@@ -23,9 +31,8 @@ freeformKeywords:
   - dark theme
   - SaaS
   - prototyper
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:51:27Z"
 status: stable
+language: en

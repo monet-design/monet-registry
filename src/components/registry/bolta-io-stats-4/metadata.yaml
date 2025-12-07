@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: bolta-io-stats-4
 category: stats
-
 images:
   preview: scraped/bolta-io-2025-12-07/sections/section-4.png
-
 freeformKeywords:
   - stats
   - numbers
@@ -12,10 +10,8 @@ freeformKeywords:
   - korean
   - fintech
   - social proof
-
 fontFamily:
   - Inter
-
 tags:
   functional: []
   style:
@@ -30,14 +26,12 @@ tags:
   industry:
     - saas
     - fintech
-
 createdAt: "2025-12-07T12:06:14Z"
 status: stable
-
 parentPage: bolta-io-landing
-
 source:
   type: url
   url: https://bolta.io/
   scrapedAt: "2025-12-07T12:06:14Z"
   sectionIndex: 4
+language: ko

@@ -4,10 +4,23 @@ category: hero
 images:
   preview: agent-input/unsection-hero/ramp-home-page-section-hero.jpg
 tags:
-  functional: [email-capture]
-  style: [modern, gradient, serif, sans-serif, corporate]
-  layout: [centered, card-grid, asymmetric, responsive]
-  industry: [fintech, saas, enterprise]
+  functional:
+    - email-capture
+  style:
+    - modern
+    - gradient
+    - serif
+    - sans-serif
+    - corporate
+  layout:
+    - centered
+    - card-grid
+    - asymmetric
+    - responsive
+  industry:
+    - fintech
+    - saas
+    - enterprise
 freeformKeywords:
   - hero
   - fintech
@@ -26,3 +39,4 @@ fontFamily:
   - Inter
 createdAt: "2025-12-01T00:00:00Z"
 status: stable
+language: en

@@ -1,15 +1,27 @@
 schemaVersion: "2.0"
 name: riotters-footer
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/riotters-home-page-section-footer.jpg
-
 tags:
-  functional: [email-capture, contact-form]
-  style: [light-theme, minimal, modern, bold, sans-serif]
-  layout: [three-column, left-aligned, full-width, responsive]
-  industry: [agency, creative, startup]
+  functional:
+    - email-capture
+    - contact-form
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - bold
+    - sans-serif
+  layout:
+    - three-column
+    - left-aligned
+    - full-width
+    - responsive
+  industry:
+    - agency
+    - creative
+    - startup
 freeformKeywords:
   - footer
   - agency
@@ -24,9 +36,8 @@ freeformKeywords:
   - modern
   - clean
   - white background
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:34:03Z"
 status: stable
+language: en

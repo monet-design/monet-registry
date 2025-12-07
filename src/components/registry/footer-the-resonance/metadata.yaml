@@ -1,15 +1,28 @@
 schemaVersion: "2.0"
 name: footer-the-resonance
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/the-resonance-home-page-section-footer.jpg
-
 tags:
-  functional: [newsletter, email-capture, lead-capture]
-  style: [dark-theme, modern, neon, gradient, bold]
-  layout: [two-column, split-layout, responsive]
-  industry: [startup, ai, saas, creative]
+  functional:
+    - newsletter
+    - email-capture
+    - lead-capture
+  style:
+    - dark-theme
+    - modern
+    - neon
+    - gradient
+    - bold
+  layout:
+    - two-column
+    - split-layout
+    - responsive
+  industry:
+    - startup
+    - ai
+    - saas
+    - creative
 freeformKeywords:
   - footer
   - newsletter
@@ -26,9 +39,8 @@ freeformKeywords:
   - AI
   - prompts
   - brand identity
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T22:07:34Z"
 status: stable
+language: en

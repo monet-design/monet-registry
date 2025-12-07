@@ -4,10 +4,27 @@ category: hero
 images:
   preview: agent-input/unsection-hero/fin-ai-ecommerce-hero-design.jpg
 tags:
-  functional: [animation, hover-effect, scroll-animation]
-  style: [dark-theme, modern, gradient, glassmorphism, shadow, blur]
-  layout: [two-column, centered, asymmetric, responsive]
-  industry: [saas, fintech, e-commerce, ai]
+  functional:
+    - animation
+    - hover-effect
+    - scroll-animation
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - glassmorphism
+    - shadow
+    - blur
+  layout:
+    - two-column
+    - centered
+    - asymmetric
+    - responsive
+  industry:
+    - saas
+    - fintech
+    - e-commerce
+    - ai
 freeformKeywords:
   - hero
   - AI agent
@@ -24,3 +41,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

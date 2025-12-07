@@ -1,15 +1,25 @@
 schemaVersion: "2.0"
 name: pricing-opl-master-premium-business
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-master-premium-business.png
-
 tags:
-  functional: [toggle, hover-effect]
-  style: [dark-theme, modern, gradient, glow]
-  layout: [three-column, card-grid, centered]
-  industry: [saas, enterprise, startup]
+  functional:
+    - toggle
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - glow
+  layout:
+    - three-column
+    - card-grid
+    - centered
+  industry:
+    - saas
+    - enterprise
+    - startup
 freeformKeywords:
   - pricing
   - subscription
@@ -27,9 +37,8 @@ freeformKeywords:
   - checkmark
   - saas
   - business
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:48:33Z"
 status: stable
+language: en

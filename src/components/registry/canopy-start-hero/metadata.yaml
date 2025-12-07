@@ -2,8 +2,7 @@ schemaVersion: "2.0"
 name: canopy-start-hero
 category: hero
 images:
-  preview: >-
-    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/canopy-start-page-section-hero.jpg
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/canopy-start-page-section-hero.jpg
 tags:
   functional:
     - contact-form
@@ -40,3 +39,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

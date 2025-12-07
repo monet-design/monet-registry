@@ -4,10 +4,28 @@ category: hero
 images:
   preview: /registry/duffel-hero/preview.jpg
 tags:
-  functional: [animation, hover-effect, search]
-  style: [light-theme, minimal, modern, elegant, serif, shadow, gradient]
-  layout: [centered, single-column, full-width, responsive]
-  industry: [saas, travel, fintech, startup]
+  functional:
+    - animation
+    - hover-effect
+    - search
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - elegant
+    - serif
+    - shadow
+    - gradient
+  layout:
+    - centered
+    - single-column
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - travel
+    - fintech
+    - startup
 freeformKeywords:
   - hero
   - travel
@@ -33,3 +51,4 @@ fontFamily:
   - Instrument Serif
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

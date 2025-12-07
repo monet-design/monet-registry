@@ -1,15 +1,27 @@
 schemaVersion: "2.0"
 name: footer-minimal-three-column
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/gaelle-perrin-home-page-section-footer.jpg
-
 tags:
-  functional: [email-capture, contact-form]
-  style: [minimal, modern, clean, monochrome, sans-serif]
-  layout: [three-column, responsive]
-  industry: [saas, startup, agency, portfolio, corporate]
+  functional:
+    - email-capture
+    - contact-form
+  style:
+    - minimal
+    - modern
+    - clean
+    - monochrome
+    - sans-serif
+  layout:
+    - three-column
+    - responsive
+  industry:
+    - saas
+    - startup
+    - agency
+    - portfolio
+    - corporate
 freeformKeywords:
   - footer
   - minimal
@@ -22,9 +34,8 @@ freeformKeywords:
   - brand
   - email
   - phone
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:14:20Z"
 status: stable
+language: en

@@ -1,15 +1,26 @@
 schemaVersion: "2.0"
 name: pricing-opl-master-4
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-master-4.png
-
 tags:
-  functional: [email-capture, toggle]
-  style: [modern, bold, minimal, monochrome]
-  layout: [two-column, card-grid, centered, responsive]
-  industry: [saas, creative, startup]
+  functional:
+    - email-capture
+    - toggle
+  style:
+    - modern
+    - bold
+    - minimal
+    - monochrome
+  layout:
+    - two-column
+    - card-grid
+    - centered
+    - responsive
+  industry:
+    - saas
+    - creative
+    - startup
 freeformKeywords:
   - pricing
   - subscription
@@ -23,9 +34,8 @@ freeformKeywords:
   - plan
   - cards
   - dual pricing
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:25:17Z"
 status: stable
+language: en

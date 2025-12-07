@@ -28,6 +28,7 @@ export interface RegistryEntry {
   componentPath: string;
   createdAt?: string;
   status: string;
+  language: string;
 }
 
 // Pagination metadata
@@ -102,6 +103,7 @@ export interface ComponentListItem {
   };
   status: string;
   created_at?: string;
+  language: string;
 }
 
 // Get Component Code Response
@@ -167,6 +169,7 @@ export interface ComponentMetadata {
   component_path: string;
   status: string;
   created_at?: string;
+  language: string;
 }
 
 export interface SimilarComponent {
@@ -321,6 +324,7 @@ export interface PageRegistryEntry {
   };
   createdAt?: string;
   status: string;
+  language: string;
   sections: PageSectionReference[];
   pageInfo: {
     totalSections: number;
@@ -347,6 +351,7 @@ export interface PageListItem {
     url?: string;
   };
   created_at?: string;
+  language: string;
 }
 
 // Get Page Details Response
@@ -383,6 +388,7 @@ export interface PageMetadata {
   component_path: string;
   status: string;
   created_at?: string;
+  language: string;
 }
 
 export interface PageSectionItem {

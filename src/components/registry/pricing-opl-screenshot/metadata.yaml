@@ -1,15 +1,22 @@
 schemaVersion: "2.0"
 name: pricing-opl-screenshot
 category: pricing
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-screenshot.png
-
 tags:
-  functional: [toggle]
-  style: [light-theme, modern, minimal, sans-serif]
-  layout: [four-column, centered, card-grid]
-  industry: [saas]
+  functional:
+    - toggle
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - four-column
+    - centered
+    - card-grid
+  industry:
+    - saas
 freeformKeywords:
   - pricing
   - plans
@@ -25,9 +32,8 @@ freeformKeywords:
   - enterprise
   - saas
   - pricing cards
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:55:07Z"
 status: stable
+language: en

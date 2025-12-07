@@ -2,13 +2,27 @@ schemaVersion: "2.0"
 name: checkout-product-hero
 category: hero
 images:
-  preview: >-
-    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/checkout-product-page-section-hero.jpg
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/checkout-product-page-section-hero.jpg
 tags:
-  functional: [email-capture, lead-capture]
-  style: [light-theme, modern, minimal, colorful, gradient, sans-serif]
-  layout: [two-column, split-layout, left-aligned, responsive]
-  industry: [fintech, saas, e-commerce]
+  functional:
+    - email-capture
+    - lead-capture
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - colorful
+    - gradient
+    - sans-serif
+  layout:
+    - two-column
+    - split-layout
+    - left-aligned
+    - responsive
+  industry:
+    - fintech
+    - saas
+    - e-commerce
 freeformKeywords:
   - hero
   - payment
@@ -25,3 +39,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

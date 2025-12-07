@@ -1,15 +1,24 @@
 schemaVersion: "2.0"
 name: sevalla-footer
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/sevalla-home-page-section-footer.jpg
-
 tags:
-  functional: [toggle]
-  style: [dark-theme, modern, minimal, corporate, sans-serif]
-  layout: [four-column, full-width, responsive]
-  industry: [saas, enterprise]
+  functional:
+    - toggle
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - corporate
+    - sans-serif
+  layout:
+    - four-column
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - enterprise
 freeformKeywords:
   - footer
   - dark
@@ -26,9 +35,8 @@ freeformKeywords:
   - links
   - copyright
   - social media
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:35:50Z"
 status: stable
+language: en

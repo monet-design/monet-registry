@@ -4,10 +4,24 @@ category: hero
 images:
   preview: agent-input/unsection-hero/kajabi-home-page-section-hero.jpg
 tags:
-  functional: [animation, hover-effect]
-  style: [light-theme, modern, minimal, corporate, gradient]
-  layout: [centered, single-column, full-width, responsive]
-  industry: [saas, education, creative]
+  functional:
+    - animation
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - corporate
+    - gradient
+  layout:
+    - centered
+    - single-column
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - education
+    - creative
 freeformKeywords:
   - hero
   - landing
@@ -25,3 +39,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

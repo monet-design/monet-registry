@@ -4,10 +4,24 @@ category: hero
 images:
   preview: agent-input/unsection-hero/double-makers-subscription-page-section-hero.jpg
 tags:
-  functional: [email-capture, lead-capture]
-  style: [dark-theme, modern, gradient, elegant, serif]
-  layout: [centered, single-column, full-width]
-  industry: [saas, agency, creative, startup]
+  functional:
+    - email-capture
+    - lead-capture
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - elegant
+    - serif
+  layout:
+    - centered
+    - single-column
+    - full-width
+  industry:
+    - saas
+    - agency
+    - creative
+    - startup
 freeformKeywords:
   - hero
   - subscription
@@ -25,3 +39,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

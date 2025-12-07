@@ -1,15 +1,25 @@
 schemaVersion: "2.0"
 name: pricing-opl-master-14
 category: pricing
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-14.png
-
 tags:
-  functional: [hover-effect]
-  style: [light-theme, modern, gradient, colorful, sans-serif]
-  layout: [four-column, centered, card-grid, full-width, responsive]
-  industry: [saas]
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - gradient
+    - colorful
+    - sans-serif
+  layout:
+    - four-column
+    - centered
+    - card-grid
+    - full-width
+    - responsive
+  industry:
+    - saas
 freeformKeywords:
   - pricing
   - plans
@@ -31,9 +41,8 @@ freeformKeywords:
   - money back guarantee
   - ssl
   - payment
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:15:54Z"
 status: stable
+language: en

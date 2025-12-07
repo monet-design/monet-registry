@@ -2,13 +2,23 @@ schemaVersion: "2.0"
 name: riotters-hero
 category: hero
 images:
-  preview: >-
-    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/riotters-home-page-section-hero.jpg
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/riotters-home-page-section-hero.jpg
 tags:
-  functional: [contact-form]
-  style: [modern, minimal, colorful, corporate]
-  layout: [split-layout, asymmetric, responsive]
-  industry: [agency, creative, portfolio]
+  functional:
+    - contact-form
+  style:
+    - modern
+    - minimal
+    - colorful
+    - corporate
+  layout:
+    - split-layout
+    - asymmetric
+    - responsive
+  industry:
+    - agency
+    - creative
+    - portfolio
 freeformKeywords:
   - hero
   - agency
@@ -25,3 +35,4 @@ fontFamily:
   - Inter
 createdAt: "2025-12-01T00:00:00Z"
 status: stable
+language: en

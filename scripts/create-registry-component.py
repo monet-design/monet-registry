@@ -98,6 +98,7 @@ def generate_metadata_yaml(
     image_path: str,
     keywords: list[str],
     font_family: list[str],
+    language: str = "en",
     parent_page: str | None = None,
     source_url: str | None = None,
     section_index: int | None = None,
@@ -131,6 +132,7 @@ fontFamily:
 
 createdAt: "{now_utc}"
 status: stable
+language: {language}
 '''
 
     # tags 필드 추가 (하나라도 제공된 경우)
@@ -323,6 +325,14 @@ def parse_arguments():
         help="기존 폴더가 있어도 덮어쓰기",
     )
 
+    parser.add_argument(
+        "-l",
+        "--language",
+        default="en",
+        choices=["en", "ko"],
+        help="컴포넌트 언어 (기본값: en)",
+    )
+
     # URL 스크래핑 관련 옵션
     parser.add_argument(
         "--parent-page",
@@ -425,6 +435,7 @@ def main():
         args.image_path,
         keywords,
         font_family,
+        language=args.language,
         parent_page=args.parent_page,
         source_url=args.source_url,
         section_index=args.section_index,

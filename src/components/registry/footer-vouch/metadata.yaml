@@ -1,15 +1,25 @@
 schemaVersion: "2.0"
 name: footer-vouch
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/vouch-home-page-section-footer.jpg
-
 tags:
-  functional: [navigation, social-media]
-  style: [minimal, modern, clean, teal, serif]
-  layout: [four-column, full-width, centered]
-  industry: [saas, video]
+  functional:
+    - navigation
+    - social-media
+  style:
+    - minimal
+    - modern
+    - clean
+    - teal
+    - serif
+  layout:
+    - four-column
+    - full-width
+    - centered
+  industry:
+    - saas
+    - video
 freeformKeywords:
   - footer
   - vouch
@@ -26,10 +36,9 @@ freeformKeywords:
   - clean
   - saas
   - video
-
 fontFamily:
   - Playfair Display
   - Plus Jakarta Sans
-
 createdAt: "2025-12-03T22:09:26Z"
 status: stable
+language: en

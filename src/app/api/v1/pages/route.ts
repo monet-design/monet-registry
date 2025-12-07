@@ -58,6 +58,7 @@ export async function GET(request: NextRequest) {
             }
           : undefined,
         created_at: p.createdAt,
+        language: p.language,
       })),
     };
 

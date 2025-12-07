@@ -1,15 +1,26 @@
 schemaVersion: "2.0"
 name: footer-10clouds-cta
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/10clouds-home-section-footer.jpg
-
 tags:
-  functional: [email-capture, contact-form]
-  style: [dark-theme, modern, bold, gradient, colorful]
-  layout: [centered, single-column]
-  industry: [saas, startup, agency, tech]
+  functional:
+    - email-capture
+    - contact-form
+  style:
+    - dark-theme
+    - modern
+    - bold
+    - gradient
+    - colorful
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - startup
+    - agency
+    - tech
 freeformKeywords:
   - footer
   - cta
@@ -22,9 +33,8 @@ freeformKeywords:
   - mint
   - startup
   - tech
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:50:00Z"
 status: stable
+language: en

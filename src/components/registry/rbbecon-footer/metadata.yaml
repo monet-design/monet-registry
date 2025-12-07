@@ -1,15 +1,23 @@
 schemaVersion: "2.0"
 name: rbbecon-footer
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/rbbecon-home-page-section-footer.jpg
-
 tags:
   functional: []
-  style: [dark-theme, minimal, modern, corporate, sans-serif]
-  layout: [two-column, left-aligned, responsive]
-  industry: [corporate, enterprise]
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - corporate
+    - sans-serif
+  layout:
+    - two-column
+    - left-aligned
+    - responsive
+  industry:
+    - corporate
+    - enterprise
 freeformKeywords:
   - footer
   - dark footer
@@ -21,9 +29,8 @@ freeformKeywords:
   - links footer
   - legal footer
   - copyright footer
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:32:54Z"
 status: stable
+language: en

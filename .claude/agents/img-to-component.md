@@ -17,6 +17,7 @@ model: inherit
      - `style`: 스타일 특징 (light-theme, dark-theme, modern, minimal, bold, warm, elegant, serif, sans-serif, gradient, shadow 등)
      - `layout`: 레이아웃 특징 (centered, single-column, two-column, split-layout, grid, full-width, responsive, left-aligned 등)
      - `industry`: 산업/분야 (saas, fintech, ai, startup, creative, travel, portfolio, agency 등)
+   - **Language 분석**: 이미지에 포함된 텍스트의 언어를 분석하세요 (en: 영어, ko: 한국어)
 2. 해당 컴포넌트의 NAME을 정하세요. 반드시 lower-kebab-case여야합니다.
 3. 반드시 다음 스크립트를 실행하여 기본 파일 구조를 생성하세요:
 
@@ -25,6 +26,7 @@ model: inherit
      --name "{NAME}" \
      --image-path "{이미지 경로}" \
      --keywords "{키워드1}, {키워드2}, ..." \
+     --language "{en 또는 ko}" \
      --tags-functional "{기능태그1}, {기능태그2}" \
      --tags-style "{스타일태그1}, {스타일태그2}" \
      --tags-layout "{레이아웃태그1}, {레이아웃태그2}" \
@@ -38,6 +40,7 @@ model: inherit
    | `--image-path` | `-i` | O | 입력 이미지 경로 |
    | `--keywords` | `-k` | O | 검색 키워드 (comma-separated) |
    | `--font-family` | `-f` | X | 폰트 패밀리 (기본값: Inter) |
+   | `--language` | `-l` | X | 컴포넌트 언어 (en/ko, 기본값: en) |
    | `--force` | | X | 기존 폴더 덮어쓰기 |
    | `--parent-page` | | X | 부모 page 컴포넌트 ID (URL 스크래핑 시) |
    | `--source-url` | | X | 원본 URL (URL 스크래핑 시) |

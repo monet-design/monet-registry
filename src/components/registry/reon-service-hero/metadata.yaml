@@ -5,9 +5,20 @@ images:
   preview: agent-input/unsection-hero/reon-service-page-section-hero.jpg
 tags:
   functional: []
-  style: [bold, colorful, serif, modern]
-  layout: [single-column, centered, full-width]
-  industry: [consultancy, agency, corporate, enterprise]
+  style:
+    - bold
+    - colorful
+    - serif
+    - modern
+  layout:
+    - single-column
+    - centered
+    - full-width
+  industry:
+    - consultancy
+    - agency
+    - corporate
+    - enterprise
 freeformKeywords:
   - hero
   - consultancy
@@ -28,3 +39,4 @@ fontFamily:
   - Inter
 createdAt: "2025-12-01T00:00:00Z"
 status: stable
+language: en

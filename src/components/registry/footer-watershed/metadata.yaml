@@ -1,15 +1,23 @@
 schemaVersion: "2.0"
 name: footer-watershed
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/watershed-home-page-section-footer.jpg
-
 tags:
-  functional: [toggle]
-  style: [light-theme, minimal, modern, corporate, sans-serif]
-  layout: [multi-column, responsive]
-  industry: [saas, enterprise]
+  functional:
+    - toggle
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - corporate
+    - sans-serif
+  layout:
+    - multi-column
+    - responsive
+  industry:
+    - saas
+    - enterprise
 freeformKeywords:
   - footer
   - watershed
@@ -26,9 +34,8 @@ freeformKeywords:
   - carbon
   - ESG
   - technology
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T22:09:28Z"
 status: stable
+language: en

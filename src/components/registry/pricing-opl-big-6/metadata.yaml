@@ -1,15 +1,23 @@
 schemaVersion: "2.0"
 name: pricing-opl-big-6
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-big-6.png
-
 tags:
   functional: []
-  style: [bold, colorful, modern, minimal]
-  layout: [three-column, centered, responsive]
-  industry: [saas, creative, agency]
+  style:
+    - bold
+    - colorful
+    - modern
+    - minimal
+  layout:
+    - three-column
+    - centered
+    - responsive
+  industry:
+    - saas
+    - creative
+    - agency
 freeformKeywords:
   - pricing
   - yellow
@@ -22,9 +30,8 @@ freeformKeywords:
   - club
   - one-time payment
   - VAT
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:04:15Z"
 status: stable
+language: en

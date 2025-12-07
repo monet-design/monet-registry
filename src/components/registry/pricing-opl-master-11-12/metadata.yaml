@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: pricing-opl-master-11-12
 category: pricing
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-11-12-39-947.png
-
 tags:
   functional:
     - hover-effect
@@ -35,9 +33,8 @@ freeformKeywords:
   - buy
   - license
   - updates
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:15:41Z"
 status: stable
+language: en

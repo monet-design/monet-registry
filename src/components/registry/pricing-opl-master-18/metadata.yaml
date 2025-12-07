@@ -1,15 +1,27 @@
 schemaVersion: "2.0"
 name: pricing-opl-master-18
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-master-18.png
-
 tags:
-  functional: [hover-effect]
-  style: [dark-theme, modern, gradient, glassmorphism, colorful, sans-serif]
-  layout: [three-column, card-grid, responsive]
-  industry: [saas, agency, creative, startup]
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - glassmorphism
+    - colorful
+    - sans-serif
+  layout:
+    - three-column
+    - card-grid
+    - responsive
+  industry:
+    - saas
+    - agency
+    - creative
+    - startup
 freeformKeywords:
   - pricing
   - subscription
@@ -22,9 +34,8 @@ freeformKeywords:
   - services
   - cta
   - referral
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:17:44Z"
 status: stable
+language: en

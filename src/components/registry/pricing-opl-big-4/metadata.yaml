@@ -1,15 +1,24 @@
 schemaVersion: "2.0"
 name: pricing-opl-big-4
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-big-4.png
-
 tags:
   functional: []
-  style: [light-theme, minimal, modern, elegant, shadow, serif]
-  layout: [three-column, centered, card-grid, responsive]
-  industry: [healthcare]
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - elegant
+    - shadow
+    - serif
+  layout:
+    - three-column
+    - centered
+    - card-grid
+    - responsive
+  industry:
+    - healthcare
 freeformKeywords:
   - pricing
   - subscription
@@ -22,10 +31,9 @@ freeformKeywords:
   - platinum
   - healthcare
   - annual plan
-
 fontFamily:
   - Instrument Serif
   - Inter
-
 createdAt: "2025-12-03T18:59:19Z"
 status: stable
+language: en

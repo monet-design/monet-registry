@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: bolta-io-hero-1
 category: hero
-
 images:
   preview: scraped/bolta-io-2025-12-07/sections/section-1.png
-
 freeformKeywords:
   - hero
   - ai assistant
@@ -15,10 +13,8 @@ freeformKeywords:
   - saas
   - beige
   - warm
-
 fontFamily:
   - Inter
-
 tags:
   functional:
     - lead-capture
@@ -35,14 +31,12 @@ tags:
     - saas
     - fintech
     - ai
-
 createdAt: "2025-12-07T12:06:09Z"
 status: stable
-
 parentPage: bolta-io-landing
-
 source:
   type: url
   url: https://bolta.io/
   scrapedAt: "2025-12-07T12:06:09Z"
   sectionIndex: 1
+language: ko

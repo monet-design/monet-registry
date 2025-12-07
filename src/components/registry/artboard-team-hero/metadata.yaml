@@ -4,10 +4,25 @@ category: hero
 images:
   preview: agent-input/unsection-hero/artboard-team-page-section-hero.jpg
 tags:
-  functional: [animation, hover-effect, logo-cloud]
-  style: [light-theme, modern, gradient, serif, colorful]
-  layout: [split-layout, centered, responsive]
-  industry: [saas, creative, agency, startup]
+  functional:
+    - animation
+    - hover-effect
+    - logo-cloud
+  style:
+    - light-theme
+    - modern
+    - gradient
+    - serif
+    - colorful
+  layout:
+    - split-layout
+    - centered
+    - responsive
+  industry:
+    - saas
+    - creative
+    - agency
+    - startup
 freeformKeywords:
   - hero
   - landing page
@@ -26,3 +41,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

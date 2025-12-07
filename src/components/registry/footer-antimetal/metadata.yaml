@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: footer-antimetal
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/antimetal-home-page-section-footer.jpg
-
 tags:
   functional:
     - hover-effect
@@ -36,9 +34,8 @@ freeformKeywords:
   - address
   - status indicator
   - clean
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:49:21Z"
 status: stable
+language: en

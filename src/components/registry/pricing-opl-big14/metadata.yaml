@@ -1,15 +1,27 @@
 schemaVersion: "2.0"
 name: pricing-opl-big14
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-big14.png
-
 tags:
-  functional: [hover-effect]
-  style: [light-theme, minimal, modern, colorful, sans-serif]
-  layout: [three-column, centered, card-grid, responsive]
-  industry: [saas, startup, agency, enterprise]
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - colorful
+    - sans-serif
+  layout:
+    - three-column
+    - centered
+    - card-grid
+    - responsive
+  industry:
+    - saas
+    - startup
+    - agency
+    - enterprise
 freeformKeywords:
   - pricing
   - plans
@@ -21,9 +33,8 @@ freeformKeywords:
   - three tier
   - subscription
   - simple pricing
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:04:33Z"
 status: stable
+language: en

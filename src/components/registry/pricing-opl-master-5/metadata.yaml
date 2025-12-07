@@ -1,15 +1,24 @@
 schemaVersion: "2.0"
 name: pricing-opl-master-5
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-master-5.png
-
 tags:
   functional: []
-  style: [light-theme, minimal, modern, playful, gradient, colorful]
-  layout: [two-column, centered, card-grid]
-  industry: [saas, creative]
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - playful
+    - gradient
+    - colorful
+  layout:
+    - two-column
+    - centered
+    - card-grid
+  industry:
+    - saas
+    - creative
 freeformKeywords:
   - pricing
   - license
@@ -21,9 +30,8 @@ freeformKeywords:
   - card
   - illustration
   - cute character
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:25:38Z"
 status: stable
+language: en

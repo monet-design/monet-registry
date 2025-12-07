@@ -1,15 +1,25 @@
 schemaVersion: "2.0"
 name: pricing-opl-master-wittl
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-master-wittl.png
-
 tags:
-  functional: [email-capture, lead-capture]
-  style: [dark-theme, gradient, modern, serif, elegant]
-  layout: [single-column, asymmetric, left-aligned]
-  industry: [saas, startup]
+  functional:
+    - email-capture
+    - lead-capture
+  style:
+    - dark-theme
+    - gradient
+    - modern
+    - serif
+    - elegant
+  layout:
+    - single-column
+    - asymmetric
+    - left-aligned
+  industry:
+    - saas
+    - startup
 freeformKeywords:
   - pricing
   - simple pricing
@@ -22,9 +32,8 @@ freeformKeywords:
   - features list
   - italic
   - lime green
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:48:48Z"
 status: stable
+language: en

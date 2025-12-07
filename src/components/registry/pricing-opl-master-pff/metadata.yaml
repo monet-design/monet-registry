@@ -1,15 +1,24 @@
 schemaVersion: "2.0"
 name: pricing-opl-master-pff
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-master-pff.png
-
 tags:
   functional: []
-  style: [minimal, light-theme, modern, bold]
-  layout: [two-column, card-grid, centered, responsive]
-  industry: [e-commerce, creative, education]
+  style:
+    - minimal
+    - light-theme
+    - modern
+    - bold
+  layout:
+    - two-column
+    - card-grid
+    - centered
+    - responsive
+  industry:
+    - e-commerce
+    - creative
+    - education
 freeformKeywords:
   - pricing
   - ebook
@@ -23,9 +32,8 @@ freeformKeywords:
   - tablet
   - mockup
   - orange button
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:48:31Z"
 status: stable
+language: en

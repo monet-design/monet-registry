@@ -2,8 +2,7 @@ schemaVersion: "2.0"
 name: hero-beer-drive-cta
 category: hero
 images:
-  preview: >-
-    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/move-home-page-section-hero-beer-drive-cta.jpg
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/move-home-page-section-hero-beer-drive-cta.jpg
 tags:
   functional:
     - hover-effect
@@ -38,3 +37,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

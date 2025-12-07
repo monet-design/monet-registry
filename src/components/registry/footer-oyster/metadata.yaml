@@ -1,15 +1,26 @@
 schemaVersion: "2.0"
 name: footer-oyster
 category: footer
-
 images:
   preview: agent-input/footer/oyster-home-page-section-footer.jpg
-
 tags:
-  functional: [animation, hover-effect]
-  style: [dark-theme, modern, corporate, sans-serif, serif]
-  layout: [four-column, responsive, full-width]
-  industry: [saas, enterprise, corporate]
+  functional:
+    - animation
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - corporate
+    - sans-serif
+    - serif
+  layout:
+    - four-column
+    - responsive
+    - full-width
+  industry:
+    - saas
+    - enterprise
+    - corporate
 freeformKeywords:
   - footer
   - dark
@@ -24,10 +35,9 @@ freeformKeywords:
   - corporate
   - comprehensive
   - script logo
-
 fontFamily:
   - Inter
   - Instrument Serif
-
 createdAt: "2025-12-03T21:30:57Z"
 status: stable
+language: en

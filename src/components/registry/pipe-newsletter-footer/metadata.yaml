@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: pipe-newsletter-footer
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/pipe-home-page-section-footer.jpg
-
 tags:
   functional:
     - email-capture
@@ -34,9 +32,8 @@ freeformKeywords:
   - fintech
   - SaaS
   - pipe
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:32:16Z"
 status: stable
+language: en

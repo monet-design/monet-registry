@@ -5,9 +5,21 @@ images:
   preview: agent-input/unsection-hero/oyster-embedded-page-section-hero.jpg
 tags:
   functional: []
-  style: [minimal, modern, light-theme, serif, sans-serif, colorful]
-  layout: [centered, single-column, contained, responsive]
-  industry: [saas, enterprise]
+  style:
+    - minimal
+    - modern
+    - light-theme
+    - serif
+    - sans-serif
+    - colorful
+  layout:
+    - centered
+    - single-column
+    - contained
+    - responsive
+  industry:
+    - saas
+    - enterprise
 freeformKeywords:
   - hero
   - landing
@@ -26,3 +38,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

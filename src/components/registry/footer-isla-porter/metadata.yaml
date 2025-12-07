@@ -1,15 +1,26 @@
 schemaVersion: "2.0"
 name: footer-isla-porter
 category: footer
-
 images:
   preview: /registry/footer-isla-porter/preview.jpg
-
 tags:
-  functional: [newsletter, email-capture, scroll-animation]
-  style: [elegant, serif, minimal, monochrome]
-  layout: [centered, responsive, multi-column]
-  industry: [e-commerce, creative, portfolio]
+  functional:
+    - newsletter
+    - email-capture
+    - scroll-animation
+  style:
+    - elegant
+    - serif
+    - minimal
+    - monochrome
+  layout:
+    - centered
+    - responsive
+    - multi-column
+  industry:
+    - e-commerce
+    - creative
+    - portfolio
 freeformKeywords:
   - footer
   - newsletter
@@ -31,10 +42,9 @@ freeformKeywords:
   - kitchen
   - door styles
   - finishes
-
 fontFamily:
   - Pinyon Script
   - Cormorant Garamond
-
 createdAt: "2025-12-03T21:17:22Z"
 status: stable
+language: en

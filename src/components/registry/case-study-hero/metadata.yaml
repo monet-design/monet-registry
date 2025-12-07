@@ -5,9 +5,20 @@ images:
   preview: agent-input/unsection-hero/few-and-far-work-page-section-hero.jpg
 tags:
   functional: []
-  style: [dark-theme, elegant, modern, serif, shadow]
-  layout: [full-width, centered, single-column]
-  industry: [agency, portfolio, creative]
+  style:
+    - dark-theme
+    - elegant
+    - modern
+    - serif
+    - shadow
+  layout:
+    - full-width
+    - centered
+    - single-column
+  industry:
+    - agency
+    - portfolio
+    - creative
 freeformKeywords:
   - hero
   - case study
@@ -26,3 +37,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

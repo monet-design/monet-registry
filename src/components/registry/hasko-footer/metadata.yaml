@@ -1,15 +1,24 @@
 schemaVersion: "2.0"
 name: hasko-footer
 category: footer
-
 images:
   preview: agent-input/footer/hasko-home-page-section-footer.jpg
-
 tags:
-  functional: [contact-form]
-  style: [dark-theme, minimal, modern, corporate]
-  layout: [four-column, full-width, responsive]
-  industry: [fintech, corporate, enterprise]
+  functional:
+    - contact-form
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - corporate
+  layout:
+    - four-column
+    - full-width
+    - responsive
+  industry:
+    - fintech
+    - corporate
+    - enterprise
 freeformKeywords:
   - footer
   - dark
@@ -24,9 +33,8 @@ freeformKeywords:
   - swedish
   - corporate
   - dotted background
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:14:27Z"
 status: stable
+language: en

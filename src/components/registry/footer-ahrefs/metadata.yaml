@@ -1,15 +1,21 @@
 schemaVersion: "2.0"
 name: footer-ahrefs
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/ahref-home-page-section-footer.jpg
-
 tags:
-  functional: [dropdown]
-  style: [dark-theme, minimal, modern, sans-serif]
-  layout: [left-aligned, responsive]
-  industry: [saas]
+  functional:
+    - dropdown
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - left-aligned
+    - responsive
+  industry:
+    - saas
 freeformKeywords:
   - footer
   - ahrefs
@@ -21,9 +27,8 @@ freeformKeywords:
   - sitemap
   - language selector
   - black background
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:49:28Z"
 status: stable
+language: en

@@ -1,15 +1,25 @@
 schemaVersion: "2.0"
 name: footer-liveblocks
 category: footer
-
 images:
   preview: agent-input/footer/liveblocks-home-page-section-footer.jpg
-
 tags:
-  functional: [hover-effect, animation]
-  style: [dark-theme, minimal, modern, sans-serif]
-  layout: [four-column, responsive, mobile-first]
-  industry: [saas, startup, ai]
+  functional:
+    - hover-effect
+    - animation
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - four-column
+    - responsive
+    - mobile-first
+  industry:
+    - saas
+    - startup
+    - ai
 freeformKeywords:
   - footer
   - dark theme
@@ -23,9 +33,8 @@ freeformKeywords:
   - collaboration
   - real-time
   - minimal
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:22:40Z"
 status: stable
+language: en

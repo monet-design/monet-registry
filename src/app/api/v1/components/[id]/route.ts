@@ -81,6 +81,7 @@ export async function GET(
         component_path: component.componentPath,
         status: component.status,
         created_at: component.createdAt,
+        language: component.language,
       },
       parent_page: parentPage,
       similar_components: similarComponents,

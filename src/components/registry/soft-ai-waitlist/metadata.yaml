@@ -4,10 +4,22 @@ category: waitlist
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/dribble-waitlist/soft-ui.png
 tags:
-  functional: [email-capture, newsletter]
-  style: [glassmorphism, modern, gradient, blur, colorful, sans-serif]
-  layout: [centered, single-column]
-  industry: [ai, startup]
+  functional:
+    - email-capture
+    - newsletter
+  style:
+    - glassmorphism
+    - modern
+    - gradient
+    - blur
+    - colorful
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+  industry:
+    - ai
+    - startup
 freeformKeywords:
   - waitlist
   - ai
@@ -21,3 +33,4 @@ fontFamily:
   - Inter
 createdAt: "2025-12-02T00:00:00Z"
 status: stable
+language: en

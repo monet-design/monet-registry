@@ -1,15 +1,23 @@
 schemaVersion: "2.0"
 name: pricing-opl-master-7
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-master-7.png
-
 tags:
   functional: []
-  style: [gradient, bold, modern, serif, colorful]
-  layout: [single-column, centered, card-grid]
-  industry: [education, saas]
+  style:
+    - gradient
+    - bold
+    - modern
+    - serif
+    - colorful
+  layout:
+    - single-column
+    - centered
+    - card-grid
+  industry:
+    - education
+    - saas
 freeformKeywords:
   - pricing
   - one-time purchase
@@ -22,10 +30,9 @@ freeformKeywords:
   - italic
   - serif
   - check list
-
 fontFamily:
   - Instrument Serif
   - Inter
-
 createdAt: "2025-12-03T19:28:04Z"
 status: stable
+language: en

@@ -1,15 +1,25 @@
 schemaVersion: "2.0"
 name: pricing-opl-big-7
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-big-7.png
-
 tags:
   functional: []
-  style: [light-theme, minimal, modern, colorful, sans-serif]
-  layout: [three-column, centered, card-grid, responsive]
-  industry: [saas, startup, e-commerce]
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - colorful
+    - sans-serif
+  layout:
+    - three-column
+    - centered
+    - card-grid
+    - responsive
+  industry:
+    - saas
+    - startup
+    - e-commerce
 freeformKeywords:
   - pricing
   - plans
@@ -22,9 +32,8 @@ freeformKeywords:
   - pricing table
   - pricing cards
   - SaaS
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:05:01Z"
 status: stable
+language: en

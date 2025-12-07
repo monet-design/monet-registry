@@ -4,10 +4,25 @@ category: hero
 images:
   preview: agent-input/unsection-hero/antimetal-enterprise-page-section-hero.jpg
 tags:
-  functional: [animation, hover-effect, lead-capture]
-  style: [light-theme, minimal, modern, gradient, shadow]
-  layout: [centered, single-column, full-width, responsive]
-  industry: [saas, fintech, enterprise]
+  functional:
+    - animation
+    - hover-effect
+    - lead-capture
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - gradient
+    - shadow
+  layout:
+    - centered
+    - single-column
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - fintech
+    - enterprise
 freeformKeywords:
   - hero
   - enterprise
@@ -27,3 +42,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

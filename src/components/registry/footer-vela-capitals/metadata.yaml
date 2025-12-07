@@ -1,15 +1,26 @@
 schemaVersion: "2.0"
 name: footer-vela-capitals
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/vela-capitals-home-page-section-footer.jpg
-
 tags:
-  functional: [contact-form]
-  style: [modern, corporate, bold, colorful, sans-serif, minimal]
-  layout: [three-column, full-width, responsive]
-  industry: [fintech, corporate, enterprise]
+  functional:
+    - contact-form
+  style:
+    - modern
+    - corporate
+    - bold
+    - colorful
+    - sans-serif
+    - minimal
+  layout:
+    - three-column
+    - full-width
+    - responsive
+  industry:
+    - fintech
+    - corporate
+    - enterprise
 freeformKeywords:
   - footer
   - corporate
@@ -23,9 +34,8 @@ freeformKeywords:
   - coral
   - orange
   - modern
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T22:07:35Z"
 status: stable
+language: en

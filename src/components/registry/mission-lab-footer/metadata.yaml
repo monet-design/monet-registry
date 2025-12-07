@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: mission-lab-footer
 category: footer
-
 images:
   preview: agent-input/footer/mission-lab-home-page-section-footer.jpg
-
 tags:
   functional: []
   style:
@@ -29,9 +27,8 @@ freeformKeywords:
   - navigation
   - copyright
   - sustainable
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:24:21Z"
 status: stable
+language: en

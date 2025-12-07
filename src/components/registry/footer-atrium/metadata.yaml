@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: footer-atrium
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/atrium-home-page-section-footer.jpg
-
 tags:
   functional:
     - email-capture
@@ -33,9 +31,8 @@ freeformKeywords:
   - social links
   - address
   - swedish
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:49:27Z"
 status: stable
+language: en

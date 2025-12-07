@@ -1,15 +1,24 @@
 schemaVersion: "2.0"
 name: footer-den
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/den-home-page-section-footer.jpg
-
 tags:
-  functional: [email-capture, contact-form]
-  style: [dark-theme, minimal, elegant, serif, modern]
-  layout: [two-column, left-aligned, full-width]
-  industry: [real-estate]
+  functional:
+    - email-capture
+    - contact-form
+  style:
+    - dark-theme
+    - minimal
+    - elegant
+    - serif
+    - modern
+  layout:
+    - two-column
+    - left-aligned
+    - full-width
+  industry:
+    - real-estate
 freeformKeywords:
   - footer
   - real estate
@@ -22,9 +31,8 @@ freeformKeywords:
   - elegant
   - serif
   - minimalist
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:58:30Z"
 status: stable
+language: en

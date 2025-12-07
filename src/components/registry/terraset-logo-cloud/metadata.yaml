@@ -5,9 +5,20 @@ images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/logo-cloud/terraset.png
 tags:
   functional: []
-  style: [light-theme, minimal, modern, elegant, serif]
-  layout: [centered, single-column, responsive]
-  industry: [portfolio, enterprise, startup]
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - elegant
+    - serif
+  layout:
+    - centered
+    - single-column
+    - responsive
+  industry:
+    - portfolio
+    - enterprise
+    - startup
 freeformKeywords:
   - logo cloud
   - portfolio
@@ -20,3 +31,4 @@ fontFamily:
   - Inter
 createdAt: "2025-12-02T00:00:00Z"
 status: stable
+language: en

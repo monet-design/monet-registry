@@ -1,15 +1,23 @@
 schemaVersion: "2.0"
 name: kickbase-footer
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/kickbase-home-page-section-footer.jpg
-
 tags:
-  functional: [animation, video, hover-effect]
-  style: [dark-theme, modern, bold]
-  layout: [single-column, centered, full-width]
-  industry: [gaming]
+  functional:
+    - animation
+    - video
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - bold
+  layout:
+    - single-column
+    - centered
+    - full-width
+  industry:
+    - gaming
 freeformKeywords:
   - footer
   - sports
@@ -23,9 +31,8 @@ freeformKeywords:
   - kickbase
   - gaming
   - fantasy sports
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:22:24Z"
 status: stable
+language: en

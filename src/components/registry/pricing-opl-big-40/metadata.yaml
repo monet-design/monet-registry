@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: pricing-opl-big-40
 category: pricing
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-big-40.png
-
 tags:
   functional:
     - hover-effect
@@ -35,9 +33,8 @@ freeformKeywords:
   - price
   - seedlip
   - botanical
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:00:07Z"
 status: stable
+language: en

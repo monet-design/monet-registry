@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: pricing-opl-big55
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-big55.png
-
 tags:
   functional:
     - hover-effect
@@ -33,9 +31,8 @@ freeformKeywords:
   - cards
   - clean design
   - white background
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:12:47Z"
 status: stable
+language: en

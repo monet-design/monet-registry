@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: nutri-rich-footer
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/nutri-rich-home-section-footer.jpg
-
 tags:
   functional:
     - email-capture
@@ -35,9 +33,8 @@ freeformKeywords:
   - health
   - supplement
   - organic
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:26:40Z"
 status: stable
+language: en

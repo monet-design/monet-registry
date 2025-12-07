@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: footer-zazu
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/zazu-home-page-section-footer.jpg
-
 tags:
   functional: []
   style:
@@ -36,9 +34,8 @@ freeformKeywords:
   - links
   - banking
   - south africa
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T22:09:46Z"
 status: stable
+language: en

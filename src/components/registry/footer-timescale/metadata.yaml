@@ -1,15 +1,23 @@
 schemaVersion: "2.0"
 name: footer-timescale
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/timescale-home-page-section-footer.jpg
-
 tags:
-  functional: [newsletter, email-capture]
-  style: [dark-theme, modern, minimal]
-  layout: [three-column, responsive]
-  industry: [saas, startup, enterprise]
+  functional:
+    - newsletter
+    - email-capture
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - three-column
+    - responsive
+  industry:
+    - saas
+    - startup
+    - enterprise
 freeformKeywords:
   - footer
   - timescale
@@ -23,9 +31,8 @@ freeformKeywords:
   - database
   - time series
   - saas
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T22:07:36Z"
 status: stable
+language: en

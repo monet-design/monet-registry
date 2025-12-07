@@ -1,15 +1,22 @@
 schemaVersion: "2.0"
 name: pricing-opl-master-3
 category: pricing
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-3.png
-
 tags:
-  functional: [toggle, email-capture]
-  style: [dark-theme, minimal, modern]
-  layout: [centered, single-column, contained]
-  industry: [saas]
+  functional:
+    - toggle
+    - email-capture
+  style:
+    - dark-theme
+    - minimal
+    - modern
+  layout:
+    - centered
+    - single-column
+    - contained
+  industry:
+    - saas
 freeformKeywords:
   - pricing
   - subscription
@@ -21,9 +28,8 @@ freeformKeywords:
   - minimal
   - SaaS
   - free trial
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:25:17Z"
 status: stable
+language: en

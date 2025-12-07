@@ -40,6 +40,7 @@ interface MetadataYaml {
   createdAt?: string;
   updatedAt?: string;
   status?: string;
+  language?: string;
 }
 
 interface PageMetadataYaml extends MetadataYaml {
@@ -91,6 +92,7 @@ interface RegistryEntry {
   };
   createdAt?: string;
   status: string;
+  language: string;
 }
 
 interface PageRegistryEntry extends RegistryEntry {
@@ -187,6 +189,7 @@ async function main() {
           : undefined,
         createdAt: metadata.createdAt,
         status: metadata.status || "stable",
+        language: metadata.language || "en",
       };
 
       registry[componentName] = entry;
@@ -309,6 +312,7 @@ async function main() {
             : undefined,
           createdAt: metadata.createdAt,
           status: metadata.status || "stable",
+          language: metadata.language || "en",
           sections: metadata.sections || [],
           pageInfo: metadata.pageInfo,
         };

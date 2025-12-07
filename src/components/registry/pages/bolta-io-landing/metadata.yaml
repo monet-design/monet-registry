@@ -42,7 +42,6 @@ freeformKeywords:
   - complete landing page
   - full page
   - bolta.io
-
 tags:
   functional:
     - lead-capture
@@ -61,6 +60,6 @@ tags:
     - saas
     - fintech
     - ai
-
 createdAt: "2025-12-07T12:11:11.469Z"
 status: stable
+language: ko

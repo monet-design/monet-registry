@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: foundation-alloy-footer
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/foundation-alloy-home-page-section-footer.jpg
-
 tags:
   functional:
     - hover-effect
@@ -34,9 +32,8 @@ freeformKeywords:
   - foundation alloy
   - linkedin
   - twitter
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T22:38:50Z"
 status: stable
+language: en

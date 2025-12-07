@@ -2,8 +2,7 @@ schemaVersion: "2.0"
 name: ascon-hero
 category: hero
 images:
-  preview: >-
-    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/ascon-home-page-section-hero.jpg
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/ascon-home-page-section-hero.jpg
 tags:
   functional:
     - hover-effect
@@ -46,3 +45,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

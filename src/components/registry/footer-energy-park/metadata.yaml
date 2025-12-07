@@ -1,15 +1,25 @@
 schemaVersion: "2.0"
 name: footer-energy-park
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/energy-park-home-page-section-footer.jpg
-
 tags:
-  functional: [hover-effect]
-  style: [light-theme, minimal, modern, clean, sans-serif]
-  layout: [four-column, full-width, responsive]
-  industry: [saas, startup, enterprise]
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - clean
+    - sans-serif
+  layout:
+    - four-column
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - startup
+    - enterprise
 freeformKeywords:
   - footer
   - energy
@@ -22,9 +32,8 @@ freeformKeywords:
   - social links
   - accent bar
   - yellow accent
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:58:31Z"
 status: stable
+language: en

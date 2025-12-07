@@ -1,15 +1,28 @@
 schemaVersion: "2.0"
 name: footer-double-makers
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/double-makers-home-page-section-footer.jpg
-
 tags:
-  functional: [email-capture, contact-form]
-  style: [dark-theme, minimal, modern, elegant, sans-serif]
-  layout: [three-column, centered, full-width, responsive]
-  industry: [agency, creative, startup, portfolio]
+  functional:
+    - email-capture
+    - contact-form
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - elegant
+    - sans-serif
+  layout:
+    - three-column
+    - centered
+    - full-width
+    - responsive
+  industry:
+    - agency
+    - creative
+    - startup
+    - portfolio
 freeformKeywords:
   - footer
   - dark footer
@@ -21,9 +34,8 @@ freeformKeywords:
   - aboriginal acknowledgment
   - serif
   - elegant
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:58:19Z"
 status: stable
+language: en

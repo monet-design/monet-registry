@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: footer-slite
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/slite-home-page-section-footer.jpg
-
 tags:
   functional:
     - email-capture
@@ -33,9 +31,8 @@ freeformKeywords:
   - SaaS
   - documentation
   - knowledge base
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:50:18Z"
 status: stable
+language: en

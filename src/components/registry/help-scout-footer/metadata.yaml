@@ -1,15 +1,23 @@
 schemaVersion: "2.0"
 name: help-scout-footer
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/help-scout-home-page-section-footer.jpg
-
 tags:
-  functional: [newsletter]
-  style: [dark-theme, modern, elegant, serif, sans-serif]
-  layout: [four-column, responsive]
-  industry: [saas, enterprise]
+  functional:
+    - newsletter
+  style:
+    - dark-theme
+    - modern
+    - elegant
+    - serif
+    - sans-serif
+  layout:
+    - four-column
+    - responsive
+  industry:
+    - saas
+    - enterprise
 freeformKeywords:
   - footer
   - dark footer
@@ -24,10 +32,9 @@ freeformKeywords:
   - pledge 1%
   - saas footer
   - help desk footer
-
 fontFamily:
   - Inter
   - Instrument Serif
-
 createdAt: "2025-12-03T21:17:18Z"
 status: stable
+language: en

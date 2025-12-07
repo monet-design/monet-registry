@@ -2,13 +2,23 @@ schemaVersion: "2.0"
 name: energy-park-hero
 category: hero
 images:
-  preview: >-
-    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/energy-park-home-page-section-hero.jpg
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/energy-park-home-page-section-hero.jpg
 tags:
-  functional: [hover-effect]
-  style: [dark-theme, modern, bold, sans-serif]
-  layout: [single-column, left-aligned, full-width, responsive]
-  industry: [startup, enterprise]
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - bold
+    - sans-serif
+  layout:
+    - single-column
+    - left-aligned
+    - full-width
+    - responsive
+  industry:
+    - startup
+    - enterprise
 freeformKeywords:
   - hero
   - electric
@@ -27,3 +37,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

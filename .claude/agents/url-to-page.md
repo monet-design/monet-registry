@@ -33,6 +33,7 @@ npx tsx scripts/scrape/scrape-website.ts --url "{URL}"
    - 시각적으로 하나의 섹션인데 DOM이 분리한 경우 → 병합 필요
    - 시각적으로 분리되어야 하는데 DOM이 하나로 본 경우 → 분할 필요
 4. 각 섹션의 카테고리를 확인/수정하세요 (hero, feature, pricing, footer 등).
+5. 페이지 텍스트의 언어를 파악하세요 (en: 영어, ko: 한국어).
 
 **섹션 카테고리 기준:**
 - `header`: 최상단 네비게이션 바
@@ -64,6 +65,7 @@ python3 scripts/create-registry-component.py \
   --category "{category}" \
   --image-path "scraped/{domain}-{date}/sections/section-{index}.png" \
   --keywords "{키워드1}, {키워드2}, ..." \
+  --language "{en 또는 ko}" \
   --parent-page "{domain}-landing" \
   --source-url "{URL}" \
   --section-index {index} \
@@ -81,6 +83,7 @@ python3 scripts/create-registry-component.py \
 
 **주의사항:**
 - 모든 섹션에 `--parent-page`, `--source-url`, `--section-index` 옵션 반드시 포함
+- **모든 섹션에 `--language` 옵션을 반드시 포함** (페이지 텍스트 언어에 따라 en/ko 지정)
 - **모든 섹션에 `--tags-*` 옵션을 반드시 포함** (이미지 분석 후 적절한 태그 생성)
 - 섹션별 HTML snippet (`section-*.html`)을 참고하여 더 정확한 구현
 - 한 페이지에서 최대 10개 섹션까지만 처리

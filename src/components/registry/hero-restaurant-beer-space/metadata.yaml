@@ -2,8 +2,7 @@ schemaVersion: "2.0"
 name: hero-restaurant-beer-space
 category: hero
 images:
-  preview: >-
-    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/move-restaurant-page-section-hero.jpg
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/move-restaurant-page-section-hero.jpg
 tags:
   functional:
     - hover-effect
@@ -37,3 +36,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

@@ -1,15 +1,25 @@
 schemaVersion: "2.0"
 name: footer-hello-network
 category: footer
-
 images:
   preview: agent-input/footer/hello-network-footer-page-section-footer.jpg
-
 tags:
-  functional: [hover-effect]
-  style: [light-theme, minimal, modern, elegant, gradient, sans-serif]
-  layout: [three-column, responsive]
-  industry: [corporate, fintech, business]
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - elegant
+    - gradient
+    - sans-serif
+  layout:
+    - three-column
+    - responsive
+  industry:
+    - corporate
+    - fintech
+    - business
 freeformKeywords:
   - footer
   - french
@@ -25,10 +35,9 @@ freeformKeywords:
   - financial partners
   - visa
   - minimal
-
 fontFamily:
   - Instrument Serif
   - Inter
-
 createdAt: "2025-12-03T21:14:41Z"
 status: stable
+language: en

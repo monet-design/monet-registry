@@ -1,15 +1,27 @@
 schemaVersion: "2.0"
 name: footer-wope
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/wope-home-page-section-footer.jpg
-
 tags:
-  functional: [newsletter, email-capture, map]
-  style: [dark-theme, modern, minimal, gradient, sans-serif]
-  layout: [three-column, responsive, full-width]
-  industry: [saas, startup, ai]
+  functional:
+    - newsletter
+    - email-capture
+    - map
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - gradient
+    - sans-serif
+  layout:
+    - three-column
+    - responsive
+    - full-width
+  industry:
+    - saas
+    - startup
+    - ai
 freeformKeywords:
   - footer
   - dark footer
@@ -27,9 +39,8 @@ freeformKeywords:
   - newsletter
   - CTA button
   - trial
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T22:09:29Z"
 status: stable
+language: en

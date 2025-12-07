@@ -1,15 +1,26 @@
 schemaVersion: "2.0"
 name: pricing-opl-master-hey
 category: pricing
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-hey.png
-
 tags:
-  functional: [email-capture, lead-capture]
-  style: [dark-theme, modern, elegant, serif]
-  layout: [three-column, card-grid, centered, responsive]
-  industry: [saas, creative, startup]
+  functional:
+    - email-capture
+    - lead-capture
+  style:
+    - dark-theme
+    - modern
+    - elegant
+    - serif
+  layout:
+    - three-column
+    - card-grid
+    - centered
+    - responsive
+  industry:
+    - saas
+    - creative
+    - startup
 freeformKeywords:
   - pricing
   - youtube
@@ -23,10 +34,9 @@ freeformKeywords:
   - starter
   - dark green
   - serif
-
 fontFamily:
   - DM Serif Display
   - Inter
-
 createdAt: "2025-12-03T19:40:09Z"
 status: stable
+language: en

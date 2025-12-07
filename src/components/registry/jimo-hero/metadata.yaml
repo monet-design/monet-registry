@@ -4,10 +4,21 @@ category: hero
 images:
   preview: agent-input/unsection-hero/jimo-home-page-hero-section.webp
 tags:
-  functional: [email-capture, tabs, modal]
-  style: [light-theme, modern, gradient, playful, sans-serif]
-  layout: [centered, full-width]
-  industry: [saas]
+  functional:
+    - email-capture
+    - tabs
+    - modal
+  style:
+    - light-theme
+    - modern
+    - gradient
+    - playful
+    - sans-serif
+  layout:
+    - centered
+    - full-width
+  industry:
+    - saas
 freeformKeywords:
   - hero
   - onboarding
@@ -25,3 +36,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

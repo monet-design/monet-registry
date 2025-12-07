@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: bolta-io-footer-8
 category: footer
-
 images:
   preview: scraped/bolta-io-2025-12-07/sections/section-8.png
-
 freeformKeywords:
   - footer
   - links
@@ -12,10 +10,8 @@ freeformKeywords:
   - korean
   - fintech
   - cta banner
-
 fontFamily:
   - Inter
-
 tags:
   functional: []
   style:
@@ -28,14 +24,12 @@ tags:
   industry:
     - saas
     - fintech
-
 createdAt: "2025-12-07T12:06:23Z"
 status: stable
-
 parentPage: bolta-io-landing
-
 source:
   type: url
   url: https://bolta.io/
   scrapedAt: "2025-12-07T12:06:23Z"
   sectionIndex: 8
+language: ko

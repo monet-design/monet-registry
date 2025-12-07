@@ -1,15 +1,26 @@
 schemaVersion: "2.0"
 name: pricing-opl-screenshot-1
 category: pricing
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-screenshot-1.png
-
 tags:
-  functional: [email-capture, lead-capture]
-  style: [dark-theme, modern, elegant, gradient, serif]
-  layout: [three-column, centered, card-grid]
-  industry: [saas, agency, startup]
+  functional:
+    - email-capture
+    - lead-capture
+  style:
+    - dark-theme
+    - modern
+    - elegant
+    - gradient
+    - serif
+  layout:
+    - three-column
+    - centered
+    - card-grid
+  industry:
+    - saas
+    - agency
+    - startup
 freeformKeywords:
   - pricing
   - membership
@@ -21,10 +32,9 @@ freeformKeywords:
   - unlimited
   - pricing table
   - pricing cards
-
 fontFamily:
   - Inter
   - Playfair Display
-
 createdAt: "2025-12-03T19:50:32Z"
 status: stable
+language: en

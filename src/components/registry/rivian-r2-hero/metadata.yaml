@@ -4,10 +4,22 @@ category: hero
 images:
   preview: agent-input/unsection-hero/rivian-r2-page-section-hero.jpg
 tags:
-  functional: [video, hover-effect]
-  style: [minimal, modern, light-theme, bold, sans-serif]
-  layout: [centered, full-width, single-column]
-  industry: [e-commerce, startup]
+  functional:
+    - video
+    - hover-effect
+  style:
+    - minimal
+    - modern
+    - light-theme
+    - bold
+    - sans-serif
+  layout:
+    - centered
+    - full-width
+    - single-column
+  industry:
+    - e-commerce
+    - startup
 freeformKeywords:
   - hero
   - automotive
@@ -27,3 +39,4 @@ fontFamily:
   - Inter
 createdAt: "2025-12-01T00:00:00Z"
 status: stable
+language: en

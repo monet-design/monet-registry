@@ -1,15 +1,24 @@
 schemaVersion: "2.0"
 name: footer-patch
 category: footer
-
 images:
   preview: agent-input/footer/patch-home-page-section-footer.jpg
-
 tags:
-  functional: [newsletter, email-capture]
-  style: [light-theme, minimal, modern, sans-serif]
-  layout: [four-column, responsive]
-  industry: [saas, developer, startup]
+  functional:
+    - newsletter
+    - email-capture
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - four-column
+    - responsive
+  industry:
+    - saas
+    - developer
+    - startup
 freeformKeywords:
   - footer
   - newsletter
@@ -23,9 +32,8 @@ freeformKeywords:
   - minimal
   - light theme
   - patch
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:31:07Z"
 status: stable
+language: en

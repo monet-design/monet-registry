@@ -1,15 +1,27 @@
 schemaVersion: "2.0"
 name: pricing-opl-master-cw
 category: pricing
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-cw.png
-
 tags:
-  functional: [email-capture, hover-effect]
-  style: [gradient, modern, colorful, pastel, light-theme]
-  layout: [two-column, card-grid, centered, responsive]
-  industry: [saas, creative, startup]
+  functional:
+    - email-capture
+    - hover-effect
+  style:
+    - gradient
+    - modern
+    - colorful
+    - pastel
+    - light-theme
+  layout:
+    - two-column
+    - card-grid
+    - centered
+    - responsive
+  industry:
+    - saas
+    - creative
+    - startup
 freeformKeywords:
   - pricing
   - pay once
@@ -22,9 +34,8 @@ freeformKeywords:
   - gradient
   - testimonial
   - commercial license
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:40:14Z"
 status: stable
+language: en

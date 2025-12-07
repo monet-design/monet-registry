@@ -1,15 +1,21 @@
 schemaVersion: "2.0"
 name: pricing-opl-master-good
 category: pricing
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-good.png
-
 tags:
   functional: []
-  style: [gradient, bold, modern, colorful]
-  layout: [two-column, centered]
-  industry: [saas, startup]
+  style:
+    - gradient
+    - bold
+    - modern
+    - colorful
+  layout:
+    - two-column
+    - centered
+  industry:
+    - saas
+    - startup
 freeformKeywords:
   - pricing
   - subscription
@@ -22,9 +28,8 @@ freeformKeywords:
   - orange
   - gold
   - dark button
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:40:11Z"
 status: stable
+language: en

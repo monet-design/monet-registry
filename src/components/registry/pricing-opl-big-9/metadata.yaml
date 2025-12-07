@@ -1,15 +1,26 @@
 schemaVersion: "2.0"
 name: pricing-opl-big-9
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-big-9.png
-
 tags:
-  functional: [counter, animation]
-  style: [light-theme, modern, minimal, gradient, colorful, sans-serif]
-  layout: [three-column, centered, card-grid, contained]
-  industry: [saas]
+  functional:
+    - counter
+    - animation
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - gradient
+    - colorful
+    - sans-serif
+  layout:
+    - three-column
+    - centered
+    - card-grid
+    - contained
+  industry:
+    - saas
 freeformKeywords:
   - pricing
   - subscription
@@ -27,11 +38,10 @@ freeformKeywords:
   - mint green
   - modern
   - light theme
-
 fontFamily:
   - Inter
   - Playfair Display
   - Dancing Script
-
 createdAt: "2025-12-03T19:05:09Z"
 status: stable
+language: en

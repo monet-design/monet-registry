@@ -1,15 +1,29 @@
 schemaVersion: "2.0"
 name: pricing-opl-big-27
 category: pricing
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-big-27.png
-
 tags:
-  functional: [dropdown, counter, filter, calculator]
-  style: [light-theme, minimal, modern, shadow, colorful, sans-serif]
-  layout: [centered, card-grid, responsive, full-width]
-  industry: [fintech, e-commerce]
+  functional:
+    - dropdown
+    - counter
+    - filter
+    - calculator
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - shadow
+    - colorful
+    - sans-serif
+  layout:
+    - centered
+    - card-grid
+    - responsive
+    - full-width
+  industry:
+    - fintech
+    - e-commerce
 freeformKeywords:
   - pricing
   - comparison
@@ -25,9 +39,8 @@ freeformKeywords:
   - cost comparison
   - fintech
   - payment gateway
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:00:17Z"
 status: stable
+language: en

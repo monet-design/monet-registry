@@ -1,15 +1,22 @@
 schemaVersion: "2.0"
 name: pricing-opl-big26
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-big26.png
-
 tags:
   functional: []
-  style: [minimal, elegant, serif, pastel]
-  layout: [single-column, left-aligned, contained]
-  industry: [healthcare, personal]
+  style:
+    - minimal
+    - elegant
+    - serif
+    - pastel
+  layout:
+    - single-column
+    - left-aligned
+    - contained
+  industry:
+    - healthcare
+    - personal
 freeformKeywords:
   - pricing
   - services
@@ -25,9 +32,8 @@ freeformKeywords:
   - counseling
   - offer
   - aanbod
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:12:53Z"
 status: stable
+language: en

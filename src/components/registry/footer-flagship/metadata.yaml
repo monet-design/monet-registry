@@ -1,15 +1,26 @@
 schemaVersion: "2.0"
 name: footer-flagship
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/flaghsip-home-page-section-footer.jpg
-
 tags:
-  functional: [contact-form, email-capture]
-  style: [dark-theme, modern, gradient, serif, bold]
-  layout: [two-column, left-aligned, full-width]
-  industry: [saas, e-commerce, startup]
+  functional:
+    - contact-form
+    - email-capture
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - serif
+    - bold
+  layout:
+    - two-column
+    - left-aligned
+    - full-width
+  industry:
+    - saas
+    - e-commerce
+    - startup
 freeformKeywords:
   - footer
   - cta
@@ -21,9 +32,8 @@ freeformKeywords:
   - serif
   - italic
   - flagship
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:58:21Z"
 status: stable
+language: en

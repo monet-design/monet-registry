@@ -1,15 +1,27 @@
 schemaVersion: "2.0"
 name: footer-reon
 category: footer
-
 images:
   preview: agent-input/footer/reon-home-page-section-footer.jpg
-
 tags:
-  functional: [hover-effect, scroll-animation]
-  style: [light-theme, minimal, modern, bold, colorful]
-  layout: [three-column, split-layout, responsive]
-  industry: [saas, agency, creative, startup]
+  functional:
+    - hover-effect
+    - scroll-animation
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - bold
+    - colorful
+  layout:
+    - three-column
+    - split-layout
+    - responsive
+  industry:
+    - saas
+    - agency
+    - creative
+    - startup
 freeformKeywords:
   - footer
   - coral
@@ -24,9 +36,8 @@ freeformKeywords:
   - minimal
   - modern
   - thumbs up
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:33:17Z"
 status: stable
+language: en

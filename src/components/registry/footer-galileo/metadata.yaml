@@ -1,15 +1,22 @@
 schemaVersion: "2.0"
 name: footer-galileo
 category: footer
-
 images:
   preview: agent-input/footer/galileo-platform-page-section-footer.jpg
-
 tags:
-  functional: [dropdown]
-  style: [dark-theme, modern, corporate]
-  layout: [multi-column, responsive]
-  industry: [fintech, saas, enterprise]
+  functional:
+    - dropdown
+  style:
+    - dark-theme
+    - modern
+    - corporate
+  layout:
+    - multi-column
+    - responsive
+  industry:
+    - fintech
+    - saas
+    - enterprise
 freeformKeywords:
   - footer
   - fintech
@@ -23,9 +30,8 @@ freeformKeywords:
   - legal links
   - language selector
   - platform
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:14:29Z"
 status: stable
+language: en

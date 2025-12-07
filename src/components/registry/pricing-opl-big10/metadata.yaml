@@ -1,15 +1,25 @@
 schemaVersion: "2.0"
 name: pricing-opl-big10
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-big10.png
-
 tags:
-  functional: [animation, hover-effect, scroll-animation]
-  style: [dark-theme, elegant, serif, gradient, monochrome]
-  layout: [single-column, centered, contained]
-  industry: [personal]
+  functional:
+    - animation
+    - hover-effect
+    - scroll-animation
+  style:
+    - dark-theme
+    - elegant
+    - serif
+    - gradient
+    - monochrome
+  layout:
+    - single-column
+    - centered
+    - contained
+  industry:
+    - personal
 freeformKeywords:
   - pricing
   - service list
@@ -21,10 +31,9 @@ freeformKeywords:
   - elegant
   - price menu
   - german
-
 fontFamily:
   - Playfair Display
   - Inter
-
 createdAt: "2025-12-03T19:05:13Z"
 status: stable
+language: en

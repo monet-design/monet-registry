@@ -1,15 +1,31 @@
 schemaVersion: "2.0"
 name: footer-cut-the-code
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/cut-the-code-home-page-section-footer.jpg
-
 tags:
-  functional: [newsletter, email-capture, contact-form, animation, scroll-animation]
-  style: [dark-theme, modern, gradient, colorful, sans-serif, bold]
-  layout: [three-column, full-width, responsive]
-  industry: [agency, saas, startup, creative]
+  functional:
+    - newsletter
+    - email-capture
+    - contact-form
+    - animation
+    - scroll-animation
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - colorful
+    - sans-serif
+    - bold
+  layout:
+    - three-column
+    - full-width
+    - responsive
+  industry:
+    - agency
+    - saas
+    - startup
+    - creative
 freeformKeywords:
   - footer
   - marquee
@@ -23,9 +39,8 @@ freeformKeywords:
   - purple
   - lavender
   - animated banner
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:53:19Z"
 status: stable
+language: en

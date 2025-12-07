@@ -1,15 +1,23 @@
 schemaVersion: "2.0"
 name: pricing-opl-big33
 category: pricing
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-big33.png
-
 tags:
-  functional: [hover-effect]
-  style: [light-theme, minimal, modern, colorful, sans-serif]
-  layout: [centered, card-grid, responsive]
-  industry: [saas]
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - colorful
+    - sans-serif
+  layout:
+    - centered
+    - card-grid
+    - responsive
+  industry:
+    - saas
 freeformKeywords:
   - pricing
   - pricing table
@@ -20,9 +28,8 @@ freeformKeywords:
   - monthly plans
   - content management
   - storage plans
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:12:30Z"
 status: stable
+language: en

@@ -1,15 +1,22 @@
 schemaVersion: "2.0"
 name: nutsdev-footer
 category: footer
-
 images:
   preview: agent-input/footer/nutsdev-home-page-section-footer.jpg
-
 tags:
   functional: []
-  style: [dark-theme, minimal, modern, sans-serif]
-  layout: [full-width, responsive]
-  industry: [agency, creative, portfolio]
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - full-width
+    - responsive
+  industry:
+    - agency
+    - creative
+    - portfolio
 freeformKeywords:
   - footer
   - dark theme
@@ -25,9 +32,8 @@ freeformKeywords:
   - instagram
   - dribbble
   - behance
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:25:51Z"
 status: stable
+language: en

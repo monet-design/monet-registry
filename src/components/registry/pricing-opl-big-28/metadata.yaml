@@ -1,15 +1,21 @@
 schemaVersion: "2.0"
 name: pricing-opl-big-28
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-big-28.png
-
 tags:
-  functional: [email-capture, lead-capture]
-  style: [light-theme, minimal, modern]
-  layout: [two-column, centered]
-  industry: [saas]
+  functional:
+    - email-capture
+    - lead-capture
+  style:
+    - light-theme
+    - minimal
+    - modern
+  layout:
+    - two-column
+    - centered
+  industry:
+    - saas
 freeformKeywords:
   - pricing
   - subscription
@@ -20,9 +26,8 @@ freeformKeywords:
   - comparison
   - license
   - SaaS
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:00:27Z"
 status: stable
+language: en

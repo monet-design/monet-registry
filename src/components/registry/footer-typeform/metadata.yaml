@@ -1,15 +1,24 @@
 schemaVersion: "2.0"
 name: footer-typeform
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/typeform-home-page-section-footer.jpg
-
 tags:
-  functional: [dropdown, newsletter]
-  style: [dark-theme, modern, minimal, sans-serif]
-  layout: [multi-column, full-width, responsive]
-  industry: [saas, enterprise]
+  functional:
+    - dropdown
+    - newsletter
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - multi-column
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - enterprise
 freeformKeywords:
   - footer
   - typeform
@@ -22,9 +31,8 @@ freeformKeywords:
   - saas
   - website footer
   - enterprise
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T22:07:32Z"
 status: stable
+language: en

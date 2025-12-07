@@ -1,15 +1,24 @@
 schemaVersion: "2.0"
 name: footer-substack
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/substack-home-page-section-footer.jpg
-
 tags:
-  functional: [newsletter, email-capture]
-  style: [minimal, light-theme, sans-serif]
-  layout: [four-column, responsive, left-aligned]
-  industry: [blog, creative, news]
+  functional:
+    - newsletter
+    - email-capture
+  style:
+    - minimal
+    - light-theme
+    - sans-serif
+  layout:
+    - four-column
+    - responsive
+    - left-aligned
+  industry:
+    - blog
+    - creative
+    - news
 freeformKeywords:
   - footer
   - substack
@@ -22,9 +31,8 @@ freeformKeywords:
   - google play
   - links
   - sitemap
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:49:18Z"
 status: stable
+language: en

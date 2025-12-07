@@ -63,6 +63,7 @@ export const MetadataSchema = z.object({
   updatedAt: z.string().optional(),
 
   status: z.enum(ComponentStatus).default("stable"),
+  language: z.enum(["en", "ko"]).default("en"),
 });
 
 export type ComponentMetadata = z.infer<typeof MetadataSchema>;
@@ -183,6 +184,7 @@ export const PageMetadataSchema = z.object({
   createdAt: z.string().optional(),
   updatedAt: z.string().optional(),
   status: z.enum(ComponentStatus).default("stable"),
+  language: z.enum(["en", "ko"]).default("en"),
 });
 
 export type PageMetadata = z.infer<typeof PageMetadataSchema>;

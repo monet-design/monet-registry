@@ -1,15 +1,23 @@
 schemaVersion: "2.0"
 name: footer-teamway
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/teamway-home-page-section-footer.jpg
-
 tags:
-  functional: [hover-effect]
-  style: [minimal, modern, corporate, light-theme]
-  layout: [four-column, responsive]
-  industry: [saas, startup, enterprise]
+  functional:
+    - hover-effect
+  style:
+    - minimal
+    - modern
+    - corporate
+    - light-theme
+  layout:
+    - four-column
+    - responsive
+  industry:
+    - saas
+    - startup
+    - enterprise
 freeformKeywords:
   - footer
   - teamway
@@ -29,9 +37,8 @@ freeformKeywords:
   - cream background
   - minimal
   - corporate
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T22:07:36Z"
 status: stable
+language: en

@@ -1,14 +1,20 @@
 schemaVersion: "2.0"
 name: pricing-fonerescue
 category: pricing
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/fonerescue-big.png
-
 tags:
   functional: []
-  style: [playful, colorful, bold, modern, sans-serif]
-  layout: [centered, single-column, contained]
+  style:
+    - playful
+    - colorful
+    - bold
+    - modern
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+    - contained
   industry: []
 freeformKeywords:
   - pricing
@@ -21,9 +27,8 @@ freeformKeywords:
   - mobile repair
   - iPhone repair
   - pricing table
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T18:53:05Z"
 status: stable
+language: en

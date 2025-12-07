@@ -1,7 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { registryService } from "@/app/api/_common/services";
 import { getPreviewImageUrl } from "@/app/api/_common/utils";
-import type { ListComponentsResponse, ErrorResponse } from "@/app/api/_common/types";
+import type {
+  ListComponentsResponse,
+  ErrorResponse,
+} from "@/app/api/_common/types";
 
 export async function GET(request: NextRequest) {
   try {
@@ -60,6 +63,7 @@ export async function GET(request: NextRequest) {
         tags: c.tags,
         status: c.status,
         created_at: c.createdAt,
+        language: c.language,
       })),
     };
 

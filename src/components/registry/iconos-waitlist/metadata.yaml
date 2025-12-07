@@ -4,10 +4,22 @@ category: waitlist
 images:
   preview: agent-input/dribble-waitlist/iconos.png
 tags:
-  functional: [email-capture, lead-capture]
-  style: [modern, gradient, glassmorphism, colorful, minimal]
-  layout: [centered, single-column]
-  industry: [saas, startup, creative]
+  functional:
+    - email-capture
+    - lead-capture
+  style:
+    - modern
+    - gradient
+    - glassmorphism
+    - colorful
+    - minimal
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - startup
+    - creative
 freeformKeywords:
   - waitlist
   - email signup
@@ -23,3 +35,4 @@ fontFamily:
   - Inter
 createdAt: "2025-12-02T00:00:00Z"
 status: stable
+language: en

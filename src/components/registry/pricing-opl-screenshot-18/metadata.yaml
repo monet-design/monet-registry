@@ -1,15 +1,24 @@
 schemaVersion: "2.0"
 name: pricing-opl-screenshot-18
 category: pricing
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-screenshot-18.png
-
 tags:
-  functional: [hover-effect]
-  style: [gradient, colorful, modern, bold, light-theme]
-  layout: [two-column, centered, card-grid]
-  industry: [creative, agency]
+  functional:
+    - hover-effect
+  style:
+    - gradient
+    - colorful
+    - modern
+    - bold
+    - light-theme
+  layout:
+    - two-column
+    - centered
+    - card-grid
+  industry:
+    - creative
+    - agency
 freeformKeywords:
   - pricing
   - logo design
@@ -22,9 +31,8 @@ freeformKeywords:
   - tags
   - cards
   - two columns
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:51:08Z"
 status: stable
+language: en

@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: mova-brewing-footer
 category: footer
-
 images:
   preview: agent-input/footer/move-home-page-section-footer.jpg
-
 tags:
   functional:
     - contact-form
@@ -33,10 +31,9 @@ freeformKeywords:
   - large text
   - beer
   - company info
-
 fontFamily:
   - Oswald
   - Inter
-
 createdAt: "2025-12-03T21:24:39Z"
 status: stable
+language: en

@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: kinetic-cta-footer
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/kinetic-home-page-section-footer.jpg
-
 tags:
   functional:
     - animation
@@ -32,10 +30,9 @@ freeformKeywords:
   - modern
   - announcement
   - navigation
-
 fontFamily:
   - Space Grotesk
   - Instrument Serif
-
 createdAt: "2025-12-03T21:22:21Z"
 status: stable
+language: en

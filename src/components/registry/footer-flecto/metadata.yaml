@@ -1,15 +1,24 @@
 schemaVersion: "2.0"
 name: footer-flecto
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/flecto-home-page-section-footer.jpg
-
 tags:
-  functional: [newsletter, email-capture, lead-capture]
-  style: [minimal, modern, light-theme]
-  layout: [multi-column, left-aligned, responsive]
-  industry: [saas, startup]
+  functional:
+    - newsletter
+    - email-capture
+    - lead-capture
+  style:
+    - minimal
+    - modern
+    - light-theme
+  layout:
+    - multi-column
+    - left-aligned
+    - responsive
+  industry:
+    - saas
+    - startup
 freeformKeywords:
   - footer
   - newsletter
@@ -21,9 +30,8 @@ freeformKeywords:
   - minimal
   - cream background
   - green accent
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:59:33Z"
 status: stable
+language: en

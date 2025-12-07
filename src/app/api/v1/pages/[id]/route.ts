@@ -98,6 +98,7 @@ export async function GET(request: NextRequest, { params }: RouteParams) {
         component_path: page.componentPath,
         status: page.status,
         created_at: page.createdAt,
+        language: page.language,
       },
       sections,
       page_info: {

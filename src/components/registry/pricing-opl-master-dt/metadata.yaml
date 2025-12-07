@@ -1,15 +1,25 @@
 schemaVersion: "2.0"
 name: pricing-opl-master-dt
 category: pricing
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-master-dt.png
-
 tags:
-  functional: [email-capture, lead-capture]
-  style: [dark-theme, gradient, modern, minimal, sans-serif]
-  layout: [single-column, centered, card-grid]
-  industry: [saas, creative]
+  functional:
+    - email-capture
+    - lead-capture
+  style:
+    - dark-theme
+    - gradient
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - single-column
+    - centered
+    - card-grid
+  industry:
+    - saas
+    - creative
 freeformKeywords:
   - pricing
   - subscription
@@ -22,9 +32,8 @@ freeformKeywords:
   - earn
   - discount
   - limited offer
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:40:17Z"
 status: stable
+language: en

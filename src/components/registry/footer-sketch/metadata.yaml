@@ -1,15 +1,24 @@
 schemaVersion: "2.0"
 name: footer-sketch
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/sketch-home-page-section-footer.jpg
-
 tags:
-  functional: [newsletter, email-capture]
-  style: [light-theme, minimal, modern, sans-serif]
-  layout: [multi-column, left-aligned, responsive]
-  industry: [saas, creative]
+  functional:
+    - newsletter
+    - email-capture
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - multi-column
+    - left-aligned
+    - responsive
+  industry:
+    - saas
+    - creative
 freeformKeywords:
   - footer
   - sketch
@@ -22,9 +31,8 @@ freeformKeywords:
   - clean
   - light gray
   - product links
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:49:47Z"
 status: stable
+language: en

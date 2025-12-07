@@ -4,10 +4,28 @@ category: hero
 images:
   preview: agent-input/unsection-hero/github-security-hero-section.webp
 tags:
-  functional: [dropdown, animation, hover-effect]
-  style: [dark-theme, modern, gradient, glow, shadow, minimal, corporate, sans-serif]
-  layout: [centered, single-column, full-width, responsive]
-  industry: [saas, enterprise, startup]
+  functional:
+    - dropdown
+    - animation
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - glow
+    - shadow
+    - minimal
+    - corporate
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - enterprise
+    - startup
 freeformKeywords:
   - github
   - security
@@ -27,3 +45,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

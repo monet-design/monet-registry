@@ -4,10 +4,25 @@ category: hero
 images:
   preview: agent-input/unsection-hero/fin-ai-tasks-hero-design.jpg
 tags:
-  functional: [animation, hover-effect, modal]
-  style: [dark-theme, modern, gradient, shadow, blur]
-  layout: [two-column, centered, responsive, split-layout]
-  industry: [saas, fintech, ai]
+  functional:
+    - animation
+    - hover-effect
+    - modal
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - shadow
+    - blur
+  layout:
+    - two-column
+    - centered
+    - responsive
+    - split-layout
+  industry:
+    - saas
+    - fintech
+    - ai
 freeformKeywords:
   - hero
   - landing
@@ -24,3 +39,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

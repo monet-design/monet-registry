@@ -1,15 +1,22 @@
 schemaVersion: "2.0"
 name: intercom-footer
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/intercom-home-page-section-footer.jpg
-
 tags:
   functional: []
-  style: [light-theme, minimal, modern, corporate, sans-serif]
-  layout: [multi-column, full-width, responsive]
-  industry: [saas]
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - corporate
+    - sans-serif
+  layout:
+    - multi-column
+    - full-width
+    - responsive
+  industry:
+    - saas
 freeformKeywords:
   - footer
   - intercom
@@ -26,9 +33,8 @@ freeformKeywords:
   - privacy
   - multi-column
   - sitemap
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:16:58Z"
 status: stable
+language: en

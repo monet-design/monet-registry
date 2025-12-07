@@ -1,15 +1,27 @@
 schemaVersion: "2.0"
 name: footer-doconomy
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/doconomy-home-page-section-footer.jpg
-
 tags:
-  functional: [newsletter, email-capture, lead-capture]
-  style: [light-theme, minimal, corporate, sans-serif, monochrome]
-  layout: [multi-column, full-width, responsive]
-  industry: [fintech, saas, enterprise]
+  functional:
+    - newsletter
+    - email-capture
+    - lead-capture
+  style:
+    - light-theme
+    - minimal
+    - corporate
+    - sans-serif
+    - monochrome
+  layout:
+    - multi-column
+    - full-width
+    - responsive
+  industry:
+    - fintech
+    - saas
+    - enterprise
 freeformKeywords:
   - footer
   - email subscription
@@ -23,9 +35,8 @@ freeformKeywords:
   - minimal
   - off-white
   - beige
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:58:18Z"
 status: stable
+language: en

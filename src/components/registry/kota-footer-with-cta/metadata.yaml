@@ -1,15 +1,24 @@
 schemaVersion: "2.0"
 name: kota-footer-with-cta
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/kota-home-page-section-footer.jpg
-
 tags:
-  functional: [email-capture, newsletter]
-  style: [dark-theme, modern, sans-serif]
-  layout: [four-column, full-width, asymmetric]
-  industry: [fintech, saas, startup]
+  functional:
+    - email-capture
+    - newsletter
+  style:
+    - dark-theme
+    - modern
+    - sans-serif
+  layout:
+    - four-column
+    - full-width
+    - asymmetric
+  industry:
+    - fintech
+    - saas
+    - startup
 freeformKeywords:
   - footer
   - cta
@@ -26,9 +35,8 @@ freeformKeywords:
   - modern
   - startup
   - fintech
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T21:22:24Z"
 status: stable
+language: en

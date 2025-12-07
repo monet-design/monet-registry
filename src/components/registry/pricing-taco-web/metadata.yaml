@@ -1,15 +1,20 @@
 schemaVersion: "2.0"
 name: pricing-taco-web
 category: pricing
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/TACO-Web-UX-Design-Wir-erschaffen-um-zu-beeindrucken.png
-
 tags:
   functional: []
-  style: [modern, minimal, colorful]
-  layout: [two-column, left-aligned]
-  industry: [agency, creative]
+  style:
+    - modern
+    - minimal
+    - colorful
+  layout:
+    - two-column
+    - left-aligned
+  industry:
+    - agency
+    - creative
 freeformKeywords:
   - pricing
   - price table
@@ -21,9 +26,8 @@ freeformKeywords:
   - turquoise
   - german
   - dienstleistungen
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T18:53:05Z"
 status: stable
+language: en

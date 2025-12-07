@@ -2,8 +2,7 @@ schemaVersion: "2.0"
 name: intercom-customers-hero
 category: hero
 images:
-  preview: >-
-    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/intercom-customers-hero-design.jpg
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/intercom-customers-hero-design.jpg
 tags:
   functional:
     - filter
@@ -38,3 +37,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

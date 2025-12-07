@@ -1,15 +1,28 @@
 schemaVersion: "2.0"
 name: pricing-opl-master-ilo
 category: pricing
-
 images:
   preview: agent-input/pricing/opl-master-ilo.png
-
 tags:
-  functional: [progress, countdown, hover-effect]
-  style: [light-theme, modern, elegant, serif, gradient, shadow]
-  layout: [two-column, centered, card-grid, responsive]
-  industry: [saas, startup]
+  functional:
+    - progress
+    - countdown
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - elegant
+    - serif
+    - gradient
+    - shadow
+  layout:
+    - two-column
+    - centered
+    - card-grid
+    - responsive
+  industry:
+    - saas
+    - startup
 freeformKeywords:
   - pricing
   - launch
@@ -24,10 +37,9 @@ freeformKeywords:
   - launch pricing
   - ilo
   - twitter analytics
-
 fontFamily:
   - DM Serif Display
   - Inter
-
 createdAt: "2025-12-03T19:42:16Z"
 status: stable
+language: en

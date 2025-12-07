@@ -1,15 +1,23 @@
 schemaVersion: "2.0"
 name: pricing-opl-big21
 category: pricing
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/pricing/opl-big21.png
-
 tags:
   functional: []
-  style: [dark-theme, modern, bold, gradient, shadow]
-  layout: [three-column, centered, card-grid, responsive]
-  industry: [saas]
+  style:
+    - dark-theme
+    - modern
+    - bold
+    - gradient
+    - shadow
+  layout:
+    - three-column
+    - centered
+    - card-grid
+    - responsive
+  industry:
+    - saas
 freeformKeywords:
   - pricing
   - subscription
@@ -21,9 +29,8 @@ freeformKeywords:
   - dark
   - green
   - monthly
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-03T19:11:27Z"
 status: stable
+language: en

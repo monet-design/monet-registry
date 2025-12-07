@@ -2,13 +2,23 @@ schemaVersion: "2.0"
 name: sketch-prototype-hero
 category: hero
 images:
-  preview: >-
-    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/sketch-prototype-page-section-hero.jpg
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/sketch-prototype-page-section-hero.jpg
 tags:
-  functional: [hover-effect]
-  style: [light-theme, modern, gradient, minimal, sans-serif]
-  layout: [split-layout, left-aligned, responsive]
-  industry: [saas, creative]
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - gradient
+    - minimal
+    - sans-serif
+  layout:
+    - split-layout
+    - left-aligned
+    - responsive
+  industry:
+    - saas
+    - creative
 freeformKeywords:
   - sketch
   - prototype
@@ -25,3 +35,4 @@ fontFamily:
   - Inter
 createdAt: "2025-12-01T00:00:00Z"
 status: stable
+language: en

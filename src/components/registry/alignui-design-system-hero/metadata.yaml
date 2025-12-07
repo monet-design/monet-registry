@@ -2,13 +2,28 @@ schemaVersion: "2.0"
 name: alignui-design-system-hero
 category: hero
 images:
-  preview: >-
-    /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/alignui-home-page-section-hero.jpg
+  preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/unsection-hero/alignui-home-page-section-hero.jpg
 tags:
-  functional: [counter, hover-effect]
-  style: [light-theme, modern, minimal, gradient, sans-serif, shadow]
-  layout: [split-layout, centered, two-column, full-width, responsive]
-  industry: [saas, creative, startup]
+  functional:
+    - counter
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - gradient
+    - sans-serif
+    - shadow
+  layout:
+    - split-layout
+    - centered
+    - two-column
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - creative
+    - startup
 freeformKeywords:
   - hero
   - design system
@@ -24,3 +39,4 @@ fontFamily:
   - Inter
 createdAt: "2025-11-30T00:00:00Z"
 status: stable
+language: en

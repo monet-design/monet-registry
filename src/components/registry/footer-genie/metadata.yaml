@@ -1,15 +1,25 @@
 schemaVersion: "2.0"
 name: footer-genie
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/landing-mon-components/agent-input/footer/genie-home-page-section-footer.jpg
-
 tags:
-  functional: [animation, hover-effect]
-  style: [dark-theme, minimal, modern, neon]
-  layout: [single-column, centered, full-width]
-  industry: [e-commerce, saas, startup]
+  functional:
+    - animation
+    - hover-effect
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - neon
+  layout:
+    - single-column
+    - centered
+    - full-width
+  industry:
+    - e-commerce
+    - saas
+    - startup
 freeformKeywords:
   - footer
   - cta
@@ -25,10 +35,9 @@ freeformKeywords:
   - genie
   - navigation
   - social links
-
 fontFamily:
   - Inter
   - Instrument Serif
-
 createdAt: "2025-12-03T21:14:42Z"
 status: stable
+language: en

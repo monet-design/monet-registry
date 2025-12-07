@@ -30,12 +30,33 @@ interface MetadataYaml {
   fontFamily?: string[];
   dependencies?: string[];
   source?: {
-    name: string;
+    name?: string;
+    type?: string;
     url?: string;
+    scrapedAt?: string;
+    sectionIndex?: number;
   };
+  parentPage?: string;
   createdAt?: string;
   updatedAt?: string;
   status?: string;
+}
+
+interface PageMetadataYaml extends MetadataYaml {
+  sections: Array<{
+    id: string;
+    category: string;
+    order: number;
+  }>;
+  pageInfo?: {
+    totalSections: number;
+    estimatedHeight?: number;
+    primaryColors?: string[];
+    typography?: {
+      headingFont?: string;
+      bodyFont?: string;
+    };
+  };
 }
 
 interface RegistryEntry {
@@ -61,8 +82,28 @@ interface RegistryEntry {
   searchableText: string;
   fontFamily: string[];
   componentPath: string;
+  parentPage?: string;
+  source?: {
+    type?: string;
+    url?: string;
+    scrapedAt?: string;
+    sectionIndex?: number;
+  };
   createdAt?: string;
   status: string;
+}
+
+interface PageRegistryEntry extends RegistryEntry {
+  sections: Array<{
+    id: string;
+    category: string;
+    order: number;
+  }>;
+  pageInfo?: {
+    totalSections: number;
+    estimatedHeight?: number;
+    primaryColors?: string[];
+  };
 }
 
 function buildSearchableText(metadata: MetadataYaml): string {
@@ -135,6 +176,15 @@ async function main() {
         searchableText: buildSearchableText(metadata),
         fontFamily: metadata.fontFamily || [],
         componentPath: `@/components/registry/${componentName}`,
+        parentPage: metadata.parentPage,
+        source: metadata.source
+          ? {
+              type: metadata.source.type,
+              url: metadata.source.url,
+              scrapedAt: metadata.source.scrapedAt,
+              sectionIndex: metadata.source.sectionIndex,
+            }
+          : undefined,
         createdAt: metadata.createdAt,
         status: metadata.status || "stable",
       };
@@ -209,13 +259,101 @@ async function main() {
   const tagIndexPath = path.join(outputDir, "tag-index.json");
   fs.writeFileSync(tagIndexPath, JSON.stringify(tagIndex, null, 2));
 
+  // ========================================
+  // Page 컴포넌트 처리
+  // ========================================
+  const pagesDir = path.join(registryDir, "pages");
+  const pageRegistry: Record<string, PageRegistryEntry> = {};
+  let pagesProcessed = 0;
+
+  if (fs.existsSync(pagesDir)) {
+    const pageDirs = fs
+      .readdirSync(pagesDir, { withFileTypes: true })
+      .filter((dirent) => dirent.isDirectory())
+      .map((dirent) => dirent.name);
+
+    for (const pageName of pageDirs) {
+      const metadataPath = path.join(pagesDir, pageName, "metadata.yaml");
+
+      if (!fs.existsSync(metadataPath)) {
+        continue;
+      }
+
+      try {
+        const content = fs.readFileSync(metadataPath, "utf-8");
+        const metadata = yaml.load(content) as PageMetadataYaml;
+
+        const entry: PageRegistryEntry = {
+          id: pageName,
+          name: metadata.name,
+          category: "page",
+          images: metadata.images,
+          title: metadata.title,
+          description: metadata.description,
+          tags: {
+            functional: metadata.tags?.functional || [],
+            style: metadata.tags?.style || [],
+            layout: metadata.tags?.layout || [],
+            industry: metadata.tags?.industry || [],
+          },
+          freeformKeywords: metadata.freeformKeywords || [],
+          searchableText: buildSearchableText(metadata),
+          fontFamily: metadata.fontFamily || [],
+          componentPath: `@/components/registry/pages/${pageName}`,
+          source: metadata.source
+            ? {
+                type: metadata.source.type,
+                url: metadata.source.url,
+                scrapedAt: metadata.source.scrapedAt,
+              }
+            : undefined,
+          createdAt: metadata.createdAt,
+          status: metadata.status || "stable",
+          sections: metadata.sections || [],
+          pageInfo: metadata.pageInfo,
+        };
+
+        pageRegistry[pageName] = entry;
+        pagesProcessed++;
+      } catch (e) {
+        console.error(`Failed to process page ${pageName}:`, e);
+      }
+    }
+  }
+
+  // page-registry.json 저장
+  const pageRegistryPath = path.join(outputDir, "page-registry.json");
+  fs.writeFileSync(pageRegistryPath, JSON.stringify(pageRegistry, null, 2));
+
+  // page-index.json 생성 (page → sections 매핑)
+  const pageIndex: Record<string, string[]> = {};
+  for (const [pageId, page] of Object.entries(pageRegistry)) {
+    pageIndex[pageId] = page.sections.map((s) => s.id);
+  }
+  const pageIndexPath = path.join(outputDir, "page-index.json");
+  fs.writeFileSync(pageIndexPath, JSON.stringify(pageIndex, null, 2));
+
+  // section-to-page.json 생성 (section → page 역참조)
+  const sectionToPage: Record<string, string> = {};
+  for (const [pageId, page] of Object.entries(pageRegistry)) {
+    for (const section of page.sections) {
+      sectionToPage[section.id] = pageId;
+    }
+  }
+  const sectionToPagePath = path.join(outputDir, "section-to-page.json");
+  fs.writeFileSync(sectionToPagePath, JSON.stringify(sectionToPage, null, 2));
+
   console.log("\n=== Registry Generation Complete ===\n");
-  console.log(`Processed: ${processed}`);
-  console.log(`Skipped: ${skipped}`);
+  console.log(`Sections processed: ${processed}`);
+  console.log(`Sections skipped: ${skipped}`);
+  console.log(`Pages processed: ${pagesProcessed}`);
   console.log(`\nOutput files:`);
   console.log(`  - ${registryPath}`);
   console.log(`  - ${categoryIndexPath}`);
   console.log(`  - ${tagIndexPath}`);
+  console.log(`  - ${pageRegistryPath}`);
+  console.log(`  - ${pageIndexPath}`);
+  console.log(`  - ${sectionToPagePath}`);
   console.log(`\nCategories: ${Object.keys(categoryIndex).length}`);
   console.log(`Functional tags: ${Object.keys(tagIndex.functional).length}`);
   console.log(`Style tags: ${Object.keys(tagIndex.style).length}`);

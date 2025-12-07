@@ -17,6 +17,8 @@ Registry 컴포넌트 기본 파일 생성 스크립트 (v2 - YAML 기반 메타
     -f "Playfair Display, Inter"
 """
 
+from __future__ import annotations
+
 import argparse
 import sys
 import re
@@ -78,7 +80,14 @@ VALID_CATEGORIES = [
 
 
 def generate_metadata_yaml(
-    name: str, category: str, image_path: str, keywords: list[str], font_family: list[str]
+    name: str,
+    category: str,
+    image_path: str,
+    keywords: list[str],
+    font_family: list[str],
+    parent_page: str | None = None,
+    source_url: str | None = None,
+    section_index: int | None = None,
 ) -> str:
     """metadata.yaml 파일 내용 생성"""
 
@@ -90,7 +99,7 @@ def generate_metadata_yaml(
 
     now_utc = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-    return f'''schemaVersion: "2.0"
+    yaml_content = f'''schemaVersion: "2.0"
 name: {name}
 category: {category}
 
@@ -106,6 +115,22 @@ fontFamily:
 createdAt: "{now_utc}"
 status: stable
 '''
+
+    # URL 스크래핑 시 추가 필드
+    if parent_page:
+        yaml_content += f'\nparentPage: {parent_page}\n'
+
+    if source_url:
+        yaml_content += f'''
+source:
+  type: url
+  url: {source_url}
+  scrapedAt: "{now_utc}"
+'''
+        if section_index is not None:
+            yaml_content += f'  sectionIndex: {section_index}\n'
+
+    return yaml_content
 
 
 def generate_index_tsx(name: str) -> str:
@@ -249,6 +274,26 @@ def parse_arguments():
         help="기존 폴더가 있어도 덮어쓰기",
     )
 
+    # URL 스크래핑 관련 옵션
+    parser.add_argument(
+        "--parent-page",
+        default=None,
+        help="부모 page 컴포넌트 ID (URL 스크래핑 시 사용)",
+    )
+
+    parser.add_argument(
+        "--source-url",
+        default=None,
+        help="원본 URL (URL 스크래핑 시 사용)",
+    )
+
+    parser.add_argument(
+        "--section-index",
+        type=int,
+        default=None,
+        help="페이지 내 섹션 순서 (URL 스크래핑 시 사용)",
+    )
+
     return parser.parse_args()
 
 
@@ -295,7 +340,14 @@ def main():
 
     # 7. 파일 생성 (metadata.yaml + index.tsx)
     metadata_content = generate_metadata_yaml(
-        args.name, args.category, args.image_path, keywords, font_family
+        args.name,
+        args.category,
+        args.image_path,
+        keywords,
+        font_family,
+        parent_page=args.parent_page,
+        source_url=args.source_url,
+        section_index=args.section_index,
     )
     index_content = generate_index_tsx(args.name)
 

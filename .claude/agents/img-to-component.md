@@ -30,6 +30,9 @@ model: inherit
    | `--keywords` | `-k` | O | 검색 키워드 (comma-separated) |
    | `--font-family` | `-f` | X | 폰트 패밀리 (기본값: Inter) |
    | `--force` | | X | 기존 폴더 덮어쓰기 |
+   | `--parent-page` | | X | 부모 page 컴포넌트 ID (URL 스크래핑 시) |
+   | `--source-url` | | X | 원본 URL (URL 스크래핑 시) |
+   | `--section-index` | | X | 페이지 내 섹션 순서 (URL 스크래핑 시) |
 
    **생성되는 파일:**
 

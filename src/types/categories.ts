@@ -23,6 +23,7 @@ export const ComponentCategory = [
   "logo-cloud",
   "newsletter",
   "waitlist",
+  "page", // Full page component (collection of sections)
   "other",
 ] as const;
 

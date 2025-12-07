@@ -19,6 +19,8 @@
     "screenshot:capture": "tsx scripts/screenshot/cli.ts",
     "screenshot:all": "tsx scripts/screenshot/cli.ts --all",
     "screenshot:reset": "tsx scripts/screenshot/reset.ts",
+    "scrape:url": "tsx scripts/scrape/scrape-website.ts",
+    "generate:page": "tsx scripts/generate-page-component.ts",
     "registry:generate": "tsx scripts/generate-shadcn-registry.ts",
     "registry:build": "pnpm registry:generate && shadcn build",
     "test:e2e": "vitest run --config vitest.e2e.config.mts",

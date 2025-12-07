@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: bolta-io-landing
+category: page
+images:
+  preview: scraped/bolta-io-2025-12-07/full-page.png
+title: Bolta - AI Financial Assistant
+sections:
+  - id: bolta-io-header-0
+    category: header
+    order: 0
+  - id: bolta-io-hero-1
+    category: hero
+    order: 1
+  - id: bolta-io-testimonial-2
+    category: testimonial
+    order: 2
+  - id: bolta-io-feature-3
+    category: feature
+    order: 3
+  - id: bolta-io-stats-4
+    category: stats
+    order: 4
+  - id: bolta-io-cta-5
+    category: newsletter
+    order: 5
+  - id: bolta-io-trust-6
+    category: feature
+    order: 6
+  - id: bolta-io-faq-7
+    category: faq
+    order: 7
+  - id: bolta-io-footer-8
+    category: footer
+    order: 8
+source:
+  type: url
+  url: https://bolta.io/
+  scrapedAt: "2025-12-07T12:11:11.469Z"
+pageInfo:
+  totalSections: 9
+freeformKeywords:
+  - complete landing page
+  - full page
+  - bolta.io
+createdAt: "2025-12-07T12:11:11.469Z"
+status: stable

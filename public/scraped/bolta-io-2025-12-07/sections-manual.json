@@ -1,0 +1,110 @@
+[
+  {
+    "index": 0,
+    "tag": "section",
+    "selector": "section-0",
+    "category": "header",
+    "rect": {
+      "top": 0,
+      "height": 68
+    },
+    "confidence": 1,
+    "name": "header"
+  },
+  {
+    "index": 1,
+    "tag": "section",
+    "selector": "section-1",
+    "category": "hero",
+    "rect": {
+      "top": 68,
+      "height": 860
+    },
+    "confidence": 1,
+    "name": "hero"
+  },
+  {
+    "index": 2,
+    "tag": "section",
+    "selector": "section-2",
+    "category": "testimonial",
+    "rect": {
+      "top": 928,
+      "height": 904
+    },
+    "confidence": 1,
+    "name": "testimonial"
+  },
+  {
+    "index": 3,
+    "tag": "section",
+    "selector": "section-3",
+    "category": "feature",
+    "rect": {
+      "top": 1832,
+      "height": 920
+    },
+    "confidence": 1,
+    "name": "feature"
+  },
+  {
+    "index": 4,
+    "tag": "section",
+    "selector": "section-4",
+    "category": "stats",
+    "rect": {
+      "top": 2752,
+      "height": 200
+    },
+    "confidence": 1,
+    "name": "stats"
+  },
+  {
+    "index": 5,
+    "tag": "section",
+    "selector": "section-5",
+    "category": "cta",
+    "rect": {
+      "top": 2952,
+      "height": 350
+    },
+    "confidence": 1,
+    "name": "cta"
+  },
+  {
+    "index": 6,
+    "tag": "section",
+    "selector": "section-6",
+    "category": "trust",
+    "rect": {
+      "top": 3302,
+      "height": 400
+    },
+    "confidence": 1,
+    "name": "trust"
+  },
+  {
+    "index": 7,
+    "tag": "section",
+    "selector": "section-7",
+    "category": "faq",
+    "rect": {
+      "top": 3702,
+      "height": 900
+    },
+    "confidence": 1,
+    "name": "faq"
+  },
+  {
+    "index": 8,
+    "tag": "section",
+    "selector": "section-8",
+    "category": "footer",
+    "rect": {
+      "top": 4602,
+      "height": 612
+    },
+    "confidence": 1,
+    "name": "footer"
+  }
+]

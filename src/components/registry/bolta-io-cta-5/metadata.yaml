@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: bolta-io-cta-5
+category: newsletter
+
+images:
+  preview: scraped/bolta-io-2025-12-07/sections/section-5.png
+
+freeformKeywords:
+  - newsletter
+  - cta
+  - email subscription
+  - korean
+  - fintech
+  - beige
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T12:06:16Z"
+status: stable
+
+parentPage: bolta-io-landing
+
+source:
+  type: url
+  url: https://bolta.io/
+  scrapedAt: "2025-12-07T12:06:16Z"
+  sectionIndex: 5

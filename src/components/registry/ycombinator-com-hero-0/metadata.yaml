@@ -12,6 +12,8 @@ freeformKeywords:
   - apply
   - funding
   - make something people want
+  - header
+  - navigation
 
 fontFamily:
   - Inter
@@ -23,6 +25,8 @@ language: en
 tags:
   functional:
     - hover-effect
+    - mobile-menu
+    - navigation
   style:
     - light-theme
     - modern

@@ -30,19 +30,21 @@ interface YcombinatorComLandingProps {
  * - ycombinator-com-cta-2
  * - ycombinator-com-footer-3
  */
-export default function YcombinatorComLanding({ mode = "light" }: YcombinatorComLandingProps) {
+export default function YcombinatorComLanding({
+  mode = "light",
+}: YcombinatorComLandingProps) {
   return (
     <div className="w-full min-h-screen">
-        <YcombinatorComHero0 mode={mode} />
-        <YcombinatorComVideo7 mode={mode} />
-        <YcombinatorComBenefit8 mode={mode} />
-        <YcombinatorComPrinciples9 mode={mode} />
-        <YcombinatorComLogoCloud4 mode={mode} />
-        <YcombinatorComFeature5 mode={mode} />
-        <YcombinatorComTestimonial6 mode={mode} />
-        <YcombinatorComShowcase1 mode={mode} />
-        <YcombinatorComCta2 mode={mode} />
-        <YcombinatorComFooter3 mode={mode} />
+      <YcombinatorComHero0 mode={mode} />
+      <YcombinatorComLogoCloud4 mode={mode} />
+      <YcombinatorComVideo7 mode={mode} />
+      <YcombinatorComBenefit8 mode={mode} />
+      <YcombinatorComPrinciples9 mode={mode} />
+      <YcombinatorComFeature5 mode={mode} />
+      <YcombinatorComTestimonial6 mode={mode} />
+      <YcombinatorComShowcase1 mode={mode} />
+      <YcombinatorComCta2 mode={mode} />
+      <YcombinatorComFooter3 mode={mode} />
     </div>
   );
 }

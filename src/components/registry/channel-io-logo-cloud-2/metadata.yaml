@@ -1,24 +1,19 @@
 schemaVersion: "2.0"
 name: channel-io-logo-cloud-2
 category: logo-cloud
-
 images:
   preview: scraped/channel-io-2025-12-07/sections/section-0.png
-
 freeformKeywords:
   - logo cloud
   - partners
   - clients
   - trust badges
   - social proof
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T16:50:44Z"
 status: stable
 language: ko
-
 tags:
   functional:
     - hover-effect
@@ -31,11 +26,10 @@ tags:
     - full-width
   industry:
     - saas
-
 parentPage: channel-io-landing
-
 source:
   type: url
   url: https://channel.io/ko
   scrapedAt: "2025-12-07T16:50:44Z"
   sectionIndex: 2
+  name: channel

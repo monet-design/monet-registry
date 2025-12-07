@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: coderabbit-ai-testimonial-10
 category: testimonial
-
 images:
   preview: scraped/coderabbit-ai-2025-12-07/sections/section-10.png
-
 freeformKeywords:
   - testimonials
   - user reviews
@@ -12,14 +10,11 @@ freeformKeywords:
   - social proof
   - customers
   - feedback
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T17:36:16Z"
 status: stable
 language: en
-
 tags:
   functional:
     - social-proof
@@ -34,11 +29,10 @@ tags:
     - saas
     - ai
     - developer-tools
-
 parentPage: coderabbit-ai-landing
-
 source:
   type: url
   url: https://www.coderabbit.ai/
   scrapedAt: "2025-12-07T17:36:16Z"
   sectionIndex: 10
+  name: coderabbit

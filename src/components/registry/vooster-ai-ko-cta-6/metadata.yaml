@@ -1,24 +1,19 @@
 schemaVersion: "2.0"
 name: vooster-ai-ko-cta-6
 category: cta
-
 images:
   preview: scraped/vooster-ai-2025-12-07/sections/section-6.png
-
 freeformKeywords:
   - CTA
   - start
   - beta
   - free trial
   - benefits
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T19:15:14Z"
 status: stable
 language: ko
-
 tags:
   functional:
     - lead-capture
@@ -35,11 +30,10 @@ tags:
     - saas
     - ai
     - startup
-
 parentPage: vooster-ai-ko-landing
-
 source:
   type: url
   url: https://www.vooster.ai/ko
   scrapedAt: "2025-12-07T19:15:14Z"
   sectionIndex: 6
+  name: vooster

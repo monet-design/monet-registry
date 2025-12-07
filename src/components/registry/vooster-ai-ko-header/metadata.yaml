@@ -2,7 +2,7 @@ schemaVersion: "2.0"
 name: vooster-ai-ko-header
 category: header
 images:
-  preview: ""
+  preview: placeholder/vooster-ai-ko-header.png
 tags:
   functional:
     - mobile-menu
@@ -38,4 +38,5 @@ status: stable
 source:
   type: url
   url: https://vooster.ai/
+  name: vooster
 language: ko

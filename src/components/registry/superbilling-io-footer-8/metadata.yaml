@@ -1,24 +1,19 @@
 schemaVersion: "2.0"
 name: superbilling-io-footer-8
 category: footer
-
 images:
   preview: scraped/superbilling-io-2025-12-07/sections/section-8.png
-
 freeformKeywords:
   - footer
   - copyright
   - contact
   - terms
   - business info
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T19:14:12Z"
 status: stable
 language: ko
-
 tags:
   functional: []
   style:
@@ -30,11 +25,10 @@ tags:
   industry:
     - saas
     - fintech
-
 parentPage: superbilling-io-landing
-
 source:
   type: url
   url: https://superbilling.io/
   scrapedAt: "2025-12-07T19:14:12Z"
   sectionIndex: 8
+  name: superbilling

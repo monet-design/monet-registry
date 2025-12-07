@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: coderabbit-ai-cta-9
 category: cta
-
 images:
   preview: scraped/coderabbit-ai-2025-12-07/sections/section-9.png
-
 freeformKeywords:
   - get started
   - free trial
@@ -13,14 +11,11 @@ freeformKeywords:
   - signup
   - GitHub
   - GitLab
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T17:36:15Z"
 status: stable
 language: en
-
 tags:
   functional:
     - lead-capture
@@ -36,11 +31,10 @@ tags:
     - saas
     - ai
     - developer-tools
-
 parentPage: coderabbit-ai-landing
-
 source:
   type: url
   url: https://www.coderabbit.ai/
   scrapedAt: "2025-12-07T17:36:15Z"
   sectionIndex: 9
+  name: coderabbit

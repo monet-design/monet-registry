@@ -1,4 +1,4 @@
-schemaVersion: "2.0"
+schemaVersion: '2.0'
 name: features-x
 category: feature-showcase
 images:
@@ -25,6 +25,6 @@ freeformKeywords:
   - 4 column grid
 fontFamily:
   - Inter
-createdAt: "2025-11-30T00:00:00Z"
+createdAt: '2025-11-30T00:00:00Z'
 status: stable
 language: en

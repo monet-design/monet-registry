@@ -1,24 +1,19 @@
 schemaVersion: "2.0"
 name: vooster-ai-ko-hero-0
 category: hero
-
 images:
   preview: scraped/vooster-ai-2025-12-07/sections/section-0.png
-
 freeformKeywords:
   - AI PM
   - vibe coding
   - project management
   - dashboard
   - CRM
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T19:14:45Z"
 status: stable
 language: ko
-
 tags:
   functional:
     - lead-capture
@@ -35,11 +30,10 @@ tags:
     - saas
     - ai
     - startup
-
 parentPage: vooster-ai-ko-landing
-
 source:
   type: url
   url: https://www.vooster.ai/ko
   scrapedAt: "2025-12-07T19:14:45Z"
   sectionIndex: 0
+  name: vooster

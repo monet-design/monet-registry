@@ -15,7 +15,7 @@ export const ComponentCategory = [
   "how-it-works",
   "biography",
   "before-after",
-  "showcase",
+  "feature-showcase",
   "header",
   "footer",
   "gallery",

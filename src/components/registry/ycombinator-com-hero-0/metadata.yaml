@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: ycombinator-com-hero-0
 category: hero
-
 images:
   preview: scraped/ycombinator-com-2025-12-07/sections/section-0.png
-
 freeformKeywords:
   - startup
   - accelerator
@@ -14,14 +12,11 @@ freeformKeywords:
   - make something people want
   - header
   - navigation
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T16:43:50Z"
 status: stable
 language: en
-
 tags:
   functional:
     - hover-effect
@@ -40,11 +35,10 @@ tags:
     - startup
     - saas
     - accelerator
-
 parentPage: ycombinator-com-landing
-
 source:
   type: url
   url: https://www.ycombinator.com/
   scrapedAt: "2025-12-07T16:43:50Z"
   sectionIndex: 0
+  name: ycombinator

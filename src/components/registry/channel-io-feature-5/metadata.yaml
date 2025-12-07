@@ -1,23 +1,18 @@
-schemaVersion: "2.0"
+schemaVersion: '2.0'
 name: channel-io-feature-5
 category: feature-showcase
-
 images:
   preview: scraped/channel-io-2025-12-07/sections/section-0.png
-
 freeformKeywords:
   - feature
   - AI automation
   - customer inquiry
   - knowledge base
-
 fontFamily:
   - Inter
-
-createdAt: "2025-12-07T16:50:50Z"
+createdAt: '2025-12-07T16:50:50Z'
 status: stable
 language: ko
-
 tags:
   functional:
     - hover-effect
@@ -34,11 +29,10 @@ tags:
   industry:
     - saas
     - ai
-
 parentPage: channel-io-landing
-
 source:
   type: url
   url: https://channel.io/ko
-  scrapedAt: "2025-12-07T16:50:50Z"
+  scrapedAt: '2025-12-07T16:50:50Z'
   sectionIndex: 5
+  name: channel

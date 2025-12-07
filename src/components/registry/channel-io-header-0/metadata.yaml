@@ -1,24 +1,19 @@
 schemaVersion: "2.0"
 name: channel-io-header-0
 category: header
-
 images:
   preview: scraped/channel-io-2025-12-07/sections/section-0.png
-
 freeformKeywords:
   - header
   - navigation
   - nav bar
   - channel talk
   - AI chat
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T16:50:36Z"
 status: stable
 language: ko
-
 tags:
   functional:
     - dropdown
@@ -33,11 +28,10 @@ tags:
   industry:
     - saas
     - ai
-
 parentPage: channel-io-landing
-
 source:
   type: url
   url: https://channel.io/ko
   scrapedAt: "2025-12-07T16:50:36Z"
   sectionIndex: 0
+  name: channel

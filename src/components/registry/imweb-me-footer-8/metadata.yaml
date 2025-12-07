@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: imweb-me-footer-8
 category: footer
-
 images:
   preview: /scraped/imweb-me-2025-12-07/sections/section-8.png
-
 freeformKeywords:
   - footer
   - 푸터
@@ -17,14 +15,11 @@ freeformKeywords:
   - SNS
   - 인증마크
   - 한국어
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T16:49:03Z"
 status: stable
 language: ko
-
 tags:
   functional:
     - dropdown
@@ -39,11 +34,10 @@ tags:
   industry:
     - saas
     - website-builder
-
 parentPage: imweb-me-landing
-
 source:
   type: url
   url: https://imweb.me/
   scrapedAt: "2025-12-07T16:49:03Z"
   sectionIndex: 8
+  name: imweb

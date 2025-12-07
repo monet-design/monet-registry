@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: coderabbit-ai-feature-6
 category: feature
-
 images:
   preview: scraped/coderabbit-ai-2025-12-07/sections/section-6.png
-
 freeformKeywords:
   - vibe check
   - IDE integration
@@ -13,14 +11,11 @@ freeformKeywords:
   - Windsurf
   - code editor
   - free AI code reviews
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T17:36:09Z"
 status: stable
 language: en
-
 tags:
   functional:
     - feature-showcase
@@ -36,11 +31,10 @@ tags:
     - saas
     - ai
     - developer-tools
-
 parentPage: coderabbit-ai-landing
-
 source:
   type: url
   url: https://www.coderabbit.ai/
   scrapedAt: "2025-12-07T17:36:09Z"
   sectionIndex: 6
+  name: coderabbit

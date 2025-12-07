@@ -1,4 +1,4 @@
-schemaVersion: "2.0"
+schemaVersion: '2.0'
 name: security-tools-mobile
 category: feature-showcase
 images:
@@ -22,6 +22,6 @@ freeformKeywords:
 fontFamily:
   - Instrument Serif
   - Inter
-createdAt: "2025-11-30T00:00:00Z"
+createdAt: '2025-11-30T00:00:00Z'
 status: stable
 language: en

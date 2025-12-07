@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: coderabbit-ai-logo-cloud-2
 category: logo-cloud
-
 images:
   preview: scraped/coderabbit-ai-2025-12-07/sections/section-2.png
-
 freeformKeywords:
   - stats
   - metrics
@@ -15,14 +13,11 @@ freeformKeywords:
   - GitLab
   - repositories
   - pull requests
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T17:35:41Z"
 status: stable
 language: en
-
 tags:
   functional:
     - social-proof
@@ -37,11 +32,10 @@ tags:
     - saas
     - ai
     - developer-tools
-
 parentPage: coderabbit-ai-landing
-
 source:
   type: url
   url: https://www.coderabbit.ai/
   scrapedAt: "2025-12-07T17:35:41Z"
   sectionIndex: 2
+  name: coderabbit

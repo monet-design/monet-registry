@@ -1,24 +1,19 @@
 schemaVersion: "2.0"
 name: ycombinator-com-principles-9
 category: cta
-
 images:
   preview: scraped/ycombinator-com-2025-12-07/sections/section-0.png
-
 freeformKeywords:
   - principles
   - values
   - founders first
   - Y Combinator
   - investment terms
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-08T00:00:00Z"
 status: stable
 language: en
-
 tags:
   functional: []
   style:
@@ -33,11 +28,10 @@ tags:
     - startup
     - saas
     - accelerator
-
 parentPage: ycombinator-com-landing
-
 source:
   type: url
   url: https://www.ycombinator.com/
   scrapedAt: "2025-12-07T16:43:50Z"
   sectionIndex: 9
+  name: ycombinator

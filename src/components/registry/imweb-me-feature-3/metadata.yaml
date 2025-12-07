@@ -1,10 +1,8 @@
-schemaVersion: "2.0"
+schemaVersion: '2.0'
 name: imweb-me-feature-3
 category: feature-showcase
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/imweb-me-2025-12-07/sections/section-3.png
-
 freeformKeywords:
   - feature
   - 기능
@@ -20,14 +18,11 @@ freeformKeywords:
   - website builder
   - 웹사이트
   - 빌더
-
 fontFamily:
   - Inter
-
-createdAt: "2025-12-07T16:50:28Z"
+createdAt: '2025-12-07T16:50:28Z'
 status: stable
 language: ko
-
 tags:
   functional:
     - hover-effect
@@ -43,11 +38,10 @@ tags:
   industry:
     - saas
     - website-builder
-
 parentPage: imweb-me-landing
-
 source:
   type: url
   url: https://imweb.me/
-  scrapedAt: "2025-12-07T16:50:28Z"
+  scrapedAt: '2025-12-07T16:50:28Z'
   sectionIndex: 3
+  name: imweb

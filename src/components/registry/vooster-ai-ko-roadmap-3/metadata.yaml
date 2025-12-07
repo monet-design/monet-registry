@@ -1,24 +1,19 @@
 schemaVersion: "2.0"
 name: vooster-ai-ko-roadmap-3
 category: feature
-
 images:
   preview: scraped/vooster-ai-2025-12-07/sections/section-3.png
-
 freeformKeywords:
   - roadmap
   - future features
   - discord
   - community
   - feedback
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T19:14:51Z"
 status: stable
 language: ko
-
 tags:
   functional: []
   style:
@@ -32,11 +27,10 @@ tags:
     - saas
     - ai
     - startup
-
 parentPage: vooster-ai-ko-landing
-
 source:
   type: url
   url: https://www.vooster.ai/ko
   scrapedAt: "2025-12-07T19:14:51Z"
   sectionIndex: 3
+  name: vooster

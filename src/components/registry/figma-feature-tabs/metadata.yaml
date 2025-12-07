@@ -1,4 +1,4 @@
-schemaVersion: "2.0"
+schemaVersion: '2.0'
 name: figma-feature-tabs
 category: feature-showcase
 images:
@@ -28,6 +28,6 @@ freeformKeywords:
   - design tools
 fontFamily:
   - Inter
-createdAt: "2025-11-30T00:00:00Z"
+createdAt: '2025-11-30T00:00:00Z'
 status: stable
 language: en

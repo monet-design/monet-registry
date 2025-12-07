@@ -1,4 +1,4 @@
-schemaVersion: "2.0"
+schemaVersion: '2.0'
 name: advantages-x-premium
 category: feature-showcase
 images:
@@ -24,6 +24,6 @@ freeformKeywords:
   - cta button
 fontFamily:
   - Inter
-createdAt: "2025-11-30T00:00:00Z"
+createdAt: '2025-11-30T00:00:00Z'
 status: stable
 language: en

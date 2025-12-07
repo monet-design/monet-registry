@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: coderabbit-ai-footer-12
 category: footer
-
 images:
   preview: scraped/coderabbit-ai-2025-12-07/sections/section-12.png
-
 freeformKeywords:
   - footer
   - navigation
@@ -14,14 +12,11 @@ freeformKeywords:
   - resources
   - contact
   - privacy
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T17:36:29Z"
 status: stable
 language: en
-
 tags:
   functional:
     - navigation
@@ -37,11 +32,10 @@ tags:
     - saas
     - ai
     - developer-tools
-
 parentPage: coderabbit-ai-landing
-
 source:
   type: url
   url: https://www.coderabbit.ai/
   scrapedAt: "2025-12-07T17:36:29Z"
   sectionIndex: 12
+  name: coderabbit

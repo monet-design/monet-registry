@@ -1,24 +1,19 @@
-schemaVersion: "2.0"
+schemaVersion: '2.0'
 name: channel-io-feature-3
 category: feature-showcase
-
 images:
   preview: scraped/channel-io-2025-12-07/sections/section-0.png
-
 freeformKeywords:
   - feature
   - AI automation
   - focus
   - productivity
   - chatbot
-
 fontFamily:
   - Inter
-
-createdAt: "2025-12-07T16:50:46Z"
+createdAt: '2025-12-07T16:50:46Z'
 status: stable
 language: ko
-
 tags:
   functional:
     - animation
@@ -32,11 +27,10 @@ tags:
   industry:
     - saas
     - ai
-
 parentPage: channel-io-landing
-
 source:
   type: url
   url: https://channel.io/ko
-  scrapedAt: "2025-12-07T16:50:46Z"
+  scrapedAt: '2025-12-07T16:50:46Z'
   sectionIndex: 3
+  name: channel

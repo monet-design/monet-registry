@@ -1,10 +1,8 @@
-schemaVersion: "2.0"
+schemaVersion: '2.0'
 name: imweb-me-showcase-1
 category: feature-showcase
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/imweb-me-2025-12-07/sections/section-1.png
-
 freeformKeywords:
   - 템플릿
   - 쇼케이스
@@ -21,14 +19,11 @@ freeformKeywords:
   - free
   - 80개
   - templates
-
 fontFamily:
   - Inter
-
-createdAt: "2025-12-07T16:48:58Z"
+createdAt: '2025-12-07T16:48:58Z'
 status: stable
 language: ko
-
 tags:
   functional:
     - hover-effect
@@ -47,11 +42,10 @@ tags:
     - startup
     - creative
     - agency
-
 parentPage: imweb-me-landing
-
 source:
   type: url
   url: https://imweb.me/
-  scrapedAt: "2025-12-07T16:48:58Z"
+  scrapedAt: '2025-12-07T16:48:58Z'
   sectionIndex: 1
+  name: imweb

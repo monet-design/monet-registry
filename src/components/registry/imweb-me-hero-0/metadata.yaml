@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: imweb-me-hero-0
 category: hero
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/imweb-me-2025-12-07/sections/section-0.png
-
 freeformKeywords:
   - hero
   - ai
@@ -18,14 +16,11 @@ freeformKeywords:
   - 웹사이트 빌더
   - imweb
   - saas
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T16:49:00Z"
 status: stable
 language: ko
-
 tags:
   functional:
     - ai
@@ -42,11 +37,10 @@ tags:
   industry:
     - saas
     - ecommerce
-
 parentPage: imweb-me-landing
-
 source:
   type: url
   url: https://imweb.me/
   scrapedAt: "2025-12-07T16:49:00Z"
   sectionIndex: 0
+  name: imweb

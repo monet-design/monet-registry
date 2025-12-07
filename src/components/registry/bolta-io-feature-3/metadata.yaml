@@ -1,4 +1,4 @@
-schemaVersion: "2.0"
+schemaVersion: '2.0'
 name: bolta-io-feature-3
 category: feature-showcase
 images:
@@ -28,12 +28,13 @@ tags:
     - saas
     - fintech
     - ai
-createdAt: "2025-12-07T12:06:13Z"
+createdAt: '2025-12-07T12:06:13Z'
 status: stable
 parentPage: bolta-io-landing
 source:
   type: url
   url: https://bolta.io/
-  scrapedAt: "2025-12-07T12:06:13Z"
+  scrapedAt: '2025-12-07T12:06:13Z'
   sectionIndex: 3
+  name: bolta
 language: ko

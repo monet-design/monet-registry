@@ -1,24 +1,19 @@
 schemaVersion: "2.0"
 name: vooster-ai-ko-pricing-4
 category: pricing
-
 images:
   preview: scraped/vooster-ai-2025-12-07/sections/section-4.png
-
 freeformKeywords:
   - pricing
   - free
   - pro
   - subscription
   - credits
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T19:15:10Z"
 status: stable
 language: ko
-
 tags:
   functional: []
   style:
@@ -32,11 +27,10 @@ tags:
   industry:
     - saas
     - ai
-
 parentPage: vooster-ai-ko-landing
-
 source:
   type: url
   url: https://www.vooster.ai/ko
   scrapedAt: "2025-12-07T19:15:10Z"
   sectionIndex: 4
+  name: vooster

@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: superbilling-io-pricing-6
 category: pricing
-
 images:
   preview: scraped/superbilling-io-2025-12-07/sections/section-6.png
-
 freeformKeywords:
   - pricing
   - subscription plan
@@ -12,14 +10,11 @@ freeformKeywords:
   - pro
   - enterprise
   - SaaS pricing
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T19:14:09Z"
 status: stable
 language: ko
-
 tags:
   functional:
     - hover-effect
@@ -34,11 +29,10 @@ tags:
   industry:
     - saas
     - fintech
-
 parentPage: superbilling-io-landing
-
 source:
   type: url
   url: https://superbilling.io/
   scrapedAt: "2025-12-07T19:14:09Z"
   sectionIndex: 6
+  name: superbilling

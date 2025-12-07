@@ -1,23 +1,18 @@
 schemaVersion: "2.0"
 name: superbilling-io-feature-5
 category: feature
-
 images:
   preview: scraped/superbilling-io-2025-12-07/sections/section-5.png
-
 freeformKeywords:
   - best experience
   - efficiency
   - expertise
   - developer friendly
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T19:14:08Z"
 status: stable
 language: ko
-
 tags:
   functional:
     - hover-effect
@@ -32,11 +27,10 @@ tags:
   industry:
     - saas
     - fintech
-
 parentPage: superbilling-io-landing
-
 source:
   type: url
   url: https://superbilling.io/
   scrapedAt: "2025-12-07T19:14:08Z"
   sectionIndex: 5
+  name: superbilling

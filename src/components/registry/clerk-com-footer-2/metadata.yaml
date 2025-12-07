@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: clerk-com-footer-2
 category: footer
-
 images:
   preview: scraped/clerk-com-2025-12-07/sections/section-2.png
-
 freeformKeywords:
   - footer
   - links
@@ -12,14 +10,11 @@ freeformKeywords:
   - social media
   - copyright
   - legal
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T17:32:54Z"
 status: stable
 language: en
-
 tags:
   functional: []
   style:
@@ -34,11 +29,10 @@ tags:
   industry:
     - saas
     - startup
-
 parentPage: clerk-com-landing
-
 source:
   type: url
   url: https://clerk.com/
   scrapedAt: "2025-12-07T17:32:54Z"
   sectionIndex: 2
+  name: clerk

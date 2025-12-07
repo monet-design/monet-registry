@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: coderabbit-ai-feature-5
 category: feature
-
 images:
   preview: scraped/coderabbit-ai-2025-12-07/sections/section-5.png
-
 freeformKeywords:
   - automated reports
   - release notes
@@ -12,14 +10,11 @@ freeformKeywords:
   - sprint reviews
   - Linear
   - Jira integration
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T17:35:46Z"
 status: stable
 language: en
-
 tags:
   functional:
     - feature-showcase
@@ -34,11 +29,10 @@ tags:
     - saas
     - ai
     - developer-tools
-
 parentPage: coderabbit-ai-landing
-
 source:
   type: url
   url: https://www.coderabbit.ai/
   scrapedAt: "2025-12-07T17:35:46Z"
   sectionIndex: 5
+  name: coderabbit

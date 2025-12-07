@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: coderabbit-ai-feature-4
 category: feature
-
 images:
   preview: scraped/coderabbit-ai-2025-12-07/sections/section-4.png
-
 freeformKeywords:
   - agentic chat
   - code analysis
@@ -12,14 +10,11 @@ freeformKeywords:
   - linters
   - security tools
   - AI reasoning
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T17:35:44Z"
 status: stable
 language: en
-
 tags:
   functional:
     - feature-showcase
@@ -34,11 +29,10 @@ tags:
     - saas
     - ai
     - developer-tools
-
 parentPage: coderabbit-ai-landing
-
 source:
   type: url
   url: https://www.coderabbit.ai/
   scrapedAt: "2025-12-07T17:35:44Z"
   sectionIndex: 4
+  name: coderabbit

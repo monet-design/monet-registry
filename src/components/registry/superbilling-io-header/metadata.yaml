@@ -2,7 +2,7 @@ schemaVersion: "2.0"
 name: superbilling-io-header
 category: header
 images:
-  preview: ""
+  preview: placeholder/superbilling-io-header.png
 tags:
   functional: []
   style:
@@ -35,4 +35,5 @@ status: stable
 source:
   type: url
   url: https://superbilling.io/
+  name: superbilling
 language: en

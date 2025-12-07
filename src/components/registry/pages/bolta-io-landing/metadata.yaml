@@ -42,5 +42,25 @@ freeformKeywords:
   - complete landing page
   - full page
   - bolta.io
+
+tags:
+  functional:
+    - lead-capture
+    - email-capture
+    - accordion
+  style:
+    - light-theme
+    - warm
+    - modern
+    - sans-serif
+  layout:
+    - single-column
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - fintech
+    - ai
+
 createdAt: "2025-12-07T12:11:11.469Z"
 status: stable

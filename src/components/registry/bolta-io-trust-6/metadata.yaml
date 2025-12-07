@@ -17,6 +17,21 @@ freeformKeywords:
 fontFamily:
   - Inter
 
+tags:
+  functional: []
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - grid
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - fintech
+
 createdAt: "2025-12-07T12:06:17Z"
 status: stable
 

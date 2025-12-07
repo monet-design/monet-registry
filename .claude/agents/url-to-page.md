@@ -66,11 +66,22 @@ python3 scripts/create-registry-component.py \
   --keywords "{키워드1}, {키워드2}, ..." \
   --parent-page "{domain}-landing" \
   --source-url "{URL}" \
-  --section-index {index}
+  --section-index {index} \
+  --tags-functional "{기능태그들}" \
+  --tags-style "{스타일태그들}" \
+  --tags-layout "{레이아웃태그들}" \
+  --tags-industry "{산업태그들}"
 ```
+
+**Tags 카테고리 참조:**
+- `functional`: email-capture, lead-capture, video, hover-effect, animation, accordion, dropdown, search
+- `style`: light-theme, dark-theme, modern, minimal, bold, warm, elegant, serif, sans-serif, gradient, shadow
+- `layout`: centered, single-column, two-column, split-layout, grid, full-width, responsive, left-aligned
+- `industry`: saas, fintech, ai, startup, creative, travel, portfolio, agency
 
 **주의사항:**
 - 모든 섹션에 `--parent-page`, `--source-url`, `--section-index` 옵션 반드시 포함
+- **모든 섹션에 `--tags-*` 옵션을 반드시 포함** (이미지 분석 후 적절한 태그 생성)
 - 섹션별 HTML snippet (`section-*.html`)을 참고하여 더 정확한 구현
 - 한 페이지에서 최대 10개 섹션까지만 처리
 - 중복 디자인의 섹션은 하나만 생성

@@ -16,6 +16,21 @@ freeformKeywords:
 fontFamily:
   - Inter
 
+tags:
+  functional:
+    - accordion
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - two-column
+    - full-width
+  industry:
+    - saas
+    - fintech
+
 createdAt: "2025-12-07T12:06:20Z"
 status: stable
 

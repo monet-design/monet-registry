@@ -12,6 +12,11 @@ model: inherit
    - 이미지에 포함된 주요 요소들의 정확한 color를 가져오세요. sharp mcp를 사용해서 정확히 추출하세요. 특히 background, accent는 반드시 파악해야합니다.
    - font weight, italic 여부를 정확히 파악하세요.
    - 포함된 문구들의 line break 위치를 정확히 파악하세요.
+   - **Tags 분석**: 아래 4가지 카테고리의 태그를 분석하세요:
+     - `functional`: 기능적 특징 (email-capture, lead-capture, video, hover-effect, animation, accordion, dropdown, search 등)
+     - `style`: 스타일 특징 (light-theme, dark-theme, modern, minimal, bold, warm, elegant, serif, sans-serif, gradient, shadow 등)
+     - `layout`: 레이아웃 특징 (centered, single-column, two-column, split-layout, grid, full-width, responsive, left-aligned 등)
+     - `industry`: 산업/분야 (saas, fintech, ai, startup, creative, travel, portfolio, agency 등)
 2. 해당 컴포넌트의 NAME을 정하세요. 반드시 lower-kebab-case여야합니다.
 3. 반드시 다음 스크립트를 실행하여 기본 파일 구조를 생성하세요:
 
@@ -19,7 +24,11 @@ model: inherit
    python3 scripts/create-registry-component.py \
      --name "{NAME}" \
      --image-path "{이미지 경로}" \
-     --keywords "{키워드1}, {키워드2}, ..."
+     --keywords "{키워드1}, {키워드2}, ..." \
+     --tags-functional "{기능태그1}, {기능태그2}" \
+     --tags-style "{스타일태그1}, {스타일태그2}" \
+     --tags-layout "{레이아웃태그1}, {레이아웃태그2}" \
+     --tags-industry "{산업태그1}, {산업태그2}"
    ```
 
    **스크립트 옵션:**
@@ -33,6 +42,10 @@ model: inherit
    | `--parent-page` | | X | 부모 page 컴포넌트 ID (URL 스크래핑 시) |
    | `--source-url` | | X | 원본 URL (URL 스크래핑 시) |
    | `--section-index` | | X | 페이지 내 섹션 순서 (URL 스크래핑 시) |
+   | `--tags-functional` | | X | 기능 태그 (예: 'email-capture, accordion') |
+   | `--tags-style` | | X | 스타일 태그 (예: 'modern, minimal, dark-theme') |
+   | `--tags-layout` | | X | 레이아웃 태그 (예: 'centered, full-width') |
+   | `--tags-industry` | | X | 산업 태그 (예: 'saas, fintech, ai') |
 
    **생성되는 파일:**
 

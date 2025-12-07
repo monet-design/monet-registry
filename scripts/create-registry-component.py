@@ -79,6 +79,19 @@ VALID_CATEGORIES = [
 ]
 
 
+def parse_tags(tags_string: str | None) -> list[str]:
+    """
+    comma-separated 태그 문자열을 리스트로 변환
+
+    예시:
+      "modern, minimal, sans-serif" -> ["modern", "minimal", "sans-serif"]
+    """
+    if not tags_string:
+        return []
+    tags = [t.strip() for t in tags_string.split(",")]
+    return [t for t in tags if t]
+
+
 def generate_metadata_yaml(
     name: str,
     category: str,
@@ -88,6 +101,10 @@ def generate_metadata_yaml(
     parent_page: str | None = None,
     source_url: str | None = None,
     section_index: int | None = None,
+    tags_functional: list[str] | None = None,
+    tags_style: list[str] | None = None,
+    tags_layout: list[str] | None = None,
+    tags_industry: list[str] | None = None,
 ) -> str:
     """metadata.yaml 파일 내용 생성"""
 
@@ -115,6 +132,38 @@ fontFamily:
 createdAt: "{now_utc}"
 status: stable
 '''
+
+    # tags 필드 추가 (하나라도 제공된 경우)
+    if tags_functional or tags_style or tags_layout or tags_industry:
+        yaml_content += '\ntags:\n'
+
+        # functional
+        if tags_functional:
+            yaml_content += '  functional:\n'
+            yaml_content += '\n'.join(f'    - {t}' for t in tags_functional) + '\n'
+        else:
+            yaml_content += '  functional: []\n'
+
+        # style
+        if tags_style:
+            yaml_content += '  style:\n'
+            yaml_content += '\n'.join(f'    - {t}' for t in tags_style) + '\n'
+        else:
+            yaml_content += '  style: []\n'
+
+        # layout
+        if tags_layout:
+            yaml_content += '  layout:\n'
+            yaml_content += '\n'.join(f'    - {t}' for t in tags_layout) + '\n'
+        else:
+            yaml_content += '  layout: []\n'
+
+        # industry
+        if tags_industry:
+            yaml_content += '  industry:\n'
+            yaml_content += '\n'.join(f'    - {t}' for t in tags_industry) + '\n'
+        else:
+            yaml_content += '  industry: []\n'
 
     # URL 스크래핑 시 추가 필드
     if parent_page:
@@ -294,6 +343,31 @@ def parse_arguments():
         help="페이지 내 섹션 순서 (URL 스크래핑 시 사용)",
     )
 
+    # Tags 관련 옵션
+    parser.add_argument(
+        "--tags-functional",
+        default=None,
+        help="기능 태그 (comma-separated, 예: 'email-capture, lead-capture')",
+    )
+
+    parser.add_argument(
+        "--tags-style",
+        default=None,
+        help="스타일 태그 (comma-separated, 예: 'modern, minimal, dark-theme')",
+    )
+
+    parser.add_argument(
+        "--tags-layout",
+        default=None,
+        help="레이아웃 태그 (comma-separated, 예: 'centered, full-width, grid')",
+    )
+
+    parser.add_argument(
+        "--tags-industry",
+        default=None,
+        help="산업 태그 (comma-separated, 예: 'saas, fintech, ai')",
+    )
+
     return parser.parse_args()
 
 
@@ -330,6 +404,12 @@ def main():
     keywords = parse_keywords(args.keywords)
     font_family = parse_font_family(args.font_family)
 
+    # Tags 파싱
+    tags_functional = parse_tags(args.tags_functional)
+    tags_style = parse_tags(args.tags_style)
+    tags_layout = parse_tags(args.tags_layout)
+    tags_industry = parse_tags(args.tags_industry)
+
     if not keywords:
         print("Error: 최소 하나의 키워드가 필요합니다.", file=sys.stderr)
         sys.exit(1)
@@ -348,6 +428,10 @@ def main():
         parent_page=args.parent_page,
         source_url=args.source_url,
         section_index=args.section_index,
+        tags_functional=tags_functional,
+        tags_style=tags_style,
+        tags_layout=tags_layout,
+        tags_industry=tags_industry,
     )
     index_content = generate_index_tsx(args.name)
 

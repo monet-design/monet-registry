@@ -6,7 +6,9 @@
 
 ![Monet Design](https://www.monet.design/opengraph-image.png)
 
-[`Monet.Design`](https://www.monet.design/) is an open-source registry of 540+ high-quality React UI components. Search, preview, and install hero sections, pricing tables, testimonials, bios, and more.
+The open-source mobbin successor.
+
+[`Monet.Design`](https://www.monet.design/) is an open-source registry of 600+ high-quality React UI components. Search, preview, and install hero sections, pricing tables, testimonials, bios, and more.
 
 ## Why Monet?
 

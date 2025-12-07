@@ -16,6 +16,7 @@ export async function GET(request: NextRequest) {
 
     // Filters
     const status = searchParams.get("status") || undefined;
+    const language = searchParams.get("language") || undefined;
 
     // Sorting
     const sortBy = searchParams.get("sort_by") as
@@ -29,6 +30,7 @@ export async function GET(request: NextRequest) {
 
     const { pages, total } = await pageRegistryService.listPages({
       status,
+      language,
       sortBy: sortBy || "created_at",
       sortOrder: sortOrder || "desc",
       offset,

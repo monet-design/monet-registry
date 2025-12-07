@@ -8,6 +8,7 @@ export async function GET(request: NextRequest) {
     const searchParams = request.nextUrl.searchParams;
 
     const query = searchParams.get("query") || "";
+    const language = searchParams.get("language") || undefined;
     const limit = Math.min(
       Math.max(parseInt(searchParams.get("limit") || "10"), 1),
       50
@@ -24,6 +25,7 @@ export async function GET(request: NextRequest) {
 
     const { results, total, elapsed } = await pageSearchService.search({
       text: query,
+      language,
       minSections,
       maxSections,
       offset,

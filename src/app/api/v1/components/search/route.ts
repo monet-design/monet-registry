@@ -11,6 +11,7 @@ export async function GET(request: NextRequest) {
     const searchParams = request.nextUrl.searchParams;
     const query = searchParams.get("query") || "";
     const category = searchParams.get("category") || undefined;
+    const language = searchParams.get("language") || undefined;
     const limit = Math.min(
       Math.max(parseInt(searchParams.get("limit") || "10"), 1),
       50
@@ -38,6 +39,7 @@ export async function GET(request: NextRequest) {
     const result = await searchService.search({
       text: query,
       category,
+      language,
       tags: hasAnyTags ? tags : undefined,
       limit,
       offset,

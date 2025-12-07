@@ -20,6 +20,7 @@ const PAGE_SEARCH_SCHEMA = {
   sourceUrl: "string",
   createdAt: "string",
   status: "string",
+  language: "string",
 } as const;
 
 type OramaDB = Orama<typeof PAGE_SEARCH_SCHEMA>;
@@ -70,6 +71,7 @@ class PageSearchService {
         sourceUrl: page.source?.url || "",
         createdAt: page.createdAt || "",
         status: page.status,
+        language: page.language,
       });
     }
 
@@ -93,6 +95,10 @@ class PageSearchService {
 
     // Build where clause for filters
     const where: Record<string, unknown> = {};
+
+    if (query.language) {
+      where.language = query.language;
+    }
 
     if (query.minSections !== undefined) {
       where.sectionsCount = { gte: query.minSections };

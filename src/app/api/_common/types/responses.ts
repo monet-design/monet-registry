@@ -235,6 +235,7 @@ export interface FilterOption {
 export interface ListComponentsOptions {
   category?: string;
   status?: string;
+  language?: string;
   tags?: {
     functional?: string[];
     style?: string[];
@@ -248,6 +249,7 @@ export interface ListComponentsOptions {
 export interface SearchQuery {
   text?: string;
   category?: string;
+  language?: string;
   tags?: {
     functional?: string[];
     style?: string[];
@@ -479,6 +481,7 @@ export interface ParentPageInfo {
 // Service internal types for Pages
 export interface ListPagesOptions {
   status?: string;
+  language?: string;
   sortBy?: "created_at" | "sections_count";
   sortOrder?: "asc" | "desc";
   offset?: number;
@@ -487,6 +490,7 @@ export interface ListPagesOptions {
 
 export interface SearchPagesQuery {
   text?: string;
+  language?: string;
   minSections?: number;
   maxSections?: number;
   offset?: number;

@@ -20,6 +20,7 @@ export async function GET(request: NextRequest) {
     // Filters
     const category = searchParams.get("category") || undefined;
     const status = searchParams.get("status") || undefined;
+    const language = searchParams.get("language") || undefined;
 
     // Parse comma-separated tags
     const parseTags = (value: string | null): string[] | undefined => {
@@ -42,6 +43,7 @@ export async function GET(request: NextRequest) {
     const { components, total } = await registryService.listComponents({
       category,
       status,
+      language,
       tags: hasAnyTags ? tags : undefined,
       offset,
       limit,

@@ -86,6 +86,7 @@ GET /api/v1/components/search
 |----------|------|------|--------|------|
 | query | string | - | `""` | 검색어 |
 | category | string | - | - | 카테고리 필터 |
+| language | string | - | - | 언어 필터 (en, ko) |
 | limit | number | - | `10` | 결과 개수 (최대 50) |
 | offset | number | - | `0` | 건너뛸 결과 수 (페이지네이션) |
 | functional | string | - | - | 기능 태그 (쉼표 구분) |
@@ -158,6 +159,7 @@ GET /api/v1/components
 | limit | number | - | `20` | 결과 개수 (최대 50) |
 | offset | number | - | `0` | 건너뛸 결과 수 (페이지네이션) |
 | category | string | - | - | 카테고리 필터 |
+| language | string | - | - | 언어 필터 (en, ko) |
 | status | string | - | - | 상태 필터 (stable, draft, deprecated) |
 | functional | string | - | - | 기능 태그 (쉼표 구분) |
 | style | string | - | - | 스타일 태그 (쉼표 구분) |
@@ -582,6 +584,7 @@ GET /api/v1/pages
 |----------|------|------|--------|------|
 | limit | number | - | `20` | 결과 개수 (최대 50) |
 | offset | number | - | `0` | 건너뛸 결과 수 (페이지네이션) |
+| language | string | - | - | 언어 필터 (en, ko) |
 | status | string | - | - | 상태 필터 (stable, draft, deprecated) |
 | sort_by | string | - | - | 정렬 기준 (`created_at`, `sections_count`) |
 | sort_order | string | - | `desc` | 정렬 순서 (`asc`, `desc`) |
@@ -825,6 +828,7 @@ GET /api/v1/pages/search
 | 파라미터 | 타입 | 필수 | 기본값 | 설명 |
 |----------|------|------|--------|------|
 | query | string | O | - | 검색어 |
+| language | string | - | - | 언어 필터 (en, ko) |
 | limit | number | - | `10` | 결과 개수 (최대 50) |
 | offset | number | - | `0` | 건너뛸 결과 수 (페이지네이션) |
 | min_sections | number | - | - | 최소 섹션 개수 |

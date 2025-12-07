@@ -126,7 +126,7 @@ class RegistryService {
   async listComponents(
     options: ListComponentsOptions = {}
   ): Promise<{ components: RegistryEntry[]; total: number }> {
-    const { category, status, tags, offset = 0, limit = 20 } = options;
+    const { category, status, language, tags, offset = 0, limit = 20 } = options;
 
     let components = await this.getAllComponents();
 
@@ -138,6 +138,11 @@ class RegistryService {
     // Apply status filter
     if (status) {
       components = components.filter((c) => c.status === status);
+    }
+
+    // Apply language filter
+    if (language) {
+      components = components.filter((c) => c.language === language);
     }
 
     // Apply tag filters (AND logic - component must have all specified tags)

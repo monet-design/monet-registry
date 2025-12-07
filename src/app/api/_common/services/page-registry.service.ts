@@ -187,6 +187,7 @@ class PageRegistryService {
   ): Promise<{ pages: PageRegistryEntry[]; total: number }> {
     const {
       status,
+      language,
       sortBy = "created_at",
       sortOrder = "desc",
       offset = 0,
@@ -198,6 +199,11 @@ class PageRegistryService {
     // Apply status filter
     if (status) {
       pages = pages.filter((p) => p.status === status);
+    }
+
+    // Apply language filter
+    if (language) {
+      pages = pages.filter((p) => p.language === language);
     }
 
     const total = pages.length;

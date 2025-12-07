@@ -23,6 +23,7 @@ const SEARCH_SCHEMA = {
   previewImage: "string",
   createdAt: "string",
   status: "string",
+  language: "string",
 } as const;
 
 type OramaDB = Orama<typeof SEARCH_SCHEMA>;
@@ -62,6 +63,7 @@ class SearchService {
         previewImage: component.images.preview,
         createdAt: component.createdAt || "",
         status: component.status,
+        language: component.language,
       });
     }
 
@@ -88,6 +90,10 @@ class SearchService {
 
     if (query.category) {
       where.category = query.category;
+    }
+
+    if (query.language) {
+      where.language = query.language;
     }
 
     if (query.tags?.functional?.length) {

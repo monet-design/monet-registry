@@ -1,0 +1,49 @@
+schemaVersion: "2.0"
+name: coderabbit-ai-hero-1
+category: hero
+
+images:
+  preview: scraped/coderabbit-ai-2025-12-07/sections/section-1.png
+
+freeformKeywords:
+  - hero
+  - headline
+  - cta
+  - free trial
+  - code review
+  - AI
+  - pull request
+  - GitHub
+  - GitLab
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T17:35:39Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - lead-capture
+    - cta-button
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - bold
+  layout:
+    - centered
+    - split-layout
+  industry:
+    - saas
+    - ai
+    - developer-tools
+
+parentPage: coderabbit-ai-landing
+
+source:
+  type: url
+  url: https://www.coderabbit.ai/
+  scrapedAt: "2025-12-07T17:35:39Z"
+  sectionIndex: 1

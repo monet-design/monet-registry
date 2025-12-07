@@ -1,0 +1,121 @@
+[
+  {
+    "family": "Scandia",
+    "url": "https://www.coderabbit.ai/fonts/ScandiaWebRegular/ScandiaWebRegular.woff2",
+    "source": "custom",
+    "weights": [
+      "400",
+      "500",
+      "700"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "format": "woff2",
+    "localPath": "fonts/Scandia.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "JetBrains Mono",
+    "url": "https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsrKlQ.woff2",
+    "source": "google-fonts",
+    "weights": [
+      "700"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "downloaded": false
+  },
+  {
+    "family": "__scandia_e45b56",
+    "url": "https://www.coderabbit.ai/_next/static/media/6ec2d131dadfb5cb-s.p.woff2",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "localPath": "fonts/--scandia-e45b56.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "__scandia_Fallback_e45b56",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "__Work_Sans_a2025e",
+    "url": "https://www.coderabbit.ai/_next/static/media/10f65c94012f0d89-s.woff2",
+    "source": "custom",
+    "weights": [
+      "100 900"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "localPath": "fonts/--Work-Sans-a2025e.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "__Work_Sans_Fallback_a2025e",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "__JetBrains_Mono_f9e569",
+    "url": "https://www.coderabbit.ai/_next/static/media/edc640959b0c7826-s.woff2",
+    "source": "custom",
+    "weights": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "localPath": "fonts/--JetBrains-Mono-f9e569.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "__JetBrains_Mono_Fallback_f9e569",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Times",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  }
+]

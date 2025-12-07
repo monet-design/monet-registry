@@ -1,0 +1,22 @@
+[
+  {
+    "originalUrl": "https://www.coderabbit.ai/homePageVideo.webm",
+    "platform": "html5",
+    "type": "video",
+    "sectionIndex": -1,
+    "width": 1846,
+    "height": 952,
+    "thumbnailDownloaded": false
+  },
+  {
+    "originalUrl": "https://video.twimg.com/amplify_video/1916063041374044160/vid/avc1/640x360/J2ZMpM8ZlqbBa57s.mp4?tag=14",
+    "platform": "html5",
+    "type": "video",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/1916063041374044160/img/kbcyPCtrfBWW8H5Q?format=jpg&name=small",
+    "sectionIndex": 1,
+    "width": 346,
+    "height": 194.625,
+    "thumbnailPath": "videos/thumb-1.png",
+    "thumbnailDownloaded": true
+  }
+]

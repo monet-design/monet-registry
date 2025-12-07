@@ -1,0 +1,47 @@
+schemaVersion: "2.0"
+name: coderabbit-ai-logo-cloud-2
+category: logo-cloud
+
+images:
+  preview: scraped/coderabbit-ai-2025-12-07/sections/section-2.png
+
+freeformKeywords:
+  - stats
+  - metrics
+  - logo cloud
+  - trusted by
+  - customers
+  - GitHub
+  - GitLab
+  - repositories
+  - pull requests
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T17:35:41Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - social-proof
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - centered
+    - grid
+  industry:
+    - saas
+    - ai
+    - developer-tools
+
+parentPage: coderabbit-ai-landing
+
+source:
+  type: url
+  url: https://www.coderabbit.ai/
+  scrapedAt: "2025-12-07T17:35:41Z"
+  sectionIndex: 2

@@ -1,0 +1,192 @@
+[
+  {
+    "family": "geistSans",
+    "url": "https://clerk.com/_next/static/media/e11418ac562b8ac1.woff2",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "localPath": "fonts/geistSans.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "geistMono",
+    "url": "https://clerk.com/_next/static/media/66f30814ff6d7cdf.woff2",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "localPath": "fonts/geistMono.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "suisse",
+    "url": "https://clerk.com/_next/static/media/c04f35db7764597b-s.p.woff2",
+    "source": "custom",
+    "weights": [
+      "700",
+      "600",
+      "500",
+      "450",
+      "400"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "format": "woff2",
+    "localPath": "fonts/suisse.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "suisse Fallback",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "geistNumbers",
+    "url": "https://clerk.com/_next/static/media/67f3317978af9e95.p.woff2",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "localPath": "fonts/geistNumbers.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "soehneMono",
+    "url": "https://clerk.com/_next/static/media/f04db77f4e3cc76e.woff2",
+    "source": "custom",
+    "weights": [
+      "400",
+      "500"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "format": "woff2",
+    "localPath": "fonts/soehneMono.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "Inter",
+    "url": "https://clerk.com/_next/static/media/ba9851c3c22cd980-s.woff2",
+    "source": "custom",
+    "weights": [
+      "100 900"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "localPath": "fonts/Inter.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "Inter Fallback",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "ui-monospace",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "SFMono-Regular",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Menlo",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Monaco",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Consolas",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Liberation Mono",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Courier New",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  }
+]

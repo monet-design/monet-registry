@@ -1,0 +1,1013 @@
+[
+  {
+    "originalUrl": "https://www.coderabbit.ai/images/logo-orange.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "Coderabbit logo",
+    "width": 206,
+    "height": 45,
+    "localPath": "images/image-0.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/images/logo-dark.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "Coderabbit logo",
+    "width": 2152,
+    "height": 313,
+    "localPath": "images/image-1.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/images/icons/menu.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "menu",
+    "width": 40,
+    "height": 40,
+    "localPath": "images/image-2.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/images/icons/menu-white.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "menu",
+    "width": 40,
+    "height": 40,
+    "localPath": "images/image-3.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/images/icons/close.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "close menu",
+    "width": 40,
+    "height": 40,
+    "localPath": "images/image-4.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/images/icons/close-white.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "close menu",
+    "width": 40,
+    "height": 40,
+    "localPath": "images/image-5.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fhero_sm_3_655767b94b.png&w=3840&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "hero background",
+    "width": 769,
+    "height": 800,
+    "localPath": "images/image-6.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=%2Fimages%2Fshapes%2Fhalfmoon-opposite2.png&w=384&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "halfmoon-opposite2 shape",
+    "width": 256,
+    "height": 284,
+    "localPath": "images/image-7.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=%2Fimages%2Fshapes%2Fcircle-square1.png&w=828&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "circle-square1 shape",
+    "width": 640,
+    "height": 640,
+    "localPath": "images/image-8.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://victorious-bubble-f69a016683.media.strapiapp.com/Frame_1686552787_343e0f348f.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 145,
+    "height": 60,
+    "localPath": "images/image-9.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://victorious-bubble-f69a016683.media.strapiapp.com/Frame_1686552788_ae451a7417.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 145,
+    "height": 60,
+    "localPath": "images/image-10.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://victorious-bubble-f69a016683.media.strapiapp.com/Frame_1686552795_5ad60e03e6.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 145,
+    "height": 60,
+    "localPath": "images/image-11.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://victorious-bubble-f69a016683.media.strapiapp.com/Frame_1686552789_5d696402eb.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 145,
+    "height": 60,
+    "localPath": "images/image-12.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://victorious-bubble-f69a016683.media.strapiapp.com/Frame_1686552790_768bfddf3d.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 145,
+    "height": 60,
+    "localPath": "images/image-13.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://victorious-bubble-f69a016683.media.strapiapp.com/Frame_1686552791_858554e3dd.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 145,
+    "height": 60,
+    "localPath": "images/image-14.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://victorious-bubble-f69a016683.media.strapiapp.com/Groupon_Logo_in_Gradient_Green_RGB_f375e42db9.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 145,
+    "height": 60,
+    "localPath": "images/image-15.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fclerk_3ecd15412e.png&w=384&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 145,
+    "height": 60,
+    "localPath": "images/image-16.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fclerk_3ecd15412e.png&w=256&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 102,
+    "height": 42,
+    "localPath": "images/image-17.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fmercury_logo_88d3d91882.png&w=384&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 256,
+    "height": 90,
+    "localPath": "images/image-18.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fmercury_logo_88d3d91882.png&w=256&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 102,
+    "height": 42,
+    "localPath": "images/image-19.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fwriter_logo_83203c2a81.png&w=384&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 256,
+    "height": 124,
+    "localPath": "images/image-20.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fwriter_logo_83203c2a81.png&w=256&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 102,
+    "height": 42,
+    "localPath": "images/image-21.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fbackdated_to_may_13_2021_abnormal_security_suspects_phishing_e_mail_likely_the_culprit_in_colonial_pipeline_attack_920x533_2_67f712c134.png&w=384&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 256,
+    "height": 148,
+    "localPath": "images/image-22.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fbackdated_to_may_13_2021_abnormal_security_suspects_phishing_e_mail_likely_the_culprit_in_colonial_pipeline_attack_920x533_2_67f712c134.png&w=256&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 102,
+    "height": 42,
+    "localPath": "images/image-23.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2FAshby_logo_6cf2c61cd1.png&w=384&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 256,
+    "height": 131,
+    "localPath": "images/image-24.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2FAshby_logo_6cf2c61cd1.png&w=256&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 102,
+    "height": 42,
+    "localPath": "images/image-25.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fchegg_logo_e1e6a448d6.png&w=384&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 256,
+    "height": 123,
+    "localPath": "images/image-26.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fchegg_logo_e1e6a448d6.png&w=256&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 102,
+    "height": 42,
+    "localPath": "images/image-27.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fsisense_logo_289e8c5f1b.png&w=384&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 256,
+    "height": 107,
+    "localPath": "images/image-28.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fsisense_logo_289e8c5f1b.png&w=256&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 102,
+    "height": 42,
+    "localPath": "images/image-29.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://victorious-bubble-f69a016683.media.strapiapp.com/Groupon_Logo_in_White_RGB_adf406bf23.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 300,
+    "height": 49,
+    "localPath": "images/image-30.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fclerk_dark_3df6b7b3e4.png&w=384&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 512,
+    "height": 149,
+    "localPath": "images/image-31.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fclerk_dark_3df6b7b3e4.png&w=256&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 102,
+    "height": 42,
+    "localPath": "images/image-32.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeature_1_xl_b13db26df3.png&w=1920&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 694,
+    "height": 368,
+    "localPath": "images/image-33.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeature_1_lg_d8aec9575e.png&w=828&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 640,
+    "height": 629,
+    "localPath": "images/image-34.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeature_1_md_3143217bdf.png&w=828&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 410,
+    "height": 368,
+    "localPath": "images/image-35.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeature_1_sm_1aa7d00a89.png&w=828&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 410,
+    "height": 368,
+    "localPath": "images/image-36.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeatures_fast_f06991c2c8.png&w=384&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 256,
+    "height": 187,
+    "localPath": "images/image-37.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeatures_fast_f06991c2c8.png&w=640&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 256,
+    "height": 187,
+    "localPath": "images/image-38.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeature_2_xl_ec1906ecc8.png&w=640&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 318,
+    "height": 248,
+    "localPath": "images/image-39.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeature_2_lg_a28843d9af.png&w=384&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 256,
+    "height": 200,
+    "localPath": "images/image-40.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeature_2_md_918ea7d4c4.png&w=640&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 318,
+    "height": 248,
+    "localPath": "images/image-41.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeature_2_sm_33fb976f3f.png&w=640&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 318,
+    "height": 248,
+    "localPath": "images/image-42.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeature_3_xl_6ef066239f.png&w=1920&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 694,
+    "height": 368,
+    "localPath": "images/image-43.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeature_3_lg_c4c34fb24f.png&w=828&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 640,
+    "height": 569,
+    "localPath": "images/image-44.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeature_3_md_5996029bd2.png&w=828&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 410,
+    "height": 368,
+    "localPath": "images/image-45.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeature_3_sm_f2527246d0.png&w=828&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 410,
+    "height": 368,
+    "localPath": "images/image-46.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fchat_xl_1e3e3bcf8c.png&w=1920&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 694,
+    "height": 368,
+    "localPath": "images/image-47.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fchat_lg_707692e3ef.png&w=828&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 640,
+    "height": 569,
+    "localPath": "images/image-48.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fchat_md_554f8787e3.png&w=828&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 410,
+    "height": 368,
+    "localPath": "images/image-49.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fchat_sm_14a9022bf6.png&w=828&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 410,
+    "height": 368,
+    "localPath": "images/image-50.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeature_5_xl_2e16486d09.png&w=256&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 125,
+    "height": 125,
+    "localPath": "images/image-51.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeature_5_lg_1c7222dff1.png&w=256&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 128,
+    "height": 128,
+    "localPath": "images/image-52.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeature_5_md_47642bc33e.png&w=640&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 196,
+    "height": 196,
+    "localPath": "images/image-53.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeature_5_sm_1436e136e3.png&w=640&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 196,
+    "height": 196,
+    "localPath": "images/image-54.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/images/icons/check.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "Arrow right",
+    "width": 24,
+    "height": 24,
+    "localPath": "images/image-55.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeature_6_xl_136f141a03.png&w=1200&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 580,
+    "height": 368,
+    "localPath": "images/image-56.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeature_6_lg_b6124adf7b.png&w=828&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 640,
+    "height": 570,
+    "localPath": "images/image-57.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeature_6_md_8ef291be56.png&w=828&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 413,
+    "height": 368,
+    "localPath": "images/image-58.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Ffeature_6_md_8ef291be56.png&w=640&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 295,
+    "height": 368,
+    "localPath": "images/image-59.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2FVibe_check_your_code_Value_Pillar_0abc1830ca.png&w=1200&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 640,
+    "height": 570,
+    "localPath": "images/image-60.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2FVibe_check_your_code_Value_Pillar_0abc1830ca.png&w=750&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 375,
+    "height": 368,
+    "localPath": "images/image-61.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2FVibe_check_your_code_Value_Pillar_0abc1830ca.png&w=640&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 295,
+    "height": 368,
+    "localPath": "images/image-62.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fsaas_2x_xl_bf380897a7.png&w=1200&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 640,
+    "height": 480,
+    "localPath": "images/image-63.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fsaas_2x_xl_bf380897a7.png&w=750&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 324,
+    "height": 244,
+    "localPath": "images/image-64.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fcalendar_3b67f91370.png&w=256&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 80,
+    "height": 80,
+    "localPath": "images/image-65.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fcalendar_3b67f91370.png&w=384&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 240,
+    "height": 240,
+    "localPath": "images/image-66.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fkey_8291aaf2c5.png&w=256&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 80,
+    "height": 80,
+    "localPath": "images/image-67.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fkey_8291aaf2c5.png&w=384&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 240,
+    "height": 240,
+    "localPath": "images/image-68.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fbadge_7bb298f129.png&w=256&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 80,
+    "height": 80,
+    "localPath": "images/image-69.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fbadge_7bb298f129.png&w=384&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "image description not available",
+    "width": 240,
+    "height": 240,
+    "localPath": "images/image-70.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fget_started_2x_xl_ad10b0a26a.png&w=1200&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "get started bg",
+    "width": 640,
+    "height": 843,
+    "localPath": "images/image-71.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fget_started_2x_xl_ad10b0a26a.png&w=1080&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "get started bg",
+    "width": 640,
+    "height": 843,
+    "localPath": "images/image-72.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fget_started_2x_xl_ad10b0a26a.png&w=640&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "get started bg",
+    "width": 304,
+    "height": 662,
+    "localPath": "images/image-73.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fget_started_2x_sm_822b45e6aa.png&w=640&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "get started bg",
+    "width": 263,
+    "height": 318,
+    "localPath": "images/image-74.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/images/icons/quote-pink.svg",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "quote",
+    "width": 24,
+    "height": 24,
+    "localPath": "images/image-75.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2FDavid_Deal_b372291536.jpeg&w=128&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "avatar from David Deal",
+    "width": 56,
+    "height": 56,
+    "localPath": "images/image-76.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=%2Fimages%2Ftestimonials%2Favatar.png&w=128&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "placeholder avatar",
+    "width": 56,
+    "height": 56,
+    "localPath": "images/image-77.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2FBenjamin_Smith_7c19bbccfa.avif&w=128&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "avatar from Benjamin Smith",
+    "width": 64,
+    "height": 64,
+    "localPath": "images/image-78.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2FTanveer_Gill_bdf7a50c83.avif&w=128&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "avatar from Tanveer Gill",
+    "width": 64,
+    "height": 64,
+    "localPath": "images/image-79.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1909353910130950147%2FEeSGdgA5_normal.jpg&w=96&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Theo - t3.gg",
+    "width": 48,
+    "height": 48,
+    "localPath": "images/image-80.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://pbs.twimg.com/media/Gg-zrLFbwAAeXs9?format=jpg&name=small",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Image",
+    "width": 680,
+    "height": 251,
+    "localPath": "images/image-81.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fnaomi_b699419138.jpeg&w=128&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "avatar from Naomi Chopra",
+    "width": 64,
+    "height": 64,
+    "localPath": "images/image-82.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2FBaptiste_Arnaud_9ead98b06d.avif&w=128&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "avatar from Baptiste Arnaud",
+    "width": 56,
+    "height": 56,
+    "localPath": "images/image-83.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2FGabriele_Venturi_e17d383c66.avif&w=128&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "avatar from Gabriele Venturi",
+    "width": 56,
+    "height": 56,
+    "localPath": "images/image-84.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2FShani_35f005e5ff.jpeg&w=128&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "avatar from  Shanimol. E.M",
+    "width": 56,
+    "height": 56,
+    "localPath": "images/image-85.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1840788150307680256%2F33rQ7zVo_normal.jpg&w=96&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "Pradeep Pandey",
+    "width": 48,
+    "height": 48,
+    "localPath": "images/image-86.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2Fdavid_aronchick_48dc2a2f69.jpeg&w=128&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "avatar from David Aronchick",
+    "width": 56,
+    "height": 56,
+    "localPath": "images/image-87.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2FNathan_Esquenazi_236cbfbdae.avif&w=128&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "avatar from Nathan Esquenazi",
+    "width": 56,
+    "height": 56,
+    "localPath": "images/image-88.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2FPaul_0bdd62de27.jpeg&w=128&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "avatar from Paul Popescu",
+    "width": 56,
+    "height": 56,
+    "localPath": "images/image-89.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=https%3A%2F%2Fvictorious-bubble-f69a016683.media.strapiapp.com%2FBlake_Gardner_e9126c820a.avif&w=128&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "avatar from Blake Gardner",
+    "width": 56,
+    "height": 56,
+    "localPath": "images/image-90.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=%2Fimages%2Fcontact%2Fgradient-pill-xl.png&w=1080&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "pill",
+    "width": 640,
+    "height": 310,
+    "localPath": "images/image-91.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=%2Fimages%2Fcontact%2Fgrainy-pill-xl.png&w=2048&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "pill",
+    "width": 1080,
+    "height": 254,
+    "localPath": "images/image-92.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/images/icons/discord-white.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "discord icon",
+    "width": 32,
+    "height": 32,
+    "localPath": "images/image-93.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/images/icons/x-white.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "x icon",
+    "width": 32,
+    "height": 32,
+    "localPath": "images/image-94.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/images/icons/linkedin-white.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "linkedin icon",
+    "width": 32,
+    "height": 32,
+    "localPath": "images/image-95.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/images/icons/rss-white.svg",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "rss icon",
+    "width": 24,
+    "height": 24,
+    "localPath": "images/image-96.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=%2Fimages%2Fshapes%2Fcode-shape-sm.png&w=750&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "code-shape-sm shape",
+    "width": 384,
+    "height": 154,
+    "localPath": "images/image-97.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.coderabbit.ai/_next/image?url=%2Fimages%2Fshapes%2Fcode-shape.png&w=1200&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "code-shape shape",
+    "width": 600,
+    "height": 200,
+    "localPath": "images/image-98.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://t.co/1/i/adsct?bci=4&dv=Asia%2FSeoul%26en-US%26Google%20Inc.%26MacIntel%26127%26800%26600%2610%2624%26800%26600%260%26na&eci=3&event=%7B%7D&event_id=530fbc41-2ae5-473a-87d0-57dde7a3dd63&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=4024b0f8-8868-4d3b-8f09-05aa8879b7bc&pt=AI%20Code%20Reviews%20%7C%20CodeRabbit%20%7C%20Try%20for%20Free&tw_document_href=https%3A%2F%2Fwww.coderabbit.ai%2F&tw_iframe_status=0&txn_id=ofqti&type=javascript&version=2.3.35",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 1,
+    "height": 1,
+    "localPath": "images/image-99.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://analytics.twitter.com/1/i/adsct?bci=4&dv=Asia%2FSeoul%26en-US%26Google%20Inc.%26MacIntel%26127%26800%26600%2610%2624%26800%26600%260%26na&eci=3&event=%7B%7D&event_id=530fbc41-2ae5-473a-87d0-57dde7a3dd63&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=4024b0f8-8868-4d3b-8f09-05aa8879b7bc&pt=AI%20Code%20Reviews%20%7C%20CodeRabbit%20%7C%20Try%20for%20Free&tw_document_href=https%3A%2F%2Fwww.coderabbit.ai%2F&tw_iframe_status=0&txn_id=ofqti&type=javascript&version=2.3.35",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 1,
+    "height": 1,
+    "localPath": "images/image-100.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://t.co/1/i/adsct?bci=4&dv=Asia%2FSeoul%26en-US%26Google%20Inc.%26MacIntel%26127%26800%26600%2610%2624%26800%26600%260%26na&eci=3&event=%7B%7D&event_id=a2002561-0095-4121-bf6f-f9730b3d9cb8&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=4024b0f8-8868-4d3b-8f09-05aa8879b7bc&pt=AI%20Code%20Reviews%20%7C%20CodeRabbit%20%7C%20Try%20for%20Free&tw_document_href=https%3A%2F%2Fwww.coderabbit.ai%2F&tw_iframe_status=0&txn_id=oxzm1&type=javascript&version=2.3.35",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 1,
+    "height": 1,
+    "localPath": "images/image-101.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://analytics.twitter.com/1/i/adsct?bci=4&dv=Asia%2FSeoul%26en-US%26Google%20Inc.%26MacIntel%26127%26800%26600%2610%2624%26800%26600%260%26na&eci=3&event=%7B%7D&event_id=a2002561-0095-4121-bf6f-f9730b3d9cb8&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=4024b0f8-8868-4d3b-8f09-05aa8879b7bc&pt=AI%20Code%20Reviews%20%7C%20CodeRabbit%20%7C%20Try%20for%20Free&tw_document_href=https%3A%2F%2Fwww.coderabbit.ai%2F&tw_iframe_status=0&txn_id=oxzm1&type=javascript&version=2.3.35",
+    "type": "img",
+    "sectionIndex": -1,
+    "width": 1,
+    "height": 1,
+    "localPath": "images/image-102.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bat.bing.com/action/0?ti=187095932&tm=gtm002&Ver=2&mid=1e891021-396a-45e0-80d6-16b87d14175f&bo=1&sid=91079a40d39211f0809583b7650c5a90&vid=9107b590d39211f0906ac170c1e4c9ae&vids=1&msclkid=N&gtm_tag_source=1&pi=918639831&lg=en-US&sw=800&sh=600&sc=24&nwd=1&tl=AI%20Code%20Reviews%20%7C%20CodeRabbit%20%7C%20Try%20for%20Free&kw=coderabbit,%20ai,%20code,%20git,%20gitlab,%20github,%20AI%20Code%20Reviews&p=https%3A%2F%2Fwww.coderabbit.ai%2F&r=&lt=1275&evt=pageLoad&sv=2&cdb=AQUT&rn=664679",
+    "type": "img",
+    "sectionIndex": -1,
+    "localPath": "images/image-103.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://bat.bing.com/action/0?ti=187095932&tm=gtm002&Ver=2&mid=1e891021-396a-45e0-80d6-16b87d14175f&bo=2&sid=91079a40d39211f0809583b7650c5a90&vid=9107b590d39211f0906ac170c1e4c9ae&vids=0&msclkid=N&tpp=1&ea=GATag&en=Y&p=https%3A%2F%2Fwww.coderabbit.ai%2F&sw=800&sh=600&sc=24&nwd=1&evt=custom&cdb=AQUT&rn=892553",
+    "type": "img",
+    "sectionIndex": -1,
+    "localPath": "images/image-104.png",
+    "downloaded": true
+  }
+]

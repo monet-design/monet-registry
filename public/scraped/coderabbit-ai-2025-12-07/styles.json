@@ -1,0 +1,18 @@
+{
+  "header.sticky": {
+    "backgroundColor": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "fontFamily": "__Work_Sans_a2025e, __Work_Sans_Fallback_a2025e",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "footer.": {
+    "backgroundColor": "rgb(23, 23, 23)",
+    "color": "rgb(255, 255, 255)",
+    "fontFamily": "__Work_Sans_a2025e, __Work_Sans_Fallback_a2025e",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  }
+}

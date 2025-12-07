@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: coderabbit-ai-feature-6
+category: feature
+
+images:
+  preview: scraped/coderabbit-ai-2025-12-07/sections/section-6.png
+
+freeformKeywords:
+  - vibe check
+  - IDE integration
+  - VS Code
+  - Cursor
+  - Windsurf
+  - code editor
+  - free AI code reviews
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T17:36:09Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - feature-showcase
+    - cta-button
+  style:
+    - dark-theme
+    - modern
+    - gradient
+  layout:
+    - split-layout
+    - two-column
+  industry:
+    - saas
+    - ai
+    - developer-tools
+
+parentPage: coderabbit-ai-landing
+
+source:
+  type: url
+  url: https://www.coderabbit.ai/
+  scrapedAt: "2025-12-07T17:36:09Z"
+  sectionIndex: 6

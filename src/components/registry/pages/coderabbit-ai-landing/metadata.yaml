@@ -1,0 +1,58 @@
+schemaVersion: "2.0"
+name: coderabbit-ai-landing
+category: page
+images:
+  preview: scraped/coderabbit-ai-2025-12-07/full-page.png
+title: coderabbit.ai Landing Page
+sections:
+  - id: coderabbit-ai-header-0
+    category: header
+    order: 0
+  - id: coderabbit-ai-hero-1
+    category: hero
+    order: 1
+  - id: coderabbit-ai-logo-cloud-2
+    category: logo-cloud
+    order: 2
+  - id: coderabbit-ai-feature-3
+    category: feature
+    order: 3
+  - id: coderabbit-ai-feature-4
+    category: feature
+    order: 4
+  - id: coderabbit-ai-feature-5
+    category: feature
+    order: 5
+  - id: coderabbit-ai-feature-6
+    category: feature
+    order: 6
+  - id: coderabbit-ai-how-it-works-7
+    category: how-it-works
+    order: 7
+  - id: coderabbit-ai-feature-8
+    category: feature
+    order: 8
+  - id: coderabbit-ai-cta-9
+    category: cta
+    order: 9
+  - id: coderabbit-ai-testimonial-10
+    category: testimonial
+    order: 10
+  - id: coderabbit-ai-cta-11
+    category: cta
+    order: 11
+  - id: coderabbit-ai-footer-12
+    category: footer
+    order: 12
+source:
+  type: url
+  url: https://www.coderabbit.ai/
+  scrapedAt: "2025-12-07T17:41:59.281Z"
+pageInfo:
+  totalSections: 13
+freeformKeywords:
+  - complete landing page
+  - full page
+  - coderabbit.ai
+createdAt: "2025-12-07T17:41:59.281Z"
+status: stable

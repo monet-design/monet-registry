@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: clerk-com-testimonial-0
+category: testimonial
+
+images:
+  preview: scraped/clerk-com-2025-12-07/sections/section-0.png
+
+freeformKeywords:
+  - testimonial
+  - customer reviews
+  - social proof
+  - quotes
+  - CEO testimonials
+  - enterprise
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T17:32:50Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - grid
+    - responsive
+  industry:
+    - saas
+    - startup
+
+parentPage: clerk-com-landing
+
+source:
+  type: url
+  url: https://clerk.com/
+  scrapedAt: "2025-12-07T17:32:50Z"
+  sectionIndex: 0

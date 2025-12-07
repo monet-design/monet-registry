@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: clerk-com-cta-1
+category: cta
+
+images:
+  preview: scraped/clerk-com-2025-12-07/sections/section-1.png
+
+freeformKeywords:
+  - cta
+  - call to action
+  - start building
+  - free trial
+  - sign up
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T17:32:51Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - lead-capture
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - gradient
+  layout:
+    - split-layout
+    - responsive
+  industry:
+    - saas
+    - startup
+
+parentPage: clerk-com-landing
+
+source:
+  type: url
+  url: https://clerk.com/
+  scrapedAt: "2025-12-07T17:32:51Z"
+  sectionIndex: 1

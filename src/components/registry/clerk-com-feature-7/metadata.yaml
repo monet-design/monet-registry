@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: clerk-com-feature-7
+category: feature
+
+images:
+  preview: public/scraped/clerk-com-2025-12-07/full-page.png
+
+freeformKeywords:
+  - SDK
+  - framework
+  - integration
+  - React
+  - Next.js
+  - Vue
+  - Remix
+  - Express
+  - Ruby
+  - Go
+  - tools
+  - developer tools
+  - two cards
+  - dark theme
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T17:46:49Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - feature-showcase
+  style:
+    - dark-theme
+    - modern
+    - cards
+    - minimal
+  layout:
+    - two-column
+    - grid
+    - centered
+  industry:
+    - saas
+    - developer-tools
+    - api

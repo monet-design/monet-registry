@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: coderabbit-ai-cta-11
+category: cta
+
+images:
+  preview: scraped/coderabbit-ai-2025-12-07/sections/section-11.png
+
+freeformKeywords:
+  - contact
+  - questions
+  - support
+  - help
+  - call to action
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T17:36:18Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - contact
+    - cta-button
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - centered
+  industry:
+    - saas
+    - ai
+    - developer-tools
+
+parentPage: coderabbit-ai-landing
+
+source:
+  type: url
+  url: https://www.coderabbit.ai/
+  scrapedAt: "2025-12-07T17:36:18Z"
+  sectionIndex: 11

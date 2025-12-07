@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: clerk-com-feature-3
+category: feature
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/clerk-com-2025-12-07/full-page.png
+
+freeformKeywords:
+  - pixel-perfect
+  - authentication UI
+  - code snippet
+  - sign-up form
+  - create account
+  - clerk
+  - embedded components
+  - SDK
+  - feature section
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T17:46:33Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - code-snippet
+    - form
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+  layout:
+    - two-column
+    - split-layout
+    - centered
+  industry:
+    - saas
+    - auth
+    - developer-tools

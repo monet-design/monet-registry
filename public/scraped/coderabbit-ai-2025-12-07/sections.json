@@ -1,0 +1,35 @@
+[
+  {
+    "index": 0,
+    "tag": "header",
+    "selector": "header.sticky",
+    "category": "header",
+    "rect": {
+      "top": 0,
+      "height": 112
+    },
+    "confidence": 0.8
+  },
+  {
+    "index": 1,
+    "tag": "article",
+    "selector": "article.tweet-container_article__0ERPK",
+    "category": null,
+    "rect": {
+      "top": 7293.84375,
+      "height": 388.515625
+    },
+    "confidence": 0.8
+  },
+  {
+    "index": 2,
+    "tag": "footer",
+    "selector": "footer",
+    "category": "footer",
+    "rect": {
+      "top": 8234.46875,
+      "height": 725
+    },
+    "confidence": 0.8
+  }
+]

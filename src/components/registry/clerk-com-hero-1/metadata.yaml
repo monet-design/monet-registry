@@ -1,0 +1,48 @@
+schemaVersion: "2.0"
+name: clerk-com-hero-1
+category: hero
+
+images:
+  preview: public/scraped/clerk-com-2025-12-07/full-page.png
+
+freeformKeywords:
+  - hero
+  - authentication
+  - user management
+  - auth
+  - sign-in
+  - sign-up
+  - saas
+  - developer tools
+  - clerk
+  - identity
+  - full-stack auth
+  - dark theme
+  - centered
+  - cta button
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T17:46:31Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - cta-button
+    - text-link
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - sans-serif
+    - gradient-text
+  layout:
+    - centered
+    - full-width
+  industry:
+    - saas
+    - devtools
+    - auth
+    - startup

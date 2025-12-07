@@ -1,0 +1,55 @@
+schemaVersion: "2.0"
+name: clerk-com-landing
+category: page
+images:
+  preview: scraped/clerk-com-2025-12-07/full-page.png
+title: clerk.com Landing Page
+sections:
+  - id: clerk-com-header-0
+    category: header
+    order: 0
+  - id: clerk-com-hero-1
+    category: hero
+    order: 1
+  - id: clerk-com-logo-cloud-2
+    category: logo-cloud
+    order: 2
+  - id: clerk-com-feature-3
+    category: feature
+    order: 3
+  - id: clerk-com-feature-4
+    category: feature
+    order: 4
+  - id: clerk-com-feature-5
+    category: feature
+    order: 5
+  - id: clerk-com-feature-6
+    category: feature
+    order: 6
+  - id: clerk-com-feature-7
+    category: feature
+    order: 7
+  - id: clerk-com-testimonial-0
+    category: testimonial
+    order: 8
+  - id: clerk-com-cta-1
+    category: cta
+    order: 9
+  - id: clerk-com-footer-2
+    category: footer
+    order: 10
+source:
+  type: url
+  url: https://clerk.com/
+  scrapedAt: "2025-12-07T17:37:34.201Z"
+pageInfo:
+  totalSections: 11
+freeformKeywords:
+  - complete landing page
+  - full page
+  - clerk.com
+  - authentication
+  - user management
+  - developer tools
+createdAt: "2025-12-07T17:37:34.201Z"
+status: stable

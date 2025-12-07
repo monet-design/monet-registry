@@ -1,0 +1,41 @@
+schemaVersion: "2.0"
+name: clerk-com-feature-6
+category: feature
+
+images:
+  preview: scraped/clerk-com-2025-12-07/full-page.png
+
+freeformKeywords:
+  - subscription billing
+  - pricing table
+  - pricing plans
+  - billing feature
+  - SaaS pricing
+  - free trial
+  - pro plan
+  - teams plan
+  - feature list
+  - clerk
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T17:46:40Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - pricing
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - shadow
+  layout:
+    - two-column
+    - split-layout
+    - responsive
+  industry:
+    - saas
+    - startup

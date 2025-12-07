@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: clerk-com-feature-5
+category: feature
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/clerk-com-2025-12-07/full-page.png
+
+freeformKeywords:
+  - multi-tenancy
+  - B2B
+  - organizations
+  - permissions
+  - roles
+  - invite-only
+  - feature
+  - clerk
+  - auth
+  - saas
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T17:46:40Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - three-column
+    - grid
+    - centered
+  industry:
+    - saas
+    - b2b
+    - auth

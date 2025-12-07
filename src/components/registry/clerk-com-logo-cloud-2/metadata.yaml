@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: clerk-com-logo-cloud-2
+category: logo-cloud
+
+images:
+  preview: scraped/clerk-com-2025-12-07/sections/section-2.png
+
+freeformKeywords:
+  - logo cloud
+  - trusted by
+  - company logos
+  - brand showcase
+  - social proof
+  - partners
+  - clients
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-08T00:00:00Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - social-proof
+  style:
+    - light-theme
+    - modern
+    - minimal
+  layout:
+    - split-layout
+    - responsive
+    - left-aligned
+  industry:
+    - saas
+    - startup
+
+parentPage: clerk-com-landing
+
+source:
+  type: url
+  url: https://clerk.com/
+  scrapedAt: "2025-12-07T17:32:51Z"
+  sectionIndex: 2

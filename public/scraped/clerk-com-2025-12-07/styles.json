@@ -1,0 +1,50 @@
+{
+  "header#header.pointer-events-none": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "geistNumbers, suisse, \"suisse Fallback\"",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "40px 0px 0px"
+  },
+  "nav.ml-7": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "geistNumbers, suisse, \"suisse Fallback\"",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px 0px 0px 28px"
+  },
+  "main#main": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "geistNumbers, suisse, \"suisse Fallback\"",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "geistNumbers, suisse, \"suisse Fallback\"",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.mt-32": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "geistNumbers, suisse, \"suisse Fallback\"",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "128px 0px 0px"
+  },
+  "footer#clerk-footer.mt-24": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "geistNumbers, suisse, \"suisse Fallback\"",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "128px 0px 0px"
+  }
+}

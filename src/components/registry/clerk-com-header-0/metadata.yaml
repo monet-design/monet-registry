@@ -1,0 +1,39 @@
+schemaVersion: "2.0"
+name: clerk-com-header-0
+category: header
+
+images:
+  preview: /scraped/clerk-com-2025-12-07/full-page.png
+
+freeformKeywords:
+  - header
+  - navigation
+  - navbar
+  - clerk
+  - authentication
+  - dark theme
+  - logo
+  - menu
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T17:46:27Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - navigation
+    - dropdown
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - full-width
+    - horizontal
+  industry:
+    - saas
+    - authentication
+    - developer-tools

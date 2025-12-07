@@ -1,0 +1,35 @@
+[
+  {
+    "index": 0,
+    "tag": "section",
+    "selector": "section",
+    "category": null,
+    "rect": {
+      "top": 6224,
+      "height": 966
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 1,
+    "tag": "section",
+    "selector": "section.mt-32",
+    "category": null,
+    "rect": {
+      "top": 7318,
+      "height": 382
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 2,
+    "tag": "footer",
+    "selector": "footer#clerk-footer",
+    "category": "footer",
+    "rect": {
+      "top": 7828,
+      "height": 369
+    },
+    "confidence": 0.8
+  }
+]

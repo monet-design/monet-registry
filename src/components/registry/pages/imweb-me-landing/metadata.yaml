@@ -9,7 +9,7 @@ sections:
     category: hero
     order: 0
   - id: imweb-me-showcase-1
-    category: showcase
+    category: feature-showcase
     order: 1
   - id: imweb-me-testimonial-2
     category: testimonial

@@ -27,7 +27,7 @@ sections:
     category: testimonial
     order: 6
   - id: ycombinator-com-showcase-1
-    category: showcase
+    category: feature-showcase
     order: 7
   - id: ycombinator-com-cta-2
     category: cta

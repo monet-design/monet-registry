@@ -1,0 +1,38 @@
+schemaVersion: "2.0"
+name: datafa-st-header
+category: header
+images:
+  preview: scraped/datafa-st-2025-12-08/header.png
+tags:
+  functional:
+    - mobile-menu
+    - navigation
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - analytics
+    - startup
+freeformKeywords:
+  - header
+  - navigation
+  - navbar
+  - mobile menu
+  - hamburger menu
+  - logo
+  - login button
+  - dark mode
+  - responsive header
+  - sticky header
+  - analytics
+  - datafast
+fontFamily:
+  - Inter
+createdAt: "2025-12-08T00:00:00Z"
+status: stable
+language: en

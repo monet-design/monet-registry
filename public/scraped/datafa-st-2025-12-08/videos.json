@@ -1,0 +1,35 @@
+[
+  {
+    "originalUrl": "https://video.twimg.com/amplify_video/1943341884228665344/vid/avc1/640x360/9yZLIvHcgbnZriJk.mp4?tag=14",
+    "platform": "html5",
+    "type": "video",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/1943341884228665344/img/m5d9Aj6T1OceCNMJ?format=jpg&name=small",
+    "sectionIndex": 1,
+    "width": 316,
+    "height": 177.75,
+    "thumbnailPath": "videos/thumb-0.png",
+    "thumbnailDownloaded": true
+  },
+  {
+    "originalUrl": "https://video.twimg.com/amplify_video/1952684385171382272/vid/avc1/1280x720/PSzj6xnZAmtudtyQ.mp4",
+    "platform": "html5",
+    "type": "video",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/1952684385171382272/img/7FUHxH6BNnrYEWoV?format=jpg&name=small",
+    "sectionIndex": 1,
+    "width": 316,
+    "height": 177.75,
+    "thumbnailPath": "videos/thumb-1.png",
+    "thumbnailDownloaded": true
+  },
+  {
+    "originalUrl": "https://video.twimg.com/amplify_video/1922977846730911744/vid/avc1/1770x1080/CHIymnQLRBT6PqhV.mp4",
+    "platform": "html5",
+    "type": "video",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/1922977846730911744/img/-Rg6DwZx_68gfYtO?format=jpg&name=small",
+    "sectionIndex": 1,
+    "width": 316,
+    "height": 192.65625,
+    "thumbnailPath": "videos/thumb-2.png",
+    "thumbnailDownloaded": true
+  }
+]

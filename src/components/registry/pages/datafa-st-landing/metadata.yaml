@@ -1,0 +1,55 @@
+schemaVersion: "2.0"
+name: datafa-st-landing
+category: page
+images:
+  preview: scraped/datafa-st-2025-12-08/full-page.png
+title: datafa.st Landing Page
+sections:
+  - id: datafa-st-header
+    category: header
+    order: 0
+  - id: datafa-st-hero-0
+    category: hero
+    order: 1
+  - id: datafa-st-social-proof-1
+    category: testimonial
+    order: 2
+  - id: datafa-st-how-it-works-2
+    category: how-it-works
+    order: 3
+  - id: datafa-st-testimonial-3
+    category: testimonial
+    order: 4
+  - id: datafa-st-feature-4
+    category: feature
+    order: 5
+  - id: datafa-st-logo-cloud-5
+    category: logo-cloud
+    order: 6
+  - id: datafa-st-biography-6
+    category: biography
+    order: 7
+  - id: datafa-st-pricing-8
+    category: pricing
+    order: 8
+  - id: datafa-st-faq-9
+    category: faq
+    order: 9
+  - id: datafa-st-cta-11
+    category: cta
+    order: 10
+  - id: datafa-st-footer-12
+    category: footer
+    order: 11
+source:
+  type: url
+  url: https://datafa.st/
+  scrapedAt: "2025-12-08T02:21:38.782Z"
+pageInfo:
+  totalSections: 12
+freeformKeywords:
+  - complete landing page
+  - full page
+  - datafa.st
+createdAt: "2025-12-08T02:21:38.782Z"
+status: stable

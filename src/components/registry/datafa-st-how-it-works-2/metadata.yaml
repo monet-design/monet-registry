@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: datafa-st-how-it-works-2
+category: how-it-works
+
+images:
+  preview: scraped/datafa-st-2025-12-08/sections/section-2.png
+
+freeformKeywords:
+  - steps
+  - process
+  - install
+  - connect
+  - revenue
+  - script
+  - integration
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-08T02:14:52Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - lead-capture
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - three-column
+    - centered
+  industry:
+    - saas
+    - analytics
+
+parentPage: datafa-st-landing
+
+source:
+  type: url
+  url: https://datafa.st/
+  scrapedAt: "2025-12-08T02:14:52Z"
+  sectionIndex: 2

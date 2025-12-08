@@ -1,0 +1,145 @@
+[
+  {
+    "index": 0,
+    "tag": "section",
+    "selector": "section.mx-auto",
+    "category": null,
+    "rect": {
+      "top": 65,
+      "height": 1451.359375
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 1,
+    "tag": "section",
+    "selector": "section.jsx-115041598",
+    "category": null,
+    "rect": {
+      "top": 1516.359375,
+      "height": 944
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 2,
+    "tag": "section",
+    "selector": "section#how",
+    "category": null,
+    "rect": {
+      "top": 2460.359375,
+      "height": 912
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 3,
+    "tag": "section",
+    "selector": "section.mx-auto",
+    "category": null,
+    "rect": {
+      "top": 3372.359375,
+      "height": 398
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 4,
+    "tag": "section",
+    "selector": "section#features-web",
+    "category": "feature",
+    "rect": {
+      "top": 3770.359375,
+      "height": 1539
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 5,
+    "tag": "section",
+    "selector": "section.bg-base-300",
+    "category": null,
+    "rect": {
+      "top": 5309.359375,
+      "height": 855.34375
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 6,
+    "tag": "section",
+    "selector": "section#story",
+    "category": null,
+    "rect": {
+      "top": 6164.703125,
+      "height": 1326.125
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 7,
+    "tag": "section",
+    "selector": "section.mx-auto",
+    "category": null,
+    "rect": {
+      "top": 7586.828125,
+      "height": 278
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 8,
+    "tag": "section",
+    "selector": "section#pricing",
+    "category": "pricing",
+    "rect": {
+      "top": 7960.828125,
+      "height": 971.5
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 9,
+    "tag": "section",
+    "selector": "section#faq",
+    "category": "faq",
+    "rect": {
+      "top": 8932.328125,
+      "height": 1218
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 10,
+    "tag": "section",
+    "selector": "section#reviews",
+    "category": "testimonial",
+    "rect": {
+      "top": 10150.328125,
+      "height": 2165.09375
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 11,
+    "tag": "section",
+    "selector": "section.custom-card",
+    "category": null,
+    "rect": {
+      "top": 12434.421875,
+      "height": 534
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 12,
+    "tag": "footer",
+    "selector": "footer.border-t",
+    "category": "footer",
+    "rect": {
+      "top": 13087.421875,
+      "height": 791
+    },
+    "confidence": 0.8
+  }
+]

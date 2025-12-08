@@ -3111,6 +3111,54 @@
     "shipfa-st-testimonial-8": {
       "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/shipfa-st-testimonial-8.png",
       "capturedAt": "2025-12-08T00:42:35.810Z"
+    },
+    "datafa-st-biography-6": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/datafa-st-biography-6.png",
+      "capturedAt": "2025-12-08T03:47:35.830Z"
+    },
+    "datafa-st-cta-11": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/datafa-st-cta-11.png",
+      "capturedAt": "2025-12-08T03:47:40.183Z"
+    },
+    "datafa-st-faq-9": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/datafa-st-faq-9.png",
+      "capturedAt": "2025-12-08T03:47:43.944Z"
+    },
+    "datafa-st-feature-4": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/datafa-st-feature-4.png",
+      "capturedAt": "2025-12-08T03:47:47.668Z"
+    },
+    "datafa-st-footer-12": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/datafa-st-footer-12.png",
+      "capturedAt": "2025-12-08T03:47:51.405Z"
+    },
+    "datafa-st-header": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/datafa-st-header.png",
+      "capturedAt": "2025-12-08T03:47:55.579Z"
+    },
+    "datafa-st-hero-0": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/datafa-st-hero-0.png",
+      "capturedAt": "2025-12-08T03:47:59.307Z"
+    },
+    "datafa-st-how-it-works-2": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/datafa-st-how-it-works-2.png",
+      "capturedAt": "2025-12-08T03:48:03.021Z"
+    },
+    "datafa-st-logo-cloud-5": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/datafa-st-logo-cloud-5.png",
+      "capturedAt": "2025-12-08T03:48:06.750Z"
+    },
+    "datafa-st-pricing-8": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/datafa-st-pricing-8.png",
+      "capturedAt": "2025-12-08T03:48:10.447Z"
+    },
+    "datafa-st-social-proof-1": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/datafa-st-social-proof-1.png",
+      "capturedAt": "2025-12-08T03:48:14.512Z"
+    },
+    "datafa-st-testimonial-3": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/datafa-st-testimonial-3.png",
+      "capturedAt": "2025-12-08T03:48:18.232Z"
     }
   },
   "pageCompleted": {
@@ -3169,6 +3217,10 @@
     "shipfa-st-landing": {
       "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/pages/shipfa-st-landing.png",
       "capturedAt": "2025-12-08T00:42:55.619Z"
+    },
+    "datafa-st-landing": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/pages/datafa-st-landing.png",
+      "capturedAt": "2025-12-08T03:48:22.103Z"
     }
   }
 }

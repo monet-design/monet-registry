@@ -1,0 +1,130 @@
+{
+  "header.border-b": {
+    "backgroundColor": "oklch(0.239292 0 0)",
+    "color": "oklch(0.898042 0.001746 67.8004)",
+    "fontFamily": "__DM_Sans_0d7163, __DM_Sans_Fallback_0d7163",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "nav.mx-auto": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.898042 0.001746 67.8004)",
+    "fontFamily": "__DM_Sans_0d7163, __DM_Sans_Fallback_0d7163",
+    "fontSize": "16px",
+    "padding": "16px 0px",
+    "margin": "0px 80px"
+  },
+  "main": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.898042 0.001746 67.8004)",
+    "fontFamily": "__DM_Sans_0d7163, __DM_Sans_Fallback_0d7163",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.mx-auto": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.898042 0.001746 67.8004)",
+    "fontFamily": "__DM_Sans_0d7163, __DM_Sans_Fallback_0d7163",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "96px 464px"
+  },
+  "section.jsx-115041598": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.898042 0.001746 67.8004)",
+    "fontFamily": "__DM_Sans_0d7163, __DM_Sans_Fallback_0d7163",
+    "fontSize": "16px",
+    "padding": "64px 0px",
+    "margin": "0px"
+  },
+  "section#how.bg-base-300": {
+    "backgroundColor": "oklch(0.239292 0 0)",
+    "color": "oklch(0.898042 0.001746 67.8004)",
+    "fontFamily": "__DM_Sans_0d7163, __DM_Sans_Fallback_0d7163",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section#features-web.mx-auto": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.898042 0.001746 67.8004)",
+    "fontFamily": "__DM_Sans_0d7163, __DM_Sans_Fallback_0d7163",
+    "fontSize": "16px",
+    "padding": "96px 16px",
+    "margin": "0px 80px"
+  },
+  "section.custom-card": {
+    "backgroundColor": "oklch(0.268618 0 0)",
+    "color": "oklch(0.898042 0.001746 67.8004)",
+    "fontFamily": "__DM_Sans_0d7163, __DM_Sans_Fallback_0d7163",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.bg-base-300": {
+    "backgroundColor": "oklch(0.239292 0 0)",
+    "color": "oklch(0.898042 0.001746 67.8004)",
+    "fontFamily": "__DM_Sans_0d7163, __DM_Sans_Fallback_0d7163",
+    "fontSize": "16px",
+    "padding": "64px 0px",
+    "margin": "0px"
+  },
+  "section#story.space-y-12": {
+    "backgroundColor": "oklch(0.239292 0 0)",
+    "color": "oklch(0.898042 0.001746 67.8004)",
+    "fontFamily": "__DM_Sans_0d7163, __DM_Sans_Fallback_0d7163",
+    "fontSize": "16px",
+    "padding": "96px 0px",
+    "margin": "0px"
+  },
+  "section#pricing.bg-base-300": {
+    "backgroundColor": "oklch(0.239292 0 0)",
+    "color": "oklch(0.898042 0.001746 67.8004)",
+    "fontFamily": "__DM_Sans_0d7163, __DM_Sans_Fallback_0d7163",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.space-y-8": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.898042 0.001746 67.8004)",
+    "fontFamily": "__DM_Sans_0d7163, __DM_Sans_Fallback_0d7163",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section#faq.bg-base-300": {
+    "backgroundColor": "oklch(0.239292 0 0)",
+    "color": "oklch(0.898042 0.001746 67.8004)",
+    "fontFamily": "__DM_Sans_0d7163, __DM_Sans_Fallback_0d7163",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section#reviews.mx-auto": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.898042 0.001746 67.8004)",
+    "fontFamily": "__DM_Sans_0d7163, __DM_Sans_Fallback_0d7163",
+    "fontSize": "16px",
+    "padding": "64px 16px",
+    "margin": "0px 80px"
+  },
+  "footer.border-t": {
+    "backgroundColor": "oklch(0.239292 0 0)",
+    "color": "oklch(0.898042 0.001746 67.8004)",
+    "fontFamily": "__DM_Sans_0d7163, __DM_Sans_Fallback_0d7163",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "div.footer-title": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.898042 0.001746 67.8004)",
+    "fontFamily": "__DM_Sans_0d7163, __DM_Sans_Fallback_0d7163",
+    "fontSize": "14px",
+    "padding": "0px",
+    "margin": "0px 0px 12px"
+  }
+}

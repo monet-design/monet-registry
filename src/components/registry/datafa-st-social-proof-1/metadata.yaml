@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: datafa-st-social-proof-1
+category: testimonial
+
+images:
+  preview: scraped/datafa-st-2025-12-08/sections/section-1.png
+
+freeformKeywords:
+  - twitter
+  - social proof
+  - testimonials
+  - reviews
+  - users
+  - feedback
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-08T02:14:50Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - video
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+  layout:
+    - grid
+    - full-width
+  industry:
+    - saas
+    - analytics
+
+parentPage: datafa-st-landing
+
+source:
+  type: url
+  url: https://datafa.st/
+  scrapedAt: "2025-12-08T02:14:50Z"
+  sectionIndex: 1

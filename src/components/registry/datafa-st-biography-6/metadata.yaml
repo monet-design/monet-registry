@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: datafa-st-biography-6
+category: biography
+
+images:
+  preview: scraped/datafa-st-2025-12-08/sections/section-6.png
+
+freeformKeywords:
+  - founder
+  - story
+  - marc
+  - maker
+  - startup
+  - twitter
+  - analytics
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-08T02:15:34Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - video
+  style:
+    - dark-theme
+    - modern
+    - warm
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - startup
+
+parentPage: datafa-st-landing
+
+source:
+  type: url
+  url: https://datafa.st/
+  scrapedAt: "2025-12-08T02:15:34Z"
+  sectionIndex: 6

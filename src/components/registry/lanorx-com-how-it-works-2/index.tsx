@@ -221,13 +221,13 @@ export default function LanorxComHowItWorks2({
                     }`}
                   >
                     <div className={isDark ? "text-neutral-500" : "text-neutral-500"}>
-                      // Install
+                      {`// Install`}
                     </div>
                     <div className="text-blue-600">npm install @lanorx/react</div>
                     <div
                       className={`pt-2 ${isDark ? "text-neutral-500" : "text-neutral-500"}`}
                     >
-                      // Usage
+                      {`// Usage`}
                     </div>
                     <div>
                       <span className="text-purple-600">import</span>{" "}

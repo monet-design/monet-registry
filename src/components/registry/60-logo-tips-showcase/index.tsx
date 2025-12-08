@@ -29,7 +29,7 @@ const IMAGES = {} as const;
 // END CUSTOMIZATION
 // ============================================================================
 
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -132,7 +132,7 @@ export default function LogoTipsShowcase({
 
   const cardWidth = 380; // approximate card width + gap
 
-  const updateScrollState = () => {
+  const updateScrollState = useCallback(() => {
     if (scrollRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
       setCanScrollLeft(scrollLeft > 10);
@@ -140,7 +140,7 @@ export default function LogoTipsShowcase({
       const newIndex = Math.round(scrollLeft / cardWidth);
       setActiveIndex(Math.min(newIndex, items.length - 1));
     }
-  };
+  }, [items.length, cardWidth]);
 
   useEffect(() => {
     const container = scrollRef.current;
@@ -149,7 +149,7 @@ export default function LogoTipsShowcase({
       updateScrollState();
       return () => container.removeEventListener("scroll", updateScrollState);
     }
-  }, [items.length]);
+  }, [updateScrollState]);
 
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {

@@ -130,7 +130,6 @@ function ParticipantCard({
       transition={{ delay: 0.6 + index * 0.1, duration: 0.4 }}
       className="relative aspect-[4/3] overflow-hidden rounded-sm"
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={participant.imageUrl}
         alt={participant.name}

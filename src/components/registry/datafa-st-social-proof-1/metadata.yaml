@@ -37,7 +37,5 @@ tags:
 parentPage: datafa-st-landing
 
 source:
-  type: url
+  name: DataFast
   url: https://datafa.st/
-  scrapedAt: "2025-12-08T02:14:50Z"
-  sectionIndex: 1

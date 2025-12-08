@@ -1,0 +1,47 @@
+schemaVersion: "2.0"
+name: shipfa-st-hero-0
+category: hero
+
+images:
+  preview: /scraped/shipfa-st-2025-12-07/sections/section-0.png
+
+freeformKeywords:
+  - hero
+  - startup
+  - boilerplate
+  - nextjs
+  - saas
+  - dark theme
+  - tech stack
+  - call to action
+  - social proof
+  - rating
+  - avatars
+  - product hunt
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-08T00:16:20Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - cta-button
+    - social-proof
+    - keyboard-shortcut
+  style:
+    - dark-theme
+    - modern
+    - bold
+    - sans-serif
+    - gradient
+  layout:
+    - split-layout
+    - two-column
+    - left-aligned
+  industry:
+    - saas
+    - startup
+    - developer-tools

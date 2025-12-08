@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: shipfa-st-testimonial-1
+category: testimonial
+
+images:
+  preview: scraped/shipfa-st-2025-12-07/sections/section-1.png
+
+freeformKeywords:
+  - social proof
+  - testimonial
+  - mrr
+  - revenue
+  - featured
+  - logo cloud
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T23:50:44Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - split-layout
+    - two-column
+    - centered
+  industry:
+    - saas
+    - startup
+
+parentPage: shipfa-st-landing
+
+source:
+  type: url
+  name: ShipFast
+  url: https://shipfa.st/
+  scrapedAt: "2025-12-07T23:50:44Z"
+  sectionIndex: 1

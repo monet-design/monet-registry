@@ -1,0 +1,1613 @@
+{
+  "tag": "body",
+  "id": null,
+  "className": "__variable_d7e012 __variable_0d7163 __variable_f367f3 __variable_13fb82 antialiased",
+  "rect": {
+    "top": 0,
+    "left": 0,
+    "width": 1432,
+    "height": 5568.1875
+  },
+  "children": [
+    {
+      "tag": "div",
+      "id": null,
+      "className": "relative min-h-screen",
+      "rect": {
+        "top": 0,
+        "left": 0,
+        "width": 1432,
+        "height": 5568.1875
+      },
+      "children": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative min-h-screen overflow-hidden bg-white",
+          "rect": {
+            "top": 0,
+            "left": 0,
+            "width": 1432,
+            "height": 5568.1875
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "relative z-10 content-frame",
+              "rect": {
+                "top": 0,
+                "left": 0,
+                "width": 1432,
+                "height": 5568.1875
+              },
+              "children": [
+                {
+                  "tag": "header",
+                  "id": null,
+                  "className": "fixed top-0 left-0 right-0 z-50 border-b border-black/10 bg-white/80 backdrop-blur-md font-sans",
+                  "rect": {
+                    "top": 0,
+                    "left": 0,
+                    "width": 1432,
+                    "height": 57
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "mx-auto max-w-[976px] flex items-center justify-between px-6 py-3",
+                      "rect": {
+                        "top": 0,
+                        "left": 228,
+                        "width": 976,
+                        "height": 56
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "section",
+                  "id": null,
+                  "className": "relative px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 md:pt-28 pb-12 sm:pb-16 md:pb-24 bg-white text-black",
+                  "rect": {
+                    "top": 0,
+                    "left": 0,
+                    "width": 1432,
+                    "height": 3825.1875
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "mx-auto flex max-w-[976px] flex-col items-center text-center gap-6 sm:gap-8 md:gap-12",
+                      "rect": {
+                        "top": 112,
+                        "left": 228,
+                        "width": 976,
+                        "height": 378
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "space-y-4 sm:space-y-6",
+                          "rect": {
+                            "top": 246,
+                            "left": 340.15625,
+                            "width": 751.6875,
+                            "height": 244
+                          },
+                          "children": [
+                            {
+                              "tag": "h1",
+                              "id": null,
+                              "className": "text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] tracking-tight text-black whitespace-nowrap",
+                              "rect": {
+                                "top": 246,
+                                "left": 340.15625,
+                                "width": 751.6875,
+                                "height": 66
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "h2",
+                              "id": null,
+                              "className": "text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] tracking-tight text-black whitespace-nowrap",
+                              "rect": {
+                                "top": 336,
+                                "left": 340.15625,
+                                "width": 751.6875,
+                                "height": 66
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "p",
+                              "id": null,
+                              "className": "mx-auto max-w-2xl text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 px-2 sm:px-4",
+                              "rect": {
+                                "top": 426,
+                                "left": 380,
+                                "width": 672,
+                                "height": 64
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "w-full relative mt-8 sm:mt-10 md:mt-12",
+                      "rect": {
+                        "top": 538,
+                        "left": 32,
+                        "width": 1368,
+                        "height": 66
+                      },
+                      "children": [
+                        {
+                          "tag": "form",
+                          "id": null,
+                          "className": "mx-auto max-w-[976px] relative",
+                          "rect": {
+                            "top": 538,
+                            "left": 228,
+                            "width": 976,
+                            "height": 66
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "flex flex-col md:flex-row bg-white border border-black/40",
+                              "rect": {
+                                "top": 538,
+                                "left": 228,
+                                "width": 976,
+                                "height": 66
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-1 relative",
+                                  "rect": {
+                                    "top": 539,
+                                    "left": 229,
+                                    "width": 651.8125,
+                                    "height": 64
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "input",
+                                      "id": null,
+                                      "className": "w-full px-4 sm:px-6 py-4 sm:py-5 bg-transparent text-sm sm:text-base text-black outline-none border-b md:border-b-0 md:border-r border-black/40",
+                                      "rect": {
+                                        "top": 539,
+                                        "left": 229,
+                                        "width": 651.8125,
+                                        "height": 64
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "input",
+                                  "id": null,
+                                  "className": "md:w-[200px] px-4 sm:px-6 py-4 sm:py-5 bg-transparent text-sm sm:text-base text-black placeholder-gray-400 outline-none border-b md:border-b-0 md:border-r border-black/40",
+                                  "rect": {
+                                    "top": 539,
+                                    "left": 880.8125,
+                                    "width": 200,
+                                    "height": 64
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "tag": "button",
+                                  "id": null,
+                                  "className": "flex items-center justify-center gap-2 px-6 py-4 sm:py-5 bg-black text-white text-sm sm:text-base font-medium transition-colors hover:bg-gray-900 cursor-pointer -m-px",
+                                  "rect": {
+                                    "top": 538,
+                                    "left": 1079.8125,
+                                    "width": 124.1875,
+                                    "height": 66
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "mx-auto flex max-w-[976px] flex-col items-center text-center gap-12 sm:gap-16 mt-12 sm:mt-18",
+                      "rect": {
+                        "top": 676,
+                        "left": 228,
+                        "width": 976,
+                        "height": 3053.1875
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "mx-auto grid max-w-3xl gap-3 text-left text-base text-gray-600 sm:grid-cols-2 pb-20",
+                          "rect": {
+                            "top": 676,
+                            "left": 346.234375,
+                            "width": 739.53125,
+                            "height": 252
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "flex items-start gap-3 bg-white px-5 py-4",
+                              "rect": {
+                                "top": 676,
+                                "left": 346.234375,
+                                "width": 363.765625,
+                                "height": 80
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "flex items-start gap-3 bg-white px-5 py-4",
+                              "rect": {
+                                "top": 676,
+                                "left": 722,
+                                "width": 363.765625,
+                                "height": 80
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "flex items-start gap-3 bg-white px-5 py-4",
+                              "rect": {
+                                "top": 768,
+                                "left": 346.234375,
+                                "width": 363.765625,
+                                "height": 80
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "flex items-start gap-3 bg-white px-5 py-4",
+                              "rect": {
+                                "top": 768,
+                                "left": 722,
+                                "width": 363.765625,
+                                "height": 80
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "w-full space-y-12 sm:space-y-20 pt-12 sm:pt-20 border-t border-black/10",
+                          "rect": {
+                            "top": 992,
+                            "left": 228,
+                            "width": 976,
+                            "height": 1449.59375
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "grid grid-cols-1 sm:grid-cols-3 gap-8 text-sm text-gray-500 max-w-3xl mx-auto",
+                              "rect": {
+                                "top": 1073,
+                                "left": 332,
+                                "width": 768,
+                                "height": 68
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex flex-col items-center gap-2",
+                                  "rect": {
+                                    "top": 1073,
+                                    "left": 332,
+                                    "width": 234.65625,
+                                    "height": 68
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex flex-col items-center gap-2",
+                                  "rect": {
+                                    "top": 1073,
+                                    "left": 598.65625,
+                                    "width": 234.671875,
+                                    "height": 68
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex flex-col items-center gap-2",
+                                  "rect": {
+                                    "top": 1073.0059814453125,
+                                    "left": 865.328125,
+                                    "width": 234.671875,
+                                    "height": 68
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "w-full max-w-4xl p-8 sm:p-10 text-left mx-auto",
+                              "rect": {
+                                "top": 1221,
+                                "left": 268,
+                                "width": 896,
+                                "height": 1220.59375
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "mb-8",
+                                  "rect": {
+                                    "top": 1261,
+                                    "left": 308,
+                                    "width": 816,
+                                    "height": 75.59375
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "space-y-5",
+                                  "rect": {
+                                    "top": 1368.59375,
+                                    "left": 308,
+                                    "width": 816,
+                                    "height": 360
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "",
+                                      "rect": {
+                                        "top": 1368.59375,
+                                        "left": 308,
+                                        "width": 816,
+                                        "height": 56
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "id": null,
+                                          "className": "flex items-center gap-4",
+                                          "rect": {
+                                            "top": 1368.59375,
+                                            "left": 308,
+                                            "width": 816,
+                                            "height": 56
+                                          },
+                                          "children": [
+                                            {
+                                              "tag": "div",
+                                              "id": null,
+                                              "className": "flex-1 relative",
+                                              "rect": {
+                                                "top": 1368.59375,
+                                                "left": 500,
+                                                "width": 528,
+                                                "height": 56
+                                              },
+                                              "children": [
+                                                {
+                                                  "tag": "div",
+                                                  "id": null,
+                                                  "className": "h-12 sm:h-14 relative overflow-hidden bg-gradient-to-r from-gray-200 to-gray-100",
+                                                  "rect": {
+                                                    "top": 1368.59375,
+                                                    "left": 500,
+                                                    "width": 528,
+                                                    "height": 56
+                                                  },
+                                                  "children": [
+                                                    {
+                                                      "tag": "div",
+                                                      "id": null,
+                                                      "className": "h-full bg-gradient-to-r from-black to-gray-800",
+                                                      "rect": {
+                                                        "top": 1368.59375,
+                                                        "left": 500,
+                                                        "width": 380.59375,
+                                                        "height": 56
+                                                      },
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "tag": "div",
+                                                      "id": null,
+                                                      "className": "absolute inset-0 flex items-center px-4",
+                                                      "rect": {
+                                                        "top": 1368.59375,
+                                                        "left": 500,
+                                                        "width": 528,
+                                                        "height": 56
+                                                      },
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "",
+                                      "rect": {
+                                        "top": 1444.59375,
+                                        "left": 308,
+                                        "width": 816,
+                                        "height": 56
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "id": null,
+                                          "className": "flex items-center gap-4",
+                                          "rect": {
+                                            "top": 1444.59375,
+                                            "left": 308,
+                                            "width": 816,
+                                            "height": 56
+                                          },
+                                          "children": [
+                                            {
+                                              "tag": "div",
+                                              "id": null,
+                                              "className": "flex-1 relative",
+                                              "rect": {
+                                                "top": 1444.59375,
+                                                "left": 500,
+                                                "width": 528,
+                                                "height": 56
+                                              },
+                                              "children": [
+                                                {
+                                                  "tag": "div",
+                                                  "id": null,
+                                                  "className": "h-12 sm:h-14 relative overflow-hidden bg-gray-100",
+                                                  "rect": {
+                                                    "top": 1444.59375,
+                                                    "left": 500,
+                                                    "width": 528,
+                                                    "height": 56
+                                                  },
+                                                  "children": [
+                                                    {
+                                                      "tag": "div",
+                                                      "id": null,
+                                                      "className": "h-full bg-gradient-to-r from-gray-400 to-gray-300",
+                                                      "rect": {
+                                                        "top": 1444.59375,
+                                                        "left": 500,
+                                                        "width": 232.125,
+                                                        "height": 56
+                                                      },
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "tag": "div",
+                                                      "id": null,
+                                                      "className": "absolute inset-0 flex items-center px-4",
+                                                      "rect": {
+                                                        "top": 1444.59375,
+                                                        "left": 500,
+                                                        "width": 528,
+                                                        "height": 56
+                                                      },
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "",
+                                      "rect": {
+                                        "top": 1520.59375,
+                                        "left": 308,
+                                        "width": 816,
+                                        "height": 56
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "id": null,
+                                          "className": "flex items-center gap-4",
+                                          "rect": {
+                                            "top": 1520.59375,
+                                            "left": 308,
+                                            "width": 816,
+                                            "height": 56
+                                          },
+                                          "children": [
+                                            {
+                                              "tag": "div",
+                                              "id": null,
+                                              "className": "flex-1 relative",
+                                              "rect": {
+                                                "top": 1520.59375,
+                                                "left": 500,
+                                                "width": 528,
+                                                "height": 56
+                                              },
+                                              "children": [
+                                                {
+                                                  "tag": "div",
+                                                  "id": null,
+                                                  "className": "h-12 sm:h-14 relative overflow-hidden bg-gray-100",
+                                                  "rect": {
+                                                    "top": 1520.59375,
+                                                    "left": 500,
+                                                    "width": 528,
+                                                    "height": 56
+                                                  },
+                                                  "children": [
+                                                    {
+                                                      "tag": "div",
+                                                      "id": null,
+                                                      "className": "h-full bg-gradient-to-r from-gray-400 to-gray-300",
+                                                      "rect": {
+                                                        "top": 1520.59375,
+                                                        "left": 500,
+                                                        "width": 154.21875,
+                                                        "height": 56
+                                                      },
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "tag": "div",
+                                                      "id": null,
+                                                      "className": "absolute inset-0 flex items-center px-4",
+                                                      "rect": {
+                                                        "top": 1520.59375,
+                                                        "left": 500,
+                                                        "width": 528,
+                                                        "height": 56
+                                                      },
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "",
+                                      "rect": {
+                                        "top": 1596.59375,
+                                        "left": 308,
+                                        "width": 816,
+                                        "height": 56
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "id": null,
+                                          "className": "flex items-center gap-4",
+                                          "rect": {
+                                            "top": 1596.59375,
+                                            "left": 308,
+                                            "width": 816,
+                                            "height": 56
+                                          },
+                                          "children": [
+                                            {
+                                              "tag": "div",
+                                              "id": null,
+                                              "className": "flex-1 relative",
+                                              "rect": {
+                                                "top": 1596.59375,
+                                                "left": 500,
+                                                "width": 528,
+                                                "height": 56
+                                              },
+                                              "children": [
+                                                {
+                                                  "tag": "div",
+                                                  "id": null,
+                                                  "className": "h-12 sm:h-14 relative overflow-hidden bg-gray-100",
+                                                  "rect": {
+                                                    "top": 1596.59375,
+                                                    "left": 500,
+                                                    "width": 528,
+                                                    "height": 56
+                                                  },
+                                                  "children": [
+                                                    {
+                                                      "tag": "div",
+                                                      "id": null,
+                                                      "className": "h-full bg-gradient-to-r from-gray-400 to-gray-300",
+                                                      "rect": {
+                                                        "top": 1596.59375,
+                                                        "left": 500,
+                                                        "width": 48.53125,
+                                                        "height": 56
+                                                      },
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "tag": "div",
+                                                      "id": null,
+                                                      "className": "absolute inset-0 flex items-center px-4",
+                                                      "rect": {
+                                                        "top": 1596.59375,
+                                                        "left": 500,
+                                                        "width": 528,
+                                                        "height": 56
+                                                      },
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "",
+                                      "rect": {
+                                        "top": 1672.59375,
+                                        "left": 307.9914855957031,
+                                        "width": 816,
+                                        "height": 56
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "id": null,
+                                          "className": "flex items-center gap-4",
+                                          "rect": {
+                                            "top": 1672.59375,
+                                            "left": 307.9914855957031,
+                                            "width": 816,
+                                            "height": 56
+                                          },
+                                          "children": [
+                                            {
+                                              "tag": "div",
+                                              "id": null,
+                                              "className": "flex-1 relative",
+                                              "rect": {
+                                                "top": 1672.59375,
+                                                "left": 499.9914855957031,
+                                                "width": 528,
+                                                "height": 56
+                                              },
+                                              "children": [
+                                                {
+                                                  "tag": "div",
+                                                  "id": null,
+                                                  "className": "h-12 sm:h-14 relative overflow-hidden bg-gray-100",
+                                                  "rect": {
+                                                    "top": 1672.59375,
+                                                    "left": 499.9914855957031,
+                                                    "width": 528,
+                                                    "height": 56
+                                                  },
+                                                  "children": [
+                                                    {
+                                                      "tag": "div",
+                                                      "id": null,
+                                                      "className": "h-full bg-gradient-to-r from-gray-400 to-gray-300",
+                                                      "rect": {
+                                                        "top": 1672.59375,
+                                                        "left": 499.9914855957031,
+                                                        "width": 0,
+                                                        "height": 56
+                                                      },
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "tag": "div",
+                                                      "id": null,
+                                                      "className": "absolute inset-0 flex items-center px-4",
+                                                      "rect": {
+                                                        "top": 1672.59375,
+                                                        "left": 499.9914855957031,
+                                                        "width": 528,
+                                                        "height": 56
+                                                      },
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "mt-8 pt-6 border-t border-black/10 space-y-6",
+                                  "rect": {
+                                    "top": 1760.59375,
+                                    "left": 308,
+                                    "width": 816,
+                                    "height": 641
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "flex items-start gap-3",
+                                      "rect": {
+                                        "top": 1785.59375,
+                                        "left": 308,
+                                        "width": 816,
+                                        "height": 108
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "id": null,
+                                          "className": "w-1 h-24 bg-black flex-shrink-0",
+                                          "rect": {
+                                            "top": 1785.59375,
+                                            "left": 308,
+                                            "width": 4,
+                                            "height": 96
+                                          },
+                                          "children": []
+                                        },
+                                        {
+                                          "tag": "div",
+                                          "id": null,
+                                          "className": "",
+                                          "rect": {
+                                            "top": 1785.59375,
+                                            "left": 324,
+                                            "width": 800,
+                                            "height": 108
+                                          },
+                                          "children": [
+                                            {
+                                              "tag": "p",
+                                              "id": null,
+                                              "className": "text-sm text-gray-600 mb-3",
+                                              "rect": {
+                                                "top": 1821.59375,
+                                                "left": 324,
+                                                "width": 800,
+                                                "height": 60
+                                              },
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "py-6",
+                                      "rect": {
+                                        "top": 1917.59375,
+                                        "left": 308,
+                                        "width": 816,
+                                        "height": 428
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "id": null,
+                                          "className": "grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto",
+                                          "rect": {
+                                            "top": 1941.59375,
+                                            "left": 308,
+                                            "width": 816,
+                                            "height": 380
+                                          },
+                                          "children": [
+                                            {
+                                              "tag": "div",
+                                              "id": null,
+                                              "className": "",
+                                              "rect": {
+                                                "top": 1941.59375,
+                                                "left": 308,
+                                                "width": 384,
+                                                "height": 380
+                                              },
+                                              "children": [
+                                                {
+                                                  "tag": "div",
+                                                  "id": null,
+                                                  "className": "flex items-end justify-center gap-8 sm:gap-12 mx-auto",
+                                                  "rect": {
+                                                    "top": 2001.59375,
+                                                    "left": 308,
+                                                    "width": 384,
+                                                    "height": 320
+                                                  },
+                                                  "children": [
+                                                    {
+                                                      "tag": "div",
+                                                      "id": null,
+                                                      "className": "flex flex-col items-center",
+                                                      "rect": {
+                                                        "top": 2001.59375,
+                                                        "left": 308,
+                                                        "width": 61.8125,
+                                                        "height": 320
+                                                      },
+                                                      "children": [
+                                                        {
+                                                          "tag": "div",
+                                                          "id": null,
+                                                          "className": "w-full relative",
+                                                          "rect": {
+                                                            "top": 2001.59375,
+                                                            "left": 308,
+                                                            "width": 61.8125,
+                                                            "height": 260
+                                                          },
+                                                          "children": [
+                                                            {
+                                                              "tag": "div",
+                                                              "id": null,
+                                                              "className": "absolute bottom-0 left-0 right-0 w-full bg-gradient-to-t from-gray-400 to-gray-300",
+                                                              "rect": {
+                                                                "top": 2041.796875,
+                                                                "left": 308,
+                                                                "width": 61.8125,
+                                                                "height": 219.796875
+                                                              },
+                                                              "children": []
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "tag": "div",
+                                                      "id": null,
+                                                      "className": "flex flex-col items-center",
+                                                      "rect": {
+                                                        "top": 2001.59375,
+                                                        "left": 417.8125,
+                                                        "width": 58.71875,
+                                                        "height": 320
+                                                      },
+                                                      "children": [
+                                                        {
+                                                          "tag": "div",
+                                                          "id": null,
+                                                          "className": "w-full relative",
+                                                          "rect": {
+                                                            "top": 2001.59375,
+                                                            "left": 417.8125,
+                                                            "width": 58.71875,
+                                                            "height": 260
+                                                          },
+                                                          "children": [
+                                                            {
+                                                              "tag": "div",
+                                                              "id": null,
+                                                              "className": "absolute bottom-0 left-0 right-0 w-full bg-gradient-to-t from-gray-400 to-gray-300",
+                                                              "rect": {
+                                                                "top": 2096.640625,
+                                                                "left": 417.8125,
+                                                                "width": 58.71875,
+                                                                "height": 164.953125
+                                                              },
+                                                              "children": []
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "tag": "div",
+                                                      "id": null,
+                                                      "className": "flex flex-col items-center",
+                                                      "rect": {
+                                                        "top": 2001.59375,
+                                                        "left": 524.53125,
+                                                        "width": 60.734375,
+                                                        "height": 320
+                                                      },
+                                                      "children": [
+                                                        {
+                                                          "tag": "div",
+                                                          "id": null,
+                                                          "className": "w-full relative",
+                                                          "rect": {
+                                                            "top": 2001.59375,
+                                                            "left": 524.53125,
+                                                            "width": 60.734375,
+                                                            "height": 260
+                                                          },
+                                                          "children": [
+                                                            {
+                                                              "tag": "div",
+                                                              "id": null,
+                                                              "className": "absolute bottom-0 left-0 right-0 w-full bg-gradient-to-t from-black to-gray-800",
+                                                              "rect": {
+                                                                "top": 2192.28125,
+                                                                "left": 524.53125,
+                                                                "width": 60.734375,
+                                                                "height": 69.3125
+                                                              },
+                                                              "children": []
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "tag": "div",
+                                                      "id": null,
+                                                      "className": "flex flex-col items-center",
+                                                      "rect": {
+                                                        "top": 2001.59375,
+                                                        "left": 633.265625,
+                                                        "width": 58.71875,
+                                                        "height": 320
+                                                      },
+                                                      "children": [
+                                                        {
+                                                          "tag": "div",
+                                                          "id": null,
+                                                          "className": "w-full relative",
+                                                          "rect": {
+                                                            "top": 2001.59375,
+                                                            "left": 633.265625,
+                                                            "width": 58.71875,
+                                                            "height": 260
+                                                          },
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "tag": "div",
+                                              "id": null,
+                                              "className": "",
+                                              "rect": {
+                                                "top": 1941.59375,
+                                                "left": 740,
+                                                "width": 384,
+                                                "height": 380
+                                              },
+                                              "children": [
+                                                {
+                                                  "tag": "div",
+                                                  "id": null,
+                                                  "className": "relative mx-auto",
+                                                  "rect": {
+                                                    "top": 2001.59375,
+                                                    "left": 740,
+                                                    "width": 384,
+                                                    "height": 320
+                                                  },
+                                                  "children": [
+                                                    {
+                                                      "tag": "div",
+                                                      "id": null,
+                                                      "className": "absolute left-0 top-0 bottom-12 flex flex-col justify-between text-xs text-gray-500",
+                                                      "rect": {
+                                                        "top": 2001.59375,
+                                                        "left": 740,
+                                                        "width": 16.96875,
+                                                        "height": 272
+                                                      },
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "tag": "div",
+                                                      "id": null,
+                                                      "className": "ml-12 relative",
+                                                      "rect": {
+                                                        "top": 2001.59375,
+                                                        "left": 788,
+                                                        "width": 336,
+                                                        "height": 260
+                                                      },
+                                                      "children": [
+                                                        {
+                                                          "tag": "div",
+                                                          "id": null,
+                                                          "className": "absolute inset-0",
+                                                          "rect": {
+                                                            "top": 2001.59375,
+                                                            "left": 788,
+                                                            "width": 336,
+                                                            "height": 260
+                                                          },
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "tag": "svg",
+                                                          "id": null,
+                                                          "className": null,
+                                                          "rect": {
+                                                            "top": 2001.59375,
+                                                            "left": 788,
+                                                            "width": 336,
+                                                            "height": 260
+                                                          },
+                                                          "children": [
+                                                            {
+                                                              "tag": "path",
+                                                              "id": null,
+                                                              "className": null,
+                                                              "rect": {
+                                                                "top": 2035.5068359375,
+                                                                "left": 788,
+                                                                "width": 336,
+                                                                "height": 194.837890625
+                                                              },
+                                                              "children": []
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "mx-auto flex max-w-[976px] flex-col items-center text-center",
+                          "rect": {
+                            "top": 2698.59375,
+                            "left": 380,
+                            "width": 672,
+                            "height": 76
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "flex flex-col items-center gap-6",
+                              "rect": {
+                                "top": 2698.59375,
+                                "left": 380,
+                                "width": 672,
+                                "height": 76
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "mx-auto flex max-w-[976px] flex-col items-center text-center",
+                          "rect": {
+                            "top": 3031.59375,
+                            "left": 268,
+                            "width": 896,
+                            "height": 697.59375
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "w-full max-w-4xl bg-white p-6 sm:p-10 text-left mx-auto",
+                              "rect": {
+                                "top": 3031.59375,
+                                "left": 268,
+                                "width": 896,
+                                "height": 697.59375
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex flex-col sm:flex-row sm:items-center justify-between gap-4",
+                                  "rect": {
+                                    "top": 3143.1875,
+                                    "left": 308,
+                                    "width": 816,
+                                    "height": 68
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "",
+                                      "rect": {
+                                        "top": 3143.1875,
+                                        "left": 308,
+                                        "width": 272.890625,
+                                        "height": 68
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "mt-8 grid gap-6 md:grid-cols-2",
+                                  "rect": {
+                                    "top": 3243.1875,
+                                    "left": 308,
+                                    "width": 816,
+                                    "height": 446
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "border border-black/10 bg-gray-50 p-5",
+                                      "rect": {
+                                        "top": 3243.1875,
+                                        "left": 308,
+                                        "width": 396,
+                                        "height": 154
+                                      },
+                                      "children": []
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "border border-black/10 bg-white p-5",
+                                      "rect": {
+                                        "top": 3243.1875,
+                                        "left": 728,
+                                        "width": 396,
+                                        "height": 154
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "p",
+                                          "id": null,
+                                          "className": "mt-3 text-sm text-gray-600",
+                                          "rect": {
+                                            "top": 3296.1875,
+                                            "left": 749,
+                                            "width": 354,
+                                            "height": 80
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "border border-black/10 bg-white p-5 md:col-span-2",
+                                      "rect": {
+                                        "top": 3569.1875,
+                                        "left": 308,
+                                        "width": 816,
+                                        "height": 120
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "section",
+                  "id": null,
+                  "className": "py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 section-divider",
+                  "rect": {
+                    "top": 3825.1875,
+                    "left": 0,
+                    "width": 1432,
+                    "height": 964
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "container mx-auto max-w-4xl relative z-10",
+                      "rect": {
+                        "top": 3953.1875,
+                        "left": 268,
+                        "width": 896,
+                        "height": 708
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "text-center mb-12 sm:mb-20",
+                          "rect": {
+                            "top": 3953.1875,
+                            "left": 268,
+                            "width": 896,
+                            "height": 128
+                          },
+                          "children": [
+                            {
+                              "tag": "p",
+                              "id": null,
+                              "className": "text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4",
+                              "rect": {
+                                "top": 4025.1875,
+                                "left": 380,
+                                "width": 672,
+                                "height": 56
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "grid sm:grid-cols-2 gap-6 sm:gap-8",
+                          "rect": {
+                            "top": 4161.1875,
+                            "left": 268,
+                            "width": 896,
+                            "height": 500
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "group relative p-6 sm:p-8 border border-black/10 bg-white transition-all duration-200 hover:border-black",
+                              "rect": {
+                                "top": 4162.6435546875,
+                                "left": 268,
+                                "width": 432,
+                                "height": 234
+                              },
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "id": null,
+                                  "className": "text-gray-600 leading-relaxed",
+                                  "rect": {
+                                    "top": 4259.6435546875,
+                                    "left": 301,
+                                    "width": 366,
+                                    "height": 104
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "group relative p-6 sm:p-8 border border-black/10 bg-white transition-all duration-200 hover:border-black",
+                              "rect": {
+                                "top": 4162.76904296875,
+                                "left": 732,
+                                "width": 432,
+                                "height": 234
+                              },
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "id": null,
+                                  "className": "text-gray-600 leading-relaxed",
+                                  "rect": {
+                                    "top": 4259.76904296875,
+                                    "left": 765,
+                                    "width": 366,
+                                    "height": 78
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "group relative p-6 sm:p-8 border border-black/10 bg-white transition-all duration-200 hover:border-black",
+                              "rect": {
+                                "top": 4431.39013671875,
+                                "left": 268,
+                                "width": 432,
+                                "height": 234
+                              },
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "id": null,
+                                  "className": "text-gray-600 leading-relaxed",
+                                  "rect": {
+                                    "top": 4528.39013671875,
+                                    "left": 301,
+                                    "width": 366,
+                                    "height": 104
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "group relative p-6 sm:p-8 border border-black/10 bg-white transition-all duration-200 hover:border-black",
+                              "rect": {
+                                "top": 4433.0908203125,
+                                "left": 732,
+                                "width": 432,
+                                "height": 234
+                              },
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "id": null,
+                                  "className": "text-gray-600 leading-relaxed",
+                                  "rect": {
+                                    "top": 4530.0908203125,
+                                    "left": 765,
+                                    "width": 366,
+                                    "height": 78
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "section",
+                  "id": null,
+                  "className": "section-divider flex justify-center px-4",
+                  "rect": {
+                    "top": 4789.1875,
+                    "left": 0,
+                    "width": 1432,
+                    "height": 514
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "w-full max-w-[976px]",
+                      "rect": {
+                        "top": 4789.1875,
+                        "left": 228,
+                        "width": 976,
+                        "height": 514
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "bg-black text-white py-12 sm:py-16 lg:py-20 px-6 sm:px-8 relative overflow-hidden",
+                          "rect": {
+                            "top": 4789.1875,
+                            "left": 228,
+                            "width": 976,
+                            "height": 514
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "cta-backdrop",
+                              "rect": {
+                                "top": 4789.1875,
+                                "left": 228,
+                                "width": 976,
+                                "height": 514
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "cta-mesh",
+                              "rect": {
+                                "top": 4787.95458984375,
+                                "left": 221.36248779296875,
+                                "width": 980.3912963867188,
+                                "height": 522.38818359375
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "text-center relative z-10",
+                              "rect": {
+                                "top": 4869.1875,
+                                "left": 260,
+                                "width": 912,
+                                "height": 354
+                              },
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "id": null,
+                                  "className": "text-base sm:text-lg md:text-xl text-gray-400 mb-8 sm:mb-12 max-w-2xl mx-auto px-4",
+                                  "rect": {
+                                    "top": 4941.1875,
+                                    "left": 380,
+                                    "width": 672,
+                                    "height": 56
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "mt-10 sm:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-3xl mx-auto",
+                                  "rect": {
+                                    "top": 5159.1875,
+                                    "left": 332,
+                                    "width": 768,
+                                    "height": 64
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "space-y-2",
+                                      "rect": {
+                                        "top": 5159.1875,
+                                        "left": 332,
+                                        "width": 234.65625,
+                                        "height": 64
+                                      },
+                                      "children": []
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "space-y-2",
+                                      "rect": {
+                                        "top": 5159.1875,
+                                        "left": 598.65625,
+                                        "width": 234.671875,
+                                        "height": 64
+                                      },
+                                      "children": []
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "space-y-2",
+                                      "rect": {
+                                        "top": 5159.1875,
+                                        "left": 865.328125,
+                                        "width": 234.671875,
+                                        "height": 64
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "footer",
+                  "id": null,
+                  "className": "bg-white border-t border-black/10 py-12 sm:py-16 px-4 sm:px-8",
+                  "rect": {
+                    "top": 5303.1875,
+                    "left": 0,
+                    "width": 1432,
+                    "height": 265
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "container mx-auto max-w-[976px]",
+                      "rect": {
+                        "top": 5368.1875,
+                        "left": 228,
+                        "width": 976,
+                        "height": 136
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "flex flex-col items-center gap-6 sm:gap-8 px-4 sm:px-6",
+                          "rect": {
+                            "top": 5368.1875,
+                            "left": 228,
+                            "width": 976,
+                            "height": 136
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

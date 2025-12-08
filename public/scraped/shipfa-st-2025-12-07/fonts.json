@@ -1,0 +1,104 @@
+[
+  {
+    "family": "__Bricolage_Grotesque_e97790",
+    "url": "https://shipfa.st/_next/static/media/93a6e477e1480c92.woff2",
+    "source": "custom",
+    "weights": [
+      "200 800"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "localPath": "fonts/--Bricolage-Grotesque-e97790.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "ui-monospace",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "SFMono-Regular",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Menlo",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Monaco",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Consolas",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Liberation Mono",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Courier New",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Times",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  }
+]

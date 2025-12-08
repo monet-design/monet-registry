@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: shipfa-st-showcase-5
+category: feature-showcase
+
+images:
+  preview: scraped/shipfa-st-2025-12-07/sections/section-5.png
+
+freeformKeywords:
+  - demo
+  - video
+  - tutorial
+  - maker
+  - story
+  - youtube
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T23:50:45Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - video
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - warm
+  layout:
+    - split-layout
+    - two-column
+    - responsive
+  industry:
+    - saas
+    - startup
+
+parentPage: shipfa-st-landing
+
+source:
+  type: url
+  name: ShipFast
+  url: https://shipfa.st/
+  scrapedAt: "2025-12-07T23:50:45Z"
+  sectionIndex: 5

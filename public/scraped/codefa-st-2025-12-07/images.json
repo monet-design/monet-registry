@@ -1,0 +1,412 @@
+[
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ficon.ae943832.png&w=64&q=75",
+    "type": "img",
+    "sectionIndex": 12,
+    "alt": "CodeFast logo",
+    "width": 32,
+    "height": 32,
+    "localPath": "images/image-0.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmarc.be50937c.png&w=640&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Marc",
+    "width": 240,
+    "height": 240,
+    "localPath": "images/image-1.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcharles.418aa080.jpg&w=96&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Charles",
+    "width": 48,
+    "height": 48,
+    "localPath": "images/image-2.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvictor.ab7256d3.jpg&w=96&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Victor",
+    "width": 48,
+    "height": 48,
+    "localPath": "images/image-3.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fadscei_fun.d84d2738.webp&w=96&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Ascsei",
+    "width": 48,
+    "height": 48,
+    "localPath": "images/image-4.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbakir.ad67dfe9.webp&w=96&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Bakir",
+    "width": 48,
+    "height": 48,
+    "localPath": "images/image-5.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsallahudin.97e72cd0.webp&w=96&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Sallahudin",
+    "width": 48,
+    "height": 48,
+    "localPath": "images/image-6.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftona.feafd731.png&w=96&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Tona",
+    "width": 48,
+    "height": 48,
+    "localPath": "images/image-7.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fandrei.d24a0d94.jpg&w=96&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Andrei",
+    "width": 48,
+    "height": 48,
+    "localPath": "images/image-8.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcruz.d6a12b66.webp&w=96&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Cruz",
+    "width": 48,
+    "height": 48,
+    "localPath": "images/image-9.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Falan.ecf93afe.webp&w=96&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Alan",
+    "width": 48,
+    "height": 48,
+    "localPath": "images/image-10.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgear.1c9850d2.png&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Learn fundamentals",
+    "width": 256,
+    "height": 256,
+    "localPath": "images/image-11.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fserver.41b0b400.png&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Build SaaS",
+    "width": 256,
+    "height": 256,
+    "localPath": "images/image-12.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcredit-card-reader.d1cc3127.png&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "AI coding",
+    "width": 256,
+    "height": 256,
+    "localPath": "images/image-13.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwizard.671ce364.png&w=384&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Launch product",
+    "width": 256,
+    "height": 256,
+    "localPath": "images/image-14.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbook.3752ab35.png&w=1920&q=75",
+    "type": "img",
+    "sectionIndex": 2,
+    "alt": "Book",
+    "width": 768,
+    "height": 768,
+    "localPath": "images/image-15.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbolt.2105afa3.png&w=1920&q=75",
+    "type": "img",
+    "sectionIndex": 2,
+    "alt": "Bolt",
+    "width": 768,
+    "height": 768,
+    "localPath": "images/image-16.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Frocket.e5ec330f.png&w=1920&q=75",
+    "type": "img",
+    "sectionIndex": 2,
+    "alt": "Rocket",
+    "width": 768,
+    "height": 768,
+    "localPath": "images/image-17.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbulb.b7adce6e.png&w=1920&q=75",
+    "type": "img",
+    "sectionIndex": 2,
+    "alt": "Bulb",
+    "width": 768,
+    "height": 768,
+    "localPath": "images/image-18.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjainil.5d15e99a.jpeg&w=640&q=100",
+    "type": "img",
+    "sectionIndex": 3,
+    "alt": "Jainil",
+    "width": 256,
+    "height": 256,
+    "localPath": "images/image-19.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmacbook.8ed77199.png&w=1920&q=100",
+    "type": "img",
+    "sectionIndex": 3,
+    "alt": "Macbook",
+    "width": 687,
+    "height": 453,
+    "localPath": "images/image-20.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fepictravelphoto.ce3f492d.gif&w=1920&q=100",
+    "type": "img",
+    "sectionIndex": 3,
+    "alt": "Screen recording of epicaitravelphotos.pro website",
+    "width": 800,
+    "height": 450,
+    "localPath": "images/image-21.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhouse-construction.c0cbb345.png&w=3840&q=75",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "The Fundamentals",
+    "width": 1637,
+    "height": 1637,
+    "localPath": "images/image-22.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcastle.2622a990.png&w=1920&q=75",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "Your First SaaS",
+    "width": 768,
+    "height": 768,
+    "localPath": "images/image-23.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fandrei_transparent.856ee102.png&w=640&q=100",
+    "type": "img",
+    "sectionIndex": 5,
+    "alt": "Andrei Bogdan",
+    "width": 256,
+    "height": 256,
+    "localPath": "images/image-24.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fuireplicator.3c381e2f.gif&w=1920&q=100",
+    "type": "img",
+    "sectionIndex": 5,
+    "alt": "Screen recording of landingpro.ai website",
+    "width": 800,
+    "height": 450,
+    "localPath": "images/image-25.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fudemy.ff9b2a66.png&w=3840&q=100",
+    "type": "img",
+    "sectionIndex": 6,
+    "alt": "Pareto principle for online courses",
+    "width": 3840,
+    "height": 2168,
+    "localPath": "images/image-26.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjuan_transparent.3a8e808c.png&w=640&q=100",
+    "type": "img",
+    "sectionIndex": 7,
+    "alt": "Juan",
+    "width": 256,
+    "height": 256,
+    "localPath": "images/image-27.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnerdmask.0852e602.gif&w=1920&q=100",
+    "type": "img",
+    "sectionIndex": 7,
+    "alt": "Screen recording of nerdmask.com website",
+    "width": 800,
+    "height": 450,
+    "localPath": "images/image-28.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmarchello.3163f56a.gif&w=1920&q=100",
+    "type": "img",
+    "sectionIndex": 8,
+    "alt": "Students learning to code",
+    "width": 800,
+    "height": 603,
+    "localPath": "images/image-29.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvirallybot.674acc12.jpg&w=1920&q=100",
+    "type": "img",
+    "sectionIndex": 8,
+    "alt": "Stripe dashboard",
+    "width": 848,
+    "height": 660,
+    "localPath": "images/image-30.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdiscord-gif.0ce5ad99.gif&w=1200&q=100",
+    "type": "img",
+    "sectionIndex": 8,
+    "alt": "Students learning to code",
+    "width": 600,
+    "height": 600,
+    "localPath": "images/image-31.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fadscei_transparent.cb89d8c7.png&w=640&q=100",
+    "type": "img",
+    "sectionIndex": 9,
+    "alt": "Adsy",
+    "width": 256,
+    "height": 257,
+    "localPath": "images/image-32.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Findielaunch.4c5f03b8.gif&w=1920&q=100",
+    "type": "img",
+    "sectionIndex": 9,
+    "alt": "Screen recording of indielaunch.ch website",
+    "width": 800,
+    "height": 450,
+    "localPath": "images/image-33.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fchristmas.82089a04.png&w=640&q=100",
+    "type": "img",
+    "sectionIndex": 10,
+    "alt": "Christmas decoration",
+    "width": 256,
+    "height": 70,
+    "localPath": "images/image-34.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fshipfast-icon_transparent.2aa1e5a5.png&w=1080&q=75",
+    "type": "img",
+    "sectionIndex": 10,
+    "alt": "ShipFast",
+    "width": 512,
+    "height": 512,
+    "localPath": "images/image-35.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmatthieu.bedc46cd.jpeg&w=384&q=100",
+    "type": "img",
+    "sectionIndex": 10,
+    "alt": "Matthieu",
+    "width": 256,
+    "height": 256,
+    "localPath": "images/image-36.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fadam.0aed8d22.jpg&w=640&q=100",
+    "type": "img",
+    "sectionIndex": 15,
+    "alt": "Adam",
+    "width": 256,
+    "height": 256,
+    "localPath": "images/image-37.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Famazon-finder.6befedb5.gif&w=1920&q=100",
+    "type": "img",
+    "sectionIndex": 15,
+    "alt": "Screen recording of AmazonFinder.deals website",
+    "width": 852,
+    "height": 480,
+    "localPath": "images/image-38.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ficon.ae943832.png&w=48&q=75",
+    "type": "img",
+    "sectionIndex": 16,
+    "alt": "CodeFast logo",
+    "width": 32,
+    "height": 32,
+    "localPath": "images/image-39.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://codefa.st/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fshipfast-icon_transparent.2aa1e5a5.png&w=48&q=75",
+    "type": "img",
+    "sectionIndex": 16,
+    "alt": "ShipFast logo",
+    "width": 32,
+    "height": 32,
+    "localPath": "images/image-40.png",
+    "downloaded": true
+  }
+]

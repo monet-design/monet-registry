@@ -1,0 +1,114 @@
+{
+  "header.max-w-7xl": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(207, 207, 207)",
+    "fontFamily": "__Bricolage_Grotesque_e97790",
+    "fontSize": "16px",
+    "padding": "20px 32px",
+    "margin": "0px 80px"
+  },
+  "main.min-h-screen": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(207, 207, 207)",
+    "fontFamily": "__Bricolage_Grotesque_e97790",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section#hero.max-w-7xl": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(207, 207, 207)",
+    "fontFamily": "__Bricolage_Grotesque_e97790",
+    "fontSize": "16px",
+    "padding": "80px 32px 96px",
+    "margin": "0px 80px"
+  },
+  "section#featured.p-8": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(207, 207, 207)",
+    "fontFamily": "__Bricolage_Grotesque_e97790",
+    "fontSize": "16px",
+    "padding": "48px",
+    "margin": "0px"
+  },
+  "section.relative": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(207, 207, 207)",
+    "fontFamily": "__Bricolage_Grotesque_e97790",
+    "fontSize": "16px",
+    "padding": "96px 32px",
+    "margin": "0px"
+  },
+  "section#features.pt-24": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(207, 207, 207)",
+    "fontFamily": "__Bricolage_Grotesque_e97790",
+    "fontSize": "16px",
+    "padding": "96px 0px 48px",
+    "margin": "0px"
+  },
+  "section.bg-base-100": {
+    "backgroundColor": "rgb(33, 33, 33)",
+    "color": "rgb(207, 207, 207)",
+    "fontFamily": "__Bricolage_Grotesque_e97790",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section#demo.bg-base-100": {
+    "backgroundColor": "rgb(33, 33, 33)",
+    "color": "rgb(207, 207, 207)",
+    "fontFamily": "__Bricolage_Grotesque_e97790",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section#pricing.bg-base-200": {
+    "backgroundColor": "rgb(15, 15, 15)",
+    "color": "rgb(207, 207, 207)",
+    "fontFamily": "__Bricolage_Grotesque_e97790",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section#faq.bg-base-200": {
+    "backgroundColor": "rgb(15, 15, 15)",
+    "color": "rgb(207, 207, 207)",
+    "fontFamily": "__Bricolage_Grotesque_e97790",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section#testimonials.bg-base-200": {
+    "backgroundColor": "rgb(15, 15, 15)",
+    "color": "rgb(207, 207, 207)",
+    "fontFamily": "__Bricolage_Grotesque_e97790",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.bg-base-200": {
+    "backgroundColor": "rgb(15, 15, 15)",
+    "color": "rgb(207, 207, 207)",
+    "fontFamily": "__Bricolage_Grotesque_e97790",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "footer.bg-base-200": {
+    "backgroundColor": "rgb(15, 15, 15)",
+    "color": "rgb(207, 207, 207)",
+    "fontFamily": "__Bricolage_Grotesque_e97790",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "div.footer-title": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(207, 207, 207)",
+    "fontFamily": "__Bricolage_Grotesque_e97790",
+    "fontSize": "14px",
+    "padding": "0px",
+    "margin": "0px 0px 12px"
+  }
+}

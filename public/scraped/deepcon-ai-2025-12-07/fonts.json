@@ -1,0 +1,107 @@
+[
+  {
+    "family": "avantGarde",
+    "url": "https://deepcon.ai/_next/static/media/8bcd068788af4b7a-s.p.otf",
+    "source": "custom",
+    "weights": [
+      "200",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "format": "opentype",
+    "localPath": "fonts/avantGarde.opentype",
+    "downloaded": true
+  },
+  {
+    "family": "avantGarde Fallback",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "DM Sans",
+    "url": "https://deepcon.ai/_next/static/media/7ab938503e4547a1-s.woff2",
+    "source": "custom",
+    "weights": [
+      "100 1000"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "localPath": "fonts/DM-Sans.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "DM Sans Fallback",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Inter",
+    "url": "https://deepcon.ai/_next/static/media/ba9851c3c22cd980-s.woff2",
+    "source": "custom",
+    "weights": [
+      "100 900"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "localPath": "fonts/Inter.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "Inter Fallback",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Fira Code",
+    "url": "https://deepcon.ai/_next/static/media/999e639cd9d85971-s.woff2",
+    "source": "custom",
+    "weights": [
+      "300 700"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "localPath": "fonts/Fira-Code.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "Fira Code Fallback",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  }
+]

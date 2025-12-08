@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: deepcon-ai-footer-3
+category: footer
+
+images:
+  preview: scraped/deepcon-ai-2025-12-07/sections/section-3.png
+
+freeformKeywords:
+  - footer
+  - logo
+  - terms
+  - privacy
+  - contact
+  - copyright
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T23:45:30Z"
+status: stable
+language: en
+
+tags:
+  functional: []
+  style:
+    - light-theme
+    - minimal
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+    - responsive
+  industry:
+    - saas
+    - ai
+
+parentPage: deepcon-ai-landing
+
+source:
+  type: url
+  name: Deepcon AI
+  url: https://deepcon.ai/
+  scrapedAt: "2025-12-07T23:45:30Z"
+  sectionIndex: 3

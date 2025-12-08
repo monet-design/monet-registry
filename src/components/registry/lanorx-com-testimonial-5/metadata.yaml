@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: lanorx-com-testimonial-5
+category: testimonial
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/lanorx-com-2025-12-07/sections/section-5.png
+
+freeformKeywords:
+  - testimonial
+  - validation
+  - microSaaS
+  - progress tracker
+  - A/B testing
+  - signups
+  - pre-launch
+  - conversion
+  - waitlist
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T23:59:33Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - progress-tracker
+    - stats-display
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+  layout:
+    - centered
+    - three-column
+    - grid
+  industry:
+    - saas
+    - startup
+    - microSaaS

@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: codefa-st-testimonial-13
+category: testimonial
+
+images:
+  preview: scraped/codefa-st-2025-12-07/sections/section-13.png
+
+freeformKeywords:
+  - testimonials
+  - video reviews
+  - students
+  - success stories
+  - course reviews
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T23:51:05Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - video
+    - social-proof
+  style:
+    - light-theme
+    - modern
+    - bold
+  layout:
+    - grid
+    - full-width
+  industry:
+    - saas
+    - startup
+    - education
+
+parentPage: codefa-st-landing
+
+source:
+  type: url
+  name: CodeFast
+  url: https://codefa.st/
+  scrapedAt: "2025-12-07T23:51:05Z"
+  sectionIndex: 13

@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: lanorx-com-feature-1
+category: feature
+
+images:
+  preview: /scraped/lanorx-com-2025-12-07/sections/section-1.png
+
+freeformKeywords:
+  - feature
+  - features
+  - landing page
+  - email collection
+  - analytics
+  - saas
+  - microsaas
+  - grid
+  - cards
+  - benefits
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T23:59:32Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - animation
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+  layout:
+    - centered
+    - grid
+    - three-column
+  industry:
+    - saas
+    - microsaas
+    - startup

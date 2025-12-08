@@ -1,0 +1,70 @@
+[
+  {
+    "originalUrl": "https://www.youtube.com/embed/W3Pb3v_GpoE",
+    "platform": "youtube",
+    "type": "iframe",
+    "videoId": "W3Pb3v_GpoE",
+    "embedCode": "<iframe class=\"absolute inset-0 w-full h-full\" src=\"https://www.youtube.com/embed/W3Pb3v_GpoE\" title=\"ShipFast tutorial\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"></iframe>",
+    "posterUrl": "https://img.youtube.com/vi/W3Pb3v_GpoE/maxresdefault.jpg",
+    "sectionIndex": 5,
+    "width": 768,
+    "height": 432,
+    "thumbnailPath": "videos/thumb-0.jpg",
+    "thumbnailDownloaded": true
+  },
+  {
+    "originalUrl": "https://d1wkquwg5s1b04.cloudfront.net/landing/jack2.mp4",
+    "platform": "html5",
+    "type": "video",
+    "posterUrl": "https://d1wkquwg5s1b04.cloudfront.net/landing/jack2.jpg",
+    "sectionIndex": 8,
+    "width": 720,
+    "height": 1280,
+    "thumbnailPath": "videos/thumb-1.jpg",
+    "thumbnailDownloaded": true
+  },
+  {
+    "originalUrl": "https://d1wkquwg5s1b04.cloudfront.net/landing/alex.mp4",
+    "platform": "html5",
+    "type": "video",
+    "posterUrl": "https://d1wkquwg5s1b04.cloudfront.net/landing/alex.jpg",
+    "sectionIndex": 8,
+    "width": 852,
+    "height": 480,
+    "thumbnailPath": "videos/thumb-2.jpg",
+    "thumbnailDownloaded": true
+  },
+  {
+    "originalUrl": "https://d1wkquwg5s1b04.cloudfront.net/landing/mateuszTestimonial.mp4",
+    "platform": "html5",
+    "type": "video",
+    "posterUrl": "https://d1wkquwg5s1b04.cloudfront.net/landing/mateuszPoster.jpg",
+    "sectionIndex": 8,
+    "width": 1104,
+    "height": 622,
+    "thumbnailPath": "videos/thumb-3.jpg",
+    "thumbnailDownloaded": true
+  },
+  {
+    "originalUrl": "https://d1wkquwg5s1b04.cloudfront.net/landing/larry.mp4",
+    "platform": "html5",
+    "type": "video",
+    "posterUrl": "https://d1wkquwg5s1b04.cloudfront.net/landing/larry.jpg",
+    "sectionIndex": 8,
+    "width": 480,
+    "height": 852,
+    "thumbnailPath": "videos/thumb-4.jpg",
+    "thumbnailDownloaded": true
+  },
+  {
+    "originalUrl": "https://d1wkquwg5s1b04.cloudfront.net/landing/tam.mp4",
+    "platform": "html5",
+    "type": "video",
+    "posterUrl": "https://d1wkquwg5s1b04.cloudfront.net/landing/tam.jpg",
+    "sectionIndex": 8,
+    "width": 1920,
+    "height": 1080,
+    "thumbnailPath": "videos/thumb-5.jpg",
+    "thumbnailDownloaded": true
+  }
+]

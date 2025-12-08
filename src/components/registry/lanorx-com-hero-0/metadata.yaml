@@ -1,0 +1,40 @@
+schemaVersion: "2.0"
+name: lanorx-com-hero-0
+category: hero
+
+images:
+  preview: /scraped/lanorx-com-2025-12-07/sections/section-0.png
+
+freeformKeywords:
+  - hero
+  - waitlist
+  - landing page
+  - signup
+  - saas
+  - microsaas
+  - launch
+  - startup
+  - builder
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T23:59:32Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - cta-button
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+  layout:
+    - centered
+    - single-column
+    - left-aligned
+  industry:
+    - saas
+    - startup

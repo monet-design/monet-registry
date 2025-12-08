@@ -1,0 +1,130 @@
+{
+  "header.sticky": {
+    "backgroundColor": "oklch(1 0 0 / 0.5)",
+    "color": "oklch(0.217787 0 0)",
+    "fontFamily": "__Noto_Sans_c85df0, __Noto_Sans_Fallback_c85df0",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "nav.container": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.217787 0 0)",
+    "fontFamily": "__Noto_Sans_c85df0, __Noto_Sans_Fallback_c85df0",
+    "fontSize": "16px",
+    "padding": "16px 32px",
+    "margin": "0px 80px"
+  },
+  "main.max-w-[175rem]": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.217787 0 0)",
+    "fontFamily": "__Noto_Sans_c85df0, __Noto_Sans_Fallback_c85df0",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.": {
+    "backgroundColor": "oklch(1 0 0)",
+    "color": "oklch(0.217787 0 0)",
+    "fontFamily": "__Noto_Sans_c85df0, __Noto_Sans_Fallback_c85df0",
+    "fontSize": "16px",
+    "padding": "64px 0px 128px",
+    "margin": "0px"
+  },
+  "section.text-center": {
+    "backgroundColor": "oklch(0.182204 0 0)",
+    "color": "oklch(0.921906 0 0)",
+    "fontFamily": "__Noto_Sans_c85df0, __Noto_Sans_Fallback_c85df0",
+    "fontSize": "16px",
+    "padding": "192px 32px",
+    "margin": "0px"
+  },
+  "section": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.217787 0 0)",
+    "fontFamily": "__Noto_Sans_c85df0, __Noto_Sans_Fallback_c85df0",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.sm:px-8": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.217787 0 0)",
+    "fontFamily": "__Noto_Sans_c85df0, __Noto_Sans_Fallback_c85df0",
+    "fontSize": "16px",
+    "padding": "0px 32px",
+    "margin": "0px"
+  },
+  "section.bg-base-100": {
+    "backgroundColor": "oklch(1 0 0)",
+    "color": "oklch(0.217787 0 0)",
+    "fontFamily": "__Noto_Sans_c85df0, __Noto_Sans_Fallback_c85df0",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.relative": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.217787 0 0)",
+    "fontFamily": "__Noto_Sans_c85df0, __Noto_Sans_Fallback_c85df0",
+    "fontSize": "16px",
+    "padding": "128px 0px",
+    "margin": "0px"
+  },
+  "section#pricing.overflow-hidden": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.217787 0 0)",
+    "fontFamily": "__Noto_Sans_c85df0, __Noto_Sans_Fallback_c85df0",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.md:border-x": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.217787 0 0)",
+    "fontFamily": "__Noto_Sans_c85df0, __Noto_Sans_Fallback_c85df0",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section#faq": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.217787 0 0)",
+    "fontFamily": "__Noto_Sans_c85df0, __Noto_Sans_Fallback_c85df0",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section#testimonials.max-md:border-b-0": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.217787 0 0)",
+    "fontFamily": "__Noto_Sans_c85df0, __Noto_Sans_Fallback_c85df0",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "128px 0px"
+  },
+  "section.py-24": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.217787 0 0)",
+    "fontFamily": "__Noto_Sans_c85df0, __Noto_Sans_Fallback_c85df0",
+    "fontSize": "16px",
+    "padding": "96px 0px",
+    "margin": "0px"
+  },
+  "footer.bg-base-100": {
+    "backgroundColor": "oklch(0.182204 0 0)",
+    "color": "oklch(0.921906 0 0)",
+    "fontFamily": "__Noto_Sans_c85df0, __Noto_Sans_Fallback_c85df0",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "div.footer-title": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.921906 0 0)",
+    "fontFamily": "__Noto_Sans_c85df0, __Noto_Sans_Fallback_c85df0",
+    "fontSize": "14px",
+    "padding": "0px",
+    "margin": "0px 0px 12px"
+  }
+}

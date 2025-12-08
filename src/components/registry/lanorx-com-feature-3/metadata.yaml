@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: lanorx-com-feature-3
+category: feature
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/lanorx-com-2025-12-07/sections/section-3.png
+
+freeformKeywords:
+  - a/b testing
+  - analytics
+  - conversion
+  - experiments
+  - dashboard
+  - metrics
+  - saas
+  - waitlist
+  - headline testing
+  - live activity
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T23:59:35Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - analytics
+    - dashboard
+    - data-visualization
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+    - neutral
+  layout:
+    - two-column
+    - grid
+    - full-width
+    - centered
+  industry:
+    - saas
+    - startup
+    - analytics

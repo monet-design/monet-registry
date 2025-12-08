@@ -1,0 +1,77 @@
+[
+  {
+    "family": "Inter",
+    "url": "https://www.lanorx.com/media/2c55a0e60120577a-s.2a48534a.woff2",
+    "source": "custom",
+    "weights": [
+      "100 900"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "downloaded": false,
+    "error": "HTTP 404"
+  },
+  {
+    "family": "Inter Fallback",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Geist",
+    "url": "https://www.lanorx.com/media/8a480f0b521d4e75-s.8e0177b5.woff2",
+    "source": "custom",
+    "weights": [
+      "100 900"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "downloaded": false,
+    "error": "HTTP 404"
+  },
+  {
+    "family": "Geist Fallback",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Geist Mono",
+    "url": "https://www.lanorx.com/media/4fa387ec64143e14-s.c1fdd6c2.woff2",
+    "source": "custom",
+    "weights": [
+      "100 900"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "downloaded": false,
+    "error": "HTTP 404"
+  },
+  {
+    "family": "Geist Mono Fallback",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  }
+]

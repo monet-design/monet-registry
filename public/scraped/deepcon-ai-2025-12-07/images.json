@@ -1,0 +1,122 @@
+[
+  {
+    "originalUrl": "https://deepcon.ai/logo/brandlogo_black.svg",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Deepcon Logo",
+    "width": 300,
+    "height": 63,
+    "localPath": "images/image-0.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://deepcon.ai/logo/symbol_black.svg",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Deepcon",
+    "width": 150,
+    "height": 150,
+    "localPath": "images/image-1.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://deepcon.ai/_next/image?url=%2Fbrands%2Fcontext7.png&w=64&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Context7",
+    "width": 32,
+    "height": 32,
+    "localPath": "images/image-2.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://deepcon.ai/_next/image?url=%2Fbrands%2Fnia.png&w=64&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Nia",
+    "width": 32,
+    "height": 32,
+    "localPath": "images/image-3.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://deepcon.ai/_next/image?url=%2Fbrands%2Fexa.png&w=64&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Exa",
+    "width": 32,
+    "height": 32,
+    "localPath": "images/image-4.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://deepcon.ai/_next/image?url=%2Fbrands%2Fclaude.png&w=64&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Sonnet 4.5",
+    "width": 32,
+    "height": 32,
+    "localPath": "images/image-5.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://deepcon.ai/_next/image?url=%2Fbrands%2Fanthropic.png&w=3840&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Anthropic",
+    "width": 900,
+    "height": 101,
+    "localPath": "images/image-6.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://deepcon.ai/_next/image?url=%2Fbrands%2Faws.png&w=3840&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "AWS",
+    "width": 768,
+    "height": 460,
+    "localPath": "images/image-7.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://deepcon.ai/_next/image?url=%2Fbrands%2Fgoogle.png&w=3840&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Google",
+    "width": 900,
+    "height": 304,
+    "localPath": "images/image-8.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://deepcon.ai/_next/image?url=%2Fbrands%2Fmicrosoft.png&w=3840&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Microsoft",
+    "width": 960,
+    "height": 204,
+    "localPath": "images/image-9.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://deepcon.ai/_next/image?url=%2Fbrands%2Fvercel.png&w=3840&q=75",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "Vercel",
+    "width": 1440,
+    "height": 324,
+    "localPath": "images/image-10.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://deepcon.ai/brands/openai.svg",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "OpenAI",
+    "width": 721,
+    "height": 721,
+    "localPath": "images/image-11.svg",
+    "downloaded": true
+  }
+]

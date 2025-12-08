@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: deepcon-ai-landing
+category: page
+images:
+  preview: scraped/deepcon-ai-2025-12-07/full-page.png
+title: deepcon.ai Landing Page
+sections:
+  - id: deepcon-ai-hero-0
+    category: hero
+    order: 0
+  - id: deepcon-ai-stats-0-1
+    category: stats
+    order: 1
+  - id: deepcon-ai-benchmark-0-2
+    category: feature
+    order: 2
+  - id: deepcon-ai-logo-cloud-0-3
+    category: logo-cloud
+    order: 3
+  - id: deepcon-ai-showcase-0-4
+    category: showcase
+    order: 4
+  - id: deepcon-ai-feature-1
+    category: feature
+    order: 5
+  - id: deepcon-ai-cta-2
+    category: cta
+    order: 6
+  - id: deepcon-ai-footer-3
+    category: footer
+    order: 7
+source:
+  type: url
+  url: https://deepcon.ai/
+  scrapedAt: "2025-12-07T23:45:42.716Z"
+pageInfo:
+  totalSections: 8
+freeformKeywords:
+  - complete landing page
+  - full page
+  - deepcon.ai
+createdAt: "2025-12-07T23:45:42.716Z"
+status: stable

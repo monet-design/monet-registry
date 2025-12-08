@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: deepcon-ai-cta-2
+category: cta
+
+images:
+  preview: /registry/deepcon-ai-cta-2/preview.png
+
+freeformKeywords:
+  - cta
+  - call-to-action
+  - agent
+  - ai
+  - developer
+  - statistics
+  - dark-theme
+  - buttons
+  - get-started
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T23:59:29Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - cta
+    - statistics
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - bold
+  layout:
+    - centered
+    - single-column
+    - full-width
+  industry:
+    - saas
+    - ai
+    - developer-tools

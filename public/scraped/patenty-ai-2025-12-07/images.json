@@ -1,0 +1,72 @@
+[
+  {
+    "originalUrl": "https://www.patenty.ai/_next/image?url=%2Fimages%2Fpatenty-logo.png&w=384&q=75",
+    "type": "img",
+    "sectionIndex": -1,
+    "alt": "Patenty 로고",
+    "width": 256,
+    "height": 64,
+    "localPath": "images/image-0.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.patenty.ai/_next/image?url=%2Fimages%2Fworkflow%2Fstep1-claims.png&w=3840&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "AI 청구항 생성 - 첨부된 발명 문서를 분석하고 청구항을 제안합니다",
+    "width": 1024,
+    "height": 548,
+    "localPath": "images/image-1.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.patenty.ai/_next/image?url=%2Fimages%2Fworkflow%2Fstep2-drafting.png&w=3840&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "초안 생성 & 피드백 - 명세서 초안을 AI가 작성하고 유저의 피드백을 통해 개선합니다",
+    "width": 1024,
+    "height": 548,
+    "localPath": "images/image-2.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.patenty.ai/_next/image?url=%2Fimages%2Fworkflow%2Fstep3-editing.png&w=3840&q=75",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "세부 편집 및 최종검수 - 세부사항 수정과 최종검수를 통해 최종 품질을 완성합니다",
+    "width": 1024,
+    "height": 524,
+    "localPath": "images/image-3.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.patenty.ai/_next/image?url=%2Ffeatures_images%2Fpatenty_feature_1.png&w=3840&q=75",
+    "type": "img",
+    "sectionIndex": 2,
+    "alt": "맥락기반 효율화",
+    "width": 400,
+    "height": 400,
+    "localPath": "images/image-4.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.patenty.ai/_next/image?url=%2Ffeatures_images%2Fpatenty_feature_2.png&w=3840&q=75",
+    "type": "img",
+    "sectionIndex": 2,
+    "alt": "Human-In-The-Loop",
+    "width": 400,
+    "height": 400,
+    "localPath": "images/image-5.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.patenty.ai/_next/image?url=%2Ffeatures_images%2Fpatenty_feature_3.png&w=3840&q=75",
+    "type": "img",
+    "sectionIndex": 2,
+    "alt": "특허 전문 AI 솔루션",
+    "width": 400,
+    "height": 400,
+    "localPath": "images/image-6.png",
+    "downloaded": true
+  }
+]

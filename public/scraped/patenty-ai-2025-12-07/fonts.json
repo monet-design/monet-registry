@@ -1,0 +1,60 @@
+[
+  {
+    "family": "GeistSans",
+    "url": "https://www.patenty.ai/_next/static/media/028c0d39d2e8f589-s.p.woff2",
+    "source": "custom",
+    "weights": [
+      "100 900"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "localPath": "fonts/GeistSans.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "GeistSans Fallback",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Inter",
+    "url": "https://www.patenty.ai/_next/static/media/ba9851c3c22cd980-s.woff2",
+    "source": "custom",
+    "weights": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "localPath": "fonts/Inter.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "Inter Fallback",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  }
+]

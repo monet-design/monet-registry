@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: codefa-st-feature-4
+category: feature
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/codefa-st-2025-12-07/sections/section-4.png
+
+freeformKeywords:
+  - feature
+  - course
+  - curriculum
+  - saas
+  - coding
+  - education
+  - video course
+  - checklist
+  - mindset
+  - fundamentals
+  - programming
+  - tutorial
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-08T00:16:30Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - checklist
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+    - rounded
+  layout:
+    - centered
+    - single-column
+    - grid
+  industry:
+    - saas
+    - education
+    - startup

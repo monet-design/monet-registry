@@ -1,0 +1,140 @@
+[
+  {
+    "family": "__Noto_Sans_c85df0",
+    "url": "https://codefa.st/_next/static/media/82ef96de0e8f4d8c-s.woff2",
+    "source": "custom",
+    "weights": [
+      "100 900"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "localPath": "fonts/--Noto-Sans-c85df0.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "__Noto_Sans_Fallback_c85df0",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "__Bebas_Neue_d758cf",
+    "url": "https://codefa.st/_next/static/media/8b44c7e6549520b2-s.woff2",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "localPath": "fonts/--Bebas-Neue-d758cf.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "__Bebas_Neue_Fallback_d758cf",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "ui-monospace",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "SFMono-Regular",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Menlo",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Monaco",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Consolas",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Liberation Mono",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Courier New",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Times",
+    "source": "system",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  }
+]

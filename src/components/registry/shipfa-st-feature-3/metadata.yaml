@@ -1,0 +1,47 @@
+schemaVersion: "2.0"
+name: shipfa-st-feature-3
+category: feature
+
+images:
+  preview: scraped/shipfa-st-2025-12-07/sections/section-3.png
+
+freeformKeywords:
+  - features
+  - emails
+  - payments
+  - login
+  - database
+  - seo
+  - tabs
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T23:50:20Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+    - dropdown
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - centered
+    - single-column
+    - grid
+  industry:
+    - saas
+    - startup
+
+parentPage: shipfa-st-landing
+
+source:
+  type: url
+  name: ShipFast
+  url: https://shipfa.st/
+  scrapedAt: "2025-12-07T23:50:20Z"
+  sectionIndex: 3

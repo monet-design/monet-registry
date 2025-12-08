@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: shipfa-st-footer-10
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/shipfa-st-2025-12-07/sections/section-10.png
+
+freeformKeywords:
+  - footer
+  - dark footer
+  - analytics widget
+  - datafast
+  - revenue badge
+  - discord
+  - community
+  - links
+  - legal
+  - products
+  - statistics
+  - chart
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-08T00:16:33Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - widget
+    - social-link
+    - analytics
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - multi-column
+    - left-aligned
+  industry:
+    - saas
+    - startup

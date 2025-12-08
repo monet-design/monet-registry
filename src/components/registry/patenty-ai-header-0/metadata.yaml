@@ -1,0 +1,52 @@
+schemaVersion: "2.0"
+name: patenty-ai-header-0
+category: header
+
+images:
+  preview: /scraped/patenty-ai-2025-12-07/full-page.png
+
+freeformKeywords:
+  - header
+  - navigation
+  - navbar
+  - dark theme
+  - saas
+  - ai
+  - patent
+  - korean
+  - minimal
+  - logo
+  - menu
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-08T00:20:58Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - navigation
+    - dropdown
+  style:
+    - dark-theme
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - full-width
+    - centered
+  industry:
+    - saas
+    - ai
+    - legal-tech
+
+parentPage: patenty-ai-landing
+
+source:
+  type: url
+  name: Patenty AI
+  url: https://patenty.ai
+  scrapedAt: "2025-12-08T00:20:58Z"
+  sectionIndex: 0

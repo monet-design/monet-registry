@@ -1,0 +1,41 @@
+schemaVersion: "2.0"
+name: shipfa-st-logo-cloud-4
+category: logo-cloud
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/shipfa-st-2025-12-07/sections/section-4.png
+
+freeformKeywords:
+  - logo cloud
+  - tech stack
+  - AI tools
+  - integrations
+  - partnership
+  - dark theme
+  - launch
+  - startup
+  - SaaS
+  - codebase
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-08T00:16:16Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - logo-cloud
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - ai
+    - startup

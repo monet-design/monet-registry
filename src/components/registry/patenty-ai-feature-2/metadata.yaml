@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: patenty-ai-feature-2
+category: feature
+
+images:
+  preview: scraped/patenty-ai-2025-12-07/sections/section-2.png
+
+freeformKeywords:
+  - AI
+  - 변리사
+  - 솔루션
+  - 효율화
+  - Human-In-The-Loop
+  - 특허 전문
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T23:45:37Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - centered
+    - grid
+  industry:
+    - ai
+    - saas
+
+parentPage: patenty-ai-landing
+
+source:
+  type: url
+  name: Patenty AI
+  url: https://www.patenty.ai/ko
+  scrapedAt: "2025-12-07T23:45:37Z"
+  sectionIndex: 2

@@ -1,0 +1,46 @@
+[
+  {
+    "index": 0,
+    "tag": "section",
+    "selector": "section.relative",
+    "category": null,
+    "rect": {
+      "top": 0,
+      "height": 3825.1875
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 1,
+    "tag": "section",
+    "selector": "section.py-16",
+    "category": null,
+    "rect": {
+      "top": 3825.1875,
+      "height": 964
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 2,
+    "tag": "section",
+    "selector": "section.section-divider",
+    "category": null,
+    "rect": {
+      "top": 4789.1875,
+      "height": 514
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 3,
+    "tag": "footer",
+    "selector": "footer.bg-white",
+    "category": "footer",
+    "rect": {
+      "top": 5303.1875,
+      "height": 265
+    },
+    "confidence": 0.8
+  }
+]

@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: deepcon-ai-logo-cloud-0-3
+category: logo-cloud
+
+images:
+  preview: public/scraped/deepcon-ai-2025-12-07/sections/section-0.png
+
+freeformKeywords:
+  - logo cloud
+  - trusted by
+  - partners
+  - companies
+  - anthropic
+  - aws
+  - google
+  - microsoft
+  - vercel
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-08T00:18:46Z"
+status: stable
+language: en
+
+tags:
+  functional: []
+  style:
+    - light-theme
+    - minimal
+  layout:
+    - centered
+  industry:
+    - saas
+    - ai
+
+parentPage: deepcon-ai-landing
+
+source:
+  type: url
+  name: Deepcon AI
+  url: https://deepcon.ai/
+  scrapedAt: "2025-12-08T00:18:46Z"
+  sectionIndex: 3

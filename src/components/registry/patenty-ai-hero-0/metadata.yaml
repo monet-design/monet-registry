@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: patenty-ai-hero-0
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/patenty-ai-2025-12-07/sections/section-0.png
+
+freeformKeywords:
+  - hero
+  - AI
+  - patent
+  - workspace
+  - statistics
+  - dark theme
+  - korean
+  - 특허
+  - 워크스페이스
+  - 변리사
+  - saas
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T23:59:29Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - lead-capture
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - bold
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - ai
+    - legal

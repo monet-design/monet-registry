@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: patenty-ai-cta-5
+category: cta
+
+images:
+  preview: scraped/patenty-ai-2025-12-07/sections/section-5.png
+
+freeformKeywords:
+  - 시작
+  - 베타
+  - 무료크레딧
+  - Patenty
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T23:45:43Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - lead-capture
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+  industry:
+    - ai
+    - saas
+
+parentPage: patenty-ai-landing
+
+source:
+  type: url
+  name: Patenty AI
+  url: https://www.patenty.ai/ko
+  scrapedAt: "2025-12-07T23:45:43Z"
+  sectionIndex: 5

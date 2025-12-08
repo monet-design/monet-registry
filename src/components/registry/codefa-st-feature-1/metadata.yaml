@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: codefa-st-feature-1
+category: feature
+
+images:
+  preview: scraped/codefa-st-2025-12-07/sections/section-1.png
+
+freeformKeywords:
+  - comparison
+  - employee vs entrepreneur
+  - coding courses
+  - software engineers
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T23:50:35Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - comparison
+  style:
+    - dark-theme
+    - modern
+    - bold
+  layout:
+    - two-column
+    - centered
+  industry:
+    - saas
+    - startup
+    - education
+
+parentPage: codefa-st-landing
+
+source:
+  type: url
+  name: CodeFast
+  url: https://codefa.st/
+  scrapedAt: "2025-12-07T23:50:35Z"
+  sectionIndex: 1

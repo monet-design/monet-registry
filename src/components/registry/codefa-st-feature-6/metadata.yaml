@@ -1,0 +1,47 @@
+schemaVersion: "2.0"
+name: codefa-st-feature-6
+category: feature
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/codefa-st-2025-12-07/sections/section-6.png
+
+freeformKeywords:
+  - learn to code
+  - coding course
+  - AI coding
+  - entrepreneur
+  - fundamentals
+  - beginner
+  - programming
+  - education
+  - feature section
+  - pie chart
+  - pareto principle
+  - comparison
+  - Udemy
+  - online learning
+  - chat interface
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-08T00:16:20Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - animation
+    - social-proof
+  style:
+    - modern
+    - minimal
+    - light-theme
+    - playful
+  layout:
+    - centered
+    - single-column
+  industry:
+    - education
+    - saas
+    - startup

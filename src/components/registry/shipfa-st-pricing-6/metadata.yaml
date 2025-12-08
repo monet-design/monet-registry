@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: shipfa-st-pricing-6
+category: pricing
+
+images:
+  preview: /scraped/shipfa-st-2025-12-07/sections/section-6.png
+
+freeformKeywords:
+  - pricing
+  - pricing table
+  - price plans
+  - saas pricing
+  - subscription
+  - starter
+  - bundle
+  - comparison
+  - features list
+  - boilerplate
+  - nextjs
+  - testimonial
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-08T00:16:15Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - pricing-table
+    - comparison
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - three-column
+    - centered
+  industry:
+    - saas
+    - startup

@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: deepcon-ai-showcase-0-4
+category: feature-showcase
+
+images:
+  preview: public/scraped/deepcon-ai-2025-12-07/sections/section-0.png
+
+freeformKeywords:
+  - showcase
+  - example
+  - database
+  - docs
+  - openai
+  - metrics
+  - deliverables
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-08T00:18:48Z"
+status: stable
+language: en
+
+tags:
+  functional: []
+  style:
+    - light-theme
+    - modern
+    - minimal
+  layout:
+    - centered
+    - grid
+  industry:
+    - saas
+    - ai
+
+parentPage: deepcon-ai-landing
+
+source:
+  type: url
+  name: Deepcon AI
+  url: https://deepcon.ai/
+  scrapedAt: "2025-12-08T00:18:48Z"
+  sectionIndex: 4

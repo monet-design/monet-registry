@@ -1,0 +1,50 @@
+{
+  "header.fixed": {
+    "backgroundColor": "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+    "color": "oklch(0.145 0 0)",
+    "fontFamily": "\"DM Sans\", \"DM Sans Fallback\"",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "nav.hidden": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.145 0 0)",
+    "fontFamily": "\"DM Sans\", \"DM Sans Fallback\"",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.relative": {
+    "backgroundColor": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "\"DM Sans\", \"DM Sans Fallback\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "padding": "112px 32px 96px",
+    "margin": "0px"
+  },
+  "section.py-16": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.145 0 0)",
+    "fontFamily": "\"DM Sans\", \"DM Sans Fallback\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "padding": "128px 32px",
+    "margin": "0px"
+  },
+  "section.section-divider": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "oklch(0.145 0 0)",
+    "fontFamily": "\"DM Sans\", \"DM Sans Fallback\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "padding": "0px 16px",
+    "margin": "0px"
+  },
+  "footer.bg-white": {
+    "backgroundColor": "rgb(255, 255, 255)",
+    "color": "oklch(0.145 0 0)",
+    "fontFamily": "\"DM Sans\", \"DM Sans Fallback\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "padding": "64px 32px",
+    "margin": "0px"
+  }
+}

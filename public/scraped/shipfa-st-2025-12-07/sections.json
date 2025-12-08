@@ -1,0 +1,123 @@
+[
+  {
+    "index": 0,
+    "tag": "section",
+    "selector": "section#hero",
+    "category": "hero",
+    "rect": {
+      "top": 78.34375,
+      "height": 752
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 1,
+    "tag": "section",
+    "selector": "section#featured",
+    "category": "feature",
+    "rect": {
+      "top": 830.34375,
+      "height": 456.59375
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 2,
+    "tag": "section",
+    "selector": "section.relative",
+    "category": null,
+    "rect": {
+      "top": 1286.9375,
+      "height": 638
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 3,
+    "tag": "section",
+    "selector": "section#features",
+    "category": "feature",
+    "rect": {
+      "top": 1924.9375,
+      "height": 878
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 4,
+    "tag": "section",
+    "selector": "section.bg-base-100",
+    "category": null,
+    "rect": {
+      "top": 2802.9375,
+      "height": 458.3125
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 5,
+    "tag": "section",
+    "selector": "section#demo",
+    "category": null,
+    "rect": {
+      "top": 3261.25,
+      "height": 1469.421875
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 6,
+    "tag": "section",
+    "selector": "section#pricing",
+    "category": "pricing",
+    "rect": {
+      "top": 4730.671875,
+      "height": 1333.421875
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 7,
+    "tag": "section",
+    "selector": "section#faq",
+    "category": "faq",
+    "rect": {
+      "top": 6064.09375,
+      "height": 1158
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 8,
+    "tag": "section",
+    "selector": "section#testimonials",
+    "category": "testimonial",
+    "rect": {
+      "top": 7222.09375,
+      "height": 3268.671875
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 9,
+    "tag": "section",
+    "selector": "section.bg-base-200",
+    "category": null,
+    "rect": {
+      "top": 10490.765625,
+      "height": 460
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 10,
+    "tag": "footer",
+    "selector": "footer.bg-base-200",
+    "category": "footer",
+    "rect": {
+      "top": 10950.765625,
+      "height": 758.5
+    },
+    "confidence": 0.8
+  }
+]

@@ -1,0 +1,189 @@
+[
+  {
+    "index": 0,
+    "tag": "section",
+    "selector": "section",
+    "category": null,
+    "rect": {
+      "top": 70,
+      "height": 1018
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 1,
+    "tag": "section",
+    "selector": "section.text-center",
+    "category": null,
+    "rect": {
+      "top": 1088,
+      "height": 970
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 2,
+    "tag": "section",
+    "selector": "section",
+    "category": null,
+    "rect": {
+      "top": 2058,
+      "height": 1406.328125
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 3,
+    "tag": "section",
+    "selector": "section",
+    "category": null,
+    "rect": {
+      "top": 3464.328125,
+      "height": 1090.40625
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 4,
+    "tag": "section",
+    "selector": "section",
+    "category": null,
+    "rect": {
+      "top": 4554.734375,
+      "height": 2093
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 5,
+    "tag": "section",
+    "selector": "section",
+    "category": null,
+    "rect": {
+      "top": 6647.734375,
+      "height": 1090.40625
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 6,
+    "tag": "section",
+    "selector": "section.bg-base-100",
+    "category": null,
+    "rect": {
+      "top": 7738.140625,
+      "height": 2227.5625
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 7,
+    "tag": "section",
+    "selector": "section",
+    "category": null,
+    "rect": {
+      "top": 9965.703125,
+      "height": 1090.40625
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 8,
+    "tag": "section",
+    "selector": "section.relative",
+    "category": null,
+    "rect": {
+      "top": 11056.109375,
+      "height": 2243.28125
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 9,
+    "tag": "section",
+    "selector": "section",
+    "category": null,
+    "rect": {
+      "top": 13299.390625,
+      "height": 1090.40625
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 10,
+    "tag": "section",
+    "selector": "section#pricing",
+    "category": "pricing",
+    "rect": {
+      "top": 14389.796875,
+      "height": 1464
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 11,
+    "tag": "section",
+    "selector": "section",
+    "category": null,
+    "rect": {
+      "top": 15853.796875,
+      "height": 248
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 12,
+    "tag": "section",
+    "selector": "section#faq",
+    "category": "faq",
+    "rect": {
+      "top": 16101.796875,
+      "height": 1033
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 13,
+    "tag": "section",
+    "selector": "section#testimonials",
+    "category": "testimonial",
+    "rect": {
+      "top": 17262.796875,
+      "height": 1532.765625
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 14,
+    "tag": "section",
+    "selector": "section.py-24",
+    "category": null,
+    "rect": {
+      "top": 18923.5625,
+      "height": 930.875
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 15,
+    "tag": "section",
+    "selector": "section",
+    "category": null,
+    "rect": {
+      "top": 19854.4375,
+      "height": 1100.40625
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 16,
+    "tag": "footer",
+    "selector": "footer.bg-base-100",
+    "category": "footer",
+    "rect": {
+      "top": 20954.84375,
+      "height": 775
+    },
+    "confidence": 0.8
+  }
+]

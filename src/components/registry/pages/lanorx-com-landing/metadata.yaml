@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: lanorx-com-landing
+category: page
+images:
+  preview: scraped/lanorx-com-2025-12-07/full-page.png
+title: lanorx.com Landing Page
+sections:
+  - id: lanorx-com-hero-0
+    category: hero
+    order: 0
+  - id: lanorx-com-feature-1
+    category: feature
+    order: 1
+  - id: lanorx-com-how-it-works-2
+    category: how-it-works
+    order: 2
+  - id: lanorx-com-feature-3
+    category: feature
+    order: 3
+  - id: lanorx-com-feature-4
+    category: feature
+    order: 4
+  - id: lanorx-com-testimonial-5
+    category: testimonial
+    order: 5
+  - id: lanorx-com-cta-6
+    category: cta
+    order: 6
+  - id: lanorx-com-footer-7
+    category: footer
+    order: 7
+source:
+  type: url
+  url: https://www.lanorx.com/
+  scrapedAt: "2025-12-07T23:53:19.633Z"
+pageInfo:
+  totalSections: 8
+freeformKeywords:
+  - complete landing page
+  - full page
+  - lanorx.com
+createdAt: "2025-12-07T23:53:19.633Z"
+status: stable

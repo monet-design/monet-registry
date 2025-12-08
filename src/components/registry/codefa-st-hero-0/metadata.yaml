@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: codefa-st-hero-0
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/codefa-st-2025-12-07/sections/section-0.png
+
+freeformKeywords:
+  - hero
+  - coding course
+  - learn to code
+  - saas
+  - online business
+  - beginner
+  - timeline
+  - social proof
+  - avatar group
+  - cta button
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-08T00:16:23Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - social-proof
+    - timeline
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - pink-accent
+  layout:
+    - centered
+    - single-column
+    - full-width
+  industry:
+    - education
+    - saas
+    - startup

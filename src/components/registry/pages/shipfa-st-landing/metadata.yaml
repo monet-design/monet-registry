@@ -1,0 +1,52 @@
+schemaVersion: "2.0"
+name: shipfa-st-landing
+category: page
+images:
+  preview: scraped/shipfa-st-2025-12-07/full-page.png
+title: shipfa.st Landing Page
+sections:
+  - id: shipfa-st-header
+    category: header
+    order: 0
+  - id: shipfa-st-hero-0
+    category: hero
+    order: 1
+  - id: shipfa-st-testimonial-1
+    category: testimonial
+    order: 2
+  - id: shipfa-st-stats-2
+    category: stats
+    order: 3
+  - id: shipfa-st-feature-3
+    category: feature
+    order: 4
+  - id: shipfa-st-logo-cloud-4
+    category: logo-cloud
+    order: 5
+  - id: shipfa-st-showcase-5
+    category: showcase
+    order: 6
+  - id: shipfa-st-pricing-6
+    category: pricing
+    order: 7
+  - id: shipfa-st-faq-7
+    category: faq
+    order: 8
+  - id: shipfa-st-testimonial-8
+    category: testimonial
+    order: 9
+  - id: shipfa-st-footer-10
+    category: footer
+    order: 10
+source:
+  type: url
+  url: https://shipfa.st/
+  scrapedAt: "2025-12-08T00:00:08.043Z"
+pageInfo:
+  totalSections: 11
+freeformKeywords:
+  - complete landing page
+  - full page
+  - shipfa.st
+createdAt: "2025-12-08T00:00:08.043Z"
+status: stable

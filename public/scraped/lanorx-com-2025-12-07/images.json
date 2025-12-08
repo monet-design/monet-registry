@@ -1,0 +1,32 @@
+[
+  {
+    "originalUrl": "https://www.lanorx.com/mockups/workflow-main.png",
+    "type": "img",
+    "sectionIndex": 3,
+    "alt": "Workflow Integration Options",
+    "width": 3840,
+    "height": 1202,
+    "localPath": "images/image-0.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.lanorx.com/mockups/messaging-dashboard.png",
+    "type": "img",
+    "sectionIndex": 3,
+    "alt": "A/B Testing Dashboard",
+    "width": 3840,
+    "height": 1202,
+    "localPath": "images/image-1.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.lanorx.com/mockups/domain-main.png",
+    "type": "img",
+    "sectionIndex": 3,
+    "alt": "Domain Configuration Interface",
+    "width": 3840,
+    "height": 1202,
+    "localPath": "images/image-2.png",
+    "downloaded": true
+  }
+]

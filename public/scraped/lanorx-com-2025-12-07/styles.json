@@ -1,0 +1,66 @@
+{
+  "header.fixed": {
+    "backgroundColor": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+    "color": "lab(2.75381 0 0)",
+    "fontFamily": "Inter, \"Inter Fallback\", system-ui, -apple-system, sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "nav.container": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "lab(2.75381 0 0)",
+    "fontFamily": "Inter, \"Inter Fallback\", system-ui, -apple-system, sans-serif",
+    "fontSize": "16px",
+    "padding": "12px 24px",
+    "margin": "0px 80px"
+  },
+  "main": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "lab(2.75381 0 0)",
+    "fontFamily": "Inter, \"Inter Fallback\", system-ui, -apple-system, sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.py-24": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "lab(2.75381 0 0)",
+    "fontFamily": "Inter, \"Inter Fallback\", system-ui, -apple-system, sans-serif",
+    "fontSize": "16px",
+    "padding": "144px 0px",
+    "margin": "0px"
+  },
+  "section.relative": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "lab(2.75381 0 0)",
+    "fontFamily": "Inter, \"Inter Fallback\", system-ui, -apple-system, sans-serif",
+    "fontSize": "16px",
+    "padding": "144px 0px",
+    "margin": "0px"
+  },
+  "section#workflow.relative": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "lab(2.75381 0 0)",
+    "fontFamily": "Inter, \"Inter Fallback\", system-ui, -apple-system, sans-serif",
+    "fontSize": "16px",
+    "padding": "96px 0px",
+    "margin": "0px"
+  },
+  "footer.border-t": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "lab(2.75381 0 0)",
+    "fontFamily": "Inter, \"Inter Fallback\", system-ui, -apple-system, sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "lab(2.75381 0 0)",
+    "fontFamily": "Inter, \"Inter Fallback\", system-ui, -apple-system, sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  }
+}

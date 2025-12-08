@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: patenty-ai-footer-6
+category: footer
+
+images:
+  preview: /registry/patenty-ai-footer-6/preview.png
+
+freeformKeywords:
+  - footer
+  - 푸터
+  - 링크
+  - 회사정보
+  - 약관
+  - 빠른링크
+  - 지원
+  - linkedin
+  - 소셜
+  - 사이트맵
+  - 저작권
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T23:59:33Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - navigation
+    - social-links
+  style:
+    - dark-theme
+    - minimal
+    - modern
+  layout:
+    - four-column
+    - grid
+    - full-width
+  industry:
+    - saas
+    - ai
+    - legal-tech

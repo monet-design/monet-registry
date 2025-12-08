@@ -1,0 +1,41 @@
+schemaVersion: "2.0"
+name: shipfa-st-faq-7
+category: faq
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/shipfa-st-2025-12-07/sections/section-7.png
+
+freeformKeywords:
+  - faq
+  - frequently asked questions
+  - accordion
+  - expandable
+  - questions
+  - answers
+  - support
+  - help
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-08T00:16:15Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - accordion
+    - expandable
+    - interactive
+  style:
+    - dark-theme
+    - minimal
+    - modern
+  layout:
+    - two-column
+    - split-layout
+    - left-aligned
+  industry:
+    - saas
+    - startup
+    - developer-tools

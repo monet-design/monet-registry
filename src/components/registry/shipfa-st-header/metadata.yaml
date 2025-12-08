@@ -1,0 +1,28 @@
+schemaVersion: "2.0"
+name: shipfa-st-header
+category: header
+
+images:
+  preview: public/scraped/shipfa-st-2025-12-07/full-page.png
+
+freeformKeywords:
+  - header
+  - navigation
+  - shipfast
+  - dark theme
+  - logo
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-08T00:30:22Z"
+status: stable
+language: en
+
+parentPage: shipfa-st-landing
+
+source:
+  type: url
+  name: ShipFast
+  url: https://shipfa.st/
+  scrapedAt: "2025-12-08T00:30:22Z"

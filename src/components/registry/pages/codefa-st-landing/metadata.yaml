@@ -1,0 +1,55 @@
+schemaVersion: "2.0"
+name: codefa-st-landing
+category: page
+images:
+  preview: scraped/codefa-st-2025-12-07/full-page.png
+title: codefa.st Landing Page
+sections:
+  - id: codefa-st-header
+    category: header
+    order: 0
+  - id: codefa-st-hero-0
+    category: hero
+    order: 1
+  - id: codefa-st-feature-1
+    category: feature
+    order: 2
+  - id: codefa-st-how-it-works-2
+    category: how-it-works
+    order: 3
+  - id: codefa-st-feature-4
+    category: feature
+    order: 4
+  - id: codefa-st-feature-6
+    category: feature
+    order: 5
+  - id: codefa-st-feature-8
+    category: feature
+    order: 6
+  - id: codefa-st-pricing-10
+    category: pricing
+    order: 7
+  - id: codefa-st-faq-12
+    category: faq
+    order: 8
+  - id: codefa-st-testimonial-13
+    category: testimonial
+    order: 9
+  - id: codefa-st-cta-14
+    category: cta
+    order: 10
+  - id: codefa-st-footer-16
+    category: footer
+    order: 11
+source:
+  type: url
+  url: https://codefa.st/
+  scrapedAt: "2025-12-07T23:58:30.867Z"
+pageInfo:
+  totalSections: 12
+freeformKeywords:
+  - complete landing page
+  - full page
+  - codefa.st
+createdAt: "2025-12-07T23:58:30.867Z"
+status: stable

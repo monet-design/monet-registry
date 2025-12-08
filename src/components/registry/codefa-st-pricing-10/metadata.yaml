@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: codefa-st-pricing-10
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/codefa-st-2025-12-07/sections/section-10.png
+
+freeformKeywords:
+  - pricing
+  - christmas
+  - discount
+  - countdown
+  - timer
+  - bundle
+  - course
+  - learning
+  - education
+  - offer
+  - sale
+  - promotion
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-08T00:16:23Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - countdown
+    - pricing-table
+  style:
+    - light-theme
+    - dark-theme
+    - modern
+    - warm
+  layout:
+    - centered
+    - two-column
+  industry:
+    - saas
+    - education
+    - startup

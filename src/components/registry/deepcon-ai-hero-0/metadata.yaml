@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: deepcon-ai-hero-0
+category: hero
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/deepcon-ai-2025-12-07/sections/section-0.png
+
+freeformKeywords:
+  - hero
+  - coding agent
+  - context
+  - benchmark
+  - AI
+  - developer tools
+  - search
+  - documentation
+  - MCP
+  - token optimization
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T23:59:32Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - search
+    - animation
+    - charts
+    - benchmark
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+    - full-width
+  industry:
+    - ai
+    - developer-tools
+    - saas

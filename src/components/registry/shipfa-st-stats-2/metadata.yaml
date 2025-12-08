@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: shipfa-st-stats-2
+category: stats
+
+images:
+  preview: scraped/shipfa-st-2025-12-07/sections/section-2.png
+
+freeformKeywords:
+  - stats
+  - time saved
+  - hours
+  - headaches
+  - problem
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-07T23:50:19Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - animation
+  style:
+    - dark-theme
+    - warm
+    - bold
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - startup
+
+parentPage: shipfa-st-landing
+
+source:
+  type: url
+  name: ShipFast
+  url: https://shipfa.st/
+  scrapedAt: "2025-12-07T23:50:19Z"
+  sectionIndex: 2

@@ -1,0 +1,39 @@
+schemaVersion: "2.0"
+name: codefa-st-faq-12
+category: faq
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/codefa-st-2025-12-07/sections/section-12.png
+
+freeformKeywords:
+  - faq
+  - frequently asked questions
+  - accordion
+  - questions
+  - support
+  - help
+  - course
+  - education
+  - saas
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-08T00:16:16Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - accordion
+  style:
+    - light-theme
+    - minimal
+    - clean
+  layout:
+    - centered
+    - single-column
+  industry:
+    - education
+    - saas
+    - course

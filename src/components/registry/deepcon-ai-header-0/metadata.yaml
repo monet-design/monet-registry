@@ -1,0 +1,50 @@
+schemaVersion: "2.0"
+name: deepcon-ai-header-0
+category: header
+
+images:
+  preview: /scraped/deepcon-ai-2025-12-07/full-page.png
+
+freeformKeywords:
+  - header
+  - navigation
+  - navbar
+  - saas
+  - minimal
+  - modern
+  - logo
+  - sign in
+  - docs
+  - playground
+  - pricing
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-08T00:20:59Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - navigation
+  style:
+    - minimal
+    - modern
+    - light-theme
+    - sans-serif
+  layout:
+    - full-width
+    - centered
+  industry:
+    - saas
+    - ai
+
+parentPage: deepcon-ai-landing
+
+source:
+  type: url
+  name: Deepcon AI
+  url: https://deepcon.ai
+  scrapedAt: "2025-12-08T00:20:59Z"
+  sectionIndex: 0

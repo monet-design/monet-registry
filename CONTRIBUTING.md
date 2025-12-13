@@ -218,6 +218,56 @@ describe("GET /api/v1/your-endpoint", () => {
 
 ---
 
+## 5. API Authentication (Basic Auth)
+
+### Overview
+
+All `/api/v1/*` endpoints require Basic Auth when credentials are configured. Authentication is handled via Next.js middleware.
+
+### Related Files
+
+| File | Description |
+|------|-------------|
+| `src/middleware.ts` | Basic Auth validation middleware |
+| `src/env.d.ts` | Environment variable type definitions |
+| `.env.example` | Environment variable template |
+
+### Environment Variables
+
+```bash
+# Copy template and set credentials
+cp .env.example .env.local
+
+# Required for API authentication
+API_BASIC_AUTH_USER=your_api_key
+API_BASIC_AUTH_PASSWORD=your_password
+```
+
+### Making Authenticated Requests
+
+```bash
+# Using curl
+curl -H "Authorization: Basic $(echo -n 'user:password' | base64)" \
+  http://localhost:3000/api/v1/components
+
+# Using httpie
+http :3000/api/v1/components -a user:password
+```
+
+### Development Mode
+
+If `API_BASIC_AUTH_USER` and `API_BASIC_AUTH_PASSWORD` are not set, authentication is disabled for local development convenience.
+
+### E2E Tests with Authentication
+
+When running E2E tests with authentication enabled, set the credentials in your environment:
+
+```bash
+API_BASIC_AUTH_USER=test API_BASIC_AUTH_PASSWORD=test pnpm test:e2e
+```
+
+---
+
 ## General Guidelines
 
 - Component names must be **kebab-case**

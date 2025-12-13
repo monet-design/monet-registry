@@ -24,7 +24,11 @@
     "registry:generate": "tsx scripts/generate-shadcn-registry.ts",
     "registry:build": "pnpm registry:generate && shadcn build",
     "test:e2e": "vitest run --config vitest.e2e.config.mts",
-    "test:e2e:watch": "vitest --config vitest.e2e.config.mts"
+    "test:e2e:watch": "vitest --config vitest.e2e.config.mts",
+    "ci:lint": "next lint",
+    "ci:typecheck": "tsc --noEmit",
+    "ci:validate": "pnpm metadata:validate",
+    "ci:all": "run-p ci:lint ci:typecheck ci:validate && pnpm build"
   },
   "dependencies": {
     "@hookform/resolvers": "^4",
@@ -67,6 +71,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.1.9",
+    "npm-run-all2": "^8.0.4",
     "postcss": "^8",
     "puppeteer": "^24.31.0",
     "shadcn": "^3.5.1",

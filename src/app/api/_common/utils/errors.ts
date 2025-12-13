@@ -17,6 +17,8 @@ export const ERROR_CODES = {
   // Page API error codes
   PAGE_NOT_FOUND: "PAGE_NOT_FOUND",
   PAGE_EMPTY_RESULTS: "PAGE_EMPTY_RESULTS",
+  // Auth error codes
+  UNAUTHORIZED: "UNAUTHORIZED",
 } as const;
 
 export type ErrorCode = (typeof ERROR_CODES)[keyof typeof ERROR_CODES];
@@ -100,6 +102,19 @@ export function pageEmptyResultsError(query: string): ErrorResponse {
         "Try broader search terms",
         "Remove some filter constraints",
         "Use /api/v1/pages/stats to see available pages",
+      ],
+    }
+  );
+}
+
+export function unauthorizedError(): ErrorResponse {
+  return createErrorResponse(
+    ERROR_CODES.UNAUTHORIZED,
+    "Authentication required. Please provide valid Basic Auth credentials.",
+    {
+      suggestions: [
+        "Include Authorization header with Basic Auth",
+        "Format: Authorization: Basic base64(username:password)",
       ],
     }
   );

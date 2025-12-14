@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: greetinghr-support-0
+category: feature
+images:
+  preview: /scraped/greetinghr-com-2025-12-14/images/image-44.png
+freeformKeywords:
+  - support
+  - customer support
+  - resources
+  - guidebook
+  - community
+  - brochure
+  - case study
+  - consulting
+  - hr
+  - recruitment
+  - saas
+  - greetinghr
+fontFamily:
+  - Pretendard
+createdAt: "2025-12-14T10:00:00Z"
+status: stable
+language: ko
+tags:
+  functional:
+    - resources
+    - support
+    - cards
+  style:
+    - modern
+    - clean
+    - card-grid
+  layout:
+    - grid
+    - bento
+  industry:
+    - saas
+    - hr-tech
+    - recruitment
+parentPage: greetinghr-landing
+source:
+  type: url
+  url: https://www.greetinghr.com/
+  scrapedAt: "2025-12-14T10:00:00Z"
+draft: false

@@ -11,7 +11,8 @@ const COLORS = {
   light: {
     accent: "#1890FF",
     accentHover: "#40A9FF",
-    background: "linear-gradient(180deg, #F1F5F9 0%, #E8F4FD 50%, #D4E8F9 100%)",
+    background:
+      "linear-gradient(180deg, #F1F5F9 0%, #E8F4FD 50%, #D4E8F9 100%)",
     navBg: "#FFFFFF",
     cardBg: "#1890FF",
     cardShadow: "rgba(24, 144, 255, 0.2)",
@@ -58,7 +59,8 @@ const CONTENT = {
     title: "채용 관리를 넘어 ",
     titleAccent: "채용 성공",
     titleEnd: "으로",
-    description: "모집부터 선발까지, 수시부터 대규모 채용까지\n그리팅 하나로 모든 채용 문제를 해결하세요.",
+    description:
+      "모집부터 선발까지, 수시부터 대규모 채용까지\n그리팅 하나로 모든 채용 문제를 해결하세요.",
     primaryCta: "도입 문의하기",
     secondaryCta: "무료 체험하기",
   },
@@ -114,20 +116,11 @@ function PyramidChart() {
         </linearGradient>
       </defs>
       {/* Top layer - darkest blue */}
-      <polygon
-        points="40,12 50,28 30,28"
-        fill="#3752E9"
-      />
+      <polygon points="40,12 50,28 30,28" fill="#3752E9" />
       {/* Middle layer - medium blue */}
-      <polygon
-        points="30,28 50,28 58,44 22,44"
-        fill="#4290FF"
-      />
+      <polygon points="30,28 50,28 58,44 22,44" fill="#4290FF" />
       {/* Bottom layer - lightest blue */}
-      <polygon
-        points="22,44 58,44 68,62 12,62"
-        fill="#ADD9FF"
-      />
+      <polygon points="22,44 58,44 68,62 12,62" fill="#ADD9FF" />
     </svg>
   );
 }
@@ -151,10 +144,7 @@ function LineChart() {
         strokeLinejoin="round"
       />
       {/* Arrow at end */}
-      <polygon
-        points="85,18 95,15 90,25"
-        fill="#40A9FF"
-      />
+      <polygon points="85,18 95,15 90,25" fill="#40A9FF" />
     </svg>
   );
 }
@@ -171,71 +161,6 @@ export default function GreetinghrHero0({
       className="relative min-h-screen w-full overflow-hidden"
       style={{ background: colors.background }}
     >
-      {/* Navigation */}
-      <motion.nav
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="relative z-20 w-full"
-        style={{ backgroundColor: colors.navBg }}
-      >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div
-              className="flex h-8 w-8 items-center justify-center rounded-lg"
-              style={{ backgroundColor: colors.accent }}
-            >
-              <svg
-                viewBox="0 0 24 24"
-                className="h-5 w-5 text-white"
-                fill="currentColor"
-              >
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-              </svg>
-            </div>
-            <span
-              className="text-xl font-bold"
-              style={{ color: colors.textPrimary }}
-            >
-              {CONTENT.nav.logo}
-            </span>
-          </div>
-
-          {/* Nav Items */}
-          <div className="hidden items-center gap-6 lg:flex">
-            {CONTENT.nav.items.map((item, index) => (
-              <a
-                key={index}
-                href={item.href}
-                className="flex items-center gap-1 text-sm font-medium transition-colors hover:opacity-70"
-                style={{ color: colors.textPrimary }}
-              >
-                {item.label}
-                {item.hasDropdown && <ChevronDown className="h-4 w-4" />}
-              </a>
-            ))}
-          </div>
-
-          {/* Auth Buttons */}
-          <div className="flex items-center gap-3">
-            <button
-              className="hidden text-sm font-medium transition-colors hover:opacity-70 sm:block"
-              style={{ color: colors.textPrimary }}
-            >
-              {CONTENT.nav.login}
-            </button>
-            <button
-              className="flex items-center gap-2 rounded-md px-4 py-2 text-sm font-medium text-white transition-all hover:opacity-90"
-              style={{ backgroundColor: colors.accent }}
-            >
-              {CONTENT.nav.cta}
-              <ArrowRight className="h-4 w-4" />
-            </button>
-          </div>
-        </div>
-      </motion.nav>
-
       {/* Hero Content */}
       <div className="relative z-10 mx-auto max-w-7xl px-6 pt-16 pb-8">
         <div className="flex flex-col items-center text-center">

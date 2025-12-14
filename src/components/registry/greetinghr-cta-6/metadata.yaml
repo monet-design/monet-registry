@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: greetinghr-cta-6
+category: cta
+images:
+  preview: /scraped/greetinghr-com-2025-12-14/images/image-49.png
+freeformKeywords:
+  - cta
+  - call to action
+  - consultation
+  - demo
+  - contact
+  - hr
+  - recruitment
+  - saas
+  - greetinghr
+  - blue gradient
+fontFamily:
+  - Pretendard
+createdAt: "2025-12-14T10:00:00Z"
+status: stable
+language: ko
+tags:
+  functional:
+    - lead-capture
+    - consultation
+  style:
+    - modern
+    - gradient
+    - blue-theme
+  layout:
+    - centered
+    - full-width
+  industry:
+    - saas
+    - hr-tech
+    - recruitment
+parentPage: greetinghr-landing
+source:
+  type: url
+  url: https://www.greetinghr.com/
+  scrapedAt: "2025-12-14T10:00:00Z"
+draft: false

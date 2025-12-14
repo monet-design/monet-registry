@@ -11,14 +11,12 @@ const COLORS = {
   light: {
     accent: "#1890ff", // 그리팅 블루
     accentHover: "#1478d4",
-    logoIcon: "#1085ff",
     text: "#171717",
     textMuted: "#525252",
   },
   dark: {
     accent: "#1890ff",
     accentHover: "#3ba0ff",
-    logoIcon: "#1085ff",
     text: "#fafafa",
     textMuted: "#a3a3a3",
   },
@@ -45,24 +43,8 @@ import { motion, AnimatePresence } from "motion/react";
 import { ChevronDown, Menu, X, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-// Greeting Logo Icon Component
-function GreetingLogo({ color = "#1085ff" }: { color?: string }) {
-  return (
-    <svg
-      width="28"
-      height="28"
-      viewBox="0 0 28 28"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      {/* Simplified greeting logo - a stylized "G" or chat icon */}
-      <rect x="2" y="4" width="24" height="18" rx="4" fill={color} />
-      <circle cx="9" cy="13" r="2" fill="white" />
-      <circle cx="14" cy="13" r="2" fill="white" />
-      <circle cx="19" cy="13" r="2" fill="white" />
-    </svg>
-  );
-}
+// Greeting Logo Image Path
+const LOGO_IMAGE = "/registry/greetinghr-header/logo.png";
 
 interface GreetinghrHeaderProps {
   mode?: "light" | "dark";
@@ -112,7 +94,11 @@ export default function GreetinghrHeader({
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.2 }}
         >
-          <GreetingLogo color={colors.logoIcon} />
+          <img
+            src={LOGO_IMAGE}
+            alt="Greeting Logo"
+            className="h-7 w-7 rounded-md"
+          />
           <span
             className="text-lg font-semibold"
             style={{ color: colors.text }}

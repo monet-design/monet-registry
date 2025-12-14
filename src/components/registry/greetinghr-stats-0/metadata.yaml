@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: greetinghr-stats-0
+category: stats
+images:
+  preview: /registry/greetinghr-stats-0/preview.png
+freeformKeywords:
+  - stats
+  - statistics
+  - testimonial
+  - social proof
+  - customer count
+  - recruitment
+  - hiring
+  - hr
+  - saas
+  - 채용
+  - 고객사
+  - HR
+fontFamily:
+  - Poppins
+  - Pretendard
+createdAt: "2025-12-14T03:30:00Z"
+status: stable
+language: ko
+tags:
+  functional:
+    - auto-rotate
+    - carousel
+    - testimonial
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - two-column
+    - left-aligned
+  industry:
+    - saas
+    - hr
+    - recruitment
+parentPage: greetinghr-landing
+source:
+  type: url
+  url: https://www.greetinghr.com/
+  scrapedAt: "2025-12-14T03:30:00Z"
+draft: false

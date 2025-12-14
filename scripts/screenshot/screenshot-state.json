@@ -3272,18 +3272,6 @@
       "path": "/app/public/registry/preview/greetinghr-feature-5.png",
       "capturedAt": "2025-12-14T04:00:58.710Z"
     },
-    "greetinghr-footer": {
-      "path": "/app/public/registry/preview/greetinghr-footer.png",
-      "capturedAt": "2025-12-14T04:01:01.183Z"
-    },
-    "greetinghr-header": {
-      "path": "/app/public/registry/preview/greetinghr-header.png",
-      "capturedAt": "2025-12-14T04:01:04.290Z"
-    },
-    "greetinghr-hero-0": {
-      "path": "/app/public/registry/preview/greetinghr-hero-0.png",
-      "capturedAt": "2025-12-14T04:01:06.784Z"
-    },
     "greetinghr-logo-cloud-1": {
       "path": "/app/public/registry/preview/greetinghr-logo-cloud-1.png",
       "capturedAt": "2025-12-14T04:01:09.128Z"
@@ -3375,6 +3363,30 @@
     "whattime-testimonial-4": {
       "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/whattime-testimonial-4.png",
       "capturedAt": "2025-12-14T11:44:04.833Z"
+    },
+    "greetinghr-stats-0": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/greetinghr-stats-0.png",
+      "capturedAt": "2025-12-14T11:58:01.814Z"
+    },
+    "greetinghr-header": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/greetinghr-header.png",
+      "capturedAt": "2025-12-14T11:58:20.536Z"
+    },
+    "greetinghr-hero-0": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/greetinghr-hero-0.png",
+      "capturedAt": "2025-12-14T11:58:24.287Z"
+    },
+    "greetinghr-footer": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/greetinghr-footer.png",
+      "capturedAt": "2025-12-14T12:17:47.445Z"
+    },
+    "greetinghr-cta-6": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/greetinghr-cta-6.png",
+      "capturedAt": "2025-12-14T12:17:58.821Z"
+    },
+    "greetinghr-support-0": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/greetinghr-support-0.png",
+      "capturedAt": "2025-12-14T12:18:02.613Z"
     }
   },
   "pageCompleted": {
@@ -3446,10 +3458,6 @@
       "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/pages/userband-com-landing.png",
       "capturedAt": "2025-12-14T01:58:25.245Z"
     },
-    "greetinghr-landing": {
-      "path": "/app/public/registry/preview/pages/greetinghr-landing.png",
-      "capturedAt": "2025-12-14T04:01:42.220Z"
-    },
     "hookable-ai-landing": {
       "path": "/app/public/registry/preview/pages/hookable-ai-landing.png",
       "capturedAt": "2025-12-14T04:01:48.620Z"
@@ -3457,6 +3465,10 @@
     "whattime-landing": {
       "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/pages/whattime-landing.png",
       "capturedAt": "2025-12-14T11:44:08.714Z"
+    },
+    "greetinghr-landing": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/pages/greetinghr-landing.png",
+      "capturedAt": "2025-12-14T11:59:20.579Z"
     }
   }
 }

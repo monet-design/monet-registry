@@ -103,6 +103,86 @@ const [isPlaying, setIsPlaying] = useState(false);
 - 썸네일 이미지가 있다면 `public/registry/{NAME}/` 폴더에 복사하여 사용
 - autoplay는 muted 속성과 함께 사용해야 브라우저에서 허용됨
 
+## Framer 컴포넌트 애니메이션 구현
+
+Framer 사이트에서 스크래핑한 컴포넌트인 경우 (`source.type: "framer"`), `framer.json`의 animations 배열을 참고하여 motion/react 코드를 작성하세요.
+
+### framer.json 애니메이션 예시
+```json
+{
+  "animations": [
+    {
+      "type": "fade-up",
+      "target": "Hero Title",
+      "initial": { "opacity": 0, "y": 30 },
+      "animate": { "opacity": 1, "y": 0 },
+      "transition": { "duration": 0.6, "ease": "easeOut" }
+    }
+  ]
+}
+```
+
+### 컴포넌트 구현
+```tsx
+import { motion } from "motion/react";
+
+// framer.json의 애니메이션 정보 적용
+<motion.h1
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  viewport={{ once: true }}
+>
+  Hero Title
+</motion.h1>
+```
+
+### 애니메이션 패턴별 구현
+
+| 패턴 | motion/react 코드 |
+|------|-------------------|
+| `fade-up` | `initial={{ opacity: 0, y: 30 }}` → `whileInView={{ opacity: 1, y: 0 }}` |
+| `fade-in` | `initial={{ opacity: 0 }}` → `whileInView={{ opacity: 1 }}` |
+| `scale-in` | `initial={{ scale: 0.9, opacity: 0 }}` → `whileInView={{ scale: 1, opacity: 1 }}` |
+| `slide-in` | `initial={{ x: -50, opacity: 0 }}` → `whileInView={{ x: 0, opacity: 1 }}` |
+| `stagger` | 부모에 `staggerChildren: 0.1` 설정, 자식에 애니메이션 적용 |
+
+### Stagger 애니메이션 예시
+```tsx
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 }
+};
+
+<motion.div
+  variants={containerVariants}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+>
+  {items.map((item, i) => (
+    <motion.div key={i} variants={itemVariants}>
+      {item}
+    </motion.div>
+  ))}
+</motion.div>
+```
+
+### 주의사항
+- `viewport={{ once: true }}`를 사용하여 한 번만 애니메이션 실행
+- Framer 사이트 컴포넌트는 반드시 `--tags-functional "animation"` 또는 `"scroll-animation"` 포함
+- `transition.ease`는 Framer의 값을 motion/react 형식으로 변환 (예: `easeOut` → `"easeOut"`)
+
 ## 주의사항:
 
 - 스크립트가 생성한 기본 파일 외에, 필요시 다음 파일을 추가할 수 있습니다:

@@ -51,8 +51,25 @@ const MetadataSchema = z.object({
 
   source: z
     .object({
-      name: z.string(),
+      name: z.string().optional(),
+      type: z.enum(["url", "image", "manual", "framer"]).optional(),
       url: z.string().optional(),
+      scrapedAt: z.string().optional(),
+      sectionIndex: z.number().optional(),
+      framer: z
+        .object({
+          detectedAnimations: z
+            .array(
+              z.object({
+                type: z.string(),
+                target: z.string(),
+                delay: z.number().optional(),
+              })
+            )
+            .optional(),
+          framerName: z.string().optional(),
+        })
+        .optional(),
     })
     .optional(),
 
@@ -150,6 +167,39 @@ function validateMetadataFile(filePath: string): ValidationResult {
       result.warnings.push(
         `preview image uses absolute path: ${metadata.images.preview}`
       );
+    }
+
+    // Framer source type 검증
+    const sourceData = data.source as { type?: string; framer?: unknown } | undefined;
+    if (sourceData?.type === "framer") {
+      // framer 필드 존재 확인 (선택적 경고)
+      if (!sourceData.framer) {
+        result.warnings.push(
+          "Framer source type but no framer data - consider adding detected animations"
+        );
+      }
+
+      // 애니메이션 관련 태그 권장
+      const hasAnimationTag = metadata.tags?.functional?.some((t: string) =>
+        ["animation", "scroll-animation", "hover-effect"].includes(t)
+      );
+      if (!hasAnimationTag) {
+        result.warnings.push(
+          "Framer components often have animations - consider adding animation-related tags"
+        );
+      }
+    }
+
+    // source.type 유효성 검증 (유효한 값인지)
+    const validSourceTypes = ["url", "image", "manual", "framer"];
+    if (
+      sourceData?.type &&
+      !validSourceTypes.includes(sourceData.type)
+    ) {
+      result.errors.push(
+        `Invalid source.type: ${sourceData.type} (valid: ${validSourceTypes.join(", ")})`
+      );
+      result.valid = false;
     }
   } catch (e) {
     result.valid = false;

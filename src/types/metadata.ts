@@ -97,14 +97,31 @@ export const PartialMetadataSchema = MetadataSchema.partial().extend({
 export type PartialMetadata = z.infer<typeof PartialMetadataSchema>;
 
 /**
+ * Framer 특화 정보 스키마
+ */
+export const FramerSourceSchema = z.object({
+  detectedAnimations: z
+    .array(
+      z.object({
+        type: z.string(),
+        target: z.string(),
+        delay: z.number().optional(),
+      })
+    )
+    .optional(),
+  framerName: z.string().optional(),
+});
+
+/**
  * Source 정보 스키마 (URL 스크래핑 시 사용)
  */
 export const SourceSchema = z.object({
-  type: z.enum(["url", "image", "manual"]),
+  type: z.enum(["url", "image", "manual", "framer"]),
   url: z.string().url().optional(),
   scrapedAt: z.string().optional(),
   sectionIndex: z.number().optional(),
   pageTitle: z.string().optional(),
+  framer: FramerSourceSchema.optional(),
 });
 
 export type Source = z.infer<typeof SourceSchema>;

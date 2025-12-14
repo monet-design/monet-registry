@@ -114,6 +114,7 @@ export interface ScrapeResult {
   images: ImageInfo[];
   fonts: FontInfo[];
   videos: VideoInfo[];
+  framer?: FramerInfo;
   metadata: {
     url: string;
     domain: string;
@@ -213,3 +214,45 @@ export const SEMANTIC_PRIORITY = [
   "aside",
   "footer",
 ];
+
+// ============================================
+// Framer 특화 타입
+// ============================================
+
+export interface FramerElementInfo {
+  /** CSS 선택자 */
+  selector: string;
+  /** Framer 에디터 레이어명 (data-framer-name) */
+  framerName?: string;
+  /** 애니메이션 고유 ID (data-framer-appear-id) */
+  framerAppearId?: string;
+  /** 컴포넌트 유형 (data-framer-component-type) */
+  framerComponentType?: string;
+  /** 초기 transform 값 */
+  initialTransform?: string;
+  /** 초기 opacity 값 */
+  initialOpacity?: string;
+  /** CSS transition */
+  transition?: string;
+  /** CSS animation */
+  animation?: string;
+}
+
+export interface FramerAnimationPattern {
+  type: "fade-up" | "fade-in" | "scale-in" | "slide-in" | "stagger";
+  target: string;
+  initial: Record<string, number | string>;
+  animate: Record<string, number | string>;
+  transition: {
+    duration: number;
+    ease: string;
+    delay?: number;
+  };
+}
+
+export interface FramerInfo {
+  isFramerSite: boolean;
+  elements: FramerElementInfo[];
+  animations: FramerAnimationPattern[];
+  cssVariables: Record<string, string>;
+}

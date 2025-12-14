@@ -31,10 +31,18 @@ interface MetadataYaml {
   dependencies?: string[];
   source?: {
     name?: string;
-    type?: string;
+    type?: "url" | "image" | "manual" | "framer";
     url?: string;
     scrapedAt?: string;
     sectionIndex?: number;
+    framer?: {
+      detectedAnimations?: Array<{
+        type: string;
+        target: string;
+        delay?: number;
+      }>;
+      framerName?: string;
+    };
   };
   parentPage?: string;
   createdAt?: string;
@@ -85,10 +93,18 @@ interface RegistryEntry {
   componentPath: string;
   parentPage?: string;
   source?: {
-    type?: string;
+    type?: "url" | "image" | "manual" | "framer";
     url?: string;
     scrapedAt?: string;
     sectionIndex?: number;
+    framer?: {
+      detectedAnimations?: Array<{
+        type: string;
+        target: string;
+        delay?: number;
+      }>;
+      framerName?: string;
+    };
   };
   createdAt?: string;
   status: string;
@@ -185,6 +201,7 @@ async function main() {
               url: metadata.source.url,
               scrapedAt: metadata.source.scrapedAt,
               sectionIndex: metadata.source.sectionIndex,
+              framer: metadata.source.framer,
             }
           : undefined,
         createdAt: metadata.createdAt,
@@ -308,6 +325,7 @@ async function main() {
                 type: metadata.source.type,
                 url: metadata.source.url,
                 scrapedAt: metadata.source.scrapedAt,
+                framer: metadata.source.framer,
               }
             : undefined,
           createdAt: metadata.createdAt,

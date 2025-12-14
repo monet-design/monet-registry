@@ -11,6 +11,7 @@ import puppeteer, { Page } from "puppeteer";
 import * as fs from "fs";
 import * as path from "path";
 import { analyzeDOM } from "./html-analyzer";
+import { extractFramerSiteData } from "./framer-extractor";
 import type {
   ScrapeOptions,
   ScrapeResult,
@@ -19,6 +20,7 @@ import type {
   ImageInfo,
   FontInfo,
   VideoInfo,
+  FramerInfo,
 } from "./types";
 
 const DEFAULT_VIEWPORT = { width: 1440, height: 900 };
@@ -885,7 +887,7 @@ export async function scrapeWebsite(
     );
 
     // 비디오 추출 및 썸네일 다운로드
-    console.log("[9/9] Extracting videos and downloading thumbnails...");
+    console.log("[9/10] Extracting videos and downloading thumbnails...");
     const rawVideos = await extractVideos(page, url, sections);
     console.log(`  Found ${rawVideos.length} videos`);
     const videos = await downloadVideoThumbnails(rawVideos, outputDir);
@@ -893,6 +895,28 @@ export async function scrapeWebsite(
       path.join(outputDir, "videos.json"),
       JSON.stringify(videos, null, 2)
     );
+
+    // Framer 사이트 감지 및 데이터 추출
+    console.log("[10/10] Detecting Framer site and extracting data...");
+    let framerInfo: FramerInfo | undefined;
+    const framerData = await extractFramerSiteData(page);
+
+    if (framerData.isFramerSite) {
+      console.log(`  ✓ Framer site detected!`);
+      console.log(`    - Elements: ${framerData.elements.length}`);
+      console.log(`    - Animations: ${framerData.animations.length}`);
+      console.log(`    - CSS Variables: ${Object.keys(framerData.cssVariables).length}`);
+
+      framerInfo = framerData;
+
+      // framer.json 저장
+      fs.writeFileSync(
+        path.join(outputDir, "framer.json"),
+        JSON.stringify(framerInfo, null, 2)
+      );
+    } else {
+      console.log(`  - Not a Framer site`);
+    }
 
     await browser.close();
 
@@ -920,6 +944,7 @@ export async function scrapeWebsite(
       images,
       fonts,
       videos,
+      framer: framerInfo,
       metadata: {
         url,
         domain,
@@ -1004,6 +1029,9 @@ async function main() {
   console.log(`  - ${result.outputDir}/fonts.json`);
   console.log(`  - ${result.outputDir}/videos.json`);
   console.log(`  - ${result.outputDir}/metadata.json`);
+  if (result.framer?.isFramerSite) {
+    console.log(`  - ${result.outputDir}/framer.json`);
+  }
   console.log(`  - ${result.outputDir}/sections/section-*.png`);
   console.log(`  - ${result.outputDir}/sections/section-*.html`);
   console.log(`  - ${result.outputDir}/images/*`);

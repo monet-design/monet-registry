@@ -22,9 +22,53 @@ npx tsx scripts/scrape/scrape-website.ts --url "{URL}"
 - `public/scraped/{domain}-{date}/sections.json` - 1차 분할된 섹션 정보
 - `public/scraped/{domain}-{date}/images.json` - 추출된 이미지 정보
 - `public/scraped/{domain}-{date}/videos.json` - 추출된 비디오 정보 (YouTube, HTML5 video)
+- `public/scraped/{domain}-{date}/framer.json` - Framer 사이트 정보 (Framer 사이트인 경우에만)
 - `public/scraped/{domain}-{date}/sections/section-*.png` - 섹션별 스크린샷
 - `public/scraped/{domain}-{date}/sections/section-*.html` - 섹션별 HTML
 - `public/scraped/{domain}-{date}/videos/thumb-*.jpg` - 비디오 썸네일
+
+## 1.5단계: Framer 사이트 확인
+
+스크래핑 결과에서 `framer.json`이 생성되었는지 확인하세요:
+
+```bash
+ls public/scraped/{domain}-{date}/framer.json
+```
+
+**Framer 사이트인 경우:**
+- `framer.json`의 `isFramerSite: true` 확인
+- `animations` 배열에서 각 요소의 애니메이션 패턴 파악
+- `elements` 배열에서 `framerName`으로 레이어 구조 이해
+
+**framer.json 구조:**
+```json
+{
+  "isFramerSite": true,
+  "elements": [
+    {
+      "selector": "[data-framer-name=\"Hero\"]",
+      "framerName": "Hero",
+      "initialOpacity": "0",
+      "initialTransform": "translateY(30px)"
+    }
+  ],
+  "animations": [
+    {
+      "type": "fade-up",
+      "target": "Hero",
+      "initial": { "opacity": 0, "y": 30 },
+      "animate": { "opacity": 1, "y": 0 },
+      "transition": { "duration": 0.6, "ease": "easeOut" }
+    }
+  ],
+  "cssVariables": {}
+}
+```
+
+**Framer 사이트 컴포넌트 생성 시:**
+- `--source-type "framer"` 옵션 사용
+- 애니메이션 정보를 `--tags-functional "animation, scroll-animation"` 등으로 포함
+- img-to-component에서 framer.json 정보를 참고하여 motion/react 애니메이션 구현
 
 ## 2단계: 섹션 분할 검증
 
@@ -60,7 +104,7 @@ npx tsx scripts/scrape/scrape-website.ts --url "{URL}"
 **섹션 이름 규칙**: `{domain}-{category}-{index}`
 - 예: `example-com-hero-0`, `example-com-pricing-1`, `example-com-footer-2`
 
-**호출 예시:**
+**호출 예시 (일반 사이트):**
 ```
 이미지: public/scraped/{domain}-{date}/sections/section-0.png
 
@@ -74,6 +118,26 @@ python3 scripts/create-registry-component.py \
   --source-url "{URL}" \
   --section-index {index} \
   --tags-functional "{기능태그들}" \
+  --tags-style "{스타일태그들}" \
+  --tags-layout "{레이아웃태그들}" \
+  --tags-industry "{산업태그들}"
+```
+
+**호출 예시 (Framer 사이트):**
+```
+이미지: public/scraped/{domain}-{date}/sections/section-0.png
+
+python3 scripts/create-registry-component.py \
+  --name "{domain}-{category}-{index}" \
+  --category "{category}" \
+  --image-path "scraped/{domain}-{date}/sections/section-{index}.png" \
+  --keywords "{키워드1}, {키워드2}, ..." \
+  --language "{en 또는 ko}" \
+  --parent-page "{domain}-landing" \
+  --source-url "{URL}" \
+  --source-type "framer" \
+  --section-index {index} \
+  --tags-functional "animation, scroll-animation, {기타태그들}" \
   --tags-style "{스타일태그들}" \
   --tags-layout "{레이아웃태그들}" \
   --tags-industry "{산업태그들}"

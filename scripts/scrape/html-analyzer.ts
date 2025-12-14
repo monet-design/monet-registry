@@ -7,7 +7,9 @@ import {
   DOMSection,
   CATEGORY_HINTS,
   SEMANTIC_PRIORITY,
+  FramerElementInfo,
 } from "./types";
+import { inferCategoryFromFramerName } from "./framer-extractor";
 
 /**
  * DOM 노드에서 CSS 선택자 생성
@@ -27,8 +29,19 @@ function buildSelector(node: DOMNode): string {
 
 /**
  * DOM 노드의 텍스트에서 카테고리 추론
+ * @param node DOM 노드
+ * @param framerName Framer 레이어명 (data-framer-name 속성값)
  */
-function inferCategory(node: DOMNode): string | null {
+function inferCategory(node: DOMNode, framerName?: string): string | null {
+  // Framer 레이어명이 있으면 우선 확인 (가장 정확)
+  if (framerName) {
+    const framerCategory = inferCategoryFromFramerName(framerName);
+    if (framerCategory) {
+      return framerCategory;
+    }
+  }
+
+  // 기존 로직: 태그, id, className에서 추론
   const textToSearch = [node.tag, node.id, node.className]
     .filter(Boolean)
     .join(" ")
@@ -41,6 +54,48 @@ function inferCategory(node: DOMNode): string | null {
   }
 
   return null;
+}
+
+/**
+ * Framer 요소 정보를 사용하여 DOM 섹션의 카테고리를 보강
+ */
+export function enhanceSectionsWithFramerData(
+  sections: DOMSection[],
+  framerElements: FramerElementInfo[]
+): DOMSection[] {
+  if (framerElements.length === 0) {
+    return sections;
+  }
+
+  return sections.map((section) => {
+    // 이미 카테고리가 있으면 유지
+    if (section.category) {
+      return section;
+    }
+
+    // Framer 요소 중 해당 섹션과 관련된 것 찾기
+    const relatedFramerEl = framerElements.find((el) => {
+      // selector가 섹션 selector에 포함되거나 매칭
+      if (el.framerName) {
+        const sectionText = [section.tag, section.selector].join(" ").toLowerCase();
+        return sectionText.includes(el.framerName.toLowerCase());
+      }
+      return false;
+    });
+
+    if (relatedFramerEl?.framerName) {
+      const framerCategory = inferCategoryFromFramerName(relatedFramerEl.framerName);
+      if (framerCategory) {
+        return {
+          ...section,
+          category: framerCategory,
+          confidence: 0.85, // Framer 레이어 기반 추론은 높은 신뢰도
+        };
+      }
+    }
+
+    return section;
+  });
 }
 
 /**

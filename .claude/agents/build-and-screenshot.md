@@ -50,6 +50,15 @@ When fixing metadata errors, refer to these files:
 
 `en`, `ko`
 
+### Source Type
+
+`url`, `image`, `manual`, `framer`
+
+- `url`: 일반 웹사이트에서 스크래핑한 컴포넌트
+- `image`: 이미지에서 직접 생성한 컴포넌트
+- `manual`: 수동으로 생성한 컴포넌트
+- `framer`: Framer 사이트에서 스크래핑한 컴포넌트 (애니메이션 정보 포함)
+
 ---
 
 ## Step 1: Validate Metadata
@@ -95,6 +104,8 @@ When metadata validation or build fails, parse error messages and apply fixes:
 | YAML parse error               | Fix indentation, quotes, or special characters                                         |
 | Missing required field         | Add default value or infer from folder name/component analysis                         |
 | `images.preview` empty/missing | **IGNORE** - Do not treat as error or warning                                          |
+| `source.type` error            | Use valid value: `url`, `image`, `manual`, or `framer`                                 |
+| Framer source without data     | Add `framer` field with `detectedAnimations` or add animation tags                     |
 
 ### Auto-Fix Process
 

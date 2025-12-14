@@ -1,0 +1,57 @@
+schemaVersion: "2.0"
+name: greetinghr-feature-4
+category: feature
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/greetinghr-com-2025-12-14/sections/section-4.png
+
+freeformKeywords:
+  - feature
+  - tabs
+  - recruitment
+  - hr
+  - hiring
+  - applicant tracking
+  - job posting
+  - assessment
+  - management
+  - saas
+  - 채용
+  - 공고관리
+  - 지원자관리
+  - 평가관리
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-14T02:58:09Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - tabs
+    - video
+    - scroll-animation
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+    - full-width
+  industry:
+    - saas
+    - hr
+    - recruitment
+
+parentPage: greetinghr-landing
+
+source:
+  type: url
+  url: https://www.greetinghr.com/
+  scrapedAt: "2025-12-14T02:58:09Z"
+  sectionIndex: 4

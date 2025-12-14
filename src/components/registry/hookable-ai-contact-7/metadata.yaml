@@ -1,0 +1,50 @@
+schemaVersion: "2.0"
+name: hookable-ai-contact-7
+category: contact
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/hookable-ai-2025-12-14/sections/section-7.png
+
+freeformKeywords:
+  - contact
+  - form
+  - 문의
+  - 연락처
+  - email
+  - lead capture
+  - two-column
+  - gradient border
+  - 문의하기
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-14T03:03:52Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - form
+    - email-capture
+    - lead-capture
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - gradient
+  layout:
+    - two-column
+    - split-layout
+  industry:
+    - saas
+    - ai
+    - startup
+
+parentPage: hookable-ai-landing
+
+source:
+  type: url
+  url: https://www.hookable.ai/
+  scrapedAt: "2025-12-14T03:03:52Z"
+  sectionIndex: 7

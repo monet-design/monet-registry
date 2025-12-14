@@ -1,0 +1,50 @@
+schemaVersion: "2.0"
+name: greetinghr-hero-0
+category: hero
+
+images:
+  preview: public/scraped/greetinghr-com-2025-12-14/sections/section-0.png
+
+freeformKeywords:
+  - hero
+  - landing
+  - korean
+  - hr
+  - recruitment
+  - hiring
+  - ats
+  - saas
+  - 채용
+  - 그리팅
+  - 채용관리
+
+fontFamily:
+  - Pretendard
+
+createdAt: "2025-12-14T02:58:13Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - lead-capture
+  style:
+    - modern
+    - light-theme
+    - sans-serif
+    - gradient
+  layout:
+    - centered
+    - full-width
+  industry:
+    - hr
+    - saas
+    - b2b
+
+parentPage: greetinghr-landing
+
+source:
+  type: url
+  url: https://www.greetinghr.com/
+  scrapedAt: "2025-12-14T02:58:13Z"
+  sectionIndex: 0

@@ -1,0 +1,49 @@
+schemaVersion: "2.0"
+name: hookable-ai-testimonial-4
+category: testimonial
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/hookable-ai-2025-12-14/sections/section-4.png
+
+freeformKeywords:
+  - testimonial
+  - 고객후기
+  - 리뷰
+  - social proof
+  - grid
+  - 통계
+  - 사용자후기
+  - AI
+  - 마케팅
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-14T02:58:10Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - grid
+    - social-proof
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - colorful
+  layout:
+    - grid
+    - centered
+  industry:
+    - ai
+    - saas
+    - marketing
+
+parentPage: hookable-ai-landing
+
+source:
+  type: url
+  url: https://www.hookable.ai/
+  scrapedAt: "2025-12-14T02:58:10Z"
+  sectionIndex: 4

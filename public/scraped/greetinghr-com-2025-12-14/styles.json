@@ -1,0 +1,82 @@
+{
+  "nav.framer-DiNwB": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "sans-serif",
+    "fontSize": "12px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.framer-s9m2d0": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "sans-serif",
+    "fontSize": "12px",
+    "padding": "180px 15px 80px",
+    "margin": "0px"
+  },
+  "section#features.framer-viu5kb": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "sans-serif",
+    "fontSize": "12px",
+    "padding": "96px 15px 48px",
+    "margin": "0px"
+  },
+  "section#features-1.framer-1r8m4u": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "sans-serif",
+    "fontSize": "12px",
+    "padding": "0px 15px 48px",
+    "margin": "0px"
+  },
+  "section.framer-l43ht3": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "sans-serif",
+    "fontSize": "12px",
+    "padding": "120px 15px 0px",
+    "margin": "0px"
+  },
+  "section.framer-1f26whk": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "sans-serif",
+    "fontSize": "12px",
+    "padding": "140px 15px 0px",
+    "margin": "0px"
+  },
+  "section.framer-159xqr6": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "sans-serif",
+    "fontSize": "12px",
+    "padding": "140px 15px 0px",
+    "margin": "0px"
+  },
+  "section.framer-p80bcy": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "sans-serif",
+    "fontSize": "12px",
+    "padding": "140px 15px 80px",
+    "margin": "0px"
+  },
+  "section.framer-Wczyy": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "sans-serif",
+    "fontSize": "12px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "footer.framer-sIkOt": {
+    "backgroundColor": "rgb(250, 250, 250)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "sans-serif",
+    "fontSize": "12px",
+    "padding": "0px",
+    "margin": "0px"
+  }
+}

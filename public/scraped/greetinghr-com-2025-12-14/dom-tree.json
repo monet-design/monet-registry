@@ -1,0 +1,1387 @@
+{
+  "tag": "body",
+  "id": null,
+  "className": "",
+  "rect": {
+    "top": 0,
+    "left": 0,
+    "width": 1440,
+    "height": 25304.109375
+  },
+  "children": [
+    {
+      "tag": "div",
+      "id": "main",
+      "className": "",
+      "rect": {
+        "top": 0,
+        "left": 0,
+        "width": 1440,
+        "height": 25304.109375
+      },
+      "children": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "framer-wL93A framer-kzkCC framer-Bl1xd framer-xVFWN framer-TDXjn framer-qVCIq framer-72rtr7",
+          "rect": {
+            "top": 0,
+            "left": 0,
+            "width": 1440,
+            "height": 25304.109375
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": "1araq2c",
+              "className": "framer-1araq2c-container",
+              "rect": {
+                "top": 0,
+                "left": 0,
+                "width": 1440,
+                "height": 110
+              },
+              "children": []
+            },
+            {
+              "tag": "div",
+              "id": "hero",
+              "className": "framer-1cbpzsy",
+              "rect": {
+                "top": 43,
+                "left": 0,
+                "width": 1440,
+                "height": 1057
+              },
+              "children": [
+                {
+                  "tag": "section",
+                  "id": null,
+                  "className": "framer-s9m2d0",
+                  "rect": {
+                    "top": 43,
+                    "left": 0,
+                    "width": 1440,
+                    "height": 1057
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "framer-qqishv",
+                      "rect": {
+                        "top": 223,
+                        "left": 15,
+                        "width": 1410,
+                        "height": 293
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "framer-1ewmhob",
+                          "rect": {
+                            "top": 223,
+                            "left": 30,
+                            "width": 1380,
+                            "height": 293
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": "hero-title",
+                              "className": "framer-16iulil",
+                              "rect": {
+                                "top": 223,
+                                "left": 120,
+                                "width": 1200,
+                                "height": 203
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "framer-1223b0y",
+                                  "rect": {
+                                    "top": 275,
+                                    "left": 120,
+                                    "width": 1200,
+                                    "height": 151
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "framer-uq5gkh",
+                                      "rect": {
+                                        "top": 362,
+                                        "left": 120,
+                                        "width": 1200,
+                                        "height": 64
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "p",
+                                          "id": null,
+                                          "className": "framer-text framer-styles-preset-1ip68rm",
+                                          "rect": {
+                                            "top": 362,
+                                            "left": 120,
+                                            "width": 1200,
+                                            "height": 64
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "framer-qxigwz-container hidden-1mlcvz2",
+                      "rect": {
+                        "top": 540,
+                        "left": 102,
+                        "width": 1236,
+                        "height": 480
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "className": "framer-69mcdh",
+              "rect": {
+                "top": 1100,
+                "left": 0,
+                "width": 1440,
+                "height": 628.46875
+              },
+              "children": [
+                {
+                  "tag": "section",
+                  "id": "features",
+                  "className": "framer-viu5kb",
+                  "rect": {
+                    "top": 1100,
+                    "left": 120,
+                    "width": 1200,
+                    "height": 628.46875
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "framer-7zlqcx",
+                      "rect": {
+                        "top": 1196,
+                        "left": 135,
+                        "width": 1170,
+                        "height": 89.59375
+                      },
+                      "children": [
+                        {
+                          "tag": "p",
+                          "id": null,
+                          "className": "framer-text framer-styles-preset-1eexnf2",
+                          "rect": {
+                            "top": 1196,
+                            "left": 135,
+                            "width": 1170,
+                            "height": 89.59375
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "framer-lf7x21",
+                      "rect": {
+                        "top": 1339.59375,
+                        "left": 135,
+                        "width": 1170,
+                        "height": 340.875
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "framer-1g5v1xk",
+                          "rect": {
+                            "top": 1339.59375,
+                            "left": 143,
+                            "width": 1154,
+                            "height": 69
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-pf8din",
+                              "rect": {
+                                "top": 1339.59375,
+                                "left": 143,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-1omwkau",
+                              "rect": {
+                                "top": 1339.59375,
+                                "left": 308,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-o2vi2o",
+                              "rect": {
+                                "top": 1339.59375,
+                                "left": 473,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-19h9re0",
+                              "rect": {
+                                "top": 1339.59375,
+                                "left": 638,
+                                "width": 164,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-agtvh6",
+                              "rect": {
+                                "top": 1339.59375,
+                                "left": 802,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-1b2a1lf",
+                              "rect": {
+                                "top": 1339.59375,
+                                "left": 967,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-1ujr4eo",
+                              "rect": {
+                                "top": 1339.59375,
+                                "left": 1132,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "framer-1o2g5dx",
+                                  "rect": {
+                                    "top": 1345.0546875,
+                                    "left": 1161,
+                                    "width": 107,
+                                    "height": 58.078125
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "",
+                                      "rect": {
+                                        "top": 1345.0546875,
+                                        "left": 1161,
+                                        "width": 107,
+                                        "height": 58.078125
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "id": null,
+                                          "className": "",
+                                          "rect": {
+                                            "top": 1345.0546875,
+                                            "left": 1161,
+                                            "width": 107,
+                                            "height": 58.078125
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "framer-1jtxq91",
+                          "rect": {
+                            "top": 1430.21875,
+                            "left": 143,
+                            "width": 1154,
+                            "height": 69
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-pnkk00",
+                              "rect": {
+                                "top": 1430.21875,
+                                "left": 143,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-zfh19d",
+                              "rect": {
+                                "top": 1430.21875,
+                                "left": 308,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-n5zh1k",
+                              "rect": {
+                                "top": 1430.21875,
+                                "left": 473,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-1m09m0u",
+                              "rect": {
+                                "top": 1430.21875,
+                                "left": 638,
+                                "width": 164,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-1smb624",
+                              "rect": {
+                                "top": 1430.21875,
+                                "left": 802,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-au7tn",
+                              "rect": {
+                                "top": 1430.21875,
+                                "left": 967,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-15krn22",
+                              "rect": {
+                                "top": 1430.21875,
+                                "left": 1132,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "framer-fffq3h",
+                          "rect": {
+                            "top": 1520.84375,
+                            "left": 143,
+                            "width": 1154,
+                            "height": 69
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-lnd8vk",
+                              "rect": {
+                                "top": 1520.84375,
+                                "left": 143,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-1q394v6",
+                              "rect": {
+                                "top": 1520.84375,
+                                "left": 308,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-w1qkrk",
+                              "rect": {
+                                "top": 1520.84375,
+                                "left": 473,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-1ts968f",
+                              "rect": {
+                                "top": 1520.84375,
+                                "left": 638,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "framer-p2zjfg",
+                                  "rect": {
+                                    "top": 1532.625,
+                                    "left": 656.5,
+                                    "width": 128,
+                                    "height": 56.21875
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "",
+                                      "rect": {
+                                        "top": 1532.625,
+                                        "left": 656.5,
+                                        "width": 128,
+                                        "height": 56.21875
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "id": null,
+                                          "className": "",
+                                          "rect": {
+                                            "top": 1532.625,
+                                            "left": 656.5,
+                                            "width": 128,
+                                            "height": 56.21875
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-uq829",
+                              "rect": {
+                                "top": 1520.84375,
+                                "left": 803,
+                                "width": 164,
+                                "height": 69
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "framer-14l99st",
+                                  "rect": {
+                                    "top": 1520.84375,
+                                    "left": 803,
+                                    "width": 165,
+                                    "height": 69
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-9rdm2c",
+                              "rect": {
+                                "top": 1520.84375,
+                                "left": 967,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-m1f6ec",
+                              "rect": {
+                                "top": 1520.84375,
+                                "left": 1132,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "framer-p4nswb",
+                          "rect": {
+                            "top": 1611.46875,
+                            "left": 143,
+                            "width": 1154,
+                            "height": 69
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-ik75qg",
+                              "rect": {
+                                "top": 1611.46875,
+                                "left": 143,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-hfrj9h",
+                              "rect": {
+                                "top": 1611.46875,
+                                "left": 308,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "framer-1ot1zno",
+                                  "rect": {
+                                    "top": 1617.6796875,
+                                    "left": 322,
+                                    "width": 137,
+                                    "height": 56.578125
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "",
+                                      "rect": {
+                                        "top": 1617.6796875,
+                                        "left": 322,
+                                        "width": 137,
+                                        "height": 56.578125
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "id": null,
+                                          "className": "",
+                                          "rect": {
+                                            "top": 1617.6796875,
+                                            "left": 322,
+                                            "width": 137,
+                                            "height": 56.578125
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-19hwx2",
+                              "rect": {
+                                "top": 1611.46875,
+                                "left": 473,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-1743jkz",
+                              "rect": {
+                                "top": 1611.46875,
+                                "left": 638,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-1ljwpmd",
+                              "rect": {
+                                "top": 1611.46875,
+                                "left": 803,
+                                "width": 164,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-1e6e5p9",
+                              "rect": {
+                                "top": 1611.46875,
+                                "left": 967,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-s17pkn",
+                              "rect": {
+                                "top": 1611.46875,
+                                "left": 1132,
+                                "width": 165,
+                                "height": 69
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "className": "framer-1fq4sst",
+              "rect": {
+                "top": 1728.46875,
+                "left": 120,
+                "width": 1200,
+                "height": 412
+              },
+              "children": [
+                {
+                  "tag": "section",
+                  "id": "features-1",
+                  "className": "framer-1r8m4u",
+                  "rect": {
+                    "top": 1767.46875,
+                    "left": 135,
+                    "width": 1170,
+                    "height": 334
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "id": "feature-1",
+              "className": "framer-109m8jh",
+              "rect": {
+                "top": 2140.46875,
+                "left": 0,
+                "width": 1440,
+                "height": 7469.8125
+              },
+              "children": [
+                {
+                  "tag": "section",
+                  "id": null,
+                  "className": "framer-l43ht3",
+                  "rect": {
+                    "top": 2140.46875,
+                    "left": 120,
+                    "width": 1200,
+                    "height": 7469.8125
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "framer-j3scep",
+                      "rect": {
+                        "top": 2260.46875,
+                        "left": 135,
+                        "width": 1170,
+                        "height": 295.8125
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "framer-15yu8bh-container",
+                          "rect": {
+                            "top": 2260.46875,
+                            "left": 135,
+                            "width": 1170,
+                            "height": 235.8125
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "framer-1k8icab",
+                      "rect": {
+                        "top": 2590.28125,
+                        "left": 135,
+                        "width": 1170,
+                        "height": 7020
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "framer-3kbox3",
+                          "rect": {
+                            "top": 2590.28125,
+                            "left": 199,
+                            "width": 280,
+                            "height": 4320
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "framer-1gcugug",
+                          "rect": {
+                            "top": 2590.28125,
+                            "left": 539,
+                            "width": 702,
+                            "height": 7020
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": "feature1-1",
+                              "className": "framer-1luf5hc",
+                              "rect": {
+                                "top": 2590.28125,
+                                "left": 539,
+                                "width": 702,
+                                "height": 900
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": "feature1-2",
+                              "className": "framer-1f75fz6",
+                              "rect": {
+                                "top": 3490.28125,
+                                "left": 539,
+                                "width": 702,
+                                "height": 900
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": "feature1-3",
+                              "className": "framer-14iqvw2",
+                              "rect": {
+                                "top": 4390.28125,
+                                "left": 539,
+                                "width": 702,
+                                "height": 900
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": "feature1-4",
+                              "className": "framer-6fgyz8",
+                              "rect": {
+                                "top": 5290.28125,
+                                "left": 539,
+                                "width": 702,
+                                "height": 4320
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "className": "framer-7zjr8k",
+              "rect": {
+                "top": 9610.28125,
+                "left": 0,
+                "width": 1440,
+                "height": 615
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "framer-1b2381b",
+                  "rect": {
+                    "top": 9720.28125,
+                    "left": 120,
+                    "width": 1200,
+                    "height": 415
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "framer-qvwmcv hidden-1mlcvz2",
+                      "rect": {
+                        "top": 9720.28125,
+                        "left": 135,
+                        "width": 597,
+                        "height": 259.859375
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "framer-1b2hro5",
+                          "rect": {
+                            "top": 9720.28125,
+                            "left": 135,
+                            "width": 597,
+                            "height": 259.859375
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-1ldtzqy",
+                              "rect": {
+                                "top": 9720.28125,
+                                "left": 135,
+                                "width": 597,
+                                "height": 195.0625
+                              },
+                              "children": [
+                                {
+                                  "tag": "svg",
+                                  "id": null,
+                                  "className": null,
+                                  "rect": {
+                                    "top": 9730.28125,
+                                    "left": 135,
+                                    "width": 597,
+                                    "height": 195.0625
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "foreignobject",
+                                      "id": null,
+                                      "className": null,
+                                      "rect": {
+                                        "top": 9730.28125,
+                                        "left": 135.00119018554688,
+                                        "width": 596.991943359375,
+                                        "height": 195.0625
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "p",
+                                          "id": null,
+                                          "className": "framer-text",
+                                          "rect": {
+                                            "top": 9730.28125,
+                                            "left": 135.00119018554688,
+                                            "width": 596.991943359375,
+                                            "height": 194.9169921875
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "framer-iz6i3i",
+                      "rect": {
+                        "top": 9720.28125,
+                        "left": 850,
+                        "width": 455,
+                        "height": 415
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "className": "framer-1leppza",
+              "rect": {
+                "top": 10225.28125,
+                "left": 0,
+                "width": 1440,
+                "height": 6589.8125
+              },
+              "children": [
+                {
+                  "tag": "section",
+                  "id": null,
+                  "className": "framer-1f26whk",
+                  "rect": {
+                    "top": 10225.28125,
+                    "left": 120,
+                    "width": 1200,
+                    "height": 6589.8125
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "framer-vlubsz",
+                      "rect": {
+                        "top": 10365.28125,
+                        "left": 135,
+                        "width": 1170,
+                        "height": 295.8125
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "framer-14m3wn0-container",
+                          "rect": {
+                            "top": 10365.28125,
+                            "left": 135,
+                            "width": 1170,
+                            "height": 235.8125
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "framer-360h3t",
+                      "rect": {
+                        "top": 10695.09375,
+                        "left": 135,
+                        "width": 1170,
+                        "height": 6120
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "framer-1hr8cc9",
+                          "rect": {
+                            "top": 10705.09375,
+                            "left": 199,
+                            "width": 280,
+                            "height": 4320
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "framer-8kzke7",
+                          "rect": {
+                            "top": 10695.09375,
+                            "left": 539,
+                            "width": 702,
+                            "height": 6120
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": "feature2-1",
+                              "className": "framer-14lnwr1",
+                              "rect": {
+                                "top": 10705.09375,
+                                "left": 539,
+                                "width": 702,
+                                "height": 900
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": "feature2-2",
+                              "className": "framer-1cjlfrr",
+                              "rect": {
+                                "top": 11605.09375,
+                                "left": 539,
+                                "width": 702,
+                                "height": 900
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": "feature2-3",
+                              "className": "framer-1onz071",
+                              "rect": {
+                                "top": 12505.09375,
+                                "left": 539,
+                                "width": 702,
+                                "height": 4320
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "className": "framer-rhuzsf hidden-1mlcvz2",
+              "rect": {
+                "top": 16815.09375,
+                "left": 0,
+                "width": 1440,
+                "height": 536
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "framer-1n3w7cu",
+                  "rect": {
+                    "top": 16925.09375,
+                    "left": 120,
+                    "width": 1200,
+                    "height": 336
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "framer-d6tvna",
+                      "rect": {
+                        "top": 16925.09375,
+                        "left": 135,
+                        "width": 597,
+                        "height": 217
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "framer-k9bwiz",
+                          "rect": {
+                            "top": 16925.09375,
+                            "left": 135,
+                            "width": 597,
+                            "height": 217
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "framer-okyp3a",
+                              "rect": {
+                                "top": 16925.09375,
+                                "left": 135,
+                                "width": 597,
+                                "height": 165
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "framer-pttism",
+                      "rect": {
+                        "top": 16925.09375,
+                        "left": 850,
+                        "width": 455,
+                        "height": 336
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "className": "framer-1t32wlf",
+              "rect": {
+                "top": 17351.09375,
+                "left": 0,
+                "width": 1440,
+                "height": 5329.8125
+              },
+              "children": [
+                {
+                  "tag": "section",
+                  "id": null,
+                  "className": "framer-159xqr6",
+                  "rect": {
+                    "top": 17351.09375,
+                    "left": 120,
+                    "width": 1200,
+                    "height": 5329.8125
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "framer-1wbyq79",
+                      "rect": {
+                        "top": 17491.09375,
+                        "left": 135,
+                        "width": 1170,
+                        "height": 295.8125
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "framer-1qcntcs-container",
+                          "rect": {
+                            "top": 17491.09375,
+                            "left": 135,
+                            "width": 1170,
+                            "height": 235.8125
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "framer-1tv1vy0",
+                      "rect": {
+                        "top": 17820.90625,
+                        "left": 135,
+                        "width": 1170,
+                        "height": 4860
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "framer-c3r0j4",
+                          "rect": {
+                            "top": 17830.90625,
+                            "left": 199,
+                            "width": 280,
+                            "height": 4860
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "framer-1i8b5ri",
+                          "rect": {
+                            "top": 17820.90625,
+                            "left": 539,
+                            "width": 702,
+                            "height": 2700
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": "feature3-1",
+                              "className": "framer-1jd8nbk",
+                              "rect": {
+                                "top": 17830.90625,
+                                "left": 539,
+                                "width": 702,
+                                "height": 900
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": "feature3-2",
+                              "className": "framer-3lfx7",
+                              "rect": {
+                                "top": 18730.90625,
+                                "left": 539,
+                                "width": 702,
+                                "height": 900
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "id": "feature3-3",
+                              "className": "framer-dagudh",
+                              "rect": {
+                                "top": 19630.90625,
+                                "left": 539,
+                                "width": 702,
+                                "height": 900
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "className": "framer-1c5z70l-container",
+              "rect": {
+                "top": 22680.90625,
+                "left": 0,
+                "width": 1440,
+                "height": 1263.109375
+              },
+              "children": []
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "className": "framer-1xz2pau-container hidden-1mlcvz2",
+              "rect": {
+                "top": 23944.015625,
+                "left": 0,
+                "width": 1440,
+                "height": 495
+              },
+              "children": []
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "className": "framer-1bikr98-container",
+              "rect": {
+                "top": 24439.015625,
+                "left": 0,
+                "width": 1440,
+                "height": 865.09375
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

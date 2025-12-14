@@ -1,0 +1,48 @@
+schemaVersion: "2.0"
+name: hookable-ai-header
+category: header
+
+images:
+  preview: public/scraped/hookable-ai-2025-12-14/sections/section-0.png
+
+freeformKeywords:
+  - header
+  - navigation
+  - navbar
+  - floating nav
+  - pill nav
+  - korean
+  - saas
+  - ai
+  - minimal
+  - clean
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-14T03:03:57Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - navigation
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - sans-serif
+  layout:
+    - centered
+    - full-width
+  industry:
+    - saas
+    - ai
+
+parentPage: hookable-ai-landing
+
+source:
+  type: url
+  url: https://www.hookable.ai/
+  scrapedAt: "2025-12-14T03:03:57Z"
+  sectionIndex: 0

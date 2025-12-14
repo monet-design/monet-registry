@@ -1,0 +1,3825 @@
+{
+  "isFramerSite": true,
+  "elements": [
+    {
+      "selector": "[data-framer-name=\"Desktop White\"]",
+      "framerName": "Desktop White",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Buttons Container\"]",
+      "framerName": "Buttons Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"In-Active Type-1\"]",
+      "framerName": "In-Active Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Gradiant\"]",
+      "framerName": "Gradiant",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"In-Active Type-1\"]",
+      "framerName": "In-Active Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Gradiant\"]",
+      "framerName": "Gradiant",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"In-Active Type-1\"]",
+      "framerName": "In-Active Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Gradiant\"]",
+      "framerName": "Gradiant",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Buttons Container\"]",
+      "framerName": "Buttons Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Button-Small\"]",
+      "framerName": "Button-Small",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Button-Small\"]",
+      "framerName": "Button-Small",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Background\"]",
+      "framerName": "Background",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-appear-id=\"1u0tsst\"]",
+      "framerName": "Left Abstract",
+      "framerAppearId": "1u0tsst",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Ellipse 3\"]",
+      "framerName": "Ellipse 3",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Ellipse 4\"]",
+      "framerName": "Ellipse 4",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Ellipse 2\"]",
+      "framerName": "Ellipse 2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Ellipse 1\"]",
+      "framerName": "Ellipse 1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Ellipse 3\"]",
+      "framerName": "Ellipse 3",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Ellipse 4\"]",
+      "framerName": "Ellipse 4",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Ellipse 2\"]",
+      "framerName": "Ellipse 2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Ellipse 1\"]",
+      "framerName": "Ellipse 1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-appear-id=\"q9vqft\"]",
+      "framerName": "Right Abstract",
+      "framerAppearId": "q9vqft",
+      "initialTransform": "matrix(-1, 0, 0, -1, 0, 0)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Ellipse 3\"]",
+      "framerName": "Ellipse 3",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Ellipse 4\"]",
+      "framerName": "Ellipse 4",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Ellipse 2\"]",
+      "framerName": "Ellipse 2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Ellipse 1\"]",
+      "framerName": "Ellipse 1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "initialTransform": "matrix(0.906308, -0.422618, 0.422618, 0.906308, 0, 0)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Ellipse 3\"]",
+      "framerName": "Ellipse 3",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Ellipse 4\"]",
+      "framerName": "Ellipse 4",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Ellipse 2\"]",
+      "framerName": "Ellipse 2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Ellipse 1\"]",
+      "framerName": "Ellipse 1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"BG\"]",
+      "framerName": "BG",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vertical Block\"]",
+      "framerName": "Vertical Block",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"BG\"]",
+      "framerName": "BG",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Noise\"]",
+      "framerName": "Noise",
+      "initialOpacity": "0.75",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Hero\"]",
+      "framerName": "Hero",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Main Container\"]",
+      "framerName": "Main Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-appear-id=\"14053kc\"]",
+      "framerName": "Text Container",
+      "framerAppearId": "14053kc",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-appear-id=\"rg3cpq\"]",
+      "framerName": "Heading",
+      "framerAppearId": "rg3cpq",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-appear-id=\"1dze1ig\"]",
+      "framerName": "Paragraph",
+      "framerAppearId": "1dze1ig",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-appear-id=\"19vi7jn\"]",
+      "framerAppearId": "19vi7jn",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Button-Big\"]",
+      "framerName": "Button-Big",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-appear-id=\"6f0uh4\"]",
+      "framerName": "Sub Container",
+      "framerAppearId": "6f0uh4",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Stars\"]",
+      "framerName": "Stars",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Line\"]",
+      "framerName": "Line",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-appear-id=\"fun89u\"]",
+      "framerName": "Image Container",
+      "framerAppearId": "fun89u",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Gradiant\"]",
+      "framerName": "Gradiant",
+      "initialOpacity": "0.5",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Brands\"]",
+      "framerName": "Brands",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Main Container\"]",
+      "framerName": "Main Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"로고 컨테이너\"]",
+      "framerName": "로고 컨테이너",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"로고 컨테이너\"]",
+      "framerName": "로고 컨테이너",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"로고 컨테이너\"]",
+      "framerName": "로고 컨테이너",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Clients Logo\"]",
+      "framerName": "Clients Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Features\"]",
+      "framerName": "Features",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-2\"]",
+      "framerName": "Type-2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Button/Nav Link Button\"]",
+      "framerName": "Button/Nav Link Button",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Gradiant\"]",
+      "framerName": "Gradiant",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Button/Nav Link Button\"]",
+      "framerName": "Button/Nav Link Button",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Gradiant\"]",
+      "framerName": "Gradiant",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Button/Nav Link Button\"]",
+      "framerName": "Button/Nav Link Button",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Gradiant\"]",
+      "framerName": "Gradiant",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-2\"]",
+      "framerName": "Type-2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Paragraph\"]",
+      "framerName": "Paragraph",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Line\"]",
+      "framerName": "Line",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Paragraph\"]",
+      "framerName": "Paragraph",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-2\"]",
+      "framerName": "Type-2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-2\"]",
+      "framerName": "Type-2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Abstract Design\"]",
+      "framerName": "Abstract Design",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Section\"]",
+      "framerName": "Section",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Main Container\"]",
+      "framerName": "Main Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "initialTransform": "matrix(1, 0, 0, 1, 0, -13)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "initialTransform": "matrix(1, 0, 0, 1, 0, -61.5)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Overlay\"]",
+      "framerName": "Overlay",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Overlay\"]",
+      "framerName": "Overlay",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Abstract Design\"]",
+      "framerName": "Abstract Design",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Testimonials\"]",
+      "framerName": "Testimonials",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Main Container\"]",
+      "framerName": "Main Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-2\"]",
+      "framerName": "Type-2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Items Container\"]",
+      "framerName": "Items Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Big Card\"]",
+      "framerName": "Big Card",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Number\"]",
+      "framerName": "Number",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Big Card\"]",
+      "framerName": "Big Card",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Number\"]",
+      "framerName": "Number",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Big Card\"]",
+      "framerName": "Big Card",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Name\"]",
+      "framerName": "Name",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Small Button\"]",
+      "framerName": "Small Button",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Big Card\"]",
+      "framerName": "Big Card",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Name\"]",
+      "framerName": "Name",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Small Button\"]",
+      "framerName": "Small Button",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Big Card\"]",
+      "framerName": "Big Card",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Name\"]",
+      "framerName": "Name",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Small Button\"]",
+      "framerName": "Small Button",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Big Card\"]",
+      "framerName": "Big Card",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Number\"]",
+      "framerName": "Number",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Big Card\"]",
+      "framerName": "Big Card",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Name\"]",
+      "framerName": "Name",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Small Button\"]",
+      "framerName": "Small Button",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Big Card\"]",
+      "framerName": "Big Card",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Number\"]",
+      "framerName": "Number",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Pricing\"]",
+      "framerName": "Pricing",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Main Container\"]",
+      "framerName": "Main Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-2\"]",
+      "framerName": "Type-2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Monthly\"]",
+      "framerName": "Monthly",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Toggle-Left\"]",
+      "framerName": "Toggle-Left",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Gradiant\"]",
+      "framerName": "Gradiant",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Card\"]",
+      "framerName": "Card",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Icon\"]",
+      "framerName": "Icon",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Paragraph\"]",
+      "framerName": "Paragraph",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Number\"]",
+      "framerName": "Number",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Button-Big\"]",
+      "framerName": "Button-Big",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Tick\"]",
+      "framerName": "Tick",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Icon\"]",
+      "framerName": "Icon",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Tick\"]",
+      "framerName": "Tick",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Icon\"]",
+      "framerName": "Icon",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Tick\"]",
+      "framerName": "Tick",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Icon\"]",
+      "framerName": "Icon",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Tick\"]",
+      "framerName": "Tick",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Icon\"]",
+      "framerName": "Icon",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Tick\"]",
+      "framerName": "Tick",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Icon\"]",
+      "framerName": "Icon",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Gradiant\"]",
+      "framerName": "Gradiant",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Gradiant\"]",
+      "framerName": "Gradiant",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Card\"]",
+      "framerName": "Card",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Icon\"]",
+      "framerName": "Icon",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Paragraph\"]",
+      "framerName": "Paragraph",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Number\"]",
+      "framerName": "Number",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Button-Big\"]",
+      "framerName": "Button-Big",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Tick\"]",
+      "framerName": "Tick",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Icon\"]",
+      "framerName": "Icon",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Tick\"]",
+      "framerName": "Tick",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Icon\"]",
+      "framerName": "Icon",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Gradiant\"]",
+      "framerName": "Gradiant",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Gradiant\"]",
+      "framerName": "Gradiant",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Card\"]",
+      "framerName": "Card",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Icon\"]",
+      "framerName": "Icon",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Paragraph\"]",
+      "framerName": "Paragraph",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Number\"]",
+      "framerName": "Number",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Button-Big\"]",
+      "framerName": "Button-Big",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Tick\"]",
+      "framerName": "Tick",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Icon\"]",
+      "framerName": "Icon",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Tick\"]",
+      "framerName": "Tick",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Icon\"]",
+      "framerName": "Icon",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Tick\"]",
+      "framerName": "Tick",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Icon\"]",
+      "framerName": "Icon",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Tick\"]",
+      "framerName": "Tick",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Icon\"]",
+      "framerName": "Icon",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Gradiant\"]",
+      "framerName": "Gradiant",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Gradiant\"]",
+      "framerName": "Gradiant",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Product Overview\"]",
+      "framerName": "Product Overview",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Main Container\"]",
+      "framerName": "Main Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Gradiant\"]",
+      "framerName": "Gradiant",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Paragraph\"]",
+      "framerName": "Paragraph",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Button-Big\"]",
+      "framerName": "Button-Big",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Dashboard Image\"]",
+      "framerName": "Dashboard Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Gradiant\"]",
+      "framerName": "Gradiant",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Gradiant\"]",
+      "framerName": "Gradiant",
+      "initialOpacity": "0.2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Paragraph\"]",
+      "framerName": "Paragraph",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Line\"]",
+      "framerName": "Line",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Paragraph\"]",
+      "framerName": "Paragraph",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Line\"]",
+      "framerName": "Line",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Paragraph\"]",
+      "framerName": "Paragraph",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Line\"]",
+      "framerName": "Line",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Paragraph\"]",
+      "framerName": "Paragraph",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Line\"]",
+      "framerName": "Line",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-1\"]",
+      "framerName": "Type-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Shape\"]",
+      "framerName": "Shape",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Contact\"]",
+      "framerName": "Contact",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Main Container\"]",
+      "framerName": "Main Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Helper/Section Header\"]",
+      "framerName": "Helper/Section Header",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-2\"]",
+      "framerName": "Type-2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub-Container\"]",
+      "framerName": "Sub-Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Button-Big\"]",
+      "framerName": "Button-Big",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub-Container\"]",
+      "framerName": "Sub-Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Button-Big\"]",
+      "framerName": "Button-Big",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Gradiant\"]",
+      "framerName": "Gradiant",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"FAQ\"]",
+      "framerName": "FAQ",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Main Container\"]",
+      "framerName": "Main Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type-2\"]",
+      "framerName": "Type-2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Big\"]",
+      "framerName": "Big",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Left Container\"]",
+      "framerName": "Left Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Open\"]",
+      "framerName": "Open",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Question\"]",
+      "framerName": "Question",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Plus\"]",
+      "framerName": "Plus",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Open\"]",
+      "framerName": "Open",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Question\"]",
+      "framerName": "Question",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Plus\"]",
+      "framerName": "Plus",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Open\"]",
+      "framerName": "Open",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Question\"]",
+      "framerName": "Question",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Plus\"]",
+      "framerName": "Plus",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Open\"]",
+      "framerName": "Open",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Question\"]",
+      "framerName": "Question",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Plus\"]",
+      "framerName": "Plus",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Open\"]",
+      "framerName": "Open",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Question\"]",
+      "framerName": "Question",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Plus\"]",
+      "framerName": "Plus",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Right Container\"]",
+      "framerName": "Right Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Open\"]",
+      "framerName": "Open",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Question\"]",
+      "framerName": "Question",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Plus\"]",
+      "framerName": "Plus",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Open\"]",
+      "framerName": "Open",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Question\"]",
+      "framerName": "Question",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Plus\"]",
+      "framerName": "Plus",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Open\"]",
+      "framerName": "Open",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Question\"]",
+      "framerName": "Question",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Plus\"]",
+      "framerName": "Plus",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Open\"]",
+      "framerName": "Open",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Question\"]",
+      "framerName": "Question",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Plus\"]",
+      "framerName": "Plus",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Open\"]",
+      "framerName": "Open",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Question\"]",
+      "framerName": "Question",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Plus\"]",
+      "framerName": "Plus",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Paragraph\"]",
+      "framerName": "Paragraph",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Button-Big\"]",
+      "framerName": "Button-Big",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo\"]",
+      "framerName": "Logo",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Sub Container\"]",
+      "framerName": "Sub Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Heading\"]",
+      "framerName": "Heading",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Links Container\"]",
+      "framerName": "Links Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Link\"]",
+      "framerName": "Text Link",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Link\"]",
+      "framerName": "Text Link",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Link\"]",
+      "framerName": "Text Link",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Link\"]",
+      "framerName": "Text Link",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Buttons Container\"]",
+      "framerName": "Buttons Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Big Button\"]",
+      "framerName": "Big Button",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Big Button\"]",
+      "framerName": "Big Button",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    }
+  ],
+  "animations": [
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Gradiant"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Gradiant"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Gradiant"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0.75
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Noise"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0.5
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Gradiant"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0.2
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Gradiant"
+    }
+  ],
+  "cssVariables": {}
+}

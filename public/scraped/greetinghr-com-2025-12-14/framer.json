@@ -1,0 +1,3745 @@
+{
+  "isFramerSite": true,
+  "elements": [
+    {
+      "selector": "[data-framer-name=\"Desktop [Head Banner]\"]",
+      "framerName": "Desktop [Head Banner]",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"On\"]",
+      "framerName": "On",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"x2\"]",
+      "framerName": "x2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Top Banner 1\"]",
+      "framerName": "Top Banner 1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type 1\"]",
+      "framerName": "Type 1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"BG\"]",
+      "framerName": "BG",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"<Max Width>\"]",
+      "framerName": "<Max Width>",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"New\"]",
+      "framerName": "New",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Badge [xs]\"]",
+      "framerName": "Badge [xs]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-9",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link\"]",
+      "framerName": "Link",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-11",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Top Banner 2\"]",
+      "framerName": "Top Banner 2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type 1\"]",
+      "framerName": "Type 1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"BG\"]",
+      "framerName": "BG",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"<Max Width>\"]",
+      "framerName": "<Max Width>",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"New\"]",
+      "framerName": "New",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Badge [xs]\"]",
+      "framerName": "Badge [xs]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-18",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link\"]",
+      "framerName": "Link",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-20",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"BG Black\"]",
+      "framerName": "BG Black",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"BG White\"]",
+      "framerName": "BG White",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"<Max Width>\"]",
+      "framerName": "<Max Width>",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Top Bar\"]",
+      "framerName": "Top Bar",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Contents\"]",
+      "framerName": "Contents",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"로고\"]",
+      "framerName": "로고",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-29",
+      "framerComponentType": "SVG",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"카테고리\"]",
+      "framerName": "카테고리",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Simple\"]",
+      "framerName": "Simple",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-32",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Dropdown\"]",
+      "framerName": "Dropdown",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-34",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Arrow\"]",
+      "framerName": "Arrow",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Dropdown\"]",
+      "framerName": "Dropdown",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-37",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Arrow\"]",
+      "framerName": "Arrow",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Dropdown\"]",
+      "framerName": "Dropdown",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-40",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Arrow\"]",
+      "framerName": "Arrow",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Simple\"]",
+      "framerName": "Simple",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-43",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Dropdown\"]",
+      "framerName": "Dropdown",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-45",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Arrow\"]",
+      "framerName": "Arrow",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"ㅁ\"]",
+      "framerName": "ㅁ",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"로그인\"]",
+      "framerName": "로그인",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"로그인\"]",
+      "framerName": "로그인",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Simple\"]",
+      "framerName": "Simple",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-51",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Primary Button\"]",
+      "framerName": "Primary Button",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Button [xs]\"]",
+      "framerName": "Button [xs]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-54",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Arcordian\"]",
+      "framerName": "Arcordian",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Side Section\"]",
+      "framerName": "Side Section",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Main Section\"]",
+      "framerName": "Main Section",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"제품 > 모집\"]",
+      "framerName": "제품 > 모집",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Title\"]",
+      "framerName": "Title",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-60",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"채용 홈페이지\"]",
+      "framerName": "채용 홈페이지",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-63",
+      "framerComponentType": "SVG",
+      "initialTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-64",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-65",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"인재풀 구축\"]",
+      "framerName": "인재풀 구축",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-68",
+      "framerComponentType": "SVG",
+      "initialTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-69",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-70",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"다이렉트 소싱\"]",
+      "framerName": "다이렉트 소싱",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-73",
+      "framerComponentType": "SVG",
+      "initialTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-74",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-75",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"제품 > 관리\"]",
+      "framerName": "제품 > 관리",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Title\"]",
+      "framerName": "Title",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-78",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"공고 관리\"]",
+      "framerName": "공고 관리",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-81",
+      "framerComponentType": "SVG",
+      "initialTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-82",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-83",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"지원자 관리\"]",
+      "framerName": "지원자 관리",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-86",
+      "framerComponentType": "SVG",
+      "initialTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-87",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-88",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"평가 관리\"]",
+      "framerName": "평가 관리",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-91",
+      "framerComponentType": "SVG",
+      "initialTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-92",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-93",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"제품 > 운영\"]",
+      "framerName": "제품 > 운영",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Title\"]",
+      "framerName": "Title",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-96",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"면접 일정 조율\"]",
+      "framerName": "면접 일정 조율",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-99",
+      "framerComponentType": "SVG",
+      "initialTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-100",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-101",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"지원자 연락\"]",
+      "framerName": "지원자 연락",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-104",
+      "framerComponentType": "SVG",
+      "initialTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-105",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-106",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"채용 데이터 분석\"]",
+      "framerName": "채용 데이터 분석",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-109",
+      "framerComponentType": "SVG",
+      "initialTransform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-110",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-111",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Bottom Banner\"]",
+      "framerName": "Bottom Banner",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"<Max Width>\"]",
+      "framerName": "<Max Width>",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-114",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-115",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"top-banner-trigger\"]",
+      "framerName": "top-banner-trigger",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Hero Section\"]",
+      "framerName": "Hero Section",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"<Max Width>\"]",
+      "framerName": "<Max Width>",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Hero Title\"]",
+      "framerName": "Hero Title",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-appear-id=\"1dyt6c9\"]",
+      "framerAppearId": "1dyt6c9",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Type 1 [Phone]\"]",
+      "framerName": "Type 1 [Phone]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-122",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-appear-id=\"1q5dniw\"]",
+      "framerAppearId": "1q5dniw",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-appear-id=\"uq5gkh\"]",
+      "framerAppearId": "uq5gkh",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-appear-id=\"o15z3c\"]",
+      "framerAppearId": "o15z3c",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-appear-id=\"1yy5e6y\"]",
+      "framerAppearId": "1yy5e6y",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Secondary Button\"]",
+      "framerName": "Secondary Button",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Button [Secondary]\"]",
+      "framerName": "Button [Secondary]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-129",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Primary Button\"]",
+      "framerName": "Primary Button",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Button [Primary]\"]",
+      "framerName": "Button [Primary]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-132",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-appear-id=\"qxigwz\"]",
+      "framerAppearId": "qxigwz",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Chapter.2 - Done\"]",
+      "framerName": "Chapter.2 - Done",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Chpater.2 - In\"]",
+      "framerName": "Chpater.2 - In",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"여성 모델\"]",
+      "framerName": "여성 모델",
+      "initialTransform": "matrix(1, 0, 0, 1, -297, 0)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"남성모델\"]",
+      "framerName": "남성모델",
+      "initialTransform": "matrix(1, 0, 0, 1, -188, 0)",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Mask\"]",
+      "framerName": "Mask",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-appear-id=\"1mh71z5\"]",
+      "framerName": "재생 속도 향상 2x",
+      "framerAppearId": "1mh71z5",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-140",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Chapter.2 - Done\"]",
+      "framerName": "Chapter.2 - Done",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Mask\"]",
+      "framerName": "Mask",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-appear-id=\"6vzm0j\"]",
+      "framerName": "소싱 효율 개선 67%",
+      "framerAppearId": "6vzm0j",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-144",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Chapter.2 - Done\"]",
+      "framerName": "Chapter.2 - Done",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Mask\"]",
+      "framerName": "Mask",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-appear-id=\"wriplh\"]",
+      "framerName": "꺾인 그래프",
+      "framerAppearId": "wriplh",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Vector\"]",
+      "framerName": "Vector",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Chapter.2 - Done\"]",
+      "framerName": "Chapter.2 - Done",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Mask\"]",
+      "framerName": "Mask",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-appear-id=\"3m1xrh\"]",
+      "framerName": "피라미드 그래프",
+      "framerAppearId": "3m1xrh",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Partners\"]",
+      "framerName": "Partners",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"<Max Width>\"]",
+      "framerName": "<Max Width>",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-156",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo Stack1\"]",
+      "framerName": "Logo Stack1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"GS ITM\"]",
+      "framerName": "GS ITM",
+      "initialTransform": "matrix(1, 0, 0, 1, -50, -16.5078)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"á_á_á_ºá_á_á_á_á_á_µá_á_á_á_á_á_µá_á_á_á_á_á_á_\"]",
+      "framerName": "á_á_á_ºá_á_á_á_á_á_µá_á_á_á_á_á_µá_á_á_á_á_á_á_",
+      "initialTransform": "matrix(1, 0, 0, 1, -68.5, -10.5312)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Frame 5562\"]",
+      "framerName": "Frame 5562",
+      "framerComponentType": "SVG",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "initialTransform": "matrix(1, 0, 0, 1, -48.5, -14.0312)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"download\"]",
+      "framerName": "download",
+      "initialTransform": "matrix(1, 0, 0, 1, -47, -11.6953)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Frame 51\"]",
+      "framerName": "Frame 51",
+      "framerComponentType": "SVG",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Áá®áá¡á«\"]",
+      "framerName": "Áá®áá¡á«",
+      "initialTransform": "matrix(1, 0, 0, 1, -57, -7.94531)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"SK_D_D_á_á_á_á_\"]",
+      "framerName": "SK_D_D_á_á_á_á_",
+      "initialTransform": "matrix(1, 0, 0, 1, -53.5, -29.0391)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo Stack3\"]",
+      "framerName": "Logo Stack3",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"삼양푸드\"]",
+      "framerName": "삼양푸드",
+      "initialTransform": "matrix(1, 0, 0, 1, -57, -14.0156)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"á_á_á_á_á_á_á_á_á_á_á_á_á_á_\"]",
+      "framerName": "á_á_á_á_á_á_á_á_á_á_á_á_á_á_",
+      "initialTransform": "matrix(1, 0, 0, 1, -40.5, -16.1562)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"download_1\"]",
+      "framerName": "download_1",
+      "initialTransform": "matrix(1, 0, 0, 1, -37, -18.7891)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"image_454\"]",
+      "framerName": "image_454",
+      "initialTransform": "matrix(1, 0, 0, 1, -39.5, -19.2266)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Frame 58\"]",
+      "framerName": "Frame 58",
+      "framerComponentType": "SVG",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"OBá_á_á_á_á_á_á_á_á_\"]",
+      "framerName": "OBá_á_á_á_á_á_á_á_á_",
+      "initialTransform": "matrix(1, 0, 0, 1, -50.5, -14.0234)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"image 454\"]",
+      "framerName": "image 454",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo Stack2\"]",
+      "framerName": "Logo Stack2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"한화오션\"]",
+      "framerName": "한화오션",
+      "initialTransform": "matrix(1, 0, 0, 1, -57.5, -17.2656)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"하이브\"]",
+      "framerName": "하이브",
+      "initialTransform": "matrix(1, 0, 0, 1, -50, -10.0156)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"JYP엔터테인먼트_로고\"]",
+      "framerName": "JYP엔터테인먼트_로고",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"image 466\"]",
+      "framerName": "image 466",
+      "initialTransform": "matrix(1, 0, 0, 1, -42, -14.3594)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"sm\"]",
+      "framerName": "sm",
+      "initialTransform": "matrix(1, 0, 0, 1, -64, 0)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"무신사_로고\"]",
+      "framerName": "무신사_로고",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"3739782630_20210119111730_2292621578 (1) 1\"]",
+      "framerName": "3739782630_20210119111730_2292621578 (1) 1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"kurly 1\"]",
+      "framerName": "kurly 1",
+      "initialTransform": "matrix(1, 0, 0, 1, -34.5, 0)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"image 439\"]",
+      "framerName": "image 439",
+      "initialTransform": "matrix(1, 0, 0, 1, -44, -7.50781)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo Stack2\"]",
+      "framerName": "Logo Stack2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Rectangle\"]",
+      "framerName": "Rectangle",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"á_á_á_á_á_á_á_á_á_á_µ_á_á_á_á_\"]",
+      "framerName": "á_á_á_á_á_á_á_á_á_á_µ_á_á_á_á_",
+      "initialTransform": "matrix(1, 0, 0, 1, -68.5, -28.2891)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"올리브영\"]",
+      "framerName": "올리브영",
+      "initialTransform": "matrix(1, 0, 0, 1, -52, -5.97656)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"이랜드이츠_로고\"]",
+      "framerName": "이랜드이츠_로고",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Rectangle\"]",
+      "framerName": "Rectangle",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"종근당건강_로고\"]",
+      "framerName": "종근당건강_로고",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"LF_로고\"]",
+      "framerName": "LF_로고",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"image 270\"]",
+      "framerName": "image 270",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"image 486\"]",
+      "framerName": "image 486",
+      "initialTransform": "matrix(1, 0, 0, 1, -72, -24.3594)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"현대약품_로고\"]",
+      "framerName": "현대약품_로고",
+      "framerComponentType": "SVG",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"CTA Section\"]",
+      "framerName": "CTA Section",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"<Max Width>\"]",
+      "framerName": "<Max Width>",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Content\"]",
+      "framerName": "Content",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Title\"]",
+      "framerName": "Title",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Description\"]",
+      "framerName": "Description",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Button [Primary]\"]",
+      "framerName": "Button [Primary]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-202",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"표지\"]",
+      "framerName": "표지",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Features 1\"]",
+      "framerName": "Features 1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"<Max Width>\"]",
+      "framerName": "<Max Width>",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default [Center]\"]",
+      "framerName": "Default [Center]",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default [Section Title]\"]",
+      "framerName": "Default [Section Title]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-208",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-209",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"ㅁ\"]",
+      "framerName": "ㅁ",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Feature 1\"]",
+      "framerName": "Feature 1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-215",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-217",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-219",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Current\"]",
+      "framerName": "Current",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-221",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image / Viewport\"]",
+      "framerName": "Image / Viewport",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Feature 1-1\"]",
+      "framerName": "Feature 1-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Title\"]",
+      "framerName": "Title",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-227",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-229",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Video\"]",
+      "framerName": "Video",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Feature 1-2\"]",
+      "framerName": "Feature 1-2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Title\"]",
+      "framerName": "Title",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-235",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-237",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Video\"]",
+      "framerName": "Video",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Feature 1-3\"]",
+      "framerName": "Feature 1-3",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Title\"]",
+      "framerName": "Title",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-243",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-245",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Video\"]",
+      "framerName": "Video",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Feature 1-3\"]",
+      "framerName": "Feature 1-3",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Title\"]",
+      "framerName": "Title",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-251",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-253",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Video\"]",
+      "framerName": "Video",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-255",
+      "framerComponentType": "RichTextContainer",
+      "initialTransform": "matrix(1, 0, 0, 1, 0, 10)",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-256",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Variant 4\"]",
+      "framerName": "Variant 4",
+      "initialTransform": "matrix(1, 0, 0, 1, 0, 10)",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Quotaion 1\"]",
+      "framerName": "Quotaion 1",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-259",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"기업 로고\"]",
+      "framerName": "기업 로고",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo 1\"]",
+      "framerName": "Logo 1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Quotaion 2\"]",
+      "framerName": "Quotaion 2",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-263",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"기업 로고\"]",
+      "framerName": "기업 로고",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo 2 (White)\"]",
+      "framerName": "Logo 2 (White)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Quotaion 3\"]",
+      "framerName": "Quotaion 3",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-267",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"기업 로고\"]",
+      "framerName": "기업 로고",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo 3 (White)\"]",
+      "framerName": "Logo 3 (White)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Quotaion 4\"]",
+      "framerName": "Quotaion 4",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-271",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"기업 로고\"]",
+      "framerName": "기업 로고",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo 4 (White)\"]",
+      "framerName": "Logo 4 (White)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Quotaion 5\"]",
+      "framerName": "Quotaion 5",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-275",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"기업 로고\"]",
+      "framerName": "기업 로고",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Logo 5 (White)\"]",
+      "framerName": "Logo 5 (White)",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"프로필\"]",
+      "framerName": "프로필",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"4\"]",
+      "framerName": "4",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Images\"]",
+      "framerName": "Images",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Profile 5-2\"]",
+      "framerName": "Profile 5-2",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "initialOpacity": "0.2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Profile 4-2\"]",
+      "framerName": "Profile 4-2",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "initialOpacity": "0.2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Profile 3-2\"]",
+      "framerName": "Profile 3-2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "initialOpacity": "0.2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Profile 2-2\"]",
+      "framerName": "Profile 2-2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "initialOpacity": "0.4",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Profile 1-2\"]",
+      "framerName": "Profile 1-2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "initialOpacity": "0.6",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Profile 5-1\"]",
+      "framerName": "Profile 5-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "initialOpacity": "0.8",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Profile 4-1\"]",
+      "framerName": "Profile 4-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Profile 3-1\"]",
+      "framerName": "Profile 3-1",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "initialOpacity": "0.6",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Profile 2-1\"]",
+      "framerName": "Profile 2-1",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "initialOpacity": "0.8",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Profile 1-1\"]",
+      "framerName": "Profile 1-1",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-301",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Features 2\"]",
+      "framerName": "Features 2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"<Max Width>\"]",
+      "framerName": "<Max Width>",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default [Center]\"]",
+      "framerName": "Default [Center]",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default [Section Title]\"]",
+      "framerName": "Default [Section Title]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-306",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-307",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"ㅁ\"]",
+      "framerName": "ㅁ",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Feature 1\"]",
+      "framerName": "Feature 1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-313",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-315",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Current\"]",
+      "framerName": "Current",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-317",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image / Viewport\"]",
+      "framerName": "Image / Viewport",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Feature 1-1\"]",
+      "framerName": "Feature 1-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Title\"]",
+      "framerName": "Title",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-323",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-325",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Video\"]",
+      "framerName": "Video",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Feature 1-2\"]",
+      "framerName": "Feature 1-2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Title\"]",
+      "framerName": "Title",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-331",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-333",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Video\"]",
+      "framerName": "Video",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Feature 1-3\"]",
+      "framerName": "Feature 1-3",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Title\"]",
+      "framerName": "Title",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-339",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-341",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Video\"]",
+      "framerName": "Video",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-343",
+      "framerComponentType": "RichTextContainer",
+      "initialTransform": "matrix(1, 0, 0, 1, 0, 10)",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-344",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Variant 4\"]",
+      "framerName": "Variant 4",
+      "initialTransform": "matrix(1, 0, 0, 1, 0, 10)",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Quotaion 1\"]",
+      "framerName": "Quotaion 1",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-347",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-348",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Quotaion 2\"]",
+      "framerName": "Quotaion 2",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-350",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-351",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Quotaion 3\"]",
+      "framerName": "Quotaion 3",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-353",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-354",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Quotaion 4\"]",
+      "framerName": "Quotaion 4",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-356",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-357",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Quotaion 5\"]",
+      "framerName": "Quotaion 5",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-359",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-360",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"4\"]",
+      "framerName": "4",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Images\"]",
+      "framerName": "Images",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Profile 5-2\"]",
+      "framerName": "Profile 5-2",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "initialOpacity": "0.2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Profile 4-2\"]",
+      "framerName": "Profile 4-2",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "initialOpacity": "0.2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Profile 3-2\"]",
+      "framerName": "Profile 3-2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "initialOpacity": "0.2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Profile 2-2\"]",
+      "framerName": "Profile 2-2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "initialOpacity": "0.4",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Profile 1-2\"]",
+      "framerName": "Profile 1-2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "initialOpacity": "0.6",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Profile 5-1\"]",
+      "framerName": "Profile 5-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "initialOpacity": "0.8",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Profile 4-1\"]",
+      "framerName": "Profile 4-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Profile 3-1\"]",
+      "framerName": "Profile 3-1",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "initialOpacity": "0.6",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Profile 2-1\"]",
+      "framerName": "Profile 2-1",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "initialOpacity": "0.8",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Profile 1-1\"]",
+      "framerName": "Profile 1-1",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-383",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Features 3\"]",
+      "framerName": "Features 3",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"<Max Width>\"]",
+      "framerName": "<Max Width>",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default [Center]\"]",
+      "framerName": "Default [Center]",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default [Section Title]\"]",
+      "framerName": "Default [Section Title]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-388",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-389",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"ㅁ\"]",
+      "framerName": "ㅁ",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Feature 1\"]",
+      "framerName": "Feature 1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-395",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-397",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Current\"]",
+      "framerName": "Current",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-399",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image / Viewport\"]",
+      "framerName": "Image / Viewport",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Feature 1-1\"]",
+      "framerName": "Feature 1-1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Title\"]",
+      "framerName": "Title",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-405",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-407",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Video\"]",
+      "framerName": "Video",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Feature 1-2\"]",
+      "framerName": "Feature 1-2",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Title\"]",
+      "framerName": "Title",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-413",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-415",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Video\"]",
+      "framerName": "Video",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Feature 1-3\"]",
+      "framerName": "Feature 1-3",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text\"]",
+      "framerName": "Text",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Title\"]",
+      "framerName": "Title",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-421",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-423",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Video\"]",
+      "framerName": "Video",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"<Max Width>\"]",
+      "framerName": "<Max Width>",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default [Center]\"]",
+      "framerName": "Default [Center]",
+      "initialTransform": "matrix(1, 0, 0, 1, 0, 10)",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default [Section Title]\"]",
+      "framerName": "Default [Section Title]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-429",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-430",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"ㅁ\"]",
+      "framerName": "ㅁ",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Container\"]",
+      "framerName": "Container",
+      "initialTransform": "matrix(1, 0, 0, 1, 0, 50)",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop [Default]\"]",
+      "framerName": "Desktop [Default]",
+      "initialTransform": "matrix(1, 0, 0, 1, 0, 10)",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Top Container\"]",
+      "framerName": "Top Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-436",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-437",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Bottom Container\"]",
+      "framerName": "Bottom Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"1\"]",
+      "framerName": "1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop [Wide]\"]",
+      "framerName": "Desktop [Wide]",
+      "initialTransform": "matrix(1, 0, 0, 1, 0, 10)",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Top Container\"]",
+      "framerName": "Top Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-445",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-446",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Bottom Container\"]",
+      "framerName": "Bottom Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"1\"]",
+      "framerName": "1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop [Default]\"]",
+      "framerName": "Desktop [Default]",
+      "initialTransform": "matrix(1, 0, 0, 1, 0, 10)",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Top Container\"]",
+      "framerName": "Top Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-454",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-455",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Bottom Container\"]",
+      "framerName": "Bottom Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"1\"]",
+      "framerName": "1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop [Default]\"]",
+      "framerName": "Desktop [Default]",
+      "initialTransform": "matrix(1, 0, 0, 1, 0, 10)",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Top Container\"]",
+      "framerName": "Top Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-463",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-464",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Bottom Container\"]",
+      "framerName": "Bottom Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"1\"]",
+      "framerName": "1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop [Default]\"]",
+      "framerName": "Desktop [Default]",
+      "initialTransform": "matrix(1, 0, 0, 1, 0, 10)",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Top Container\"]",
+      "framerName": "Top Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Text Container\"]",
+      "framerName": "Text Container",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-472",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-473",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Default\"]",
+      "framerName": "Default",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Bottom Container\"]",
+      "framerName": "Bottom Container",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"1\"]",
+      "framerName": "1",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Animation Blue [Desktop]\"]",
+      "framerName": "Animation Blue [Desktop]",
+      "initialTransform": "matrix(1, 0, 0, 1, 0, 10)",
+      "initialOpacity": "0",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"<Max Width>\"]",
+      "framerName": "<Max Width>",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Wrapper\"]",
+      "framerName": "Wrapper",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-481",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-482",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Button\"]",
+      "framerName": "Button",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Button [Primary]\"]",
+      "framerName": "Button [Primary]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-485",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Desktop\"]",
+      "framerName": "Desktop",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"<Max Width>\"]",
+      "framerName": "<Max Width>",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Column\"]",
+      "framerName": "Column",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Image\"]",
+      "framerName": "Image",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-490",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Screenshot 2025-02-24 at 9.08.51â¯PM 1\"]",
+      "framerName": "Screenshot 2025-02-24 at 9.08.51â¯PM 1",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-492",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Screenshot 2025-02-24 at 9.09.38â¯PM 1\"]",
+      "framerName": "Screenshot 2025-02-24 at 9.09.38â¯PM 1",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-494",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Screenshot 2025-02-24 at 9.07.57â¯PM 1\"]",
+      "framerName": "Screenshot 2025-02-24 at 9.07.57â¯PM 1",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-496",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Dynamic\"]",
+      "framerName": "Dynamic",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"linkedin\"]",
+      "framerName": "linkedin",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"graphic\"]",
+      "framerName": "graphic",
+      "framerComponentType": "SVG",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"youtube\"]",
+      "framerName": "youtube",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"youtube\"]",
+      "framerName": "youtube",
+      "framerComponentType": "SVG",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Column\"]",
+      "framerName": "Column",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Links\"]",
+      "framerName": "Links",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Links\"]",
+      "framerName": "Links",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"제품 소개\"]",
+      "framerName": "제품 소개",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-506",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-508",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-510",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-512",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-514",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-516",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-518",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-520",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-522",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-524",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-526",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-528",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"고객 사례\"]",
+      "framerName": "고객 사례",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-530",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-532",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-534",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-536",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"가격 안내\"]",
+      "framerName": "가격 안내",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-538",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-540",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"업종별 활용\"]",
+      "framerName": "업종별 활용",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-542",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-544",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-546",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-548",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-550",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-552",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-554",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-556",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-558",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"유용한 자료\"]",
+      "framerName": "유용한 자료",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-560",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-562",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-564",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-566",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-568",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-570",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-572",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-574",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-576",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-578",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"회사\"]",
+      "framerName": "회사",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-580",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-582",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [Footer Item]\"]",
+      "framerName": "Link [Footer Item]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-584",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [sm]\"]",
+      "framerName": "Link [sm]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-586",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [sm]\"]",
+      "framerName": "Link [sm]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-588",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "[data-framer-name=\"Link [sm]\"]",
+      "framerName": "Link [sm]",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-590",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    },
+    {
+      "selector": "framer-el-591",
+      "framerComponentType": "RichTextContainer",
+      "transition": "all"
+    }
+  ],
+  "animations": [
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Bottom Banner"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "남성모델"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "framer-el-255"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Variant 4"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Quotaion 1"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Quotaion 2"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Quotaion 3"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Quotaion 5"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Profile 5-2"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0.2
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Image"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Profile 4-2"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0.2
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Image"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0.2
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Image"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0.4
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Image"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0.6
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Image"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0.8
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Image"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Profile 3-1"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0.6
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Image"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Profile 2-1"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0.8
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Image"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Profile 1-1"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "framer-el-343"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Variant 4"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Quotaion 1"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Quotaion 2"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Quotaion 3"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Quotaion 5"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Profile 5-2"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0.2
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Image"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Profile 4-2"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0.2
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Image"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0.2
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Image"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0.4
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Image"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0.6
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Image"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0.8
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Image"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Profile 3-1"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0.6
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Image"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Profile 2-1"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0.8
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Image"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Profile 1-1"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Default [Center]"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Container"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Desktop [Default]"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Desktop [Wide]"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Desktop [Default]"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Desktop [Default]"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Desktop [Default]"
+    },
+    {
+      "type": "fade-in",
+      "initial": {
+        "opacity": 0
+      },
+      "animate": {
+        "opacity": 1
+      },
+      "transition": {
+        "duration": 0.5,
+        "ease": "easeOut"
+      },
+      "target": "Animation Blue [Desktop]"
+    }
+  ],
+  "cssVariables": {}
+}

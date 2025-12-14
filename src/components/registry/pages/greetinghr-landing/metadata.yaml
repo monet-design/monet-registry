@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: greetinghr-landing
+category: page
+images:
+  preview: scraped/greetinghr-com-2025-12-14/full-page.png
+title: greetinghr.com Landing Page
+sections:
+  - id: greetinghr-header
+    category: header
+    order: 0
+  - id: greetinghr-hero-0
+    category: hero
+    order: 1
+  - id: greetinghr-logo-cloud-1
+    category: logo-cloud
+    order: 2
+  - id: greetinghr-cta-2
+    category: cta
+    order: 3
+  - id: greetinghr-feature-3
+    category: feature
+    order: 4
+  - id: greetinghr-feature-4
+    category: feature
+    order: 5
+  - id: greetinghr-feature-5
+    category: feature
+    order: 6
+  - id: greetinghr-footer
+    category: footer
+    order: 7
+source:
+  type: url
+  url: https://www.greetinghr.com/
+  scrapedAt: "2025-12-14T02:47:13.459Z"
+pageInfo:
+  totalSections: 8
+freeformKeywords:
+  - complete landing page
+  - full page
+  - greetinghr.com
+  - hr tech
+  - recruitment
+  - korean
+createdAt: "2025-12-14T02:47:13.459Z"
+status: stable

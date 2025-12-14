@@ -1,0 +1,52 @@
+schemaVersion: "2.0"
+name: greetinghr-feature-5
+category: feature
+
+images:
+  preview: /scraped/greetinghr-com-2025-12-14/sections/section-5.png
+
+freeformKeywords:
+  - feature
+  - tabs
+  - HR
+  - recruitment
+  - interview scheduling
+  - applicant management
+  - data analytics
+  - SaaS
+  - vertical tabs
+  - Korean
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-14T02:58:07Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - tabs
+    - video
+    - scroll-animation
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+  layout:
+    - left-aligned
+    - single-column
+    - full-width
+  industry:
+    - saas
+    - hr
+    - recruitment
+
+parentPage: greetinghr-landing
+
+source:
+  type: url
+  url: https://www.greetinghr.com/
+  scrapedAt: "2025-12-14T02:58:07Z"
+  sectionIndex: 5

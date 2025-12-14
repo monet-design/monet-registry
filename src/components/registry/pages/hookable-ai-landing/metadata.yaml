@@ -1,0 +1,55 @@
+schemaVersion: "2.0"
+name: hookable-ai-landing
+category: page
+images:
+  preview: scraped/hookable-ai-2025-12-14/full-page.png
+title: hookable.ai Landing Page
+sections:
+  - id: hookable-ai-header
+    category: header
+    order: 0
+  - id: hookable-ai-hero-0
+    category: hero
+    order: 1
+  - id: hookable-ai-logo-cloud-1
+    category: logo-cloud
+    order: 2
+  - id: hookable-ai-feature-2
+    category: feature
+    order: 3
+  - id: hookable-ai-cta-3
+    category: cta
+    order: 4
+  - id: hookable-ai-testimonial-4
+    category: testimonial
+    order: 5
+  - id: hookable-ai-pricing-5
+    category: pricing
+    order: 6
+  - id: hookable-ai-feature-6
+    category: feature
+    order: 7
+  - id: hookable-ai-contact-7
+    category: contact
+    order: 8
+  - id: hookable-ai-faq-8
+    category: faq
+    order: 9
+  - id: hookable-ai-footer
+    category: footer
+    order: 10
+source:
+  type: url
+  url: https://www.hookable.ai/
+  scrapedAt: "2025-12-14T02:50:15.656Z"
+pageInfo:
+  totalSections: 11
+freeformKeywords:
+  - complete landing page
+  - full page
+  - hookable.ai
+  - ai
+  - e-commerce
+  - korean
+createdAt: "2025-12-14T02:50:15.656Z"
+status: stable

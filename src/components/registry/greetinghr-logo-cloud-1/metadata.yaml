@@ -1,0 +1,50 @@
+schemaVersion: "2.0"
+name: greetinghr-logo-cloud-1
+category: logo-cloud
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/greetinghr-com-2025-12-14/sections/section-1.png
+
+freeformKeywords:
+  - logo cloud
+  - company logos
+  - enterprise clients
+  - trust section
+  - client showcase
+  - brand logos
+  - partner logos
+  - social proof
+  - 기업 로고
+  - 고객사
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-14T02:58:13Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - static
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - clean
+  layout:
+    - centered
+    - grid
+    - full-width
+  industry:
+    - saas
+    - hr-tech
+    - enterprise
+
+parentPage: greetinghr-landing
+
+source:
+  type: url
+  url: https://www.greetinghr.com/
+  scrapedAt: "2025-12-14T02:58:13Z"
+  sectionIndex: 1

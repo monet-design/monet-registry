@@ -1,0 +1,397 @@
+[
+  {
+    "family": "Geist",
+    "url": "https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwYGFWfOw.woff2",
+    "source": "google-fonts",
+    "weights": [
+      "400",
+      "500"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "downloaded": false
+  },
+  {
+    "family": "Hanken Grotesk",
+    "url": "https://fonts.gstatic.com/s/hankengrotesk/v12/ieVq2YZDLWuGJpnzaiwFXS9tYvBRzyFLlZg_f_Ncs2Zq6_BM_Xg.woff2",
+    "source": "google-fonts",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "downloaded": false
+  },
+  {
+    "family": "Inter Tight",
+    "url": "https://fonts.gstatic.com/s/intertight/v9/NGSwv5HMAFg6IuGlBNMjxLsK8ah8QA.woff2",
+    "source": "google-fonts",
+    "weights": [
+      "500",
+      "600"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "downloaded": false
+  },
+  {
+    "family": "Outfit",
+    "url": "https://fonts.gstatic.com/s/outfit/v15/QGYyz_MVcBeNP4NjuGObqx1XmO1I4QK1O4i0ExAo.woff2",
+    "source": "google-fonts",
+    "weights": [
+      "500"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "downloaded": false
+  },
+  {
+    "family": "Pragati Narrow",
+    "url": "https://fonts.gstatic.com/s/pragatinarrow/v15/vm8vdRf0T0bS1ffgsPB7WZ-mD275wNJHMw.woff2",
+    "source": "google-fonts",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "downloaded": false
+  },
+  {
+    "family": "Work Sans",
+    "url": "https://fonts.gstatic.com/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_c6Dpp_k.woff2",
+    "source": "google-fonts",
+    "weights": [
+      "500",
+      "700"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "downloaded": false
+  },
+  {
+    "family": "Fragment Mono",
+    "url": "https://fonts.gstatic.com/s/fragmentmono/v6/4iCr6K5wfMRRjxp0DA6-2CLnB45HhrUI.woff2",
+    "source": "google-fonts",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "downloaded": false
+  },
+  {
+    "family": "Pretendard Regular",
+    "url": "https://framerusercontent.com/assets/55LnBXf9OpqcSWK3a14lCHLH0.woff2",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "localPath": "fonts/Pretendard-Regular.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "Pretendard Medium",
+    "url": "https://framerusercontent.com/assets/tJdZn7NXT7r7C7rUO5kunJ0O0Hw.woff2",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "localPath": "fonts/Pretendard-Medium.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "Pretendard SemiBold",
+    "url": "https://framerusercontent.com/assets/ornUnWEZNfM1BgRvN2NdulEOzUg.woff2",
+    "source": "custom",
+    "weights": [
+      "400",
+      "600"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "localPath": "fonts/Pretendard-SemiBold.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "Pretendard Bold",
+    "url": "https://framerusercontent.com/assets/TuJBOiOMgP7rMoeGfdGZWJ79p0.woff2",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "localPath": "fonts/Pretendard-Bold.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "Pretendard Light",
+    "url": "https://framerusercontent.com/assets/yyKXw5iFfHwKe7V2rIGgC85tl0o.woff2",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "localPath": "fonts/Pretendard-Light.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "Pretendard ExtraBold",
+    "url": "https://framerusercontent.com/assets/ZJjlt9x228jdkP6KnfJLws6HCvA.woff2",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "localPath": "fonts/Pretendard-ExtraBold.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "PP Neue Montreal Medium",
+    "url": "https://framerusercontent.com/assets/6uIfYl8bnz9kOy3KOuV7PxhFPhA.woff2",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "localPath": "fonts/PP-Neue-Montreal-Medium.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "Inter",
+    "url": "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
+    "source": "custom",
+    "weights": [
+      "400",
+      "900",
+      "700",
+      "500",
+      "600"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "localPath": "fonts/Inter.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "Poppins",
+    "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/NC2MP33RO4WQTSTEEAWBJLAEXNCNEQVF/7F4U3COKLHQH4WUH3AXPC7N4UELEWJQN/JMWNCAGBH3TLANIVQPVABVAVNV5QERTH.woff2",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "localPath": "fonts/Poppins.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "General Sans",
+    "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/3RZHWSNONLLWJK3RLPEKUZOMM56GO4LJ/BPDRY7AHVI3MCDXXVXTQQ76H3UXA63S3/SB2OEB6IKZPRR6JT4GFJ2TFT6HBB6AZN.woff2",
+    "source": "custom",
+    "weights": [
+      "500"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "localPath": "fonts/General-Sans.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "Inter Tight Placeholder",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Outfit Placeholder",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Geist Placeholder",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Pragati Narrow Placeholder",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Hanken Grotesk Placeholder",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Work Sans Placeholder",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Pretendard Regular Placeholder",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Pretendard Medium Placeholder",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Pretendard SemiBold Placeholder",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Pretendard Bold Placeholder",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Pretendard Light Placeholder",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Pretendard ExtraBold Placeholder",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Inter Placeholder",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Poppins Placeholder",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "General Sans Placeholder",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  }
+]

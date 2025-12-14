@@ -1,0 +1,54 @@
+schemaVersion: "2.0"
+name: greetinghr-header
+category: header
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/greetinghr-com-2025-12-14/sections/section-0.png
+
+freeformKeywords:
+  - header
+  - navigation
+  - navbar
+  - korean
+  - saas
+  - hr
+  - recruitment
+  - sticky header
+  - dropdown menu
+  - 헤더
+  - 네비게이션
+  - 그리팅
+  - 채용
+
+fontFamily:
+  - Geist
+
+createdAt: "2025-12-14T03:04:40Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - dropdown
+    - navigation
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+    - sans-serif
+  layout:
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - hr-tech
+    - recruitment
+
+parentPage: greetinghr-landing
+
+source:
+  type: url
+  url: https://www.greetinghr.com/
+  scrapedAt: "2025-12-14T03:04:40Z"
+  sectionIndex: 0

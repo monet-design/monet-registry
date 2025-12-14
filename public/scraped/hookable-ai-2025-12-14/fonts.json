@@ -1,0 +1,142 @@
+[
+  {
+    "family": "Inter Tight",
+    "url": "https://fonts.gstatic.com/s/intertight/v9/NGSnv5HMAFg6IuGlBNMjxJEL2VmU3NS7Z2mjPQ-aVi5SkK8.woff2",
+    "source": "google-fonts",
+    "weights": [
+      "500"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "downloaded": false
+  },
+  {
+    "family": "Rethink Sans",
+    "url": "https://fonts.gstatic.com/s/rethinksans/v7/AMODz4SDuXOMCPfdoglY9JQuWHBGG0X45DmqklNROEfsmJ-a.woff2",
+    "source": "google-fonts",
+    "weights": [
+      "500"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "format": "woff2",
+    "downloaded": false
+  },
+  {
+    "family": "Inter",
+    "url": "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
+    "source": "custom",
+    "weights": [
+      "400",
+      "500",
+      "700"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "localPath": "fonts/Inter.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "Inter Display",
+    "url": "https://framerusercontent.com/assets/ePuN3mCjzajIHnyCdvKBFiZkyY0.woff2",
+    "source": "custom",
+    "weights": [
+      "500",
+      "600",
+      "700"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "localPath": "fonts/Inter-Display.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "Switzer",
+    "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/5SZVFDB7V52TI6ULVC6J3WQZQCIZVDV5/ODYPSTCUDMKSTYIPTV4CLQ7URIK7XYBJ/YS3VPNVO4B3TOJMEXDGFZQ4TLZGGSRZC.woff2",
+    "source": "custom",
+    "weights": [
+      "600",
+      "900"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "localPath": "fonts/Switzer.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "Pretendard Variable Variable",
+    "url": "https://framerusercontent.com/assets/LBApvJ2KYroDiPrwqhnN29mW5Q.woff2",
+    "source": "custom",
+    "weights": [
+      "1000"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "localPath": "fonts/Pretendard-Variable-Variable.woff2",
+    "downloaded": true
+  },
+  {
+    "family": "Rethink Sans Placeholder",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Inter Tight Placeholder",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Inter Placeholder",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Inter Display Placeholder",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  },
+  {
+    "family": "Switzer Placeholder",
+    "source": "custom",
+    "weights": [
+      "400"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "downloaded": false
+  }
+]

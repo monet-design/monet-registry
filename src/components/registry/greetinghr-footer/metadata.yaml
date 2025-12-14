@@ -1,0 +1,48 @@
+schemaVersion: "2.0"
+name: greetinghr-footer
+category: footer
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/greetinghr-com-2025-12-14/full-page.png
+
+freeformKeywords:
+  - footer
+  - saas footer
+  - korean footer
+  - hr software
+  - recruitment
+  - ats
+  - 푸터
+  - 채용
+  - 그리팅
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-14T03:04:26Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - social-links
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - multi-column
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - hr-tech
+    - b2b
+
+parentPage: greetinghr-landing
+
+source:
+  type: url
+  url: https://www.greetinghr.com/
+  scrapedAt: "2025-12-14T03:04:26Z"

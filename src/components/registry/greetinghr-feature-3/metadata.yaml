@@ -1,0 +1,56 @@
+schemaVersion: "2.0"
+name: greetinghr-feature-3
+category: feature
+
+images:
+  preview: /registry/greetinghr-feature-3/preview.png
+
+freeformKeywords:
+  - feature
+  - tabs
+  - recruitment
+  - hiring
+  - hr
+  - saas
+  - talent
+  - career page
+  - talent pool
+  - direct sourcing
+  - volume hiring
+  - 채용
+  - 인재풀
+  - HR
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-14T02:58:15Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - tabs
+    - video
+    - scroll-animation
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+  layout:
+    - left-aligned
+    - two-column
+    - vertical-scroll
+  industry:
+    - saas
+    - hr
+    - recruitment
+
+parentPage: greetinghr-landing
+
+source:
+  type: url
+  url: https://www.greetinghr.com/
+  scrapedAt: "2025-12-14T02:58:15Z"
+  sectionIndex: 3

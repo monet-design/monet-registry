@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: hookable-ai-faq-8
+category: faq
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/hookable-ai-2025-12-14/sections/section-8.png
+
+freeformKeywords:
+  - faq
+  - accordion
+  - 자주묻는질문
+  - 질문
+  - 답변
+  - ai
+  - 상세페이지
+  - 디자인
+  - two-column
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-14T03:03:52Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - accordion
+  style:
+    - warm
+    - minimal
+    - light-theme
+  layout:
+    - two-column
+    - centered
+  industry:
+    - ai
+    - saas
+
+parentPage: hookable-ai-landing
+
+source:
+  type: url
+  url: https://www.hookable.ai/
+  scrapedAt: "2025-12-14T03:03:52Z"
+  sectionIndex: 8

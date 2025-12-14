@@ -1,0 +1,56 @@
+schemaVersion: "2.0"
+name: hookable-ai-pricing-5
+category: pricing
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/hookable-ai-2025-12-14/sections/section-5.png
+
+freeformKeywords:
+  - pricing
+  - 요금제
+  - subscription
+  - 구독
+  - plans
+  - starter
+  - growth
+  - pro
+  - discount
+  - 할인
+  - AI
+  - saas
+  - korean
+  - toggle
+  - monthly
+  - annual
+
+fontFamily:
+  - Rethink Sans
+
+createdAt: "2025-12-14T03:03:55Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - toggle
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - rounded
+    - shadow
+  layout:
+    - centered
+    - three-column
+    - grid
+  industry:
+    - saas
+    - ai
+
+parentPage: hookable-ai-landing
+
+source:
+  type: url
+  url: https://www.hookable.ai/
+  scrapedAt: "2025-12-14T03:03:55Z"
+  sectionIndex: 5

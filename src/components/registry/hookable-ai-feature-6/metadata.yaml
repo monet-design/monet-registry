@@ -1,0 +1,53 @@
+schemaVersion: "2.0"
+name: hookable-ai-feature-6
+category: feature
+
+images:
+  preview: /registry/hookable-ai-feature-6/preview.png
+
+freeformKeywords:
+  - product overview
+  - ai team
+  - landing page
+  - feature section
+  - dark theme
+  - figma export
+  - image generation
+  - mobile responsive
+  - data analytics
+  - korean
+  - saas
+  - subscription
+  - design tool
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-14T03:03:53Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - marquee-animation
+    - scroll-animation
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - centered
+    - single-column
+    - full-width
+  industry:
+    - saas
+    - ai
+    - design-tool
+
+parentPage: hookable-ai-landing
+
+source:
+  type: url
+  url: https://www.hookable.ai/
+  scrapedAt: "2025-12-14T03:03:53Z"
+  sectionIndex: 6

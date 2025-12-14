@@ -1,0 +1,51 @@
+schemaVersion: "2.0"
+name: hookable-ai-cta-3
+category: cta
+
+images:
+  preview: /scraped/hookable-ai-2025-12-14/sections/section-3.png
+
+freeformKeywords:
+  - cta
+  - say goodbye
+  - pain points
+  - scrolling text
+  - gradient text
+  - animation
+  - korean
+  - problems
+  - vertical scroll
+  - text animation
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-14T02:58:09Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - animation
+    - scroll-animation
+    - text-animation
+  style:
+    - modern
+    - minimal
+    - light-theme
+    - gradient
+  layout:
+    - centered
+    - full-width
+  industry:
+    - saas
+    - ai
+    - startup
+
+parentPage: hookable-ai-landing
+
+source:
+  type: url
+  url: https://www.hookable.ai/
+  scrapedAt: "2025-12-14T02:58:09Z"
+  sectionIndex: 3

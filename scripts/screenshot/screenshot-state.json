@@ -3255,6 +3255,82 @@
     "userband-com-hero-0": {
       "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/userband-com-hero-0.png",
       "capturedAt": "2025-12-14T01:58:17.667Z"
+    },
+    "greetinghr-cta-2": {
+      "path": "/app/public/registry/preview/greetinghr-cta-2.png",
+      "capturedAt": "2025-12-14T04:00:50.725Z"
+    },
+    "greetinghr-feature-3": {
+      "path": "/app/public/registry/preview/greetinghr-feature-3.png",
+      "capturedAt": "2025-12-14T04:00:53.155Z"
+    },
+    "greetinghr-feature-4": {
+      "path": "/app/public/registry/preview/greetinghr-feature-4.png",
+      "capturedAt": "2025-12-14T04:00:56.430Z"
+    },
+    "greetinghr-feature-5": {
+      "path": "/app/public/registry/preview/greetinghr-feature-5.png",
+      "capturedAt": "2025-12-14T04:00:58.710Z"
+    },
+    "greetinghr-footer": {
+      "path": "/app/public/registry/preview/greetinghr-footer.png",
+      "capturedAt": "2025-12-14T04:01:01.183Z"
+    },
+    "greetinghr-header": {
+      "path": "/app/public/registry/preview/greetinghr-header.png",
+      "capturedAt": "2025-12-14T04:01:04.290Z"
+    },
+    "greetinghr-hero-0": {
+      "path": "/app/public/registry/preview/greetinghr-hero-0.png",
+      "capturedAt": "2025-12-14T04:01:06.784Z"
+    },
+    "greetinghr-logo-cloud-1": {
+      "path": "/app/public/registry/preview/greetinghr-logo-cloud-1.png",
+      "capturedAt": "2025-12-14T04:01:09.128Z"
+    },
+    "hookable-ai-contact-7": {
+      "path": "/app/public/registry/preview/hookable-ai-contact-7.png",
+      "capturedAt": "2025-12-14T04:01:11.702Z"
+    },
+    "hookable-ai-cta-3": {
+      "path": "/app/public/registry/preview/hookable-ai-cta-3.png",
+      "capturedAt": "2025-12-14T04:01:14.035Z"
+    },
+    "hookable-ai-faq-8": {
+      "path": "/app/public/registry/preview/hookable-ai-faq-8.png",
+      "capturedAt": "2025-12-14T04:01:16.547Z"
+    },
+    "hookable-ai-feature-2": {
+      "path": "/app/public/registry/preview/hookable-ai-feature-2.png",
+      "capturedAt": "2025-12-14T04:01:18.949Z"
+    },
+    "hookable-ai-feature-6": {
+      "path": "/app/public/registry/preview/hookable-ai-feature-6.png",
+      "capturedAt": "2025-12-14T04:01:21.557Z"
+    },
+    "hookable-ai-footer": {
+      "path": "/app/public/registry/preview/hookable-ai-footer.png",
+      "capturedAt": "2025-12-14T04:01:23.780Z"
+    },
+    "hookable-ai-header": {
+      "path": "/app/public/registry/preview/hookable-ai-header.png",
+      "capturedAt": "2025-12-14T04:01:26.896Z"
+    },
+    "hookable-ai-hero-0": {
+      "path": "/app/public/registry/preview/hookable-ai-hero-0.png",
+      "capturedAt": "2025-12-14T04:01:30.789Z"
+    },
+    "hookable-ai-logo-cloud-1": {
+      "path": "/app/public/registry/preview/hookable-ai-logo-cloud-1.png",
+      "capturedAt": "2025-12-14T04:01:33.115Z"
+    },
+    "hookable-ai-pricing-5": {
+      "path": "/app/public/registry/preview/hookable-ai-pricing-5.png",
+      "capturedAt": "2025-12-14T04:01:37.382Z"
+    },
+    "hookable-ai-testimonial-4": {
+      "path": "/app/public/registry/preview/hookable-ai-testimonial-4.png",
+      "capturedAt": "2025-12-14T04:01:39.716Z"
     }
   },
   "pageCompleted": {
@@ -3325,6 +3401,14 @@
     "userband-com-landing": {
       "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/pages/userband-com-landing.png",
       "capturedAt": "2025-12-14T01:58:25.245Z"
+    },
+    "greetinghr-landing": {
+      "path": "/app/public/registry/preview/pages/greetinghr-landing.png",
+      "capturedAt": "2025-12-14T04:01:42.220Z"
+    },
+    "hookable-ai-landing": {
+      "path": "/app/public/registry/preview/pages/hookable-ai-landing.png",
+      "capturedAt": "2025-12-14T04:01:48.620Z"
     }
   }
 }

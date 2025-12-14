@@ -3364,10 +3364,6 @@
       "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/whattime-testimonial-4.png",
       "capturedAt": "2025-12-14T11:44:04.833Z"
     },
-    "greetinghr-stats-0": {
-      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/greetinghr-stats-0.png",
-      "capturedAt": "2025-12-14T11:58:01.814Z"
-    },
     "greetinghr-header": {
       "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/greetinghr-header.png",
       "capturedAt": "2025-12-14T11:58:20.536Z"
@@ -3387,6 +3383,10 @@
     "greetinghr-support-0": {
       "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/greetinghr-support-0.png",
       "capturedAt": "2025-12-14T12:18:02.613Z"
+    },
+    "greetinghr-stats-0": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/greetinghr-stats-0.png",
+      "capturedAt": "2025-12-14T15:37:36.875Z"
     }
   },
   "pageCompleted": {

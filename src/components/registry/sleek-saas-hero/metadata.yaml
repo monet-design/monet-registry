@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: sleek-saas-hero
+category: hero
+
+images:
+  preview: /tmp/placeholder.png
+
+freeformKeywords:
+  - hero
+  - saas
+  - landing
+  - startup
+  - product hunt
+  - launch
+  - cta
+  - modern
+  - minimal
+  - trending
+  - discover
+  - community
+  - makers
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-14T01:25:32Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - animation
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - gradient
+  layout:
+    - centered
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - startup
+    - tech

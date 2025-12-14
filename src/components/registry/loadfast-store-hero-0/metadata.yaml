@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: loadfast-store-hero-0
+category: hero
+
+images:
+  preview: scraped/loadfast-store-2025-12-13/sections/section-0.png
+
+freeformKeywords:
+  - text expander
+  - productivity
+  - typing automation
+  - Mac app
+  - Chrome extension
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-13T04:31:43Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - lead-capture
+  style:
+    - light-theme
+    - modern
+    - warm
+    - sans-serif
+  layout:
+    - split-layout
+    - two-column
+  industry:
+    - saas
+    - productivity
+
+parentPage: loadfast-store-landing
+
+source:
+  name: loadfast-store-hero-0
+  type: url
+  url: https://loadfast.store/
+  scrapedAt: "2025-12-13T04:31:43Z"
+  sectionIndex: 0

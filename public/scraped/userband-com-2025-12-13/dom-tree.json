@@ -1,0 +1,2058 @@
+{
+  "tag": "body",
+  "id": null,
+  "className": "antialiased",
+  "rect": {
+    "top": 0,
+    "left": 0,
+    "width": 1440,
+    "height": 6913.671875
+  },
+  "children": [
+    {
+      "tag": "div",
+      "id": null,
+      "className": "flex min-h-screen flex-col",
+      "rect": {
+        "top": 0,
+        "left": 0,
+        "width": 1440,
+        "height": 6913.671875
+      },
+      "children": [
+        {
+          "tag": "header",
+          "id": null,
+          "className": "fixed top-0 z-50 w-full border-b bg-muted",
+          "rect": {
+            "top": 0,
+            "left": 0,
+            "width": 1440,
+            "height": 65
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "container flex h-16 items-center",
+              "rect": {
+                "top": 0,
+                "left": 80,
+                "width": 1280,
+                "height": 64
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tag": "main",
+          "id": null,
+          "className": "flex-1 pt-16 md:pt-0",
+          "rect": {
+            "top": 0,
+            "left": 0,
+            "width": 1440,
+            "height": 6677.671875
+          },
+          "children": [
+            {
+              "tag": "section",
+              "id": null,
+              "className": "container py-24 md:py-32",
+              "rect": {
+                "top": 0,
+                "left": 80,
+                "width": 1280,
+                "height": 572
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "mx-auto max-w-4xl text-center",
+                  "rect": {
+                    "top": 128,
+                    "left": 272,
+                    "width": 896,
+                    "height": 316
+                  },
+                  "children": [
+                    {
+                      "tag": "h1",
+                      "id": null,
+                      "className": "text-4xl font-bold tracking-tight sm:text-6xl md:text-7xl",
+                      "rect": {
+                        "top": 128,
+                        "left": 272,
+                        "width": 896,
+                        "height": 144
+                      },
+                      "children": [
+                        {
+                          "tag": "span",
+                          "id": null,
+                          "className": "",
+                          "rect": {
+                            "top": 121,
+                            "left": 540.0625,
+                            "width": 359.875,
+                            "height": 86
+                          },
+                          "children": [
+                            {
+                              "tag": "br",
+                              "id": null,
+                              "className": "",
+                              "rect": {
+                                "top": 121,
+                                "left": 899.9375,
+                                "width": 0,
+                                "height": 86
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "span",
+                          "id": null,
+                          "className": "",
+                          "rect": {
+                            "top": 193,
+                            "left": 433.28125,
+                            "width": 573.4375,
+                            "height": 86
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "p",
+                      "id": null,
+                      "className": "mt-6 text-lg leading-8 text-muted-foreground sm:text-xl",
+                      "rect": {
+                        "top": 296,
+                        "left": 272,
+                        "width": 896,
+                        "height": 64
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "section",
+              "id": null,
+              "className": "py-20 md:py-40 relative bg-secondary",
+              "rect": {
+                "top": 572,
+                "left": 0,
+                "width": 1440,
+                "height": 736
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "container",
+                  "rect": {
+                    "top": 732,
+                    "left": 80,
+                    "width": 1280,
+                    "height": 416
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "mx-auto max-w-7xl",
+                      "rect": {
+                        "top": 732,
+                        "left": 120,
+                        "width": 1200,
+                        "height": 416
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "grid gap-16 lg:grid-cols-2 lg:gap-16 items-start",
+                          "rect": {
+                            "top": 732,
+                            "left": 120,
+                            "width": 1200,
+                            "height": 416
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "text-left",
+                              "rect": {
+                                "top": 732,
+                                "left": 120,
+                                "width": 568,
+                                "height": 308
+                              },
+                              "children": [
+                                {
+                                  "tag": "h2",
+                                  "id": null,
+                                  "className": "text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl whitespace-pre-line leading-tight text-muted-foreground",
+                                  "rect": {
+                                    "top": 732,
+                                    "left": 120,
+                                    "width": 568,
+                                    "height": 150
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "tag": "p",
+                                  "id": null,
+                                  "className": "mt-2 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl text-foreground whitespace-pre-line leading-tight",
+                                  "rect": {
+                                    "top": 890,
+                                    "left": 120,
+                                    "width": 568,
+                                    "height": 150
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "flex flex-col gap-10",
+                              "rect": {
+                                "top": 732,
+                                "left": 752,
+                                "width": 568,
+                                "height": 416
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex items-start gap-4",
+                                  "rect": {
+                                    "top": 732,
+                                    "left": 752,
+                                    "width": 568,
+                                    "height": 88
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "flex flex-col gap-1",
+                                      "rect": {
+                                        "top": 732,
+                                        "left": 808,
+                                        "width": 512,
+                                        "height": 88
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "p",
+                                          "id": null,
+                                          "className": "text-lg text-muted-foreground",
+                                          "rect": {
+                                            "top": 764,
+                                            "left": 808,
+                                            "width": 512,
+                                            "height": 56
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex items-start gap-4",
+                                  "rect": {
+                                    "top": 860,
+                                    "left": 752,
+                                    "width": 568,
+                                    "height": 60
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "flex flex-col gap-1",
+                                      "rect": {
+                                        "top": 860,
+                                        "left": 808,
+                                        "width": 409.65625,
+                                        "height": 60
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex items-start gap-4",
+                                  "rect": {
+                                    "top": 960,
+                                    "left": 752,
+                                    "width": 568,
+                                    "height": 88
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "flex flex-col gap-1",
+                                      "rect": {
+                                        "top": 960,
+                                        "left": 808,
+                                        "width": 512,
+                                        "height": 88
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "h3",
+                                          "id": null,
+                                          "className": "text-xl font-semibold text-foreground",
+                                          "rect": {
+                                            "top": 960,
+                                            "left": 808,
+                                            "width": 512,
+                                            "height": 56
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex items-start gap-4",
+                                  "rect": {
+                                    "top": 1088,
+                                    "left": 752,
+                                    "width": 568,
+                                    "height": 60
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "flex flex-col gap-1",
+                                      "rect": {
+                                        "top": 1088,
+                                        "left": 808,
+                                        "width": 502.90625,
+                                        "height": 60
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "section",
+              "id": null,
+              "className": "py-24 relative",
+              "rect": {
+                "top": 1308,
+                "left": 0,
+                "width": 1440,
+                "height": 646
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "container",
+                  "rect": {
+                    "top": 1404,
+                    "left": 80,
+                    "width": 1280,
+                    "height": 454
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "mx-auto max-w-7xl",
+                      "rect": {
+                        "top": 1404,
+                        "left": 120,
+                        "width": 1200,
+                        "height": 454
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "text-center",
+                          "rect": {
+                            "top": 1404,
+                            "left": 120,
+                            "width": 1200,
+                            "height": 96
+                          },
+                          "children": [
+                            {
+                              "tag": "h2",
+                              "id": null,
+                              "className": "text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl relative z-10",
+                              "rect": {
+                                "top": 1404,
+                                "left": 120,
+                                "width": 1200,
+                                "height": 96
+                              },
+                              "children": [
+                                {
+                                  "tag": "span",
+                                  "id": null,
+                                  "className": "",
+                                  "rect": {
+                                    "top": 1399,
+                                    "left": 574.0625,
+                                    "width": 291.859375,
+                                    "height": 58
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "br",
+                                      "id": null,
+                                      "className": "",
+                                      "rect": {
+                                        "top": 1399,
+                                        "left": 865.921875,
+                                        "width": 0,
+                                        "height": 58
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "span",
+                                  "id": null,
+                                  "className": "",
+                                  "rect": {
+                                    "top": 1447,
+                                    "left": 468.421875,
+                                    "width": 503.140625,
+                                    "height": 58
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "mx-auto mt-12 max-w-7xl grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4",
+                          "rect": {
+                            "top": 1552.22314453125,
+                            "left": 120,
+                            "width": 1200,
+                            "height": 310
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "group relative flex flex-col rounded-2xl overflow-hidden transition-all duration-200 cursor-pointer",
+                              "rect": {
+                                "top": 1567.3897705078125,
+                                "left": 120,
+                                "width": 291,
+                                "height": 310
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "relative w-full aspect-[3/2]",
+                                  "rect": {
+                                    "top": 1567.3897705078125,
+                                    "left": 120,
+                                    "width": 291,
+                                    "height": 194
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "img",
+                                      "id": null,
+                                      "className": "object-cover",
+                                      "rect": {
+                                        "top": 1567.3897705078125,
+                                        "left": 120,
+                                        "width": 291,
+                                        "height": 194
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "p-4 flex flex-col flex-1",
+                                  "rect": {
+                                    "top": 1761.3897705078125,
+                                    "left": 120,
+                                    "width": 291,
+                                    "height": 116
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "group relative flex flex-col rounded-2xl overflow-hidden transition-all duration-200 cursor-pointer",
+                              "rect": {
+                                "top": 1572.2034912109375,
+                                "left": 423,
+                                "width": 291,
+                                "height": 310
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "relative w-full aspect-[3/2]",
+                                  "rect": {
+                                    "top": 1572.2034912109375,
+                                    "left": 423,
+                                    "width": 291,
+                                    "height": 194
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "img",
+                                      "id": null,
+                                      "className": "object-cover",
+                                      "rect": {
+                                        "top": 1572.2034912109375,
+                                        "left": 423,
+                                        "width": 291,
+                                        "height": 194
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "p-4 flex flex-col flex-1",
+                                  "rect": {
+                                    "top": 1766.2034912109375,
+                                    "left": 423,
+                                    "width": 291,
+                                    "height": 116
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "group relative flex flex-col rounded-2xl overflow-hidden transition-all duration-200 cursor-pointer",
+                              "rect": {
+                                "top": 1572.22314453125,
+                                "left": 726,
+                                "width": 291,
+                                "height": 310
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "relative w-full aspect-[3/2]",
+                                  "rect": {
+                                    "top": 1572.22314453125,
+                                    "left": 726,
+                                    "width": 291,
+                                    "height": 194
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "img",
+                                      "id": null,
+                                      "className": "object-cover",
+                                      "rect": {
+                                        "top": 1572.22314453125,
+                                        "left": 726,
+                                        "width": 291,
+                                        "height": 194
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "p-4 flex flex-col flex-1",
+                                  "rect": {
+                                    "top": 1766.22314453125,
+                                    "left": 726,
+                                    "width": 291,
+                                    "height": 116
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "group relative flex flex-col rounded-2xl overflow-hidden transition-all duration-200 cursor-pointer",
+                              "rect": {
+                                "top": 1572.22314453125,
+                                "left": 1029,
+                                "width": 291,
+                                "height": 310
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "relative w-full aspect-[3/2]",
+                                  "rect": {
+                                    "top": 1572.22314453125,
+                                    "left": 1029,
+                                    "width": 291,
+                                    "height": 194
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "img",
+                                      "id": null,
+                                      "className": "object-cover",
+                                      "rect": {
+                                        "top": 1572.22314453125,
+                                        "left": 1029,
+                                        "width": 291,
+                                        "height": 194
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "p-4 flex flex-col flex-1",
+                                  "rect": {
+                                    "top": 1766.22314453125,
+                                    "left": 1029,
+                                    "width": 291,
+                                    "height": 116
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "section",
+              "id": null,
+              "className": "container py-12",
+              "rect": {
+                "top": 1954,
+                "left": 80,
+                "width": 1280,
+                "height": 696
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "mx-auto max-w-7xl",
+                  "rect": {
+                    "top": 2002,
+                    "left": 120,
+                    "width": 1200,
+                    "height": 600
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "grid lg:grid-cols-[1fr_1fr] items-center",
+                      "rect": {
+                        "top": 2002,
+                        "left": 120,
+                        "width": 1200,
+                        "height": 600
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "flex justify-center order-1 lg:order-1 w-full",
+                          "rect": {
+                            "top": 2002,
+                            "left": 118.79766845703125,
+                            "width": 600,
+                            "height": 600
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "relative w-full aspect-square rounded-2xl overflow-hidden border border-border",
+                              "rect": {
+                                "top": 2002,
+                                "left": 118.79766845703125,
+                                "width": 600,
+                                "height": 600
+                              },
+                              "children": [
+                                {
+                                  "tag": "img",
+                                  "id": null,
+                                  "className": "object-cover",
+                                  "rect": {
+                                    "top": 2003,
+                                    "left": 119.79766845703125,
+                                    "width": 598,
+                                    "height": 598
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "order-2 lg:order-2 w-full lg:px-16 pt-4 pb-4",
+                          "rect": {
+                            "top": 2166,
+                            "left": 720,
+                            "width": 600,
+                            "height": 272
+                          },
+                          "children": [
+                            {
+                              "tag": "p",
+                              "id": null,
+                              "className": "mt-6 text-lg leading-8 text-muted-foreground",
+                              "rect": {
+                                "top": 2278,
+                                "left": 784,
+                                "width": 472,
+                                "height": 96
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "section",
+              "id": null,
+              "className": "py-12",
+              "rect": {
+                "top": 2650,
+                "left": 0,
+                "width": 1440,
+                "height": 720
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "container",
+                  "rect": {
+                    "top": 2698,
+                    "left": 80,
+                    "width": 1280,
+                    "height": 624
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "mx-auto max-w-7xl",
+                      "rect": {
+                        "top": 2698,
+                        "left": 120,
+                        "width": 1200,
+                        "height": 624
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "grid lg:grid-cols-[1fr_1fr] items-center",
+                          "rect": {
+                            "top": 2698,
+                            "left": 120,
+                            "width": 1200,
+                            "height": 624
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "order-1 lg:order-1 flex justify-center w-full",
+                              "rect": {
+                                "top": 2698,
+                                "left": 118.79766845703125,
+                                "width": 600,
+                                "height": 624
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex flex-col w-full ",
+                                  "rect": {
+                                    "top": 2698,
+                                    "left": 118.79766845703125,
+                                    "width": 600,
+                                    "height": 624
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "relative w-full aspect-square rounded-2xl overflow-hidden border border-border",
+                                      "rect": {
+                                        "top": 2698,
+                                        "left": 118.79766845703125,
+                                        "width": 600,
+                                        "height": 600
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "id": null,
+                                          "className": "absolute inset-0",
+                                          "rect": {
+                                            "top": 2699,
+                                            "left": -478.12469482421875,
+                                            "width": 598,
+                                            "height": 598
+                                          },
+                                          "children": [
+                                            {
+                                              "tag": "img",
+                                              "id": null,
+                                              "className": "object-cover",
+                                              "rect": {
+                                                "top": 2699,
+                                                "left": -478.12469482421875,
+                                                "width": 598,
+                                                "height": 598
+                                              },
+                                              "children": []
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "tag": "div",
+                                          "id": null,
+                                          "className": "absolute inset-0",
+                                          "rect": {
+                                            "top": 2699,
+                                            "left": 126.56494140625,
+                                            "width": 598,
+                                            "height": 598
+                                          },
+                                          "children": [
+                                            {
+                                              "tag": "img",
+                                              "id": null,
+                                              "className": "object-cover",
+                                              "rect": {
+                                                "top": 2699,
+                                                "left": 126.56494140625,
+                                                "width": 598,
+                                                "height": 598
+                                              },
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "order-2 lg:order-2 w-full lg:px-16 pt-4 pb-4",
+                              "rect": {
+                                "top": 2890,
+                                "left": 720,
+                                "width": 600,
+                                "height": 240
+                              },
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "id": null,
+                                  "className": "mt-6 text-lg leading-8 text-muted-foreground",
+                                  "rect": {
+                                    "top": 3002,
+                                    "left": 784,
+                                    "width": 472,
+                                    "height": 64
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "section",
+              "id": null,
+              "className": "container py-12",
+              "rect": {
+                "top": 3370,
+                "left": 80,
+                "width": 1280,
+                "height": 696
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "mx-auto max-w-7xl",
+                  "rect": {
+                    "top": 3418,
+                    "left": 120,
+                    "width": 1200,
+                    "height": 600
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "grid lg:grid-cols-[1fr_1fr] items-center",
+                      "rect": {
+                        "top": 3418,
+                        "left": 120,
+                        "width": 1200,
+                        "height": 600
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "flex justify-center order-1 lg:order-1 w-full",
+                          "rect": {
+                            "top": 3418,
+                            "left": 118.79766845703125,
+                            "width": 600,
+                            "height": 600
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "relative w-full aspect-square rounded-2xl overflow-hidden border border-border",
+                              "rect": {
+                                "top": 3418,
+                                "left": 118.79766845703125,
+                                "width": 600,
+                                "height": 600
+                              },
+                              "children": [
+                                {
+                                  "tag": "img",
+                                  "id": null,
+                                  "className": "object-cover",
+                                  "rect": {
+                                    "top": 3419,
+                                    "left": 119.79766845703125,
+                                    "width": 598,
+                                    "height": 598
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "order-2 lg:order-2 w-full px-0 py-6 lg:px-16",
+                          "rect": {
+                            "top": 3590,
+                            "left": 720,
+                            "width": 600,
+                            "height": 256
+                          },
+                          "children": [
+                            {
+                              "tag": "p",
+                              "id": null,
+                              "className": "mt-6 text-lg leading-8 text-muted-foreground",
+                              "rect": {
+                                "top": 3710,
+                                "left": 784,
+                                "width": 472,
+                                "height": 64
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "section",
+              "id": null,
+              "className": "container py-12",
+              "rect": {
+                "top": 4066,
+                "left": 80,
+                "width": 1280,
+                "height": 720
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "mx-auto max-w-7xl",
+                  "rect": {
+                    "top": 4114,
+                    "left": 120,
+                    "width": 1200,
+                    "height": 624
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "grid lg:grid-cols-[1fr_1fr] items-center",
+                      "rect": {
+                        "top": 4114,
+                        "left": 120,
+                        "width": 1200,
+                        "height": 624
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "flex justify-center order-1 lg:order-1 w-full",
+                          "rect": {
+                            "top": 4114,
+                            "left": 118.79766845703125,
+                            "width": 600,
+                            "height": 624
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "flex flex-col w-full ",
+                              "rect": {
+                                "top": 4114,
+                                "left": 118.79766845703125,
+                                "width": 600,
+                                "height": 624
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "relative w-full aspect-square rounded-2xl overflow-hidden border border-border",
+                                  "rect": {
+                                    "top": 4114,
+                                    "left": 118.79766845703125,
+                                    "width": 600,
+                                    "height": 600
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "absolute inset-0",
+                                      "rect": {
+                                        "top": 4115,
+                                        "left": -478.12469482421875,
+                                        "width": 598,
+                                        "height": 598
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "id": null,
+                                          "className": "object-cover",
+                                          "rect": {
+                                            "top": 4115,
+                                            "left": -478.12469482421875,
+                                            "width": 598,
+                                            "height": 598
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "absolute inset-0",
+                                      "rect": {
+                                        "top": 4115,
+                                        "left": 126.56494140625,
+                                        "width": 598,
+                                        "height": 598
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "id": null,
+                                          "className": "object-cover",
+                                          "rect": {
+                                            "top": 4115,
+                                            "left": 126.56494140625,
+                                            "width": 598,
+                                            "height": 598
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "order-2 lg:order-2 w-full lg:px-16 pt-4 pb-4",
+                          "rect": {
+                            "top": 4306,
+                            "left": 720,
+                            "width": 600,
+                            "height": 240
+                          },
+                          "children": [
+                            {
+                              "tag": "p",
+                              "id": null,
+                              "className": "mt-6 text-lg leading-8 text-muted-foreground",
+                              "rect": {
+                                "top": 4418,
+                                "left": 784,
+                                "width": 472,
+                                "height": 64
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "section",
+              "id": null,
+              "className": "py-24",
+              "rect": {
+                "top": 4786,
+                "left": 0,
+                "width": 1440,
+                "height": 692.671875
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "container",
+                  "rect": {
+                    "top": 4882,
+                    "left": 80,
+                    "width": 1280,
+                    "height": 500.671875
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "mx-auto max-w-3xl text-center",
+                      "rect": {
+                        "top": 4882,
+                        "left": 336,
+                        "width": 768,
+                        "height": 90
+                      },
+                      "children": [
+                        {
+                          "tag": "h2",
+                          "id": null,
+                          "className": "text-3xl font-bold tracking-tight sm:text-4xl leading-tight",
+                          "rect": {
+                            "top": 4882,
+                            "left": 336,
+                            "width": 768,
+                            "height": 90
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "mx-auto mt-8 max-w-6xl",
+                      "rect": {
+                        "top": 5004,
+                        "left": 144,
+                        "width": 1152,
+                        "height": 378.671875
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-2",
+                          "rect": {
+                            "top": 5004,
+                            "left": 144,
+                            "width": 1152,
+                            "height": 378.671875
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "flex flex-col rounded-[16px] bg-secondary p-6 md:p-8 md:aspect-square border border-border min-h-[300px] md:min-h-0",
+                              "rect": {
+                                "top": 5004,
+                                "left": 144,
+                                "width": 378.65625,
+                                "height": 378.65625
+                              },
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "id": null,
+                                  "className": "mt-2 text-sm md:text-base text-muted-foreground",
+                                  "rect": {
+                                    "top": 5073,
+                                    "left": 177,
+                                    "width": 312.65625,
+                                    "height": 72
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "mt-auto pt-4 -mx-6 md:-mx-8 overflow-hidden w-[calc(100%+3rem)] md:w-[calc(100%+4rem)]",
+                                  "rect": {
+                                    "top": 5212.828125,
+                                    "left": 145,
+                                    "width": 376.65625,
+                                    "height": 136.828125
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "flex animate-scroll",
+                                      "rect": {
+                                        "top": 5228.828125,
+                                        "left": 29.55359649658203,
+                                        "width": 1600,
+                                        "height": 120.828125
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "id": null,
+                                          "className": "flex gap-0 shrink-0",
+                                          "rect": {
+                                            "top": 5228.828125,
+                                            "left": 29.55359649658203,
+                                            "width": 800,
+                                            "height": 120.828125
+                                          },
+                                          "children": [
+                                            {
+                                              "tag": "img",
+                                              "id": null,
+                                              "className": "shrink-0",
+                                              "rect": {
+                                                "top": 5228.828125,
+                                                "left": 29.55359649658203,
+                                                "width": 99.99999237060547,
+                                                "height": 120.828125
+                                              },
+                                              "children": []
+                                            },
+                                            {
+                                              "tag": "img",
+                                              "id": null,
+                                              "className": "shrink-0",
+                                              "rect": {
+                                                "top": 5228.828125,
+                                                "left": 129.5535888671875,
+                                                "width": 100,
+                                                "height": 120.828125
+                                              },
+                                              "children": []
+                                            },
+                                            {
+                                              "tag": "img",
+                                              "id": null,
+                                              "className": "shrink-0",
+                                              "rect": {
+                                                "top": 5228.828125,
+                                                "left": 229.5535888671875,
+                                                "width": 100,
+                                                "height": 120.828125
+                                              },
+                                              "children": []
+                                            },
+                                            {
+                                              "tag": "img",
+                                              "id": null,
+                                              "className": "shrink-0",
+                                              "rect": {
+                                                "top": 5228.828125,
+                                                "left": 329.5535888671875,
+                                                "width": 100,
+                                                "height": 120.828125
+                                              },
+                                              "children": []
+                                            },
+                                            {
+                                              "tag": "img",
+                                              "id": null,
+                                              "className": "shrink-0",
+                                              "rect": {
+                                                "top": 5228.828125,
+                                                "left": 429.5535888671875,
+                                                "width": 100,
+                                                "height": 120.828125
+                                              },
+                                              "children": []
+                                            },
+                                            {
+                                              "tag": "img",
+                                              "id": null,
+                                              "className": "shrink-0",
+                                              "rect": {
+                                                "top": 5228.828125,
+                                                "left": 529.5535888671875,
+                                                "width": 100,
+                                                "height": 120.828125
+                                              },
+                                              "children": []
+                                            },
+                                            {
+                                              "tag": "img",
+                                              "id": null,
+                                              "className": "shrink-0",
+                                              "rect": {
+                                                "top": 5228.828125,
+                                                "left": 629.5535888671875,
+                                                "width": 100,
+                                                "height": 120.828125
+                                              },
+                                              "children": []
+                                            },
+                                            {
+                                              "tag": "img",
+                                              "id": null,
+                                              "className": "shrink-0",
+                                              "rect": {
+                                                "top": 5228.828125,
+                                                "left": 729.5535888671875,
+                                                "width": 100,
+                                                "height": 120.828125
+                                              },
+                                              "children": []
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "tag": "div",
+                                          "id": null,
+                                          "className": "flex gap-0 shrink-0",
+                                          "rect": {
+                                            "top": 5228.828125,
+                                            "left": 829.5535888671875,
+                                            "width": 800,
+                                            "height": 120.828125
+                                          },
+                                          "children": [
+                                            {
+                                              "tag": "img",
+                                              "id": null,
+                                              "className": "shrink-0",
+                                              "rect": {
+                                                "top": 5228.828125,
+                                                "left": 829.5535888671875,
+                                                "width": 100,
+                                                "height": 120.828125
+                                              },
+                                              "children": []
+                                            },
+                                            {
+                                              "tag": "img",
+                                              "id": null,
+                                              "className": "shrink-0",
+                                              "rect": {
+                                                "top": 5228.828125,
+                                                "left": 929.5535888671875,
+                                                "width": 100,
+                                                "height": 120.828125
+                                              },
+                                              "children": []
+                                            },
+                                            {
+                                              "tag": "img",
+                                              "id": null,
+                                              "className": "shrink-0",
+                                              "rect": {
+                                                "top": 5228.828125,
+                                                "left": 1029.5535888671875,
+                                                "width": 100,
+                                                "height": 120.828125
+                                              },
+                                              "children": []
+                                            },
+                                            {
+                                              "tag": "img",
+                                              "id": null,
+                                              "className": "shrink-0",
+                                              "rect": {
+                                                "top": 5228.828125,
+                                                "left": 1129.5535888671875,
+                                                "width": 100,
+                                                "height": 120.828125
+                                              },
+                                              "children": []
+                                            },
+                                            {
+                                              "tag": "img",
+                                              "id": null,
+                                              "className": "shrink-0",
+                                              "rect": {
+                                                "top": 5228.828125,
+                                                "left": 1229.5535888671875,
+                                                "width": 100,
+                                                "height": 120.828125
+                                              },
+                                              "children": []
+                                            },
+                                            {
+                                              "tag": "img",
+                                              "id": null,
+                                              "className": "shrink-0",
+                                              "rect": {
+                                                "top": 5228.828125,
+                                                "left": 1329.5535888671875,
+                                                "width": 100,
+                                                "height": 120.828125
+                                              },
+                                              "children": []
+                                            },
+                                            {
+                                              "tag": "img",
+                                              "id": null,
+                                              "className": "shrink-0",
+                                              "rect": {
+                                                "top": 5228.828125,
+                                                "left": 1429.5535888671875,
+                                                "width": 100,
+                                                "height": 120.828125
+                                              },
+                                              "children": []
+                                            },
+                                            {
+                                              "tag": "img",
+                                              "id": null,
+                                              "className": "shrink-0",
+                                              "rect": {
+                                                "top": 5228.828125,
+                                                "left": 1529.5535888671875,
+                                                "width": 100,
+                                                "height": 120.828125
+                                              },
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "flex flex-col rounded-[16px] bg-secondary p-6 md:p-8 md:aspect-square border border-border min-h-[300px] md:min-h-0",
+                              "rect": {
+                                "top": 5004,
+                                "left": 530.65625,
+                                "width": 378.671875,
+                                "height": 378.671875
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "mt-auto pt-4 flex items-center justify-center",
+                                  "rect": {
+                                    "top": 5213.671875,
+                                    "left": 563.65625,
+                                    "width": 312.671875,
+                                    "height": 136
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "svg",
+                                      "id": null,
+                                      "className": null,
+                                      "rect": {
+                                        "top": 5229.671875,
+                                        "left": 659.984375,
+                                        "width": 120,
+                                        "height": 120
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "flex flex-col rounded-[16px] bg-secondary p-6 md:p-8 md:aspect-square border border-border min-h-[300px] md:min-h-0",
+                              "rect": {
+                                "top": 5004,
+                                "left": 917.328125,
+                                "width": 378.65625,
+                                "height": 378.65625
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-1 flex justify-center items-center -mx-6 md:-mx-8 w-[calc(100%+3rem)] md:w-[calc(100%+4rem)] pt-4",
+                                  "rect": {
+                                    "top": 5121,
+                                    "left": 918.328125,
+                                    "width": 376.65625,
+                                    "height": 228.65625
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "relative h-16 flex items-center overflow-hidden w-full",
+                                      "rect": {
+                                        "top": 5211.328125,
+                                        "left": 918.328125,
+                                        "width": 376.65625,
+                                        "height": 64
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "section",
+              "id": null,
+              "className": "py-24",
+              "rect": {
+                "top": 5478.671875,
+                "left": 0,
+                "width": 1440,
+                "height": 731
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "container",
+                  "rect": {
+                    "top": 5574.671875,
+                    "left": 80,
+                    "width": 1280,
+                    "height": 539
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "mx-auto mt-8 max-w-3xl",
+                      "rect": {
+                        "top": 5651.671875,
+                        "left": 336,
+                        "width": 768,
+                        "height": 462
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "w-full",
+                          "rect": {
+                            "top": 5651.671875,
+                            "left": 336,
+                            "width": 768,
+                            "height": 462
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "border-b",
+                              "rect": {
+                                "top": 5651.671875,
+                                "left": 336,
+                                "width": 768,
+                                "height": 77
+                              },
+                              "children": [
+                                {
+                                  "tag": "h3",
+                                  "id": null,
+                                  "className": "flex",
+                                  "rect": {
+                                    "top": 5651.671875,
+                                    "left": 336,
+                                    "width": 768,
+                                    "height": 76
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "button",
+                                      "id": "radix-_R_qanqbtb_",
+                                      "className": "flex flex-1 items-center justify-between font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180 text-left text-lg md:text-xl py-6",
+                                      "rect": {
+                                        "top": 5651.671875,
+                                        "left": 336,
+                                        "width": 768,
+                                        "height": 76
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "border-b",
+                              "rect": {
+                                "top": 5728.671875,
+                                "left": 336,
+                                "width": 768,
+                                "height": 77
+                              },
+                              "children": [
+                                {
+                                  "tag": "h3",
+                                  "id": null,
+                                  "className": "flex",
+                                  "rect": {
+                                    "top": 5728.671875,
+                                    "left": 336,
+                                    "width": 768,
+                                    "height": 76
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "button",
+                                      "id": "radix-_R_1aanqbtb_",
+                                      "className": "flex flex-1 items-center justify-between font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180 text-left text-lg md:text-xl py-6",
+                                      "rect": {
+                                        "top": 5728.671875,
+                                        "left": 336,
+                                        "width": 768,
+                                        "height": 76
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "border-b",
+                              "rect": {
+                                "top": 5805.671875,
+                                "left": 336,
+                                "width": 768,
+                                "height": 77
+                              },
+                              "children": [
+                                {
+                                  "tag": "h3",
+                                  "id": null,
+                                  "className": "flex",
+                                  "rect": {
+                                    "top": 5805.671875,
+                                    "left": 336,
+                                    "width": 768,
+                                    "height": 76
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "button",
+                                      "id": "radix-_R_1qanqbtb_",
+                                      "className": "flex flex-1 items-center justify-between font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180 text-left text-lg md:text-xl py-6",
+                                      "rect": {
+                                        "top": 5805.671875,
+                                        "left": 336,
+                                        "width": 768,
+                                        "height": 76
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "border-b",
+                              "rect": {
+                                "top": 5882.671875,
+                                "left": 336,
+                                "width": 768,
+                                "height": 77
+                              },
+                              "children": [
+                                {
+                                  "tag": "h3",
+                                  "id": null,
+                                  "className": "flex",
+                                  "rect": {
+                                    "top": 5882.671875,
+                                    "left": 336,
+                                    "width": 768,
+                                    "height": 76
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "button",
+                                      "id": "radix-_R_2aanqbtb_",
+                                      "className": "flex flex-1 items-center justify-between font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180 text-left text-lg md:text-xl py-6",
+                                      "rect": {
+                                        "top": 5882.671875,
+                                        "left": 336,
+                                        "width": 768,
+                                        "height": 76
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "border-b",
+                              "rect": {
+                                "top": 5959.671875,
+                                "left": 336,
+                                "width": 768,
+                                "height": 77
+                              },
+                              "children": [
+                                {
+                                  "tag": "h3",
+                                  "id": null,
+                                  "className": "flex",
+                                  "rect": {
+                                    "top": 5959.671875,
+                                    "left": 336,
+                                    "width": 768,
+                                    "height": 76
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "button",
+                                      "id": "radix-_R_2qanqbtb_",
+                                      "className": "flex flex-1 items-center justify-between font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180 text-left text-lg md:text-xl py-6",
+                                      "rect": {
+                                        "top": 5959.671875,
+                                        "left": 336,
+                                        "width": 768,
+                                        "height": 76
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "border-b",
+                              "rect": {
+                                "top": 6036.671875,
+                                "left": 336,
+                                "width": 768,
+                                "height": 77
+                              },
+                              "children": [
+                                {
+                                  "tag": "h3",
+                                  "id": null,
+                                  "className": "flex",
+                                  "rect": {
+                                    "top": 6036.671875,
+                                    "left": 336,
+                                    "width": 768,
+                                    "height": 76
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "button",
+                                      "id": "radix-_R_3aanqbtb_",
+                                      "className": "flex flex-1 items-center justify-between font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180 text-left text-lg md:text-xl py-6",
+                                      "rect": {
+                                        "top": 6036.671875,
+                                        "left": 336,
+                                        "width": 768,
+                                        "height": 76
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "section",
+              "id": null,
+              "className": "py-24",
+              "rect": {
+                "top": 6209.671875,
+                "left": 0,
+                "width": 1440,
+                "height": 468
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "container",
+                  "rect": {
+                    "top": 6305.671875,
+                    "left": 80,
+                    "width": 1280,
+                    "height": 276
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "rounded-[24px] bg-primary text-primary-foreground py-12 px-6 text-center",
+                      "rect": {
+                        "top": 6305.671875,
+                        "left": 120,
+                        "width": 1200,
+                        "height": 276
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "footer",
+          "id": null,
+          "className": "bg-secondary",
+          "rect": {
+            "top": 6677.671875,
+            "left": 0,
+            "width": 1440,
+            "height": 236
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "container py-12",
+              "rect": {
+                "top": 6677.671875,
+                "left": 80,
+                "width": 1280,
+                "height": 236
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "flex flex-col gap-8 md:flex-row md:gap-16",
+                  "rect": {
+                    "top": 6725.671875,
+                    "left": 120,
+                    "width": 1200,
+                    "height": 140
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "space-y-4 flex-1",
+                      "rect": {
+                        "top": 6725.671875,
+                        "left": 120,
+                        "width": 679.46875,
+                        "height": 140
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "space-y-4 flex-shrink-0",
+                      "rect": {
+                        "top": 6725.671875,
+                        "left": 863.46875,
+                        "width": 88.21875,
+                        "height": 140
+                      },
+                      "children": [
+                        {
+                          "tag": "ul",
+                          "id": null,
+                          "className": "space-y-2 text-sm",
+                          "rect": {
+                            "top": 6761.671875,
+                            "left": 863.46875,
+                            "width": 88.21875,
+                            "height": 104
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "space-y-4 flex-shrink-0",
+                      "rect": {
+                        "top": 6725.671875,
+                        "left": 1015.6875,
+                        "width": 100.3125,
+                        "height": 140
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "space-y-4 flex-shrink-0",
+                      "rect": {
+                        "top": 6725.671875,
+                        "left": 1180,
+                        "width": 140,
+                        "height": 140
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

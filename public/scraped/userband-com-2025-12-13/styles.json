@@ -1,0 +1,66 @@
+{
+  "header.fixed": {
+    "backgroundColor": "rgb(245, 244, 239)",
+    "color": "rgb(15, 15, 11)",
+    "fontFamily": "\"Pretendard Variable\", Pretendard, -apple-system, \"system-ui\", system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "nav.relative": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(15, 15, 11)",
+    "fontFamily": "\"Pretendard Variable\", Pretendard, -apple-system, \"system-ui\", system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "main.flex-1": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(15, 15, 11)",
+    "fontFamily": "\"Pretendard Variable\", Pretendard, -apple-system, \"system-ui\", system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.container": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(15, 15, 11)",
+    "fontFamily": "\"Pretendard Variable\", Pretendard, -apple-system, \"system-ui\", system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "fontSize": "16px",
+    "padding": "48px 40px",
+    "margin": "0px 80px"
+  },
+  "section.py-20": {
+    "backgroundColor": "rgb(234, 232, 225)",
+    "color": "rgb(15, 15, 11)",
+    "fontFamily": "\"Pretendard Variable\", Pretendard, -apple-system, \"system-ui\", system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "fontSize": "16px",
+    "padding": "160px 0px",
+    "margin": "0px"
+  },
+  "section.py-24": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(15, 15, 11)",
+    "fontFamily": "\"Pretendard Variable\", Pretendard, -apple-system, \"system-ui\", system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "fontSize": "16px",
+    "padding": "96px 0px",
+    "margin": "0px"
+  },
+  "section.py-12": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(15, 15, 11)",
+    "fontFamily": "\"Pretendard Variable\", Pretendard, -apple-system, \"system-ui\", system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "fontSize": "16px",
+    "padding": "48px 0px",
+    "margin": "0px"
+  },
+  "footer.bg-secondary": {
+    "backgroundColor": "rgb(234, 232, 225)",
+    "color": "rgb(15, 15, 11)",
+    "fontFamily": "\"Pretendard Variable\", Pretendard, -apple-system, \"system-ui\", system-ui, Roboto, \"Helvetica Neue\", \"Segoe UI\", \"Apple SD Gothic Neo\", \"Noto Sans KR\", \"Malgun Gothic\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  }
+}

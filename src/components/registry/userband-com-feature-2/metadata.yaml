@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: userband-com-feature-2
+category: feature
+
+images:
+  preview: scraped/userband-com-2025-12-13/sections/section-2.png
+
+freeformKeywords:
+  - feedback management
+  - support agent
+  - changelog
+  - documentation
+  - features
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-13T04:31:52Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - grid
+    - centered
+  industry:
+    - saas
+
+parentPage: userband-com-landing
+
+source:
+  name: userband-com-feature-2
+  type: url
+  url: https://www.userband.com/ko
+  scrapedAt: "2025-12-13T04:31:52Z"
+  sectionIndex: 2

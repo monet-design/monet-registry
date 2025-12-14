@@ -1,0 +1,41 @@
+schemaVersion: "2.0"
+name: userband-com-feature-7
+category: feature
+
+images:
+  preview: scraped/userband-com-2025-12-13/sections/section-7.png
+
+freeformKeywords:
+  - custom theme
+  - real-time sync
+  - multi-language
+  - SaaS features
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-13T04:32:18Z"
+status: stable
+language: ko
+
+tags:
+  functional: []
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - grid
+    - centered
+  industry:
+    - saas
+
+parentPage: userband-com-landing
+
+source:
+  name: userband-com-feature-7
+  type: url
+  url: https://www.userband.com/ko
+  scrapedAt: "2025-12-13T04:32:18Z"
+  sectionIndex: 7

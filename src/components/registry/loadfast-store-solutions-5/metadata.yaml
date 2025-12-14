@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: loadfast-store-solutions-5
+category: feature
+
+images:
+  preview: scraped/loadfast-store-2025-12-13/sections/section-5.png
+
+freeformKeywords:
+  - solutions
+  - templates
+  - industries
+  - use cases
+  - lawyers
+  - doctors
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-13T04:32:08Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - centered
+    - grid
+  industry:
+    - saas
+    - productivity
+
+parentPage: loadfast-store-landing
+
+source:
+  name: loadfast-store-solutions-5
+  type: url
+  url: https://loadfast.store/
+  scrapedAt: "2025-12-13T04:32:08Z"
+  sectionIndex: 5

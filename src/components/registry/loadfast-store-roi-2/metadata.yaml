@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: loadfast-store-roi-2
+category: stats
+
+images:
+  preview: scraped/loadfast-store-2025-12-13/sections/section-2.png
+
+freeformKeywords:
+  - ROI calculator
+  - time savings
+  - productivity metrics
+  - value proposition
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-13T04:31:47Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - warm
+    - sans-serif
+  layout:
+    - centered
+    - grid
+  industry:
+    - saas
+    - productivity
+
+parentPage: loadfast-store-landing
+
+source:
+  name: loadfast-store-roi-2
+  type: url
+  url: https://loadfast.store/
+  scrapedAt: "2025-12-13T04:31:47Z"
+  sectionIndex: 2

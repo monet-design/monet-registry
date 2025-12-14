@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: userband-com-feature-6
+category: feature
+
+images:
+  preview: scraped/userband-com-2025-12-13/sections/section-6.png
+
+freeformKeywords:
+  - knowledge base
+  - documentation
+  - AI chatbot
+  - support
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-13T04:32:16Z"
+status: stable
+language: ko
+
+tags:
+  functional: []
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - two-column
+    - split-layout
+  industry:
+    - saas
+    - ai
+
+parentPage: userband-com-landing
+
+source:
+  name: userband-com-feature-6
+  type: url
+  url: https://www.userband.com/ko
+  scrapedAt: "2025-12-13T04:32:16Z"
+  sectionIndex: 6

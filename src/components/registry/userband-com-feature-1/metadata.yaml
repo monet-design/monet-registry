@@ -1,0 +1,41 @@
+schemaVersion: "2.0"
+name: userband-com-feature-1
+category: feature
+
+images:
+  preview: scraped/userband-com-2025-12-13/sections/section-1.png
+
+freeformKeywords:
+  - user feedback
+  - customer voice
+  - pain points
+  - challenges
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-13T04:32:14Z"
+status: stable
+language: ko
+
+tags:
+  functional: []
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - two-column
+    - split-layout
+  industry:
+    - saas
+
+parentPage: userband-com-landing
+
+source:
+  name: userband-com-feature-1
+  type: url
+  url: https://www.userband.com/ko
+  scrapedAt: "2025-12-13T04:32:14Z"
+  sectionIndex: 1

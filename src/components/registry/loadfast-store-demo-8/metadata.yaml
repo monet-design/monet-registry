@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: loadfast-store-demo-8
+category: feature
+
+images:
+  preview: scraped/loadfast-store-2025-12-13/sections/section-8.png
+
+freeformKeywords:
+  - snippets
+  - demo
+  - interactive
+  - text templates
+  - code snippets
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-13T04:32:13Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - warm
+    - sans-serif
+  layout:
+    - centered
+    - two-column
+  industry:
+    - saas
+    - productivity
+
+parentPage: loadfast-store-landing
+
+source:
+  name: loadfast-store-demo-8
+  type: url
+  url: https://loadfast.store/
+  scrapedAt: "2025-12-13T04:32:13Z"
+  sectionIndex: 8

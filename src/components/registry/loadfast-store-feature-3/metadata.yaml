@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: loadfast-store-feature-3
+category: feature
+
+images:
+  preview: scraped/loadfast-store-2025-12-13/sections/section-3.png
+
+freeformKeywords:
+  - shortcuts
+  - triggers
+  - text expansion
+  - automation features
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-13T04:31:48Z"
+status: stable
+language: en
+
+tags:
+  functional: []
+  style:
+    - light-theme
+    - modern
+    - warm
+    - sans-serif
+  layout:
+    - split-layout
+    - two-column
+  industry:
+    - saas
+    - productivity
+
+parentPage: loadfast-store-landing
+
+source:
+  name: loadfast-store-feature-3
+  type: url
+  url: https://loadfast.store/
+  scrapedAt: "2025-12-13T04:31:48Z"
+  sectionIndex: 3

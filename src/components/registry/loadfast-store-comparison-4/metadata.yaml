@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: loadfast-store-comparison-4
+category: pricing
+
+images:
+  preview: scraped/loadfast-store-2025-12-13/sections/section-4.png
+
+freeformKeywords:
+  - competitor comparison
+  - TextExpander
+  - Text Blaze
+  - pricing comparison
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-13T04:31:50Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - warm
+    - sans-serif
+  layout:
+    - centered
+    - grid
+  industry:
+    - saas
+    - productivity
+
+parentPage: loadfast-store-landing
+
+source:
+  name: loadfast-store-comparison-4
+  type: url
+  url: https://loadfast.store/
+  scrapedAt: "2025-12-13T04:31:50Z"
+  sectionIndex: 4

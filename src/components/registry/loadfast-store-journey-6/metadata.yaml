@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: loadfast-store-journey-6
+category: stats
+
+images:
+  preview: scraped/loadfast-store-2025-12-13/sections/section-6.png
+
+freeformKeywords:
+  - time savings
+  - journey
+  - progress
+  - value visualization
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-13T04:32:09Z"
+status: stable
+language: en
+
+tags:
+  functional: []
+  style:
+    - light-theme
+    - modern
+    - warm
+    - sans-serif
+  layout:
+    - centered
+    - grid
+  industry:
+    - saas
+    - productivity
+
+parentPage: loadfast-store-landing
+
+source:
+  name: loadfast-store-journey-6
+  type: url
+  url: https://loadfast.store/
+  scrapedAt: "2025-12-13T04:32:09Z"
+  sectionIndex: 6

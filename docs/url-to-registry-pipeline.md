@@ -30,6 +30,14 @@ Claude Code에서 `url-to-page` agent를 호출합니다:
 
 Agent가 자동으로 스크래핑, 섹션 분할, 컴포넌트 생성을 수행합니다.
 
+컴포넌트 생성 후, `build-and-screenshot` agent를 호출하여 빌드 및 스크린샷 캡처를 수행합니다:
+
+```
+@agent build-and-screenshot
+```
+
+이 agent는 metadata 검증/빌드, 프로젝트 빌드, 서버 실행, 스크린샷 캡처를 순차적으로 수행합니다.
+
 ### 방법 2: 수동 실행
 
 #### Step 1: 웹사이트 스크래핑
@@ -181,6 +189,55 @@ pnpm generate:page \
 
 ```bash
 pnpm metadata:build
+```
+
+#### Step 6: 빌드, 서버 실행 및 스크린샷 캡처
+
+**방법 A: Agent 사용 (권장)**
+
+`build-and-screenshot` agent를 호출하여 모든 과정을 자동으로 수행합니다:
+
+```
+@agent build-and-screenshot
+```
+
+Agent가 수행하는 작업:
+1. Metadata 검증 (`pnpm metadata:validate`)
+2. Metadata 빌드 (`pnpm metadata:build`)
+3. 프로젝트 빌드 (`pnpm build`)
+4. 프로덕션 서버 시작 (포트 3000, 기존 프로세스 자동 종료)
+5. 서버 정상 동작 검증
+6. 새 컴포넌트 스크린샷 캡처
+
+**방법 B: 수동 실행**
+
+```bash
+# 1. Metadata 검증
+pnpm metadata:validate
+
+# 2. Metadata 빌드
+pnpm metadata:build
+
+# 3. 프로젝트 빌드
+pnpm build
+
+# 4. 기존 3000번 포트 프로세스 종료 (있으면)
+lsof -ti:3000 | xargs kill -9 2>/dev/null || true
+
+# 5. 프로덕션 서버 시작
+pnpm start -p 3000 &
+
+# 6. 서버 준비 대기
+sleep 5
+
+# 7. 서버 정상 동작 확인
+curl -s -o /dev/null -w "%{http_code}" http://localhost:3000
+
+# 8. 스크린샷 캡처 (전체)
+pnpm screenshot:capture --all
+
+# 또는 특정 컴포넌트만
+pnpm screenshot:capture --name "example-com-hero-0"
 ```
 
 ## 메타데이터 구조
@@ -469,4 +526,14 @@ pnpm generate:page \
 
 # 5. Registry 업데이트
 pnpm metadata:build
+
+# 6. 빌드 및 스크린샷 캡처 (build-and-screenshot agent 사용 권장)
+@agent build-and-screenshot
+
+# 또는 수동으로:
+pnpm build
+lsof -ti:3000 | xargs kill -9 2>/dev/null || true
+pnpm start -p 3000 &
+sleep 5
+pnpm screenshot:capture --all
 ```

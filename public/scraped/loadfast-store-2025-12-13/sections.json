@@ -1,0 +1,145 @@
+[
+  {
+    "index": 0,
+    "tag": "section",
+    "selector": "section#home-section",
+    "category": null,
+    "rect": {
+      "top": 81,
+      "height": 550
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 1,
+    "tag": "section",
+    "selector": "section.bg-stone",
+    "category": null,
+    "rect": {
+      "top": 631,
+      "height": 512
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 2,
+    "tag": "section",
+    "selector": "section.jsx-ae645076ff7ba6b1",
+    "category": null,
+    "rect": {
+      "top": 1143,
+      "height": 1518
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 3,
+    "tag": "section",
+    "selector": "section#features",
+    "category": "feature",
+    "rect": {
+      "top": 2662,
+      "height": 714
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 4,
+    "tag": "section",
+    "selector": "section.py-16",
+    "category": null,
+    "rect": {
+      "top": 3377,
+      "height": 1193
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 5,
+    "tag": "section",
+    "selector": "section.py-16",
+    "category": null,
+    "rect": {
+      "top": 4571,
+      "height": 734
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 6,
+    "tag": "section",
+    "selector": "section.py-16",
+    "category": null,
+    "rect": {
+      "top": 5306,
+      "height": 1248
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 7,
+    "tag": "section",
+    "selector": "section#pricing-section",
+    "category": "pricing",
+    "rect": {
+      "top": 6555,
+      "height": 1201
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 8,
+    "tag": "section",
+    "selector": "section#snippets",
+    "category": null,
+    "rect": {
+      "top": 7757,
+      "height": 948
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 9,
+    "tag": "section",
+    "selector": "section#faq-section",
+    "category": "faq",
+    "rect": {
+      "top": 8705,
+      "height": 907
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 10,
+    "tag": "section",
+    "selector": "section.bg-charcoal",
+    "category": null,
+    "rect": {
+      "top": 9612,
+      "height": 496
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 11,
+    "tag": "section",
+    "selector": "section.bg-base-200/30",
+    "category": null,
+    "rect": {
+      "top": 10108,
+      "height": 406
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 12,
+    "tag": "footer",
+    "selector": "footer.bg-charcoal",
+    "category": "footer",
+    "rect": {
+      "top": 10514,
+      "height": 824
+    },
+    "confidence": 0.8
+  }
+]

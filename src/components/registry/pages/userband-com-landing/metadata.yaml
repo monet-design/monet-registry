@@ -1,0 +1,52 @@
+schemaVersion: "2.0"
+name: userband-com-landing
+category: page
+images:
+  preview: scraped/userband-com-2025-12-13/full-page.png
+title: userband.com Landing Page
+sections:
+  - id: userband-com-hero-0
+    category: hero
+    order: 0
+  - id: userband-com-feature-1
+    category: feature
+    order: 1
+  - id: userband-com-feature-2
+    category: feature
+    order: 2
+  - id: userband-com-feature-3
+    category: feature
+    order: 3
+  - id: userband-com-feature-4
+    category: feature
+    order: 4
+  - id: userband-com-feature-5
+    category: feature
+    order: 5
+  - id: userband-com-feature-6
+    category: feature
+    order: 6
+  - id: userband-com-feature-7
+    category: feature
+    order: 7
+  - id: userband-com-faq-8
+    category: faq
+    order: 8
+  - id: userband-com-cta-9
+    category: cta
+    order: 9
+  - id: userband-com-footer-10
+    category: footer
+    order: 10
+source:
+  type: url
+  url: https://www.userband.com/ko
+  scrapedAt: "2025-12-13T04:37:27.544Z"
+pageInfo:
+  totalSections: 11
+freeformKeywords:
+  - complete landing page
+  - full page
+  - userband.com
+createdAt: "2025-12-13T04:37:27.544Z"
+status: stable

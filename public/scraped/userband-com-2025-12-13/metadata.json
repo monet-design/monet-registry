@@ -1,0 +1,22 @@
+{
+  "url": "https://www.userband.com/ko",
+  "domain": "userband-com",
+  "timestamp": "2025-12-13T04:30:33.849Z",
+  "pageTitle": "Userband - The user support agent built for SaaS",
+  "totalHeight": 6914,
+  "imageStats": {
+    "total": 21,
+    "downloaded": 21,
+    "failed": 0
+  },
+  "fontStats": {
+    "total": 8,
+    "downloaded": 0,
+    "failed": 1
+  },
+  "videoStats": {
+    "total": 0,
+    "thumbnailsDownloaded": 0,
+    "failed": 0
+  }
+}

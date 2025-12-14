@@ -1,0 +1,21 @@
+services:
+  screenshot:
+    build:
+      context: ../..
+      dockerfile: docker/screenshot/Dockerfile
+    volumes:
+      # 스크린샷 결과 호스트로 전달
+      - ../../public/registry/preview:/app/public/registry/preview
+      # 상태 파일 공유
+      - ../../scripts/screenshot/screenshot-state.json:/app/scripts/screenshot/screenshot-state.json
+    environment:
+      - NODE_ENV=production
+      - DOCKER_ENV=true
+      - TAB_COUNT=4
+    # Chromium 메모리 사용량 고려
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+    # 공유 메모리 증가 (Chromium 안정성)
+    shm_size: '2gb'

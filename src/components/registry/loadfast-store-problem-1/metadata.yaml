@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: loadfast-store-problem-1
+category: feature
+
+images:
+  preview: scraped/loadfast-store-2025-12-13/sections/section-1.png
+
+freeformKeywords:
+  - problem
+  - pain points
+  - typing inefficiency
+  - productivity issues
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-13T04:31:45Z"
+status: stable
+language: en
+
+tags:
+  functional: []
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - productivity
+
+parentPage: loadfast-store-landing
+
+source:
+  name: loadfast-store-problem-1
+  type: url
+  url: https://loadfast.store/
+  scrapedAt: "2025-12-13T04:31:45Z"
+  sectionIndex: 1

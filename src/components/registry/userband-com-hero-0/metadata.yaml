@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: userband-com-hero-0
+category: hero
+
+images:
+  preview: scraped/userband-com-2025-12-13/sections/section-0.png
+
+freeformKeywords:
+  - SaaS
+  - user support
+  - agent
+  - chatbot
+  - feedback
+  - knowledge base
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-13T04:31:48Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - lead-capture
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - centered
+    - full-width
+  industry:
+    - saas
+
+parentPage: userband-com-landing
+
+source:
+  name: userband-com-hero-0
+  type: url
+  url: https://www.userband.com/ko
+  scrapedAt: "2025-12-13T04:31:48Z"
+  sectionIndex: 0

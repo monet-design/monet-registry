@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: loadfast-store-faq-9
+category: faq
+
+images:
+  preview: scraped/loadfast-store-2025-12-13/sections/section-9.png
+
+freeformKeywords:
+  - FAQ
+  - frequently asked questions
+  - support
+  - help
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-13T04:32:14Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - accordion
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - productivity
+
+parentPage: loadfast-store-landing
+
+source:
+  name: loadfast-store-faq-9
+  type: url
+  url: https://loadfast.store/
+  scrapedAt: "2025-12-13T04:32:14Z"
+  sectionIndex: 9

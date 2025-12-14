@@ -1,0 +1,212 @@
+[
+  {
+    "originalUrl": "https://www.userband.com/logo.svg",
+    "type": "img",
+    "sectionIndex": 2,
+    "alt": "UserBand",
+    "width": 128,
+    "height": 24,
+    "localPath": "images/image-0.svg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.userband.com/avatar-1.png",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "\"그 요청 어디서 들어왔어요?\"",
+    "width": 1392,
+    "height": 1392,
+    "localPath": "images/image-1.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.userband.com/avatar-2.png",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "\"이게 몇번째 답변인지 모르겠어요..\"",
+    "width": 1392,
+    "height": 1392,
+    "localPath": "images/image-2.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.userband.com/avatar-3.png",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "\"이 기능을 꼭 넣어달라는 요청이 있었는데.. 잠시만요, 찾아볼게요\"",
+    "width": 1392,
+    "height": 1392,
+    "localPath": "images/image-3.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.userband.com/avatar-4.png",
+    "type": "img",
+    "sectionIndex": 1,
+    "alt": "\"이거 먼저 개발하죠? 유저들이 가장 원하는 것처럼 보여요\"",
+    "width": 1392,
+    "height": 1392,
+    "localPath": "images/image-4.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.userband.com/dropdown/ko/support.jpg",
+    "type": "img",
+    "sectionIndex": 2,
+    "alt": "서포트 에이전트",
+    "width": 2400,
+    "height": 1600,
+    "localPath": "images/image-5.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.userband.com/dropdown/ko/feedback.jpg",
+    "type": "img",
+    "sectionIndex": 2,
+    "alt": "피드백",
+    "width": 2400,
+    "height": 1600,
+    "localPath": "images/image-6.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.userband.com/dropdown/ko/changelog.jpg",
+    "type": "img",
+    "sectionIndex": 2,
+    "alt": "체인지로그",
+    "width": 2400,
+    "height": 1600,
+    "localPath": "images/image-7.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.userband.com/dropdown/ko/docs.jpg",
+    "type": "img",
+    "sectionIndex": 2,
+    "alt": "문서",
+    "width": 2400,
+    "height": 1600,
+    "localPath": "images/image-8.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.userband.com/support/ko/3.jpg",
+    "type": "img",
+    "sectionIndex": 3,
+    "alt": "Omnichannel Integration Image",
+    "width": 2400,
+    "height": 2400,
+    "localPath": "images/image-9.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.userband.com/feedback/ko/1-2.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "Feedback Management Image",
+    "width": 2400,
+    "height": 2400,
+    "localPath": "images/image-10.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.userband.com/changelog/ko/1.jpg",
+    "type": "img",
+    "sectionIndex": 5,
+    "alt": "위젯 알림 이미지",
+    "width": 1800,
+    "height": 1800,
+    "localPath": "images/image-11.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.userband.com/docs/ko/1-2.jpg",
+    "type": "img",
+    "sectionIndex": 6,
+    "alt": "Knowledge Base",
+    "width": 2400,
+    "height": 2400,
+    "localPath": "images/image-12.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.userband.com/widget-1.png",
+    "type": "img",
+    "sectionIndex": 7,
+    "alt": "Widget 1",
+    "width": 960,
+    "height": 1160,
+    "localPath": "images/image-13.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.userband.com/widget-2.png",
+    "type": "img",
+    "sectionIndex": 7,
+    "alt": "Widget 2",
+    "width": 960,
+    "height": 1160,
+    "localPath": "images/image-14.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.userband.com/widget-3.png",
+    "type": "img",
+    "sectionIndex": 7,
+    "alt": "Widget 3",
+    "width": 960,
+    "height": 1160,
+    "localPath": "images/image-15.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.userband.com/widget-4.png",
+    "type": "img",
+    "sectionIndex": 7,
+    "alt": "Widget 4",
+    "width": 960,
+    "height": 1160,
+    "localPath": "images/image-16.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.userband.com/widget-5.png",
+    "type": "img",
+    "sectionIndex": 7,
+    "alt": "Widget 5",
+    "width": 960,
+    "height": 1160,
+    "localPath": "images/image-17.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.userband.com/widget-6.png",
+    "type": "img",
+    "sectionIndex": 7,
+    "alt": "Widget 6",
+    "width": 960,
+    "height": 1160,
+    "localPath": "images/image-18.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.userband.com/widget-7.png",
+    "type": "img",
+    "sectionIndex": 7,
+    "alt": "Widget 7",
+    "width": 960,
+    "height": 1160,
+    "localPath": "images/image-19.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://www.userband.com/widget-8.png",
+    "type": "img",
+    "sectionIndex": 7,
+    "alt": "Widget 8",
+    "width": 960,
+    "height": 1160,
+    "localPath": "images/image-20.png",
+    "downloaded": true
+  }
+]

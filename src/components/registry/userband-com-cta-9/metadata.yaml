@@ -1,0 +1,40 @@
+schemaVersion: "2.0"
+name: userband-com-cta-9
+category: cta
+
+images:
+  preview: scraped/userband-com-2025-12-13/sections/section-9.png
+
+freeformKeywords:
+  - call to action
+  - get started
+  - signup
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-13T04:32:22Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - lead-capture
+  style:
+    - dark-theme
+    - modern
+    - bold
+    - sans-serif
+  layout:
+    - centered
+  industry:
+    - saas
+
+parentPage: userband-com-landing
+
+source:
+  name: userband-com-cta-9
+  type: url
+  url: https://www.userband.com/ko
+  scrapedAt: "2025-12-13T04:32:22Z"
+  sectionIndex: 9

@@ -1,10 +1,14 @@
 import puppeteer, { Browser, Page } from "puppeteer";
 
+// 환경변수 기반 설정
+const isDocker = process.env.DOCKER_ENV === "true";
+const tabCount = parseInt(process.env.TAB_COUNT || "1", 10);
+
 export const CONFIG = {
-  TAB_COUNT: 1, // 순차 처리를 위해 1개 탭만 사용
+  TAB_COUNT: isDocker ? tabCount : 1, // Docker에서만 병렬 처리
   BASE_URL: "http://localhost:3000",
   WAIT_TIME: 1500,
-  ACTIVE_TAB_WAIT: 1500, // 스크린샷 전 active tab 유지 시간
+  ACTIVE_TAB_WAIT: isDocker ? 0 : 1500, // headless에서는 불필요
   VIEWPORT: { width: 1440, height: 1080 },
 } as const;
 
@@ -16,10 +20,13 @@ export interface TabWorker {
 
 export async function initBrowser(): Promise<Browser> {
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: isDocker,
+    executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined,
     args: [
       "--no-sandbox",
       "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage", // Docker 공유 메모리 이슈 해결
+      "--disable-gpu",
       `--window-size=${CONFIG.VIEWPORT.width},${CONFIG.VIEWPORT.height}`,
     ],
     defaultViewport: CONFIG.VIEWPORT,

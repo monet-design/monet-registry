@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: userband-com-footer-10
+category: footer
+
+images:
+  preview: scraped/userband-com-2025-12-13/sections/section-10.png
+
+freeformKeywords:
+  - footer
+  - links
+  - copyright
+  - language selector
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-13T04:32:24Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - dropdown
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - grid
+    - full-width
+  industry:
+    - saas
+
+parentPage: userband-com-landing
+
+source:
+  name: userband-com-footer-10
+  type: url
+  url: https://www.userband.com/ko
+  scrapedAt: "2025-12-13T04:32:24Z"
+  sectionIndex: 10

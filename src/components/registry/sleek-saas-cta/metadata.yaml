@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: sleek-saas-cta
+category: cta
+
+images:
+  preview: /tmp/placeholder.png
+
+freeformKeywords:
+  - cta
+  - call to action
+  - saas
+  - launch
+  - submit
+  - product
+  - makers
+  - dark
+  - gradient
+  - minimal
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-14T01:27:11Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - animation
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - gradient
+    - serif
+  layout:
+    - centered
+    - full-width
+  industry:
+    - saas
+    - startup
+    - tech

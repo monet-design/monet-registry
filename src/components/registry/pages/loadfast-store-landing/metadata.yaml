@@ -1,0 +1,52 @@
+schemaVersion: "2.0"
+name: loadfast-store-landing
+category: page
+images:
+  preview: scraped/loadfast-store-2025-12-13/full-page.png
+title: loadfast.store Landing Page
+sections:
+  - id: loadfast-store-header
+    category: header
+    order: -1
+  - id: loadfast-store-hero-0
+    category: hero
+    order: 0
+  - id: loadfast-store-problem-1
+    category: feature
+    order: 1
+  - id: loadfast-store-roi-2
+    category: stats
+    order: 2
+  - id: loadfast-store-feature-3
+    category: feature
+    order: 3
+  - id: loadfast-store-comparison-4
+    category: pricing
+    order: 4
+  - id: loadfast-store-solutions-5
+    category: feature
+    order: 5
+  - id: loadfast-store-journey-6
+    category: stats
+    order: 6
+  - id: loadfast-store-pricing-7
+    category: pricing
+    order: 7
+  - id: loadfast-store-demo-8
+    category: feature
+    order: 8
+  - id: loadfast-store-faq-9
+    category: faq
+    order: 9
+source:
+  type: url
+  url: https://loadfast.store/
+  scrapedAt: "2025-12-13T04:37:48.971Z"
+pageInfo:
+  totalSections: 11
+freeformKeywords:
+  - complete landing page
+  - full page
+  - loadfast.store
+createdAt: "2025-12-13T04:37:48.971Z"
+status: stable

@@ -1,0 +1,3103 @@
+{
+  "tag": "body",
+  "id": null,
+  "className": "",
+  "rect": {
+    "top": 0,
+    "left": 0,
+    "width": 1440,
+    "height": 11338
+  },
+  "children": [
+    {
+      "tag": "header",
+      "id": null,
+      "className": "bg-sand sticky top-0 z-50 border-b border-stone-dark/10",
+      "rect": {
+        "top": 0,
+        "left": 0,
+        "width": 1440,
+        "height": 81
+      },
+      "children": [
+        {
+          "tag": "nav",
+          "id": null,
+          "className": "container flex items-center justify-between px-6 py-4 mx-auto",
+          "rect": {
+            "top": 0,
+            "left": 80,
+            "width": 1280,
+            "height": 80
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "id": "main-content",
+      "className": "",
+      "rect": {
+        "top": 81,
+        "left": 0,
+        "width": 1440,
+        "height": 10433
+      },
+      "children": [
+        {
+          "tag": "section",
+          "id": "home-section",
+          "className": "w-screen max-w-none px-6 lg:px-8 py-12 lg:py-20 relative isolate",
+          "rect": {
+            "top": 81,
+            "left": 0,
+            "width": 1440,
+            "height": 550
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "absolute inset-0 -z-10 pointer-events-none overflow-hidden",
+              "rect": {
+                "top": 81,
+                "left": 0,
+                "width": 1440,
+                "height": 550
+              },
+              "children": []
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "className": "max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16 relative z-10",
+              "rect": {
+                "top": 161,
+                "left": 80,
+                "width": 1280,
+                "height": 390
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "w-full lg:w-[50%] flex flex-col gap-6 text-center lg:text-left",
+                  "rect": {
+                    "top": 161,
+                    "left": 80,
+                    "width": 608,
+                    "height": 390
+                  },
+                  "children": [
+                    {
+                      "tag": "h1",
+                      "id": null,
+                      "className": "font-serif font-normal text-3xl sm:text-4xl lg:text-5xl tracking-tight text-charcoal leading-snug",
+                      "rect": {
+                        "top": 161,
+                        "left": 80,
+                        "width": 608,
+                        "height": 144
+                      },
+                      "children": [
+                        {
+                          "tag": "span",
+                          "id": null,
+                          "className": "italic",
+                          "rect": {
+                            "top": 203,
+                            "left": 80,
+                            "width": 605.5,
+                            "height": 108
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "p",
+                      "id": null,
+                      "className": "text-base lg:text-lg text-charcoal/60 leading-relaxed max-w-xl",
+                      "rect": {
+                        "top": 329,
+                        "left": 80,
+                        "width": 576,
+                        "height": 84
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "w-full lg:w-[50%] h-auto flex items-center justify-center",
+                  "rect": {
+                    "top": 185,
+                    "left": 752,
+                    "width": 608,
+                    "height": 342
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "rounded-lg overflow-hidden w-full relative bg-stone aspect-video",
+                      "rect": {
+                        "top": 185,
+                        "left": 752,
+                        "width": 608,
+                        "height": 342
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "absolute inset-0 bg-stone z-0",
+                          "rect": {
+                            "top": 185,
+                            "left": 752,
+                            "width": 608,
+                            "height": 342
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "video",
+                          "id": null,
+                          "className": "w-full h-full object-contain rounded-lg z-10 relative",
+                          "rect": {
+                            "top": 185,
+                            "left": 752,
+                            "width": 608,
+                            "height": 342
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "className": "bg-stone py-16 lg:py-24",
+          "rect": {
+            "top": 631,
+            "left": 0,
+            "width": 1440,
+            "height": 512
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "max-w-4xl mx-auto px-6 lg:px-8 text-center",
+              "rect": {
+                "top": 727,
+                "left": 272,
+                "width": 896,
+                "height": 320
+              },
+              "children": [
+                {
+                  "tag": "p",
+                  "id": null,
+                  "className": "text-base lg:text-lg text-charcoal/60 leading-relaxed max-w-2xl mx-auto mb-8",
+                  "rect": {
+                    "top": 791,
+                    "left": 384,
+                    "width": 672,
+                    "height": 84
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto text-left",
+                  "rect": {
+                    "top": 907,
+                    "left": 432,
+                    "width": 576,
+                    "height": 84
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "className": "jsx-ae645076ff7ba6b1 py-16 lg:py-24 bg-sand",
+          "rect": {
+            "top": 1143,
+            "left": 0,
+            "width": 1440,
+            "height": 1518
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "jsx-ae645076ff7ba6b1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+              "rect": {
+                "top": 1239,
+                "left": 80,
+                "width": 1280,
+                "height": 1326
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "jsx-ae645076ff7ba6b1 text-center mb-12",
+                  "rect": {
+                    "top": 1239,
+                    "left": 112,
+                    "width": 1216,
+                    "height": 120
+                  },
+                  "children": [
+                    {
+                      "tag": "p",
+                      "id": null,
+                      "className": "jsx-ae645076ff7ba6b1 text-lg text-charcoal/60 max-w-2xl mx-auto",
+                      "rect": {
+                        "top": 1303,
+                        "left": 384,
+                        "width": 672,
+                        "height": 56
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "jsx-ae645076ff7ba6b1 mb-16",
+                  "rect": {
+                    "top": 1407,
+                    "left": 112,
+                    "width": 1216,
+                    "height": 246
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "jsx-ae645076ff7ba6b1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6",
+                      "rect": {
+                        "top": 1471,
+                        "left": 112,
+                        "width": 1216,
+                        "height": 182
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "jsx-ae645076ff7ba6b1 bg-stone rounded-lg p-6 border border-stone-dark transition-colors animate-fade-in",
+                          "rect": {
+                            "top": 1471,
+                            "left": 112,
+                            "width": 286,
+                            "height": 182
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "jsx-ae645076ff7ba6b1 bg-stone rounded-lg p-6 border border-stone-dark transition-colors animate-fade-in",
+                          "rect": {
+                            "top": 1471.06494140625,
+                            "left": 422,
+                            "width": 286,
+                            "height": 182
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "jsx-ae645076ff7ba6b1 bg-stone rounded-lg p-6 border border-stone-dark transition-colors animate-fade-in",
+                          "rect": {
+                            "top": 1472.377685546875,
+                            "left": 732,
+                            "width": 286,
+                            "height": 182
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "jsx-ae645076ff7ba6b1 bg-stone rounded-lg p-6 border border-stone-dark transition-colors animate-fade-in",
+                          "rect": {
+                            "top": 1474.827392578125,
+                            "left": 1042,
+                            "width": 286,
+                            "height": 182
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "jsx-ae645076ff7ba6b1 bg-charcoal rounded-lg p-8 lg:p-12 text-sand",
+                  "rect": {
+                    "top": 1717,
+                    "left": 112,
+                    "width": 1216,
+                    "height": 668
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "jsx-ae645076ff7ba6b1 max-w-2xl mx-auto",
+                      "rect": {
+                        "top": 1833,
+                        "left": 384,
+                        "width": 672,
+                        "height": 504
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "jsx-ae645076ff7ba6b1 mb-8",
+                          "rect": {
+                            "top": 1833,
+                            "left": 384,
+                            "width": 672,
+                            "height": 116
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "jsx-ae645076ff7ba6b1 space-y-4",
+                              "rect": {
+                                "top": 1877,
+                                "left": 384,
+                                "width": 672,
+                                "height": 72
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "jsx-ae645076ff7ba6b1 grid grid-cols-1 md:grid-cols-2 gap-6",
+                          "rect": {
+                            "top": 1981,
+                            "left": 384,
+                            "width": 672,
+                            "height": 188
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "jsx-ae645076ff7ba6b1 bg-sand/10 rounded-lg p-6",
+                              "rect": {
+                                "top": 1981,
+                                "left": 384,
+                                "width": 324,
+                                "height": 188
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "jsx-ae645076ff7ba6b1 space-y-2",
+                                  "rect": {
+                                    "top": 2049,
+                                    "left": 408,
+                                    "width": 276,
+                                    "height": 96
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "jsx-ae645076ff7ba6b1 bg-sand/10 rounded-lg p-6",
+                              "rect": {
+                                "top": 1981,
+                                "left": 732,
+                                "width": 324,
+                                "height": 188
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "jsx-ae645076ff7ba6b1 space-y-2",
+                                  "rect": {
+                                    "top": 2049,
+                                    "left": 756,
+                                    "width": 276,
+                                    "height": 96
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "jsx-ae645076ff7ba6b1 mt-8 text-center bg-sand/10 rounded-lg p-6",
+                          "rect": {
+                            "top": 2201,
+                            "left": 384,
+                            "width": 672,
+                            "height": 136
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "jsx-ae645076ff7ba6b1 text-center mt-12",
+                  "rect": {
+                    "top": 2433,
+                    "left": 112,
+                    "width": 1216,
+                    "height": 132
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "id": "features",
+          "className": "py-8 md:py-20 space-y-8 md:space-y-20 max-w-7xl mx-auto bg-sand",
+          "rect": {
+            "top": 2662,
+            "left": 80,
+            "width": 1280,
+            "height": 714
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "px-4 md:px-8",
+              "rect": {
+                "top": 2742,
+                "left": 80,
+                "width": 1280,
+                "height": 554
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "flex flex-col md:flex-row gap-6 md:gap-10",
+                  "rect": {
+                    "top": 2846,
+                    "left": 112,
+                    "width": 1216,
+                    "height": 450
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "w-full md:w-1/2",
+                      "rect": {
+                        "top": 2846,
+                        "left": 112,
+                        "width": 588,
+                        "height": 450
+                      },
+                      "children": [
+                        {
+                          "tag": "ul",
+                          "id": null,
+                          "className": "w-full",
+                          "rect": {
+                            "top": 2846,
+                            "left": 112,
+                            "width": 588,
+                            "height": 428
+                          },
+                          "children": [
+                            {
+                              "tag": "li",
+                              "id": null,
+                              "className": "",
+                              "rect": {
+                                "top": 2846,
+                                "left": 112,
+                                "width": 588,
+                                "height": 128
+                              },
+                              "children": [
+                                {
+                                  "tag": "button",
+                                  "id": null,
+                                  "className": "relative flex gap-2 items-center w-full py-3 md:py-4 text-base font-medium text-left md:text-lg",
+                                  "rect": {
+                                    "top": 2846,
+                                    "left": 112,
+                                    "width": 588,
+                                    "height": 60
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "text-charcoal/70 overflow-hidden accordion-item accordion-open",
+                                  "rect": {
+                                    "top": 2906,
+                                    "left": 112,
+                                    "width": 588,
+                                    "height": 68
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "pb-3 md:pb-4 leading-relaxed",
+                                      "rect": {
+                                        "top": 2906,
+                                        "left": 112,
+                                        "width": 588,
+                                        "height": 68
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "id": null,
+                              "className": "",
+                              "rect": {
+                                "top": 2974,
+                                "left": 112,
+                                "width": 588,
+                                "height": 60
+                              },
+                              "children": [
+                                {
+                                  "tag": "button",
+                                  "id": null,
+                                  "className": "relative flex gap-2 items-center w-full py-3 md:py-4 text-base font-medium text-left md:text-lg",
+                                  "rect": {
+                                    "top": 2974,
+                                    "left": 112,
+                                    "width": 588,
+                                    "height": 60
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "id": null,
+                              "className": "",
+                              "rect": {
+                                "top": 3034,
+                                "left": 112,
+                                "width": 588,
+                                "height": 60
+                              },
+                              "children": [
+                                {
+                                  "tag": "button",
+                                  "id": null,
+                                  "className": "relative flex gap-2 items-center w-full py-3 md:py-4 text-base font-medium text-left md:text-lg",
+                                  "rect": {
+                                    "top": 3034,
+                                    "left": 112,
+                                    "width": 588,
+                                    "height": 60
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "id": null,
+                              "className": "",
+                              "rect": {
+                                "top": 3094,
+                                "left": 112,
+                                "width": 588,
+                                "height": 60
+                              },
+                              "children": [
+                                {
+                                  "tag": "button",
+                                  "id": null,
+                                  "className": "relative flex gap-2 items-center w-full py-3 md:py-4 text-base font-medium text-left md:text-lg",
+                                  "rect": {
+                                    "top": 3094,
+                                    "left": 112,
+                                    "width": 588,
+                                    "height": 60
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "id": null,
+                              "className": "",
+                              "rect": {
+                                "top": 3154,
+                                "left": 112,
+                                "width": 588,
+                                "height": 60
+                              },
+                              "children": [
+                                {
+                                  "tag": "button",
+                                  "id": null,
+                                  "className": "relative flex gap-2 items-center w-full py-3 md:py-4 text-base font-medium text-left md:text-lg",
+                                  "rect": {
+                                    "top": 3154,
+                                    "left": 112,
+                                    "width": 588,
+                                    "height": 60
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "id": null,
+                              "className": "",
+                              "rect": {
+                                "top": 3214,
+                                "left": 112,
+                                "width": 588,
+                                "height": 60
+                              },
+                              "children": [
+                                {
+                                  "tag": "button",
+                                  "id": null,
+                                  "className": "relative flex gap-2 items-center w-full py-3 md:py-4 text-base font-medium text-left md:text-lg",
+                                  "rect": {
+                                    "top": 3214,
+                                    "left": 112,
+                                    "width": 588,
+                                    "height": 60
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "w-full md:w-1/2 h-[200px] md:h-[450px] md:sticky md:top-24 mt-0 relative",
+                      "rect": {
+                        "top": 2846,
+                        "left": 740,
+                        "width": 588,
+                        "height": 450
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "h-full flex items-center justify-center",
+                          "rect": {
+                            "top": 2846,
+                            "left": 740,
+                            "width": 588,
+                            "height": 450
+                          },
+                          "children": [
+                            {
+                              "tag": "video",
+                              "id": null,
+                              "className": "rounded-2xl w-full h-auto object-contain max-h-full",
+                              "rect": {
+                                "top": 2905.625,
+                                "left": 740,
+                                "width": 588,
+                                "height": 330.75
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "className": "py-16 lg:py-24 bg-sand",
+          "rect": {
+            "top": 3377,
+            "left": 0,
+            "width": 1440,
+            "height": 1193
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+              "rect": {
+                "top": 3473,
+                "left": 80,
+                "width": 1280,
+                "height": 1001
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "text-center mb-12",
+                  "rect": {
+                    "top": 3473,
+                    "left": 112,
+                    "width": 1216,
+                    "height": 148
+                  },
+                  "children": [
+                    {
+                      "tag": "p",
+                      "id": null,
+                      "className": "text-lg text-charcoal/60 max-w-3xl mx-auto mb-2",
+                      "rect": {
+                        "top": 3537,
+                        "left": 336,
+                        "width": 768,
+                        "height": 56
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "text-center mb-12",
+                  "rect": {
+                    "top": 3751,
+                    "left": 112,
+                    "width": 1216,
+                    "height": 90
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "inline-block bg-stone border border-stone-dark rounded-lg p-4",
+                      "rect": {
+                        "top": 3751,
+                        "left": 483.875,
+                        "width": 472.25,
+                        "height": 90
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 relative",
+                  "rect": {
+                    "top": 3889,
+                    "left": 112,
+                    "width": 1216,
+                    "height": 481
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "relative",
+                      "rect": {
+                        "top": 3889,
+                        "left": 112,
+                        "width": 384,
+                        "height": 481
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "relative rounded-lg p-6 bg-stone border-2 border-charcoal",
+                          "rect": {
+                            "top": 3889,
+                            "left": 112,
+                            "width": 384,
+                            "height": 481
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "mb-6 p-3 bg-sand rounded-lg border border-stone-dark",
+                              "rect": {
+                                "top": 4047,
+                                "left": 138,
+                                "width": 332,
+                                "height": 74
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "ul",
+                              "id": null,
+                              "className": "space-y-3",
+                              "rect": {
+                                "top": 4145,
+                                "left": 138,
+                                "width": 332,
+                                "height": 127
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "relative",
+                      "rect": {
+                        "top": 3889,
+                        "left": 528,
+                        "width": 384,
+                        "height": 481
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "relative rounded-lg p-6 bg-stone/50 border border-stone-dark",
+                          "rect": {
+                            "top": 3889,
+                            "left": 528,
+                            "width": 384,
+                            "height": 407
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "mb-6 p-3 bg-sand rounded-lg border border-stone-dark",
+                              "rect": {
+                                "top": 4046,
+                                "left": 553,
+                                "width": 334,
+                                "height": 74
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "ul",
+                              "id": null,
+                              "className": "space-y-3",
+                              "rect": {
+                                "top": 4144,
+                                "left": 553,
+                                "width": 334,
+                                "height": 127
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "relative",
+                      "rect": {
+                        "top": 3889,
+                        "left": 944,
+                        "width": 384,
+                        "height": 481
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "relative rounded-lg p-6 bg-stone/50 border border-stone-dark",
+                          "rect": {
+                            "top": 3889,
+                            "left": 944,
+                            "width": 384,
+                            "height": 407
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "mb-6 p-3 bg-sand rounded-lg border border-stone-dark",
+                              "rect": {
+                                "top": 4046,
+                                "left": 969,
+                                "width": 334,
+                                "height": 74
+                              },
+                              "children": []
+                            },
+                            {
+                              "tag": "ul",
+                              "id": null,
+                              "className": "space-y-3",
+                              "rect": {
+                                "top": 4144,
+                                "left": 969,
+                                "width": 334,
+                                "height": 127
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "text-center mt-12",
+                  "rect": {
+                    "top": 4418,
+                    "left": 112,
+                    "width": 1216,
+                    "height": 56
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "className": "py-16 bg-sand ",
+          "rect": {
+            "top": 4571,
+            "left": 0,
+            "width": 1440,
+            "height": 734
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+              "rect": {
+                "top": 4635,
+                "left": 80,
+                "width": 1280,
+                "height": 606
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "text-center mb-12",
+                  "rect": {
+                    "top": 4635,
+                    "left": 112,
+                    "width": 1216,
+                    "height": 112
+                  },
+                  "children": [
+                    {
+                      "tag": "p",
+                      "id": null,
+                      "className": "text-lg text-charcoal/60 max-w-2xl mx-auto",
+                      "rect": {
+                        "top": 4691,
+                        "left": 384,
+                        "width": 672,
+                        "height": 56
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6",
+                  "rect": {
+                    "top": 4795,
+                    "left": 112,
+                    "width": 1216,
+                    "height": 316
+                  },
+                  "children": [
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "className": "group bg-white rounded-lg border border-stone-dark p-6 hover:border-charcoal/30 transition-colors",
+                      "rect": {
+                        "top": 4795,
+                        "left": 112,
+                        "width": 286,
+                        "height": 146
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "className": "group bg-white rounded-lg border border-stone-dark p-6 hover:border-charcoal/30 transition-colors",
+                      "rect": {
+                        "top": 4795,
+                        "left": 422,
+                        "width": 286,
+                        "height": 146
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "className": "group bg-white rounded-lg border border-stone-dark p-6 hover:border-charcoal/30 transition-colors",
+                      "rect": {
+                        "top": 4795,
+                        "left": 732,
+                        "width": 286,
+                        "height": 146
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "className": "group bg-white rounded-lg border border-stone-dark p-6 hover:border-charcoal/30 transition-colors",
+                      "rect": {
+                        "top": 4795,
+                        "left": 1042,
+                        "width": 286,
+                        "height": 146
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "className": "group bg-white rounded-lg border border-stone-dark p-6 hover:border-charcoal/30 transition-colors",
+                      "rect": {
+                        "top": 4965,
+                        "left": 112,
+                        "width": 286,
+                        "height": 146
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "className": "group bg-white rounded-lg border border-stone-dark p-6 hover:border-charcoal/30 transition-colors",
+                      "rect": {
+                        "top": 4965,
+                        "left": 422,
+                        "width": 286,
+                        "height": 146
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "className": "group bg-white rounded-lg border border-stone-dark p-6 hover:border-charcoal/30 transition-colors",
+                      "rect": {
+                        "top": 4965,
+                        "left": 732,
+                        "width": 286,
+                        "height": 146
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "className": "group bg-white rounded-lg border border-stone-dark p-6 hover:border-charcoal/30 transition-colors",
+                      "rect": {
+                        "top": 4965,
+                        "left": 1042,
+                        "width": 286,
+                        "height": 146
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "text-center mt-12",
+                  "rect": {
+                    "top": 5159,
+                    "left": 112,
+                    "width": 1216,
+                    "height": 82
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "className": "py-16 lg:py-20 bg-sand",
+          "rect": {
+            "top": 5306,
+            "left": 0,
+            "width": 1440,
+            "height": 1248
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8",
+              "rect": {
+                "top": 5386,
+                "left": 144,
+                "width": 1152,
+                "height": 1088
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "text-center mb-12",
+                  "rect": {
+                    "top": 5386,
+                    "left": 176,
+                    "width": 1088,
+                    "height": 92
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "relative mb-12",
+                  "rect": {
+                    "top": 5526,
+                    "left": 176,
+                    "width": 1088,
+                    "height": 252
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "grid grid-cols-1 lg:grid-cols-4 gap-6 relative",
+                      "rect": {
+                        "top": 5526,
+                        "left": 176,
+                        "width": 1088,
+                        "height": 252
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "relative transition-all duration-500 opacity-100",
+                          "rect": {
+                            "top": 5526,
+                            "left": 176,
+                            "width": 254,
+                            "height": 252
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "bg-stone rounded-lg p-6 border transition-colors cursor-pointer border-charcoal",
+                              "rect": {
+                                "top": 5526,
+                                "left": 176,
+                                "width": 254,
+                                "height": 252
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "mb-3",
+                                  "rect": {
+                                    "top": 5591,
+                                    "left": 201,
+                                    "width": 204,
+                                    "height": 52
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "relative transition-all duration-500 opacity-100",
+                          "rect": {
+                            "top": 5526,
+                            "left": 454,
+                            "width": 254,
+                            "height": 252
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "bg-stone rounded-lg p-6 border transition-colors cursor-pointer border-stone-dark",
+                              "rect": {
+                                "top": 5526,
+                                "left": 454,
+                                "width": 254,
+                                "height": 252
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "mb-3",
+                                  "rect": {
+                                    "top": 5591,
+                                    "left": 479,
+                                    "width": 204,
+                                    "height": 52
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "relative transition-all duration-500 opacity-100",
+                          "rect": {
+                            "top": 5526,
+                            "left": 732,
+                            "width": 254,
+                            "height": 252
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "bg-stone rounded-lg p-6 border transition-colors cursor-pointer border-stone-dark",
+                              "rect": {
+                                "top": 5526,
+                                "left": 732,
+                                "width": 254,
+                                "height": 252
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "mb-3",
+                                  "rect": {
+                                    "top": 5591,
+                                    "left": 757,
+                                    "width": 204,
+                                    "height": 52
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "relative transition-all duration-500 opacity-100",
+                          "rect": {
+                            "top": 5526,
+                            "left": 1010,
+                            "width": 254,
+                            "height": 252
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "bg-stone rounded-lg p-6 border transition-colors cursor-pointer border-stone-dark",
+                              "rect": {
+                                "top": 5526,
+                                "left": 1010,
+                                "width": 254,
+                                "height": 252
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "mb-3",
+                                  "rect": {
+                                    "top": 5591,
+                                    "left": 1035,
+                                    "width": 204,
+                                    "height": 52
+                                  },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "bg-stone rounded-lg p-8 mb-12 border border-stone-dark",
+                  "rect": {
+                    "top": 5826,
+                    "left": 176,
+                    "width": 1088,
+                    "height": 294
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "grid grid-cols-1 md:grid-cols-2 gap-8",
+                      "rect": {
+                        "top": 5915,
+                        "left": 209,
+                        "width": 1022,
+                        "height": 172
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "text-center",
+                          "rect": {
+                            "top": 5915,
+                            "left": 209,
+                            "width": 495,
+                            "height": 172
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "text-center",
+                          "rect": {
+                            "top": 5915,
+                            "left": 736,
+                            "width": 495,
+                            "height": 172
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "flex justify-center flex-wrap gap-2 mb-4",
+                              "rect": {
+                                "top": 5959,
+                                "left": 736,
+                                "width": 495,
+                                "height": 88
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "bg-stone border border-charcoal/20 rounded-lg p-6 text-center",
+                  "rect": {
+                    "top": 6168,
+                    "left": 176,
+                    "width": 1088,
+                    "height": 174
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "text-center mt-12",
+                  "rect": {
+                    "top": 6390,
+                    "left": 176,
+                    "width": 1088,
+                    "height": 84
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "id": "pricing-section",
+          "className": "bg-sand py-20 lg:py-28",
+          "rect": {
+            "top": 6555,
+            "left": 0,
+            "width": 1440,
+            "height": 1201
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "max-w-4xl mx-auto px-6 lg:px-8",
+              "rect": {
+                "top": 6667,
+                "left": 272,
+                "width": 896,
+                "height": 977
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "text-center mb-12",
+                  "rect": {
+                    "top": 6667,
+                    "left": 304,
+                    "width": 832,
+                    "height": 84
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "max-w-lg mx-auto",
+                  "rect": {
+                    "top": 6799,
+                    "left": 464,
+                    "width": 512,
+                    "height": 845
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "border border-charcoal/10 rounded-lg bg-white overflow-hidden",
+                      "rect": {
+                        "top": 6799,
+                        "left": 464,
+                        "width": 512,
+                        "height": 793
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "bg-charcoal text-sand px-6 py-4 text-center",
+                          "rect": {
+                            "top": 6800,
+                            "left": 465,
+                            "width": 510,
+                            "height": 88
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "p-6 space-y-4",
+                          "rect": {
+                            "top": 6888,
+                            "left": 465,
+                            "width": 510,
+                            "height": 441
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "flex items-start justify-between gap-4 pb-4 border-b border-charcoal/10",
+                              "rect": {
+                                "top": 6912,
+                                "left": 489,
+                                "width": 462,
+                                "height": 57
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "p-6 text-center",
+                          "rect": {
+                            "top": 7331,
+                            "left": 465,
+                            "width": 510,
+                            "height": 260
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "id": "snippets",
+          "className": "py-16 md:py-24 bg-sand relative overflow-hidden",
+          "rect": {
+            "top": 7757,
+            "left": 0,
+            "width": 1440,
+            "height": 948
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "max-w-7xl mx-auto px-4 md:px-8 relative z-10",
+              "rect": {
+                "top": 7853,
+                "left": 80,
+                "width": 1280,
+                "height": 756
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "flex flex-col text-center w-full mb-12",
+                  "rect": {
+                    "top": 7853,
+                    "left": 112,
+                    "width": 1216,
+                    "height": 136
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "w-full max-w-5xl mx-auto",
+                  "rect": {
+                    "top": 8037,
+                    "left": 208,
+                    "width": 1024,
+                    "height": 572
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "bg-stone rounded-lg border border-stone-dark overflow-hidden relative",
+                      "rect": {
+                        "top": 8037,
+                        "left": 208,
+                        "width": 1024,
+                        "height": 572
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "p-4 border-b border-stone-dark flex items-center gap-4 bg-sand",
+                          "rect": {
+                            "top": 8038,
+                            "left": 209,
+                            "width": 1022,
+                            "height": 75
+                          },
+                          "children": []
+                        },
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "flex flex-row overflow-hidden h-[450px] relative",
+                          "rect": {
+                            "top": 8158,
+                            "left": 209,
+                            "width": 1022,
+                            "height": 450
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "w-[30%] border-r border-stone-dark overflow-y-auto bg-sand",
+                              "rect": {
+                                "top": 8158,
+                                "left": 209,
+                                "width": 306.59375,
+                                "height": 450
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "p-1",
+                                  "rect": {
+                                    "top": 8158,
+                                    "left": 209,
+                                    "width": 305.59375,
+                                    "height": 348
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "p-3 rounded-md cursor-pointer mb-1 transition-colors bg-charcoal text-sand",
+                                      "rect": {
+                                        "top": 8162,
+                                        "left": 213,
+                                        "width": 297.59375,
+                                        "height": 64
+                                      },
+                                      "children": []
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "p-3 rounded-md cursor-pointer mb-1 transition-colors hover:bg-stone text-charcoal",
+                                      "rect": {
+                                        "top": 8230,
+                                        "left": 213,
+                                        "width": 297.59375,
+                                        "height": 64
+                                      },
+                                      "children": []
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "p-3 rounded-md cursor-pointer mb-1 transition-colors hover:bg-stone text-charcoal",
+                                      "rect": {
+                                        "top": 8298,
+                                        "left": 213,
+                                        "width": 297.59375,
+                                        "height": 64
+                                      },
+                                      "children": []
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "p-3 rounded-md cursor-pointer mb-1 transition-colors hover:bg-stone text-charcoal",
+                                      "rect": {
+                                        "top": 8366,
+                                        "left": 213,
+                                        "width": 297.59375,
+                                        "height": 64
+                                      },
+                                      "children": []
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "p-3 rounded-md cursor-pointer mb-1 transition-colors hover:bg-stone text-charcoal",
+                                      "rect": {
+                                        "top": 8434,
+                                        "left": 213,
+                                        "width": 297.59375,
+                                        "height": 64
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "w-[70%] overflow-y-auto bg-stone",
+                              "rect": {
+                                "top": 8158,
+                                "left": 515.59375,
+                                "width": 715.390625,
+                                "height": 450
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "p-6 space-y-4",
+                                  "rect": {
+                                    "top": 8158,
+                                    "left": 515.59375,
+                                    "width": 715.390625,
+                                    "height": 154
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "id": null,
+                                      "className": "p-5 bg-sand rounded-md border border-stone-dark",
+                                      "rect": {
+                                        "top": 8226,
+                                        "left": 539.59375,
+                                        "width": 667.390625,
+                                        "height": 62
+                                      },
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "id": "faq-section",
+          "className": "bg-stone py-20 lg:py-28",
+          "rect": {
+            "top": 8705,
+            "left": 0,
+            "width": 1440,
+            "height": 907
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "max-w-4xl mx-auto px-6 lg:px-8",
+              "rect": {
+                "top": 8817,
+                "left": 272,
+                "width": 896,
+                "height": 683
+              },
+              "children": [
+                {
+                  "tag": "ul",
+                  "id": null,
+                  "className": "space-y-4",
+                  "rect": {
+                    "top": 8921,
+                    "left": 304,
+                    "width": 832,
+                    "height": 579
+                  },
+                  "children": [
+                    {
+                      "tag": "li",
+                      "id": null,
+                      "className": "",
+                      "rect": {
+                        "top": 8921,
+                        "left": 304,
+                        "width": 832,
+                        "height": 69
+                      },
+                      "children": [
+                        {
+                          "tag": "button",
+                          "id": null,
+                          "className": "relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-charcoal/10",
+                          "rect": {
+                            "top": 8921,
+                            "left": 304,
+                            "width": 832,
+                            "height": 69
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "li",
+                      "id": null,
+                      "className": "",
+                      "rect": {
+                        "top": 9006,
+                        "left": 304,
+                        "width": 832,
+                        "height": 69
+                      },
+                      "children": [
+                        {
+                          "tag": "button",
+                          "id": null,
+                          "className": "relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-charcoal/10",
+                          "rect": {
+                            "top": 9006,
+                            "left": 304,
+                            "width": 832,
+                            "height": 69
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "li",
+                      "id": null,
+                      "className": "",
+                      "rect": {
+                        "top": 9091,
+                        "left": 304,
+                        "width": 832,
+                        "height": 69
+                      },
+                      "children": [
+                        {
+                          "tag": "button",
+                          "id": null,
+                          "className": "relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-charcoal/10",
+                          "rect": {
+                            "top": 9091,
+                            "left": 304,
+                            "width": 832,
+                            "height": 69
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "li",
+                      "id": null,
+                      "className": "",
+                      "rect": {
+                        "top": 9176,
+                        "left": 304,
+                        "width": 832,
+                        "height": 69
+                      },
+                      "children": [
+                        {
+                          "tag": "button",
+                          "id": null,
+                          "className": "relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-charcoal/10",
+                          "rect": {
+                            "top": 9176,
+                            "left": 304,
+                            "width": 832,
+                            "height": 69
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "li",
+                      "id": null,
+                      "className": "",
+                      "rect": {
+                        "top": 9261,
+                        "left": 304,
+                        "width": 832,
+                        "height": 69
+                      },
+                      "children": [
+                        {
+                          "tag": "button",
+                          "id": null,
+                          "className": "relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-charcoal/10",
+                          "rect": {
+                            "top": 9261,
+                            "left": 304,
+                            "width": 832,
+                            "height": 69
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "li",
+                      "id": null,
+                      "className": "",
+                      "rect": {
+                        "top": 9346,
+                        "left": 304,
+                        "width": 832,
+                        "height": 69
+                      },
+                      "children": [
+                        {
+                          "tag": "button",
+                          "id": null,
+                          "className": "relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-charcoal/10",
+                          "rect": {
+                            "top": 9346,
+                            "left": 304,
+                            "width": 832,
+                            "height": 69
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "li",
+                      "id": null,
+                      "className": "",
+                      "rect": {
+                        "top": 9431,
+                        "left": 304,
+                        "width": 832,
+                        "height": 69
+                      },
+                      "children": [
+                        {
+                          "tag": "button",
+                          "id": null,
+                          "className": "relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-charcoal/10",
+                          "rect": {
+                            "top": 9431,
+                            "left": 304,
+                            "width": 832,
+                            "height": 69
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "className": "bg-charcoal py-20 lg:py-28",
+          "rect": {
+            "top": 9612,
+            "left": 0,
+            "width": 1440,
+            "height": 496
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "max-w-3xl mx-auto px-6 lg:px-8 text-center",
+              "rect": {
+                "top": 9724,
+                "left": 336,
+                "width": 768,
+                "height": 272
+              },
+              "children": [
+                {
+                  "tag": "h2",
+                  "id": null,
+                  "className": "font-serif font-normal text-3xl lg:text-4xl tracking-tight text-sand mb-6",
+                  "rect": {
+                    "top": 9724,
+                    "left": 368,
+                    "width": 704,
+                    "height": 80
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "p",
+                  "id": null,
+                  "className": "text-base lg:text-lg text-sand/70 mb-8 max-w-2xl mx-auto",
+                  "rect": {
+                    "top": 9828,
+                    "left": 384,
+                    "width": 672,
+                    "height": 56
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "className": "bg-base-200/30 py-16",
+          "rect": {
+            "top": 10108,
+            "left": 0,
+            "width": 1440,
+            "height": 406
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "max-w-7xl mx-auto px-8",
+              "rect": {
+                "top": 10172,
+                "left": 80,
+                "width": 1280,
+                "height": 278
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "flex flex-col items-center",
+                  "rect": {
+                    "top": 10172,
+                    "left": 112,
+                    "width": 1216,
+                    "height": 278
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "group w-full overflow-hidden z-10 sm:mt-0 mt-0",
+                      "rect": {
+                        "top": 10280,
+                        "left": 112,
+                        "width": 1216,
+                        "height": 94
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "relative flex flex-shrink-0 max-w-[90vw] md:max-w-full overflow-hidden py-5",
+                          "rect": {
+                            "top": 10280,
+                            "left": 112,
+                            "width": 1216,
+                            "height": 94
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "id": null,
+                              "className": "flex items-center w-max animate-marquee group-hover:[animation-play-state:paused]",
+                              "rect": {
+                                "top": 10300,
+                                "left": 108.384033203125,
+                                "width": 1216,
+                                "height": 54
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-shrink-0 px-2",
+                                  "rect": {
+                                    "top": 10300,
+                                    "left": 108.384033203125,
+                                    "width": 266,
+                                    "height": 54
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "id": null,
+                                      "className": "transition-opacity duration-200",
+                                      "rect": {
+                                        "top": 10300,
+                                        "left": 116.384033203125,
+                                        "width": 250,
+                                        "height": 54
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "id": null,
+                                          "className": "h-[54px] w-auto",
+                                          "rect": {
+                                            "top": 10300,
+                                            "left": 116.384033203125,
+                                            "width": 250,
+                                            "height": 54
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-shrink-0 px-2",
+                                  "rect": {
+                                    "top": 10300,
+                                    "left": 374.384033203125,
+                                    "width": 178,
+                                    "height": 54
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "id": null,
+                                      "className": "duration-200",
+                                      "rect": {
+                                        "top": 10300,
+                                        "left": 382.384033203125,
+                                        "width": 162,
+                                        "height": 54
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "svg",
+                                          "id": null,
+                                          "className": null,
+                                          "rect": {
+                                            "top": 10300,
+                                            "left": 382.384033203125,
+                                            "width": 162,
+                                            "height": 54
+                                          },
+                                          "children": [
+                                            {
+                                              "tag": "rect",
+                                              "id": null,
+                                              "className": null,
+                                              "rect": {
+                                                "top": 10300,
+                                                "left": 382.384033203125,
+                                                "width": 162,
+                                                "height": 54
+                                              },
+                                              "children": []
+                                            },
+                                            {
+                                              "tag": "rect",
+                                              "id": null,
+                                              "className": null,
+                                              "rect": {
+                                                "top": 10300.6748046875,
+                                                "left": 383.05902099609375,
+                                                "width": 160.6500244140625,
+                                                "height": 52.650390625
+                                              },
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-shrink-0 px-2",
+                                  "rect": {
+                                    "top": 10300,
+                                    "left": 552.384033203125,
+                                    "width": 16,
+                                    "height": 54
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-shrink-0 px-2",
+                                  "rect": {
+                                    "top": 10300,
+                                    "left": 568.384033203125,
+                                    "width": 16,
+                                    "height": 54
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-shrink-0 px-2",
+                                  "rect": {
+                                    "top": 10300,
+                                    "left": 584.384033203125,
+                                    "width": 216,
+                                    "height": 54
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "id": null,
+                                      "className": "duration-200",
+                                      "rect": {
+                                        "top": 10300,
+                                        "left": 592.384033203125,
+                                        "width": 200,
+                                        "height": 54
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "id": null,
+                                          "className": "h-[54px] w-auto",
+                                          "rect": {
+                                            "top": 10300,
+                                            "left": 592.384033203125,
+                                            "width": 200,
+                                            "height": 54
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-shrink-0 px-2",
+                                  "rect": {
+                                    "top": 10300,
+                                    "left": 800.384033203125,
+                                    "width": 266,
+                                    "height": 54
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "id": null,
+                                      "className": "transition-opacity duration-200",
+                                      "rect": {
+                                        "top": 10300,
+                                        "left": 808.384033203125,
+                                        "width": 250,
+                                        "height": 54
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "id": null,
+                                          "className": "h-[54px] w-auto",
+                                          "rect": {
+                                            "top": 10300,
+                                            "left": 808.384033203125,
+                                            "width": 250,
+                                            "height": 54
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-shrink-0 px-2",
+                                  "rect": {
+                                    "top": 10300,
+                                    "left": 1066.384033203125,
+                                    "width": 178,
+                                    "height": 54
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "id": null,
+                                      "className": "duration-200",
+                                      "rect": {
+                                        "top": 10300,
+                                        "left": 1074.384033203125,
+                                        "width": 162,
+                                        "height": 54
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "svg",
+                                          "id": null,
+                                          "className": null,
+                                          "rect": {
+                                            "top": 10300,
+                                            "left": 1074.384033203125,
+                                            "width": 162,
+                                            "height": 54
+                                          },
+                                          "children": [
+                                            {
+                                              "tag": "rect",
+                                              "id": null,
+                                              "className": null,
+                                              "rect": {
+                                                "top": 10300,
+                                                "left": 1074.384033203125,
+                                                "width": 162,
+                                                "height": 54
+                                              },
+                                              "children": []
+                                            },
+                                            {
+                                              "tag": "rect",
+                                              "id": null,
+                                              "className": null,
+                                              "rect": {
+                                                "top": 10300.6748046875,
+                                                "left": 1075.05908203125,
+                                                "width": 160.64990234375,
+                                                "height": 52.650390625
+                                              },
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-shrink-0 px-2",
+                                  "rect": {
+                                    "top": 10300,
+                                    "left": 1244.384033203125,
+                                    "width": 16,
+                                    "height": 54
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-shrink-0 px-2",
+                                  "rect": {
+                                    "top": 10300,
+                                    "left": 1260.384033203125,
+                                    "width": 16,
+                                    "height": 54
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-shrink-0 px-2",
+                                  "rect": {
+                                    "top": 10300,
+                                    "left": 1276.384033203125,
+                                    "width": 216,
+                                    "height": 54
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "id": null,
+                                      "className": "duration-200",
+                                      "rect": {
+                                        "top": 10300,
+                                        "left": 1284.384033203125,
+                                        "width": 200,
+                                        "height": 54
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "id": null,
+                                          "className": "h-[54px] w-auto",
+                                          "rect": {
+                                            "top": 10300,
+                                            "left": 1284.384033203125,
+                                            "width": 200,
+                                            "height": 54
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-shrink-0 px-2",
+                                  "rect": {
+                                    "top": 10300,
+                                    "left": 1492.384033203125,
+                                    "width": 266,
+                                    "height": 54
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "id": null,
+                                      "className": "transition-opacity duration-200",
+                                      "rect": {
+                                        "top": 10300,
+                                        "left": 1500.384033203125,
+                                        "width": 250,
+                                        "height": 54
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "id": null,
+                                          "className": "h-[54px] w-auto",
+                                          "rect": {
+                                            "top": 10300,
+                                            "left": 1500.384033203125,
+                                            "width": 250,
+                                            "height": 54
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-shrink-0 px-2",
+                                  "rect": {
+                                    "top": 10300,
+                                    "left": 1758.384033203125,
+                                    "width": 178,
+                                    "height": 54
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "id": null,
+                                      "className": "duration-200",
+                                      "rect": {
+                                        "top": 10300,
+                                        "left": 1766.384033203125,
+                                        "width": 162,
+                                        "height": 54
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "svg",
+                                          "id": null,
+                                          "className": null,
+                                          "rect": {
+                                            "top": 10300,
+                                            "left": 1766.384033203125,
+                                            "width": 162,
+                                            "height": 54
+                                          },
+                                          "children": [
+                                            {
+                                              "tag": "rect",
+                                              "id": null,
+                                              "className": null,
+                                              "rect": {
+                                                "top": 10300,
+                                                "left": 1766.384033203125,
+                                                "width": 162,
+                                                "height": 54
+                                              },
+                                              "children": []
+                                            },
+                                            {
+                                              "tag": "rect",
+                                              "id": null,
+                                              "className": null,
+                                              "rect": {
+                                                "top": 10300.6748046875,
+                                                "left": 1767.05908203125,
+                                                "width": 160.64990234375,
+                                                "height": 52.650390625
+                                              },
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-shrink-0 px-2",
+                                  "rect": {
+                                    "top": 10300,
+                                    "left": 1936.384033203125,
+                                    "width": 16,
+                                    "height": 54
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-shrink-0 px-2",
+                                  "rect": {
+                                    "top": 10300,
+                                    "left": 1952.384033203125,
+                                    "width": 16,
+                                    "height": 54
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-shrink-0 px-2",
+                                  "rect": {
+                                    "top": 10300,
+                                    "left": 1968.384033203125,
+                                    "width": 216,
+                                    "height": 54
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "id": null,
+                                      "className": "duration-200",
+                                      "rect": {
+                                        "top": 10300,
+                                        "left": 1976.384033203125,
+                                        "width": 200,
+                                        "height": 54
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "id": null,
+                                          "className": "h-[54px] w-auto",
+                                          "rect": {
+                                            "top": 10300,
+                                            "left": 1976.384033203125,
+                                            "width": 200,
+                                            "height": 54
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-shrink-0 px-2",
+                                  "rect": {
+                                    "top": 10300,
+                                    "left": 2184.384033203125,
+                                    "width": 266,
+                                    "height": 54
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "id": null,
+                                      "className": "transition-opacity duration-200",
+                                      "rect": {
+                                        "top": 10300,
+                                        "left": 2192.384033203125,
+                                        "width": 250,
+                                        "height": 54
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "id": null,
+                                          "className": "h-[54px] w-auto",
+                                          "rect": {
+                                            "top": 10300,
+                                            "left": 2192.384033203125,
+                                            "width": 250,
+                                            "height": 54
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-shrink-0 px-2",
+                                  "rect": {
+                                    "top": 10300,
+                                    "left": 2450.384033203125,
+                                    "width": 178,
+                                    "height": 54
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "id": null,
+                                      "className": "duration-200",
+                                      "rect": {
+                                        "top": 10300,
+                                        "left": 2458.384033203125,
+                                        "width": 162,
+                                        "height": 54
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "svg",
+                                          "id": null,
+                                          "className": null,
+                                          "rect": {
+                                            "top": 10300,
+                                            "left": 2458.384033203125,
+                                            "width": 162,
+                                            "height": 54
+                                          },
+                                          "children": [
+                                            {
+                                              "tag": "rect",
+                                              "id": null,
+                                              "className": null,
+                                              "rect": {
+                                                "top": 10300,
+                                                "left": 2458.384033203125,
+                                                "width": 162,
+                                                "height": 54
+                                              },
+                                              "children": []
+                                            },
+                                            {
+                                              "tag": "rect",
+                                              "id": null,
+                                              "className": null,
+                                              "rect": {
+                                                "top": 10300.6748046875,
+                                                "left": 2459.05908203125,
+                                                "width": 160.64990234375,
+                                                "height": 52.650390625
+                                              },
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-shrink-0 px-2",
+                                  "rect": {
+                                    "top": 10300,
+                                    "left": 2628.384033203125,
+                                    "width": 16,
+                                    "height": 54
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-shrink-0 px-2",
+                                  "rect": {
+                                    "top": 10300,
+                                    "left": 2644.384033203125,
+                                    "width": 16,
+                                    "height": 54
+                                  },
+                                  "children": []
+                                },
+                                {
+                                  "tag": "div",
+                                  "id": null,
+                                  "className": "flex-shrink-0 px-2",
+                                  "rect": {
+                                    "top": 10300,
+                                    "left": 2660.384033203125,
+                                    "width": 216,
+                                    "height": 54
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "id": null,
+                                      "className": "duration-200",
+                                      "rect": {
+                                        "top": 10300,
+                                        "left": 2668.384033203125,
+                                        "width": 200,
+                                        "height": 54
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "id": null,
+                                          "className": "h-[54px] w-auto",
+                                          "rect": {
+                                            "top": 10300,
+                                            "left": 2668.384033203125,
+                                            "width": 200,
+                                            "height": 54
+                                          },
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "footer",
+      "id": null,
+      "className": "bg-charcoal border-t border-charcoal",
+      "rect": {
+        "top": 10514,
+        "left": 0,
+        "width": 1440,
+        "height": 824
+      },
+      "children": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+          "rect": {
+            "top": 10515,
+            "left": 80,
+            "width": 1280,
+            "height": 823
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "className": "hidden md:grid md:grid-cols-12 gap-6 py-16",
+              "rect": {
+                "top": 10515,
+                "left": 112,
+                "width": 1216,
+                "height": 738
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "col-span-12 md:col-span-2",
+                  "rect": {
+                    "top": 10579,
+                    "left": 112,
+                    "width": 182.65625,
+                    "height": 329
+                  },
+                  "children": [
+                    {
+                      "tag": "p",
+                      "id": null,
+                      "className": "text-sm text-sand/60 mb-6 max-w-xs leading-relaxed",
+                      "rect": {
+                        "top": 10623,
+                        "left": 112,
+                        "width": 182.65625,
+                        "height": 136.5
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "hidden md:block col-span-12 md:col-span-2",
+                  "rect": {
+                    "top": 10579,
+                    "left": 318.65625,
+                    "width": 182.671875,
+                    "height": 329
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "space-y-3",
+                      "rect": {
+                        "top": 10615,
+                        "left": 318.65625,
+                        "width": 182.671875,
+                        "height": 148
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "hidden md:block col-span-12 md:col-span-2",
+                  "rect": {
+                    "top": 10579,
+                    "left": 525.328125,
+                    "width": 182.671875,
+                    "height": 329
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "space-y-3",
+                      "rect": {
+                        "top": 10615,
+                        "left": 525.328125,
+                        "width": 182.671875,
+                        "height": 180
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "hidden md:block col-span-12 md:col-span-2",
+                  "rect": {
+                    "top": 10579,
+                    "left": 732,
+                    "width": 182.65625,
+                    "height": 329
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "space-y-3",
+                      "rect": {
+                        "top": 10615,
+                        "left": 732,
+                        "width": 182.65625,
+                        "height": 217
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "mt-6 pt-6 border-t border-sand/10",
+                          "rect": {
+                            "top": 10711,
+                            "left": 732,
+                            "width": 182.65625,
+                            "height": 121
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "hidden md:block col-span-12 md:col-span-2",
+                  "rect": {
+                    "top": 10579,
+                    "left": 938.65625,
+                    "width": 182.671875,
+                    "height": 329
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "space-y-3",
+                      "rect": {
+                        "top": 10615,
+                        "left": 938.65625,
+                        "width": 182.671875,
+                        "height": 168
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "hidden md:block col-span-12 md:col-span-2",
+                  "rect": {
+                    "top": 10579,
+                    "left": 1145.328125,
+                    "width": 182.671875,
+                    "height": 329
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "space-y-3",
+                      "rect": {
+                        "top": 10615,
+                        "left": 1145.328125,
+                        "width": 182.671875,
+                        "height": 293
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "mt-6 pt-6 border-t border-sand/10",
+                          "rect": {
+                            "top": 10775,
+                            "left": 1145.328125,
+                            "width": 182.671875,
+                            "height": 133
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "className": "hidden md:block col-span-12 md:col-span-2",
+                  "rect": {
+                    "top": 10932,
+                    "left": 112,
+                    "width": 182.65625,
+                    "height": 257
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "className": "space-y-3",
+                      "rect": {
+                        "top": 10968,
+                        "left": 112,
+                        "width": 182.65625,
+                        "height": 221
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "id": null,
+                          "className": "mt-6 pt-6 border-t border-sand/10",
+                          "rect": {
+                            "top": 11096,
+                            "left": 112,
+                            "width": 182.65625,
+                            "height": 93
+                          },
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "className": "border-t border-sand/10 py-8",
+              "rect": {
+                "top": 11253,
+                "left": 112,
+                "width": 1216,
+                "height": 85
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "div",
+      "id": "_rht_toaster",
+      "className": "",
+      "rect": {
+        "top": 16,
+        "left": 16,
+        "width": 1408,
+        "height": 5368
+      },
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+schemaVersion: "2.0"
+name: userband-com-faq-8
+category: faq
+
+images:
+  preview: scraped/userband-com-2025-12-13/sections/section-8.png
+
+freeformKeywords:
+  - FAQ
+  - frequently asked questions
+  - accordion
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-13T04:32:20Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - accordion
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+
+parentPage: userband-com-landing
+
+source:
+  name: userband-com-faq-8
+  type: url
+  url: https://www.userband.com/ko
+  scrapedAt: "2025-12-13T04:32:20Z"
+  sectionIndex: 8

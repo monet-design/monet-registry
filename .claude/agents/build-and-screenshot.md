@@ -185,7 +185,7 @@ images:
 
 ---
 
-## Step 3-6: Docker 방식 (권장)
+## Step 3-6: Docker 방식
 
 Step 1, 2 완료 후 Docker로 빌드/스크린샷을 한 번에 실행:
 
@@ -204,72 +204,13 @@ pnpm docker:screenshot:run --component=hero-section
 ```
 
 Docker 방식은 다음을 자동으로 수행:
+
 - Step 3: 프로젝트 빌드 (Dockerfile 내)
 - Step 4: 프로덕션 서버 시작
 - Step 5: 서버 준비 대기
 - Step 6: 스크린샷 캡처
 
 결과물은 볼륨 마운트로 호스트의 `public/registry/preview/`에 저장됨.
-
----
-
-## Step 3-6: 로컬 방식 (대체)
-
-Docker를 사용하지 않는 경우:
-
-### Step 3: Build Project
-
-```bash
-pnpm build
-```
-
-If build fails (TypeScript errors, etc.), report errors and stop.
-
-### Step 4: Start Production Server on Port 3000
-
-First, check and kill any process using port 3000:
-
-```bash
-lsof -ti:3000 | xargs kill -9 2>/dev/null || true
-sleep 1
-```
-
-Start the server in background:
-
-```bash
-pnpm start -p 3000 &
-```
-
-Wait for server to be ready:
-
-```bash
-sleep 5
-```
-
-### Step 5: Verify Server is Running
-
-Check process and HTTP response:
-
-```bash
-lsof -ti:3000
-curl -s -o /dev/null -w "%{http_code}" http://localhost:3000 --max-time 10
-```
-
-If server is not responding with 200, retry up to 3 times with 3-second intervals.
-
-### Step 6: Capture Screenshots
-
-For newly added components/pages, run:
-
-```bash
-pnpm screenshot:capture
-```
-
-Or for specific components (if provided):
-
-```bash
-pnpm screenshot:capture --component="{component-name}"
-```
 
 ---
 

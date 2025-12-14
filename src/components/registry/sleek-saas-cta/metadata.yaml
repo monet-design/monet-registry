@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: sleek-saas-cta
 category: cta
-
 images:
   preview: /tmp/placeholder.png
-
 freeformKeywords:
   - cta
   - call to action
@@ -16,14 +14,11 @@ freeformKeywords:
   - dark
   - gradient
   - minimal
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-14T01:27:11Z"
 status: stable
 language: en
-
 tags:
   functional:
     - animation
@@ -41,3 +36,4 @@ tags:
     - saas
     - startup
     - tech
+draft: false

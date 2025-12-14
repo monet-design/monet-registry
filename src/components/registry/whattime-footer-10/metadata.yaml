@@ -1,0 +1,38 @@
+schemaVersion: "2.0"
+name: whattime-footer-10
+category: footer
+images:
+  preview: scraped/whattime-co-kr-2025-12-14/sections/section-10.png
+freeformKeywords:
+  - 푸터
+  - 연락처
+  - 소셜 미디어
+  - 회사 정보
+fontFamily:
+  - Inter
+createdAt: "2025-12-14T10:06:03Z"
+status: stable
+language: ko
+tags:
+  functional:
+    - footer
+    - navigation
+    - social-links
+  style:
+    - light-theme
+    - minimal
+    - clean
+  layout:
+    - centered
+    - multi-column
+    - grid
+  industry:
+    - saas
+    - startup
+parentPage: whattime-landing
+source:
+  type: url
+  url: https://whattime.co.kr/
+  scrapedAt: "2025-12-14T10:06:03Z"
+  sectionIndex: 10
+draft: false

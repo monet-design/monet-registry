@@ -1,4 +1,4 @@
-schemaVersion: '2.0'
+schemaVersion: "2.0"
 name: magic-wand-feature
 category: feature-showcase
 images:
@@ -31,6 +31,7 @@ freeformKeywords:
   - text-to-icon
 fontFamily:
   - Inter
-createdAt: '2025-11-30T00:00:00Z'
+createdAt: "2025-11-30T00:00:00Z"
 status: stable
 language: en
+draft: false

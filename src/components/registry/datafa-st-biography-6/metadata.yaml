@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: datafa-st-biography-6
 category: biography
-
 images:
   preview: scraped/datafa-st-2025-12-08/sections/section-6.png
-
 freeformKeywords:
   - founder
   - story
@@ -13,14 +11,11 @@ freeformKeywords:
   - startup
   - twitter
   - analytics
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-08T02:15:34Z"
 status: stable
 language: en
-
 tags:
   functional:
     - video
@@ -34,9 +29,8 @@ tags:
   industry:
     - saas
     - startup
-
 parentPage: datafa-st-landing
-
 source:
   name: DataFast
   url: https://datafa.st/
+draft: false

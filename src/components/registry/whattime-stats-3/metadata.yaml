@@ -1,0 +1,40 @@
+schemaVersion: "2.0"
+name: whattime-stats-3
+category: stats
+images:
+  preview: scraped/whattime-co-kr-2025-12-14/sections/section-3.png
+freeformKeywords:
+  - 효율성
+  - 통계
+  - 성과
+  - 고객영업
+  - 채용
+  - 교육
+fontFamily:
+  - Inter
+createdAt: "2025-12-14T10:05:28Z"
+status: stable
+language: ko
+tags:
+  functional:
+    - statistics
+    - social-proof
+  style:
+    - light-theme
+    - modern
+    - clean
+    - green-accent
+  layout:
+    - split-layout
+    - two-column
+  industry:
+    - saas
+    - scheduling
+    - b2b
+parentPage: whattime-landing
+source:
+  type: url
+  url: https://whattime.co.kr/
+  scrapedAt: "2025-12-14T10:05:28Z"
+  sectionIndex: 3
+draft: false

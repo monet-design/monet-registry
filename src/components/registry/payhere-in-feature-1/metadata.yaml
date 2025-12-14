@@ -1,0 +1,40 @@
+schemaVersion: "2.0"
+name: payhere-in-feature-1
+category: feature
+images:
+  preview: scraped/payhere-in-2025-12-14/sections/section-1.png
+freeformKeywords:
+  - pos
+  - receipt printing
+  - kiosk
+  - barcode
+  - sales management
+fontFamily:
+  - Inter
+createdAt: "2025-12-14T10:05:24Z"
+status: stable
+language: ko
+tags:
+  functional:
+    - scroll-spy
+    - feature-list
+    - sticky-nav
+  style:
+    - light-theme
+    - clean
+    - minimal
+    - modern
+  layout:
+    - two-column
+    - sticky-sidebar
+  industry:
+    - fintech
+    - pos
+    - payment
+parentPage: payhere-in-landing
+source:
+  type: url
+  url: https://payhere.in/
+  scrapedAt: "2025-12-14T10:05:24Z"
+  sectionIndex: 1
+draft: true

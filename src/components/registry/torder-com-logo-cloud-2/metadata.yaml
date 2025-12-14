@@ -1,0 +1,38 @@
+schemaVersion: "2.0"
+name: torder-com-logo-cloud-2
+category: logo-cloud
+images:
+  preview: scraped/torder-com-2025-12-14/sections/section-2.png
+freeformKeywords:
+  - logo cloud
+  - brands
+  - partners
+  - franchise
+  - restaurants
+fontFamily:
+  - Inter
+createdAt: "2025-12-14T10:06:23Z"
+status: stable
+language: ko
+tags:
+  functional:
+    - carousel
+    - logo-grid
+  style:
+    - light-theme
+    - modern
+    - clean
+  layout:
+    - grid
+    - full-width
+  industry:
+    - saas
+    - restaurant
+    - food-tech
+parentPage: torder-com-landing
+source:
+  type: url
+  url: https://www.torder.com/
+  scrapedAt: "2025-12-14T10:06:23Z"
+  sectionIndex: 2
+draft: true

@@ -1,0 +1,53 @@
+schemaVersion: "2.0"
+name: torder-com-landing
+category: page
+images:
+  preview: scraped/torder-com-2025-12-14/full-page.png
+title: torder.com Landing Page
+sections:
+  - id: torder-com-hero-0
+    category: hero
+    order: 0
+  - id: torder-com-event-1
+    category: feature
+    order: 1
+  - id: torder-com-logo-cloud-2
+    category: logo-cloud
+    order: 2
+  - id: torder-com-feature-3
+    category: feature
+    order: 3
+  - id: torder-com-stats-4
+    category: stats
+    order: 4
+  - id: torder-com-testimonial-6
+    category: testimonial
+    order: 5
+  - id: torder-com-pos-7
+    category: logo-cloud
+    order: 6
+  - id: torder-com-location-8
+    category: feature
+    order: 7
+  - id: torder-com-cta-12
+    category: cta
+    order: 8
+  - id: torder-com-faq-14
+    category: faq
+    order: 9
+  - id: torder-com-footer-15
+    category: footer
+    order: 10
+source:
+  type: url
+  url: https://www.torder.com/
+  scrapedAt: "2025-12-14T10:12:09.381Z"
+pageInfo:
+  totalSections: 11
+freeformKeywords:
+  - complete landing page
+  - full page
+  - torder.com
+createdAt: "2025-12-14T10:12:09.381Z"
+status: stable
+draft: true

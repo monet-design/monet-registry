@@ -1,24 +1,19 @@
 schemaVersion: "2.0"
 name: userband-com-feature-4
 category: feature
-
 images:
   preview: scraped/userband-com-2025-12-13/sections/section-4.png
-
 freeformKeywords:
   - automatic feedback
   - AI
   - categorization
   - insights
   - data
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-13T04:31:54Z"
 status: stable
 language: ko
-
 tags:
   functional: []
   style:
@@ -32,12 +27,11 @@ tags:
   industry:
     - saas
     - ai
-
 parentPage: userband-com-landing
-
 source:
   name: userband-com-feature-4
   type: url
   url: https://www.userband.com/ko
   scrapedAt: "2025-12-13T04:31:54Z"
   sectionIndex: 4
+draft: false

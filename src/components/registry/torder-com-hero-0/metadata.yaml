@@ -1,0 +1,40 @@
+schemaVersion: "2.0"
+name: torder-com-hero-0
+category: hero
+images:
+  preview: scraped/torder-com-2025-12-14/sections/section-0.png
+freeformKeywords:
+  - hero
+  - video background
+  - restaurant
+  - tablet ordering
+  - food tech
+  - kiosk
+fontFamily:
+  - Inter
+createdAt: "2025-12-14T10:06:20Z"
+status: stable
+language: ko
+tags:
+  functional:
+    - video
+    - animation
+    - slider
+  style:
+    - dark-theme
+    - modern
+    - bold
+  layout:
+    - full-width
+    - centered
+  industry:
+    - saas
+    - restaurant
+    - food-tech
+parentPage: torder-com-landing
+source:
+  type: url
+  url: https://www.torder.com/
+  scrapedAt: "2025-12-14T10:06:20Z"
+  sectionIndex: 0
+draft: true

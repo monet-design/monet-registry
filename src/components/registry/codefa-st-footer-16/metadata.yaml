@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: codefa-st-footer-16
 category: footer
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/codefa-st-2025-12-07/sections/section-16.png
-
 freeformKeywords:
   - footer
   - dark theme
@@ -16,14 +14,11 @@ freeformKeywords:
   - startup
   - codefast
   - shipfast
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-08T00:16:19Z"
 status: stable
 language: en
-
 tags:
   functional:
     - widget
@@ -37,3 +32,4 @@ tags:
   industry:
     - saas
     - startup
+draft: false

@@ -1,0 +1,26 @@
+{
+  "section.CarouselBannerstyle__Container-sc-12wp05q-0": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "\"Noto Sans KR\", sans-serif",
+    "fontSize": "16px",
+    "padding": "40px 0px",
+    "margin": "0px"
+  },
+  "section.ScrollSpyGallery__Section-sc-169n8pt-1": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "\"Noto Sans KR\", sans-serif",
+    "fontSize": "16px",
+    "padding": "96px 0px 0px",
+    "margin": "0px"
+  },
+  "section.ImageTypoFeatures__Section-sc-1poua7a-0": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "\"Noto Sans KR\", sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  }
+}

@@ -1,0 +1,37 @@
+schemaVersion: "2.0"
+name: whattime-cta-9
+category: cta
+images:
+  preview: scraped/whattime-co-kr-2025-12-14/sections/section-9.png
+freeformKeywords:
+  - CTA
+  - 시작하기
+  - 도입 문의
+  - 온라인 예약
+fontFamily:
+  - Inter
+createdAt: "2025-12-14T10:06:01Z"
+status: stable
+language: ko
+tags:
+  functional:
+    - call-to-action
+    - lead-capture
+  style:
+    - dark-theme
+    - modern
+    - bold
+    - green-background
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - b2b
+parentPage: whattime-landing
+source:
+  type: url
+  url: https://whattime.co.kr/
+  scrapedAt: "2025-12-14T10:06:01Z"
+  sectionIndex: 9
+draft: false

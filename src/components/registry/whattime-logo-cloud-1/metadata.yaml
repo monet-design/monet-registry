@@ -1,0 +1,36 @@
+schemaVersion: "2.0"
+name: whattime-logo-cloud-1
+category: logo-cloud
+images:
+  preview: scraped/whattime-co-kr-2025-12-14/sections/section-1.png
+freeformKeywords:
+  - 고객사
+  - 로고
+  - 파트너
+  - 기업
+fontFamily:
+  - Inter
+createdAt: "2025-12-14T10:05:24Z"
+status: stable
+language: ko
+tags:
+  functional:
+    - social-proof
+  style:
+    - light-theme
+    - minimal
+    - clean
+  layout:
+    - centered
+    - grid
+    - full-width
+  industry:
+    - saas
+    - enterprise
+parentPage: whattime-landing
+source:
+  type: url
+  url: https://whattime.co.kr/
+  scrapedAt: "2025-12-14T10:05:24Z"
+  sectionIndex: 1
+draft: false

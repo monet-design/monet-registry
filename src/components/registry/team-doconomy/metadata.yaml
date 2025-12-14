@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: team-doconomy
 category: team
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/doconomy-home-page-section-our-people.jpg
-
 freeformKeywords:
   - team
   - our people
@@ -15,15 +13,12 @@ freeformKeywords:
   - quote
   - testimonial
   - corporate team
-
 fontFamily:
   - Inter
   - Instrument Serif
-
 createdAt: "2025-12-07T19:11:23Z"
 status: stable
 language: en
-
 tags:
   functional:
     - hover-effect
@@ -39,3 +34,4 @@ tags:
     - sustainability
     - fintech
     - climate-tech
+draft: false

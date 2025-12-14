@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: flex-team-logo-bar-1
+category: logo-cloud
+images:
+  preview: scraped/flex-team-2025-12-14/sections/section-1.png
+freeformKeywords:
+  - logos
+  - partners
+  - brand
+  - logo bar
+  - social proof
+fontFamily: []
+tags:
+  functional: []
+  style:
+    - minimal
+  layout:
+    - full-width
+  industry:
+    - saas
+createdAt: "2025-12-14T00:00:00Z"
+status: stable
+source:
+  type: url
+  url: https://flex.team/
+  scrapedAt: "2025-12-14T00:00:00Z"
+  sectionIndex: 1
+  name: flex-team
+language: ko
+draft: true

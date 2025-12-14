@@ -1,0 +1,39 @@
+schemaVersion: "2.0"
+name: whattime-feature-interview-6
+category: feature
+images:
+  preview: scraped/whattime-co-kr-2025-12-14/sections/section-6.png
+freeformKeywords:
+  - 면접 기능
+  - 일정 조율
+  - 시간 단축
+  - 후보자 관리
+  - 인터뷰
+fontFamily:
+  - Inter
+createdAt: "2025-12-14T10:05:54Z"
+status: stable
+language: ko
+tags:
+  functional:
+    - feature-showcase
+    - screenshot
+  style:
+    - light-theme
+    - modern
+    - clean
+    - green-accent
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - hr
+    - recruiting
+parentPage: whattime-landing
+source:
+  type: url
+  url: https://whattime.co.kr/
+  scrapedAt: "2025-12-14T10:05:54Z"
+  sectionIndex: 6
+draft: false

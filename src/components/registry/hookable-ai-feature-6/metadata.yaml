@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: hookable-ai-feature-6
 category: feature
-
 images:
   preview: /registry/hookable-ai-feature-6/preview.png
-
 freeformKeywords:
   - product overview
   - ai team
@@ -19,14 +17,11 @@ freeformKeywords:
   - saas
   - subscription
   - design tool
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-14T03:03:53Z"
 status: stable
 language: ko
-
 tags:
   functional:
     - marquee-animation
@@ -43,11 +38,10 @@ tags:
     - saas
     - ai
     - design-tool
-
 parentPage: hookable-ai-landing
-
 source:
   type: url
   url: https://www.hookable.ai/
   scrapedAt: "2025-12-14T03:03:53Z"
   sectionIndex: 6
+draft: false

@@ -1,4 +1,4 @@
-schemaVersion: '2.0'
+schemaVersion: "2.0"
 name: ycombinator-com-showcase-1
 category: feature-showcase
 images:
@@ -13,7 +13,7 @@ freeformKeywords:
   - YC library
 fontFamily:
   - Inter
-createdAt: '2025-12-07T16:44:08Z'
+createdAt: "2025-12-07T16:44:08Z"
 status: stable
 language: en
 tags:
@@ -36,6 +36,7 @@ parentPage: ycombinator-com-landing
 source:
   type: url
   url: https://www.ycombinator.com/
-  scrapedAt: '2025-12-07T16:44:08Z'
+  scrapedAt: "2025-12-07T16:44:08Z"
   sectionIndex: 1
   name: ycombinator
+draft: false

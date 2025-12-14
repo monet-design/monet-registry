@@ -1,0 +1,38 @@
+schemaVersion: "2.0"
+name: whattime-how-it-works-2
+category: how-it-works
+images:
+  preview: scraped/whattime-co-kr-2025-12-14/sections/section-2.png
+freeformKeywords:
+  - 사용 방법
+  - 단계
+  - 프로세스
+  - 캘린더 연동
+  - 예약 페이지
+fontFamily:
+  - Inter
+createdAt: "2025-12-14T10:05:26Z"
+status: stable
+language: ko
+tags:
+  functional:
+    - step-by-step
+  style:
+    - light-theme
+    - modern
+    - clean
+    - green-accent
+  layout:
+    - centered
+    - three-column
+    - grid
+  industry:
+    - saas
+    - scheduling
+parentPage: whattime-landing
+source:
+  type: url
+  url: https://whattime.co.kr/
+  scrapedAt: "2025-12-14T10:05:26Z"
+  sectionIndex: 2
+draft: false

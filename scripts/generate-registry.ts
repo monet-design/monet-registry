@@ -49,6 +49,7 @@ interface MetadataYaml {
   updatedAt?: string;
   status?: string;
   language?: string;
+  draft?: boolean;
 }
 
 interface PageMetadataYaml extends MetadataYaml {
@@ -154,12 +155,13 @@ async function main() {
   const componentDirs = fs
     .readdirSync(registryDir, { withFileTypes: true })
     .filter((dirent) => dirent.isDirectory())
+    .filter((dirent) => dirent.name !== "pages")
     .map((dirent) => dirent.name);
 
   const registry: Record<string, RegistryEntry> = {};
   const searchDocuments: RegistryEntry[] = [];
   let processed = 0;
-  let skipped = 0;
+  let draftCount = 0;
 
   for (const componentName of componentDirs) {
     const metadataPath = path.join(
@@ -169,13 +171,18 @@ async function main() {
     );
 
     if (!fs.existsSync(metadataPath)) {
-      skipped++;
       continue;
     }
 
     try {
       const content = fs.readFileSync(metadataPath, "utf-8");
       const metadata = yaml.load(content) as MetadataYaml;
+
+      // draft: true인 컴포넌트는 registry에서 제외
+      if (metadata.draft === true) {
+        draftCount++;
+        continue;
+      }
 
       const entry: RegistryEntry = {
         id: componentName,
@@ -214,7 +221,6 @@ async function main() {
       processed++;
     } catch (e) {
       console.error(`Failed to process ${componentName}:`, e);
-      skipped++;
     }
   }
 
@@ -285,6 +291,7 @@ async function main() {
   const pagesDir = path.join(registryDir, "pages");
   const pageRegistry: Record<string, PageRegistryEntry> = {};
   let pagesProcessed = 0;
+  let pagesDraftCount = 0;
 
   if (fs.existsSync(pagesDir)) {
     const pageDirs = fs
@@ -302,6 +309,12 @@ async function main() {
       try {
         const content = fs.readFileSync(metadataPath, "utf-8");
         const metadata = yaml.load(content) as PageMetadataYaml;
+
+        // draft: true인 페이지는 registry에서 제외
+        if (metadata.draft === true) {
+          pagesDraftCount++;
+          continue;
+        }
 
         const entry: PageRegistryEntry = {
           id: pageName,
@@ -367,8 +380,9 @@ async function main() {
 
   console.log("\n=== Registry Generation Complete ===\n");
   console.log(`Sections processed: ${processed}`);
-  console.log(`Sections skipped: ${skipped}`);
+  console.log(`Sections draft: ${draftCount} (excluded)`);
   console.log(`Pages processed: ${pagesProcessed}`);
+  console.log(`Pages draft: ${pagesDraftCount} (excluded)`);
   console.log(`\nOutput files:`);
   console.log(`  - ${registryPath}`);
   console.log(`  - ${categoryIndexPath}`);

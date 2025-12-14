@@ -1,0 +1,123 @@
+[
+  {
+    "index": 0,
+    "tag": "section",
+    "selector": "section.css-131sm5m",
+    "category": null,
+    "rect": {
+      "top": 0,
+      "height": 863.59375
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 1,
+    "tag": "section",
+    "selector": "section#company",
+    "category": null,
+    "rect": {
+      "top": 863.59375,
+      "height": 588
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 2,
+    "tag": "section",
+    "selector": "section#how",
+    "category": null,
+    "rect": {
+      "top": 1451.59375,
+      "height": 927
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 3,
+    "tag": "section",
+    "selector": "section#case-example",
+    "category": null,
+    "rect": {
+      "top": 2378.59375,
+      "height": 952
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 4,
+    "tag": "section",
+    "selector": "section#review",
+    "category": "testimonial",
+    "rect": {
+      "top": 3330.59375,
+      "height": 664
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 5,
+    "tag": "section",
+    "selector": "section#meeting",
+    "category": null,
+    "rect": {
+      "top": 3994.59375,
+      "height": 1464
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 6,
+    "tag": "section",
+    "selector": "section#normal",
+    "category": null,
+    "rect": {
+      "top": 5458.59375,
+      "height": 898
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 7,
+    "tag": "section",
+    "selector": "section.css-mywv5s",
+    "category": null,
+    "rect": {
+      "top": 6356.59375,
+      "height": 755
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 8,
+    "tag": "section",
+    "selector": "section.css-f8ohje",
+    "category": null,
+    "rect": {
+      "top": 7111.59375,
+      "height": 470
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 9,
+    "tag": "section",
+    "selector": "section#banner",
+    "category": "hero",
+    "rect": {
+      "top": 7581.59375,
+      "height": 355
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 10,
+    "tag": "footer",
+    "selector": "footer.css-1cwexrt",
+    "category": "footer",
+    "rect": {
+      "top": 7936.59375,
+      "height": 338.25
+    },
+    "confidence": 0.8
+  }
+]

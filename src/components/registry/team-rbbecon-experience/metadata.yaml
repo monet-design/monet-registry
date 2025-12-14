@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: team-rbbecon-experience
 category: team
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/rbbecon-experience-page-section-team.jpg
-
 freeformKeywords:
   - team
   - multinational
@@ -21,15 +19,12 @@ freeformKeywords:
   - contact us
   - corporate
   - professional
-
 fontFamily:
   - Instrument Serif
   - Inter
-
 createdAt: "2025-12-07T19:23:36Z"
 status: stable
 language: en
-
 tags:
   functional:
     - hover-effect
@@ -47,3 +42,4 @@ tags:
     - consulting
     - law
     - professional-services
+draft: false

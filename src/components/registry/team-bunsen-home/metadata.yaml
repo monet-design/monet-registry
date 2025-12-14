@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: team-bunsen-home
 category: team
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/bunsen-studio-home-page-section-team.jpg
-
 freeformKeywords:
   - team
   - about us
@@ -15,14 +13,11 @@ freeformKeywords:
   - global team
   - agency
   - creative
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T19:11:19Z"
 status: stable
 language: en
-
 tags:
   functional:
     - hover-effect
@@ -37,3 +32,4 @@ tags:
   industry:
     - agency
     - creative
+draft: false

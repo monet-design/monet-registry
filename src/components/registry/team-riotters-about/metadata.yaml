@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: team-riotters-about
 category: team
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/riotters-about-page-section-our-teams.jpg
-
 freeformKeywords:
   - team
   - about
@@ -16,14 +14,11 @@ freeformKeywords:
   - grid
   - profiles
   - company team
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T19:22:55Z"
 status: stable
 language: en
-
 tags:
   functional:
     - tabs
@@ -40,3 +35,4 @@ tags:
     - agency
     - tech
     - startup
+draft: false

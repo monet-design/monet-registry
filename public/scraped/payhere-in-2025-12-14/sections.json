@@ -1,0 +1,46 @@
+[
+  {
+    "index": 0,
+    "tag": "section",
+    "selector": "section.CarouselBannerstyle__Container-sc-12wp05q-0",
+    "category": "hero",
+    "rect": {
+      "top": 120,
+      "height": 560
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 1,
+    "tag": "section",
+    "selector": "section.ScrollSpyGallery__Section-sc-169n8pt-1",
+    "category": null,
+    "rect": {
+      "top": 2002,
+      "height": 6056
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 2,
+    "tag": "section",
+    "selector": "section.ImageTypoFeatures__Section-sc-1poua7a-0",
+    "category": "feature",
+    "rect": {
+      "top": 9802,
+      "height": 5400
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 3,
+    "tag": "section",
+    "selector": "section.ImageTypoFeatures__Section-sc-1poua7a-0",
+    "category": "feature",
+    "rect": {
+      "top": 19928,
+      "height": 5400
+    },
+    "confidence": 0.9
+  }
+]

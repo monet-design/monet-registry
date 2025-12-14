@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: codefa-st-cta-14
 category: cta
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/codefa-st-2025-12-07/sections/section-14.png
-
 freeformKeywords:
   - cta
   - call to action
@@ -16,14 +14,11 @@ freeformKeywords:
   - education
   - learning
   - course
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-08T00:16:15Z"
 status: stable
 language: en
-
 tags:
   functional:
     - video
@@ -39,3 +34,4 @@ tags:
     - education
     - course
     - saas
+draft: false

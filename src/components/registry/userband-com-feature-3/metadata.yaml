@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: userband-com-feature-3
 category: feature
-
 images:
   preview: scraped/userband-com-2025-12-13/sections/section-3.png
-
 freeformKeywords:
   - unified inbox
   - omnichannel
@@ -12,14 +10,11 @@ freeformKeywords:
   - slack
   - email
   - widget
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-13T04:31:53Z"
 status: stable
 language: ko
-
 tags:
   functional: []
   style:
@@ -32,12 +27,11 @@ tags:
     - split-layout
   industry:
     - saas
-
 parentPage: userband-com-landing
-
 source:
   name: userband-com-feature-3
   type: url
   url: https://www.userband.com/ko
   scrapedAt: "2025-12-13T04:31:53Z"
   sectionIndex: 3
+draft: false

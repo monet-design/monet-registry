@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: patenty-ai-feature-1
 category: feature
-
 images:
   preview: /scraped/patenty-ai-2025-12-07/sections/section-1.png
-
 freeformKeywords:
   - patent
   - AI
@@ -17,14 +15,11 @@ freeformKeywords:
   - dark theme
   - 특허
   - 워크플로우
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T23:59:33Z"
 status: stable
 language: ko
-
 tags:
   functional:
     - carousel
@@ -41,3 +36,4 @@ tags:
   industry:
     - saas
     - ai
+draft: false

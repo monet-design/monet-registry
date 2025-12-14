@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: team-riotters-home
 category: team
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/riotters-home-page-section-meet-our-team.jpg
-
 freeformKeywords:
   - team
   - meet the team
@@ -16,14 +14,11 @@ freeformKeywords:
   - design folks
   - office
   - company culture
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T19:16:58Z"
 status: stable
 language: en
-
 tags:
   functional:
     - hover-effect
@@ -38,3 +33,4 @@ tags:
   industry:
     - agency
     - creative
+draft: false

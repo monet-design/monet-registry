@@ -76,6 +76,7 @@ const MetadataSchema = z.object({
   createdAt: z.string().optional(),
   updatedAt: z.string().optional(),
   status: z.enum(ComponentStatus).optional(),
+  draft: z.boolean().optional(),
 });
 
 interface ValidationResult {

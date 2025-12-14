@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: shipfa-st-testimonial-8
 category: testimonial
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/shipfa-st-2025-12-07/sections/section-8.png
-
 freeformKeywords:
   - testimonials
   - social proof
@@ -18,14 +16,11 @@ freeformKeywords:
   - ratings
   - stars
   - saas
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-08T00:16:27Z"
 status: stable
 language: en
-
 tags:
   functional:
     - video
@@ -41,3 +36,4 @@ tags:
   industry:
     - saas
     - startup
+draft: false

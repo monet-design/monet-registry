@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: deepcon-ai-benchmark-0-2
 category: feature
-
 images:
   preview: public/scraped/deepcon-ai-2025-12-07/sections/section-0.png
-
 freeformKeywords:
   - benchmark
   - chart
@@ -14,14 +12,11 @@ freeformKeywords:
   - performance
   - accuracy
   - tokens
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-08T00:18:44Z"
 status: stable
 language: en
-
 tags:
   functional: []
   style:
@@ -35,12 +30,11 @@ tags:
   industry:
     - saas
     - ai
-
 parentPage: deepcon-ai-landing
-
 source:
   type: url
   name: Deepcon AI
   url: https://deepcon.ai/
   scrapedAt: "2025-12-08T00:18:44Z"
   sectionIndex: 2
+draft: false

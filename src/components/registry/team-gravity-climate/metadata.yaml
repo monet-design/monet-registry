@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: team-gravity-climate
 category: team
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/gravity-climate-team-page-section-team.jpg
-
 freeformKeywords:
   - team
   - team section
@@ -17,15 +15,12 @@ freeformKeywords:
   - climate tech
   - startup team
   - profile cards
-
 fontFamily:
   - Instrument Serif
   - Inter
-
 createdAt: "2025-12-07T19:11:18Z"
 status: stable
 language: en
-
 tags:
   functional:
     - team-section
@@ -43,3 +38,4 @@ tags:
     - climate-tech
     - startup
     - enterprise
+draft: false

@@ -1,0 +1,51 @@
+[
+  {
+    "originalUrl": "https://payhere.in/static/hero-a01adf1acd01c8ae1ef38c54ca3ad4e3.mp4",
+    "platform": "html5",
+    "type": "video",
+    "sectionIndex": -1,
+    "width": 1732,
+    "height": 936,
+    "thumbnailDownloaded": false
+  },
+  {
+    "originalUrl": "https://payhere.in/static/screen-mode-815b1e5e6e538428e771a858e1c84ca0.mp4",
+    "platform": "html5",
+    "type": "video",
+    "posterUrl": "https://payhere.in/static/screen-mode-thumbnail-50826b3e194332e6630c146d625b5457.jpg",
+    "sectionIndex": -1,
+    "width": 1152,
+    "height": 1120,
+    "thumbnailPath": "videos/thumb-1.jpg",
+    "thumbnailDownloaded": true
+  },
+  {
+    "originalUrl": "https://payhere.in/static/terminal-charge-19580188d8e025d4b62eb13b4dd15de5.mp4",
+    "platform": "html5",
+    "type": "video",
+    "posterUrl": "https://payhere.in/static/terminal-charge-thumbnail-cc4689e9d8fcbe845f196dee3b28f2a7.jpg",
+    "sectionIndex": -1,
+    "width": 1600,
+    "height": 800,
+    "thumbnailPath": "videos/thumb-2.jpg",
+    "thumbnailDownloaded": true
+  },
+  {
+    "originalUrl": "https://payhere.in/static/terminal-6de22df483dece0c605b16a6b7485290.mp4",
+    "platform": "html5",
+    "type": "video",
+    "sectionIndex": 3,
+    "width": 1600,
+    "height": 800,
+    "thumbnailDownloaded": false
+  },
+  {
+    "originalUrl": "https://payhere.in/static/terminalmax-1da7978a74785c0b0d59d63d677e28ac.mp4",
+    "platform": "html5",
+    "type": "video",
+    "sectionIndex": 3,
+    "width": 1600,
+    "height": 800,
+    "thumbnailDownloaded": false
+  }
+]

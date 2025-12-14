@@ -1,0 +1,39 @@
+schemaVersion: "2.0"
+name: whattime-testimonial-4
+category: testimonial
+images:
+  preview: scraped/whattime-co-kr-2025-12-14/sections/section-4.png
+freeformKeywords:
+  - 사용후기
+  - 고객 리뷰
+  - 당근마켓
+  - 채널톡
+  - 오늘의집
+fontFamily:
+  - Inter
+createdAt: "2025-12-14T10:05:30Z"
+status: stable
+language: ko
+tags:
+  functional:
+    - social-proof
+    - carousel
+  style:
+    - light-theme
+    - modern
+    - clean
+    - card
+  layout:
+    - centered
+    - three-column
+    - grid
+  industry:
+    - saas
+    - startup
+parentPage: whattime-landing
+source:
+  type: url
+  url: https://whattime.co.kr/
+  scrapedAt: "2025-12-14T10:05:30Z"
+  sectionIndex: 4
+draft: false

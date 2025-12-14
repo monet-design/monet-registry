@@ -1,0 +1,37 @@
+schemaVersion: "2.0"
+name: torder-com-faq-14
+category: faq
+images:
+  preview: scraped/torder-com-2025-12-14/sections/section-14.png
+freeformKeywords:
+  - faq
+  - questions
+  - answers
+  - accordion
+  - help
+fontFamily:
+  - Inter
+createdAt: "2025-12-14T10:06:57Z"
+status: stable
+language: ko
+tags:
+  functional:
+    - accordion
+    - expandable
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - restaurant
+parentPage: torder-com-landing
+source:
+  type: url
+  url: https://www.torder.com/
+  scrapedAt: "2025-12-14T10:06:57Z"
+  sectionIndex: 14
+draft: true

@@ -1,23 +1,18 @@
 schemaVersion: "2.0"
 name: hookable-ai-logo-cloud-1
 category: logo-cloud
-
 images:
   preview: scraped/hookable-ai-2025-12-14/sections/section-1.png
-
 freeformKeywords:
   - 로고
   - 스폰서
   - 파트너
   - 브랜드
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-14T02:43:22Z"
 status: stable
 language: ko
-
 tags:
   functional:
     - animation
@@ -29,11 +24,10 @@ tags:
     - full-width
   industry:
     - saas
-
 parentPage: hookable-ai-landing
-
 source:
   type: url
   url: https://www.hookable.ai/
   scrapedAt: "2025-12-14T02:43:22Z"
   sectionIndex: 1
+draft: false

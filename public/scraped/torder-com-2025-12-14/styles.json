@@ -1,0 +1,154 @@
+{
+  "header.header": {
+    "backgroundColor": "rgba(0, 0, 0, 0.1)",
+    "color": "rgb(38, 40, 49)",
+    "fontFamily": "Pretendard",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "nav": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(38, 40, 49)",
+    "fontFamily": "Pretendard",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "main": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(38, 40, 49)",
+    "fontFamily": "Pretendard",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.main-slider": {
+    "backgroundColor": "rgb(0, 0, 0)",
+    "color": "rgb(38, 40, 49)",
+    "fontFamily": "Pretendard",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.main-event": {
+    "backgroundColor": "rgb(0, 0, 0)",
+    "color": "rgb(38, 40, 49)",
+    "fontFamily": "Pretendard",
+    "fontSize": "16px",
+    "padding": "132px 0px 100px",
+    "margin": "0px"
+  },
+  "section.main-brand": {
+    "backgroundColor": "rgb(249, 250, 251)",
+    "color": "rgb(38, 40, 49)",
+    "fontFamily": "Pretendard",
+    "fontSize": "16px",
+    "padding": "180px 0px",
+    "margin": "0px"
+  },
+  "section.main-reason": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(38, 40, 49)",
+    "fontFamily": "Pretendard",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.main-data": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(38, 40, 49)",
+    "fontFamily": "Pretendard",
+    "fontSize": "16px",
+    "padding": "180px 0px",
+    "margin": "0px"
+  },
+  "section.main-design": {
+    "backgroundColor": "rgb(243, 244, 246)",
+    "color": "rgb(38, 40, 49)",
+    "fontFamily": "Pretendard",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.main-review": {
+    "backgroundColor": "rgb(0, 0, 0)",
+    "color": "rgb(38, 40, 49)",
+    "fontFamily": "Pretendard",
+    "fontSize": "16px",
+    "padding": "180px 0px",
+    "margin": "0px"
+  },
+  "section.main-pos": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(38, 40, 49)",
+    "fontFamily": "Pretendard",
+    "fontSize": "16px",
+    "padding": "0px 0px 400px",
+    "margin": "0px"
+  },
+  "section.main-location": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(38, 40, 49)",
+    "fontFamily": "Pretendard",
+    "fontSize": "16px",
+    "padding": "180px 0px",
+    "margin": "0px"
+  },
+  "section.main-cs": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(38, 40, 49)",
+    "fontFamily": "Pretendard",
+    "fontSize": "16px",
+    "padding": "180px 0px",
+    "margin": "0px"
+  },
+  "section.main-about": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "fontFamily": "Pretendard",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.main-service": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(38, 40, 49)",
+    "fontFamily": "Pretendard",
+    "fontSize": "16px",
+    "padding": "180px 0px",
+    "margin": "0px"
+  },
+  "section.main-guide": {
+    "backgroundColor": "rgb(0, 0, 0)",
+    "color": "rgb(38, 40, 49)",
+    "fontFamily": "Pretendard",
+    "fontSize": "16px",
+    "padding": "180px 0px",
+    "margin": "0px"
+  },
+  "section.main-award": {
+    "backgroundColor": "rgb(0, 0, 0)",
+    "color": "rgb(38, 40, 49)",
+    "fontFamily": "Pretendard",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.main-faq": {
+    "backgroundColor": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "fontFamily": "Pretendard",
+    "fontSize": "16px",
+    "padding": "180px 0px",
+    "margin": "0px"
+  },
+  "footer.footer": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(38, 40, 49)",
+    "fontFamily": "Pretendard",
+    "fontSize": "16px",
+    "padding": "80px 0px",
+    "margin": "0px"
+  }
+}

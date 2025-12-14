@@ -137,6 +137,7 @@ function generatePageMetadata(
     freeformKeywords: ["complete landing page", "full page", domain],
     createdAt: now,
     status: "stable",
+    draft: true,
   };
 
   return yaml.dump(metadata, { lineWidth: -1, quotingType: '"' });

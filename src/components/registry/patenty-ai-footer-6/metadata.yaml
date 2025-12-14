@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: patenty-ai-footer-6
 category: footer
-
 images:
   preview: /registry/patenty-ai-footer-6/preview.png
-
 freeformKeywords:
   - footer
   - 푸터
@@ -17,14 +15,11 @@ freeformKeywords:
   - 소셜
   - 사이트맵
   - 저작권
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T23:59:33Z"
 status: stable
 language: ko
-
 tags:
   functional:
     - navigation
@@ -41,3 +36,4 @@ tags:
     - saas
     - ai
     - legal-tech
+draft: false

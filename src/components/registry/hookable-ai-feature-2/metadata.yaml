@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: hookable-ai-feature-2
 category: feature
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/scraped/hookable-ai-2025-12-14/sections/section-2.png
-
 freeformKeywords:
   - feature
   - AI
@@ -16,14 +14,11 @@ freeformKeywords:
   - 마케팅
   - 분석
   - 템플릿
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-14T02:58:12Z"
 status: stable
 language: ko
-
 tags:
   functional:
     - animation
@@ -43,11 +38,10 @@ tags:
     - ai
     - e-commerce
     - marketing
-
 parentPage: hookable-ai-landing
-
 source:
   type: url
   url: https://www.hookable.ai/
   scrapedAt: "2025-12-14T02:58:12Z"
   sectionIndex: 2
+draft: false

@@ -3331,6 +3331,50 @@
     "hookable-ai-testimonial-4": {
       "path": "/app/public/registry/preview/hookable-ai-testimonial-4.png",
       "capturedAt": "2025-12-14T04:01:39.716Z"
+    },
+    "whattime-cta-9": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/whattime-cta-9.png",
+      "capturedAt": "2025-12-14T11:38:40.030Z"
+    },
+    "whattime-feature-integration-8": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/whattime-feature-integration-8.png",
+      "capturedAt": "2025-12-14T11:38:43.803Z"
+    },
+    "whattime-feature-interview-6": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/whattime-feature-interview-6.png",
+      "capturedAt": "2025-12-14T11:43:34.745Z"
+    },
+    "whattime-feature-meeting-5": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/whattime-feature-meeting-5.png",
+      "capturedAt": "2025-12-14T11:43:38.531Z"
+    },
+    "whattime-feature-security-7": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/whattime-feature-security-7.png",
+      "capturedAt": "2025-12-14T11:43:42.225Z"
+    },
+    "whattime-footer-10": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/whattime-footer-10.png",
+      "capturedAt": "2025-12-14T11:43:45.982Z"
+    },
+    "whattime-hero-0": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/whattime-hero-0.png",
+      "capturedAt": "2025-12-14T11:43:49.848Z"
+    },
+    "whattime-how-it-works-2": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/whattime-how-it-works-2.png",
+      "capturedAt": "2025-12-14T11:43:53.599Z"
+    },
+    "whattime-logo-cloud-1": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/whattime-logo-cloud-1.png",
+      "capturedAt": "2025-12-14T11:43:57.344Z"
+    },
+    "whattime-stats-3": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/whattime-stats-3.png",
+      "capturedAt": "2025-12-14T11:44:01.093Z"
+    },
+    "whattime-testimonial-4": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/whattime-testimonial-4.png",
+      "capturedAt": "2025-12-14T11:44:04.833Z"
     }
   },
   "pageCompleted": {
@@ -3409,6 +3453,10 @@
     "hookable-ai-landing": {
       "path": "/app/public/registry/preview/pages/hookable-ai-landing.png",
       "capturedAt": "2025-12-14T04:01:48.620Z"
+    },
+    "whattime-landing": {
+      "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/pages/whattime-landing.png",
+      "capturedAt": "2025-12-14T11:44:08.714Z"
     }
   }
 }

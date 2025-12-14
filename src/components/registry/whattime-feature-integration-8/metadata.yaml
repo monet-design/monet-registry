@@ -1,0 +1,39 @@
+schemaVersion: "2.0"
+name: whattime-feature-integration-8
+category: feature
+images:
+  preview: scraped/whattime-co-kr-2025-12-14/sections/section-8.png
+freeformKeywords:
+  - 활용법
+  - 캘린더 연동
+  - 화상 회의
+  - Google
+  - Outlook
+  - Zoom
+fontFamily:
+  - Inter
+createdAt: "2025-12-14T10:05:59Z"
+status: stable
+language: ko
+tags:
+  functional:
+    - feature-list
+    - integration
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - card
+  layout:
+    - split-layout
+    - two-column
+  industry:
+    - saas
+    - productivity
+parentPage: whattime-landing
+source:
+  type: url
+  url: https://whattime.co.kr/
+  scrapedAt: "2025-12-14T10:05:59Z"
+  sectionIndex: 8
+draft: false

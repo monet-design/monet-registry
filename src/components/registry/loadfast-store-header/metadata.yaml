@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: loadfast-store-header
 category: header
-
 images:
   preview: public/scraped/loadfast-store-2025-12-13/full-page.png
-
 freeformKeywords:
   - header
   - navigation
@@ -12,14 +10,11 @@ freeformKeywords:
   - loadfast
   - logo
   - mobile menu
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-14T01:29:53Z"
 status: stable
 language: en
-
 tags:
   functional:
     - mobile-menu
@@ -35,11 +30,10 @@ tags:
   industry:
     - saas
     - devtools
-
 parentPage: loadfast-store-landing
-
 source:
   name: loadfast-store-header
   type: url
   url: https://loadfast.store/
   scrapedAt: "2025-12-14T01:29:53Z"
+draft: false

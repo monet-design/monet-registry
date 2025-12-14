@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: lanorx-com-feature-1
 category: feature
-
 images:
   preview: /scraped/lanorx-com-2025-12-07/sections/section-1.png
-
 freeformKeywords:
   - feature
   - features
@@ -16,14 +14,11 @@ freeformKeywords:
   - grid
   - cards
   - benefits
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T23:59:32Z"
 status: stable
 language: en
-
 tags:
   functional:
     - animation
@@ -40,3 +35,4 @@ tags:
     - saas
     - microsaas
     - startup
+draft: false

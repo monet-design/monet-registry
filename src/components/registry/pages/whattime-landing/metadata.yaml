@@ -1,0 +1,53 @@
+schemaVersion: "2.0"
+name: whattime-landing
+category: page
+images:
+  preview: scraped/whattime-co-kr-2025-12-14/full-page.png
+title: whattime.co.kr Landing Page
+sections:
+  - id: whattime-hero-0
+    category: hero
+    order: 0
+  - id: whattime-logo-cloud-1
+    category: logo-cloud
+    order: 1
+  - id: whattime-how-it-works-2
+    category: how-it-works
+    order: 2
+  - id: whattime-stats-3
+    category: stats
+    order: 3
+  - id: whattime-testimonial-4
+    category: testimonial
+    order: 4
+  - id: whattime-feature-meeting-5
+    category: feature
+    order: 5
+  - id: whattime-feature-interview-6
+    category: feature
+    order: 6
+  - id: whattime-feature-security-7
+    category: feature
+    order: 7
+  - id: whattime-feature-integration-8
+    category: feature
+    order: 8
+  - id: whattime-cta-9
+    category: cta
+    order: 9
+  - id: whattime-footer-10
+    category: footer
+    order: 10
+source:
+  type: url
+  url: https://whattime.co.kr/
+  scrapedAt: "2025-12-14T10:12:42.726Z"
+pageInfo:
+  totalSections: 11
+freeformKeywords:
+  - complete landing page
+  - full page
+  - whattime.co.kr
+createdAt: "2025-12-14T10:12:42.726Z"
+status: stable
+draft: false

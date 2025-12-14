@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: team-flagship
 category: team
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/flaghsip-about-page-section-meet-team.jpg
-
 freeformKeywords:
   - team
   - about
@@ -19,14 +17,11 @@ freeformKeywords:
   - cards
   - startup
   - saas
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T19:11:19Z"
 status: stable
 language: en
-
 tags:
   functional:
     - hover-effect
@@ -44,3 +39,4 @@ tags:
     - saas
     - startup
     - tech
+draft: false

@@ -1,4 +1,4 @@
-schemaVersion: '2.0'
+schemaVersion: "2.0"
 name: imweb-me-showcase-1
 category: feature-showcase
 images:
@@ -21,7 +21,7 @@ freeformKeywords:
   - templates
 fontFamily:
   - Inter
-createdAt: '2025-12-07T16:48:58Z'
+createdAt: "2025-12-07T16:48:58Z"
 status: stable
 language: ko
 tags:
@@ -46,6 +46,7 @@ parentPage: imweb-me-landing
 source:
   type: url
   url: https://imweb.me/
-  scrapedAt: '2025-12-07T16:48:58Z'
+  scrapedAt: "2025-12-07T16:48:58Z"
   sectionIndex: 1
   name: imweb
+draft: false

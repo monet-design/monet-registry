@@ -1,0 +1,90 @@
+[
+  {
+    "index": 0,
+    "tag": "section",
+    "selector": "section.l2024-c-lbHTrN",
+    "category": null,
+    "rect": {
+      "top": 0,
+      "height": 860
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 1,
+    "tag": "section",
+    "selector": "section.l2024-c-clQtyH",
+    "category": null,
+    "rect": {
+      "top": 860,
+      "height": 104
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 2,
+    "tag": "section",
+    "selector": "section.l2024-c-eDmxPq",
+    "category": "hero",
+    "rect": {
+      "top": 964,
+      "height": 876.78125
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 3,
+    "tag": "section",
+    "selector": "section.l2024-c-jdlsXT",
+    "category": null,
+    "rect": {
+      "top": 1840.78125,
+      "height": 992.671875
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 4,
+    "tag": "section",
+    "selector": "section.l2024-c-jdlsXT",
+    "category": null,
+    "rect": {
+      "top": 2833.453125,
+      "height": 916.671875
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 5,
+    "tag": "section",
+    "selector": "section.l2024-c-jdlsXT",
+    "category": null,
+    "rect": {
+      "top": 3750.125,
+      "height": 916.671875
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 6,
+    "tag": "section",
+    "selector": "section.l2024-c-jdlsXT",
+    "category": null,
+    "rect": {
+      "top": 4666.796875,
+      "height": 853.671875
+    },
+    "confidence": 0.9
+  },
+  {
+    "index": 7,
+    "tag": "footer",
+    "selector": "footer.l2024-c-eUrQrF",
+    "category": "footer",
+    "rect": {
+      "top": 6530.296875,
+      "height": 1008.75
+    },
+    "confidence": 0.8
+  }
+]

@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: hookable-ai-footer
 category: footer
-
 images:
   preview: /registry/hookable-ai-footer/preview.png
-
 freeformKeywords:
   - footer
   - saas
@@ -15,14 +13,11 @@ freeformKeywords:
   - company-info
   - contact
   - minimal
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-14T03:04:24Z"
 status: stable
 language: ko
-
 tags:
   functional:
     - links
@@ -38,10 +33,9 @@ tags:
     - saas
     - ai
     - ecommerce
-
 parentPage: hookable-ai-landing
-
 source:
   type: url
   url: https://www.hookable.ai/
   scrapedAt: "2025-12-14T03:04:24Z"
+draft: false

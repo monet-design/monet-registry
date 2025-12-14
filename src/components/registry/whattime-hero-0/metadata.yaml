@@ -1,0 +1,39 @@
+schemaVersion: "2.0"
+name: whattime-hero-0
+category: hero
+images:
+  preview: scraped/whattime-co-kr-2025-12-14/sections/section-0.png
+freeformKeywords:
+  - 일정 관리
+  - 캘린더
+  - 예약
+  - 스케줄링
+  - SaaS
+fontFamily:
+  - Inter
+createdAt: "2025-12-14T10:05:21Z"
+status: stable
+language: ko
+tags:
+  functional:
+    - lead-capture
+    - calendar
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - green-accent
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - scheduling
+    - productivity
+parentPage: whattime-landing
+source:
+  type: url
+  url: https://whattime.co.kr/
+  scrapedAt: "2025-12-14T10:05:21Z"
+  sectionIndex: 0
+draft: false

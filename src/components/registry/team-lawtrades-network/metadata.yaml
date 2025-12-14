@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: team-lawtrades-network
 category: testimonial
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/lawtrades-home-page-section-network.jpg
-
 freeformKeywords:
   - testimonial
   - carousel
@@ -17,15 +15,12 @@ freeformKeywords:
   - recharge
   - network
   - profile
-
 fontFamily:
   - Instrument Serif
   - Inter
-
 createdAt: "2025-12-07T19:11:25Z"
 status: stable
 language: en
-
 tags:
   functional:
     - carousel
@@ -44,3 +39,4 @@ tags:
     - legal
     - saas
     - startup
+draft: false

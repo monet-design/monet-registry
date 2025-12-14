@@ -1,0 +1,30 @@
+schemaVersion: "2.0"
+name: torder-com-cs-9
+category: feature
+images:
+  preview: scraped/torder-com-2025-12-14/sections/section-9.png
+freeformKeywords:
+  - customer-service
+  - support
+  - video
+  - testimonial
+  - features
+fontFamily: []
+tags:
+  functional: []
+  style:
+    - dark-theme
+  layout:
+    - full-width
+  industry:
+    - saas
+createdAt: "2025-12-14T00:00:00Z"
+status: stable
+source:
+  type: url
+  url: https://torder.com/
+  scrapedAt: "2025-12-14T00:00:00Z"
+  sectionIndex: 9
+  name: torder
+language: ko
+draft: true

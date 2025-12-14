@@ -14,6 +14,8 @@
     "metadata:search": "tsx scripts/search-metadata.ts",
     "metadata:query": "tsx scripts/query-metadata.ts",
     "metadata:stats": "tsx scripts/stats-metadata.ts",
+    "metadata:add-draft": "tsx scripts/add-draft-field.ts",
+    "metadata:set-draft": "tsx scripts/set-draft-by-page.ts",
     "prebuild": "pnpm metadata:build && pnpm registry:build",
     "screenshot:server": "cd screenshot-server && pnpm dev",
     "screenshot:capture": "tsx scripts/screenshot/cli.ts",

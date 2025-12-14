@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: clerk-com-hero-1
 category: hero
-
 images:
   preview: public/scraped/clerk-com-2025-12-07/full-page.png
-
 freeformKeywords:
   - hero
   - authentication
@@ -20,14 +18,11 @@ freeformKeywords:
   - dark theme
   - centered
   - cta button
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-07T17:46:31Z"
 status: stable
 language: en
-
 tags:
   functional:
     - cta-button
@@ -46,3 +41,4 @@ tags:
     - devtools
     - auth
     - startup
+draft: false

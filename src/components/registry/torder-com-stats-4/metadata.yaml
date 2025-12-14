@@ -1,0 +1,39 @@
+schemaVersion: "2.0"
+name: torder-com-stats-4
+category: stats
+images:
+  preview: scraped/torder-com-2025-12-14/sections/section-4.png
+freeformKeywords:
+  - stats
+  - data
+  - sales
+  - growth
+  - numbers
+fontFamily:
+  - Inter
+createdAt: "2025-12-14T10:06:27Z"
+status: stable
+language: ko
+tags:
+  functional:
+    - video
+    - animation
+    - counter
+  style:
+    - light-theme
+    - modern
+    - bold
+  layout:
+    - centered
+    - full-width
+  industry:
+    - saas
+    - restaurant
+    - food-tech
+parentPage: torder-com-landing
+source:
+  type: url
+  url: https://www.torder.com/
+  scrapedAt: "2025-12-14T10:06:27Z"
+  sectionIndex: 4
+draft: true

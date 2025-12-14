@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: shipfa-st-hero-0
 category: hero
-
 images:
   preview: /scraped/shipfa-st-2025-12-07/sections/section-0.png
-
 freeformKeywords:
   - hero
   - startup
@@ -18,14 +16,11 @@ freeformKeywords:
   - rating
   - avatars
   - product hunt
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-08T00:16:20Z"
 status: stable
 language: en
-
 tags:
   functional:
     - cta-button
@@ -45,3 +40,4 @@ tags:
     - saas
     - startup
     - developer-tools
+draft: false

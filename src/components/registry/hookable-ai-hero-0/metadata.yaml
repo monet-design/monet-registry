@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: hookable-ai-hero-0
 category: hero
-
 images:
   preview: public/scraped/hookable-ai-2025-12-14/sections/section-0.png
-
 freeformKeywords:
   - AI
   - 상세페이지
@@ -14,14 +12,11 @@ freeformKeywords:
   - landing
   - gradient
   - Korean
-
 fontFamily:
   - Inter
-
 createdAt: "2025-12-14T03:32:24Z"
 status: stable
 language: ko
-
 tags:
   functional:
     - animation
@@ -36,11 +31,10 @@ tags:
   industry:
     - saas
     - ai
-
 parentPage: hookable-ai-landing
-
 source:
   type: url
   url: https://hookable.ai
   scrapedAt: "2025-12-14T03:32:24Z"
   sectionIndex: 0
+draft: false

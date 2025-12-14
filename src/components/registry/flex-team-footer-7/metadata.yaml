@@ -1,0 +1,39 @@
+schemaVersion: "2.0"
+name: flex-team-footer-7
+category: footer
+images:
+  preview: scraped/flex-team-2025-12-14/sections/section-7.png
+freeformKeywords:
+  - 푸터
+  - 서비스 링크
+  - 소셜 미디어
+  - 앱 다운로드
+  - 회사 정보
+fontFamily:
+  - Inter
+createdAt: "2025-12-14T10:05:35Z"
+status: stable
+language: ko
+tags:
+  functional:
+    - navigation
+    - social-links
+    - cta-button
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - multi-column
+    - grid
+    - responsive
+  industry:
+    - saas
+    - hr-tech
+parentPage: flex-team-landing
+source:
+  type: url
+  url: https://flex.team/
+  scrapedAt: "2025-12-14T10:05:35Z"
+  sectionIndex: 7
+draft: true

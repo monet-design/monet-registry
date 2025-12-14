@@ -1,10 +1,8 @@
 schemaVersion: "2.0"
 name: team-rbbecon-home
 category: team
-
 images:
   preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/team/rbbecon-home-page-section-about.jpg
-
 freeformKeywords:
   - team
   - about
@@ -17,15 +15,12 @@ freeformKeywords:
   - law firm
   - competition policy
   - mergers
-
 fontFamily:
   - Inter
   - Instrument Serif
-
 createdAt: "2025-12-07T19:23:04Z"
 status: stable
 language: en
-
 tags:
   functional:
     - testimonial
@@ -43,3 +38,4 @@ tags:
     - consulting
     - legal
     - professional-services
+draft: false

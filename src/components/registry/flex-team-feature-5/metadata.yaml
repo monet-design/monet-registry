@@ -1,0 +1,40 @@
+schemaVersion: "2.0"
+name: flex-team-feature-5
+category: feature
+images:
+  preview: scraped/flex-team-2025-12-14/sections/section-5.png
+freeformKeywords:
+  - 급여 운영
+  - 급여 정산
+  - 연말정산
+  - 급여명세서
+  - 모바일 앱
+fontFamily:
+  - Inter
+createdAt: "2025-12-14T10:05:32Z"
+status: stable
+language: ko
+tags:
+  functional:
+    - tab-navigation
+    - mobile-preview
+  style:
+    - light-theme
+    - modern
+    - clean
+    - gradient-background
+  layout:
+    - split-layout
+    - two-column
+    - responsive
+  industry:
+    - saas
+    - hr-tech
+    - fintech
+parentPage: flex-team-landing
+source:
+  type: url
+  url: https://flex.team/
+  scrapedAt: "2025-12-14T10:05:32Z"
+  sectionIndex: 5
+draft: true

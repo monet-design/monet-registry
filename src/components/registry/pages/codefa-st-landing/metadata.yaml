@@ -12,19 +12,19 @@ sections:
     category: hero
     order: 1
   - id: codefa-st-feature-1
-    category: feature
+    category: feature-showcase
     order: 2
   - id: codefa-st-how-it-works-2
     category: how-it-works
     order: 3
   - id: codefa-st-feature-4
-    category: feature
+    category: feature-showcase
     order: 4
   - id: codefa-st-feature-6
-    category: feature
+    category: feature-showcase
     order: 5
   - id: codefa-st-feature-8
-    category: feature
+    category: feature-showcase
     order: 6
   - id: codefa-st-pricing-10
     category: pricing

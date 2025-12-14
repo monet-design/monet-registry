@@ -9,16 +9,16 @@ sections:
     category: hero
     order: 0
   - id: patenty-ai-feature-1
-    category: feature
+    category: feature-showcase
     order: 1
   - id: patenty-ai-feature-2
-    category: feature
+    category: feature-showcase
     order: 2
   - id: patenty-ai-how-it-works-3
     category: how-it-works
     order: 3
   - id: patenty-ai-feature-4
-    category: feature
+    category: feature-showcase
     order: 4
   - id: patenty-ai-cta-5
     category: cta

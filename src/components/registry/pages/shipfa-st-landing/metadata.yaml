@@ -18,7 +18,7 @@ sections:
     category: stats
     order: 3
   - id: shipfa-st-feature-3
-    category: feature
+    category: feature-showcase
     order: 4
   - id: shipfa-st-logo-cloud-4
     category: logo-cloud

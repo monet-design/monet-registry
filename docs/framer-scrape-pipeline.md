@@ -13,12 +13,12 @@ Framer로 제작된 웹사이트를 React/Tailwind/motion 컴포넌트로 변환
 
 ### 일반 URL 파이프라인과의 차이점
 
-| 특징 | 일반 URL | Framer 사이트 |
-|------|----------|---------------|
-| 섹션 분할 | 시맨틱 태그 + 높이 기반 | `data-framer-name` 레이어 구조 활용 |
-| 애니메이션 | CSS transition 추출 | `data-framer-appear-id` 기반 정밀 추출 |
-| 카테고리 추론 | 클래스/ID 텍스트 분석 | Framer 레이어명으로 의미 파악 |
-| 출력 | 기본 스크래핑 결과 | `framer.json` 추가 생성 |
+| 특징          | 일반 URL                | Framer 사이트                          |
+| ------------- | ----------------------- | -------------------------------------- |
+| 섹션 분할     | 시맨틱 태그 + 높이 기반 | `data-framer-name` 레이어 구조 활용    |
+| 애니메이션    | CSS transition 추출     | `data-framer-appear-id` 기반 정밀 추출 |
+| 카테고리 추론 | 클래스/ID 텍스트 분석   | Framer 레이어명으로 의미 파악          |
+| 출력          | 기본 스크래핑 결과      | `framer.json` 추가 생성                |
 
 ---
 
@@ -63,27 +63,27 @@ Framer로 제작된 웹사이트를 React/Tailwind/motion 컴포넌트로 변환
 
 ## Framer 특화 기능
 
-### 1. data-framer-* 속성 추출
+### 1. data-framer-\* 속성 추출
 
 Framer에서 생성된 HTML에는 다음과 같은 내부 속성이 포함됩니다:
 
-| 속성 | 설명 | 활용 |
-|------|------|------|
-| `data-framer-name` | Framer 에디터의 레이어 이름 | 섹션 카테고리 추론 |
-| `data-framer-appear-id` | 애니메이션 고유 ID | 애니메이션 패턴 매핑 |
-| `data-framer-component-type` | 컴포넌트 유형 | 구조 분석 |
+| 속성                         | 설명                        | 활용                 |
+| ---------------------------- | --------------------------- | -------------------- |
+| `data-framer-name`           | Framer 에디터의 레이어 이름 | 섹션 카테고리 추론   |
+| `data-framer-appear-id`      | 애니메이션 고유 ID          | 애니메이션 패턴 매핑 |
+| `data-framer-component-type` | 컴포넌트 유형               | 구조 분석            |
 
 **추출 예시:**
 
 ```typescript
 interface FramerElementInfo {
   selector: string;
-  framerName?: string;           // "Hero Section"
-  framerAppearId?: string;       // "abc123"
-  framerComponentType?: string;  // "RichText"
-  initialTransform?: string;     // "translateY(30px)"
-  initialOpacity?: string;       // "0"
-  transition?: string;           // "opacity 0.3s ease-out"
+  framerName?: string; // "Hero Section"
+  framerAppearId?: string; // "abc123"
+  framerComponentType?: string; // "RichText"
+  initialTransform?: string; // "translateY(30px)"
+  initialOpacity?: string; // "0"
+  transition?: string; // "opacity 0.3s ease-out"
 }
 ```
 
@@ -91,13 +91,13 @@ interface FramerElementInfo {
 
 Framer의 애니메이션 패턴을 motion/react 코드로 변환합니다:
 
-| Framer 패턴 | 감지 조건 | motion/react 변환 |
-|-------------|-----------|-------------------|
-| **Fade-Up** | `translateY > 0` + `opacity < 1` | `initial={{ opacity: 0, y: 30 }}` |
-| **Fade-In** | `opacity < 1` only | `initial={{ opacity: 0 }}` |
-| **Scale-In** | `scale < 1` | `initial={{ scale: 0.9 }}` |
-| **Slide-In** | `translateX !== 0` | `initial={{ x: -50 }}` |
-| **Stagger** | 동일 부모 내 순차 delay | `transition={{ delay: index * 0.1 }}` |
+| Framer 패턴  | 감지 조건                        | motion/react 변환                     |
+| ------------ | -------------------------------- | ------------------------------------- |
+| **Fade-Up**  | `translateY > 0` + `opacity < 1` | `initial={{ opacity: 0, y: 30 }}`     |
+| **Fade-In**  | `opacity < 1` only               | `initial={{ opacity: 0 }}`            |
+| **Scale-In** | `scale < 1`                      | `initial={{ scale: 0.9 }}`            |
+| **Slide-In** | `translateX !== 0`               | `initial={{ x: -50 }}`                |
+| **Stagger**  | 동일 부모 내 순차 delay          | `transition={{ delay: index * 0.1 }}` |
 
 **변환 예시:**
 
@@ -127,17 +127,17 @@ Framer의 애니메이션 패턴을 motion/react 코드로 변환합니다:
 
 ```typescript
 const framerNameToCategory: Record<string, string> = {
-  'hero': 'hero',
-  'navigation': 'header',
-  'nav': 'header',
-  'navbar': 'header',
-  'footer': 'footer',
-  'pricing': 'pricing',
-  'features': 'feature',
-  'testimonials': 'testimonial',
-  'faq': 'faq',
-  'cta': 'cta',
-  'contact': 'contact',
+  hero: "hero",
+  navigation: "header",
+  nav: "header",
+  navbar: "header",
+  footer: "footer",
+  pricing: "pricing",
+  features: "feature",
+  testimonials: "testimonial",
+  faq: "faq",
+  cta: "cta",
+  contact: "contact",
 };
 ```
 
@@ -152,6 +152,7 @@ const framerNameToCategory: Record<string, string> = {
 ```
 
 Agent가 자동으로:
+
 1. Framer 사이트 감지 (`.framer.app` 도메인 또는 내부 속성)
 2. `data-framer-*` 속성 추출
 3. 애니메이션 패턴 분석
@@ -318,11 +319,11 @@ fontFamily:
 parentPage: framer-site-landing
 
 source:
-  type: framer              # 일반 URL은 'url'
+  type: framer # 일반 URL은 'url'
   url: https://your-site.framer.app
   scrapedAt: "2025-12-14T10:00:00Z"
   sectionIndex: 0
-  framer:                   # Framer 특화 필드
+  framer: # Framer 특화 필드
     detectedAnimations:
       - type: fade-up
         target: "heading"
@@ -355,7 +356,7 @@ sections:
     category: hero
     order: 1
   - id: framer-site-feature-2
-    category: feature
+    category: feature-showcase
     order: 2
 
 source:
@@ -407,7 +408,7 @@ export default function HeroSection() {
             transition={{
               duration: 0.5,
               ease: "easeOut",
-              delay: index * 0.1,  // stagger delay
+              delay: index * 0.1, // stagger delay
             }}
             viewport={{ once: true }}
             className="p-6 rounded-lg bg-white shadow"
@@ -431,11 +432,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        'framer-link': 'var(--framer-link-text-color)',
+        "framer-link": "var(--framer-link-text-color)",
       },
     },
   },
-}
+};
 ```
 
 ---
@@ -453,17 +454,21 @@ async function isFramerSite(page: Page): Promise<boolean> {
 
     // 2. Generator 메타 태그 확인
     const hasFramerMeta =
-      document.querySelector('meta[name="generator"][content*="Framer"]') !== null;
+      document.querySelector('meta[name="generator"][content*="Framer"]') !==
+      null;
 
     // 3. data-framer-* 속성 확인
     const hasFramerAttributes =
-      document.querySelector('[data-framer-name]') !== null;
+      document.querySelector("[data-framer-name]") !== null;
 
     // 4. Framer 스타일시트 확인
-    const hasFramerStyles = Array.from(document.styleSheets)
-      .some(sheet => sheet.href?.includes('framer'));
+    const hasFramerStyles = Array.from(document.styleSheets).some((sheet) =>
+      sheet.href?.includes("framer")
+    );
 
-    return hasFramerScript || hasFramerMeta || hasFramerAttributes || hasFramerStyles;
+    return (
+      hasFramerScript || hasFramerMeta || hasFramerAttributes || hasFramerStyles
+    );
   });
 }
 ```

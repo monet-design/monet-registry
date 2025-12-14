@@ -12,19 +12,19 @@ sections:
     category: hero
     order: 0
   - id: loadfast-store-problem-1
-    category: feature
+    category: feature-showcase
     order: 1
   - id: loadfast-store-roi-2
     category: stats
     order: 2
   - id: loadfast-store-feature-3
-    category: feature
+    category: feature-showcase
     order: 3
   - id: loadfast-store-comparison-4
     category: pricing
     order: 4
   - id: loadfast-store-solutions-5
-    category: feature
+    category: feature-showcase
     order: 5
   - id: loadfast-store-journey-6
     category: stats
@@ -33,7 +33,7 @@ sections:
     category: pricing
     order: 7
   - id: loadfast-store-demo-8
-    category: feature
+    category: feature-showcase
     order: 8
   - id: loadfast-store-faq-9
     category: faq

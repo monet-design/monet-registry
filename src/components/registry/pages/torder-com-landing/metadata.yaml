@@ -9,13 +9,13 @@ sections:
     category: hero
     order: 0
   - id: torder-com-event-1
-    category: feature
+    category: feature-showcase
     order: 1
   - id: torder-com-logo-cloud-2
     category: logo-cloud
     order: 2
   - id: torder-com-feature-3
-    category: feature
+    category: feature-showcase
     order: 3
   - id: torder-com-stats-4
     category: stats
@@ -27,7 +27,7 @@ sections:
     category: logo-cloud
     order: 6
   - id: torder-com-location-8
-    category: feature
+    category: feature-showcase
     order: 7
   - id: torder-com-cta-12
     category: cta

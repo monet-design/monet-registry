@@ -18,19 +18,19 @@ sections:
     category: cta
     order: 3
   - id: greetinghr-feature-3
-    category: feature
+    category: feature-showcase
     order: 4
   - id: greetinghr-stats-0
     category: stats
     order: 5
   - id: greetinghr-feature-4
-    category: feature
+    category: feature-showcase
     order: 6
   - id: greetinghr-feature-5
-    category: feature
+    category: feature-showcase
     order: 7
   - id: greetinghr-support-0
-    category: feature
+    category: feature-showcase
     order: 8
   - id: greetinghr-cta-6
     category: cta

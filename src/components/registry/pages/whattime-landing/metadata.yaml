@@ -21,16 +21,16 @@ sections:
     category: testimonial
     order: 4
   - id: whattime-feature-meeting-5
-    category: feature
+    category: feature-showcase
     order: 5
   - id: whattime-feature-interview-6
-    category: feature
+    category: feature-showcase
     order: 6
   - id: whattime-feature-security-7
-    category: feature
+    category: feature-showcase
     order: 7
   - id: whattime-feature-integration-8
-    category: feature
+    category: feature-showcase
     order: 8
   - id: whattime-cta-9
     category: cta

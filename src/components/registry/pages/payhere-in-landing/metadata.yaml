@@ -9,13 +9,13 @@ sections:
     category: hero
     order: 0
   - id: payhere-in-feature-1
-    category: feature
+    category: feature-showcase
     order: 1
   - id: payhere-in-feature-2
-    category: feature
+    category: feature-showcase
     order: 2
   - id: payhere-in-feature-3
-    category: feature
+    category: feature-showcase
     order: 3
 source:
   type: url

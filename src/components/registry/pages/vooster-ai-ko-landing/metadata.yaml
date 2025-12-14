@@ -9,13 +9,13 @@ sections:
     category: hero
     order: 0
   - id: vooster-ai-ko-feature-1
-    category: feature
+    category: feature-showcase
     order: 1
   - id: vooster-ai-ko-target-user-2
-    category: feature
+    category: feature-showcase
     order: 2
   - id: vooster-ai-ko-roadmap-3
-    category: feature
+    category: feature-showcase
     order: 3
   - id: vooster-ai-ko-pricing-4
     category: pricing

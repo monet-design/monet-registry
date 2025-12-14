@@ -12,7 +12,7 @@ sections:
     category: stats
     order: 1
   - id: deepcon-ai-benchmark-0-2
-    category: feature
+    category: feature-showcase
     order: 2
   - id: deepcon-ai-logo-cloud-0-3
     category: logo-cloud
@@ -21,7 +21,7 @@ sections:
     category: showcase
     order: 4
   - id: deepcon-ai-feature-1
-    category: feature
+    category: feature-showcase
     order: 5
   - id: deepcon-ai-cta-2
     category: cta

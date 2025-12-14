@@ -9,25 +9,25 @@ sections:
     category: hero
     order: 0
   - id: userband-com-feature-1
-    category: feature
+    category: feature-showcase
     order: 1
   - id: userband-com-feature-2
-    category: feature
+    category: feature-showcase
     order: 2
   - id: userband-com-feature-3
-    category: feature
+    category: feature-showcase
     order: 3
   - id: userband-com-feature-4
-    category: feature
+    category: feature-showcase
     order: 4
   - id: userband-com-feature-5
-    category: feature
+    category: feature-showcase
     order: 5
   - id: userband-com-feature-6
-    category: feature
+    category: feature-showcase
     order: 6
   - id: userband-com-feature-7
-    category: feature
+    category: feature-showcase
     order: 7
   - id: userband-com-faq-8
     category: faq

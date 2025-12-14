@@ -12,16 +12,16 @@ sections:
     category: how-it-works
     order: 1
   - id: superbilling-io-feature-2
-    category: feature
+    category: feature-showcase
     order: 2
   - id: superbilling-io-feature-3
-    category: feature
+    category: feature-showcase
     order: 3
   - id: superbilling-io-feature-4
-    category: feature
+    category: feature-showcase
     order: 4
   - id: superbilling-io-feature-5
-    category: feature
+    category: feature-showcase
     order: 5
   - id: superbilling-io-pricing-6
     category: pricing

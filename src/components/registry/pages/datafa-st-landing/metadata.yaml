@@ -21,7 +21,7 @@ sections:
     category: testimonial
     order: 4
   - id: datafa-st-feature-4
-    category: feature
+    category: feature-showcase
     order: 5
   - id: datafa-st-logo-cloud-5
     category: logo-cloud

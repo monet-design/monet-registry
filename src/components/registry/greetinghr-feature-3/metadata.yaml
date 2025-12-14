@@ -1,6 +1,6 @@
 schemaVersion: "2.0"
 name: greetinghr-feature-3
-category: feature
+category: feature-showcase
 images:
   preview: /registry/greetinghr-feature-3/preview.png
 freeformKeywords:

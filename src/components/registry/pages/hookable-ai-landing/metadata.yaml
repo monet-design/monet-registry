@@ -15,7 +15,7 @@ sections:
     category: logo-cloud
     order: 2
   - id: hookable-ai-feature-2
-    category: feature
+    category: feature-showcase
     order: 3
   - id: hookable-ai-cta-3
     category: cta
@@ -27,7 +27,7 @@ sections:
     category: pricing
     order: 6
   - id: hookable-ai-feature-6
-    category: feature
+    category: feature-showcase
     order: 7
   - id: hookable-ai-contact-7
     category: contact

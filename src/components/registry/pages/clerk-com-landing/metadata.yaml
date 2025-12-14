@@ -15,19 +15,19 @@ sections:
     category: logo-cloud
     order: 2
   - id: clerk-com-feature-3
-    category: feature
+    category: feature-showcase
     order: 3
   - id: clerk-com-feature-4
-    category: feature
+    category: feature-showcase
     order: 4
   - id: clerk-com-feature-5
-    category: feature
+    category: feature-showcase
     order: 5
   - id: clerk-com-feature-6
-    category: feature
+    category: feature-showcase
     order: 6
   - id: clerk-com-feature-7
-    category: feature
+    category: feature-showcase
     order: 7
   - id: clerk-com-testimonial-0
     category: testimonial

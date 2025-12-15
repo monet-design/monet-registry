@@ -13,7 +13,7 @@ export const CATEGORY_DESCRIPTIONS: Record<string, string> = {
   hero: "Above-the-fold landing sections with headlines and CTAs",
   stats: "Statistics and metrics display sections",
   testimonial: "Customer reviews, quotes, and social proof",
-  feature: "Feature highlights and product capabilities",
+  "feature-showcase": "Feature highlights and product capabilities",
   pricing: "Pricing tables, plans, and comparison",
   cta: "Call-to-action sections and conversion blocks",
   contact: "Contact forms and communication sections",

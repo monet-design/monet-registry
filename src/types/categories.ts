@@ -7,7 +7,6 @@ export const ComponentCategory = [
   "hero",
   "stats",
   "testimonial",
-  "feature",
   "pricing",
   "cta",
   "contact",

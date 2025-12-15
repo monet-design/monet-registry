@@ -27,8 +27,8 @@ const categoryPriority: Array<[string, string[]]> = [
   ["footer", ["footer", "site footer"]],
   ["gallery", ["gallery", "image gallery", "photo gallery"]],
   ["showcase", ["showcase", "product showcase", "demo", "preview"]],
-  // feature는 hero보다 먼저 (더 구체적)
-  ["feature", ["feature", "features", "feature showcase", "product features", "feature tabs", "feature carousel"]],
+  // feature-showcase는 hero보다 먼저 (더 구체적)
+  ["feature-showcase", ["feature", "features", "feature showcase", "product features", "feature tabs", "feature carousel"]],
   // hero는 마지막 (가장 일반적)
   ["hero", ["hero", "hero section", "landing page hero", "lead capture", "waitlist"]],
 ];

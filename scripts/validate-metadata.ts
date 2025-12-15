@@ -99,6 +99,15 @@ function validateMetadataFile(filePath: string): ValidationResult {
     const content = fs.readFileSync(filePath, "utf-8");
     const data = yaml.load(content) as Record<string, unknown>;
 
+    // "feature" 카테고리 감지 및 힌트 메시지
+    if (data.category === "feature") {
+      result.errors.push(
+        `category: "feature" is not allowed. Did you mean "feature-showcase"?`
+      );
+      result.valid = false;
+      return result;
+    }
+
     // Zod 검증
     const parseResult = MetadataSchema.safeParse(data);
     if (!parseResult.success) {

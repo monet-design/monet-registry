@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: conductor-build-header-0
+category: header
+
+images:
+  preview: scraped/conductor-build-2025-12-15/sections/section-0.png
+
+freeformKeywords:
+  - header
+  - navigation
+  - logo
+  - download
+  - docs
+  - dark theme
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T10:34:30Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - navigation
+    - cta-button
+  style:
+    - dark-theme
+    - minimal
+    - monospace
+  layout:
+    - full-width
+    - centered
+  industry:
+    - saas
+    - ai
+    - developer-tools
+
+parentPage: conductor-build-landing
+
+source:
+  type: url
+  url: https://conductor.build/
+  scrapedAt: "2025-12-15T10:34:30Z"
+  sectionIndex: 0

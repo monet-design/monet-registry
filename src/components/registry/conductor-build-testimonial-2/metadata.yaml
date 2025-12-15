@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: conductor-build-testimonial-2
+category: testimonial
+
+images:
+  preview: scraped/conductor-build-2025-12-15/sections/section-2.png
+
+freeformKeywords:
+  - testimonials
+  - reviews
+  - social proof
+  - twitter
+  - verified
+  - user feedback
+  - masonry grid
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T10:34:33Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - social-proof
+    - verified-badge
+  style:
+    - dark-theme
+    - card-based
+    - modern
+  layout:
+    - three-column
+    - masonry-grid
+  industry:
+    - saas
+    - ai
+    - developer-tools
+
+parentPage: conductor-build-landing
+
+source:
+  type: url
+  url: https://conductor.build/
+  scrapedAt: "2025-12-15T10:34:33Z"
+  sectionIndex: 2

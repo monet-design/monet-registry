@@ -1,0 +1,38 @@
+schemaVersion: "2.0"
+name: conductor-build-landing
+category: page
+images:
+  preview: scraped/conductor-build-2025-12-15/full-page.png
+title: conductor.build Landing Page
+sections:
+  - id: conductor-build-header-0
+    category: header
+    order: 0
+  - id: conductor-build-hero-1
+    category: hero
+    order: 1
+  - id: conductor-build-testimonial-2
+    category: testimonial
+    order: 2
+  - id: conductor-build-how-it-works-3
+    category: how-it-works
+    order: 3
+  - id: conductor-build-faq-4
+    category: faq
+    order: 4
+  - id: conductor-build-footer-5
+    category: footer
+    order: 5
+source:
+  type: url
+  url: https://conductor.build/
+  scrapedAt: "2025-12-15T10:37:48.257Z"
+pageInfo:
+  totalSections: 6
+freeformKeywords:
+  - complete landing page
+  - full page
+  - conductor.build
+createdAt: "2025-12-15T10:37:48.257Z"
+status: stable
+draft: true

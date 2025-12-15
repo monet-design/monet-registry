@@ -64,7 +64,7 @@ export default function CapSoHeader0({ mode = "light" }: CapSoHeader0Props) {
                 <ul className="flex flex-1 justify-center items-center px-0 list-none space-x-0">
                   {CONTENT.navItems.map((item) => (
                     <li key={item.label}>
-                      {item.hasDropdown ? (
+                      {"hasDropdown" in item ? (
                         <button className="inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent transition-colors hover:bg-gray-100 px-2 py-0 text-sm font-medium text-gray-700 hover:text-blue-600">
                           {item.label}
                         </button>
@@ -124,7 +124,9 @@ export default function CapSoHeader0({ mode = "light" }: CapSoHeader0Props) {
             <div className="flex flex-col gap-[5px]">
               <motion.div
                 className="w-6 h-0.5 bg-black"
-                animate={mobileMenuOpen ? { rotate: 45, y: 7 } : { rotate: 0, y: 0 }}
+                animate={
+                  mobileMenuOpen ? { rotate: 45, y: 7 } : { rotate: 0, y: 0 }
+                }
               />
               <motion.div
                 className="w-6 h-0.5 bg-black"
@@ -132,7 +134,9 @@ export default function CapSoHeader0({ mode = "light" }: CapSoHeader0Props) {
               />
               <motion.div
                 className="w-6 h-0.5 bg-black"
-                animate={mobileMenuOpen ? { rotate: -45, y: -7 } : { rotate: 0, y: 0 }}
+                animate={
+                  mobileMenuOpen ? { rotate: -45, y: -7 } : { rotate: 0, y: 0 }
+                }
               />
             </div>
           </button>

@@ -1,0 +1,50 @@
+schemaVersion: "2.0"
+name: cap-so-landing
+category: page
+images:
+  preview: scraped/cap-so-2025-12-15/full-page.png
+title: cap.so Landing Page
+sections:
+  - id: cap-so-header-0
+    category: header
+    order: 0
+  - id: cap-so-hero-1
+    category: hero
+    order: 1
+  - id: cap-so-feature-2
+    category: feature
+    order: 2
+  - id: cap-so-feature-3
+    category: feature
+    order: 3
+  - id: cap-so-testimonial-4
+    category: testimonial
+    order: 4
+  - id: cap-so-pricing-5
+    category: pricing
+    order: 5
+  - id: cap-so-faq-6
+    category: faq
+    order: 6
+  - id: cap-so-scroll-text
+    category: scroll-animation
+    order: 7
+  - id: cap-so-cta-7
+    category: cta
+    order: 8
+  - id: cap-so-footer-8
+    category: footer
+    order: 9
+source:
+  type: url
+  url: https://cap.so
+  scrapedAt: "2025-12-15T10:24:18.691Z"
+pageInfo:
+  totalSections: 10
+freeformKeywords:
+  - complete landing page
+  - full page
+  - cap.so
+createdAt: "2025-12-15T10:24:18.691Z"
+status: stable
+draft: true

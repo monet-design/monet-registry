@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: cap-so-feature-3
+category: feature
+
+images:
+  preview: scraped/cap-so-2025-12-15/full-page.png
+
+freeformKeywords:
+  - cross-platform
+  - macOS
+  - Windows
+  - 4K recording
+  - S3 bucket
+  - privacy
+  - open source
+  - AI
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T10:19:21Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - animation
+  style:
+    - light-theme
+    - modern
+    - minimal
+  layout:
+    - grid
+    - responsive
+  industry:
+    - saas
+    - developer-tools
+
+parentPage: cap-so-landing
+
+source:
+  type: url
+  url: https://cap.so
+  scrapedAt: "2025-12-15T10:19:21Z"
+  sectionIndex: 3

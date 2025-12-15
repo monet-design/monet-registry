@@ -1,0 +1,47 @@
+schemaVersion: "2.0"
+name: cap-so-hero-1
+category: hero
+
+images:
+  preview: scraped/cap-so-2025-12-15/full-page.png
+
+freeformKeywords:
+  - screen recording
+  - video sharing
+  - download
+  - macOS
+  - Windows
+  - open source
+  - Loom alternative
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T10:19:17Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - download
+    - video
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - split-layout
+    - responsive
+  industry:
+    - saas
+    - startup
+    - developer-tools
+
+parentPage: cap-so-landing
+
+source:
+  type: url
+  url: https://cap.so
+  scrapedAt: "2025-12-15T10:19:17Z"
+  sectionIndex: 1

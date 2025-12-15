@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: cap-so-scroll-text
+category: scroll-animation
+
+images:
+  preview: scraped/cap-so-2025-12-15/full-page.png
+
+freeformKeywords:
+  - scroll animation
+  - sticky text
+  - record edit share
+  - parallax
+  - reveal animation
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T10:24:00Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - animation
+    - scroll
+  style:
+    - light-theme
+    - modern
+    - minimal
+  layout:
+    - centered
+    - full-width
+  industry:
+    - saas
+    - startup
+
+parentPage: cap-so-landing
+
+source:
+  type: url
+  url: https://cap.so
+  scrapedAt: "2025-12-15T10:24:00Z"
+  sectionIndex: 7

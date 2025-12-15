@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: cap-so-header-0
+category: header
+
+images:
+  preview: scraped/cap-so-2025-12-15/full-page.png
+
+freeformKeywords:
+  - navigation
+  - header
+  - logo
+  - menu
+  - download button
+  - login
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T10:17:21Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - navigation
+    - dropdown
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - startup
+
+parentPage: cap-so-landing
+
+source:
+  type: url
+  url: https://cap.so
+  scrapedAt: "2025-12-15T10:17:21Z"
+  sectionIndex: 0

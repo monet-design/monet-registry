@@ -1,0 +1,39 @@
+schemaVersion: "2.0"
+name: cap-so-cta-7
+category: cta
+
+images:
+  preview: scraped/cap-so-2025-12-15/full-page.png
+
+freeformKeywords:
+  - call to action
+  - download
+  - sign up
+  - get started
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T10:19:29Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - download
+  style:
+    - light-theme
+    - modern
+    - gradient
+  layout:
+    - centered
+  industry:
+    - saas
+
+parentPage: cap-so-landing
+
+source:
+  type: url
+  url: https://cap.so
+  scrapedAt: "2025-12-15T10:19:29Z"
+  sectionIndex: 7

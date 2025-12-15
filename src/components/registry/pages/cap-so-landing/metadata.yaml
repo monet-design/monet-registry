@@ -12,10 +12,10 @@ sections:
     category: hero
     order: 1
   - id: cap-so-feature-2
-    category: feature
+    category: feature-showcase
     order: 2
   - id: cap-so-feature-3
-    category: feature
+    category: feature-showcase
     order: 3
   - id: cap-so-testimonial-4
     category: testimonial

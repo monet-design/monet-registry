@@ -1,0 +1,29 @@
+[
+  {
+    "originalUrl": "https://claude-mem.ai/video/hero-bg.mp4",
+    "platform": "html5",
+    "type": "video",
+    "sectionIndex": 3,
+    "width": 1280,
+    "height": 704,
+    "thumbnailDownloaded": false
+  },
+  {
+    "originalUrl": "https://claude-mem.ai/assets/observations-874.mp4",
+    "platform": "html5",
+    "type": "video",
+    "sectionIndex": 3,
+    "width": 576,
+    "height": 766,
+    "thumbnailDownloaded": false
+  },
+  {
+    "originalUrl": "https://claude-mem.ai/assets/screen-874.mp4",
+    "platform": "html5",
+    "type": "video",
+    "sectionIndex": 2,
+    "width": 720,
+    "height": 663,
+    "thumbnailDownloaded": false
+  }
+]

@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: cursor-com-footer-9
+category: footer
+
+images:
+  preview: scraped/cursor-com-2025-12-15/sections/section-9.png
+
+freeformKeywords:
+  - footer
+  - navigation
+  - links
+  - legal
+  - social media
+  - product
+  - resources
+  - company
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T10:51:55Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - navigation
+    - theme-toggle
+    - language-selector
+  style:
+    - dark-theme
+    - minimal
+  layout:
+    - grid
+    - five-column
+    - responsive
+  industry:
+    - saas
+
+parentPage: cursor-com-landing
+
+source:
+  type: url
+  url: https://cursor.com/home
+  scrapedAt: "2025-12-15T10:51:55Z"
+  sectionIndex: 9

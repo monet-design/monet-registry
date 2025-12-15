@@ -1,0 +1,338 @@
+{
+  "header.header": {
+    "backgroundColor": "oklab(0.147812 0.0037121 0.00584561 / 0.8)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "nav.header__nav": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "nav.header__mobile-nav": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "24px",
+    "margin": "0px"
+  },
+  "main.page__main": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "80px 0px 0px",
+    "margin": "0px"
+  },
+  "div.hero-explainer-container": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section#hero.hero": {
+    "backgroundColor": "rgb(13, 10, 8)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "div.hero__video-wrapper": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "video.hero__video": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "div.hero__video-overlay": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "div.hero__container": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "96px",
+    "margin": "0px 120px"
+  },
+  "div.hero__content": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px 26.7344px 48px"
+  },
+  "div.hero__eyebrow": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "14px",
+    "padding": "0px",
+    "margin": "0px 0px 24px"
+  },
+  "div.hero__headline-wrapper": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "h1.hero__title": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "96px",
+    "padding": "0px",
+    "margin": "0px 0px 32px"
+  },
+  "div.hero__title--main": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "96px",
+    "padding": "0px",
+    "margin": "0px 0px 9.6px"
+  },
+  "div.hero__title--accent": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(253, 101, 0)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "96px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "p.hero__descriptor-single": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "24px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "div.hero__install-inline": {
+    "backgroundColor": "rgba(0, 0, 0, 0.4)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "16px",
+    "margin": "0px 56px 32px"
+  },
+  "div.hero__install-label": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 255, 0)",
+    "fontFamily": "\"IBM Plex Mono\", monospace",
+    "fontSize": "14px",
+    "padding": "0px",
+    "margin": "0px 0px 8px"
+  },
+  "div.hero__install-commands": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"IBM Plex Mono\", monospace",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "code.hero__install-cmd": {
+    "backgroundColor": "rgba(0, 255, 0, 0.05)",
+    "color": "rgb(0, 255, 0)",
+    "fontFamily": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+    "fontSize": "16px",
+    "padding": "4px 12px",
+    "margin": "0px"
+  },
+  "span.hero__install-separator": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 255, 0)",
+    "fontFamily": "\"IBM Plex Mono\", monospace",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px 8px"
+  },
+  "div.hero__buttons": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "a.hero__button": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(77, 184, 212)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "14px 24px",
+    "margin": "0px"
+  },
+  "svg": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(13, 10, 8)",
+    "fontFamily": "\"Geist Mono\", monospace",
+    "fontSize": "14px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "span.hero__button-text": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(77, 184, 212)",
+    "fontFamily": "\"IBM Plex Mono\", \"Monaspace Radon\", monospace",
+    "fontSize": "14px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "span.hero__button-badge": {
+    "backgroundColor": "oklab(0.999994 0.0000455678 0.0000200868 / 0.2)",
+    "color": "rgb(255, 255, 255)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "12px",
+    "padding": "2px 10px",
+    "margin": "0px"
+  },
+  "div.hero__scroll-indicator": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(196, 181, 160)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "14px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "div.hero__scroll-arrow": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(253, 101, 0)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "14px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section#how-it-works.agent-explainer": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "96px 0px",
+    "margin": "0px"
+  },
+  "section#crt-timeline.crt-demo": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "128px 0px",
+    "margin": "0px"
+  },
+  "section#how-you-remember.biomimetic-scroll": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section#protocol.protocol-cta": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "128px 0px",
+    "margin": "0px"
+  },
+  "footer.footer": {
+    "backgroundColor": "rgb(13, 10, 8)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "64px 0px",
+    "margin": "0px"
+  },
+  "div.footer__gradient-border": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "div.footer__container": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "0px 24px",
+    "margin": "0px 80px"
+  },
+  "div.footer__cta-section": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "0px 0px 48px",
+    "margin": "0px 0px 48px"
+  },
+  "h3.footer__cta-title": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "30px",
+    "padding": "0px",
+    "margin": "0px 0px 16px"
+  },
+  "a.footer__cta-button": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(13, 10, 8)",
+    "fontFamily": "\"Geist Mono\", monospace",
+    "fontSize": "14px",
+    "padding": "12px 24px",
+    "margin": "0px"
+  },
+  "div.footer__links-row": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(254, 246, 237)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px 0px 32px"
+  },
+  "a.footer__link": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(196, 181, 160)",
+    "fontFamily": "\"Geist Mono\", monospace",
+    "fontSize": "14px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "div.footer__bottom-bar": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(138, 125, 111)",
+    "fontFamily": "\"Bricolage Grotesque\", -apple-system, \"system-ui\", sans-serif",
+    "fontSize": "14px",
+    "padding": "0px",
+    "margin": "0px"
+  }
+}

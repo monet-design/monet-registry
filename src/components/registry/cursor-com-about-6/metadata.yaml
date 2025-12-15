@@ -1,0 +1,41 @@
+schemaVersion: "2.0"
+name: cursor-com-about-6
+category: team
+
+images:
+  preview: scraped/cursor-com-2025-12-15/sections/section-6.png
+
+freeformKeywords:
+  - team
+  - careers
+  - about us
+  - company
+  - future of coding
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T10:52:12Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - cta-button
+  style:
+    - dark-theme
+    - modern
+  layout:
+    - split-layout
+    - left-aligned
+  industry:
+    - saas
+    - startup
+
+parentPage: cursor-com-landing
+
+source:
+  type: url
+  url: https://cursor.com/home
+  scrapedAt: "2025-12-15T10:52:12Z"
+  sectionIndex: 6

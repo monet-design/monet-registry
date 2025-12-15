@@ -1,0 +1,47 @@
+schemaVersion: "2.0"
+name: claude-mem-ai-feature-2
+category: feature
+
+images:
+  preview: scraped/claude-mem-ai-2025-12-15/sections/section-2.png
+
+freeformKeywords:
+  - live observation
+  - AI memory
+  - searchable
+  - context
+  - real-time
+  - CRT monitor
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T10:51:43Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - video
+    - animation
+    - scroll-animation
+  style:
+    - dark-theme
+    - retro
+    - modern
+  layout:
+    - two-column
+    - split-layout
+    - responsive
+  industry:
+    - ai
+    - saas
+    - developer-tools
+
+parentPage: claude-mem-ai-landing
+
+source:
+  type: url
+  url: https://claude-mem.ai/
+  scrapedAt: "2025-12-15T10:51:43Z"
+  sectionIndex: 2

@@ -1,0 +1,90 @@
+{
+  "section": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(237, 236, 236)",
+    "fontFamily": "CursorGothic, \"CursorGothic Fallback\", system-ui, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "header.bg-theme-bg": {
+    "backgroundColor": "rgb(20, 18, 11)",
+    "color": "rgb(237, 236, 236)",
+    "fontFamily": "CursorGothic, \"CursorGothic Fallback\", system-ui, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "fontSize": "16px",
+    "padding": "0px 20px",
+    "margin": "0px"
+  },
+  "nav.absolute": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(237, 236, 236)",
+    "fontFamily": "CursorGothic, \"CursorGothic Fallback\", system-ui, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "nav.bg-theme-bg": {
+    "backgroundColor": "rgb(20, 18, 11)",
+    "color": "rgb(237, 236, 236)",
+    "fontFamily": "CursorGothic, \"CursorGothic Fallback\", system-ui, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "fontSize": "16px",
+    "padding": "0px 20px",
+    "margin": "0px"
+  },
+  "header.type-lg": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(237, 236, 236)",
+    "fontFamily": "CursorGothic, \"CursorGothic Fallback\", system-ui, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "fontSize": "36px",
+    "padding": "0px",
+    "margin": "0px 0px 67.2px"
+  },
+  "main#main": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(237, 236, 236)",
+    "fontFamily": "CursorGothic, \"CursorGothic Fallback\", system-ui, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section.section": {
+    "backgroundColor": "rgb(20, 18, 11)",
+    "color": "rgb(237, 236, 236)",
+    "fontFamily": "CursorGothic, \"CursorGothic Fallback\", system-ui, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "fontSize": "16px",
+    "padding": "134.4px 20px",
+    "margin": "0px"
+  },
+  "section#logo-garden.section": {
+    "backgroundColor": "rgb(20, 18, 11)",
+    "color": "rgb(237, 236, 236)",
+    "fontFamily": "CursorGothic, \"CursorGothic Fallback\", system-ui, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "fontSize": "16px",
+    "padding": "0px 20px 33.6px",
+    "margin": "0px"
+  },
+  "footer.pt-v3": {
+    "backgroundColor": "rgb(27, 25, 19)",
+    "color": "rgb(237, 236, 236)",
+    "fontFamily": "CursorGothic, \"CursorGothic Fallback\", system-ui, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "fontSize": "16px",
+    "padding": "67.2px 20px 30px",
+    "margin": "0px"
+  },
+  "nav": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(237, 236, 236)",
+    "fontFamily": "CursorGothic, \"CursorGothic Fallback\", system-ui, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "fontSize": "16px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "a.type-base": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(237, 236, 236)",
+    "fontFamily": "CursorGothic, \"CursorGothic Fallback\", system-ui, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "fontSize": "14px",
+    "padding": "4.66667px 0px",
+    "margin": "0px"
+  }
+}

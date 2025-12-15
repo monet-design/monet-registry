@@ -1,0 +1,39 @@
+schemaVersion: "2.0"
+name: cursor-com-cta-8
+category: cta
+
+images:
+  preview: scraped/cursor-com-2025-12-15/sections/section-8.png
+
+freeformKeywords:
+  - download
+  - try now
+  - call to action
+  - get started
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T10:51:53Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - download-button
+  style:
+    - dark-theme
+    - minimal
+    - bold
+  layout:
+    - centered
+  industry:
+    - saas
+
+parentPage: cursor-com-landing
+
+source:
+  type: url
+  url: https://cursor.com/home
+  scrapedAt: "2025-12-15T10:51:53Z"
+  sectionIndex: 8

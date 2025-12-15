@@ -1,0 +1,47 @@
+schemaVersion: "2.0"
+name: cursor-com-logo-cloud-1
+category: logo-cloud
+
+images:
+  preview: scraped/cursor-com-2025-12-15/sections/section-1.png
+
+freeformKeywords:
+  - company logos
+  - trusted by
+  - stripe
+  - openai
+  - linear
+  - datadog
+  - nvidia
+  - figma
+  - ramp
+  - adobe
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T10:51:38Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - logo-display
+  style:
+    - dark-theme
+    - minimal
+  layout:
+    - grid
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - enterprise
+
+parentPage: cursor-com-landing
+
+source:
+  type: url
+  url: https://cursor.com/home
+  scrapedAt: "2025-12-15T10:51:38Z"
+  sectionIndex: 1

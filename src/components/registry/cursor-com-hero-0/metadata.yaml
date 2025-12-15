@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: cursor-com-hero-0
+category: hero
+
+images:
+  preview: scraped/cursor-com-2025-12-15/sections/section-0.png
+
+freeformKeywords:
+  - AI code editor
+  - cursor
+  - productivity
+  - developer tools
+  - code with AI
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T10:51:35Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - download-button
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - centered
+    - full-width
+  industry:
+    - saas
+    - ai
+    - developer-tools
+
+parentPage: cursor-com-landing
+
+source:
+  type: url
+  url: https://cursor.com/home
+  scrapedAt: "2025-12-15T10:51:35Z"
+  sectionIndex: 0

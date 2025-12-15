@@ -1,0 +1,41 @@
+schemaVersion: "2.0"
+name: cursor-com-changelog-5
+category: other
+
+images:
+  preview: scraped/cursor-com-2025-12-15/sections/section-5.png
+
+freeformKeywords:
+  - changelog
+  - version updates
+  - release notes
+  - product updates
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T10:52:11Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - changelog-list
+  style:
+    - dark-theme
+    - minimal
+  layout:
+    - grid
+    - four-column
+    - responsive
+  industry:
+    - saas
+    - developer-tools
+
+parentPage: cursor-com-landing
+
+source:
+  type: url
+  url: https://cursor.com/home
+  scrapedAt: "2025-12-15T10:52:11Z"
+  sectionIndex: 5

@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: claude-mem-ai-cta-4
+category: cta
+
+images:
+  preview: scraped/claude-mem-ai-2025-12-15/sections/section-4.png
+
+freeformKeywords:
+  - RAD protocol
+  - AI agent memory
+  - open standard
+  - GitHub
+  - install
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T10:51:47Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - animation
+    - scroll-animation
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - bold
+  layout:
+    - centered
+    - full-width
+    - responsive
+  industry:
+    - ai
+    - saas
+    - developer-tools
+
+parentPage: claude-mem-ai-landing
+
+source:
+  type: url
+  url: https://claude-mem.ai/
+  scrapedAt: "2025-12-15T10:51:47Z"
+  sectionIndex: 4

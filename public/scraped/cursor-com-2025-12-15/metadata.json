@@ -1,0 +1,22 @@
+{
+  "url": "https://cursor.com/home",
+  "domain": "cursor-com",
+  "timestamp": "2025-12-15T10:50:18.855Z",
+  "pageTitle": "Cursor: The best way to code with AI",
+  "totalHeight": 8323,
+  "imageStats": {
+    "total": 40,
+    "downloaded": 40,
+    "failed": 0
+  },
+  "fontStats": {
+    "total": 25,
+    "downloaded": 0,
+    "failed": 17
+  },
+  "videoStats": {
+    "total": 1,
+    "thumbnailsDownloaded": 0,
+    "failed": 0
+  }
+}

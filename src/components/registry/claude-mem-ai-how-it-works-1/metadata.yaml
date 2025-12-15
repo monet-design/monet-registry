@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: claude-mem-ai-how-it-works-1
+category: how-it-works
+
+images:
+  preview: scraped/claude-mem-ai-2025-12-15/sections/section-1.png
+
+freeformKeywords:
+  - AI memory
+  - how it works
+  - note-taking
+  - coding assistant
+  - context awareness
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T10:51:41Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - animation
+    - scroll-animation
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - centered
+    - full-width
+    - responsive
+  industry:
+    - ai
+    - saas
+    - developer-tools
+
+parentPage: claude-mem-ai-landing
+
+source:
+  type: url
+  url: https://claude-mem.ai/
+  scrapedAt: "2025-12-15T10:51:41Z"
+  sectionIndex: 1

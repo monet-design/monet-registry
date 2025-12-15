@@ -1,0 +1,38 @@
+schemaVersion: "2.0"
+name: claude-mem-ai-landing
+category: page
+images:
+  preview: scraped/claude-mem-ai-2025-12-15/full-page.png
+title: claude-mem.ai Landing Page
+sections:
+  - id: claude-mem-ai-hero-0
+    category: hero
+    order: 0
+  - id: claude-mem-ai-how-it-works-1
+    category: how-it-works
+    order: 1
+  - id: claude-mem-ai-feature-2
+    category: feature
+    order: 2
+  - id: claude-mem-ai-feature-3
+    category: feature
+    order: 3
+  - id: claude-mem-ai-cta-4
+    category: cta
+    order: 4
+  - id: claude-mem-ai-footer-5
+    category: footer
+    order: 5
+source:
+  type: url
+  url: https://claude-mem.ai/
+  scrapedAt: "2025-12-15T10:55:42.389Z"
+pageInfo:
+  totalSections: 6
+freeformKeywords:
+  - complete landing page
+  - full page
+  - claude-mem.ai
+createdAt: "2025-12-15T10:55:42.389Z"
+status: stable
+draft: true

@@ -1,0 +1,47 @@
+schemaVersion: "2.0"
+name: cursor-com-testimonial-3
+category: testimonial
+
+images:
+  preview: scraped/cursor-com-2025-12-15/sections/section-3.png
+
+freeformKeywords:
+  - testimonials
+  - customer reviews
+  - social proof
+  - diana hu
+  - shadcn
+  - andrej karpathy
+  - patrick collison
+  - theprimeagen
+  - greg brockman
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T10:51:42Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - testimonial-cards
+  style:
+    - dark-theme
+    - modern
+    - elegant
+  layout:
+    - grid
+    - two-column
+    - responsive
+  industry:
+    - saas
+    - ai
+
+parentPage: cursor-com-landing
+
+source:
+  type: url
+  url: https://cursor.com/home
+  scrapedAt: "2025-12-15T10:51:42Z"
+  sectionIndex: 3

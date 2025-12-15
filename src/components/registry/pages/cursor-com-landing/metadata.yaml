@@ -1,0 +1,50 @@
+schemaVersion: "2.0"
+name: cursor-com-landing
+category: page
+images:
+  preview: scraped/cursor-com-2025-12-15/full-page.png
+title: cursor.com Landing Page
+sections:
+  - id: cursor-com-hero-0
+    category: hero
+    order: 0
+  - id: cursor-com-logo-cloud-1
+    category: logo-cloud
+    order: 1
+  - id: cursor-com-feature-2
+    category: feature
+    order: 2
+  - id: cursor-com-testimonial-3
+    category: testimonial
+    order: 3
+  - id: cursor-com-feature-4
+    category: feature
+    order: 4
+  - id: cursor-com-changelog-5
+    category: other
+    order: 5
+  - id: cursor-com-about-6
+    category: team
+    order: 6
+  - id: cursor-com-blog-7
+    category: other
+    order: 7
+  - id: cursor-com-cta-8
+    category: cta
+    order: 8
+  - id: cursor-com-footer-9
+    category: footer
+    order: 9
+source:
+  type: url
+  url: https://cursor.com/home
+  scrapedAt: "2025-12-15T10:57:22.287Z"
+pageInfo:
+  totalSections: 10
+freeformKeywords:
+  - complete landing page
+  - full page
+  - cursor.com
+createdAt: "2025-12-15T10:57:22.287Z"
+status: stable
+draft: true

@@ -1,0 +1,41 @@
+schemaVersion: "2.0"
+name: cursor-com-blog-7
+category: other
+
+images:
+  preview: scraped/cursor-com-2025-12-15/sections/section-7.png
+
+freeformKeywords:
+  - blog
+  - recent highlights
+  - product updates
+  - research
+  - announcements
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T10:52:14Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - blog-list
+  style:
+    - dark-theme
+    - minimal
+  layout:
+    - single-column
+    - left-aligned
+  industry:
+    - saas
+    - developer-tools
+
+parentPage: cursor-com-landing
+
+source:
+  type: url
+  url: https://cursor.com/home
+  scrapedAt: "2025-12-15T10:52:14Z"
+  sectionIndex: 7

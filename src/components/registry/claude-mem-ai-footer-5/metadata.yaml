@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: claude-mem-ai-footer-5
+category: footer
+
+images:
+  preview: scraped/claude-mem-ai-2025-12-15/sections/section-5.png
+
+freeformKeywords:
+  - footer
+  - documentation
+  - GitHub
+  - links
+  - copyright
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T10:51:48Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - animation
+  style:
+    - dark-theme
+    - minimal
+  layout:
+    - centered
+    - full-width
+    - responsive
+  industry:
+    - ai
+    - saas
+    - developer-tools
+
+parentPage: claude-mem-ai-landing
+
+source:
+  type: url
+  url: https://claude-mem.ai/
+  scrapedAt: "2025-12-15T10:51:48Z"
+  sectionIndex: 5

@@ -90,7 +90,7 @@ async function main() {
     }
 
     // 1. 페이지 컴포넌트 draft 설정
-    const pageMetaPath = path.join(registryDir, "pages", pageId, "metadata.yaml");
+    const pageMetaPath = path.join(process.cwd(), "src/components/pages", pageId, "metadata.yaml");
     if (setDraft(pageMetaPath, `pages/${pageId}`)) {
       totalUpdated++;
     }

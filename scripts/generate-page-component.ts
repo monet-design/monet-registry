@@ -186,7 +186,7 @@ export async function generatePageComponent(
   // Page 컴포넌트 디렉토리 생성
   const pageDir = path.join(
     process.cwd(),
-    `src/components/registry/pages/${name}`
+    `src/components/pages/${name}`
   );
   fs.mkdirSync(pageDir, { recursive: true });
 

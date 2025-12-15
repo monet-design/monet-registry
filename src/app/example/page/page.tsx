@@ -35,7 +35,7 @@ function getPageMetadata(pagesDir: string, pageName: string): PageMetadata {
 }
 
 export default async function ExamplePageListPage() {
-  const pagesDir = path.join(process.cwd(), "src/components/registry/pages");
+  const pagesDir = path.join(process.cwd(), "src/components/pages");
 
   if (!fs.existsSync(pagesDir)) {
     return <div>Pages directory not found: {pagesDir}</div>;

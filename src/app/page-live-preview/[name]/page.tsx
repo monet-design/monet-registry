@@ -7,7 +7,7 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  const pagesDir = path.join(process.cwd(), "src/components/registry/pages");
+  const pagesDir = path.join(process.cwd(), "src/components/pages");
 
   if (!fs.existsSync(pagesDir)) {
     return [];
@@ -25,7 +25,7 @@ export default async function PageLivePreview({ params }: PageProps) {
 
   const PageComponent = dynamic(
     () =>
-      import(`@/components/registry/pages/${pageName}/index`).catch(() => {
+      import(`@/components/pages/${pageName}/index`).catch(() => {
         return () => <div>Failed to load page component</div>;
       })
   );

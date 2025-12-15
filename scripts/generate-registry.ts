@@ -288,7 +288,7 @@ async function main() {
   // ========================================
   // Page 컴포넌트 처리
   // ========================================
-  const pagesDir = path.join(registryDir, "pages");
+  const pagesDir = path.join(process.cwd(), "src/components/pages");
   const pageRegistry: Record<string, PageRegistryEntry> = {};
   let pagesProcessed = 0;
   let pagesDraftCount = 0;
@@ -332,7 +332,7 @@ async function main() {
           freeformKeywords: metadata.freeformKeywords || [],
           searchableText: buildSearchableText(metadata),
           fontFamily: metadata.fontFamily || [],
-          componentPath: `@/components/registry/pages/${pageName}`,
+          componentPath: `@/components/pages/${pageName}`,
           source: metadata.source
             ? {
                 type: metadata.source.type,

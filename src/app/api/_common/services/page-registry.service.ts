@@ -12,6 +12,7 @@ import type {
   ListPagesOptions,
   RegistryEntry,
 } from "../types";
+import { CACHE_TAGS } from "../constants";
 
 const PAGE_REGISTRY_PATH = path.join(
   process.cwd(),
@@ -34,7 +35,7 @@ export type PageIndex = Record<string, string[]>;
 export type SectionToPageIndex = Record<string, string>;
 
 /**
- * Load page registry data with 1-hour cache
+ * Load page registry data with cache (revalidated on demand)
  */
 const loadPageRegistry = unstable_cache(
   async (): Promise<Record<string, PageRegistryEntry>> => {
@@ -45,12 +46,12 @@ const loadPageRegistry = unstable_cache(
       return {};
     }
   },
-  ["page-registry-data"],
-  { revalidate: 3600 }
+  [CACHE_TAGS.PAGE_REGISTRY],
+  { revalidate: 60, tags: [CACHE_TAGS.PAGE_REGISTRY] }
 );
 
 /**
- * Load page index with 1-hour cache
+ * Load page index with cache (revalidated on demand)
  */
 const loadPageIndex = unstable_cache(
   async (): Promise<PageIndex> => {
@@ -61,12 +62,12 @@ const loadPageIndex = unstable_cache(
       return {};
     }
   },
-  ["page-index"],
-  { revalidate: 3600 }
+  [CACHE_TAGS.PAGE_INDEX],
+  { revalidate: 60, tags: [CACHE_TAGS.PAGE_INDEX] }
 );
 
 /**
- * Load section-to-page index with 1-hour cache
+ * Load section-to-page index with cache (revalidated on demand)
  */
 const loadSectionToPageIndex = unstable_cache(
   async (): Promise<SectionToPageIndex> => {
@@ -77,8 +78,8 @@ const loadSectionToPageIndex = unstable_cache(
       return {};
     }
   },
-  ["section-to-page-index"],
-  { revalidate: 3600 }
+  [CACHE_TAGS.SECTION_TO_PAGE],
+  { revalidate: 60, tags: [CACHE_TAGS.SECTION_TO_PAGE] }
 );
 
 /**
@@ -93,8 +94,8 @@ const loadRegistry = unstable_cache(
       return {};
     }
   },
-  ["registry-data"],
-  { revalidate: 3600 }
+  [CACHE_TAGS.REGISTRY],
+  { revalidate: 60, tags: [CACHE_TAGS.REGISTRY] }
 );
 
 class PageRegistryService {

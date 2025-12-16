@@ -8,6 +8,7 @@ import { unstable_cache } from "next/cache";
 import fs from "fs/promises";
 import path from "path";
 import type { RegistryEntry, ListComponentsOptions } from "../types";
+import { CACHE_TAGS } from "../constants";
 
 const REGISTRY_PATH = path.join(
   process.cwd(),
@@ -31,39 +32,39 @@ export type TagIndex = {
 };
 
 /**
- * Load registry data with 1-hour cache
+ * Load registry data with cache (revalidated on demand)
  */
 const loadRegistry = unstable_cache(
   async (): Promise<Record<string, RegistryEntry>> => {
     const content = await fs.readFile(REGISTRY_PATH, "utf-8");
     return JSON.parse(content);
   },
-  ["registry-data"],
-  { revalidate: 3600 }
+  [CACHE_TAGS.REGISTRY],
+  { revalidate: 60, tags: [CACHE_TAGS.REGISTRY] }
 );
 
 /**
- * Load category index with 1-hour cache
+ * Load category index with cache (revalidated on demand)
  */
 const loadCategoryIndex = unstable_cache(
   async (): Promise<CategoryIndex> => {
     const content = await fs.readFile(CATEGORY_INDEX_PATH, "utf-8");
     return JSON.parse(content);
   },
-  ["category-index"],
-  { revalidate: 3600 }
+  [CACHE_TAGS.CATEGORY_INDEX],
+  { revalidate: 60, tags: [CACHE_TAGS.CATEGORY_INDEX] }
 );
 
 /**
- * Load tag index with 1-hour cache
+ * Load tag index with cache (revalidated on demand)
  */
 const loadTagIndex = unstable_cache(
   async (): Promise<TagIndex> => {
     const content = await fs.readFile(TAG_INDEX_PATH, "utf-8");
     return JSON.parse(content);
   },
-  ["tag-index"],
-  { revalidate: 3600 }
+  [CACHE_TAGS.TAG_INDEX],
+  { revalidate: 60, tags: [CACHE_TAGS.TAG_INDEX] }
 );
 
 class RegistryService {

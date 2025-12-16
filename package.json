@@ -28,6 +28,8 @@
     "generate:page": "tsx scripts/generate-page-component.ts",
     "registry:generate": "tsx scripts/generate-shadcn-registry.ts",
     "registry:build": "pnpm registry:generate && shadcn build",
+    "postbuild:revalidate": "tsx scripts/postbuild-revalidate.ts",
+    "build:vercel": "pnpm build && pnpm postbuild:revalidate",
     "test:e2e": "vitest run --config vitest.e2e.config.mts",
     "test:e2e:watch": "vitest --config vitest.e2e.config.mts",
     "ci:lint": "next lint",

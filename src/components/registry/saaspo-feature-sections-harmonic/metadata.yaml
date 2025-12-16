@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-harmonic
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/harmonic.jpg
+
+freeformKeywords:
+  - sourcing
+  - startup discovery
+  - feature section
+  - search filter
+  - company cards
+  - AI matching
+  - growth chart
+  - data visualization
+  - SaaS
+  - startup
+  - database
+  - relevance scoring
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:40:38Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - search
+    - cards
+    - data-visualization
+  style:
+    - light-theme
+    - modern
+    - minimal
+  layout:
+    - two-column
+    - grid
+  industry:
+    - saas
+    - startup
+    - ai
+    - fintech

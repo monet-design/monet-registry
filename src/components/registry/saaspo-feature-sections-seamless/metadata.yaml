@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-seamless
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/seamless.jpg
+
+freeformKeywords:
+  - email finder
+  - phone finder
+  - B2B
+  - lead generation
+  - sales prospecting
+  - contact database
+  - email verification
+  - mobile phone lookup
+  - business contacts
+  - AI sales tool
+
+fontFamily:
+  - Inter
+  - Caveat
+
+createdAt: "2025-12-16T05:07:25Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - lead-capture
+    - b2b-tool
+  style:
+    - modern
+    - minimal
+    - light-theme
+    - gradient
+    - sans-serif
+  layout:
+    - two-column
+    - split-layout
+    - left-aligned
+  industry:
+    - saas
+    - b2b
+    - sales-tools

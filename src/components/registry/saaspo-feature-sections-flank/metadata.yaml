@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-flank
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/flank.jpg
+
+freeformKeywords:
+  - feature section
+  - AI agent
+  - automation
+  - workflow
+  - chat UI
+  - Slack
+  - integration
+  - enterprise
+  - security
+  - dark theme
+  - SaaS
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:38:44Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - animation
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - two-column
+    - split-layout
+  industry:
+    - saas
+    - ai
+    - startup
+    - enterprise

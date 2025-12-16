@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-liveblocks
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/liveblocks.jpg
+
+freeformKeywords:
+  - feature section
+  - collaboration
+  - real-time
+  - comments
+  - text editor
+  - ai copilot
+  - notifications
+  - presence
+  - dark theme
+  - saas
+  - liveblocks
+  - collaborative features
+  - pre-built components
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:50:19Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+    - animation
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - gradient
+  layout:
+    - centered
+    - grid
+    - two-column
+  industry:
+    - saas
+    - collaboration
+    - developer-tools

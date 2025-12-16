@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-highnote
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/highnote.jpg
+
+freeformKeywords:
+  - payments
+  - fintech
+  - payment platform
+  - visa
+  - dashboard
+  - ledger
+  - transaction
+  - card issuing
+  - payment solution
+  - saas
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:47:13Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - dashboard-ui
+    - payment-form
+  style:
+    - light-theme
+    - elegant
+    - serif
+    - minimal
+    - warm
+  layout:
+    - centered
+    - single-column
+    - grid
+  industry:
+    - fintech
+    - saas
+    - payments

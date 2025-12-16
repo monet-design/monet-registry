@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-outseta
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/outseta.jpg
+
+freeformKeywords:
+  - membership
+  - saas
+  - feature
+  - grid
+  - payments
+  - crm
+  - email
+  - help desk
+  - auth
+  - reporting
+  - all-in-one
+  - community
+  - courses
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:57:12Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - grid
+    - cards
+  style:
+    - light-theme
+    - minimal
+    - elegant
+    - serif
+  layout:
+    - centered
+    - grid
+    - responsive
+  industry:
+    - saas
+    - membership
+    - community

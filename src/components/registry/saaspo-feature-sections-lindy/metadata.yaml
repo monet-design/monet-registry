@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-lindy
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/lindy.jpg
+
+freeformKeywords:
+  - sales
+  - ai
+  - lead qualifier
+  - lead generator
+  - lead outreach
+  - crm
+  - feature section
+  - saas
+  - enterprise
+  - automation
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:49:54Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - lead-capture
+    - form
+    - cards
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - warm
+  layout:
+    - two-column
+    - grid
+    - full-width
+  industry:
+    - saas
+    - ai
+    - sales

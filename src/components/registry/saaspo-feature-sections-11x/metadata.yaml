@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-11x
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/11x.jpg
+
+freeformKeywords:
+  - feature section
+  - digital workers
+  - AI workforce
+  - feature cards
+  - carousel
+  - enterprise
+  - saas
+  - integrations
+  - autonomous
+  - customization
+
+fontFamily:
+  - Inter
+  - Instrument Serif
+
+createdAt: "2025-12-16T04:23:56Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - carousel
+    - pagination
+  style:
+    - light-theme
+    - warm
+    - elegant
+    - serif
+  layout:
+    - centered
+    - full-width
+    - grid
+  industry:
+    - saas
+    - ai
+    - enterprise

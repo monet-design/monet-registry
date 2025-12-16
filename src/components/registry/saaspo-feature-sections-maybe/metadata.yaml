@@ -1,0 +1,48 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-maybe
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/maybe.jpg
+
+freeformKeywords:
+  - finance
+  - fintech
+  - tracking
+  - bank accounts
+  - stocks
+  - crypto
+  - currency
+  - feature section
+  - dashboard
+  - accounts
+  - chart
+  - loan
+  - form
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:57:17Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - form
+    - data-display
+    - chart
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+    - sans-serif
+  layout:
+    - centered
+    - three-column
+    - grid
+  industry:
+    - fintech
+    - finance
+    - saas

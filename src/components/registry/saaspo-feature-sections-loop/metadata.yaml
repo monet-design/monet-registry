@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-loop
+category: feature-showcase
+
+images:
+  preview: /registry/saaspo-feature-sections-loop/preview.jpg
+
+freeformKeywords:
+  - feature section
+  - integration
+  - api
+  - e-commerce
+  - extensibility
+  - apps
+  - saas
+  - dark theme
+  - 3d visual
+  - torus
+  - donut
+  - point of sale
+  - pos
+  - shopify
+  - logistics
+  - shipping
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:50:50Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - integration-showcase
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - gradient
+  layout:
+    - two-column
+    - split-layout
+  industry:
+    - saas
+    - e-commerce

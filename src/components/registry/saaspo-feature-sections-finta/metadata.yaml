@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-finta
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/finta.jpg
+
+freeformKeywords:
+  - feature
+  - accounting
+  - automation
+  - auto-categorization
+  - transactions
+  - testimonial
+  - fintech
+  - saas
+  - bookkeeping
+  - time-saving
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:38:30Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - table
+    - testimonial
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - clean
+  layout:
+    - centered
+    - single-column
+    - stacked
+  industry:
+    - saas
+    - fintech
+    - accounting

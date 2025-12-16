@@ -1,0 +1,47 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-cap
+category: feature-showcase
+
+images:
+  preview: preview.jpg
+
+freeformKeywords:
+  - feature section
+  - features
+  - screen recording
+  - simplicity
+  - crafted
+  - powerful features
+  - built for everyone
+  - privacy-first
+  - lightweight
+  - open source
+  - chat ui
+  - code snippet
+  - saas
+  - tech
+  - minimal
+
+fontFamily:
+  - Inter
+  - Instrument Serif
+
+createdAt: "2025-12-16T04:26:33Z"
+status: stable
+language: en
+
+tags:
+  functional: []
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+  layout:
+    - centered
+    - grid
+    - four-column
+  industry:
+    - saas
+    - startup
+    - tech

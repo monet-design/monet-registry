@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-phidata
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/phidata.jpg
+
+freeformKeywords:
+  - ai agent
+  - llm
+  - agent builder
+  - feature section
+  - dark theme
+  - ai tools
+  - memory
+  - knowledge
+  - saas
+  - phidata
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:59:27Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+    - animation
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - centered
+    - grid
+    - two-column
+  industry:
+    - ai
+    - saas
+    - startup

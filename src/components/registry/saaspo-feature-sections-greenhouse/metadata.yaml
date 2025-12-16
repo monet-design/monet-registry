@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-greenhouse
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/greenhouse.jpg
+
+freeformKeywords:
+  - hiring
+  - ats
+  - recruitment
+  - hr
+  - feature
+  - cards
+  - green
+  - serif
+  - minimal
+  - success
+  - roi
+  - software
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:39:50Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - minimal
+    - serif
+    - clean
+  layout:
+    - left-aligned
+    - three-column
+    - grid
+  industry:
+    - saas
+    - hr
+    - recruiting

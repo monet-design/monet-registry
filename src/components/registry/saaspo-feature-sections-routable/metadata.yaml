@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-routable
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/routable.jpg
+
+freeformKeywords:
+  - feature section
+  - AP automation
+  - accounts payable
+  - invoice capture
+  - fintech
+  - saas
+  - tabs
+  - approval workflow
+  - payment reconciliation
+  - OCR
+  - B2B
+
+fontFamily:
+  - Inter
+  - Instrument Serif
+
+createdAt: "2025-12-16T05:00:59Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - tabs
+    - animation
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - serif-accent
+  layout:
+    - two-column
+    - left-aligned
+  industry:
+    - saas
+    - fintech
+    - b2b

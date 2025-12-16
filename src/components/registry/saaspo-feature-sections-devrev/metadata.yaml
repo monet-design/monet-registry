@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-devrev
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/devrev.jpg
+
+freeformKeywords:
+  - analytics
+  - dashboard
+  - feature section
+  - product analytics
+  - real-time monitoring
+  - customer analytics
+  - developer productivity
+  - saas
+  - dark theme
+  - metrics
+  - performance tracking
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:36:28Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - split-layout
+    - two-column
+    - full-width
+  industry:
+    - saas
+    - analytics
+    - devtools

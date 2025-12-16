@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-outtake
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/outtake.jpg
+
+freeformKeywords:
+  - feature section
+  - security
+  - cybersecurity
+  - ai defense
+  - agentic ai
+  - dark theme
+  - feature list
+  - accordion
+  - robot arm
+  - 3d illustration
+  - threat detection
+  - identity attack
+  - domain attack
+  - email attack
+  - sms attack
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:57:11Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - accordion
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - split-layout
+    - two-column
+  industry:
+    - saas
+    - cybersecurity
+    - ai

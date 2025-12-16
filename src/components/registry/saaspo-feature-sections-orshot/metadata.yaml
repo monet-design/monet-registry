@@ -1,0 +1,55 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-orshot
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/orshot.jpg
+
+freeformKeywords:
+  - feature
+  - features
+  - rendering
+  - creative workflow
+  - automation
+  - workspace
+  - team
+  - storage
+  - s3
+  - cloudflare r2
+  - render time
+  - statistics
+  - logs
+  - insights
+  - chart
+  - saas
+  - platform
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:57:12Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - dropdown
+    - table
+    - form
+    - statistics
+    - chart
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+    - sans-serif
+  layout:
+    - centered
+    - grid
+    - responsive
+  industry:
+    - saas
+    - creative
+    - rendering
+    - automation

@@ -1,0 +1,41 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-quicklnk
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/quicklnk.jpg
+
+freeformKeywords:
+  - feature section
+  - platform features
+  - link management
+  - theme studio
+  - analytics
+  - dashboard
+  - social links
+  - link in bio
+  - saas features
+  - grid layout
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:59:51Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - warm
+  layout:
+    - grid
+    - centered
+  industry:
+    - saas
+    - startup
+    - link-in-bio

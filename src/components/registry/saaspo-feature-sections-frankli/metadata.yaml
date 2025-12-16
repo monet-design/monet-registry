@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-frankli
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/frankli.jpg
+
+freeformKeywords:
+  - feature section
+  - HR
+  - performance management
+  - meeting templates
+  - goal setting
+  - OKR
+  - reporting
+  - dashboard
+  - analytics
+  - 1-on-1
+  - manager
+  - employee
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-12-16T04:40:12Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - dashboard-preview
+  style:
+    - light-theme
+    - minimal
+    - elegant
+    - serif
+  layout:
+    - two-column
+    - split-layout
+  industry:
+    - saas
+    - hr-tech

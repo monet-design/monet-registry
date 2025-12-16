@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-8returns
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/8returns.jpg
+
+freeformKeywords:
+  - returns
+  - logistics
+  - ecommerce
+  - customer experience
+  - returns automation
+  - returns portal
+  - return policy
+  - tabs
+  - feature section
+  - saas
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:24:00Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - tabs
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+  layout:
+    - centered
+    - three-column
+    - grid
+  industry:
+    - saas
+    - ecommerce
+    - logistics

@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-noxus
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/noxus.jpg
+
+freeformKeywords:
+  - automation
+  - workflow
+  - no-code
+  - ai agents
+  - feature section
+  - accordion
+  - integrations
+  - agentic
+  - saas
+
+fontFamily:
+  - Inter
+  - Instrument Serif
+
+createdAt: "2025-12-16T04:57:11Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - accordion
+    - workflow
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - clean
+  layout:
+    - two-column
+    - split-layout
+  industry:
+    - saas
+    - ai
+    - automation
+    - no-code

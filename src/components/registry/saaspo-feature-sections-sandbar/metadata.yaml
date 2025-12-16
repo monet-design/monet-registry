@@ -1,0 +1,50 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-sandbar
+category: feature-showcase
+
+images:
+  preview: /registry/saaspo-feature-sections-sandbar/preview.jpg
+
+freeformKeywords:
+  - feature section
+  - AML
+  - compliance
+  - anti-money laundering
+  - configurable
+  - setup
+  - building blocks
+  - screening
+  - monitoring
+  - case management
+  - checklist
+  - dashboard
+  - fintech
+  - enterprise
+  - saas
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T05:07:19Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - checklist
+    - form-ui
+    - dashboard-preview
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+  layout:
+    - split-layout
+    - two-column
+    - left-aligned
+  industry:
+    - saas
+    - fintech
+    - compliance
+    - enterprise

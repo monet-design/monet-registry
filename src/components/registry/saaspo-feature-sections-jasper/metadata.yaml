@@ -1,0 +1,47 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-jasper
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/jasper.jpg
+
+freeformKeywords:
+  - feature
+  - marketing
+  - AI
+  - agentic
+  - platform
+  - jasper
+  - canvas
+  - studio
+  - trust
+  - cards
+  - colorful
+  - grid
+  - saas
+
+fontFamily:
+  - Inter
+  - Playfair Display
+
+createdAt: "2025-12-16T04:47:16Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+    - grid
+  style:
+    - light-theme
+    - modern
+    - colorful
+    - serif-title
+  layout:
+    - centered
+    - grid
+    - full-width
+  industry:
+    - ai
+    - saas
+    - marketing

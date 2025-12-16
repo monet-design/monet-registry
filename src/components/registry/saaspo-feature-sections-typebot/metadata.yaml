@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-typebot
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/typebot.jpg
+
+freeformKeywords:
+  - feature section
+  - chatbot
+  - department
+  - marketing
+  - support
+  - sales
+  - product
+  - dark theme
+  - gradient
+  - cards
+  - conversation
+  - automation
+  - SaaS
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T05:07:19Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+    - accordion
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - serif
+  layout:
+    - three-column
+    - grid
+    - centered
+  industry:
+    - saas
+    - ai
+    - chatbot

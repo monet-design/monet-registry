@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-lattice
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/lattice.jpg
+
+freeformKeywords:
+  - HR
+  - productivity
+  - OKRs
+  - goals
+  - 1:1s
+  - updates
+  - manager
+  - team performance
+  - feature section
+  - testimonial
+  - sentiment
+  - meetings
+  - accountability
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:49:22Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - ui-showcase
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - warm
+    - rounded
+  layout:
+    - grid
+    - centered
+    - asymmetric
+  industry:
+    - saas
+    - hr
+    - enterprise

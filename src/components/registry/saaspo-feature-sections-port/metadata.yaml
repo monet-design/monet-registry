@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-port
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/port.jpg
+
+freeformKeywords:
+  - portal
+  - developer portal
+  - catalog
+  - software catalog
+  - feature section
+  - sidebar
+  - table
+  - dropdown
+  - platform engineer
+  - devops
+  - saas
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:59:43Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - dropdown
+    - sidebar
+    - table
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+  layout:
+    - two-column
+    - left-aligned
+  industry:
+    - saas
+    - developer-tools
+    - devops

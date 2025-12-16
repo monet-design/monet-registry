@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-parker
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/parker.jpg
+
+freeformKeywords:
+  - feature section
+  - fintech
+  - dashboard
+  - contribution margin
+  - P&L
+  - analytics
+  - tabs
+  - data visualization
+  - metrics
+  - financial
+  - saas
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:59:08Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - tabs
+    - dashboard
+    - data-visualization
+  style:
+    - light-theme
+    - minimal
+    - warm
+    - serif
+  layout:
+    - two-column
+    - split-layout
+  industry:
+    - fintech
+    - saas

@@ -5,127 +5,130 @@ import * as path from "path";
 // ============================================================
 // Configuration - 여기에 DATA_STRING과 카테고리명을 설정하세요
 // ============================================================
-const CATEGORY_NAME = "footer";
+const CATEGORY_NAME = "saaspo-feature-sections";
 
 // name,url 형식의 문자열 (각 줄마다 name,url)
-const DATA_STRING = `Holocene Footer,https://unsection.b-cdn.net/Holocene_Footer.webp?class=thumbnail
-Intercom Home Page Section Footer,https://unsection.b-cdn.net/Intercom_Suite_Footer.jpg?class=thumbnail
-Fin AI Footer,https://unsection.b-cdn.net/Fin_AI_Footer.jpg?class=thumbnail
-Tines Footer Section,https://unsection.b-cdn.net/Tines_Footer_Section.webp?class=thumbnail
-Jimo Footer Section,https://unsection.b-cdn.net/Jimo_Footer_Section.webp?class=thumbnail
-Plain Section Footer,https://unsection.b-cdn.net/Plain_Section_Footer.webp?class=thumbnail
-GitHub Home Page Section Footer,https://unsection.b-cdn.net/cf-fd456838-5de5-468a-d572-de6b5bf0ee00.jpg?class=thumbnail
-Flaghsip Home Page Section Footer,https://unsection.b-cdn.net/cf-0bc14701-6a0e-4246-238c-d065858f8e00.jpg?class=thumbnail
-Popcorn Home Page Section Footer,https://unsection.b-cdn.net/cf-fb6d0501-f290-46d6-d188-d9c907823300.jpg?class=thumbnail
-Passionfroot Home Page Section Footer,https://unsection.b-cdn.net/cf-4814f330-c23e-403c-3954-b0cb60ed7f00.jpg?class=thumbnail
-Steel Home Page Section Footer,https://unsection.b-cdn.net/cf-7a3f57cc-6291-4cf8-c844-823f1acfba00.jpg?class=thumbnail
-Steel Home Page Section CTA Footer,https://unsection.b-cdn.net/cf-ff5aed73-6a21-4b35-e033-b5b7883dd500.jpg?class=thumbnail
-Current Home Page Section Footer,https://unsection.b-cdn.net/cf-4cdb9085-ec0b-438a-9ff3-be6009191500.jpg?class=thumbnail
-Kinetic Hubs Page Section Footer,https://unsection.b-cdn.net/cf-c1638e38-bed1-470a-05cd-5e68e7718400.jpg?class=thumbnail
-Kinetic Home Page Section Footer,https://unsection.b-cdn.net/cf-f959da25-ab59-4bc1-b903-3e22c15e8a00.jpg?class=thumbnail
-Zazu Home Page Section Footer,https://unsection.b-cdn.net/cf-da135e22-94f1-4b47-8323-4ee0ea3db700.jpg?class=thumbnail
-Energy Park Home Page Section Footer,https://unsection.b-cdn.net/cf-f78ba80f-d490-4162-7446-3724ad30fa00.jpg?class=thumbnail
-Den Home Page Section Footer,https://unsection.b-cdn.net/cf-f6e2f213-5027-46e2-43d2-ed992c026900.jpg?class=thumbnail
-Neycher Home Page Section Footer,https://unsection.b-cdn.net/cf-1bd42dae-9ee7-479e-5199-d4ca487eb800.jpg?class=thumbnail
-Doconomy Home Page Section Footer,https://unsection.b-cdn.net/cf-625b0d9d-855e-4c8f-aafb-a825ba050000.jpg?class=thumbnail
-In Tandem Home Page Section Footer,https://unsection.b-cdn.net/cf-65be05e0-f6e6-45ed-7437-f5ccf92d8a00.jpg?class=thumbnail
-Hasko Home Page Section Footer,https://unsection.b-cdn.net/cf-0abb5b48-8485-4e19-c139-954ff5d40c00.jpg?class=thumbnail
-Few and Far Home Page Section Footer,https://unsection.b-cdn.net/cf-ee5cad42-ba69-4d44-4439-8c6932338300.jpg?class=thumbnail
-Riotters Home Page Section Footer,https://unsection.b-cdn.net/cf-30cc82fc-eee2-4f55-6fa9-e2ee90894200.jpg?class=thumbnail
-Isla Porter Home Page Section Footer,https://unsection.b-cdn.net/cf-848ddfc1-5aef-4eca-4b65-71c906303700.jpg?class=thumbnail
-Aker Home Page Section Footer,https://unsection.b-cdn.net/cf-5c329e6f-4f89-4ded-9455-b706f4050300.jpg?class=thumbnail
-The Resonance Home Page Section Footer,https://unsection.b-cdn.net/cf-341f87f4-de70-4bb9-14be-8e8d5aeab100.jpg?class=thumbnail
-Sevalla Home Page Section Footer,https://unsection.b-cdn.net/cf-bf347565-8133-475b-5bb5-462ad80ca600.jpg?class=thumbnail
-Spellbook Home Page Section Footer,https://unsection.b-cdn.net/cf-3c8db8fc-0ab2-41ff-f56d-f998ef3bfe00.jpg?class=thumbnail
-Grove Home Page Section Footer,https://unsection.b-cdn.net/cf-dc59b9cd-f682-4cc9-01dc-743b69250c00.jpg?class=thumbnail
-Move Home Page Section Footer,https://unsection.b-cdn.net/cf-55e4fcbd-991f-42bc-9254-2a902d5d0900.jpg?class=thumbnail
-Outseta Home Page Section Footer,https://unsection.b-cdn.net/cf-6425dff9-cfa9-4b0f-82ae-c801eb061b00.jpg?class=thumbnail
-Reon Home Page Section Footer,https://unsection.b-cdn.net/cf-a76ee772-d6c7-47ca-282f-c665b201fd00.jpg?class=thumbnail
-Vela Capitals Home Page Section Footer,https://unsection.b-cdn.net/cf-251e8e2b-943d-4aff-9325-80b27931e600.jpg?class=thumbnail
-Sound Ethics Home Page Section Footer,https://unsection.b-cdn.net/cf-ef248650-e7ce-4101-ab39-618794152800.jpg?class=thumbnail
-Atomic Home Page Section Footer,https://unsection.b-cdn.net/cf-864a1464-0848-474e-29e0-60175519cc00.jpg?class=thumbnail
-Gaelle Perrin Home Page Section Footer,https://unsection.b-cdn.net/cf-c49aff00-0714-4fd8-50d5-eb1015a39800.jpg?class=thumbnail
-Sketch Home Page Section Footer,https://unsection.b-cdn.net/cf-008e0cb4-147a-4620-34e4-26cd69306700.jpg?class=thumbnail
-Kota Home Page Section Footer,https://unsection.b-cdn.net/cf-6629a262-0847-464e-5249-ef83b3d2a800.jpg?class=thumbnail
-Routable Home Page Section Footer,https://unsection.b-cdn.net/cf-12aa6c6a-9098-49a2-aaad-868915c0de00.jpg?class=thumbnail
-Lowe's Innovation Labs Home Page Section Footer,https://unsection.b-cdn.net/cf-328987b2-d6b4-40cd-f35c-353fa0ee5400.jpg?class=thumbnail
-Oddit Home Page Section Footer,https://unsection.b-cdn.net/cf-7191ab90-f835-46ad-4101-5fc1672ba300.jpg?class=thumbnail
-The Reach Home Page Section Footer,https://unsection.b-cdn.net/cf-ac392400-ad31-4027-8b83-c8110b2a9600.jpg?class=thumbnail
-Liveblocks Home Page Section Footer,https://unsection.b-cdn.net/cf-5c59dbe4-2182-478d-433b-db3333a62200.jpg?class=thumbnail
-Online Payment Platform Home Page Section Footer,https://unsection.b-cdn.net/cf-bf6042e2-d69d-4393-d066-fa01f1692500.jpg?class=thumbnail
-HubSpot Home Page Section Footer,https://unsection.b-cdn.net/cf-399a96fe-98df-4eca-3f0b-d0699ce21600.jpg?class=thumbnail
-Taiga Home Page Section Footer,https://unsection.b-cdn.net/cf-cfad742a-2de3-4750-36a0-9e67f23c7700.jpg?class=thumbnail
-Rivian Home Page Section Footer,https://unsection.b-cdn.net/cf-61ddc430-d72b-4bbf-d0b7-ed82ef951a00.jpg?class=thumbnail
-Canopy Home Page Section Footer,https://unsection.b-cdn.net/cf-c6bc89f7-4a9c-48ba-742d-011d9a022800.jpg?class=thumbnail
-Checkout Home Page Section Footer,https://unsection.b-cdn.net/cf-8fd346b8-2de6-443f-ca97-0436db098700.jpg?class=thumbnail
-Ahref Home Page Section Footer,https://unsection.b-cdn.net/cf-7efce7eb-07ee-4242-5444-676566f6ef00.jpg?class=thumbnail
-Antimetal Home Page Section Footer,https://unsection.b-cdn.net/cf-947c2c65-d1a9-47a4-545f-16d5a2f64600.jpg?class=thumbnail
-Kajabi Home Page Section Footer,https://unsection.b-cdn.net/cf-9bebca05-d7dd-4d29-7049-25b080d55300.jpg?class=thumbnail
-Mollie Home Page Section Footer,https://unsection.b-cdn.net/cf-369032b9-535b-4713-8d61-90b3c0f03800.jpg?class=thumbnail
-Vouch Home Page Section Footer,https://unsection.b-cdn.net/cf-c810ec39-a006-467c-3903-58522292fc00.jpg?class=thumbnail
-Cape Home Page Section Footer,https://unsection.b-cdn.net/cf-ff56ccc0-5f45-4ea6-781c-297b7c9b2a00.jpg?class=thumbnail
-Avo Home Page Section Footer,https://unsection.b-cdn.net/cf-f6c50bc3-1e0d-4506-4592-23120f0da400.jpg?class=thumbnail
-Globalization Partners Home Page Section Footer,https://unsection.b-cdn.net/cf-cea4e486-2356-43e7-126f-305e166e9600.jpg?class=thumbnail
-Superchat Home Page Section Footer,https://unsection.b-cdn.net/cf-3e5b5cec-d7c8-4091-530a-0051dcccb200.jpg?class=thumbnail
-Ben Home Page Section Footer,https://unsection.b-cdn.net/cf-536e3031-2bad-43de-0db5-47bea01f4400.jpg?class=thumbnail
-Patch Home Page Section Footer,https://unsection.b-cdn.net/cf-52451fc0-6dd2-4031-1947-9c54342a1500.jpg?class=thumbnail
-Tandym Home Page Section Footer,https://unsection.b-cdn.net/cf-e0005372-76fb-4a2d-a6bc-aa321fd0b200.jpg?class=thumbnail
-Pash Home Page Section Footer,https://unsection.b-cdn.net/cf-6a0f738c-2ac2-4110-48dc-e59d3aa24400.jpg?class=thumbnail
-Help Scout Home Page Section Footer,https://unsection.b-cdn.net/cf-ba6a906b-6dea-44d1-530d-65a2e6a3e800.jpg?class=thumbnail
-Eventbeds Home Page Section Footer,https://unsection.b-cdn.net/cf-5b38bb74-7eca-47af-9ac9-b7c818339000.jpg?class=thumbnail
-Watershed Home Page Section Footer,https://unsection.b-cdn.net/cf-c556440c-847e-4578-5471-8addbcf0d000.jpg?class=thumbnail
-Resend Home Page Section Footer,https://unsection.b-cdn.net/cf-60578308-e3e3-4949-6bb1-89a1f4921a00.jpg?class=thumbnail
-Wope Home Page Section Footer,https://unsection.b-cdn.net/cf-1c7f1d28-d9b0-4731-46f8-039337591e00.jpg?class=thumbnail
-Reflect Home Page Section Footer,https://unsection.b-cdn.net/cf-e39b4489-f7a4-4117-c0cd-1d08cef34200.jpg?class=thumbnail
-Oyster Home Page Section Footer,https://unsection.b-cdn.net/cf-1600bdc6-1150-4dbe-bd62-e0d78b656f00.jpg?class=thumbnail
-Paradigm Home Page Section Footer,https://unsection.b-cdn.net/cf-cf501d8d-8fc6-46f6-fcac-0ab732bd9d00.jpg?class=thumbnail
-Help Scout Home Page Section Footer,https://unsection.b-cdn.net/cf-fd9994d7-46e6-431e-f98e-19e4724d8c00.jpg?class=thumbnail
-Merchlink Home Page Section Footer,https://unsection.b-cdn.net/cf-461bf739-3da6-4e84-a3ec-7a65d47d7100.jpg?class=thumbnail
-Nutsdev Home Page Section Footer,https://unsection.b-cdn.net/cf-121eabd9-3221-4298-ffef-9c50d6b64800.jpg?class=thumbnail
-TBH Home Page Section Footer,https://unsection.b-cdn.net/cf-de72541a-7657-4a86-e859-d241d4718d00.jpg?class=thumbnail
-Focal Home Page Section Footer,https://unsection.b-cdn.net/cf-aaa4e509-88be-4a20-56f7-00eb1d7acc00.jpg?class=thumbnail
-AlignUI Home Page Section Footer,https://unsection.b-cdn.net/cf-a4764e2b-d034-492b-dc0d-9440f0071500.jpg?class=thumbnail
-Foundation Alloy Home Page Section Footer,https://unsection.b-cdn.net/cf-cc1b17e5-1eb6-4681-551d-9e0ab5049100.jpg?class=thumbnail
-Pipe Home Page Section Footer,https://unsection.b-cdn.net/cf-049511eb-43ff-44ae-820c-b5d522d3d100.jpg?class=thumbnail
-Nutri Rich Home Section Footer,https://unsection.b-cdn.net/cf-749db465-b5d1-4c80-f7d6-237467a6ef00.jpg?class=thumbnail
-Be On Hand Home Section Footer,https://unsection.b-cdn.net/cf-9b60a616-7d7b-4674-8081-a8ee624af900.jpg?class=thumbnail
-Linear Ask Page Section Footer,https://unsection.b-cdn.net/cf-3c34a7a3-6309-4923-7f11-200efd986d00.jpg?class=thumbnail
-Insurely Home Page Section Footer,https://unsection.b-cdn.net/cf-b4f3929d-c7b0-47e9-b844-6f037a072f00.jpg?class=thumbnail
-Hawthorne Skin Home Page Section Footer,https://unsection.b-cdn.net/cf-38de42f7-6d62-4895-3970-4efbdb9bb400.jpg?class=thumbnail
-Genie Home Page Section Footer,https://unsection.b-cdn.net/cf-3f0c186d-f675-434c-959e-2b529f856400.jpg?class=thumbnail
-Furey Home Page Section Footer,https://unsection.b-cdn.net/cf-ce31ff95-8a28-4195-75d8-8493cfd95500.jpg?class=thumbnail
-Moxion Home Page Section Footer,https://unsection.b-cdn.net/cf-1b26355f-c1a2-4469-c25e-013d28cbbf00.jpg?class=thumbnail
-Hello Network Footer Page Section Footer,https://unsection.b-cdn.net/cf-c789e6d1-d95a-4fb5-996d-54145f419f00.jpg?class=thumbnail
-Coherence Home Section Footer,https://unsection.b-cdn.net/cf-1a055924-ea0b-47ba-c625-981df332b600.jpg?class=thumbnail
-Typeform Home Page Section Footer,https://unsection.b-cdn.net/cf-a951bfff-ac96-4057-dd07-4fea858af600.jpg?class=thumbnail
-Cut The Code Home Page Section Footer,https://unsection.b-cdn.net/cf-44905032-e8d3-4550-9990-061cc718df00.jpg?class=thumbnail
-Rbbecon Home Page Section Footer,https://unsection.b-cdn.net/cf-37461065-1c4d-496e-3fbe-3550a7610d00.jpg?class=thumbnail
-Atrium Home Page Section Footer,https://unsection.b-cdn.net/cf-41353433-c3e5-4814-4543-e0a1311c6000.jpg?class=thumbnail
-Zapier Home Page Section Footer,https://unsection.b-cdn.net/cf-e967c991-eeca-434b-dfd3-acaa117cf900.jpg?class=thumbnail
-Substack Home Page Section Footer,https://unsection.b-cdn.net/cf-3491a5de-0aa1-4ebc-29df-8b86a6ea9e00.jpg?class=thumbnail
-Coterie Home Page Section Footer,https://unsection.b-cdn.net/cf-14c2a743-cebe-4db5-f23b-0e507658a300.jpg?class=thumbnail
-Mission Lab Home Page Section Footer,https://unsection.b-cdn.net/cf-f671704c-38c6-46d4-32c7-a25ed6612a00.jpg?class=thumbnail
-Kickbase Home Page Section Footer,https://unsection.b-cdn.net/cf-98b29478-8e9a-4767-9ccf-d1efa1629000.jpg?class=thumbnail
-Bunsen Studio Home Page Section Footer,https://unsection.b-cdn.net/cf-b0977d3e-1368-43ba-605e-543c19f5f200.jpg?class=thumbnail
-Euphemia Home Page Section Footer,https://unsection.b-cdn.net/cf-f695e503-8560-4674-40c7-89049f5f9000.jpg?class=thumbnail
-Double Makers Home Page Section Footer,https://unsection.b-cdn.net/cf-1bce1f6f-7c2e-4672-7020-02fd54c92900.jpg?class=thumbnail
-Colabs Home Page Section Footer,https://unsection.b-cdn.net/cf-e287b77b-0ad0-4d0a-ef5d-d0d3dc60a200.jpg?class=thumbnail
-Flecto Home Page Section Footer,https://unsection.b-cdn.net/cf-df3ec077-1ee6-4623-8f7d-b4034ec57300.jpg?class=thumbnail
-Timescale Home Page Section Footer,https://unsection.b-cdn.net/cf-959de4bf-1d46-46ed-fc33-e8fa4ae89c00.jpg?class=thumbnail
-Hyperliquid Home Page Section Footer,https://unsection.b-cdn.net/cf-a1b63e71-0c2a-496d-b16c-6f67bb56a900.jpg?class=thumbnail
-Move Agency Home Page Section Footer,https://unsection.b-cdn.net/cf-fa2723c2-557d-492b-1025-fe0e11988e00.jpg?class=thumbnail
-Memory Home Page Section Footer,https://unsection.b-cdn.net/cf-b7a81c48-9aaf-494e-a68a-7819de554800.jpg?class=thumbnail
-Slite Home Page Section Footer,https://unsection.b-cdn.net/cf-a46f8fef-f53b-403a-ffdd-5e6e06a36100.jpg?class=thumbnail
-Swap Commerce Home Page Section Footer,https://unsection.b-cdn.net/cf-3a324338-81b0-4886-4963-b5e91cf16900.jpg?class=thumbnail
-Teamway Home Page Section Footer,https://unsection.b-cdn.net/cf-d49b4b45-e598-4676-3fa7-bdbbcdbfb800.jpg?class=thumbnail
-Pera Home Page Section Footer,https://unsection.b-cdn.net/cf-4e654527-e960-434d-cb4e-2fe9835d1b00.jpg?class=thumbnail
-Reveni Home Page Section Footer,https://unsection.b-cdn.net/cf-1b2e603a-45a9-47f1-4a81-eb801c1a0300.jpg?class=thumbnail
-Relumeipsum Home Page Section Footer,https://unsection.b-cdn.net/cf-ee070e99-9cdd-4b0b-5b4b-a3839ff90100.jpg?class=thumbnail
-Galileo Platform Page Section Footer,https://unsection.b-cdn.net/cf-461a26c5-06d1-4c7c-58e8-92ceba9a1500.jpg?class=thumbnail
-10Clouds Home Section Footer,https://unsection.b-cdn.net/cf-9483b3da-8d71-454d-1d13-84f76c8bca00.jpg?class=thumbnail
-That Original Home Section Footer,https://unsection.b-cdn.net/cf-ebd55d91-7cce-4183-0f11-4bac86742500.jpg?class=thumbnail
-Chronicle Home Page Section Footer,https://unsection.b-cdn.net/cf-9dffcc08-28e8-4972-fb10-8d65a6871f00.jpg?class=thumbnail
-Lawtrades Home Page Section Footer,https://unsection.b-cdn.net/cf-4429d394-abe9-4b1d-795a-5963aee1fe00.jpg?class=thumbnail
+const DATA_STRING = `Lightning Proxies,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6811c47a41f50ccbb1b570cb_Lightning-Proxies---Features-2.jpeg
+Greenhouse,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6811c6e56b64bd1ad929bcc5_Greenhouse---Features.jpeg
+Secoda,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/683ecd4c7de6ab8a5ac04402_Secoda---Features.jpeg
+Harmonic,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679ce3fac3e65feb82cf4c37_Harmonic---Features.jpeg
+Miter,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6928841e391657f0f4be9e75_Miter---Features-2.jpeg
+Localyzer,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67d1728d1909f87fca58e416_Localyzer---Features.jpeg
+Finsepa,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6811c6ea4266d677c98cd313_Finsepa---Features-2.jpeg
+Clutch Security,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6928841e391657f0f4be9e7c_Clutch---Features.jpeg
+Jasper,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6867f4caa2bdfc469abe16e7_Jasper---Features.jpeg
+Loop,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679cda97417ee853afa0940e_Loop---Features.jpeg
+Plain,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67e32701cb5cb55215d476f5_Plain---Features.jpeg
+Outerbase,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679b549f752fdd8ab80ad6f2_Outerbase---Features-2.jpeg
+Delphi,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6867f4caa2bdfc469abe16f9_Delphi---Features.jpeg
+Port,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679cd61b2bccb38155cfc94c_Port---Features.jpeg
+Lightning Proxies,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6811c3b67a531c093fc6aa62_Lightning-Proxies---Features.jpeg
+Crisp,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679cee76419be620608100f0_Crisp---Features.jpeg
+Sandbar,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/683ecd47a7de6fce1f61191e_Sandbar---Features.jpeg
+Typebot,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67a9cdfc7651bb71120b8397_Typebot---Features.jpeg
+Ditto,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67e471d15ba43589d6bf2532_Ditto---Features-3.jpeg
+Ditto,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67e471cda6d9fbea667dc29a_Ditto---Features-2.jpeg
+Chargetrip,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67e32325aacd503fb96fe4c4_Chargetrip---Features.jpeg
+Latitude,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6928841cdbd865f4798815d3_Latitude---Features.jpeg
+Noxus,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67d172881909f87fca58de89_Noxus---Features.jpeg
+Spara,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6794b74797d8ce578dc3cf50_Spara---Features.jpeg
+Lattice,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6794b6c97f045c531655e929_Lattice---Features.jpeg
+Outseta,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6794b7028fac698c7d23c6e0_Outseta---Features-2.jpeg
+Routable,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679cd6afe354e42c8ffba4ff_Routable---Features-2.jpeg
+Cloudflare Agents,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6811c6ce705f0fcc4943515f_Cloudflare-Agents---Features.jpeg
+Incident,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67e46f18ced9a7d7da1aa4e9_Incident---Features-2.jpeg
+DevRev,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679ce362e39922fe5bd49aa1_Devrev---Features.jpeg
+Paraform,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6928b839043d906a95dd11c4_Paraform---Features.jpeg
+Seamless,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/683ecd47a7de6fce1f611925_Seamless---Features-2.jpeg
+Finsepa,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6811c6dc1289c3f3ae179d9e_Finsepa---Features.jpeg
+Parker,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6811c6e8299df68ed6a533d4_Parker---Features.jpeg
+Evervault,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6794b6964f95e6f9751ea7a5_Evervault---Features.jpeg
+8returns,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6811c6d20b7483a7d17665f2_8Returns---Features.jpeg
+Godmode,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67d171020728ef1ff7b9ced5_Godmode---Features.jpeg
+Wiza,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6794b64b39e180b41e6ec4af_Wiza---Features.jpeg
+Figr,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679ce3c1ba5df8e91d65acfd_Figr---Features.jpeg
+Canopy,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679ce2fcf0f1415aab6348b0_Canopy---Features-2.jpeg
+11x,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679ce3676ae597c02d01b472_11x---Features.jpeg
+Laravel Cloud,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67c834b5f85b1230209de699_Laravel-Cloud---Features.jpeg
+Hyperline,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6928841e391657f0f4be9e78_Hyperline---Features.jpeg
+Jitter,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6811c6dae58615293317ac17_Jitter---Features.jpeg
+Localyzer,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67d1728fdcd0120b8c2bfe8e_Localyzer---Features-2.jpeg
+Promptwatch,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6811c6ed141d328377863c35_Promptwatch---Features.jpeg
+Fellow,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/683ecd47a7de6fce1f611928_Fellow---Features.jpeg
+Liveblocks,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679b521abeb9a81fbe169ac0_Liveblocks---Features.jpeg
+Jasper,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679ce412429d0fe870f0f016_Jasper---Use-cases.jpeg
+Hellotime,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6794b6c60c9dbc70de5828b1_Hellotime---Features.jpeg
+Dovetail,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6811c6cc69009a00cf2cd59a_Dovetail---Features.jpeg
+Rubus,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6811c6dd0cb75902c2a838c9_Rubus---Features.jpeg
+Acctual,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6811c6e16c67708eed64876b_Acctual---Features.jpeg
+Submagic,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6794b74ae48c11764df54685_Submagic---Features.jpeg
+Sandbar,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/683ecd4c7de6ab8a5ac04405_Sandbar---Features-2.jpeg
+Seamless,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/683ecd47a7de6fce1f611921_Seamless---Features.jpeg
+Lindy,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6794b6cd9f9cf3e4e5186a13_Lindy---Features.jpeg
+Invertase,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67a9cdf21b7d2767f9c40311_Invertase---Features.jpeg
+Gradient Labs,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67c1fa2072dd9e3421242382_Gradient-Labs---Features.jpeg
+Invertase,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67a9cdf6ab3f8430ffc0f6be_Invertase---Features-2.jpeg
+Outseta,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6794b755ffb9044aa307f5d8_Outseta---Features.jpeg
+Jasper,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679cd747e0eee85cced6632e_Jasper---Features-2.jpeg
+Pallet,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6928841cdbd865f4798815d8_Pallet---Features.jpeg
+Cowlendar,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6794b69461237d3eaee8984e_Cowlendar---Features.jpeg
+Headroom,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6928841cdbd865f4798815db_Headroom---Features.jpeg
+Outtake,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67f3936fef1eff42802bc326_Outtake---Features.jpeg
+Rayon,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679cd62c6ad5a32d78af7adf_Rayon---Features.jpeg
+Voiceflow,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6794b750ddb2e391ef59f883_Voiceflow---Features.jpeg
+Laravel Cloud,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67c834b021fefcf11a8633d6_Laravel-Cloud---Features-2.jpeg
+Aria,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679ce2f589c99224c22e66f2_Aria---Features.jpeg
+Vectara,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679ce348245f832ebc8b5b84_Vectara---Features-2.jpeg
+Steel Dev,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679cd928ac4ee0b44a2607c9_Steel---Features.jpeg
+Lynq,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/683ecd47a7de6fce1f61192b_Lynq---Features.jpeg
+Phidata,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6794b740e90df14e2f21a806_Phidata---Features.jpeg
+Maybe,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/683ecd47a7de6fce1f61192e_Maybe---Features-2.jpeg
+Koyeb,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6836eef7f1982af15a68f35f_Koyeb---Features.jpeg
+Adora,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67c1f93b4435c64b0ab52de7_Adora---Features.jpeg
+DevRev,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679ce3bfa57c016bd5044af5_Devrev---Features-2.jpeg
+Miter,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6928841e391657f0f4be9e80_Miter---Features.jpeg
+Maybe,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/683ecd47a7de6fce1f611934_Maybe---Features.jpeg
+Ferndesk,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/69038acdc984abf604738f5b_Ferndesk---Features.jpeg
+Plain,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6794b742aaf57ddaa38ccebb_Plain---Features.jpeg
+Cap,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6867f4caa2bdfc469abe16e1_Cap---Features.jpeg
+Firecrawl,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6928b81a97eb54db67e0de39_Firecrawl---Features.jpeg
+Synthesia,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67daa065398e882a40444368_Synthesia---Features.jpeg
+Exante,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6794b69dddb2e391ef59131d_Exante---Features.jpeg
+DevRev,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679ce34f2dd9b6a0f8d94539_Devrev---Solutions.jpeg
+Frankli,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67d170ecb208688cd1e6f999_Frankli---Features.jpeg
+Linear,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6794b6cf360f13b517b4b3db_Linear---Features.jpeg
+Vectara,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679ce3468e092b1d381630a3_Vectara---Features.jpeg
+Lightning Proxies,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6811c47f818534d56b4c18a9_Lightning-Proxies---Features-3.jpeg
+Orshot,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/683ecd47a7de6fce1f611939_Orshot---Features.jpeg
+Amplemarket,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6794b68bf2d8af1ada72ac9a_Amplemarket---Features-2.jpeg
+Sevalla,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679cd8740e93a7f0618ec444_Sevalla---Features.jpeg
+Amini,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6835b2346ccb2de32a7fe28f_Amini---Features.jpeg
+Incident,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67e471c8f995ce5072318fbf_Incident---Features.jpeg
+Dovetail,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6811c6dfda8345a195c331a3_Dovetail---Features-2.jpeg
+Ditto,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67e471cbdb9e2b20887e2fb7_Ditto---Features.jpeg
+Dash0,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67c1fa1d16533c5260e2f325_Dash0---Features.jpeg
+Crescent Cares,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67c1f9291cf869e561a44b13_Crescent-Cares---Features.jpeg
+Spellbook,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679cd884d2629864cfb3cde8_Spellbook---Features.jpeg
+Highnote,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67c1fa23f6e1ba0492840352_Highnote---Features.jpeg
+Bounti,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6811c6d6141d328377863986_Bounti---Features.jpeg
+Amplemarket,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6794b687cd073ae4e6fb2624_Amplemarket---Features.jpeg
+Mintlify,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679ce3055f338b6fbb14f88d_Mintlify---Features.jpeg
+Groundcover,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67a9cdeda778e836c702d6db_Groundcover---Feautures.jpeg
+Chatbase,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67c831760f35956e48960a6c_Chatbase---Features.jpeg
+Realm,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/683ecd47a7de6fce1f61193d_Realm---Features.jpeg
+Voiceflow,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6794b7525d4f6abe8404f501_Voiceflow---Features-2.jpeg
+Realm,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/683ecd47a7de6fce1f611931_Realm---Features-2.jpeg
+Basewell,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67f3933f4cec903e1e15259f_Basewell---Features.jpeg
+Outerbase,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679b54950a8d6218b9b8a6ee_Outerbase---Features.jpeg
+Flank,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6928b839043d906a95dd11c8_Flank---Features.jpeg
+Coframe,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67c6e92d87cf5d575846e7ca_Coframe---Features.jpeg
+Finta,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67c6e92fdf24d9acce2a4888_Finta---Features.jpeg
+Vercel,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6794b74c2794c6b16193b022_Vercel---Features.jpeg
+Canopy,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679ce3b5429d0fe870f07eeb_Canopy---Features.jpeg
+Jasper,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679ce303429d0fe870ef92d6_Jasper---Features.jpeg
+Quicklnk,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/67d17284dd53e47394ec6b6f_Quicklink---Features.jpeg
+Bucket,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/6794b68f73b5ecd145381f1c_Bucket---Features.jpeg
+Routable,https://saaspo.com/cdn-cgi/image/format=avif,quality=90/https://cdn.prod.website-files.com/6399d2d87f63ad4774e11dc2/679cd6764cc02d7c73e21f57_Routable---Features.jpeg
 `;
 // ============================================================
 

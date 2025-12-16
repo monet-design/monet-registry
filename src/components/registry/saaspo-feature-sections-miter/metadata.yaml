@@ -1,0 +1,50 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-miter
+category: feature-showcase
+
+images:
+  preview: /registry/saaspo-feature-sections-miter/preview.jpg
+
+freeformKeywords:
+  - HR platform
+  - HCM
+  - payroll
+  - recruiting
+  - benefits
+  - feature section
+  - tab navigation
+  - form UI
+  - employee management
+  - workforce
+  - hiring
+  - construction
+  - field operations
+  - expense management
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:58:45Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - tabs
+    - form-ui
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - warm
+    - sans-serif
+  layout:
+    - centered
+    - two-column
+    - split-layout
+  industry:
+    - saas
+    - hr
+    - fintech
+    - construction

@@ -1,0 +1,41 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-gradient-labs
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/gradient-labs.jpg
+
+freeformKeywords:
+  - feature section
+  - ai agent
+  - procedural ai
+  - core features
+  - otto
+  - saas
+  - feature list
+  - video
+  - warm
+  - elegant
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:39:32Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - video
+    - hover-effect
+  style:
+    - light-theme
+    - warm
+    - elegant
+    - serif
+  layout:
+    - two-column
+    - centered
+  industry:
+    - saas
+    - ai

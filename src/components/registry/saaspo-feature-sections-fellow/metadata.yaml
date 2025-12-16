@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-fellow
+category: feature-showcase
+
+images:
+  preview: /registry/saaspo-feature-sections-fellow/preview.jpg
+
+freeformKeywords:
+  - feature section
+  - AI meeting assistant
+  - meeting notes
+  - privacy
+  - SOC2
+  - HIPAA
+  - compliance
+  - chatbot
+  - AI copilot
+  - Fellow
+  - meeting transcription
+  - action items
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:37:08Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - cta-button
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - gradient
+    - serif-accent
+  layout:
+    - centered
+    - two-column
+    - alternating-layout
+  industry:
+    - saas
+    - productivity
+    - ai

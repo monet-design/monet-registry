@@ -1,0 +1,48 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-delphi
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/delphi.jpg
+
+freeformKeywords:
+  - trust
+  - ai clone
+  - digital mind
+  - privacy
+  - ownership
+  - legacy
+  - feature section
+  - feature grid
+  - profile card
+  - encryption
+  - security
+  - coaching
+  - ai
+  - delphi
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:36:28Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - feature-grid
+    - card-layout
+  style:
+    - warm
+    - elegant
+    - serif
+    - light-theme
+    - gradient
+  layout:
+    - centered
+    - three-column
+    - grid
+  industry:
+    - ai
+    - saas
+    - coaching

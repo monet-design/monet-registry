@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-godmode
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/godmode.jpg
+
+freeformKeywords:
+  - feature section
+  - lead generation
+  - ai automation
+  - saas
+  - sales automation
+  - workflow
+  - crm integration
+  - linkedin outreach
+  - b2b
+  - lead capture
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:39:31Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - lead-capture
+    - automation
+    - workflow
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+    - shadow
+  layout:
+    - full-width
+    - split-layout
+    - stacked
+  industry:
+    - saas
+    - ai
+    - sales
+    - b2b

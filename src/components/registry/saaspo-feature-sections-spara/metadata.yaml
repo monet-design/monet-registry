@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-spara
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/spara.jpg
+
+freeformKeywords:
+  - feature section
+  - ai sales
+  - hybrid ai
+  - enterprise safety
+  - soc ii
+  - intelligent conversations
+  - multimodal
+  - training
+  - feature grid
+  - cards
+  - saas
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T05:07:18Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - feature-grid
+    - cards
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+  layout:
+    - two-column
+    - grid
+    - centered
+  industry:
+    - saas
+    - ai
+    - sales

@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-linear
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/linear.jpg
+
+freeformKeywords:
+  - feature section
+  - project management
+  - timeline
+  - roadmap
+  - dark theme
+  - Linear
+  - SaaS
+  - planning
+  - milestones
+  - project updates
+  - collaborative documents
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:50:50Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+    - grid
+  industry:
+    - saas
+    - startup
+    - project-management

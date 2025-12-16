@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-realm
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/realm.jpg
+
+freeformKeywords:
+  - use cases
+  - feature section
+  - ai
+  - solutions engineer
+  - technical support
+  - rfp automation
+  - revenue enablement
+  - 24/7
+  - saas
+  - enterprise
+  - cards
+  - grid
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T05:00:02Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - card-grid
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+  layout:
+    - centered
+    - three-column
+    - grid
+  industry:
+    - saas
+    - ai
+    - enterprise
+    - b2b

@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-laravel-cloud
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/laravel-cloud.jpg
+
+freeformKeywords:
+  - autoscaling
+  - hibernation
+  - cloud
+  - scale
+  - slider
+  - feature section
+  - saas
+  - devops
+  - cost optimization
+  - performance
+  - regions
+  - laravel
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:47:15Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - slider
+    - radio-button
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - clean
+  layout:
+    - two-column
+    - three-column
+    - left-aligned
+  industry:
+    - saas
+    - cloud
+    - devops

@@ -1,0 +1,39 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-outerbase
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/outerbase.jpg
+
+freeformKeywords:
+  - tables
+  - database
+  - data
+  - spreadsheet
+  - feature section
+  - plugins
+  - embed
+  - dark theme
+  - data table
+  - saas
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:57:11Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - left-aligned
+    - full-width
+  industry:
+    - saas
+    - database

@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-finsepa
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/finsepa.jpg
+
+freeformKeywords:
+  - fintech
+  - finance
+  - stock screener
+  - market data
+  - portfolio
+  - trading
+  - investment
+  - dashboard
+  - data table
+  - tabs
+  - dark theme
+  - financial platform
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:38:13Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - tabs
+    - data-table
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - minimal
+  layout:
+    - centered
+    - full-width
+    - single-column
+  industry:
+    - fintech
+    - saas
+    - finance

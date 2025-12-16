@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-plain
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/plain.jpg
+
+freeformKeywords:
+  - feature section
+  - customer feedback
+  - product direction
+  - saas
+  - analytics
+  - dashboard
+  - sentiment analysis
+  - feature voting
+  - dark theme
+  - data visualization
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:59:29Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - data-visualization
+    - dashboard
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - left-aligned
+    - grid
+    - full-width
+  industry:
+    - saas
+    - analytics
+    - product-management

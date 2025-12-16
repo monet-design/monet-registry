@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-amini
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/amini.jpg
+
+freeformKeywords:
+  - ai
+  - data infrastructure
+  - global south
+  - feature section
+  - platform
+  - ingestion
+  - compute
+  - processing
+  - engine
+  - 3d visualization
+  - tech
+  - saas
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:24:00Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - dark-accent
+  layout:
+    - left-aligned
+    - single-column
+    - grid
+  industry:
+    - ai
+    - saas
+    - data-infrastructure

@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-chatbase
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/chatbase.jpg
+
+freeformKeywords:
+  - feature section
+  - AI platform
+  - support agents
+  - LLM
+  - security
+  - simplicity
+  - highlights
+  - saas
+  - chatbase
+  - feature cards
+  - AI tools
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:27:02Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - icon-grid
+    - card
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - clean
+  layout:
+    - three-column
+    - grid
+    - centered
+  industry:
+    - saas
+    - ai
+    - tech

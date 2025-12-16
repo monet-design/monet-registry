@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-aria
+category: feature-showcase
+
+images:
+  preview: /registry/saaspo-feature-sections-aria/preview.jpg
+
+freeformKeywords:
+  - feature section
+  - payments
+  - B2B
+  - marketplace
+  - fintech
+  - infrastructure
+  - tabs
+  - carousel
+  - cards
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:26:15Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - tabs
+    - carousel
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - gradient
+  layout:
+    - centered
+    - full-width
+  industry:
+    - fintech
+    - saas
+    - b2b

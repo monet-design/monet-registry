@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-paraform
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/paraform.jpg
+
+freeformKeywords:
+  - feature section
+  - recruiting
+  - hr-tech
+  - saas
+  - dark theme
+  - feature cards
+  - 2x2 grid
+  - job posting
+  - profile search
+  - ai recruiting
+  - business development
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:57:10Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - card
+    - ui-mockup
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - rounded
+    - shadow
+  layout:
+    - grid
+    - two-column
+  industry:
+    - saas
+    - recruiting
+    - hr-tech

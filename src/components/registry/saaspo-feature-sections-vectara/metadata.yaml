@@ -1,0 +1,50 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-vectara
+category: feature-showcase
+
+images:
+  preview: /registry/saaspo-feature-sections-vectara/preview.jpg
+
+freeformKeywords:
+  - features
+  - performance
+  - RAG
+  - ML
+  - machine learning
+  - API
+  - integration
+  - multilingual
+  - security
+  - SOC2
+  - HIPAA
+  - GDPR
+  - enterprise
+  - AI
+  - scalability
+  - hybrid retrieval
+
+fontFamily:
+  - Inter
+  - Instrument Serif
+
+createdAt: "2025-12-16T05:09:14Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+    - animation
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - serif
+  layout:
+    - centered
+    - full-width
+    - grid
+  industry:
+    - saas
+    - ai
+    - enterprise

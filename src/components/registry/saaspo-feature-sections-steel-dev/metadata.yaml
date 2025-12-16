@@ -1,0 +1,47 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-steel-dev
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/steel-dev.jpg
+
+freeformKeywords:
+  - sessions api
+  - browser automation
+  - captcha solving
+  - proxy
+  - fingerprinting
+  - puppeteer
+  - playwright
+  - selenium
+  - observability
+  - context management
+  - developer tools
+  - api
+  - saas
+  - feature grid
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T05:07:18Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - grid
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - minimal
+    - tech
+  layout:
+    - two-column
+    - grid
+    - left-aligned
+  industry:
+    - saas
+    - developer-tools
+    - api

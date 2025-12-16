@@ -1,0 +1,39 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-adora
+category: feature-showcase
+
+images:
+  preview: /registry/saaspo-feature-sections-adora/preview.jpg
+
+freeformKeywords:
+  - use cases
+  - feature section
+  - tabs
+  - product documentation
+  - user journey
+  - saas
+  - empowering teams
+  - tabbed navigation
+  - mockup
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:23:56Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - tabs
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+  layout:
+    - centered
+    - two-column
+  industry:
+    - saas
+    - product

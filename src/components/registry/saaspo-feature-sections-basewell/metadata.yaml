@@ -1,0 +1,53 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-basewell
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/basewell.jpg
+
+freeformKeywords:
+  - analytics
+  - dashboard
+  - feature section
+  - data visualization
+  - charts
+  - line chart
+  - bubble chart
+  - employee analytics
+  - team insights
+  - reporting
+  - export
+  - filter
+  - company activity
+  - saas
+  - enterprise
+  - hr tech
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:23:58Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - analytics
+    - dashboard
+    - charts
+    - data-visualization
+  style:
+    - light-theme
+    - minimal
+    - modern
+    - clean
+    - sans-serif
+  layout:
+    - centered
+    - grid
+    - two-column
+  industry:
+    - saas
+    - hr-tech
+    - enterprise
+    - analytics

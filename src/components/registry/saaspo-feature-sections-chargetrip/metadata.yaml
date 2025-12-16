@@ -1,0 +1,50 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-chargetrip
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/chargetrip.jpg
+
+freeformKeywords:
+  - ev
+  - electric vehicle
+  - api
+  - graphql
+  - code editor
+  - routing
+  - developer tools
+  - backend
+  - frontend
+  - no-code
+  - chargetrip
+  - saas
+  - feature section
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-12-16T04:30:07Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - code-display
+    - radio-buttons
+    - tabs
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - warm
+    - gradient
+  layout:
+    - two-column
+    - split-layout
+  industry:
+    - saas
+    - ev
+    - mobility
+    - developer-tools
+    - api

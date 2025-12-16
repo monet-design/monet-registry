@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-firecrawl
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/firecrawl.jpg
+
+freeformKeywords:
+  - developer
+  - api
+  - web scraping
+  - crawl
+  - code editor
+  - firecrawl
+  - python
+  - nodejs
+  - curl
+  - markdown
+  - feature section
+  - tabs
+  - developer tools
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:38:38Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - code-snippet
+    - tabs
+  style:
+    - light-theme
+    - minimal
+    - modern
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - developer-tools
+    - api

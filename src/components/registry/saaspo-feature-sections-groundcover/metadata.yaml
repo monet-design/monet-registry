@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-groundcover
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/groundcover.jpg
+
+freeformKeywords:
+  - apm
+  - monitoring
+  - k8s
+  - kubernetes
+  - observability
+  - ebpf
+  - network map
+  - feature section
+  - devtools
+  - cloud
+  - infrastructure
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:40:29Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+    - carousel-navigation
+  style:
+    - light-theme
+    - warm
+    - modern
+    - minimal
+  layout:
+    - full-width
+    - three-column
+  industry:
+    - saas
+    - devtools
+    - monitoring

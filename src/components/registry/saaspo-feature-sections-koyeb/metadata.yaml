@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-koyeb
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/koyeb.jpg
+
+freeformKeywords:
+  - cloud
+  - infrastructure
+  - feature section
+  - gpu
+  - performance
+  - scaling
+  - global
+  - serverless
+  - containers
+  - devops
+  - koyeb
+  - saas
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:47:14Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - animation
+    - scroll-animation
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - bold
+  layout:
+    - four-column
+    - grid
+    - full-width
+  industry:
+    - saas
+    - cloud
+    - infrastructure
+    - devops

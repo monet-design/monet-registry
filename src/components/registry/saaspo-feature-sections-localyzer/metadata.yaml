@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-localyzer
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/localyzer.jpg
+
+freeformKeywords:
+  - feature section
+  - advertising
+  - video ads
+  - social ads
+  - google ads
+  - html5 banners
+  - zigzag layout
+  - alternating layout
+  - marketing
+  - local advertising
+  - key features
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:50:27Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - image-card
+    - zigzag-layout
+  style:
+    - modern
+    - minimal
+    - light-theme
+    - colorful-cards
+  layout:
+    - zigzag
+    - alternating
+    - full-width
+  industry:
+    - advertising
+    - marketing
+    - saas

@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-figr
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/figr.jpg
+
+freeformKeywords:
+  - design system
+  - feature section
+  - 3D illustration
+  - isometric
+  - design tokens
+  - components
+  - blocks
+  - saas
+  - figma
+  - ui kit
+  - product features
+
+fontFamily:
+  - Inter
+  - Instrument Serif
+
+createdAt: "2025-12-16T04:36:29Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - clean
+  layout:
+    - two-column
+    - grid
+    - centered
+  industry:
+    - saas
+    - design
+    - startup

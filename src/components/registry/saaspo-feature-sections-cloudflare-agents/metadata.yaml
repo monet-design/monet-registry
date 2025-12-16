@@ -1,0 +1,51 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-cloudflare-agents
+category: feature-showcase
+
+images:
+  preview: /registry/saaspo-feature-sections-cloudflare-agents/preview.jpg
+
+freeformKeywords:
+  - feature
+  - saas
+  - cloudflare
+  - ai
+  - cost
+  - pricing
+  - chart
+  - gpu
+  - cpu
+  - scale
+  - workers
+  - comparison
+  - analytics
+  - infrastructure
+  - cloud
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:28:16Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - chart
+    - comparison
+    - data-visualization
+  style:
+    - minimal
+    - light-theme
+    - modern
+    - sans-serif
+    - warm
+  layout:
+    - two-column
+    - split-layout
+    - full-width
+  industry:
+    - saas
+    - ai
+    - cloud
+    - infrastructure

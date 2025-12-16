@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-voiceflow
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/voiceflow.jpg
+
+freeformKeywords:
+  - enterprise
+  - cloud
+  - ai
+  - security
+  - scale
+  - voiceflow
+  - feature
+  - dark
+  - saas
+  - ascii art
+  - logo bar
+  - trusted by
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T05:09:29Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - feature-grid
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - two-column
+    - grid
+    - full-width
+  industry:
+    - saas
+    - ai
+    - enterprise

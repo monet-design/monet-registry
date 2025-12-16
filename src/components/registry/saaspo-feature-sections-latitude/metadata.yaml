@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-latitude
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/latitude.jpg
+
+freeformKeywords:
+  - feature section
+  - bare metal
+  - server
+  - infrastructure
+  - cloud
+  - on-premise
+  - deployment
+  - global
+  - pricing
+  - four column
+  - icon grid
+  - monochrome
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:49:21Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - icon-grid
+  style:
+    - minimal
+    - monochrome
+    - light-theme
+    - sans-serif
+  layout:
+    - four-column
+    - left-aligned
+    - grid
+  industry:
+    - saas
+    - infrastructure
+    - cloud
+    - hosting

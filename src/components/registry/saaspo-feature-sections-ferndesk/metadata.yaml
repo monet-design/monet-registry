@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: saaspo-feature-sections-ferndesk
+category: feature-showcase
+
+images:
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/saaspo-feature-sections/ferndesk.jpg
+
+freeformKeywords:
+  - feature section
+  - help center
+  - analytics
+  - optimization
+  - customer support
+  - saas
+  - dashboard
+  - feedback
+  - editor
+  - ferndesk
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T04:36:31Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - analytics
+  style:
+    - light-theme
+    - minimal
+    - clean
+    - modern
+  layout:
+    - centered
+    - three-column
+    - card-grid
+  industry:
+    - saas
+    - help-desk
+    - customer-support

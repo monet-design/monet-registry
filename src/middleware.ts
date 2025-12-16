@@ -8,7 +8,15 @@ import type { NextRequest } from "next/server";
  * - API_BASIC_AUTH_USER
  * - API_BASIC_AUTH_PASSWORD
  */
+// Public endpoints that don't require authentication
+const PUBLIC_PATHS = ["/api/v1/badge"];
+
 export function middleware(request: NextRequest) {
+  // Skip auth for public endpoints
+  if (PUBLIC_PATHS.some((path) => request.nextUrl.pathname === path)) {
+    return NextResponse.next();
+  }
+
   const user = process.env.API_BASIC_AUTH_USER;
   const password = process.env.API_BASIC_AUTH_PASSWORD;
 

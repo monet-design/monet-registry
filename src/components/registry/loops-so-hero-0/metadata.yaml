@@ -1,0 +1,47 @@
+schemaVersion: "2.0"
+name: loops-so-hero-0
+category: hero
+
+images:
+  preview: scraped/loops-so-2025-12-15/sections/section-0.png
+
+freeformKeywords:
+  - email marketing
+  - SaaS
+  - dashboard
+  - logo cloud
+  - CTA
+  - modern
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:45:28Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - animation
+    - scroll-animation
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - centered
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - email-marketing
+
+parentPage: loops-so-landing
+
+source:
+  type: url
+  url: https://loops.so/
+  scrapedAt: "2025-12-15T22:45:28Z"
+  sectionIndex: 0

@@ -1,0 +1,40 @@
+schemaVersion: "2.0"
+name: trackit-so-cta-8
+category: cta
+
+images:
+  preview: scraped/trackit-so-2025-12-15/sections/section-8.png
+
+freeformKeywords:
+  - CTA
+  - call to action
+  - sign up
+  - korean
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:46:31Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - lead-capture
+    - animation
+  style:
+    - light-theme
+    - modern
+    - gradient
+  layout:
+    - centered
+  industry:
+    - saas
+
+parentPage: trackit-so-landing
+
+source:
+  type: url
+  url: https://trackit.so/
+  scrapedAt: "2025-12-15T22:46:31Z"
+  sectionIndex: 8

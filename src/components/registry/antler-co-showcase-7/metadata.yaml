@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: antler-co-showcase-7
+category: showcase
+
+images:
+  preview: scraped/antler-co-2025-12-15/sections/section-7.png
+
+freeformKeywords:
+  - insights
+  - blog
+  - articles
+  - podcast
+  - TAM SAM SOM
+  - data infra
+  - news
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:46:23Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - carousel
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+  layout:
+    - grid
+    - responsive
+  industry:
+    - startup
+
+parentPage: antler-co-landing
+
+source:
+  type: url
+  url: https://www.antler.co/
+  scrapedAt: "2025-12-15T22:46:23Z"
+  sectionIndex: 7

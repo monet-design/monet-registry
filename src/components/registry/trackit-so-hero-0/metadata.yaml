@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: trackit-so-hero-0
+category: hero
+
+images:
+  preview: scraped/trackit-so-2025-12-15/sections/section-0.png
+
+freeformKeywords:
+  - CRM
+  - enterprise
+  - sales
+  - dashboard
+  - korean
+  - SaaS
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:46:19Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - video
+    - animation
+    - lead-capture
+  style:
+    - light-theme
+    - modern
+    - gradient
+  layout:
+    - centered
+    - full-width
+  industry:
+    - saas
+    - crm
+    - enterprise
+
+parentPage: trackit-so-landing
+
+source:
+  type: url
+  url: https://trackit.so/
+  scrapedAt: "2025-12-15T22:46:19Z"
+  sectionIndex: 0

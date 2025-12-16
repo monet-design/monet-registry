@@ -1,0 +1,38 @@
+schemaVersion: "2.0"
+name: sonarly-dev-landing
+category: page
+images:
+  preview: scraped/sonarly-dev-2025-12-15/full-page.png
+title: sonarly.dev Landing Page
+sections:
+  - id: sonarly-dev-hero-0
+    category: hero
+    order: 0
+  - id: sonarly-dev-feature-1
+    category: feature
+    order: 1
+  - id: sonarly-dev-pricing-2
+    category: pricing
+    order: 2
+  - id: sonarly-dev-faq-3
+    category: faq
+    order: 3
+  - id: sonarly-dev-cta-4
+    category: cta
+    order: 4
+  - id: sonarly-dev-footer-5
+    category: footer
+    order: 5
+source:
+  type: url
+  url: https://sonarly.dev/
+  scrapedAt: "2025-12-15T22:48:02.447Z"
+pageInfo:
+  totalSections: 6
+freeformKeywords:
+  - complete landing page
+  - full page
+  - sonarly.dev
+createdAt: "2025-12-15T22:48:02.447Z"
+status: stable
+draft: false

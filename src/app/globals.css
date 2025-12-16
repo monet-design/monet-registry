@@ -65,6 +65,7 @@
   --animate-gradient: gradient 3s ease infinite;
   --animate-marquee-up: marquee-up 20s linear infinite;
   --animate-marquee-down: marquee-down 20s linear infinite;
+  --animate-marquee-left: marquee-left 30s linear infinite;
 
   @keyframes accordion-down {
     from {
@@ -132,6 +133,14 @@
     }
     100% {
       transform: translateY(0);
+    }
+  }
+  @keyframes marquee-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
     }
   }
 }

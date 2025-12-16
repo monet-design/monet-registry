@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: trackit-so-feature-3
+category: feature
+
+images:
+  preview: scraped/trackit-so-2025-12-15/sections/section-3.png
+
+freeformKeywords:
+  - pipeline
+  - customer management
+  - timeline
+  - CRM
+  - korean
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:46:25Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - animation
+  style:
+    - light-theme
+    - modern
+  layout:
+    - two-column
+    - split-layout
+  industry:
+    - saas
+    - crm
+    - enterprise
+
+parentPage: trackit-so-landing
+
+source:
+  type: url
+  url: https://trackit.so/
+  scrapedAt: "2025-12-15T22:46:25Z"
+  sectionIndex: 3

@@ -1,0 +1,38 @@
+schemaVersion: "2.0"
+name: loops-so-landing
+category: page
+images:
+  preview: scraped/loops-so-2025-12-15/full-page.png
+title: loops.so Landing Page
+sections:
+  - id: loops-so-hero-0
+    category: hero
+    order: 0
+  - id: loops-so-feature-1
+    category: feature
+    order: 1
+  - id: loops-so-feature-2
+    category: feature
+    order: 2
+  - id: loops-so-feature-3
+    category: feature
+    order: 3
+  - id: loops-so-feature-4
+    category: feature
+    order: 4
+  - id: loops-so-cta-5
+    category: cta
+    order: 5
+source:
+  type: url
+  url: https://loops.so/
+  scrapedAt: "2025-12-15T22:50:29.393Z"
+pageInfo:
+  totalSections: 6
+freeformKeywords:
+  - complete landing page
+  - full page
+  - loops.so
+createdAt: "2025-12-15T22:50:29.393Z"
+status: stable
+draft: false

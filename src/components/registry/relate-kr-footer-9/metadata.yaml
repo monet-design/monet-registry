@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: relate-kr-footer-9
+category: footer
+
+images:
+  preview: scraped/relate-kr-2025-12-15/sections/section-9.png
+
+freeformKeywords:
+  - footer
+  - newsletter
+  - email
+  - subscribe
+  - links
+  - crm
+  - y-combinator
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:46:37Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - email-capture
+    - newsletter
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - multi-column
+    - full-width
+  industry:
+    - saas
+    - b2b
+    - crm
+
+parentPage: relate-kr-landing
+
+source:
+  type: url
+  url: https://www.relate.kr/
+  scrapedAt: "2025-12-15T22:46:37Z"
+  sectionIndex: 9

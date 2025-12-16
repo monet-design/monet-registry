@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: antler-co-feature-1
+category: feature
+
+images:
+  preview: scraped/antler-co-2025-12-15/sections/section-1.png
+
+freeformKeywords:
+  - mission
+  - vision
+  - founders
+  - category-defining
+  - companies
+  - support
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:46:16Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - text-focus
+  style:
+    - light-theme
+    - elegant
+    - serif
+    - minimal
+  layout:
+    - centered
+    - single-column
+  industry:
+    - startup
+    - fintech
+
+parentPage: antler-co-landing
+
+source:
+  type: url
+  url: https://www.antler.co/
+  scrapedAt: "2025-12-15T22:46:16Z"
+  sectionIndex: 1

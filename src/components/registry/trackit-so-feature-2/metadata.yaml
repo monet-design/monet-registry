@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: trackit-so-feature-2
+category: feature
+
+images:
+  preview: scraped/trackit-so-2025-12-15/sections/section-2.png
+
+freeformKeywords:
+  - features
+  - CRM
+  - automation
+  - dashboard
+  - analytics
+  - korean
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:46:23Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - accordion
+    - animation
+  style:
+    - light-theme
+    - modern
+    - gradient
+  layout:
+    - two-column
+    - grid
+  industry:
+    - saas
+    - crm
+    - enterprise
+
+parentPage: trackit-so-landing
+
+source:
+  type: url
+  url: https://trackit.so/
+  scrapedAt: "2025-12-15T22:46:23Z"
+  sectionIndex: 2

@@ -1,0 +1,53 @@
+schemaVersion: "2.0"
+name: antler-co-landing
+category: page
+images:
+  preview: scraped/antler-co-2025-12-15/full-page.png
+title: antler.co Landing Page
+sections:
+  - id: antler-co-hero-0
+    category: hero
+    order: 0
+  - id: antler-co-feature-1
+    category: feature
+    order: 1
+  - id: antler-co-how-it-works-2
+    category: how-it-works
+    order: 2
+  - id: antler-co-testimonial-3
+    category: testimonial
+    order: 3
+  - id: antler-co-feature-4
+    category: feature
+    order: 4
+  - id: antler-co-showcase-5
+    category: showcase
+    order: 5
+  - id: antler-co-feature-6
+    category: feature
+    order: 6
+  - id: antler-co-showcase-7
+    category: showcase
+    order: 7
+  - id: antler-co-feature-8
+    category: feature
+    order: 8
+  - id: antler-co-cta-9
+    category: cta
+    order: 9
+  - id: antler-co-footer-10
+    category: footer
+    order: 10
+source:
+  type: url
+  url: https://www.antler.co/
+  scrapedAt: "2025-12-15T22:51:06.695Z"
+pageInfo:
+  totalSections: 11
+freeformKeywords:
+  - complete landing page
+  - full page
+  - antler.co
+createdAt: "2025-12-15T22:51:06.695Z"
+status: stable
+draft: false

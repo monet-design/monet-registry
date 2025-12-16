@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: antler-co-testimonial-3
+category: testimonial
+
+images:
+  preview: scraped/antler-co-2025-12-15/sections/section-3.png
+
+freeformKeywords:
+  - testimonial
+  - founder
+  - airalo
+  - funding
+  - community
+  - potential
+  - build
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:45:43Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - quote
+  style:
+    - light-theme
+    - elegant
+    - minimal
+    - serif
+  layout:
+    - centered
+    - single-column
+  industry:
+    - startup
+
+parentPage: antler-co-landing
+
+source:
+  type: url
+  url: https://www.antler.co/
+  scrapedAt: "2025-12-15T22:45:43Z"
+  sectionIndex: 3

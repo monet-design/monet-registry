@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: trackit-so-feature-6
+category: feature
+
+images:
+  preview: scraped/trackit-so-2025-12-15/sections/section-6.png
+
+freeformKeywords:
+  - security
+  - encryption
+  - 2FA
+  - enterprise
+  - korean
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:46:29Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - animation
+  style:
+    - light-theme
+    - warm
+  layout:
+    - centered
+    - grid
+  industry:
+    - saas
+    - enterprise
+    - security
+
+parentPage: trackit-so-landing
+
+source:
+  type: url
+  url: https://trackit.so/
+  scrapedAt: "2025-12-15T22:46:29Z"
+  sectionIndex: 6

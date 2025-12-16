@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: loops-so-cta-5
+category: cta
+
+images:
+  preview: scraped/loops-so-2025-12-15/sections/section-5.png
+
+freeformKeywords:
+  - mission statement
+  - call to action
+  - team signature
+  - email philosophy
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:45:35Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - animation
+    - scroll-animation
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - elegant
+    - serif
+  layout:
+    - centered
+    - single-column
+    - responsive
+  industry:
+    - saas
+    - email-marketing
+
+parentPage: loops-so-landing
+
+source:
+  type: url
+  url: https://loops.so/
+  scrapedAt: "2025-12-15T22:45:35Z"
+  sectionIndex: 5

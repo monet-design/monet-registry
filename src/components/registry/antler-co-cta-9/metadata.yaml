@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: antler-co-cta-9
+category: cta
+
+images:
+  preview: scraped/antler-co-2025-12-15/sections/section-9.png
+
+freeformKeywords:
+  - newsletter
+  - inbox
+  - insights
+  - subscribe
+  - community
+  - news
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:46:29Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - email-capture
+    - lead-capture
+  style:
+    - light-theme
+    - warm
+    - bold
+  layout:
+    - split-layout
+    - responsive
+  industry:
+    - startup
+
+parentPage: antler-co-landing
+
+source:
+  type: url
+  url: https://www.antler.co/
+  scrapedAt: "2025-12-15T22:46:29Z"
+  sectionIndex: 9

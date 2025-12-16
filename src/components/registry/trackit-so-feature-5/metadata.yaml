@@ -1,0 +1,42 @@
+schemaVersion: "2.0"
+name: trackit-so-feature-5
+category: feature
+
+images:
+  preview: scraped/trackit-so-2025-12-15/sections/section-5.png
+
+freeformKeywords:
+  - integration
+  - API
+  - connections
+  - tools
+  - korean
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:46:28Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - animation
+    - scroll-animation
+  style:
+    - light-theme
+    - modern
+    - gradient
+  layout:
+    - centered
+  industry:
+    - saas
+    - enterprise
+
+parentPage: trackit-so-landing
+
+source:
+  type: url
+  url: https://trackit.so/
+  scrapedAt: "2025-12-15T22:46:28Z"
+  sectionIndex: 5

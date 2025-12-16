@@ -1,0 +1,49 @@
+schemaVersion: "2.0"
+name: antler-co-hero-0
+category: hero
+
+images:
+  preview: scraped/antler-co-2025-12-15/sections/section-0.png
+
+freeformKeywords:
+  - venture capital
+  - startup
+  - founder
+  - portfolio
+  - AI
+  - bento grid
+  - apply
+  - newsletter
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:45:37Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - lead-capture
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - bold
+    - sans-serif
+  layout:
+    - grid
+    - full-width
+    - responsive
+  industry:
+    - startup
+    - fintech
+    - ai
+
+parentPage: antler-co-landing
+
+source:
+  type: url
+  url: https://www.antler.co/
+  scrapedAt: "2025-12-15T22:45:37Z"
+  sectionIndex: 0

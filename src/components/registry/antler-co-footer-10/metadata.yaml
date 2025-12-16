@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: antler-co-footer-10
+category: footer
+
+images:
+  preview: scraped/antler-co-2025-12-15/sections/section-10.png
+
+freeformKeywords:
+  - footer
+  - navigation
+  - locations
+  - social
+  - links
+  - portfolio
+  - investors
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:46:31Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - navigation
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - grid
+    - full-width
+    - responsive
+  industry:
+    - startup
+
+parentPage: antler-co-landing
+
+source:
+  type: url
+  url: https://www.antler.co/
+  scrapedAt: "2025-12-15T22:46:31Z"
+  sectionIndex: 10

@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: sonarly-dev-feature-1
+category: feature
+
+images:
+  preview: scraped/sonarly-dev-2025-12-15/sections/section-1.png
+
+freeformKeywords:
+  - one-prompt configuration
+  - AI alerts
+  - issue replay
+  - LLM context
+  - bug detection
+  - developer tools
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:45:13Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - two-column
+    - grid
+  industry:
+    - saas
+    - ai
+    - startup
+
+parentPage: sonarly-dev-landing
+
+source:
+  type: url
+  url: https://sonarly.dev/
+  scrapedAt: "2025-12-15T22:45:13Z"
+  sectionIndex: 1

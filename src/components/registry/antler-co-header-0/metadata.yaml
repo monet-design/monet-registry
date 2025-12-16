@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: antler-co-header-0
+category: header
+
+images:
+  preview: scraped/antler-co-2025-12-15/sections/section-0.png
+
+freeformKeywords:
+  - header
+  - navigation
+  - venture capital
+  - startup
+  - antler
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-16T00:00:00Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - dropdown
+    - hover-effect
+    - animation
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - full-width
+    - responsive
+  industry:
+    - venture-capital
+    - startup
+
+parentPage: antler-co-landing
+
+source:
+  type: url
+  url: https://www.antler.co/
+  scrapedAt: "2025-12-15T00:00:00Z"
+  sectionIndex: 0

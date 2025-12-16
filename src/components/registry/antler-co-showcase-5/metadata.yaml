@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: antler-co-showcase-5
+category: showcase
+
+images:
+  preview: scraped/antler-co-2025-12-15/sections/section-5.png
+
+freeformKeywords:
+  - founder stories
+  - carousel
+  - sweatpals
+  - testimonial
+  - platform
+  - startup
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:46:19Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - carousel
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - elegant
+  layout:
+    - centered
+    - full-width
+    - responsive
+  industry:
+    - startup
+
+parentPage: antler-co-landing
+
+source:
+  type: url
+  url: https://www.antler.co/
+  scrapedAt: "2025-12-15T22:46:19Z"
+  sectionIndex: 5

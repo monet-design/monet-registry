@@ -1,0 +1,50 @@
+schemaVersion: "2.0"
+name: relate-kr-landing
+category: page
+images:
+  preview: scraped/relate-kr-2025-12-15/full-page.png
+title: relate.kr Landing Page
+sections:
+  - id: relate-kr-header-0
+    category: header
+    order: 0
+  - id: relate-kr-hero-1
+    category: hero
+    order: 1
+  - id: relate-kr-feature-2
+    category: feature
+    order: 2
+  - id: relate-kr-feature-3
+    category: feature
+    order: 3
+  - id: relate-kr-feature-4
+    category: feature
+    order: 4
+  - id: relate-kr-feature-5
+    category: feature
+    order: 5
+  - id: relate-kr-feature-6
+    category: feature
+    order: 6
+  - id: relate-kr-feature-7
+    category: feature
+    order: 7
+  - id: relate-kr-testimonial-8
+    category: testimonial
+    order: 8
+  - id: relate-kr-footer-9
+    category: footer
+    order: 9
+source:
+  type: url
+  url: https://www.relate.kr/
+  scrapedAt: "2025-12-15T22:52:19.084Z"
+pageInfo:
+  totalSections: 10
+freeformKeywords:
+  - complete landing page
+  - full page
+  - relate.kr
+createdAt: "2025-12-15T22:52:19.084Z"
+status: stable
+draft: false

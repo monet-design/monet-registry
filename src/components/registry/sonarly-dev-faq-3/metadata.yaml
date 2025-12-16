@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: sonarly-dev-faq-3
+category: faq
+
+images:
+  preview: scraped/sonarly-dev-2025-12-15/sections/section-3.png
+
+freeformKeywords:
+  - FAQ
+  - frequently asked questions
+  - data security
+  - free version
+  - contact
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:44:58Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - accordion
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+  industry:
+    - saas
+    - ai
+    - startup
+
+parentPage: sonarly-dev-landing
+
+source:
+  type: url
+  url: https://sonarly.dev/
+  scrapedAt: "2025-12-15T22:44:58Z"
+  sectionIndex: 3

@@ -1,0 +1,47 @@
+schemaVersion: "2.0"
+name: trackit-so-landing
+category: page
+images:
+  preview: scraped/trackit-so-2025-12-15/full-page.png
+title: trackit.so Landing Page
+sections:
+  - id: trackit-so-hero-0
+    category: hero
+    order: 0
+  - id: trackit-so-logo-cloud-1
+    category: logo-cloud
+    order: 1
+  - id: trackit-so-feature-2
+    category: feature
+    order: 2
+  - id: trackit-so-feature-3
+    category: feature
+    order: 3
+  - id: trackit-so-feature-4
+    category: feature
+    order: 4
+  - id: trackit-so-feature-5
+    category: feature
+    order: 5
+  - id: trackit-so-feature-6
+    category: feature
+    order: 6
+  - id: trackit-so-faq-7
+    category: faq
+    order: 7
+  - id: trackit-so-cta-8
+    category: cta
+    order: 8
+source:
+  type: url
+  url: https://trackit.so/
+  scrapedAt: "2025-12-15T22:51:09.591Z"
+pageInfo:
+  totalSections: 9
+freeformKeywords:
+  - complete landing page
+  - full page
+  - trackit.so
+createdAt: "2025-12-15T22:51:09.591Z"
+status: stable
+draft: false

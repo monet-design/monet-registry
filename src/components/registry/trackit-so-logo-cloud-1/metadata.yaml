@@ -1,0 +1,41 @@
+schemaVersion: "2.0"
+name: trackit-so-logo-cloud-1
+category: logo-cloud
+
+images:
+  preview: scraped/trackit-so-2025-12-15/sections/section-1.png
+
+freeformKeywords:
+  - logo cloud
+  - clients
+  - companies
+  - trust
+  - korean
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:46:21Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - animation
+  style:
+    - light-theme
+    - minimal
+  layout:
+    - centered
+    - grid
+  industry:
+    - saas
+    - enterprise
+
+parentPage: trackit-so-landing
+
+source:
+  type: url
+  url: https://trackit.so/
+  scrapedAt: "2025-12-15T22:46:21Z"
+  sectionIndex: 1

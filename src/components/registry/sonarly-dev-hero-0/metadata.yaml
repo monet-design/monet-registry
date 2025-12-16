@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: sonarly-dev-hero-0
+category: hero
+
+images:
+  preview: scraped/sonarly-dev-2025-12-15/sections/section-0.png
+
+freeformKeywords:
+  - AI bug tracking
+  - production monitoring
+  - coding agent
+  - Y Combinator
+  - developer tools
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:44:53Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - video
+    - lead-capture
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - centered
+    - full-width
+  industry:
+    - saas
+    - ai
+    - startup
+
+parentPage: sonarly-dev-landing
+
+source:
+  type: url
+  url: https://sonarly.dev/
+  scrapedAt: "2025-12-15T22:44:53Z"
+  sectionIndex: 0

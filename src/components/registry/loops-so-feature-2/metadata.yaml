@@ -1,0 +1,47 @@
+schemaVersion: "2.0"
+name: loops-so-feature-2
+category: feature
+
+images:
+  preview: scraped/loops-so-2025-12-15/sections/section-2.png
+
+freeformKeywords:
+  - API
+  - developer
+  - SDK
+  - integrations
+  - webhooks
+  - code snippet
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:45:31Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - animation
+    - scroll-animation
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - centered
+    - grid
+    - responsive
+  industry:
+    - saas
+    - developer-tools
+
+parentPage: loops-so-landing
+
+source:
+  type: url
+  url: https://loops.so/
+  scrapedAt: "2025-12-15T22:45:31Z"
+  sectionIndex: 2

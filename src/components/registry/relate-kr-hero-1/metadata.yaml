@@ -1,0 +1,50 @@
+schemaVersion: "2.0"
+name: relate-kr-hero-1
+category: hero
+
+images:
+  preview: scraped/relate-kr-2025-12-15/sections/section-1.png
+
+freeformKeywords:
+  - hero
+  - crm
+  - b2b
+  - sales
+  - y-combinator
+  - startup
+  - pipeline
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:46:07Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - animation
+    - cta-button
+  style:
+    - light-theme
+    - modern
+    - gradient
+    - sans-serif
+    - blue
+  layout:
+    - centered
+    - single-column
+    - full-width
+  industry:
+    - saas
+    - b2b
+    - crm
+    - startup
+
+parentPage: relate-kr-landing
+
+source:
+  type: url
+  url: https://www.relate.kr/
+  scrapedAt: "2025-12-15T22:46:07Z"
+  sectionIndex: 1

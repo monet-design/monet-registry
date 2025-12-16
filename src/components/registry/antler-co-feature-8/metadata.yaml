@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: antler-co-feature-8
+category: feature
+
+images:
+  preview: scraped/antler-co-2025-12-15/sections/section-8.png
+
+freeformKeywords:
+  - global
+  - locations
+  - map
+  - founders
+  - continents
+  - worldwide
+  - opportunity
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:46:25Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - interactive-map
+  style:
+    - light-theme
+    - modern
+    - minimal
+  layout:
+    - full-width
+    - centered
+  industry:
+    - startup
+
+parentPage: antler-co-landing
+
+source:
+  type: url
+  url: https://www.antler.co/
+  scrapedAt: "2025-12-15T22:46:25Z"
+  sectionIndex: 8

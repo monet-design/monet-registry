@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: sonarly-dev-pricing-2
+category: pricing
+
+images:
+  preview: scraped/sonarly-dev-2025-12-15/sections/section-2.png
+
+freeformKeywords:
+  - pricing plans
+  - developer plan
+  - startup plan
+  - enterprise plan
+  - monthly yearly toggle
+  - free trial
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:44:56Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - lead-capture
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - grid
+    - three-column
+  industry:
+    - saas
+    - ai
+    - startup
+
+parentPage: sonarly-dev-landing
+
+source:
+  type: url
+  url: https://sonarly.dev/
+  scrapedAt: "2025-12-15T22:44:56Z"
+  sectionIndex: 2

@@ -1,0 +1,48 @@
+schemaVersion: "2.0"
+name: loops-so-feature-1
+category: feature
+
+images:
+  preview: scraped/loops-so-2025-12-15/sections/section-1.png
+
+freeformKeywords:
+  - email editor
+  - themes
+  - components
+  - personalization
+  - branding
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:45:30Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - animation
+    - scroll-animation
+    - video
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+    - shadow
+  layout:
+    - two-column
+    - grid
+    - responsive
+  industry:
+    - saas
+    - email-marketing
+
+parentPage: loops-so-landing
+
+source:
+  type: url
+  url: https://loops.so/
+  scrapedAt: "2025-12-15T22:45:30Z"
+  sectionIndex: 1

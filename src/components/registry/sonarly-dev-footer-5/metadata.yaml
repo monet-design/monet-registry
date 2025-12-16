@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: sonarly-dev-footer-5
+category: footer
+
+images:
+  preview: scraped/sonarly-dev-2025-12-15/sections/section-5.png
+
+freeformKeywords:
+  - footer
+  - company links
+  - product links
+  - social links
+  - twitter
+  - discord
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:45:02Z"
+status: stable
+language: en
+
+tags:
+  functional: []
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - grid
+    - multi-column
+  industry:
+    - saas
+    - ai
+    - startup
+
+parentPage: sonarly-dev-landing
+
+source:
+  type: url
+  url: https://sonarly.dev/
+  scrapedAt: "2025-12-15T22:45:02Z"
+  sectionIndex: 5

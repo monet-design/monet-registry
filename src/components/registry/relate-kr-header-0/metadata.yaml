@@ -1,0 +1,47 @@
+schemaVersion: "2.0"
+name: relate-kr-header-0
+category: header
+
+images:
+  preview: scraped/relate-kr-2025-12-15/sections/section-0.png
+
+freeformKeywords:
+  - header
+  - navigation
+  - crm
+  - saas
+  - b2b
+  - relate
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-15T22:46:05Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - dropdown
+    - hover-effect
+    - animation
+  style:
+    - light-theme
+    - modern
+    - minimal
+    - sans-serif
+  layout:
+    - full-width
+    - responsive
+  industry:
+    - saas
+    - b2b
+    - crm
+
+parentPage: relate-kr-landing
+
+source:
+  type: url
+  url: https://www.relate.kr/
+  scrapedAt: "2025-12-15T22:46:05Z"
+  sectionIndex: 0

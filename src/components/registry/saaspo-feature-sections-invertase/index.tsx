@@ -70,7 +70,7 @@ function HeroCard({ colors }: { colors: ColorScheme }) {
       {/* Terminal background effect */}
       <div className="absolute inset-0 opacity-30">
         <div className="font-mono text-xs text-green-500/50 leading-relaxed p-4">
-          <p>/// rt build ***</p>
+          <p>{`/// rt build ***`}</p>
           <p className="text-gray-600">cloning repo...</p>
           <p className="text-gray-600">successful!</p>
           <p className="mt-4 text-gray-600">[08:50:32]</p>
@@ -226,7 +226,10 @@ function IDECard({
 
       {/* Title and description outside card */}
       <div className="mt-4">
-        <h4 className="text-lg font-semibold" style={{ color: colors.cardTextPrimary }}>
+        <h4
+          className="text-lg font-semibold"
+          style={{ color: colors.cardTextPrimary }}
+        >
           {title}
         </h4>
         <p className="text-sm mt-1" style={{ color: colors.cardTextSecondary }}>
@@ -262,12 +265,20 @@ function CloudCard({
         {/* Cloud icon */}
         <div className="relative z-10 flex flex-col items-center">
           <div className="relative">
-            <Cloud className="w-32 h-32 text-slate-600 fill-slate-700" strokeWidth={1} />
+            <Cloud
+              className="w-32 h-32 text-slate-600 fill-slate-700"
+              strokeWidth={1}
+            />
             {/* Logo in cloud */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-12 h-12 rounded-full bg-slate-800 border-2 border-slate-600 flex items-center justify-center">
                 <div className="w-6 h-6 text-cyan-400">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
                     <path d="M13 17l5-5-5-5M6 17l5-5-5-5" />
                   </svg>
                 </div>
@@ -290,7 +301,10 @@ function CloudCard({
 
       {/* Title and description outside card */}
       <div className="mt-4">
-        <h4 className="text-lg font-semibold" style={{ color: colors.cardTextPrimary }}>
+        <h4
+          className="text-lg font-semibold"
+          style={{ color: colors.cardTextPrimary }}
+        >
           {title}
         </h4>
         <p className="text-sm mt-1" style={{ color: colors.cardTextSecondary }}>
@@ -361,7 +375,10 @@ function DocsCard({
 
       {/* Title and description outside card */}
       <div className="mt-4">
-        <h4 className="text-lg font-semibold" style={{ color: colors.cardTextPrimary }}>
+        <h4
+          className="text-lg font-semibold"
+          style={{ color: colors.cardTextPrimary }}
+        >
           {title}
         </h4>
         <p className="text-sm mt-1" style={{ color: colors.cardTextSecondary }}>

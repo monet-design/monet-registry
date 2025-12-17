@@ -1,6 +1,7 @@
 schemaVersion: "2.0"
 name: relate-kr-landing
 category: page
+pageType: landing
 images:
   preview: scraped/relate-kr-2025-12-15/full-page.png
 title: relate.kr Landing Page

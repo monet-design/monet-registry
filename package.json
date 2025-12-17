@@ -16,6 +16,7 @@
     "metadata:stats": "tsx scripts/stats-metadata.ts",
     "metadata:add-draft": "tsx scripts/add-draft-field.ts",
     "metadata:set-draft": "tsx scripts/set-draft-by-page.ts",
+    "migrate:page-type": "tsx scripts/migrate-page-type.ts",
     "prebuild": "pnpm metadata:build && pnpm registry:build",
     "screenshot:server": "cd screenshot-server && pnpm dev",
     "screenshot:capture": "tsx scripts/screenshot/cli.ts",

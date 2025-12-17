@@ -15,6 +15,7 @@ export async function GET(request: NextRequest) {
     const offset = Math.max(parseInt(searchParams.get("offset") || "0"), 0);
 
     // Filters
+    const pageType = searchParams.get("page_type") || undefined;
     const status = searchParams.get("status") || undefined;
     const language = searchParams.get("language") || undefined;
 
@@ -29,6 +30,7 @@ export async function GET(request: NextRequest) {
       | undefined;
 
     const { pages, total } = await pageRegistryService.listPages({
+      pageType,
       status,
       language,
       sortBy: sortBy || "created_at",
@@ -49,6 +51,7 @@ export async function GET(request: NextRequest) {
         id: p.id,
         name: p.name,
         title: p.title,
+        page_type: p.pageType,
         preview_image: getPagePreviewImageUrl(p.id),
         sections_count: p.pageInfo.totalSections,
         section_categories: [...new Set(p.sections.map((s) => s.category))],

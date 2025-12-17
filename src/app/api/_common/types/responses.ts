@@ -223,6 +223,7 @@ export interface GetFiltersResponse {
     industry: FilterOption[];
   };
   status: FilterOption[];
+  page_types: FilterOption[];
 }
 
 export interface FilterOption {
@@ -305,6 +306,7 @@ export interface PageRegistryEntry {
   id: string;
   name: string;
   category: "page";
+  pageType?: "landing" | "lead-capture" | "auth";
   images: {
     preview: string;
   };
@@ -344,6 +346,7 @@ export interface PageListItem {
   id: string;
   name: string;
   title?: string;
+  page_type?: string;
   preview_image: string;
   sections_count: number;
   section_categories: string[];
@@ -372,6 +375,7 @@ export interface PageMetadata {
   id: string;
   name: string;
   title?: string;
+  page_type?: string;
   images: {
     preview: string;
   };
@@ -480,6 +484,7 @@ export interface ParentPageInfo {
 
 // Service internal types for Pages
 export interface ListPagesOptions {
+  pageType?: string;
   status?: string;
   language?: string;
   sortBy?: "created_at" | "sections_count";

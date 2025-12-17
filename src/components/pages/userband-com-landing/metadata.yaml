@@ -1,6 +1,7 @@
 schemaVersion: "2.0"
 name: userband-com-landing
 category: page
+pageType: landing
 images:
   preview: scraped/userband-com-2025-12-13/full-page.png
 title: userband.com Landing Page

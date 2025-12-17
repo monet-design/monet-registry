@@ -1,6 +1,7 @@
 schemaVersion: "2.0"
 name: coderabbit-ai-landing
 category: page
+pageType: landing
 images:
   preview: scraped/coderabbit-ai-2025-12-07/full-page.png
 title: coderabbit.ai Landing Page

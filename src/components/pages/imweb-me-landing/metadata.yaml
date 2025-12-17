@@ -1,6 +1,7 @@
 schemaVersion: "2.0"
 name: imweb-me-landing
 category: page
+pageType: landing
 images:
   preview: scraped/imweb-me-2025-12-07/full-page.png
 title: imweb.me Landing Page

@@ -1,6 +1,7 @@
 schemaVersion: "2.0"
 name: whattime-landing
 category: page
+pageType: landing
 images:
   preview: scraped/whattime-co-kr-2025-12-14/full-page.png
 title: whattime.co.kr Landing Page

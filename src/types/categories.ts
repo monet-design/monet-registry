@@ -144,3 +144,8 @@ export type IndustryTag = (typeof IndustryTags)[number];
 export const ComponentStatus = ["draft", "stable", "deprecated"] as const;
 
 export type ComponentStatus = (typeof ComponentStatus)[number];
+
+// Page Type (페이지 용도별 분류)
+export const PageType = ["landing", "lead-capture", "auth"] as const;
+
+export type PageType = (typeof PageType)[number];

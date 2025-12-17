@@ -1,6 +1,7 @@
 schemaVersion: "2.0"
 name: sonarly-dev-landing
 category: page
+pageType: landing
 images:
   preview: scraped/sonarly-dev-2025-12-15/full-page.png
 title: sonarly.dev Landing Page

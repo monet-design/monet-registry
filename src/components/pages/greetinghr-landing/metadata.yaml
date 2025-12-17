@@ -1,6 +1,7 @@
 schemaVersion: "2.0"
 name: greetinghr-landing
 category: page
+pageType: landing
 images:
   preview: scraped/greetinghr-com-2025-12-14/full-page.png
 title: greetinghr.com Landing Page

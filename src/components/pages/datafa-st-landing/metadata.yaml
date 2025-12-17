@@ -1,6 +1,7 @@
 schemaVersion: "2.0"
 name: datafa-st-landing
 category: page
+pageType: landing
 images:
   preview: scraped/datafa-st-2025-12-08/full-page.png
 title: datafa.st Landing Page

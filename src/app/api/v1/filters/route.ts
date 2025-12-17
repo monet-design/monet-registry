@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { registryService } from "@/app/api/_common/services";
+import { registryService, pageRegistryService } from "@/app/api/_common/services";
 import type { GetFiltersResponse, ErrorResponse } from "@/app/api/_common/types";
 
 // Human-readable labels for categories
@@ -31,6 +31,12 @@ const STATUS_LABELS: Record<string, string> = {
   deprecated: "Deprecated",
 };
 
+const PAGE_TYPE_LABELS: Record<string, string> = {
+  landing: "Landing Page",
+  "lead-capture": "Lead Capture",
+  auth: "Authentication",
+};
+
 // Convert kebab-case to Title Case
 function toTitleCase(str: string): string {
   return str
@@ -41,10 +47,11 @@ function toTitleCase(str: string): string {
 
 export async function GET() {
   try {
-    const [categoryIndex, tagIndex, components] = await Promise.all([
+    const [categoryIndex, tagIndex, components, pages] = await Promise.all([
       registryService.getCategoryIndex(),
       registryService.getTagIndex(),
       registryService.getAllComponents(),
+      pageRegistryService.getAllPages(),
     ]);
 
     // Build category options
@@ -80,6 +87,21 @@ export async function GET() {
       }))
       .sort((a, b) => b.count - a.count);
 
+    // Build page_types options
+    const pageTypeCounts = new Map<string, number>();
+    pages.forEach((p) => {
+      const pageType = p.pageType || "landing";
+      pageTypeCounts.set(pageType, (pageTypeCounts.get(pageType) || 0) + 1);
+    });
+
+    const page_types = Array.from(pageTypeCounts.entries())
+      .map(([value, count]) => ({
+        value,
+        label: PAGE_TYPE_LABELS[value] || toTitleCase(value),
+        count,
+      }))
+      .sort((a, b) => b.count - a.count);
+
     const response: GetFiltersResponse = {
       success: true,
       categories,
@@ -90,6 +112,7 @@ export async function GET() {
         industry: buildTagOptions(tagIndex.industry),
       },
       status,
+      page_types,
     };
 
     return NextResponse.json(response, {

@@ -28,6 +28,7 @@ interface GeneratePageOptions {
   sourceUrl: string;
   scrapedDir?: string;
   title?: string;
+  pageType?: "landing" | "lead-capture" | "auth";
 }
 
 /**
@@ -92,7 +93,8 @@ function generatePageMetadata(
   sections: SectionInfo[],
   sourceUrl: string,
   scrapedDir?: string,
-  title?: string
+  title?: string,
+  pageType?: "landing" | "lead-capture" | "auth"
 ): string {
   const now = new Date().toISOString();
   let domain = "unknown";
@@ -117,6 +119,7 @@ function generatePageMetadata(
     schemaVersion: "2.0",
     name,
     category: "page",
+    pageType: pageType || "landing",
     images: {
       preview: previewPath,
     },
@@ -171,7 +174,7 @@ function readSectionCategory(sectionId: string): string {
 export async function generatePageComponent(
   options: GeneratePageOptions
 ): Promise<void> {
-  const { name, sections, sourceUrl, scrapedDir, title } = options;
+  const { name, sections, sourceUrl, scrapedDir, title, pageType } = options;
 
   console.log(`\n[Generating Page Component] ${name}`);
   console.log(`[Sections] ${sections.length} sections`);
@@ -200,7 +203,8 @@ export async function generatePageComponent(
     sectionInfos,
     sourceUrl,
     scrapedDir,
-    title
+    title,
+    pageType
   );
   fs.writeFileSync(path.join(pageDir, "metadata.yaml"), metadataContent);
 
@@ -222,6 +226,7 @@ async function main() {
   const urlIdx = args.indexOf("--source-url");
   const dirIdx = args.indexOf("--scraped-dir");
   const titleIdx = args.indexOf("--title");
+  const pageTypeIdx = args.indexOf("--page-type");
 
   if (nameIdx === -1 || sectionsIdx === -1) {
     console.error(
@@ -230,7 +235,8 @@ async function main() {
         "  --sections <id1,id2,...> \\\n" +
         "  --source-url <url> \\\n" +
         "  [--scraped-dir <dir>] \\\n" +
-        "  [--title <title>]"
+        "  [--title <title>] \\\n" +
+        "  [--page-type <landing|lead-capture|auth>]"
     );
     console.error("\nOptions:");
     console.error("  --name        Page component name (kebab-case, required)");
@@ -240,6 +246,7 @@ async function main() {
     console.error("  --source-url  Original URL (required)");
     console.error("  --scraped-dir Path to scraped directory (optional)");
     console.error("  --title       Page title (optional)");
+    console.error("  --page-type   Page type: landing, lead-capture, auth (default: landing)");
     process.exit(1);
   }
 
@@ -248,6 +255,8 @@ async function main() {
   const sourceUrl = args[urlIdx + 1] || "";
   const scrapedDir = dirIdx !== -1 ? args[dirIdx + 1] : undefined;
   const title = titleIdx !== -1 ? args[titleIdx + 1] : undefined;
+  const pageTypeArg = pageTypeIdx !== -1 ? args[pageTypeIdx + 1] : undefined;
+  const pageType = pageTypeArg as "landing" | "lead-capture" | "auth" | undefined;
 
   if (sections.length === 0) {
     console.error("Error: At least one section ID is required");
@@ -260,6 +269,7 @@ async function main() {
     sourceUrl,
     scrapedDir,
     title,
+    pageType,
   });
 }
 

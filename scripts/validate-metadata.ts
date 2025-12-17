@@ -9,6 +9,7 @@ import {
   StyleTags,
   LayoutTags,
   IndustryTags,
+  PageType,
 } from "../src/types/categories";
 
 /**
@@ -20,6 +21,7 @@ const MetadataSchema = z.object({
   schemaVersion: z.literal("2.0"),
   name: z.string().regex(/^[a-zA-Z0-9-]+$/),
   category: z.enum(ComponentCategory),
+  pageType: z.enum(PageType).optional(), // page 카테고리일 때만 사용
 
   images: z.object({
     preview: z.string().min(1),
@@ -210,6 +212,23 @@ function validateMetadataFile(filePath: string): ValidationResult {
         `Invalid source.type: ${sourceData.type} (valid: ${validSourceTypes.join(", ")})`
       );
       result.valid = false;
+    }
+
+    // page 카테고리일 때 pageType 검증
+    if (metadata.category === "page") {
+      const pageTypeData = data.pageType as string | undefined;
+      const validPageTypes = PageType as readonly string[];
+      if (pageTypeData && !validPageTypes.includes(pageTypeData)) {
+        result.errors.push(
+          `Invalid pageType: ${pageTypeData} (valid: ${validPageTypes.join(", ")})`
+        );
+        result.valid = false;
+      }
+      if (!pageTypeData) {
+        result.warnings.push(
+          "Page component missing pageType field - will default to 'landing'"
+        );
+      }
     }
   } catch (e) {
     result.valid = false;

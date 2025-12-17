@@ -1,6 +1,7 @@
 schemaVersion: "2.0"
 name: loops-so-landing
 category: page
+pageType: landing
 images:
   preview: scraped/loops-so-2025-12-15/full-page.png
 title: loops.so Landing Page

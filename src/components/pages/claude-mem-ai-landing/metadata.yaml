@@ -1,6 +1,7 @@
 schemaVersion: "2.0"
 name: claude-mem-ai-landing
 category: page
+pageType: landing
 images:
   preview: scraped/claude-mem-ai-2025-12-15/full-page.png
 title: claude-mem.ai Landing Page

@@ -53,6 +53,7 @@ interface MetadataYaml {
 }
 
 interface PageMetadataYaml extends MetadataYaml {
+  pageType?: "landing" | "lead-capture" | "auth";
   sections: Array<{
     id: string;
     category: string;
@@ -113,6 +114,7 @@ interface RegistryEntry {
 }
 
 interface PageRegistryEntry extends RegistryEntry {
+  pageType: "landing" | "lead-capture" | "auth";
   sections: Array<{
     id: string;
     category: string;
@@ -320,6 +322,7 @@ async function main() {
           id: pageName,
           name: metadata.name,
           category: "page",
+          pageType: metadata.pageType || "landing",
           images: metadata.images,
           title: metadata.title,
           description: metadata.description,

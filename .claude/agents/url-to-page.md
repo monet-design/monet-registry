@@ -166,10 +166,16 @@ npx tsx scripts/generate-page-component.ts \
   --name "{domain}-landing" \
   --sections "{section-id-1},{section-id-2},{section-id-3},..." \
   --source-url "{URL}" \
-  --scraped-dir "public/scraped/{domain}-{date}"
+  --scraped-dir "public/scraped/{domain}-{date}" \
+  --page-type "landing"
 ```
 
-**생성 위치:** `src/components/registry/pages/{domain}-landing/`
+**Page Types:**
+- `landing`: 일반 랜딩 페이지 (기본값)
+- `lead-capture`: 리드 수집 페이지 (이메일/연락처 수집이 주목적)
+- `auth`: 인증 페이지 (로그인, 회원가입, 비밀번호 찾기)
+
+**생성 위치:** `src/components/pages/{domain}-landing/`
 
 ## 5단계: Registry 업데이트
 

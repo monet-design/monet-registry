@@ -1,6 +1,7 @@
 schemaVersion: "2.0"
 name: conductor-build-landing
 category: page
+pageType: landing
 images:
   preview: scraped/conductor-build-2025-12-15/full-page.png
 title: conductor.build Landing Page

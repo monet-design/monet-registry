@@ -6,6 +6,7 @@ import {
   StyleTags,
   LayoutTags,
   IndustryTags,
+  PageType,
 } from "./categories";
 
 /**
@@ -145,6 +146,7 @@ export const PageMetadataSchema = z.object({
     .string()
     .regex(/^[a-z0-9-]+$/, "name은 kebab-case 형식이어야 합니다"),
   category: z.literal("page"),
+  pageType: z.enum(PageType).default("landing"),
 
   images: z.object({
     preview: z.string().min(1, "preview 이미지 경로는 필수입니다"),

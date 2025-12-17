@@ -187,6 +187,7 @@ class PageRegistryService {
     options: ListPagesOptions = {}
   ): Promise<{ pages: PageRegistryEntry[]; total: number }> {
     const {
+      pageType,
       status,
       language,
       sortBy = "created_at",
@@ -196,6 +197,11 @@ class PageRegistryService {
     } = options;
 
     let pages = await this.getAllPages();
+
+    // Apply pageType filter
+    if (pageType) {
+      pages = pages.filter((p) => p.pageType === pageType);
+    }
 
     // Apply status filter
     if (status) {

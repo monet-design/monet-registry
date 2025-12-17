@@ -1,6 +1,7 @@
 schemaVersion: "2.0"
 name: cap-so-landing
 category: page
+pageType: landing
 images:
   preview: scraped/cap-so-2025-12-15/full-page.png
 title: cap.so Landing Page

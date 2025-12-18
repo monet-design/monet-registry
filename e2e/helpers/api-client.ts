@@ -1,9 +1,23 @@
 const BASE_URL = process.env.API_BASE_URL || "http://localhost:4413";
 
+// Basic Auth credentials from environment
+const API_USER = process.env.API_BASIC_AUTH_USER;
+const API_PASSWORD = process.env.API_BASIC_AUTH_PASSWORD;
+
 export interface ApiResponse<T> {
   status: number;
   data: T;
   headers: Headers;
+}
+
+function getAuthHeader(): Record<string, string> {
+  if (API_USER && API_PASSWORD) {
+    const credentials = Buffer.from(`${API_USER}:${API_PASSWORD}`).toString(
+      "base64"
+    );
+    return { Authorization: `Basic ${credentials}` };
+  }
+  return {};
 }
 
 export async function apiGet<T>(
@@ -17,7 +31,9 @@ export async function apiGet<T>(
     });
   }
 
-  const response = await fetch(url.toString());
+  const response = await fetch(url.toString(), {
+    headers: getAuthHeader(),
+  });
   const data = await response.json();
 
   return {

@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: github-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero-sections/github-home-page-section-hero.jpg
+
+freeformKeywords:
+  - github
+  - developer
+  - platform
+  - collaborative
+  - software
+  - build
+  - ship
+  - copilot
+  - ai
+  - code
+  - hero
+  - email capture
+  - dark theme
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-18T11:54:11Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - email-capture
+  style:
+    - dark-theme
+    - gradient
+    - modern
+    - glassmorphism
+  layout:
+    - centered
+    - full-width
+    - single-column
+  industry:
+    - saas
+    - ai

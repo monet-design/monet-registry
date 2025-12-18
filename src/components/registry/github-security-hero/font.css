@@ -3,3 +3,8 @@
 .font-instrument-serif {
   font-family: "Instrument Serif", serif;
 }
+
+.headline-serif {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-style: italic;
+}

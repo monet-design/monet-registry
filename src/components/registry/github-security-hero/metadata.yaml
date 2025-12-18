@@ -1,49 +1,43 @@
 schemaVersion: "2.0"
 name: github-security-hero
 category: hero
+
 images:
-  preview: agent-input/unsection-hero/github-security-hero-section.webp
+  preview: /registry/github-security-hero/preview.jpg
+
+freeformKeywords:
+  - security
+  - github
+  - developer tools
+  - dark theme
+  - hero
+  - cta
+  - feature cards
+  - gradient cards
+  - saas
+  - enterprise
+
+fontFamily:
+  - Inter
+  - Instrument Serif
+
+createdAt: "2025-12-18T11:54:21Z"
+status: stable
+language: en
+
 tags:
   functional:
-    - dropdown
-    - animation
     - hover-effect
+    - cta-buttons
   style:
     - dark-theme
     - modern
     - gradient
-    - glow
-    - shadow
     - minimal
-    - corporate
-    - sans-serif
   layout:
     - centered
-    - single-column
-    - full-width
-    - responsive
+    - two-column
   industry:
     - saas
-    - enterprise
-    - startup
-freeformKeywords:
-  - github
-  - security
-  - hero
-  - dark theme
-  - enterprise
-  - developer
-  - code security
-  - vulnerability
-  - secret protection
-  - saas
-  - landing page
-  - call to action
-  - feature cards
-  - logo cloud
-fontFamily:
-  - Inter
-createdAt: "2025-11-30T00:00:00Z"
-status: stable
-language: en
-draft: false
+    - developer-tools
+    - security

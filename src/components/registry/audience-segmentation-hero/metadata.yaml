@@ -1,0 +1,41 @@
+schemaVersion: "2.0"
+name: audience-segmentation-hero
+category: hero
+
+images:
+  preview: /registry/audience-segmentation-hero/preview.jpg
+
+freeformKeywords:
+  - audience
+  - segmentation
+  - crm
+  - lead
+  - marketing
+  - gtm
+  - data
+  - targeting
+  - email capture
+  - demo
+  - saas
+
+fontFamily:
+  - Instrument Serif
+  - Inter
+
+createdAt: "2025-12-18T11:54:19Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - email-capture
+    - lead-capture
+  style:
+    - light-theme
+    - modern
+    - minimal
+  layout:
+    - two-column
+    - split-layout
+  industry:
+    - saas

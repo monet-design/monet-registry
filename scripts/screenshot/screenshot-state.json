@@ -4007,6 +4007,30 @@
     "saaspo-feature-sections-wiza": {
       "path": "/Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/public/registry/preview/saaspo-feature-sections-wiza.png",
       "capturedAt": "2025-12-16T05:36:27.633Z"
+    },
+    "audience-segmentation-hero": {
+      "path": "/app/public/registry/preview/audience-segmentation-hero.png",
+      "capturedAt": "2025-12-18T12:18:32.620Z"
+    },
+    "conversion-integrations-section": {
+      "path": "/app/public/registry/preview/conversion-integrations-section.png",
+      "capturedAt": "2025-12-18T12:18:35.248Z"
+    },
+    "conversion-marketing-hero": {
+      "path": "/app/public/registry/preview/conversion-marketing-hero.png",
+      "capturedAt": "2025-12-18T12:18:38.795Z"
+    },
+    "fin-ai-financial-service-hero": {
+      "path": "/app/public/registry/preview/fin-ai-financial-service-hero.png",
+      "capturedAt": "2025-12-18T12:18:41.506Z"
+    },
+    "fin-ai-insights-hero": {
+      "path": "/app/public/registry/preview/fin-ai-insights-hero.png",
+      "capturedAt": "2025-12-18T12:18:44.318Z"
+    },
+    "github-hero": {
+      "path": "/app/public/registry/preview/github-hero.png",
+      "capturedAt": "2025-12-18T12:18:47.335Z"
     }
   },
   "pageCompleted": {

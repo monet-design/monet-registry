@@ -1,44 +1,43 @@
 schemaVersion: "2.0"
 name: fin-ai-hero
 category: hero
+
 images:
-  preview: agent-input/unsection-hero/fin-ai-home-page-hero-design.jpg
-tags:
-  functional:
-    - animation
-    - hover-effect
-  style:
-    - dark-theme
-    - gradient
-    - modern
-    - bold
-    - colorful
-  layout:
-    - three-column
-    - card-grid
-    - responsive
-    - centered
-  industry:
-    - fintech
-    - ai
-    - saas
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/unsection-hero-sections/fin-ai-home-page-hero-design.jpg
+
 freeformKeywords:
-  - hero
-  - AI
-  - artificial intelligence
+  - ai agent
   - customer service
-  - SaaS
+  - hero section
   - dark theme
-  - aurora
+  - serif
+  - elegant
   - gradient
-  - landing page
+  - logo marquee
+  - cta buttons
+  - saas
   - fintech
-  - agent
-  - chatbot
+
 fontFamily:
-  - Instrument Serif
   - Inter
-createdAt: "2025-11-30T00:00:00Z"
+  - Instrument Serif
+
+createdAt: "2025-12-18T11:54:47Z"
 status: stable
 language: en
-draft: false
+
+tags:
+  functional:
+    - cta-buttons
+    - logo-marquee
+  style:
+    - dark-theme
+    - elegant
+    - serif
+    - gradient
+  layout:
+    - centered
+    - full-width
+  industry:
+    - ai
+    - saas

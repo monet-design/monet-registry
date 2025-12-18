@@ -1,0 +1,40 @@
+schemaVersion: "2.0"
+name: fin-ai-financial-service-hero
+category: hero
+
+images:
+  preview: agent-input/unsection-hero-sections/fin-ai-financial-service-hero-design.jpg
+
+freeformKeywords:
+  - AI
+  - agent
+  - financial services
+  - fintech
+  - chatbot
+  - support
+  - hero
+  - dark theme
+  - CTA
+
+fontFamily:
+  - Inter
+  - Instrument Serif
+
+createdAt: "2025-12-18T11:54:15Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - lead-capture
+  style:
+    - dark-theme
+    - modern
+    - serif
+  layout:
+    - centered
+    - full-width
+  industry:
+    - fintech
+    - ai
+    - saas

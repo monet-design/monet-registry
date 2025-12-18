@@ -1,42 +1,47 @@
 schemaVersion: "2.0"
 name: fin-ai-capabilities-hero
 category: hero
+
 images:
-  preview: agent-input/unsection-hero/fin-ai-capabilities-hero-design.jpg
+  preview: /Users/choesumin/Desktop/dev/choisumin/monet/landing-mon-components/agent-input/unsection-hero-sections/fin-ai-capabilities-hero-design.jpg
+
+freeformKeywords:
+  - AI agent
+  - configurable
+  - customer service
+  - support
+  - no-code
+  - SaaS
+  - hero
+  - dark theme
+  - grid background
+  - technology
+  - automation
+  - fintech
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-18T11:55:44Z"
+status: stable
+language: en
+
 tags:
   functional:
     - animation
-    - scroll-animation
+    - hover-effect
   style:
     - dark-theme
     - modern
-    - gradient
-    - serif
+    - minimal
+    - tech
+    - grid-pattern
   layout:
+    - two-column
+    - full-width
     - centered
-    - single-column
   industry:
-    - fintech
     - saas
     - ai
-    - enterprise
-freeformKeywords:
-  - hero
-  - ai
-  - agent
-  - saas
-  - dark theme
-  - cycle diagram
-  - tech
-  - configurable
-  - enterprise
-  - landing page
-  - fin ai
-  - intercom
-fontFamily:
-  - Instrument Serif
-  - Inter
-createdAt: "2025-11-30T00:00:00Z"
-status: stable
-language: en
-draft: false
+    - fintech
+    - customer-service

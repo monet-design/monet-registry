@@ -1,43 +1,42 @@
 schemaVersion: "2.0"
 name: fin-ai-tasks-hero
 category: hero
+
 images:
-  preview: agent-input/unsection-hero/fin-ai-tasks-hero-design.jpg
+  preview: /registry/fin-ai-tasks-hero/preview.jpg
+
+freeformKeywords:
+  - ai agent
+  - customer support
+  - complex queries
+  - fintech
+  - saas hero
+  - dark theme hero
+  - code interface
+  - task automation
+  - customer experience
+
+fontFamily:
+  - Inter
+  - Instrument Serif
+
+createdAt: "2025-12-18T11:54:23Z"
+status: stable
+language: en
+
 tags:
   functional:
     - animation
-    - hover-effect
-    - modal
   style:
     - dark-theme
     - modern
-    - gradient
-    - shadow
-    - blur
+    - serif
+    - sans-serif
   layout:
-    - two-column
-    - centered
-    - responsive
     - split-layout
+    - two-column
+    - left-aligned
   industry:
     - saas
-    - fintech
     - ai
-freeformKeywords:
-  - hero
-  - landing
-  - dark
-  - AI agent
-  - customer support
-  - SaaS
-  - code
-  - queries
-  - complex
-  - automation
-fontFamily:
-  - Instrument Serif
-  - Inter
-createdAt: "2025-11-30T00:00:00Z"
-status: stable
-language: en
-draft: false
+    - fintech

@@ -4,480 +4,353 @@
 // CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
 // ============================================================================
 
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ */
 const COLORS = {
-  light: {},
-  dark: {},
+  background: "#030a17",
+  gridLine: "#0d1525",
+  titleWhite: "#ffffff",
+  bodyText: "#858c9a",
+  badgeText: "#c0c3ce",
+  badgeBg: "#1a1f2b",
+  orangeAccent: "#e0500a",
+  primaryButtonBg: "#f8f8f8",
+  primaryButtonText: "#0a0a0a",
+  secondaryButtonBorder: "#3a4050",
+  secondaryButtonText: "#ffffff",
+  linkText: "#adb2be",
+  labelText: "#9ba2b0",
 } as const;
-
-const IMAGES = {} as const;
 
 // ============================================================================
 // END CUSTOMIZATION
 // ============================================================================
 
 import { motion } from "motion/react";
-import { ChevronDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
-// Props interface
 interface FinAiCapabilitiesHeroProps {
-  mode?: "light" | "dark";
-  logoText?: string;
-  navItems?: Array<{ label: string; hasDropdown?: boolean }>;
-  rightNavItems?: string[];
-  headline?: {
-    line1: string;
-    line2: string;
+  title?: {
+    line1?: string;
+    line2Prefix?: string;
+    line2Italic?: string;
+    line2Suffix?: string;
   };
   description?: string;
   footnoteRef?: string;
-  primaryCtaText?: string;
-  secondaryCtaText?: string;
-  sidebarTitle?: string;
-  sidebarDescription?: string;
-  sidebarLinkText?: string;
-  cycleNodes?: string[];
-  onPrimaryCtaClick?: () => void;
-  onSecondaryCtaClick?: () => void;
+  primaryCta?: {
+    text: string;
+    href: string;
+  };
+  secondaryCta?: {
+    text: string;
+    href: string;
+  };
+  sideLabel?: {
+    number?: string;
+    title?: string;
+    description?: string;
+    linkText?: string;
+    linkHref?: string;
+  };
+  badges?: Array<{
+    label: string;
+    position: "top" | "left" | "bottom" | "right";
+  }>;
 }
 
-// Logo Component (Intercom-style grid icon)
-function LogoIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 28 28"
-      fill="none"
-      className={className}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect x="2" y="2" width="6" height="6" rx="1" fill="white" />
-      <rect x="11" y="2" width="6" height="6" rx="1" fill="white" />
-      <rect x="20" y="2" width="6" height="6" rx="1" fill="white" />
-      <rect x="2" y="11" width="6" height="6" rx="1" fill="white" />
-      <rect x="11" y="11" width="6" height="6" rx="1" fill="white" />
-      <rect x="20" y="11" width="6" height="6" rx="1" fill="white" />
-      <rect x="2" y="20" width="6" height="6" rx="1" fill="white" />
-      <rect x="11" y="20" width="6" height="6" rx="1" fill="white" />
-      <rect x="20" y="20" width="6" height="6" rx="1" fill="white" />
-    </svg>
-  );
-}
-
-// Grid Background Component
-function GridBackground() {
-  return (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden">
-      {/* Vertical lines */}
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px)",
-          backgroundSize: "120px 100%",
-        }}
-      />
-      {/* Horizontal lines */}
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage:
-            "linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px)",
-          backgroundSize: "100% 120px",
-        }}
-      />
-    </div>
-  );
-}
-
-// Header Component
-function Header({
-  logoText,
-  navItems,
-  rightNavItems,
-  primaryCtaText,
-}: {
-  logoText: string;
-  navItems: Array<{ label: string; hasDropdown?: boolean }>;
-  rightNavItems: string[];
-  primaryCtaText: string;
-}) {
-  return (
-    <motion.header
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="flex w-full items-center justify-between px-6 py-4 lg:px-10"
-    >
-      {/* Left: Logo */}
-      <div className="flex items-center gap-3">
-        <LogoIcon className="h-6 w-6" />
-        <ChevronDown className="h-4 w-4 text-white/60" />
-        <span className="h-6 w-[1px] bg-white/20" />
-      </div>
-
-      {/* Center: Nav */}
-      <nav className="hidden items-center gap-1 lg:flex">
-        {navItems.map((item, index) => (
-          <a
-            key={index}
-            href="#"
-            className="flex items-center gap-1 px-4 py-2 text-[14px] text-white/90 transition-colors hover:text-white"
-          >
-            {item.label}
-            {item.hasDropdown && (
-              <ChevronDown className="h-3.5 w-3.5 text-white/60" />
-            )}
-          </a>
-        ))}
-      </nav>
-
-      {/* Right: Actions */}
-      <div className="flex items-center gap-4">
-        {rightNavItems.map((item, index) => (
-          <a
-            key={index}
-            href="#"
-            className="hidden text-[14px] text-white/90 transition-colors hover:text-white md:block"
-          >
-            {item}
-          </a>
-        ))}
-        <button className="rounded-full bg-white px-4 py-2 text-[14px] font-medium text-[#0a0f14] transition-colors hover:bg-white/90">
-          {primaryCtaText}
-        </button>
-      </div>
-    </motion.header>
-  );
-}
-
-// Cycle Diagram Component
-function CycleDiagram({ nodes }: { nodes: string[] }) {
-  // Node positions on the oval path (4 positions: top, right, bottom, left)
-  const nodePositions = [
-    { x: 50, y: 0, label: nodes[0] }, // ANALYZE - top
-    { x: 100, y: 50, label: nodes[1] }, // TRAIN - right
-    { x: 50, y: 100, label: nodes[2] }, // TEST - bottom
-    { x: 0, y: 50, label: nodes[3] }, // DEPLOY - left
-  ];
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, delay: 0.5 }}
-      className="relative mx-auto mt-12 w-full max-w-3xl lg:mt-20"
-    >
-      <svg
-        viewBox="0 0 700 400"
-        className="h-auto w-full"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        {/* Outer dashed oval */}
-        <ellipse
-          cx="350"
-          cy="200"
-          rx="320"
-          ry="170"
-          stroke="rgba(255,255,255,0.15)"
-          strokeWidth="1"
-          strokeDasharray="8 8"
-          fill="none"
-        />
-
-        {/* Inner solid oval */}
-        <ellipse
-          cx="350"
-          cy="200"
-          rx="260"
-          ry="130"
-          stroke="rgba(255,255,255,0.2)"
-          strokeWidth="1"
-          fill="none"
-        />
-
-        {/* Center rounded rectangle (stadium shape) */}
-        <rect
-          x="180"
-          y="120"
-          width="340"
-          height="160"
-          rx="80"
-          stroke="rgba(255,255,255,0.25)"
-          strokeWidth="1"
-          fill="none"
-        />
-
-        {/* Small connecting dots */}
-        {/* Top connector dot (white) */}
-        <circle cx="350" cy="70" r="4" fill="white" />
-
-        {/* Left-bottom connector dot (orange) */}
-        <circle cx="350" cy="330" r="4" fill="#f05d23" />
-
-        {/* Node labels */}
-        {/* ANALYZE - top */}
-        <g>
-          <rect
-            x="285"
-            y="10"
-            width="130"
-            height="40"
-            rx="20"
-            fill="rgba(255,255,255,0.08)"
-            stroke="rgba(255,255,255,0.2)"
-            strokeWidth="1"
-          />
-          <text
-            x="350"
-            y="36"
-            textAnchor="middle"
-            fill="white"
-            fontSize="13"
-            fontWeight="500"
-            letterSpacing="1"
-            fontFamily="Inter, sans-serif"
-          >
-            {nodePositions[0].label}
-          </text>
-        </g>
-
-        {/* TRAIN - right */}
-        <g>
-          <rect
-            x="580"
-            y="180"
-            width="100"
-            height="40"
-            rx="20"
-            fill="rgba(255,255,255,0.08)"
-            stroke="rgba(255,255,255,0.2)"
-            strokeWidth="1"
-          />
-          <text
-            x="630"
-            y="206"
-            textAnchor="middle"
-            fill="white"
-            fontSize="13"
-            fontWeight="500"
-            letterSpacing="1"
-            fontFamily="Inter, sans-serif"
-          >
-            {nodePositions[1].label}
-          </text>
-        </g>
-
-        {/* TEST - bottom */}
-        <g>
-          <rect
-            x="300"
-            y="350"
-            width="100"
-            height="40"
-            rx="20"
-            fill="rgba(255,255,255,0.08)"
-            stroke="rgba(255,255,255,0.2)"
-            strokeWidth="1"
-          />
-          <text
-            x="350"
-            y="376"
-            textAnchor="middle"
-            fill="white"
-            fontSize="13"
-            fontWeight="500"
-            letterSpacing="1"
-            fontFamily="Inter, sans-serif"
-          >
-            {nodePositions[2].label}
-          </text>
-        </g>
-
-        {/* DEPLOY - left */}
-        <g>
-          <rect
-            x="20"
-            y="180"
-            width="110"
-            height="40"
-            rx="20"
-            fill="rgba(255,255,255,0.08)"
-            stroke="rgba(255,255,255,0.2)"
-            strokeWidth="1"
-          />
-          <text
-            x="75"
-            y="206"
-            textAnchor="middle"
-            fill="white"
-            fontSize="13"
-            fontWeight="500"
-            letterSpacing="1"
-            fontFamily="Inter, sans-serif"
-          >
-            {nodePositions[3].label}
-          </text>
-        </g>
-      </svg>
-    </motion.div>
-  );
-}
-
-// Sidebar Note Component
-function SidebarNote({
-  footnoteRef,
-  title,
-  description,
-  linkText,
-}: {
-  footnoteRef: string;
-  title: string;
-  description: string;
-  linkText: string;
-}) {
-  return (
-    <motion.aside
-      initial={{ opacity: 0, x: 20 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5, delay: 0.4 }}
-      className="absolute right-6 top-1/4 hidden w-48 lg:right-10 lg:block xl:w-52"
-    >
-      <div className="space-y-3">
-        <p className="text-xs uppercase tracking-wider">
-          <span className="text-[#f05d23]">{footnoteRef}</span>
-          <span className="ml-1 text-white">BUILT ON FIN AI ENGINE</span>
-          <span className="text-white/60">&trade;</span>
-        </p>
-        <p className="text-sm leading-relaxed text-white/70">{description}</p>
-        <a
-          href="#"
-          className="inline-block text-sm text-[#f05d23] transition-colors hover:text-[#ff7a45]"
-        >
-          {linkText}
-        </a>
-      </div>
-    </motion.aside>
-  );
-}
-
-// Main Component
 export default function FinAiCapabilitiesHero({
-  mode = "light",
-  logoText = "Intercom",
-  navItems = [
-    { label: "Home" },
-    { label: "Product", hasDropdown: true },
-    { label: "AI Technology", hasDropdown: true },
-    { label: "Solutions", hasDropdown: true },
-    { label: "Customers" },
-    { label: "Resources", hasDropdown: true },
-    { label: "Pricing" },
-  ],
-  rightNavItems = ["Contact sales", "Sign in", "View demo"],
-  headline = {
+  title = {
     line1: "Complete, fully configurable",
-    line2: "AI Agent system",
+    line2Prefix: "AI",
+    line2Italic: "Agent",
+    line2Suffix: "system",
   },
   description = "Fin is the only complete, fully configurable AI Agent System in customer service—empowering support teams to customize, test, and continuously improve Fin through a no-code user experience anyone can manage.",
   footnoteRef = "[1]",
-  primaryCtaText = "Start free trial",
-  secondaryCtaText = "View demo",
-  sidebarTitle = "BUILT ON FIN AI ENGINE",
-  sidebarDescription = "Fin combines the only complete, fully configurable AI Agent System with a patented AI architecture to deliver the highest performance.",
-  sidebarLinkText = "Learn more",
-  cycleNodes = ["ANALYZE", "TRAIN", "TEST", "DEPLOY"],
-  onPrimaryCtaClick = () => {},
-  onSecondaryCtaClick = () => {},
+  primaryCta = {
+    text: "Start free trial",
+    href: "#",
+  },
+  secondaryCta = {
+    text: "View demo",
+    href: "#",
+  },
+  sideLabel = {
+    number: "[1]",
+    title: "BUILT ON FIN AI ENGINE",
+    description:
+      "Fin combines the only complete, fully configurable AI Agent System with a patented AI architecture to deliver the highest performance.",
+    linkText: "Learn more",
+    linkHref: "#",
+  },
+  badges = [
+    { label: "ANALYZE", position: "top" },
+    { label: "DEPLOY", position: "left" },
+    { label: "TEST", position: "bottom" },
+    { label: "TRAIN", position: "right" },
+  ],
 }: FinAiCapabilitiesHeroProps) {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-[#0a0f14]">
-      {/* Font import for Instrument Serif */}
+    <section
+      className="relative min-h-screen w-full overflow-hidden"
+      style={{ backgroundColor: COLORS.background }}
+    >
+      {/* Google Font for Instrument Serif */}
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
-        .font-instrument-serif {
-          font-family: 'Instrument Serif', serif;
+        .serif-italic {
+          font-family: 'Instrument Serif', Georgia, serif;
+          font-style: italic;
         }
       `}</style>
 
       {/* Grid Background */}
-      <GridBackground />
-
-      {/* Header */}
-      <Header
-        logoText={logoText}
-        navItems={navItems}
-        rightNavItems={rightNavItems}
-        primaryCtaText={primaryCtaText}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage: `
+            linear-gradient(${COLORS.gridLine} 1px, transparent 1px),
+            linear-gradient(90deg, ${COLORS.gridLine} 1px, transparent 1px)
+          `,
+          backgroundSize: "80px 80px",
+        }}
       />
 
-      {/* Main Content */}
-      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-16 lg:px-10 lg:pt-20">
-        {/* Hero Text Content */}
-        <div className="max-w-3xl">
-          {/* Headline */}
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-instrument-serif text-5xl font-normal leading-[1.1] tracking-tight text-white sm:text-6xl lg:text-7xl"
-          >
-            {headline.line1}
-            <br />
-            {headline.line2}
-          </motion.h1>
+      {/* Main Content Container */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-20 pt-24 pb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+          {/* Left Column - Main Content */}
+          <div className="lg:col-span-8">
+            {/* Title */}
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] tracking-tight mb-8"
+              style={{ color: COLORS.titleWhite }}
+            >
+              <span className="block font-light">{title.line1}</span>
+              <span className="block font-light">
+                {title.line2Prefix}{" "}
+                <span className="serif-italic">{title.line2Italic}</span>{" "}
+                {title.line2Suffix}
+              </span>
+            </motion.h1>
 
-          {/* Separator line */}
+            {/* Divider Line */}
+            <motion.div
+              initial={{ opacity: 0, scaleX: 0 }}
+              whileInView={{ opacity: 1, scaleX: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="w-full h-px mb-8 origin-left"
+              style={{ backgroundColor: COLORS.gridLine }}
+            />
+
+            {/* Description */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="text-base md:text-lg leading-relaxed max-w-2xl mb-8"
+              style={{ color: COLORS.bodyText }}
+            >
+              {description}{" "}
+              <sup
+                className="text-xs cursor-pointer hover:underline"
+                style={{ color: COLORS.linkText }}
+              >
+                {footnoteRef}
+              </sup>
+            </motion.p>
+
+            {/* CTA Buttons */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="flex flex-wrap gap-3"
+            >
+              <Button
+                asChild
+                className="rounded-md px-6 py-2.5 text-sm font-medium transition-all hover:scale-105"
+                style={{
+                  backgroundColor: COLORS.primaryButtonBg,
+                  color: COLORS.primaryButtonText,
+                }}
+              >
+                <a href={primaryCta.href}>{primaryCta.text}</a>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="rounded-md px-6 py-2.5 text-sm font-medium bg-transparent transition-all hover:bg-white/5"
+                style={{
+                  borderColor: COLORS.secondaryButtonBorder,
+                  color: COLORS.secondaryButtonText,
+                }}
+              >
+                <a href={secondaryCta.href}>{secondaryCta.text}</a>
+              </Button>
+            </motion.div>
+          </div>
+
+          {/* Right Column - Side Label */}
+          <div className="lg:col-span-4">
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="lg:pt-12"
+            >
+              {/* Label Header */}
+              <div className="flex items-center gap-2 mb-4">
+                <span
+                  className="text-xs font-medium"
+                  style={{ color: COLORS.labelText }}
+                >
+                  {sideLabel.number}
+                </span>
+                <span
+                  className="text-xs font-semibold tracking-wider"
+                  style={{ color: COLORS.labelText }}
+                >
+                  {sideLabel.title}
+                  <sup className="ml-0.5">TM</sup>
+                </span>
+              </div>
+
+              {/* Label Description */}
+              <p
+                className="text-sm leading-relaxed mb-4"
+                style={{ color: COLORS.bodyText }}
+              >
+                {sideLabel.description}
+              </p>
+
+              {/* Learn More Link */}
+              <a
+                href={sideLabel.linkHref}
+                className="text-sm font-medium underline underline-offset-4 hover:no-underline transition-all"
+                style={{ color: COLORS.linkText }}
+              >
+                {sideLabel.linkText}
+              </a>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+
+      {/* Animated Orbit Diagram */}
+      <div className="relative z-10 w-full flex justify-center items-center pb-16 mt-8">
+        <div className="relative w-[600px] h-[320px] md:w-[800px] md:h-[400px]">
+          {/* Oval Track */}
+          <svg
+            viewBox="0 0 800 400"
+            className="absolute inset-0 w-full h-full"
+            fill="none"
+          >
+            {/* Dashed oval */}
+            <ellipse
+              cx="400"
+              cy="200"
+              rx="320"
+              ry="140"
+              stroke={COLORS.gridLine}
+              strokeWidth="1"
+              strokeDasharray="8 8"
+              fill="none"
+            />
+            {/* Center pill shape */}
+            <rect
+              x="240"
+              y="120"
+              width="320"
+              height="160"
+              rx="80"
+              stroke={COLORS.gridLine}
+              strokeWidth="1"
+              fill="none"
+            />
+          </svg>
+
+          {/* Animated Dots */}
           <motion.div
-            initial={{ opacity: 0, scaleX: 0 }}
-            animate={{ opacity: 1, scaleX: 1 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="my-6 h-[1px] w-16 origin-left bg-white/30"
+            className="absolute w-2 h-2 rounded-full"
+            style={{ backgroundColor: COLORS.badgeText }}
+            animate={{
+              x: [400, 720, 400, 80, 400],
+              y: [60, 200, 340, 200, 60],
+            }}
+            transition={{
+              duration: 8,
+              repeat: Infinity,
+              ease: "linear",
+            }}
+          />
+          <motion.div
+            className="absolute w-2 h-2 rounded-full"
+            style={{ backgroundColor: COLORS.orangeAccent }}
+            animate={{
+              x: [400, 80, 400, 720, 400],
+              y: [340, 200, 60, 200, 340],
+            }}
+            transition={{
+              duration: 8,
+              repeat: Infinity,
+              ease: "linear",
+            }}
           />
 
-          {/* Description */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="max-w-xl text-base leading-relaxed text-white/70 lg:text-lg"
-          >
-            {description}
-            <sup className="ml-1 text-[#f05d23]">{footnoteRef}</sup>
-          </motion.p>
+          {/* Badges */}
+          {badges.map((badge, index) => {
+            const positions = {
+              top: "top-0 left-1/2 -translate-x-1/2",
+              left: "top-1/2 left-0 -translate-y-1/2 md:-left-4",
+              bottom: "bottom-0 left-1/2 -translate-x-1/2",
+              right: "top-1/2 right-0 -translate-y-1/2 md:-right-4",
+            };
 
-          {/* CTA Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="mt-8 flex flex-wrap items-center gap-3"
-          >
-            <button
-              onClick={onPrimaryCtaClick}
-              className="rounded-full bg-white px-6 py-3 text-[14px] font-medium text-[#0a0f14] transition-colors hover:bg-white/90"
-            >
-              {primaryCtaText}
-            </button>
-            <button
-              onClick={onSecondaryCtaClick}
-              className="rounded-full border border-white/30 bg-transparent px-6 py-3 text-[14px] font-medium text-white transition-colors hover:border-white/50 hover:bg-white/5"
-            >
-              {secondaryCtaText}
-            </button>
-          </motion.div>
+            return (
+              <motion.div
+                key={badge.label}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4, delay: 0.6 + index * 0.1 }}
+                viewport={{ once: true }}
+                className={`absolute px-4 py-2 rounded ${positions[badge.position]}`}
+                style={{
+                  backgroundColor: COLORS.badgeBg,
+                }}
+              >
+                <span
+                  className="text-xs font-medium tracking-wider"
+                  style={{ color: COLORS.badgeText }}
+                >
+                  {badge.label}
+                </span>
+              </motion.div>
+            );
+          })}
         </div>
-
-        {/* Sidebar Note */}
-        <SidebarNote
-          footnoteRef={footnoteRef}
-          title={sidebarTitle}
-          description={sidebarDescription}
-          linkText={sidebarLinkText}
-        />
-
-        {/* Cycle Diagram */}
-        <CycleDiagram nodes={cycleNodes} />
       </div>
+
+      {/* Bottom Grid Lines */}
+      <div
+        className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none"
+        style={{
+          backgroundImage: `linear-gradient(${COLORS.gridLine} 1px, transparent 1px)`,
+          backgroundSize: "80px 80px",
+          maskImage: "linear-gradient(to top, black, transparent)",
+          WebkitMaskImage: "linear-gradient(to top, black, transparent)",
+        }}
+      />
     </section>
   );
 }

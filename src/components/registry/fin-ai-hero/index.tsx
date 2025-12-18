@@ -1,12 +1,33 @@
 "use client";
 
+import "./font.css";
+
 // ============================================================================
 // CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
 // ============================================================================
 
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ */
 const COLORS = {
-  light: {},
-  dark: {},
+  light: {
+    background: "#19141a",
+    text: "#ffffff",
+    textMuted: "#9ca3af",
+    buttonPrimary: "#ffffff",
+    buttonPrimaryText: "#19141a",
+    buttonSecondary: "transparent",
+    buttonSecondaryBorder: "rgba(255, 255, 255, 0.3)",
+  },
+  dark: {
+    background: "#19141a",
+    text: "#ffffff",
+    textMuted: "#9ca3af",
+    buttonPrimary: "#ffffff",
+    buttonPrimaryText: "#19141a",
+    buttonSecondary: "transparent",
+    buttonSecondaryBorder: "rgba(255, 255, 255, 0.3)",
+  },
 } as const;
 
 const IMAGES = {} as const;
@@ -16,585 +37,291 @@ const IMAGES = {} as const;
 // ============================================================================
 
 import { motion } from "motion/react";
-import {
-  ChevronLeft,
-  MoreHorizontal,
-  Maximize2,
-  Smile,
-  ArrowUp,
-  Sparkles,
-  User,
-  ChevronRight,
-  ChevronDown,
-} from "lucide-react";
-import "./font.css";
+import { ChevronDown } from "lucide-react";
 
 // Types
+interface NavItem {
+  label: string;
+  href: string;
+  hasDropdown?: boolean;
+}
+
+interface LogoItem {
+  name: string;
+  href?: string;
+}
+
 interface FinAiHeroProps {
   mode?: "light" | "dark";
-  headlinePart1?: string;
-  headlinePart2?: string;
-  description?: string;
-  primaryCtaText?: string;
-  secondaryCtaText?: string;
-  onPrimaryCtaClick?: () => void;
-  onSecondaryCtaClick?: () => void;
+  navItems?: NavItem[];
+  rightNavItems?: { label: string; href: string }[];
+  headline?: string;
+  subheadlines?: string[];
+  primaryCta?: { text: string; href: string };
+  secondaryCta?: { text: string; href: string };
+  logos?: LogoItem[];
 }
 
-// FinLogo Component (sparkle icon)
-function FinLogo({ className = "" }: { className?: string }) {
+// Fin AI Spark Logo (8-pointed star)
+function SparkLogo({ className = "w-6 h-6" }: { className?: string }) {
   return (
-    <div className={`flex items-center justify-center ${className}`}>
-      <Sparkles className="h-4 w-4 text-[#A78BFA]" />
-    </div>
-  );
-}
-
-// Transaction Dispute Card
-function TransactionDisputeCard() {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.4 }}
-      className="rounded-xl bg-[#1A1D24]/90 p-4 backdrop-blur-sm border border-white/5"
+    <svg
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
-      <div className="flex items-start gap-2 mb-3">
-        <div className="flex h-6 w-6 items-center justify-center rounded-full bg-amber-500/20">
-          <User className="h-3 w-3 text-amber-400" />
-        </div>
-        <div className="flex-1">
-          <div className="text-[10px] font-medium text-amber-400/80 uppercase tracking-wider">
-            Transaction Dispute Handling
-          </div>
-          <div className="text-[9px] text-white/40 mt-0.5">
-            Use this task when a customer is dispu...
-          </div>
-        </div>
-      </div>
-
-      <div className="space-y-1.5 text-[9px] text-white/50">
-        <div className="flex items-center gap-2">
-          <div className="h-1 w-1 rounded-full bg-green-400" />
-          <span>Freeze card triggered by FIN</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="h-1 w-1 rounded-full bg-green-400" />
-          <span>Transaction dispute triggered by FIN</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="h-1 w-1 rounded-full bg-green-400" />
-          <span>Credit request triggered by FIN</span>
-        </div>
-      </div>
-    </motion.div>
+      <path
+        d="M16 0L18.5 13.5L32 16L18.5 18.5L16 32L13.5 18.5L0 16L13.5 13.5L16 0Z"
+        fill="currentColor"
+      />
+      <path
+        d="M16 6L17.5 14.5L26 16L17.5 17.5L16 26L14.5 17.5L6 16L14.5 14.5L16 6Z"
+        fill="currentColor"
+      />
+    </svg>
   );
 }
 
-// User Information Card
-function UserInfoCard() {
+// Default nav items
+const defaultNavItems: NavItem[] = [
+  { label: "Home", href: "#" },
+  { label: "Product", href: "#", hasDropdown: true },
+  { label: "AI Technology", href: "#", hasDropdown: true },
+  { label: "Customers", href: "#" },
+  { label: "Resources", href: "#", hasDropdown: true },
+  { label: "Pricing", href: "#" },
+];
+
+const defaultRightNavItems = [
+  { label: "Contact sales", href: "#" },
+  { label: "Sign in", href: "#" },
+  { label: "View demo", href: "#" },
+];
+
+const defaultLogos: LogoItem[] = [
+  { name: "Amplitude" },
+  { name: "Synthesia" },
+  { name: "LaunchDarkly" },
+  { name: "Coda" },
+  { name: "Shutterstock" },
+  { name: "Lovable" },
+];
+
+// Gradient background with glow effect
+function GlowBackground() {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.5 }}
-      className="rounded-xl bg-[#1A1D24]/90 p-4 backdrop-blur-sm border border-white/5"
-    >
-      <div className="flex items-center gap-2 mb-3">
-        <User className="h-3 w-3 text-white/40" />
-        <span className="text-[10px] font-medium text-white/60 uppercase tracking-wider">
-          User Information
-        </span>
-        <ChevronDown className="h-3 w-3 text-white/30 ml-auto" />
-      </div>
-
-      <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-[9px]">
-        <div>
-          <div className="text-white/40">Name</div>
-          <div className="text-white/70">Paul Jones</div>
-        </div>
-        <div>
-          <div className="text-white/40">Account Type</div>
-          <div className="text-white/70">Saver</div>
-        </div>
-        <div>
-          <div className="text-white/40">Location</div>
-          <div className="text-white/70">New York, USA</div>
-        </div>
-        <div>
-          <div className="text-white/40">Date of Birth</div>
-          <div className="text-white/70">01/02/1990</div>
-        </div>
-        <div>
-          <div className="text-white/40">Card No</div>
-          <div className="text-white/70">XXXX-XXXX-XXXX-8108</div>
-        </div>
-        <div>
-          <div className="text-white/40">Language</div>
-          <div className="text-white/70">English</div>
-        </div>
-      </div>
-    </motion.div>
-  );
-}
-
-// Identity Verification Card
-function IdentityVerificationCard() {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.55 }}
-      className="rounded-xl bg-[#1A1D24]/90 p-4 backdrop-blur-sm border border-white/5"
-    >
-      <div className="flex items-start gap-2 mb-3">
-        <div className="flex h-6 w-6 items-center justify-center rounded-full bg-purple-500/20">
-          <User className="h-3 w-3 text-purple-400" />
-        </div>
-        <div className="flex-1">
-          <div className="text-[10px] font-medium text-purple-400/80 uppercase tracking-wider">
-            Identity Verification
-          </div>
-          <div className="text-[9px] text-white/40 mt-0.5">
-            Use this task to perform identity verif...
-          </div>
-        </div>
-      </div>
-
-      <div className="space-y-1.5 text-[9px] text-white/50">
-        <div className="flex items-center gap-2">
-          <div className="h-1 w-1 rounded-full bg-white/30" />
-          <span className="text-white/40">Identity Verification</span>
-        </div>
-        <div className="flex items-center gap-2 pl-3">
-          <div className="h-1 w-1 rounded-full bg-green-400" />
-          <span>Get card details triggered by FIN</span>
-        </div>
-        <div className="flex items-center gap-2 pl-3">
-          <div className="h-1 w-1 rounded-full bg-green-400" />
-          <span>Get date of birth details triggered by FIN</span>
-        </div>
-      </div>
-    </motion.div>
-  );
-}
-
-// Transaction Results Mini Card
-function TransactionResultsCard() {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.6 }}
-      className="rounded-xl bg-[#1A1D24]/90 p-3 backdrop-blur-sm border border-white/5"
-    >
-      <div className="text-[9px] text-white/50 mb-2">Transaction Results</div>
-      <div className="flex gap-1 h-8 items-end">
-        {[30, 45, 35, 50, 40].map((height, i) => (
-          <div
-            key={i}
-            className="flex-1 bg-white/10 rounded-sm"
-            style={{ height: `${height}%` }}
-          />
-        ))}
-      </div>
-      <div className="flex justify-between mt-1 text-[8px] text-white/30">
-        <span>Apr 1</span>
-        <span>Apr 7</span>
-        <span>Apr</span>
-      </div>
-    </motion.div>
-  );
-}
-
-// Chat Interface Card
-function ChatInterfaceCard() {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 30, scale: 0.95 }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
-      transition={{ duration: 0.7, delay: 0.3 }}
-      className="rounded-2xl bg-[#1A1D24]/95 backdrop-blur-sm border border-white/10 overflow-hidden w-[280px]"
-    >
-      {/* Header */}
-      <div className="flex items-center justify-between px-4 py-3 border-b border-white/5">
-        <div className="flex items-center gap-2">
-          <ChevronLeft className="h-4 w-4 text-white/60" />
-          <FinLogo />
-          <span className="text-sm font-medium text-white">Fin</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <MoreHorizontal className="h-4 w-4 text-white/40" />
-          <Maximize2 className="h-4 w-4 text-white/40" />
-        </div>
-      </div>
-
-      {/* Chat Content */}
-      <div className="p-4 space-y-4 min-h-[280px]">
-        {/* AI Message */}
-        <div className="bg-[#2A2D35] rounded-xl p-3">
-          <div className="flex items-center gap-2 mb-1">
-            <Sparkles className="h-3 w-3 text-[#A78BFA]" />
-            <span className="text-[10px] text-white/60">Fin - AI Agent</span>
-          </div>
-          <p className="text-sm text-white/90">Hi Paul, how can I help?</p>
-        </div>
-
-        {/* User Message */}
-        <div className="flex justify-end">
-          <div className="bg-gradient-to-r from-[#E8734A] to-[#F97316] rounded-xl px-4 py-2 max-w-[200px]">
-            <p className="text-sm text-white">
-              There is a charge on my credit card for $42.50 that I don&apos;t recognize.
-            </p>
-          </div>
-        </div>
-
-        {/* Typing indicator */}
-        <div className="flex items-center gap-1 px-2">
-          <div className="flex gap-1">
-            <div className="h-2 w-2 rounded-full bg-white/30 animate-pulse" />
-            <div
-              className="h-2 w-2 rounded-full bg-white/30 animate-pulse"
-              style={{ animationDelay: "150ms" }}
-            />
-            <div
-              className="h-2 w-2 rounded-full bg-white/30 animate-pulse"
-              style={{ animationDelay: "300ms" }}
-            />
-          </div>
-        </div>
-      </div>
-
-      {/* Input */}
-      <div className="px-4 pb-4">
-        <div className="flex items-center gap-2 bg-[#2A2D35] rounded-full px-4 py-2">
-          <span className="text-sm text-white/40 flex-1">Message...</span>
-          <Smile className="h-4 w-4 text-white/40" />
-          <div className="h-6 w-6 rounded-full bg-white/10 flex items-center justify-center">
-            <ArrowUp className="h-3 w-3 text-white/60" />
-          </div>
-        </div>
-      </div>
-    </motion.div>
-  );
-}
-
-// Transaction Support Card (right side top)
-function TransactionSupportCard() {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.45 }}
-      className="rounded-xl bg-[#1A1D24]/90 p-4 backdrop-blur-sm border border-white/5"
-    >
-      <div className="flex items-center gap-2 mb-3">
-        <User className="h-3 w-3 text-white/40" />
-        <span className="text-[10px] font-medium text-white/60 uppercase tracking-wider">
-          Transaction Support
-        </span>
-      </div>
-
-      <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-[9px] mb-3">
-        <div>
-          <div className="text-white/40">Amount</div>
-          <div className="text-[#F97316]">$42.50</div>
-        </div>
-        <div>
-          <div className="text-white/40">Merchant</div>
-          <div className="text-white/70">Metro Left</div>
-        </div>
-        <div>
-          <div className="text-white/40">Date</div>
-          <div className="text-white/70">04/02/2025</div>
-        </div>
-      </div>
-    </motion.div>
-  );
-}
-
-// Guidance Card
-function GuidanceCard() {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.5 }}
-      className="rounded-xl bg-[#1A1D24]/90 p-4 backdrop-blur-sm border border-white/5"
-    >
-      <div className="text-[10px] font-medium text-white/70 mb-3 uppercase tracking-wider">
-        Applying Guidance
-      </div>
-
-      <div className="space-y-2">
-        <div className="text-[9px] text-white/50 font-medium uppercase tracking-wider">
-          Basics
-        </div>
-
-        <div className="flex items-center justify-between text-[9px]">
-          <span className="text-white/50">Tone of Voice</span>
-          <div className="flex items-center gap-1">
-            <span className="text-white/70">Professional</span>
-            <ChevronDown className="h-3 w-3 text-white/40" />
-          </div>
-        </div>
-
-        <div className="flex items-center justify-between text-[9px]">
-          <span className="text-white/50">Answer Length</span>
-          <div className="flex items-center gap-1">
-            <span className="text-white/70">Standard</span>
-            <ChevronDown className="h-3 w-3 text-white/40" />
-          </div>
-        </div>
-
-        <div className="flex items-center gap-2 text-[9px] text-white/50 mt-2">
-          <div className="h-3 w-3 rounded bg-white/10" />
-          <span>Context and Clarification</span>
-        </div>
-
-        <div className="flex items-center justify-between text-[9px] mt-2 bg-white/5 rounded-lg px-2 py-1.5">
-          <span className="text-white/60">Follow ID Verification Protocols</span>
-          <ChevronRight className="h-3 w-3 text-white/40" />
-        </div>
-
-        <div className="flex items-center justify-between text-[9px] bg-white/5 rounded-lg px-2 py-1.5">
-          <span className="text-white/60">Clearly Stat</span>
-          <span className="text-white/40 text-[8px]">1 For Each Reque</span>
-          <ChevronRight className="h-3 w-3 text-white/40" />
-        </div>
-      </div>
-    </motion.div>
-  );
-}
-
-// Performance Graph Card
-function PerformanceGraphCard() {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.55 }}
-      className="rounded-xl bg-[#1A1D24]/90 p-4 backdrop-blur-sm border border-white/5"
-    >
-      <div className="text-[9px] text-white/50 mb-3 uppercase tracking-wider">
-        Fin AI Agent Performance Over Time
-      </div>
-
-      <div className="text-[8px] text-white/40 mb-2">65%</div>
-
-      {/* Graph Lines */}
-      <div className="relative h-16">
-        <svg
-          className="w-full h-full"
-          viewBox="0 0 200 60"
-          preserveAspectRatio="none"
-        >
-          {/* Grid lines */}
-          <line
-            x1="0"
-            y1="15"
-            x2="200"
-            y2="15"
-            stroke="rgba(255,255,255,0.1)"
-            strokeWidth="0.5"
-          />
-          <line
-            x1="0"
-            y1="30"
-            x2="200"
-            y2="30"
-            stroke="rgba(255,255,255,0.1)"
-            strokeWidth="0.5"
-          />
-          <line
-            x1="0"
-            y1="45"
-            x2="200"
-            y2="45"
-            stroke="rgba(255,255,255,0.1)"
-            strokeWidth="0.5"
-          />
-
-          {/* Main performance line */}
-          <path
-            d="M0,45 Q30,40 50,35 T100,25 T150,20 T200,15"
-            fill="none"
-            stroke="#10B981"
-            strokeWidth="1.5"
-          />
-          {/* Secondary line */}
-          <path
-            d="M0,50 Q30,48 50,45 T100,40 T150,35 T200,30"
-            fill="none"
-            stroke="#6B7280"
-            strokeWidth="1"
-            strokeDasharray="2,2"
-          />
-          {/* Third line */}
-          <path
-            d="M0,55 Q30,52 50,48 T100,42 T150,38 T200,35"
-            fill="none"
-            stroke="#4B5563"
-            strokeWidth="1"
-          />
-        </svg>
-      </div>
-
-      <div className="flex justify-between mt-2 text-[7px] text-white/30">
-        <span>April 1</span>
-        <span>April 14</span>
-        <span>April 28</span>
-        <span>May 12</span>
-        <span>May 26</span>
-      </div>
-    </motion.div>
-  );
-}
-
-// Background Dashboard Elements
-function BackgroundDashboard() {
-  return (
-    <div className="absolute inset-0 overflow-hidden opacity-20">
-      {/* Grid pattern */}
+    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      {/* Base dark gradient */}
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: `
-            linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)
-          `,
-          backgroundSize: "40px 40px",
+          background:
+            "linear-gradient(180deg, #19141a 0%, #1e1820 30%, #2d2028 60%, #19141a 100%)",
         }}
       />
 
-      {/* Random dashboard elements */}
-      <div className="absolute top-[10%] left-[5%] w-32 h-20 rounded-lg border border-white/10 bg-white/5" />
-      <div className="absolute top-[5%] right-[10%] w-40 h-24 rounded-lg border border-white/10 bg-white/5" />
-      <div className="absolute bottom-[30%] left-[8%] w-28 h-16 rounded-lg border border-white/10 bg-white/5" />
-      <div className="absolute top-[15%] right-[5%] w-24 h-32 rounded-lg border border-white/10 bg-white/5" />
+      {/* Central glow effect */}
+      <div
+        className="absolute left-1/2 top-[60%] -translate-x-1/2 w-[120%] h-[60%]"
+        style={{
+          background:
+            "radial-gradient(ellipse 50% 40% at 50% 50%, rgba(255, 140, 100, 0.15) 0%, rgba(180, 100, 120, 0.08) 40%, transparent 70%)",
+        }}
+      />
 
-      {/* Bar chart silhouette */}
-      <div className="absolute top-[20%] left-[3%] flex items-end gap-1 h-12">
-        {[8, 12, 6, 14, 10, 8].map((h, i) => (
-          <div
-            key={i}
-            className="w-2 bg-white/10 rounded-sm"
-            style={{ height: `${h * 3}px` }}
-          />
-        ))}
-      </div>
-
-      {/* Line chart silhouette */}
-      <div className="absolute top-[8%] right-[15%]">
-        <svg width="80" height="40" viewBox="0 0 80 40">
-          <path
-            d="M0,30 Q20,25 30,20 T50,15 T80,10"
-            fill="none"
-            stroke="rgba(255,255,255,0.1)"
-            strokeWidth="1"
-          />
-        </svg>
-      </div>
+      {/* Secondary glow */}
+      <div
+        className="absolute left-1/2 top-[70%] -translate-x-1/2 w-[80%] h-[40%]"
+        style={{
+          background:
+            "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(200, 120, 100, 0.1) 0%, transparent 60%)",
+        }}
+      />
     </div>
   );
 }
 
-// Main Component
 export default function FinAiHero({
-  mode = "light",
-  headlinePart1 = "The best-performing AI\nAgent for",
-  headlinePart2 = "Financial\nServices support",
-  description = "Fin is the best-performing AI Agent for financial services\n—resolving complex queries like card issues and\ndisputes with unmatched accuracy. With a complete,\nconfigurable AI Agent System that gives you full control,\nyou can stay compliant and scale your support\nconfidently.",
-  primaryCtaText = "Start free trial",
-  secondaryCtaText = "View demo",
-  onPrimaryCtaClick,
-  onSecondaryCtaClick,
+  mode = "dark",
+  navItems = defaultNavItems,
+  rightNavItems = defaultRightNavItems,
+  headline = "The #1 AI Agent\nfor customer service",
+  subheadlines = [
+    "#1 IN PERFORMANCE BENCHMARKS",
+    "#1 IN COMPETITIVE BAKE-OFFS",
+    "#1 RANKING ON G2",
+  ],
+  primaryCta = { text: "Start free trial", href: "#" },
+  secondaryCta = { text: "View demo", href: "#" },
+  logos = defaultLogos,
 }: FinAiHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-[#0A0E1A]">
-      {/* Background Dashboard */}
-      <BackgroundDashboard />
+    <section
+      className="relative min-h-screen w-full overflow-hidden"
+      style={{ backgroundColor: colors.background }}
+    >
+      {/* Background */}
+      <GlowBackground />
 
-      {/* Content */}
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16 pb-12">
-        {/* Hero Text Section */}
-        <div className="max-w-2xl mb-16">
-          {/* Headline */}
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-instrument-serif text-4xl sm:text-5xl lg:text-6xl leading-[1.1] mb-6"
-          >
-            <span className="text-white whitespace-pre-line">{headlinePart1}</span>{" "}
-            <span
-              className="whitespace-pre-line"
-              style={{
-                background:
-                  "linear-gradient(135deg, #E8734A 0%, #F97316 50%, #D97706 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
-              }}
+      {/* Navigation */}
+      <motion.nav
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="relative z-10 flex items-center justify-between px-6 py-4 sm:px-8 lg:px-12"
+      >
+        {/* Left: Logo + Nav Items */}
+        <div className="flex items-center gap-8">
+          {/* Logo */}
+          <a href="#" className="flex items-center gap-2">
+            <SparkLogo className="w-6 h-6 text-white" />
+            <ChevronDown className="w-4 h-4 text-white/60" />
+          </a>
+
+          {/* Separator */}
+          <div className="hidden lg:block w-px h-5 bg-white/20" />
+
+          {/* Nav Items */}
+          <div className="hidden lg:flex items-center gap-6">
+            {navItems.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="flex items-center gap-1 text-sm text-white/80 hover:text-white transition-colors"
+              >
+                {item.label}
+                {item.hasDropdown && (
+                  <ChevronDown className="w-3.5 h-3.5" />
+                )}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Right Nav Items */}
+        <div className="flex items-center gap-6">
+          {rightNavItems.slice(0, -1).map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              className="hidden sm:block text-sm text-white/80 hover:text-white transition-colors"
             >
-              {headlinePart2}
+              {item.label}
+            </a>
+          ))}
+          <a
+            href={rightNavItems[rightNavItems.length - 1]?.href || "#"}
+            className="text-sm text-white bg-white/10 hover:bg-white/15 px-4 py-2 rounded-full transition-colors"
+          >
+            {rightNavItems[rightNavItems.length - 1]?.label || "Start free trial"}
+          </a>
+        </div>
+      </motion.nav>
+
+      {/* Hero Content */}
+      <div className="relative z-10 flex flex-col items-center justify-center px-6 pt-16 pb-8 sm:pt-24 lg:pt-28">
+        {/* Spark Icon */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="mb-8"
+        >
+          <SparkLogo className="w-12 h-12 sm:w-14 sm:h-14 text-white" />
+        </motion.div>
+
+        {/* Headline */}
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif italic leading-[1.1] tracking-tight mb-8"
+          style={{
+            color: colors.text,
+            fontFamily: "'Instrument Serif', Georgia, serif",
+          }}
+        >
+          {headline.split("\n").map((line, i) => (
+            <span key={i}>
+              {line}
+              {i < headline.split("\n").length - 1 && <br />}
             </span>
-          </motion.h1>
+          ))}
+        </motion.h1>
 
-          {/* Description */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-sm sm:text-base text-white/60 leading-relaxed mb-8 whitespace-pre-line max-w-lg"
-          >
-            {description}
-          </motion.p>
-
-          {/* CTA Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-wrap items-center gap-3"
-          >
-            <button
-              onClick={onPrimaryCtaClick}
-              className="rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition-all hover:bg-white/90 hover:shadow-lg hover:shadow-white/10"
+        {/* Subheadlines */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="flex flex-wrap justify-center gap-x-8 gap-y-2 mb-10"
+        >
+          {subheadlines.map((text, i) => (
+            <span
+              key={i}
+              className="text-xs sm:text-sm tracking-[0.2em] uppercase"
+              style={{ color: colors.textMuted }}
             >
-              {primaryCtaText}
-            </button>
-            <button
-              onClick={onSecondaryCtaClick}
-              className="rounded-full border border-white/30 bg-black px-6 py-3 text-sm font-medium text-white transition-all hover:border-white/50 hover:bg-white/5"
-            >
-              {secondaryCtaText}
-            </button>
-          </motion.div>
-        </div>
+              {text}
+            </span>
+          ))}
+        </motion.div>
 
-        {/* Cards Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6 items-start">
-          {/* Left Column */}
-          <div className="space-y-4">
-            <TransactionDisputeCard />
-            <UserInfoCard />
-            <IdentityVerificationCard />
-            <TransactionResultsCard />
-          </div>
+        {/* CTA Buttons */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="flex flex-wrap justify-center gap-4 mb-16"
+        >
+          <a
+            href={primaryCta.href}
+            className="px-6 py-3 text-sm font-medium rounded-full transition-all duration-200 hover:opacity-90 hover:scale-105"
+            style={{
+              backgroundColor: colors.buttonPrimary,
+              color: colors.buttonPrimaryText,
+            }}
+          >
+            {primaryCta.text}
+          </a>
+          <a
+            href={secondaryCta.href}
+            className="px-6 py-3 text-sm font-medium rounded-full border transition-all duration-200 hover:bg-white/5"
+            style={{
+              backgroundColor: colors.buttonSecondary,
+              color: colors.text,
+              borderColor: colors.buttonSecondaryBorder,
+            }}
+          >
+            {secondaryCta.text}
+          </a>
+        </motion.div>
 
-          {/* Center Column - Chat Interface */}
-          <div className="flex justify-center">
-            <ChatInterfaceCard />
+        {/* Logo Marquee */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="w-full max-w-4xl mx-auto overflow-hidden"
+        >
+          <div className="flex items-center justify-center gap-8 sm:gap-12 lg:gap-16 flex-wrap">
+            {logos.map((logo, i) => (
+              <span
+                key={i}
+                className="text-base sm:text-lg font-medium tracking-wide whitespace-nowrap"
+                style={{
+                  color: i % 2 === 0 ? "rgba(255,255,255,0.4)" : "rgba(255,255,255,0.7)",
+                  fontFamily: "'Inter', sans-serif",
+                }}
+              >
+                {logo.name}
+              </span>
+            ))}
           </div>
-
-          {/* Right Column */}
-          <div className="space-y-4">
-            <TransactionSupportCard />
-            <GuidanceCard />
-            <PerformanceGraphCard />
-          </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

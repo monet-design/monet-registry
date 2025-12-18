@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: conversion-integrations-section
+category: feature-showcase
+
+images:
+  preview: agent-input/unsection-hero-sections/conversion-integrations-section-design.jpg
+
+freeformKeywords:
+  - integrations
+  - one-click
+  - CRM
+  - data warehouse
+  - CDP
+  - analytics
+  - AI
+  - campaigns
+  - Salesforce
+  - Snowflake
+  - Slack
+  - HubSpot
+  - Zapier
+  - Google Ads
+  - tech
+  - saas
+
+fontFamily:
+  - Instrument Serif
+
+createdAt: "2025-12-18T11:54:15Z"
+status: stable
+language: en
+
+tags:
+  functional: []
+  style:
+    - dark-theme
+    - modern
+    - minimal
+  layout:
+    - two-column
+    - full-width
+  industry:
+    - saas
+    - ai

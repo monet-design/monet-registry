@@ -4,9 +4,26 @@
 // CUSTOMIZATION - 이 섹션의 값들을 수정하여 프로젝트에 맞게 조정하세요
 // ============================================================================
 
+/**
+ * 커스텀 색상 (브랜드 컬러)
+ */
 const COLORS = {
-  light: {},
-  dark: {},
+  light: {
+    background: "#0a0d1c",
+    accent: "#4B9FFF",
+    textPrimary: "#FFFFFF",
+    textSecondary: "#8B8D94",
+    cardBg: "#151825",
+    cardBorder: "#2a2d3a",
+  },
+  dark: {
+    background: "#0a0d1c",
+    accent: "#4B9FFF",
+    textPrimary: "#FFFFFF",
+    textSecondary: "#8B8D94",
+    cardBg: "#151825",
+    cardBorder: "#2a2d3a",
+  },
 } as const;
 
 const IMAGES = {} as const;
@@ -16,432 +33,440 @@ const IMAGES = {} as const;
 // ============================================================================
 
 import { motion } from "motion/react";
-import { ChevronDown, Play } from "lucide-react";
-import "./font.css";
+import { ChevronDown, Play, ArrowUpRight } from "lucide-react";
 
 // Types
 interface NavItem {
   label: string;
-  href: string;
+  href?: string;
   hasDropdown?: boolean;
 }
 
 interface FinAiTasksHeroProps {
   mode?: "light" | "dark";
-  logoIcon?: React.ReactNode;
   headline?: {
-    prefix?: string;
-    highlight?: string;
-    conjunction?: string;
-    action?: string;
-    object?: string;
+    serif: string;
+    sans: string;
   };
-  description?: {
-    bold?: string;
-    regular?: string;
-  };
-  primaryCta?: {
-    text: string;
-    onClick?: () => void;
-  };
-  secondaryCta?: {
-    text: string;
-    onClick?: () => void;
-  };
+  description?: string;
+  primaryCtaText?: string;
+  secondaryCtaText?: string;
   navItems?: NavItem[];
-  rightNavItems?: { label: string; href: string }[];
+  onPrimaryCtaClick?: () => void;
+  onSecondaryCtaClick?: () => void;
 }
 
-// Logo Icon Component
-function LogoIcon() {
+// Default nav items
+const defaultNavItems: NavItem[] = [
+  { label: "Home" },
+  { label: "Product", hasDropdown: true },
+  { label: "AI Technology", hasDropdown: true },
+  { label: "Solutions", hasDropdown: true },
+  { label: "Customers" },
+  { label: "Resources", hasDropdown: true },
+  { label: "Pricing" },
+];
+
+// Logo Component
+function FinLogo({ className = "w-6 h-6" }: { className?: string }) {
   return (
-    <svg
-      width="28"
-      height="28"
-      viewBox="0 0 28 28"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect x="2" y="2" width="6" height="6" rx="1" fill="#FF6B6B" />
-      <rect x="11" y="2" width="6" height="6" rx="1" fill="#FF6B6B" />
-      <rect x="20" y="2" width="6" height="6" rx="1" fill="#FF6B6B" />
-      <rect x="2" y="11" width="6" height="6" rx="1" fill="#FF6B6B" />
-      <rect x="11" y="11" width="6" height="6" rx="1" fill="#FF6B6B" />
-      <rect x="20" y="11" width="6" height="6" rx="1" fill="#FF6B6B" />
-      <rect x="2" y="20" width="6" height="6" rx="1" fill="#FF6B6B" />
-      <rect x="11" y="20" width="6" height="6" rx="1" fill="#FF6B6B" />
+    <svg className={className} viewBox="0 0 24 24" fill="none">
+      <path
+        d="M12 2L2 7v10l10 5 10-5V7L12 2z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        fill="none"
+      />
+      <path
+        d="M12 2v20M2 7l10 5 10-5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
     </svg>
   );
 }
 
-// Grid Background Component
-function GridBackground() {
-  return (
-    <div className="absolute inset-0 overflow-hidden">
-      {/* Diagonal grid lines */}
-      <svg
-        className="absolute inset-0 w-full h-full opacity-[0.08]"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <defs>
-          <pattern
-            id="diagonal-grid"
-            width="60"
-            height="60"
-            patternUnits="userSpaceOnUse"
-            patternTransform="rotate(45)"
-          >
-            <line
-              x1="0"
-              y1="0"
-              x2="0"
-              y2="60"
-              stroke="white"
-              strokeWidth="0.5"
-            />
-            <line
-              x1="0"
-              y1="0"
-              x2="60"
-              y2="0"
-              stroke="white"
-              strokeWidth="0.5"
-            />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#diagonal-grid)" />
-      </svg>
-
-      {/* Gradient overlay for depth */}
-      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-[#0A0F1C]/80" />
-    </div>
-  );
-}
-
-// Code Body Panel
-function CodeBodyPanel({ delay = 0 }: { delay?: number }) {
+// Code Interface Illustration
+function CodeInterfaceIllustration() {
   return (
     <motion.div
-      initial={{ opacity: 0, x: 30, rotateY: -5 }}
-      animate={{ opacity: 1, x: 0, rotateY: 0 }}
-      transition={{ delay, duration: 0.7, ease: "easeOut" }}
-      className="absolute top-[10%] right-[5%] w-[340px] bg-[#0D1117] border border-[#30363D] rounded-lg overflow-hidden shadow-2xl"
-      style={{ transform: "perspective(1000px)" }}
-    >
-      <div className="flex items-center gap-2 px-3 py-2 bg-[#161B22] border-b border-[#30363D]">
-        <span className="text-[10px] text-[#8B949E] tracking-wider uppercase">
-          Code Body
-        </span>
-        <div className="ml-auto flex items-center gap-2">
-          <button className="flex items-center gap-1 bg-[#238636] text-white text-[10px] px-2 py-1 rounded">
-            <Play size={10} />
-            Retest
-          </button>
-        </div>
-      </div>
-      <div className="p-3 font-mono text-[11px] leading-relaxed">
-        <div className="flex">
-          <span className="text-[#6E7681] w-6 text-right mr-3 select-none">1</span>
-          <span>
-            <span className="text-[#FF7B72]">from</span>{" "}
-            <span className="text-[#D2A8FF]">datetime</span>{" "}
-            <span className="text-[#FF7B72]">import</span>{" "}
-            <span className="text-[#79C0FF]">datetime</span>,{" "}
-            <span className="text-[#79C0FF]">date</span>
-          </span>
-        </div>
-        <div className="flex">
-          <span className="text-[#6E7681] w-6 text-right mr-3 select-none">2</span>
-          <span className="text-[#8B949E]"></span>
-        </div>
-        <div className="flex">
-          <span className="text-[#6E7681] w-6 text-right mr-3 select-none">3</span>
-          <span>
-            <span className="text-[#FF7B72]">def</span>{" "}
-            <span className="text-[#D2A8FF]">check_exchange</span>
-            <span className="text-[#C9D1D9]">(order,</span>
-          </span>
-        </div>
-        <div className="flex">
-          <span className="text-[#6E7681] w-6 text-right mr-3 select-none">4</span>
-          <span className="text-[#C9D1D9] ml-8">now=None):</span>
-        </div>
-        <div className="flex">
-          <span className="text-[#6E7681] w-6 text-right mr-3 select-none">5</span>
-          <span className="text-[#C9D1D9] ml-4">
-            exchange_status(order,
-          </span>
-        </div>
-        <div className="flex">
-          <span className="text-[#6E7681] w-6 text-right mr-3 select-none">6</span>
-          <span className="text-[#C9D1D9] ml-8">
-            now = now <span className="text-[#FF7B72]">or</span> datetime.now()
-          </span>
-        </div>
-      </div>
-    </motion.div>
-  );
-}
-
-// Order Exchange Panel
-function OrderExchangePanel({ delay = 0 }: { delay?: number }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay, duration: 0.6, ease: "easeOut" }}
-      className="absolute top-[5%] right-[25%] w-[200px] bg-[#0D1117] border border-[#30363D] rounded-lg overflow-hidden shadow-xl"
-    >
-      <div className="flex items-center gap-2 px-3 py-2 bg-[#161B22] border-b border-[#30363D]">
-        <div className="w-3 h-3 rounded bg-[#238636]" />
-        <span className="text-[10px] text-[#8B949E] tracking-wider uppercase">
-          Order Exchange
-        </span>
-      </div>
-      <div className="p-3">
-        <div className="border-l-2 border-[#30363D] pl-3 space-y-1">
-          <div className="h-2 w-16 bg-[#30363D] rounded" />
-          <div className="h-2 w-24 bg-[#30363D] rounded" />
-          <div className="h-2 w-20 bg-[#30363D] rounded" />
-        </div>
-      </div>
-    </motion.div>
-  );
-}
-
-// Instructions Panel
-function InstructionsPanel({ delay = 0 }: { delay?: number }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, x: 20 }}
+      initial={{ opacity: 0, x: 50 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ delay, duration: 0.6, ease: "easeOut" }}
-      className="absolute bottom-[20%] right-[8%] w-[280px] bg-[#0D1117] border border-[#30363D] rounded-lg overflow-hidden shadow-xl"
+      transition={{ duration: 0.8, delay: 0.3 }}
+      className="relative w-full h-full"
     >
-      <div className="flex items-center gap-2 px-3 py-2 bg-[#161B22] border-b border-[#30363D]">
-        <span className="text-[10px] text-[#8B949E] tracking-wider uppercase">
-          Instructions
-        </span>
+      {/* Background Grid Lines */}
+      <div className="absolute inset-0 overflow-hidden">
+        <svg className="absolute inset-0 w-full h-full opacity-20" viewBox="0 0 600 500">
+          {/* Vertical lines */}
+          {[...Array(15)].map((_, i) => (
+            <motion.line
+              key={`v-${i}`}
+              x1={i * 40 + 20}
+              y1="0"
+              x2={i * 40 + 20}
+              y2="500"
+              stroke="#4B9FFF"
+              strokeWidth="0.5"
+              initial={{ pathLength: 0, opacity: 0 }}
+              animate={{ pathLength: 1, opacity: 0.3 }}
+              transition={{ duration: 1, delay: i * 0.05 }}
+            />
+          ))}
+          {/* Horizontal lines */}
+          {[...Array(12)].map((_, i) => (
+            <motion.line
+              key={`h-${i}`}
+              x1="0"
+              y1={i * 40 + 20}
+              x2="600"
+              y2={i * 40 + 20}
+              stroke="#4B9FFF"
+              strokeWidth="0.5"
+              initial={{ pathLength: 0, opacity: 0 }}
+              animate={{ pathLength: 1, opacity: 0.2 }}
+              transition={{ duration: 1, delay: i * 0.05 }}
+            />
+          ))}
+        </svg>
       </div>
-      <div className="p-3 space-y-3 text-[11px]">
-        <div className="flex gap-2">
-          <span className="text-[#6E7681]">1.</span>
-          <span className="text-[#C9D1D9]">
-            <span className="text-[#79C0FF]">USE:</span>{" "}
-            <span className="text-[#A5D6FF]">GET_ORDER_INFO</span>{" "}
-            <span className="text-[#8B949E]">to get the customer&apos;s</span>
-          </span>
+
+      {/* ORDER EXCHANGE Card - Top Right */}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.5 }}
+        className="absolute top-4 right-4 w-48 bg-[#151825] rounded-lg border border-[#2a2d3a] shadow-xl overflow-hidden"
+      >
+        <div className="px-3 py-2 border-b border-[#2a2d3a] flex items-center gap-2">
+          <div className="w-2 h-2 rounded-full bg-[#4B9FFF]" />
+          <span className="text-[10px] font-mono text-white tracking-wider">ORDER EXCHANGE</span>
         </div>
-        <div className="flex gap-2">
-          <span className="text-[#6E7681]">2.</span>
-          <span className="text-[#C9D1D9]">
-            <span className="text-[#8B949E]">After the customer selects the order,</span>
-          </span>
+        <div className="p-3 text-[8px] font-mono text-[#8B8D94] space-y-1">
+          <p>Use this task when any customer</p>
+          <p>expresses the intention of</p>
+          <p>exchanging an order.</p>
         </div>
-      </div>
+      </motion.div>
+
+      {/* A_PATH Card - Far Right */}
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, delay: 0.6 }}
+        className="absolute top-4 -right-8 w-32 bg-[#151825] rounded-lg border border-[#2a2d3a] shadow-xl overflow-hidden"
+      >
+        <div className="px-2 py-1 border-b border-[#2a2d3a]">
+          <span className="text-[8px] font-mono text-[#8B8D94]">A_PATH</span>
+        </div>
+        <div className="p-2 text-[7px] font-mono text-[#8B8D94]">
+          <p>INSTRUCTIONS</p>
+          <p className="mt-1 text-[6px]">Identify the customer&apos;s order</p>
+          <p className="text-[6px]">ID only if it qualifies for</p>
+          <p className="text-[6px]">exchange. If not provided, deny</p>
+        </div>
+      </motion.div>
+
+      {/* RETEST Button */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.8 }}
+        className="absolute top-28 right-12"
+      >
+        <div className="flex items-center gap-1 px-2 py-1 bg-[#1a1d2e] rounded border border-[#3a3d4e]">
+          <ArrowUpRight className="w-2.5 h-2.5 text-[#4B9FFF]" />
+          <span className="text-[8px] font-mono text-white">RETEST</span>
+        </div>
+      </motion.div>
+
+      {/* CODE BODY Card - Center */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.7, delay: 0.4 }}
+        className="absolute top-32 left-8 w-72 bg-[#0d1017] rounded-lg border border-[#2a2d3a] shadow-2xl overflow-hidden"
+      >
+        <div className="px-3 py-2 border-b border-[#2a2d3a] flex items-center justify-between">
+          <span className="text-[10px] font-mono text-[#8B8D94] tracking-wider">CODE BODY</span>
+          <span className="text-[8px] font-mono text-[#4B9FFF]">TRAIN FIN OR EXAMPLE INPUT</span>
+        </div>
+        <div className="p-3 text-[9px] font-mono leading-relaxed">
+          <div className="flex">
+            <span className="text-[#5c6370] w-6 select-none">1</span>
+            <span><span className="text-[#c678dd]">from</span> <span className="text-[#e5c07b]">datetime</span> <span className="text-[#c678dd]">import</span> <span className="text-[#61afef]">datetime</span>, <span className="text-[#61afef]">timedelta</span></span>
+          </div>
+          <div className="flex">
+            <span className="text-[#5c6370] w-6 select-none">2</span>
+            <span className="text-[#5c6370]"></span>
+          </div>
+          <div className="flex">
+            <span className="text-[#5c6370] w-6 select-none">3</span>
+            <span><span className="text-[#c678dd]">def</span> <span className="text-[#61afef]">check_exchange_status</span>(<span className="text-[#e5c07b]">order</span>,</span>
+          </div>
+          <div className="flex">
+            <span className="text-[#5c6370] w-6 select-none">4</span>
+            <span className="pl-8"><span className="text-[#e5c07b]">nowdatetime</span>):</span>
+          </div>
+          <div className="flex">
+            <span className="text-[#5c6370] w-6 select-none">5</span>
+            <span className="pl-4"><span className="text-[#e5c07b]">now</span> = <span className="text-[#e5c07b]">now</span> <span className="text-[#c678dd]">or</span> <span className="text-[#61afef]">datetime</span>.<span className="text-[#61afef]">now</span>()</span>
+          </div>
+          <div className="flex">
+            <span className="text-[#5c6370] w-6 select-none">6</span>
+            <span className="text-[#5c6370]"></span>
+          </div>
+          <div className="flex">
+            <span className="text-[#5c6370] w-6 select-none">7</span>
+            <span className="pl-4"><span className="text-[#5c6370]"># Step 1: Product check</span></span>
+          </div>
+          <div className="flex">
+            <span className="text-[#5c6370] w-6 select-none">8</span>
+            <span className="pl-4"><span className="text-[#c678dd]">if</span> <span className="text-[#e5c07b]">order</span>.<span className="text-[#61afef]">get</span>(<span className="text-[#98c379]">&quot;product&quot;</span>,</span>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* INSTRUCTIONS Card - Bottom Left */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.6 }}
+        className="absolute bottom-20 left-4 w-80 bg-[#151825] rounded-lg border border-[#2a2d3a] shadow-xl overflow-hidden"
+      >
+        <div className="px-3 py-2 border-b border-[#2a2d3a]">
+          <span className="text-[10px] font-mono text-[#8B8D94] tracking-wider">INSTRUCTIONS</span>
+        </div>
+        <div className="p-3 text-[9px] text-[#8B8D94] space-y-2">
+          <div className="flex gap-2">
+            <span className="text-white">1.</span>
+            <p>
+              <span className="text-[#4B9FFF] bg-[#1a2535] px-1 rounded text-[8px]">USE GET ORDER INFO</span>
+              {" "}to get the customer&apos;s Shopify orders, list them with ID,
+              product name, product category, and time. then ask which to exchange.
+            </p>
+          </div>
+          <div className="flex gap-2">
+            <span className="text-white">2.</span>
+            <p>
+              After the customer selects the order.
+              and <span className="text-[#4B9FFF]">↑ UPDATE</span>: selects the order. <span className="text-[#4B9FFF]">↑ UPDATE SELECT/REPL ↑ Update</span> general user.
+            </p>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* Chat Bubble */}
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.9 }}
+        className="absolute bottom-8 left-20 bg-[#2a2d3a] rounded-2xl px-4 py-2 shadow-lg"
+      >
+        <span className="text-[10px] text-white">Can I exchange my order?</span>
+      </motion.div>
+
+      {/* Connection Lines */}
+      <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{ zIndex: 1 }}>
+        <motion.path
+          d="M180 160 L180 200 L200 200"
+          stroke="#4B9FFF"
+          strokeWidth="1"
+          fill="none"
+          initial={{ pathLength: 0 }}
+          animate={{ pathLength: 1 }}
+          transition={{ duration: 1, delay: 0.8 }}
+        />
+        <motion.path
+          d="M300 280 L300 320"
+          stroke="#4B9FFF"
+          strokeWidth="1"
+          fill="none"
+          initial={{ pathLength: 0 }}
+          animate={{ pathLength: 1 }}
+          transition={{ duration: 0.8, delay: 1 }}
+        />
+      </svg>
     </motion.div>
   );
 }
-
-// Chat Bubble Component
-function ChatBubble({ delay = 0 }: { delay?: number }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20, scale: 0.9 }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
-      transition={{ delay, duration: 0.5, ease: "easeOut" }}
-      className="absolute bottom-[10%] left-[35%] bg-[#F5F5F5] rounded-2xl rounded-bl-sm px-4 py-2.5 shadow-lg"
-    >
-      <span className="text-[#1A1A1A] text-sm">Can I exchange my order?</span>
-    </motion.div>
-  );
-}
-
-// Small Info Card
-function SmallInfoCard({ delay = 0 }: { delay?: number }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ delay, duration: 0.5, ease: "easeOut" }}
-      className="absolute top-[15%] right-[38%] bg-[#0D1117] border border-[#30363D] rounded-lg p-3 shadow-lg w-[160px]"
-    >
-      <div className="text-[9px] text-[#8B949E] uppercase tracking-wider mb-2">
-        Order Exchange
-      </div>
-      <div className="text-[10px] text-[#C9D1D9] leading-relaxed">
-        Use this task when any customer expresses the intention of exchanging an order.
-      </div>
-    </motion.div>
-  );
-}
-
-// Right Side Visual Component
-function RightSideVisual() {
-  return (
-    <div className="relative w-full h-full">
-      <OrderExchangePanel delay={0.4} />
-      <SmallInfoCard delay={0.5} />
-      <CodeBodyPanel delay={0.6} />
-      <InstructionsPanel delay={0.7} />
-      <ChatBubble delay={0.9} />
-    </div>
-  );
-}
-
-// Default navigation items
-const defaultNavItems: NavItem[] = [
-  { label: "Home", href: "#" },
-  { label: "Product", href: "#", hasDropdown: true },
-  { label: "AI Technology", href: "#", hasDropdown: true },
-  { label: "Solutions", href: "#", hasDropdown: true },
-  { label: "Customers", href: "#" },
-  { label: "Resources", href: "#", hasDropdown: true },
-  { label: "Pricing", href: "#" },
-];
-
-const defaultRightNavItems = [
-  { label: "Contact sales", href: "#" },
-  { label: "Sign in", href: "#" },
-  { label: "View demo", href: "#" },
-];
 
 // Main Component
 export default function FinAiTasksHero({
-  mode = "light",
-  logoIcon,
+  mode = "dark",
   headline = {
-    prefix: "The",
-    highlight: "#1 AI Agent",
-    conjunction: "for",
-    action: "resolving",
-    object: "complex queries",
+    serif: "The #1 AI Agent\nfor",
+    sans: "resolving\ncomplex queries",
   },
-  description = {
-    bold: "Fin automates the most complex customer queries",
-    regular:
-      "like refunds, transaction disputes, and technical troubleshooting with speed and reliability. Give Fin detailed, step-by-step instructions, and it will follow them exactly as expected\u2014reducing time to resolution and improving the customer experience.",
-  },
-  primaryCta = { text: "Start free trial" },
-  secondaryCta = { text: "View demo" },
+  description = "Fin automates the most complex customer queries like refunds, transaction disputes, and technical troubleshooting with speed and reliability. Give Fin detailed, step-by-step instructions, and it will follow them exactly as expected—reducing time to resolution and improving the customer experience.",
+  primaryCtaText = "Start free trial",
+  secondaryCtaText = "View demo",
   navItems = defaultNavItems,
-  rightNavItems = defaultRightNavItems,
+  onPrimaryCtaClick,
+  onSecondaryCtaClick,
 }: FinAiTasksHeroProps) {
+  const colors = COLORS[mode];
+
   return (
-    <section className="relative min-h-screen w-full bg-[#0A0F1C] font-inter overflow-hidden">
-      {/* Background Grid */}
-      <GridBackground />
+    <section
+      className="relative min-h-screen w-full overflow-hidden"
+      style={{ backgroundColor: colors.background }}
+    >
+      {/* Custom styles */}
+      <style jsx>{`
+        @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+        .font-serif-italic {
+          font-family: 'Instrument Serif', serif;
+          font-style: italic;
+        }
+
+        .font-sans-body {
+          font-family: 'Inter', sans-serif;
+        }
+      `}</style>
+
+      {/* Background Grid Pattern */}
+      <div className="absolute inset-0 overflow-hidden opacity-30">
+        <svg className="absolute left-0 top-0 h-full w-1/2" viewBox="0 0 400 800">
+          {[...Array(20)].map((_, i) => (
+            <motion.line
+              key={`bg-v-${i}`}
+              x1={i * 20}
+              y1="0"
+              x2={i * 20}
+              y2="800"
+              stroke="#4B9FFF"
+              strokeWidth="0.3"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.2 }}
+              transition={{ duration: 1, delay: i * 0.02 }}
+            />
+          ))}
+        </svg>
+      </div>
 
       {/* Navigation */}
-      <motion.nav
-        initial={{ opacity: 0, y: -10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="relative z-20 flex items-center justify-between px-6 py-4"
-      >
-        {/* Left: Logo */}
-        <div className="flex items-center gap-2">
-          {logoIcon || <LogoIcon />}
-          <ChevronDown size={14} className="text-white/60" />
-        </div>
-
-        {/* Center: Nav Items */}
-        <div className="hidden lg:flex items-center gap-6">
-          {navItems.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className="flex items-center gap-1 text-sm text-white/80 hover:text-white transition-colors"
-            >
-              {item.label}
-              {item.hasDropdown && (
-                <ChevronDown size={12} className="text-white/50" />
-              )}
-            </a>
-          ))}
-        </div>
-
-        {/* Right: Actions */}
-        <div className="flex items-center gap-4">
-          {rightNavItems.map((item, index) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className={`text-sm ${
-                index < rightNavItems.length - 1
-                  ? "text-white/70 hover:text-white"
-                  : "text-white/70 hover:text-white"
-              } transition-colors hidden sm:block`}
-            >
-              {item.label}
-            </a>
-          ))}
-          <button className="bg-white text-[#0A0F1C] px-4 py-2 rounded-full text-sm font-medium hover:bg-white/90 transition-colors">
-            {primaryCta.text}
-          </button>
-        </div>
-      </motion.nav>
-
-      {/* Main Content */}
-      <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center min-h-[calc(100vh-80px)]">
-        {/* Left Side: Text Content */}
-        <div className="w-full lg:w-1/2 px-6 lg:px-12 xl:px-20 py-12 lg:py-0">
-          {/* Headline */}
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1, duration: 0.7 }}
-            className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] tracking-tight"
-          >
-            <span className="font-instrument-serif italic text-white font-normal">
-              {headline.prefix}
-            </span>{" "}
-            <span className="text-white font-normal">{headline.highlight}</span>
-            <br />
-            <span className="font-instrument-serif italic text-white font-normal ml-16 sm:ml-24 lg:ml-32">
-              {headline.conjunction}
-            </span>{" "}
-            <span className="text-white font-light">{headline.action}</span>
-            <br />
-            <span className="text-white font-light">{headline.object}</span>
-          </motion.h1>
-
-          {/* Description */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.6 }}
-            className="mt-8 text-base lg:text-lg text-[#9CA3AF] leading-relaxed max-w-lg"
-          >
-            <span className="text-white font-medium">{description.bold}</span>{" "}
-            {description.regular}
-          </motion.p>
-
-          {/* CTAs */}
+      <nav className="relative z-30 w-full px-4 lg:px-8 py-4">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          {/* Logo */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.6 }}
-            className="mt-8 flex items-center gap-4"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex items-center gap-2"
           >
-            <button
-              onClick={primaryCta.onClick}
-              className="bg-white text-[#0A0F1C] px-6 py-3 rounded-full text-sm font-medium hover:bg-white/90 transition-colors"
-            >
-              {primaryCta.text}
+            <FinLogo className="w-6 h-6 text-white" />
+            <ChevronDown className="w-3 h-3 text-[#8B8D94]" />
+          </motion.div>
+
+          {/* Nav Items - Desktop */}
+          <div className="hidden lg:flex items-center gap-6">
+            {navItems.map((item, index) => (
+              <motion.a
+                key={item.label}
+                href={item.href || "#"}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.1 + index * 0.05 }}
+                className="flex items-center gap-1 text-sm text-[#8B8D94] hover:text-white transition-colors font-sans-body"
+              >
+                {item.label}
+                {item.hasDropdown && <ChevronDown className="w-3 h-3" />}
+              </motion.a>
+            ))}
+          </div>
+
+          {/* Auth Buttons */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex items-center gap-4"
+          >
+            <button className="text-sm text-[#8B8D94] hover:text-white transition-colors font-sans-body">
+              Contact sales
             </button>
-            <button
-              onClick={secondaryCta.onClick}
-              className="border border-white/30 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-white/10 transition-colors"
-            >
-              {secondaryCta.text}
+            <button className="text-sm text-[#8B8D94] hover:text-white transition-colors font-sans-body">
+              Sign in
+            </button>
+            <button className="text-sm text-[#8B8D94] hover:text-white transition-colors font-sans-body">
+              View demo
+            </button>
+            <button className="px-4 py-2 text-sm text-white bg-[#1a1d2e] hover:bg-[#252840] border border-[#2a2d3a] rounded-full transition-colors font-sans-body">
+              Start free trial
             </button>
           </motion.div>
         </div>
+      </nav>
 
-        {/* Right Side: Visual Elements */}
-        <div className="hidden lg:block w-1/2 h-[600px] relative">
-          <RightSideVisual />
+      {/* Main Content */}
+      <div className="relative z-20 max-w-7xl mx-auto px-4 lg:px-8 pt-16 lg:pt-24">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+          {/* Left Column - Text Content */}
+          <div className="space-y-8">
+            {/* Headline */}
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="text-5xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-tight"
+            >
+              {headline.serif.split("\n").map((line, i) => (
+                <span key={i} className="block font-serif-italic text-white">
+                  {line}
+                </span>
+              ))}
+              {headline.sans.split("\n").map((line, i) => (
+                <span
+                  key={`sans-${i}`}
+                  className="block font-sans-body font-normal"
+                  style={{ color: colors.textSecondary }}
+                >
+                  {line}
+                </span>
+              ))}
+            </motion.h1>
+
+            {/* Description */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="text-base lg:text-lg leading-relaxed font-sans-body max-w-lg"
+              style={{ color: colors.textSecondary }}
+            >
+              {description}
+            </motion.p>
+
+            {/* CTA Buttons */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="flex flex-wrap items-center gap-4"
+            >
+              <button
+                onClick={onPrimaryCtaClick}
+                className="px-6 py-3 text-sm font-medium text-[#0a0d1c] bg-white hover:bg-gray-100 border border-white rounded-full transition-colors font-sans-body"
+              >
+                {primaryCtaText}
+              </button>
+              <button
+                onClick={onSecondaryCtaClick}
+                className="flex items-center gap-2 px-6 py-3 text-sm font-medium text-white bg-[#1a1d2e] hover:bg-[#252840] border border-[#2a2d3a] rounded-full transition-colors font-sans-body"
+              >
+                <Play className="w-4 h-4 fill-current" />
+                {secondaryCtaText}
+              </button>
+            </motion.div>
+          </div>
+
+          {/* Right Column - Code Interface Illustration */}
+          <div className="relative h-[500px] lg:h-[600px]">
+            <CodeInterfaceIllustration />
+          </div>
         </div>
       </div>
     </section>

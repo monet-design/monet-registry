@@ -177,7 +177,7 @@ function CopilotChatMock() {
           <p>
             {`// Update method refactored to use the reusable function update() {`}
           </p>
-          <p className="pl-2">// Player 1 controls</p>
+          <p className="pl-2">{"// Player 1 controls"}</p>
           <p className="pl-2">
             updatePlayerVelocity(this.
             <span className="text-blue-400">player1</span>, this.cursors.left, t

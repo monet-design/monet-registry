@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: runwayml-com-logo-cloud-1
+category: logo-cloud
+
+images:
+  preview: scraped/runwayml-com-2025-12-19/sections/section-1.png
+
+freeformKeywords:
+  - partner logos
+  - enterprise clients
+  - Allstate
+  - AMC Networks
+  - Gut
+  - Legendary
+  - Lionsgate
+  - Ubisoft
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-19T09:50:07Z"
+status: stable
+language: en
+
+tags:
+  functional: []
+  style:
+    - light-theme
+    - minimal
+  layout:
+    - centered
+    - full-width
+  industry:
+    - ai
+    - enterprise
+
+parentPage: runwayml-com-landing
+
+source:
+  type: url
+  url: https://runwayml.com/
+  scrapedAt: "2025-12-19T09:50:07Z"
+  sectionIndex: 1

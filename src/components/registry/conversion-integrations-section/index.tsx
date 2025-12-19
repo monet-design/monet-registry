@@ -162,7 +162,6 @@ export default function ConversionIntegrationsSection({
 }: ConversionIntegrationsSectionProps) {
   return (
     <>
-      {/* eslint-disable-next-line @next/next/no-page-custom-font */}
       <link
         href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"
         rel="stylesheet"

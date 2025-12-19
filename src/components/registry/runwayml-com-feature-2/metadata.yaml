@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: runwayml-com-feature-2
+category: feature-showcase
+
+images:
+  preview: scraped/runwayml-com-2025-12-19/sections/section-2.png
+
+freeformKeywords:
+  - AI research
+  - Gen-4.5
+  - GWM Robotics
+  - GWM Worlds
+  - GWM Avatars
+  - video generation
+  - world models
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-19T09:50:04Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+  layout:
+    - grid
+    - responsive
+  industry:
+    - ai
+    - creative
+
+parentPage: runwayml-com-landing
+
+source:
+  type: url
+  url: https://runwayml.com/
+  scrapedAt: "2025-12-19T09:50:04Z"
+  sectionIndex: 2

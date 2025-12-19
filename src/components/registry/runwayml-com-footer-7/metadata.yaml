@@ -1,0 +1,44 @@
+schemaVersion: "2.0"
+name: runwayml-com-footer-7
+category: footer
+
+images:
+  preview: scraped/runwayml-com-2025-12-19/sections/section-7.png
+
+freeformKeywords:
+  - footer
+  - navigation
+  - products
+  - initiatives
+  - company
+  - social links
+  - legal
+  - dark theme
+  - multi-column
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-19T09:50:02Z"
+status: stable
+language: en
+
+tags:
+  functional: []
+  style:
+    - dark-theme
+    - modern
+  layout:
+    - grid
+    - responsive
+  industry:
+    - ai
+    - creative
+
+parentPage: runwayml-com-landing
+
+source:
+  type: url
+  url: https://runwayml.com/
+  scrapedAt: "2025-12-19T09:50:02Z"
+  sectionIndex: 7

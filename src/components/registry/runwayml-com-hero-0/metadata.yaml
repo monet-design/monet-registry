@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: runwayml-com-hero-0
+category: hero
+
+images:
+  preview: scraped/runwayml-com-2025-12-19/sections/section-0.png
+
+freeformKeywords:
+  - AI video generation
+  - world simulation
+  - generative AI
+  - runway
+  - machine learning
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-19T09:50:04Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - video
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - minimal
+  layout:
+    - full-width
+    - centered
+  industry:
+    - ai
+    - creative
+
+parentPage: runwayml-com-landing
+
+source:
+  type: url
+  url: https://runwayml.com/
+  scrapedAt: "2025-12-19T09:50:04Z"
+  sectionIndex: 0

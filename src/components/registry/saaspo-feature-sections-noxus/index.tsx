@@ -96,7 +96,7 @@ const DEFAULT_ACCORDION_ITEMS = [
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { ChevronUp, ChevronDown, Youtube, FileText, Image, FileIcon, HardDrive } from "lucide-react";
+import { ChevronUp, ChevronDown, Youtube, FileText, Image as ImageIcon, FileIcon, HardDrive } from "lucide-react";
 
 interface AccordionItem {
   id: string;
@@ -199,7 +199,7 @@ function NodeIcon({ icon, className }: { icon: string; className?: string }) {
     case "blog":
       return <FileText className={className} style={{ color: "#3B82F6" }} />;
     case "image":
-      return <Image className={className} style={{ color: "#10B981" }} />;
+      return <ImageIcon className={className} style={{ color: "#10B981" }} />;
     case "document":
       return <FileIcon className={className} style={{ color: "#3B82F6" }} />;
     case "drive":

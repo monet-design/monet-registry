@@ -1,0 +1,43 @@
+schemaVersion: "2.0"
+name: runwayml-com-feature-3
+category: feature-showcase
+
+images:
+  preview: scraped/runwayml-com-2025-12-19/sections/section-3.png
+
+freeformKeywords:
+  - Runway Research
+  - General World Models
+  - GWM-1
+  - Gen-4.5
+  - AI simulation
+  - world understanding
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-19T09:49:59Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - dark-theme
+    - modern
+    - gradient
+  layout:
+    - split-layout
+    - two-column
+  industry:
+    - ai
+    - research
+
+parentPage: runwayml-com-landing
+
+source:
+  type: url
+  url: https://runwayml.com/
+  scrapedAt: "2025-12-19T09:49:59Z"
+  sectionIndex: 3

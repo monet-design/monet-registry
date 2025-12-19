@@ -1,0 +1,48 @@
+schemaVersion: "2.0"
+name: runwayml-com-cta-6
+category: cta
+
+images:
+  preview: scraped/runwayml-com-2025-12-19/sections/section-6.png
+
+freeformKeywords:
+  - careers
+  - hiring
+  - team
+  - researchers
+  - engineers
+  - artists
+  - designers
+  - video
+  - cta
+  - ai
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-19T09:50:03Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - video
+  style:
+    - dark-theme
+    - modern
+    - gradient
+    - blurred-background
+  layout:
+    - centered
+    - full-width
+  industry:
+    - ai
+    - creative
+
+parentPage: runwayml-com-landing
+
+source:
+  type: url
+  url: https://runwayml.com/
+  scrapedAt: "2025-12-19T09:50:03Z"
+  sectionIndex: 6

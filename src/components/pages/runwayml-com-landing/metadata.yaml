@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: runwayml-com-landing
+category: page
+pageType: landing
+images:
+  preview: scraped/runwayml-com-2025-12-19/full-page.png
+title: runwayml.com Landing Page
+sections:
+  - id: runwayml-com-hero-0
+    category: hero
+    order: 0
+  - id: runwayml-com-logo-cloud-1
+    category: logo-cloud
+    order: 1
+  - id: runwayml-com-feature-2
+    category: feature
+    order: 2
+  - id: runwayml-com-feature-3
+    category: feature
+    order: 3
+  - id: runwayml-com-feature-4
+    category: feature
+    order: 4
+  - id: runwayml-com-testimonial-5
+    category: testimonial
+    order: 5
+  - id: runwayml-com-cta-6
+    category: cta
+    order: 6
+  - id: runwayml-com-footer-7
+    category: footer
+    order: 7
+source:
+  type: url
+  url: https://runwayml.com/
+  scrapedAt: "2025-12-19T09:52:20.960Z"
+pageInfo:
+  totalSections: 8
+freeformKeywords:
+  - complete landing page
+  - full page
+  - runwayml.com
+createdAt: "2025-12-19T09:52:20.960Z"
+status: stable
+draft: true

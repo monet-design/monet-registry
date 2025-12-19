@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: runwayml-com-testimonial-5
+category: testimonial
+
+images:
+  preview: scraped/runwayml-com-2025-12-19/sections/section-5.png
+
+freeformKeywords:
+  - case studies
+  - enterprise
+  - Lionsgate
+  - UCLA
+  - KPF
+  - House of David
+  - partnerships
+  - film production
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-19T09:50:33Z"
+status: stable
+language: en
+
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+  layout:
+    - grid
+    - responsive
+  industry:
+    - ai
+    - creative
+    - enterprise
+
+parentPage: runwayml-com-landing
+
+source:
+  type: url
+  url: https://runwayml.com/
+  scrapedAt: "2025-12-19T09:50:33Z"
+  sectionIndex: 5

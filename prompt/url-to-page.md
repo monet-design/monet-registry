@@ -15,6 +15,7 @@ npx tsx scripts/scrape/scrape-website.ts --url "{URL}"
 ```
 
 **생성되는 파일:**
+
 - `public/scraped/{domain}-{date}/full-page.png` - 전체 페이지 스크린샷
 - `public/scraped/{domain}-{date}/page.html` - HTML 소스
 - `public/scraped/{domain}-{date}/styles.json` - 계산된 CSS
@@ -36,11 +37,13 @@ ls public/scraped/{domain}-{date}/framer.json
 ```
 
 **Framer 사이트인 경우:**
+
 - `framer.json`의 `isFramerSite: true` 확인
 - `animations` 배열에서 각 요소의 애니메이션 패턴 파악
 - `elements` 배열에서 `framerName`으로 레이어 구조 이해
 
 **framer.json 구조:**
+
 ```json
 {
   "isFramerSite": true,
@@ -66,6 +69,7 @@ ls public/scraped/{domain}-{date}/framer.json
 ```
 
 **Framer 사이트 컴포넌트 생성 시:**
+
 - `--source-type "framer"` 옵션 사용
 - 애니메이션 정보를 `--tags-functional "animation, scroll-animation"` 등으로 포함
 - img-to-component에서 framer.json 정보를 참고하여 motion/react 애니메이션 구현
@@ -84,6 +88,7 @@ ls public/scraped/{domain}-{date}/framer.json
 6. `videos.json`을 확인하여 비디오가 포함된 섹션을 파악하세요.
 
 **섹션 카테고리 기준:**
+
 - `header`: 최상단 네비게이션 바
 - `hero`: 메인 배너, 첫 화면 콘텐츠
 - `feature`: 기능/서비스 소개
@@ -102,9 +107,11 @@ ls public/scraped/{domain}-{date}/framer.json
 각 섹션에 대해 img-to-component agent를 **병렬로** 호출하세요:
 
 **섹션 이름 규칙**: `{domain}-{category}-{index}`
+
 - 예: `example-com-hero-0`, `example-com-pricing-1`, `example-com-footer-2`
 
 **호출 예시 (일반 사이트):**
+
 ```
 이미지: public/scraped/{domain}-{date}/sections/section-0.png
 
@@ -124,6 +131,7 @@ python3 scripts/create-registry-component.py \
 ```
 
 **호출 예시 (Framer 사이트):**
+
 ```
 이미지: public/scraped/{domain}-{date}/sections/section-0.png
 
@@ -144,12 +152,14 @@ python3 scripts/create-registry-component.py \
 ```
 
 **Tags 카테고리 참조:**
+
 - `functional`: email-capture, lead-capture, video, hover-effect, animation, accordion, dropdown, search
 - `style`: light-theme, dark-theme, modern, minimal, bold, warm, elegant, serif, sans-serif, gradient, shadow
 - `layout`: centered, single-column, two-column, split-layout, grid, full-width, responsive, left-aligned
 - `industry`: saas, fintech, ai, startup, creative, travel, portfolio, agency
 
 **주의사항:**
+
 - 모든 섹션에 `--parent-page`, `--source-url`, `--section-index` 옵션 반드시 포함
 - **모든 섹션에 `--language` 옵션을 반드시 포함** (페이지 텍스트 언어에 따라 en/ko 지정)
 - **모든 섹션에 `--tags-*` 옵션을 반드시 포함** (이미지 분석 후 적절한 태그 생성)
@@ -171,6 +181,7 @@ npx tsx scripts/generate-page-component.ts \
 ```
 
 **Page Types:**
+
 - `landing`: 일반 랜딩 페이지 (기본값)
 - `lead-capture`: 리드 수집 페이지 (이메일/연락처 수집이 주목적)
 - `auth`: 인증 페이지 (로그인, 회원가입, 비밀번호 찾기)
@@ -197,26 +208,31 @@ pnpm metadata:build
 섹션에 비디오가 포함된 경우 (`videos.json`의 `sectionIndex` 확인):
 
 **YouTube 비디오:**
+
 - `videoId`를 사용하여 임베드 구현
 - 썸네일 이미지 경로: `videos/thumb-{index}.jpg`
 - 구현 방식: `<iframe>` 또는 `lite-youtube-embed` 라이브러리 권장
 
 **HTML5 비디오:**
+
 - `originalUrl`을 `<video>` 태그의 `src`로 사용
 - `posterUrl`이 있으면 `poster` 속성에 활용
 - 썸네일 경로: `videos/thumb-{index}.jpg` (다운로드된 경우)
 
 **img-to-component 호출 시:**
+
 - 비디오가 포함된 섹션은 `--tags-functional "video"` 옵션 추가
 - 섹션 HTML snippet에서 비디오 관련 코드 확인 후 구현에 반영
 
 ## 최종 결과물
 
 1. **Section 컴포넌트들**: `src/components/registry/{domain}-{category}-{index}/`
+
    - `index.tsx` - React 컴포넌트
    - `metadata.yaml` - 메타데이터 (parentPage, source 포함)
 
 2. **Page 컴포넌트**: `src/components/registry/pages/{domain}-landing/`
+
    - `index.tsx` - 섹션들을 조합한 전체 페이지
    - `metadata.yaml` - 페이지 메타데이터 (sections 배열 포함)
 

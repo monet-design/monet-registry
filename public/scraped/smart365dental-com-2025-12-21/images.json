@@ -1,0 +1,964 @@
+[
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/top_bn.jpg",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "매주 월,화,수,목,금,토,일요일 진료",
+    "width": 1903,
+    "height": 120,
+    "localPath": "images/image-0.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/m_top_bn.jpg",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "매주 월,화,수,목,금,토,일요일 진료",
+    "width": 720,
+    "height": 120,
+    "localPath": "images/image-1.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/pop_close.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "닫기",
+    "width": 25,
+    "height": 24,
+    "localPath": "images/image-2.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/logo.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "스마트365치과",
+    "width": 529,
+    "height": 79,
+    "localPath": "images/image-3.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/m_menu.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "모바일 메뉴 열기",
+    "width": 121,
+    "height": 120,
+    "localPath": "images/image-4.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/m_sangdam.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "전화상담",
+    "width": 120,
+    "height": 120,
+    "localPath": "images/image-5.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/data/editor/2511/14ddfb05bc670adc69d346c0d6ea0bc4_1764136304_1423.jpg",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "14ddfb05bc670adc69d346c0d6ea0bc4_1764136304_1423.jpg",
+    "width": 2083,
+    "height": 2083,
+    "localPath": "images/image-6.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/pc_sl02.jpg",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "환자분들의 편안한 치료를 위해 의식하진정요법을 통한 진료를 하고 있습니다.",
+    "width": 1903,
+    "height": 950,
+    "localPath": "images/image-7.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/mo_sl02.jpg",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "환자분들의 편안한 치료를 위해 의식하진정요법을 통한 진료를 하고 있습니다.",
+    "width": 720,
+    "height": 950,
+    "localPath": "images/image-8.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/pc_sl00.jpg",
+    "type": "img",
+    "sectionIndex": 0,
+    "width": 1903,
+    "height": 950,
+    "localPath": "images/image-9.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/mo_sl00.jpg",
+    "type": "img",
+    "sectionIndex": 0,
+    "width": 720,
+    "height": 950,
+    "localPath": "images/image-10.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/pc_sl01.jpg",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "스마트365치과는 일요일, 공휴일 365일 정상진료",
+    "width": 1903,
+    "height": 950,
+    "localPath": "images/image-11.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/mo_sl01.jpg",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "스마트365치과는 일요일, 공휴일 365일 정상진료",
+    "width": 720,
+    "height": 950,
+    "localPath": "images/image-12.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/main_con01.jpg",
+    "type": "img",
+    "sectionIndex": 2,
+    "alt": "6인 전문의 협진",
+    "width": 1903,
+    "height": 954,
+    "localPath": "images/image-13.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/m_main_con01.jpg",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "6인 전문의 협진",
+    "width": 720,
+    "height": 1139,
+    "localPath": "images/image-14.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/sub_btn01_off.png",
+    "type": "img",
+    "sectionIndex": 3,
+    "alt": "의식하진정법",
+    "width": 270,
+    "height": 312,
+    "localPath": "images/image-15.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/sub_btn01_on.png",
+    "type": "img",
+    "sectionIndex": 3,
+    "alt": "의식하진정법",
+    "width": 270,
+    "height": 312,
+    "localPath": "images/image-16.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/sub_btn02_off.png",
+    "type": "img",
+    "sectionIndex": 3,
+    "alt": "자기치아 살리기",
+    "width": 270,
+    "height": 312,
+    "localPath": "images/image-17.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/sub_btn02_on.png",
+    "type": "img",
+    "sectionIndex": 3,
+    "alt": "자기치아 살리기",
+    "width": 270,
+    "height": 312,
+    "localPath": "images/image-18.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/sub_btn03_off.png",
+    "type": "img",
+    "sectionIndex": 3,
+    "alt": "무삭제 라미네이트",
+    "width": 270,
+    "height": 312,
+    "localPath": "images/image-19.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/sub_btn03_on.png",
+    "type": "img",
+    "sectionIndex": 3,
+    "alt": "무삭제 라미네이트",
+    "width": 270,
+    "height": 312,
+    "localPath": "images/image-20.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/sub_btn04_off.png",
+    "type": "img",
+    "sectionIndex": 3,
+    "alt": "임플란트",
+    "width": 270,
+    "height": 312,
+    "localPath": "images/image-21.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/sub_btn04_on.png",
+    "type": "img",
+    "sectionIndex": 3,
+    "alt": "임플란트",
+    "width": 270,
+    "height": 312,
+    "localPath": "images/image-22.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/sub_btn05_off.png",
+    "type": "img",
+    "sectionIndex": 3,
+    "alt": "턱관절 치료",
+    "width": 270,
+    "height": 312,
+    "localPath": "images/image-23.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/sub_btn05_on.png",
+    "type": "img",
+    "sectionIndex": 3,
+    "alt": "턱관절 치료",
+    "width": 270,
+    "height": 312,
+    "localPath": "images/image-24.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/main_con03_txt.png",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "컴퓨터 분석을 이용한 임플란트",
+    "width": 603,
+    "height": 139,
+    "localPath": "images/image-25.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_07.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스07",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-26.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_08.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스08",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-27.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_09.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스09",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-28.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_10.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스10",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-29.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_11.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스11",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-30.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_12.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스12",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-31.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_13.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스13",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-32.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_14.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스14",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-33.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_15.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스15",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-34.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_16.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스16",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-35.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_17.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스17",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-36.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_18.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스18",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-37.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_19.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스19",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-38.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_20.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스20",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-39.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_21.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스21",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-40.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_22.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스22",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-41.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_23.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스23",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-42.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_24.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스24",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-43.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_01.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스01",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-44.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_02.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스02",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-45.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_03.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스03",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-46.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_04.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스04",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-47.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_05.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스05",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-48.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/impl2_06.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "임플란트 치료케이스06",
+    "width": 389,
+    "height": 550,
+    "localPath": "images/image-49.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_07.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-50.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_08.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-51.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_09.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-52.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_10.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-53.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_11.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-54.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_12.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-55.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_13.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-56.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_14.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-57.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_15.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-58.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_16.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-59.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_17.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-60.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_18.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-61.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_19.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-62.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_20.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-63.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_21.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-64.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_22.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-65.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_23.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-66.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_24.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-67.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_01.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-68.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_02.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-69.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_03.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-70.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_04.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-71.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_05.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-72.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/case/impl2/thumb_impl2_06.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "width": 173,
+    "height": 244,
+    "localPath": "images/image-73.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/caution.png",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "모든 시술 및 수술은 개인에 따라 결과의 차이 및 부작용을 발생시킬 수 있습니다.",
+    "width": 1903,
+    "height": 51,
+    "localPath": "images/image-74.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/m_caution.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "모든 시술 및 수술은 개인에 따라 결과의 차이 및 부작용을 발생시킬 수 있습니다.",
+    "width": 720,
+    "height": 86,
+    "localPath": "images/image-75.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/main_tel.png",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "터치하면 바로 전화문의 가능",
+    "width": 1926,
+    "height": 456,
+    "localPath": "images/image-76.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/m_main_tel.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "터치하면 바로 전화문의 가능",
+    "width": 720,
+    "height": 382,
+    "localPath": "images/image-77.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/main_info_bg.jpg",
+    "type": "img",
+    "sectionIndex": 6,
+    "alt": "진료시간 및 기본정보",
+    "width": 1903,
+    "height": 640,
+    "localPath": "images/image-78.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/m_main_info_bg.jpg",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "진료시간 및 기본정보",
+    "width": 720,
+    "height": 470,
+    "localPath": "images/image-79.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/main_info_ms.png",
+    "type": "img",
+    "sectionIndex": 6,
+    "alt": "진료시간 및 기본정보 - 마산석전점",
+    "width": 1048,
+    "height": 640,
+    "localPath": "images/image-80.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/m_main_info_ms.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "진료시간 및 기본정보 - 마산석전점",
+    "width": 434,
+    "height": 471,
+    "localPath": "images/image-81.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/main_info_cw.png",
+    "type": "img",
+    "sectionIndex": 6,
+    "alt": "진료시간 및 기본정보 - 창원중동점",
+    "width": 1096,
+    "height": 640,
+    "localPath": "images/image-82.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/m_main_info_cw.png",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "진료시간 및 기본정보 - 창원중동점",
+    "width": 424,
+    "height": 471,
+    "localPath": "images/image-83.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/main_info_ms_txt.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "진료시간 및 기본정보 - 마산석전점",
+    "width": 1914,
+    "height": 648,
+    "localPath": "images/image-84.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/m_main_info_ms_txt.jpg",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "진료시간 및 기본정보 - 마산석전점",
+    "width": 720,
+    "height": 1027,
+    "localPath": "images/image-85.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/main_info_cw_txt.jpg",
+    "type": "img",
+    "sectionIndex": 4,
+    "alt": "진료시간 및 기본정보 - 창원중동점",
+    "width": 1914,
+    "height": 648,
+    "localPath": "images/image-86.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/m_main_info_cw_txt.jpg",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "진료시간 및 기본정보 - 창원중동점",
+    "width": 720,
+    "height": 1027,
+    "localPath": "images/image-87.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/footer.jpg",
+    "type": "img",
+    "sectionIndex": 7,
+    "alt": "스마트365치과",
+    "width": 1903,
+    "height": 266,
+    "localPath": "images/image-88.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/m_footer.jpg",
+    "type": "img",
+    "sectionIndex": 0,
+    "alt": "스마트365치과",
+    "width": 720,
+    "height": 474,
+    "localPath": "images/image-89.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/quick/quick_01.png",
+    "type": "img",
+    "sectionIndex": 6,
+    "alt": "상단으로",
+    "width": 120,
+    "height": 82,
+    "localPath": "images/image-90.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/quick/quick_02.png",
+    "type": "img",
+    "sectionIndex": 6,
+    "alt": "네이버예약(마산)",
+    "width": 120,
+    "height": 94,
+    "localPath": "images/image-91.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/quick/quick_03.png",
+    "type": "img",
+    "sectionIndex": 6,
+    "alt": "네이버예약(창원)",
+    "width": 120,
+    "height": 94,
+    "localPath": "images/image-92.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/quick/quick_04.png",
+    "type": "img",
+    "sectionIndex": 6,
+    "alt": "네이버블로그(마산)",
+    "width": 120,
+    "height": 95,
+    "localPath": "images/image-93.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/quick/quick_05.png",
+    "type": "img",
+    "sectionIndex": 6,
+    "alt": "네이버블로그(창원)",
+    "width": 120,
+    "height": 94,
+    "localPath": "images/image-94.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/quick/quick_06.png",
+    "type": "img",
+    "sectionIndex": 6,
+    "alt": "진료안내 및 오시는길",
+    "width": 120,
+    "height": 101,
+    "localPath": "images/image-95.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/main/main_con03_bg.jpg",
+    "type": "background",
+    "sectionIndex": 4,
+    "localPath": "images/image-96.jpg",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/impl_next_btn.png",
+    "type": "background",
+    "sectionIndex": 4,
+    "localPath": "images/image-97.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/impl_prev_btn.png",
+    "type": "background",
+    "sectionIndex": 4,
+    "localPath": "images/image-98.png",
+    "downloaded": true
+  },
+  {
+    "originalUrl": "https://smart365dental.com/theme/smart365/img/favicon.png",
+    "type": "background",
+    "sectionIndex": 0,
+    "localPath": "images/image-99.png",
+    "downloaded": true
+  }
+]

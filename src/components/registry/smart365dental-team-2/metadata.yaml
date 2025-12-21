@@ -1,0 +1,45 @@
+schemaVersion: "2.0"
+name: smart365dental-team-2
+category: team
+
+images:
+  preview: scraped/smart365dental-com-2025-12-21/sections/section-2.png
+
+freeformKeywords:
+  - team
+  - doctors
+  - medical staff
+  - dental clinic
+  - healthcare professionals
+  - dental team
+  - clinic staff
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-21T01:29:10Z"
+status: stable
+language: ko
+
+tags:
+  functional: []
+  style:
+    - gradient
+    - modern
+    - professional
+    - blue-theme
+  layout:
+    - two-column
+    - split-layout
+    - centered
+  industry:
+    - healthcare
+    - dental
+
+parentPage: smart365dental-landing
+
+source:
+  type: url
+  url: https://smart365dental.com/
+  scrapedAt: "2025-12-21T01:29:10Z"
+  sectionIndex: 2

@@ -1,0 +1,49 @@
+schemaVersion: "2.0"
+name: smart365dental-before-after-4
+category: before-after
+
+images:
+  preview: scraped/smart365dental-com-2025-12-21/sections/section-4.png
+
+freeformKeywords:
+  - before after
+  - treatment results
+  - dental imaging
+  - cases
+  - carousel
+  - timeline
+  - medical
+  - healthcare
+  - x-ray
+  - dental cases
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-21T01:36:26Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - carousel
+    - image-gallery
+  style:
+    - light-theme
+    - modern
+    - clean
+    - medical
+  layout:
+    - centered
+    - single-column
+  industry:
+    - healthcare
+    - dental
+
+parentPage: smart365dental-landing
+
+source:
+  type: url
+  url: https://smart365dental.com/
+  scrapedAt: "2025-12-21T01:36:26Z"
+  sectionIndex: 4

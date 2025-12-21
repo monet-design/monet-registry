@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: smart365dental-services-3
+category: feature-showcase
+
+images:
+  preview: scraped/smart365dental-com-2025-12-21/sections/section-3.png
+
+freeformKeywords:
+  - services
+  - treatments
+  - dental services
+  - medical procedures
+  - healthcare services
+  - treatment cards
+  - service grid
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-21T01:32:50Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - hover-effect
+    - animation
+  style:
+    - modern
+    - light-theme
+    - image-cards
+  layout:
+    - grid
+    - centered
+    - full-width
+  industry:
+    - medical
+    - dental
+
+parentPage: smart365dental-landing
+
+source:
+  type: url
+  url: https://smart365dental.com/
+  scrapedAt: "2025-12-21T01:32:50Z"
+  sectionIndex: 3

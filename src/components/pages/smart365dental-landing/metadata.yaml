@@ -1,0 +1,39 @@
+schemaVersion: "2.0"
+name: smart365dental-landing
+category: page
+pageType: landing
+images:
+  preview: scraped/smart365dental-com-2025-12-21/full-page.png
+title: Smart365 Dental Clinic Landing Page
+sections:
+  - id: smart365dental-hero-1
+    category: hero
+    order: 0
+  - id: smart365dental-team-2
+    category: team
+    order: 1
+  - id: smart365dental-services-3
+    category: feature
+    order: 2
+  - id: smart365dental-before-after-4
+    category: before-after
+    order: 3
+  - id: smart365dental-consultation-5
+    category: cta
+    order: 4
+  - id: smart365dental-location-6
+    category: contact
+    order: 5
+source:
+  type: url
+  url: https://smart365dental.com/
+  scrapedAt: "2025-12-21T01:44:26.572Z"
+pageInfo:
+  totalSections: 6
+freeformKeywords:
+  - complete landing page
+  - full page
+  - smart365dental.com
+createdAt: "2025-12-21T01:44:26.572Z"
+status: stable
+draft: true

@@ -1,0 +1,47 @@
+schemaVersion: "2.0"
+name: smart365dental-hero-1
+category: hero
+
+images:
+  preview: scraped/smart365dental-com-2025-12-21/sections/section-1.png
+
+freeformKeywords:
+  - hero
+  - dental
+  - clinic
+  - landing
+  - healthcare
+  - medical
+  - appointment
+  - korean
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-21T01:26:08Z"
+status: stable
+language: ko
+
+tags:
+  functional: []
+  style:
+    - light-theme
+    - modern
+    - professional
+    - clean
+  layout:
+    - split-layout
+    - two-column
+    - left-aligned
+  industry:
+    - healthcare
+    - dental
+    - medical
+
+parentPage: smart365dental-landing
+
+source:
+  type: url
+  url: https://smart365dental.com/
+  scrapedAt: "2025-12-21T01:26:08Z"
+  sectionIndex: 1

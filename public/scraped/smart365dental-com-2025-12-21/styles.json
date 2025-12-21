@@ -1,0 +1,82 @@
+{
+  "header#header": {
+    "backgroundColor": "rgb(255, 255, 255)",
+    "color": "rgb(35, 35, 35)",
+    "fontFamily": "Noto, Pretendard, SpoqaHanSansNeo-Regular, dotum, sans-serif",
+    "fontSize": "13.6px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "nav#gnb": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(35, 35, 35)",
+    "fontFamily": "Noto, Pretendard, SpoqaHanSansNeo-Regular, dotum, sans-serif",
+    "fontSize": "13.6px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "nav.gnb": {
+    "backgroundColor": "rgb(49, 179, 189)",
+    "color": "rgb(35, 35, 35)",
+    "fontFamily": "Noto, Pretendard, SpoqaHanSansNeo-Regular, dotum, sans-serif",
+    "fontSize": "13.6px",
+    "padding": "70px 0px 0px",
+    "margin": "0px"
+  },
+  "div.oneup_pops_footer": {
+    "backgroundColor": "rgba(255, 255, 255, 0.82)",
+    "color": "rgb(34, 34, 34)",
+    "fontFamily": "Noto, Pretendard, SpoqaHanSansNeo-Regular, dotum, sans-serif",
+    "fontSize": "13.6px",
+    "padding": "8px 32px",
+    "margin": "0px"
+  },
+  "section#main_con01.main_con01": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(34, 34, 34)",
+    "fontFamily": "Noto, Pretendard, SpoqaHanSansNeo-Regular, dotum, sans-serif",
+    "fontSize": "13.6px",
+    "padding": "0px",
+    "margin": "0px"
+  },
+  "section#main_con02.main_con02": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(34, 34, 34)",
+    "fontFamily": "Noto, Pretendard, SpoqaHanSansNeo-Regular, dotum, sans-serif",
+    "fontSize": "13.6px",
+    "padding": "72px 0px 86.3906px",
+    "margin": "0px"
+  },
+  "section#main_con03.main_con03": {
+    "backgroundColor": "rgb(247, 247, 247)",
+    "color": "rgb(34, 34, 34)",
+    "fontFamily": "Noto, Pretendard, SpoqaHanSansNeo-Regular, dotum, sans-serif",
+    "fontSize": "13.6px",
+    "padding": "57.5938px 0px 172.797px",
+    "margin": "0px"
+  },
+  "section#main_con04.main_con04": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(34, 34, 34)",
+    "fontFamily": "Noto, Pretendard, SpoqaHanSansNeo-Regular, dotum, sans-serif",
+    "fontSize": "13.6px",
+    "padding": "0px",
+    "margin": "-72px 0px 0px"
+  },
+  "section#main_con05.main_con05": {
+    "backgroundColor": "rgb(255, 255, 255)",
+    "color": "rgb(34, 34, 34)",
+    "fontFamily": "Noto, Pretendard, SpoqaHanSansNeo-Regular, dotum, sans-serif",
+    "fontSize": "13.6px",
+    "padding": "57.5938px 0px 0px",
+    "margin": "0px"
+  },
+  "footer#foot.foot": {
+    "backgroundColor": "rgb(247, 247, 247)",
+    "color": "rgb(34, 34, 34)",
+    "fontFamily": "Noto, Pretendard, SpoqaHanSansNeo-Regular, dotum, sans-serif",
+    "fontSize": "13.6px",
+    "padding": "0px",
+    "margin": "0px"
+  }
+}

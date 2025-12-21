@@ -1,0 +1,46 @@
+schemaVersion: "2.0"
+name: smart365dental-consultation-5
+category: cta
+
+images:
+  preview: scraped/smart365dental-com-2025-12-21/sections/section-5.png
+
+freeformKeywords:
+  - consultation
+  - contact
+  - call to action
+  - doctor
+  - appointment
+  - phone inquiry
+  - dental clinic
+  - healthcare
+  - korean
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-21T01:39:46Z"
+status: stable
+language: ko
+
+tags:
+  functional: []
+  style:
+    - modern
+    - bold
+    - illustration
+    - gradient
+  layout:
+    - split-layout
+    - full-width
+  industry:
+    - healthcare
+    - dental
+
+parentPage: smart365dental-landing
+
+source:
+  type: url
+  url: https://smart365dental.com/
+  scrapedAt: "2025-12-21T01:39:46Z"
+  sectionIndex: 5

@@ -1,0 +1,47 @@
+schemaVersion: "2.0"
+name: smart365dental-location-6
+category: contact
+
+images:
+  preview: scraped/smart365dental-com-2025-12-21/sections/section-6.png
+
+freeformKeywords:
+  - location
+  - address
+  - hours
+  - contact info
+  - map
+  - dental clinic
+  - branch
+  - consultation hours
+  - korean dental
+
+fontFamily:
+  - Inter
+
+createdAt: "2025-12-21T01:42:28Z"
+status: stable
+language: ko
+
+tags:
+  functional:
+    - contact-info
+  style:
+    - light-theme
+    - modern
+    - clean
+    - minimal
+  layout:
+    - centered
+    - single-column
+  industry:
+    - healthcare
+    - dental
+
+parentPage: smart365dental-landing
+
+source:
+  type: url
+  url: https://smart365dental.com/
+  scrapedAt: "2025-12-21T01:42:28Z"
+  sectionIndex: 6

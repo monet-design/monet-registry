@@ -1,0 +1,32 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Placeholder for doctors team photo -->
+  <rect width="1200" height="800" fill="transparent"/>
+
+  <!-- Simple silhouettes of people in medical attire -->
+  <g opacity="0.3">
+    <!-- Person 1 -->
+    <ellipse cx="180" cy="400" rx="80" ry="100" fill="white"/>
+    <circle cx="180" cy="320" r="50" fill="white"/>
+
+    <!-- Person 2 -->
+    <ellipse cx="340" cy="400" rx="80" ry="100" fill="white"/>
+    <circle cx="340" cy="320" r="50" fill="white"/>
+
+    <!-- Person 3 -->
+    <ellipse cx="500" cy="400" rx="80" ry="100" fill="white"/>
+    <circle cx="500" cy="320" r="50" fill="white"/>
+
+    <!-- Person 4 -->
+    <ellipse cx="660" cy="400" rx="80" ry="100" fill="white"/>
+    <circle cx="660" cy="320" r="50" fill="white"/>
+
+    <!-- Person 5 -->
+    <ellipse cx="820" cy="400" rx="80" ry="100" fill="white"/>
+    <circle cx="820" cy="320" r="50" fill="white"/>
+  </g>
+
+  <!-- Placeholder text -->
+  <text x="600" y="600" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle" opacity="0.5">
+    의사 선생님 (Placeholder)
+  </text>
+</svg>

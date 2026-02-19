@@ -1,0 +1,41 @@
+schemaVersion: "2.0"
+name: imprint-hero
+category: hero
+images:
+  preview: agent-input/hero/imprint-hero.png
+tags:
+  functional:
+    - hover-effect
+  style:
+    - light-theme
+    - modern
+    - elegant
+    - glassmorphism
+    - gradient
+    - blur
+    - pastel
+    - sans-serif
+  layout:
+    - centered
+    - single-column
+  industry:
+    - fintech
+    - enterprise
+    - saas
+freeformKeywords:
+  - credit card
+  - co-branded
+  - financial products
+  - fintech hero
+  - glassmorphism card
+  - pastel gradient
+  - frosted glass
+  - imprint
+  - banking
+  - payments
+fontFamily:
+  - Inter
+createdAt: "2026-02-19T00:00:00Z"
+status: stable
+language: en
+draft: false

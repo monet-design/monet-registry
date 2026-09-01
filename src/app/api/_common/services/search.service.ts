@@ -4,7 +4,7 @@
  */
 
 import "server-only";
-import { create, insert, search as oramaSearch } from "@orama/orama";
+import { create, insertMultiple, search as oramaSearch } from "@orama/orama";
 import type { Orama } from "@orama/orama";
 import { registryService } from "./registry.service";
 import type { SearchQuery, SearchResponse, SearchResult } from "../types";
@@ -49,8 +49,13 @@ class SearchService {
     this.db = await create({ schema: SEARCH_SCHEMA });
     const components = await registryService.getAllComponents();
 
-    for (const component of components) {
-      await insert(this.db, {
+    // insertMultiple batches documents instead of awaiting one insert per
+    // component; on a cold Fluid Compute instance that rebuilds this index
+    // for 1,000+ components on every first search, the per-call overhead
+    // of a sequential insert loop was a significant, avoidable CPU cost.
+    await insertMultiple(
+      this.db,
+      components.map((component) => ({
         id: component.id,
         name: component.name,
         category: component.category,
@@ -65,8 +70,8 @@ class SearchService {
         createdAt: component.createdAt || "",
         status: component.status,
         language: component.language,
-      });
-    }
+      }))
+    );
 
     this.initialized = true;
     console.log(
